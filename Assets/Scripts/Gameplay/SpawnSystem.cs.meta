@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2084f0726f23d814b980a6acbbaf9f04
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
+  - _playerPrefab: {fileID: 4304834229037290962, guid: 405c9e1c953ccf74690d381e2e23bf1d,
+      type: 3}
+  - _playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
+      type: 2}
+  - _playerInstantiatedChannel: {fileID: 11400000, guid: 4408622ba8dc49649843bf9cb747b1e3,
+      type: 2}
+  - _onSceneReady: {fileID: 11400000, guid: 8e43b1aa16e3e1640ad837326d4c8ab9, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-public class SerializableScriptableObject : MonoBehaviour
+public class SerializableScriptableObject : ScriptableObject
 {
 	[SerializeField, HideInInspector] private string _guid;
 	public string Guid => _guid;

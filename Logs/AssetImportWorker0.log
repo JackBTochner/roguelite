@@ -15,7 +15,7 @@ C:/Users/muenj/source/repos/roguelite
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49882
+52847
 Successfully changed project path to: C:/Users/muenj/source/repos/roguelite
 C:/Users/muenj/source/repos/roguelite
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/muenj/source/repos/roguelite
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 92.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 229.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
 [Subsystems] Discovering subsystems at path C:/Program Files/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -63,92 +63,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/2021.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/2021.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.006757 seconds.
+Registered in 1.717232 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 92.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 302.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.604 seconds
+- Completed reload, in 19.847 seconds
 Domain Reload Profiling:
-	ReloadAssembly (604ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (19847ms)
+		BeginReloadAssembly (162ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (431ms)
-			LoadAssemblies (67ms)
+		EndReloadAssembly (1088ms)
+			LoadAssemblies (159ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (107ms)
+			SetupTypeCache (207ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (256ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (708ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (93ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (303ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (117ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				ProcessInitializeOnLoadAttributes (309ms)
+				ProcessInitializeOnLoadMethodAttributes (73ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008868 seconds.
+Registered in 0.019681 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\muenj\source\repos\roguelite\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\muenj\source\repos\roguelite\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 92.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 170.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.115 seconds
+- Completed reload, in  1.911 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1116ms)
-		BeginReloadAssembly (98ms)
+	ReloadAssembly (1913ms)
+		BeginReloadAssembly (129ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (913ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1635ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (237ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (507ms)
+			SetupTypeCache (395ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (113ms)
+			SetupLoadedEditorAssemblies (945ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (92ms)
-				BeforeProcessingInitializeOnLoad (108ms)
-				ProcessInitializeOnLoadAttributes (213ms)
-				ProcessInitializeOnLoadMethodAttributes (80ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (170ms)
+				BeforeProcessingInitializeOnLoad (149ms)
+				ProcessInitializeOnLoadAttributes (506ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
+				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5515 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.1 MB). Loaded Objects now: 5956.
-Memory consumption went from 212.9 MB to 211.8 MB.
-Total: 3.262000 ms (FindLiveObjects: 0.396400 ms CreateObjectMapping: 0.400300 ms MarkObjects: 2.110100 ms  DeleteObjects: 0.354300 ms)
+Unloading 6872 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (1.1 MB). Loaded Objects now: 7316.
+Memory consumption went from 256.0 MB to 254.9 MB.
+Total: 8.242000 ms (FindLiveObjects: 0.447500 ms CreateObjectMapping: 0.475800 ms MarkObjects: 6.940700 ms  DeleteObjects: 0.376800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,97 +163,298 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 206705.253075 seconds.
-  path: Assets/Settings/URP-HighFidelity.asset
-  artifactKey: Guid(7b7fd9122c28c4d15b667c7040e3b3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-HighFidelity.asset using Guid(7b7fd9122c28c4d15b667c7040e3b3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e034af0bc13de21932d85eeaa5ab7bb1') in 0.041214 seconds 
+  Time since last request: 821595.167231 seconds.
+  path: Assets/Scripts/Gameplay/HubNPCManager.cs
+  artifactKey: Guid(14ea2ea93c28d994a87200841facfd5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/HubNPCManager.cs using Guid(14ea2ea93c28d994a87200841facfd5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.032397 seconds  code(4) message(Build asset version error: assets/scripts/gameplay/hubnpcmanager.cs in SourceAssetDB has modification time of '2023-03-12T02:40:05.0191739Z' while content on disk has modification time of '2023-03-12T02:40:24.1855574Z')
+  ERROR: Build asset version error: assets/scripts/gameplay/hubnpcmanager.cs in SourceAssetDB has modification time of '2023-03-12T02:40:05.0191739Z' while content on disk has modification time of '2023-03-12T02:40:24.1855574Z'
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011116 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\muenj\source\repos\roguelite\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\muenj\source\repos\roguelite\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.323 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1324ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1092ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (347ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (483ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (279ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (45ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6722 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (1.1 MB). Loaded Objects now: 7319.
+Memory consumption went from 253.4 MB to 252.3 MB.
+Total: 3.497000 ms (FindLiveObjects: 0.373200 ms CreateObjectMapping: 0.390700 ms MarkObjects: 2.329900 ms  DeleteObjects: 0.402500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Scripts/SceneManagement/Initializer.cs
-  artifactKey: Guid(837bff043079a94499a59005657e11f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SceneManagement/Initializer.cs using Guid(837bff043079a94499a59005657e11f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90952e3c3593d29dfbfd4f7d58c0d0f6') in 0.011799 seconds 
+  Time since last request: 156.345898 seconds.
+  path: Assets/Scripts/Gameplay/HubNPCManager.cs
+  artifactKey: Guid(14ea2ea93c28d994a87200841facfd5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/HubNPCManager.cs using Guid(14ea2ea93c28d994a87200841facfd5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efedf55cea06d29df1bd5a36740a4987') in 0.013269 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Scripts/SceneManagement/ScriptableObjects
-  artifactKey: Guid(37211765a1669154d8122db92d7d51f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SceneManagement/ScriptableObjects using Guid(37211765a1669154d8122db92d7d51f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc504a253711a12704395df8664e25f0') in 0.004540 seconds 
+  Time since last request: 1.108620 seconds.
+  path: Assets/Scenes/Locations/Hub_Location.unity
+  artifactKey: Guid(5e269bb9eb2526b4297d2ab7279ac493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Locations/Hub_Location.unity using Guid(5e269bb9eb2526b4297d2ab7279ac493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '795ebe75ee58e494ab3a3955e238fdc1') in 0.011647 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Settings/SampleSceneProfile.asset
-  artifactKey: Guid(a6560a915ef98420e9faacc1c7438823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/SampleSceneProfile.asset using Guid(a6560a915ef98420e9faacc1c7438823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f33001e61b96e1ee80af89351c2fd9') in 0.009511 seconds 
+  Time since last request: 68.128232 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts
+  artifactKey: Guid(061865c12167a6442acce2e6b8ed494c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts using Guid(061865c12167a6442acce2e6b8ed494c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f4845ac51a098afeaaabb37510503c8') in 0.007542 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Scripts/SceneManagement
-  artifactKey: Guid(d98ad7ec9404fa54e8fd47292d5bbc79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SceneManagement using Guid(d98ad7ec9404fa54e8fd47292d5bbc79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d413ca10ce27cefcd36d85647ae9e4') in 0.005386 seconds 
+  Time since last request: 1.559771 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Quests
+  artifactKey: Guid(49ec3035401e66c4e9c0159012ff8734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Quests using Guid(49ec3035401e66c4e9c0159012ff8734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420def4f3702082b50cc7a3270c7a2a9') in 0.010434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.125672 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/_README.txt
+  artifactKey: Guid(da309dca1223df045855fe9ce9571ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/_README.txt using Guid(da309dca1223df045855fe9ce9571ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab377c621768e30dfa4c9de904f3aa0') in 0.024816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.318351 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/DialogueSystemAssemblyDefinitions.unitypackage
+  artifactKey: Guid(5db5e6540b70aa44a8b8f0be7cbc03a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/DialogueSystemAssemblyDefinitions.unitypackage using Guid(5db5e6540b70aa44a8b8f0be7cbc03a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '475496305bbdce8c1ccab92fd6c0a643') in 0.030418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.973105 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Triggers
+  artifactKey: Guid(9f7ca41b154e2604e890c7139805a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Triggers using Guid(9f7ca41b154e2604e890c7139805a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ccda9b4673a38e9c681f77d53b0df9') in 0.009713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.211334 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Triggers/Triggers
+  artifactKey: Guid(a231a7abbd4000d41a4ffd1879dc7d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Triggers/Triggers using Guid(a231a7abbd4000d41a4ffd1879dc7d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1857c0cc3bef6ad058cf3182c1f50a4') in 0.002789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.523778 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Triggers/Triggers/DialogueSystemTrigger.cs
+  artifactKey: Guid(a564187813564f6419f42866c3ff5b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Triggers/Triggers/DialogueSystemTrigger.cs using Guid(a564187813564f6419f42866c3ff5b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd56ff9894fbb168fa1e664fe63b549e') in 0.013329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2010.648531 seconds.
+  path: Assets/Scenes/GameplayManagers.unity
+  artifactKey: Guid(0c3ddcfb06311c74aad312ba6ca28f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameplayManagers.unity using Guid(0c3ddcfb06311c74aad312ba6ca28f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de1f1618357dafb2224022758aa4291e') in 0.010922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3341.615047 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/DialogueSystemTriggerEditor.cs
+  artifactKey: Guid(c2a31322813b9f44f946248247a10ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Editor/Inspectors/Triggers/DialogueSystemTriggerEditor.cs using Guid(c2a31322813b9f44f946248247a10ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a1f2da480b6372bbdc2493e90d3a72') in 0.011365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26917.656285 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Demo
+  artifactKey: Guid(793aae3d5f3076a4e9ffde17d89729b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Demo using Guid(793aae3d5f3076a4e9ffde17d89729b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d360ea5c9303b25f57932736d29cd9') in 0.015632 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.063021 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\muenj\source\repos\roguelite\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\muenj\source\repos\roguelite\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.085 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2087ms)
+		BeginReloadAssembly (417ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (44ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (132ms)
+		EndReloadAssembly (1513ms)
+			LoadAssemblies (204ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (658ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (582ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (182ms)
+				ProcessInitializeOnLoadAttributes (289ms)
+				ProcessInitializeOnLoadMethodAttributes (85ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (38ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (1.1 MB). Loaded Objects now: 7323.
+Memory consumption went from 256.8 MB to 255.7 MB.
+Total: 5.839000 ms (FindLiveObjects: 0.871700 ms CreateObjectMapping: 0.637100 ms MarkObjects: 3.765900 ms  DeleteObjects: 0.562900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 78.417550 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Chat Mapper Template Project
+  artifactKey: Guid(d2220265fa3b46b43a383d14e6f4a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Chat Mapper Template Project using Guid(d2220265fa3b46b43a383d14e6f4a7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a4042318d34fb122240485d5d7adf9') in 0.015728 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/Settings
-  artifactKey: Guid(709f11a7f3c4041caa4ef136ea32d874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings using Guid(709f11a7f3c4041caa4ef136ea32d874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1d78d26198bca73c008402c830304c') in 0.006272 seconds 
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateBarkUI.cs
+  artifactKey: Guid(deb95395c295e9447839c0c54739cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateBarkUI.cs using Guid(deb95395c295e9447839c0c54739cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84e0a615f0b5ff559aafb59551635c77') in 0.005795 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92801cae1a897d946050a0dfa8d20fcb') in 0.005954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(9ca7aabca5fb54048ad1559a0d075442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(9ca7aabca5fb54048ad1559a0d075442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9abf04f15a1992a22ac2e4a1d8dd13') in 0.004740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Settings/URP-Performant-Renderer.asset
-  artifactKey: Guid(707360a9c581a4bd7aa53bfeb1429f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-Performant-Renderer.asset using Guid(707360a9c581a4bd7aa53bfeb1429f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9049495a59127491b804e934473a872') in 0.005388 seconds 
+  Time since last request: 0.000026 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Articy Draft Template Project
+  artifactKey: Guid(6f480f80d0ecd2e4988c6da1a619f8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Articy Draft Template Project using Guid(6f480f80d0ecd2e4988c6da1a619f8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae6b2227fdf1ea6b13e48c5ae109f3f') in 0.004854 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/Settings/URP-HighFidelity-Renderer.asset
-  artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397b7ba456cecbd492cff0e1bd5e5364') in 0.005525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Settings/URP-Performant.asset
-  artifactKey: Guid(d0e2fc18fe036412f8223b3b3d9ad574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-Performant.asset using Guid(d0e2fc18fe036412f8223b3b3d9ad574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726110fefa6f795975c31be478fb6d81') in 0.006064 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Settings/URP-Balanced-Renderer.asset
-  artifactKey: Guid(e634585d5c4544dd297acaee93dc2beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-Balanced-Renderer.asset using Guid(e634585d5c4544dd297acaee93dc2beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09aafc974b666af6f99d5fea40e8e289') in 0.006543 seconds 
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Link
+  artifactKey: Guid(51b875cfd4ca02f4b8019232829e241e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Link using Guid(51b875cfd4ca02f4b8019232829e241e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a565fa61921e0001e67b999763b42e8f') in 0.005485 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Settings/URP-Balanced.asset
-  artifactKey: Guid(e1260c1148f6143b28bae5ace5e9c5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-Balanced.asset using Guid(e1260c1148f6143b28bae5ace5e9c5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b4b95d1aec41c35b85cd9ea641ae9a4') in 0.005282 seconds 
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/PersistentDataTemplate.cs
+  artifactKey: Guid(d1b59f13b2589734cbdee766ea9e9e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/PersistentDataTemplate.cs using Guid(d1b59f13b2589734cbdee766ea9e9e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118ea9141549cac76d305df93c757e1e') in 0.005449 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.191279 seconds.
-  path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
-  artifactKey: Guid(9bb816862dbb86143889b0319e4b348e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs using Guid(9bb816862dbb86143889b0319e4b348e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85845dcdcfaaaf6888a91ef068cddca2') in 0.010055 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates
+  artifactKey: Guid(d45dbb657e466894faf9dfa36fae4834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates using Guid(d45dbb657e466894faf9dfa36fae4834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82ac00635ece93a2702006c84829247') in 0.004899 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.248894 seconds.
-  path: Assets/Scripts/SceneManagement/ScriptableObjects/LoadEventChannelSO.cs
-  artifactKey: Guid(a71e8f17d7a58974f9cf0ac7dd1ecba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SceneManagement/ScriptableObjects/LoadEventChannelSO.cs using Guid(a71e8f17d7a58974f9cf0ac7dd1ecba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ccd9eb4df4491c7cda84c69c5e810ff') in 0.005852 seconds 
+  Time since last request: 0.000034 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Link/link_asmdef.xml
+  artifactKey: Guid(f5b3e6093c627f549949aa78f03ce1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Link/link_asmdef.xml using Guid(f5b3e6093c627f549949aa78f03ce1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432e7847a7a5ee14b661cecb004fae96') in 0.044839 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6909.694424 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(9c53962885c2c4f449125a979d6ad240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(9c53962885c2c4f449125a979d6ad240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44000731eefaa2df786a4250c6d5ad93') in 0.018520 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts
+  artifactKey: Guid(f52b3f3dfa593a344a2824d1a1278b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts using Guid(f52b3f3dfa593a344a2824d1a1278b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdb71cd06b307f4059931ee9fc78ca5') in 0.006922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/Aurora
+  artifactKey: Guid(285109858a2fb524db3c16cad9cca925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/Aurora using Guid(285109858a2fb524db3c16cad9cca925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77a1c6eba61e54922fb8937a6a87120') in 0.005073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Link/_README.txt
+  artifactKey: Guid(f685d6219cd2d9047a878f6c8127dc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Link/_README.txt using Guid(f685d6219cd2d9047a878f6c8127dc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96b26a7d077ab79c7f7381ac2d85c5f') in 0.005073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateQuestLogWindow.cs
+  artifactKey: Guid(1469d7a9b58c9b44fa0e3dfda60b4a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateQuestLogWindow.cs using Guid(1469d7a9b58c9b44fa0e3dfda60b4a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10688f5c0e55d2b72d47fa4f63f8322e') in 0.005096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Link/link.xml
+  artifactKey: Guid(3a2633e9f62413b4f982d03d646e1a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Link/link.xml using Guid(3a2633e9f62413b4f982d03d646e1a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd5e5a692ba460f29e39ab10c78028aa') in 0.005279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateCustomLua.cs
+  artifactKey: Guid(b08e616564adeb8408035f738dba07d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Templates/Scripts/TemplateCustomLua.cs using Guid(b08e616564adeb8408035f738dba07d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd9731c645a541ce219bdf8e5e081f9') in 0.006832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.674932 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Third Party Support
+  artifactKey: Guid(3ccb653eaa44e5b489e0a8015b2c60ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Third Party Support using Guid(3ccb653eaa44e5b489e0a8015b2c60ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56a0003c4bc4120af940a14508093b3') in 0.008166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.350634 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Wrappers
+  artifactKey: Guid(0ee6bd45641c01e4f94f1a68b5991aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Wrappers using Guid(0ee6bd45641c01e4f94f1a68b5991aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735b6532b4561b4b9512885c50515fe0') in 0.007960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.881795 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Resources
+  artifactKey: Guid(a1f21149f440ab94b915d9e8b83c5365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Resources using Guid(a1f21149f440ab94b915d9e8b83c5365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb29d1060baa513533fa0aeab83f3dc8') in 0.007325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.838593 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art
+  artifactKey: Guid(d50a496961f373342a374b1da428a055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art using Guid(d50a496961f373342a374b1da428a055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c2f6f5bc60e5dbb9ed6a1cdcc410c6') in 0.006670 seconds 

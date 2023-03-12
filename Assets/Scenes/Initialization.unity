@@ -152,6 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837bff043079a94499a59005657e11f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _managersScene: {fileID: 11400000, guid: 545b9d52d69cec14e806768f21440e15, type: 2}
+  _menuToLoad: {fileID: 11400000, guid: 44681d116bf4f794c8370d71ad6ec243, type: 2}
+  _menuLoadChannel:
+    m_AssetGUID: aff718ab1c86ae74fb3a6e4c2adff5a0
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!4 &794460178
 Transform:
   m_ObjectHideFlags: 0

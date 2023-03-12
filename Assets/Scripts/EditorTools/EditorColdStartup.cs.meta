@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e642c5fe7db5a124faf6020e52db731e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _thisSceneSO: {instanceID: 0}
+  - _persistentManagersSO: {fileID: 11400000, guid: 545b9d52d69cec14e806768f21440e15,
+      type: 2}
+  - _onSceneReadyChannel: {fileID: 11400000, guid: 8e43b1aa16e3e1640ad837326d4c8ab9,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

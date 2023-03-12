@@ -6,6 +6,7 @@ using UnityEngine.AddressableAssets;
 /// <summary>
 /// A ScriptableObject template which contains necessary data that is common in all game scenes (Locations, Managers, Menus), and acts as an addressable identifier.
 /// </summary>
+[CreateAssetMenu(fileName = "NewGameplayScene", menuName = "Scene Data/Gameplay")]
 public class GameSceneSO : DescriptionBaseSO
 {
     public GameSceneType sceneType;

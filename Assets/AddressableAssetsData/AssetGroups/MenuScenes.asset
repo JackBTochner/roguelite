@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: MenuScenes
+  m_EditorClassIdentifier: 
+  m_GroupName: MenuScenes
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ee0f5cb5cce62394792d5c7c60fe353d
+  m_SerializeEntries:
+  - m_GUID: ba4a13e787f73e946bc5dbcf5f7356f0
+    m_Address: Assets/Scenes/Menus/MainMenu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec2e14e97e0855e4c86737210198bf46
+    m_Address: Assets/Scenes/Menus/StraightToLocation.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7c8bec47dba423b4ea39c7c5e627f101, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1e8bf1513f2017547a257ad101bcf719, type: 2}
+    - {fileID: 11400000, guid: b951dfea0d445de4bb73da2c9e888c4b, type: 2}
