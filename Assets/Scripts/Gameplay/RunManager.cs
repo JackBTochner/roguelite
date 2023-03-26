@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class RunManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<string> VisitedEncounters;
+    public Run currentRun;
+    public Run lastRun;
 
-    // Update is called once per frame
-    void Update()
+    public RunManagerAnchor runManagerAnchor;
+
+    private void OnEnable()
     {
-        
+        runManagerAnchor.Provide(this);
     }
+}
+
+
+public class Run
+{
+    public List<string> VisitedEncounters;
 }

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b9adceada8d444f438fc87b92181883f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _dialogueSystemEvents: {instanceID: 0}
+  - _dialogueSystemEventsAnchor: {fileID: 11400000, guid: 33d94bee9f99c3441b5eb68392491bce,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

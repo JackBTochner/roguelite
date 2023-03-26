@@ -17,10 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: f0b794cf84a6ad742b9f4e27b8a65b0b
   m_SerializeEntries:
-  - m_GUID: 596dfd5ceaa472a498f0c1bf109574e7
-    m_Address: Assets/Scenes/Locations/FirstLocation.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   - m_GUID: 5e269bb9eb2526b4297d2ab7279ac493
     m_Address: Assets/Scenes/Locations/Hub_Location.unity
     m_ReadOnly: 0

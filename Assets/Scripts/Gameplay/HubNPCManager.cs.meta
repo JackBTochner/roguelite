@@ -3,7 +3,11 @@ guid: 14ea2ea93c28d994a87200841facfd5a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - runManager: {instanceID: 0}
+  - dialogueDatabase: {fileID: 11400000, guid: cb32f7f9b556d274b9eb3756618a36f0, type: 2}
+  - _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
