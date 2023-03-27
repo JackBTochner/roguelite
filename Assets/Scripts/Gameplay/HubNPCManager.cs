@@ -291,7 +291,7 @@ public class HubNPCManager : MonoBehaviour
             List<string> intersect =
                 fields
                     .RequiredEncountersThisRun
-                    .Intersect(runManager.currentRun.VisitedEncounters)
+                    .Intersect(runManager.currentRun.runStatistics.VisitedEncounters)
                     .ToList();
             if (!fields.RequiredEncountersThisRun.SequenceEqual(intersect))
             {
@@ -311,7 +311,7 @@ public class HubNPCManager : MonoBehaviour
             List<string> intersect =
                 fields
                     .RequiredEncountersLastRun
-                    .Intersect(runManager.lastRun.VisitedEncounters)
+                    .Intersect(runManager.lastRun.runStatistics.VisitedEncounters)
                     .ToList();
             if (!fields.RequiredEncountersLastRun.SequenceEqual(intersect))
             {
@@ -348,7 +348,7 @@ public class HubNPCManager : MonoBehaviour
             List<string> intersect =
                 fields
                     .RequiredAnyEncountersThisRun
-                    .Intersect(runManager.currentRun.VisitedEncounters)
+                    .Intersect(runManager.currentRun.runStatistics.VisitedEncounters)
                     .ToList();
             Debug
                 .Log("RequiredAnyEncountersThisRun n currentRun.VisitedEncounters :" +
@@ -365,7 +365,7 @@ public class HubNPCManager : MonoBehaviour
             List<string> intersect =
                 fields
                     .RequiredAnyEncountersLastRun
-                    .Intersect(runManager.lastRun.VisitedEncounters)
+                    .Intersect(runManager.lastRun.runStatistics.VisitedEncounters)
                     .ToList();
             Debug
                 .Log("RequiredAnyEncountersLastRun n currentRun.VisitedEncounters :" +

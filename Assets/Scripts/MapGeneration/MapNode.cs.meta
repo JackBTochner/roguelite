@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0f7a581f58f8a8d42a8677350fc174de
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - sr: {instanceID: 0}
+  - button: {instanceID: 0}
+  - buttonText: {instanceID: 0}
+  - mapManager: {instanceID: 0}
+  - mapPlayerTracker: {instanceID: 0}
+  - nodeScene: {instanceID: 0}
+  - loadLocation: {fileID: 11400000, guid: 9f9b3cba6cfbbbe448d4be335e5ce5b2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

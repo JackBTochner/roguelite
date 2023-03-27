@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a64a756e3ced0d41a5b6c722e9d5eb9, type: 3}
+  m_Name: EliteEnemy_ACT1 1
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  nodeType: 2
+  possibleScenes:
+  - {fileID: 11400000, guid: 7fb6bf580575ad84dbc11948fea627d8, type: 2}
+  - {fileID: 11400000, guid: 67f4f46180a7db54ab5145216acc016e, type: 2}
