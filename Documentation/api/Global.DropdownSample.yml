@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DropdownSample
+  commentId: T:Global.DropdownSample
+  id: DropdownSample
+  parent: Global
+  children:
+  - Global.DropdownSample.OnButtonClick
+  langs:
+  - csharp
+  - vb
+  name: DropdownSample
+  nameWithType: DropdownSample
+  fullName: DropdownSample
+  type: Class
+  source:
+    remote:
+      path: Assets/Plugins/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: DropdownSample
+    path: ../Assets/Plugins/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: 'public class DropdownSample : MonoBehaviour'
+    content.vb: Public Class DropdownSample Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.DropdownSample.OnButtonClick
+  commentId: M:Global.DropdownSample.OnButtonClick
+  id: OnButtonClick
+  parent: Global.DropdownSample
+  langs:
+  - csharp
+  - vb
+  name: OnButtonClick()
+  nameWithType: DropdownSample.OnButtonClick()
+  fullName: DropdownSample.OnButtonClick()
+  type: Method
+  source:
+    remote:
+      path: Assets/Plugins/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnButtonClick
+    path: ../Assets/Plugins/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: public void OnButtonClick()
+    content.vb: Public Sub OnButtonClick()
+  overload: Global.DropdownSample.OnButtonClick*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.DropdownSample.OnButtonClick*
+  commentId: Overload:Global.DropdownSample.OnButtonClick
+  name: OnButtonClick
+  nameWithType: DropdownSample.OnButtonClick
+  fullName: DropdownSample.OnButtonClick

@@ -1,0 +1,742 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ConversationFields
+  commentId: T:Global.ConversationFields
+  id: ConversationFields
+  parent: Global
+  children:
+  - Global.ConversationFields.#ctor(System.Int32)
+  - Global.ConversationFields.PlayOnce
+  - Global.ConversationFields.Priority
+  - Global.ConversationFields.RequiredAnyEncounters
+  - Global.ConversationFields.RequiredAnyEncountersLastRun
+  - Global.ConversationFields.RequiredAnyEncountersThisRun
+  - Global.ConversationFields.RequiredConversations
+  - Global.ConversationFields.RequiredEncounters
+  - Global.ConversationFields.RequiredEncountersLastRun
+  - Global.ConversationFields.RequiredEncountersThisRun
+  - Global.ConversationFields.RequiredFalseConversations
+  - Global.ConversationFields.RequiredMinNPCInteractions
+  - Global.ConversationFields.RequiresLastRunCleared
+  - Global.ConversationFields.RequiresLastRunNotCleared
+  - Global.ConversationFields.RequiresRunCleared
+  - Global.ConversationFields.RequiresRunNotCleared
+  - Global.ConversationFields.SuperPriority
+  langs:
+  - csharp
+  - vb
+  name: ConversationFields
+  nameWithType: ConversationFields
+  fullName: ConversationFields
+  type: Struct
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ConversationFields
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 384
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public struct ConversationFields
+    content.vb: Public Structure ConversationFields
+- uid: Global.ConversationFields.#ctor(System.Int32)
+  commentId: M:Global.ConversationFields.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: ConversationFields(int)
+  nameWithType: ConversationFields.ConversationFields(int)
+  fullName: ConversationFields.ConversationFields(int)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: .ctor
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 388
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ConversationFields(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    content.vb: Public Sub New(id As Integer)
+  overload: Global.ConversationFields.#ctor*
+  nameWithType.vb: ConversationFields.New(Integer)
+  fullName.vb: ConversationFields.New(Integer)
+  name.vb: New(Integer)
+- uid: Global.ConversationFields.SuperPriority
+  commentId: P:Global.ConversationFields.SuperPriority
+  id: SuperPriority
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: SuperPriority
+  nameWithType: ConversationFields.SuperPriority
+  fullName: ConversationFields.SuperPriority
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SuperPriority
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 393
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool SuperPriority { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property SuperPriority As Boolean
+  overload: Global.ConversationFields.SuperPriority*
+- uid: Global.ConversationFields.Priority
+  commentId: P:Global.ConversationFields.Priority
+  id: Priority
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: Priority
+  nameWithType: ConversationFields.Priority
+  fullName: ConversationFields.Priority
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Priority
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 396
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int Priority { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Priority As Integer
+  overload: Global.ConversationFields.Priority*
+- uid: Global.ConversationFields.PlayOnce
+  commentId: P:Global.ConversationFields.PlayOnce
+  id: PlayOnce
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: PlayOnce
+  nameWithType: ConversationFields.PlayOnce
+  fullName: ConversationFields.PlayOnce
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayOnce
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 399
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool PlayOnce { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property PlayOnce As Boolean
+  overload: Global.ConversationFields.PlayOnce*
+- uid: Global.ConversationFields.RequiredMinNPCInteractions
+  commentId: P:Global.ConversationFields.RequiredMinNPCInteractions
+  id: RequiredMinNPCInteractions
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredMinNPCInteractions
+  nameWithType: ConversationFields.RequiredMinNPCInteractions
+  fullName: ConversationFields.RequiredMinNPCInteractions
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredMinNPCInteractions
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 402
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int RequiredMinNPCInteractions { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property RequiredMinNPCInteractions As Integer
+  overload: Global.ConversationFields.RequiredMinNPCInteractions*
+- uid: Global.ConversationFields.RequiresRunCleared
+  commentId: P:Global.ConversationFields.RequiresRunCleared
+  id: RequiresRunCleared
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiresRunCleared
+  nameWithType: ConversationFields.RequiresRunCleared
+  fullName: ConversationFields.RequiresRunCleared
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiresRunCleared
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 407
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool RequiresRunCleared { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property RequiresRunCleared As Boolean
+  overload: Global.ConversationFields.RequiresRunCleared*
+- uid: Global.ConversationFields.RequiresRunNotCleared
+  commentId: P:Global.ConversationFields.RequiresRunNotCleared
+  id: RequiresRunNotCleared
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiresRunNotCleared
+  nameWithType: ConversationFields.RequiresRunNotCleared
+  fullName: ConversationFields.RequiresRunNotCleared
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiresRunNotCleared
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 410
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool RequiresRunNotCleared { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property RequiresRunNotCleared As Boolean
+  overload: Global.ConversationFields.RequiresRunNotCleared*
+- uid: Global.ConversationFields.RequiresLastRunCleared
+  commentId: P:Global.ConversationFields.RequiresLastRunCleared
+  id: RequiresLastRunCleared
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiresLastRunCleared
+  nameWithType: ConversationFields.RequiresLastRunCleared
+  fullName: ConversationFields.RequiresLastRunCleared
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiresLastRunCleared
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 413
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool RequiresLastRunCleared { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property RequiresLastRunCleared As Boolean
+  overload: Global.ConversationFields.RequiresLastRunCleared*
+- uid: Global.ConversationFields.RequiresLastRunNotCleared
+  commentId: P:Global.ConversationFields.RequiresLastRunNotCleared
+  id: RequiresLastRunNotCleared
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiresLastRunNotCleared
+  nameWithType: ConversationFields.RequiresLastRunNotCleared
+  fullName: ConversationFields.RequiresLastRunNotCleared
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiresLastRunNotCleared
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 416
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool RequiresLastRunNotCleared { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property RequiresLastRunNotCleared As Boolean
+  overload: Global.ConversationFields.RequiresLastRunNotCleared*
+- uid: Global.ConversationFields.RequiredConversations
+  commentId: P:Global.ConversationFields.RequiredConversations
+  id: RequiredConversations
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredConversations
+  nameWithType: ConversationFields.RequiredConversations
+  fullName: ConversationFields.RequiredConversations
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredConversations
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 421
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> RequiredConversations { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property RequiredConversations As List(Of String)
+  overload: Global.ConversationFields.RequiredConversations*
+- uid: Global.ConversationFields.RequiredFalseConversations
+  commentId: P:Global.ConversationFields.RequiredFalseConversations
+  id: RequiredFalseConversations
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredFalseConversations
+  nameWithType: ConversationFields.RequiredFalseConversations
+  fullName: ConversationFields.RequiredFalseConversations
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredFalseConversations
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 427
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> RequiredFalseConversations { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property RequiredFalseConversations As List(Of String)
+  overload: Global.ConversationFields.RequiredFalseConversations*
+- uid: Global.ConversationFields.RequiredEncounters
+  commentId: P:Global.ConversationFields.RequiredEncounters
+  id: RequiredEncounters
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredEncounters
+  nameWithType: ConversationFields.RequiredEncounters
+  fullName: ConversationFields.RequiredEncounters
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredEncounters
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 433
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> RequiredEncounters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property RequiredEncounters As List(Of String)
+  overload: Global.ConversationFields.RequiredEncounters*
+- uid: Global.ConversationFields.RequiredEncountersLastRun
+  commentId: P:Global.ConversationFields.RequiredEncountersLastRun
+  id: RequiredEncountersLastRun
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredEncountersLastRun
+  nameWithType: ConversationFields.RequiredEncountersLastRun
+  fullName: ConversationFields.RequiredEncountersLastRun
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredEncountersLastRun
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 439
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> RequiredEncountersLastRun { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property RequiredEncountersLastRun As List(Of String)
+  overload: Global.ConversationFields.RequiredEncountersLastRun*
+- uid: Global.ConversationFields.RequiredEncountersThisRun
+  commentId: P:Global.ConversationFields.RequiredEncountersThisRun
+  id: RequiredEncountersThisRun
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredEncountersThisRun
+  nameWithType: ConversationFields.RequiredEncountersThisRun
+  fullName: ConversationFields.RequiredEncountersThisRun
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredEncountersThisRun
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 445
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> RequiredEncountersThisRun { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property RequiredEncountersThisRun As List(Of String)
+  overload: Global.ConversationFields.RequiredEncountersThisRun*
+- uid: Global.ConversationFields.RequiredAnyEncounters
+  commentId: P:Global.ConversationFields.RequiredAnyEncounters
+  id: RequiredAnyEncounters
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredAnyEncounters
+  nameWithType: ConversationFields.RequiredAnyEncounters
+  fullName: ConversationFields.RequiredAnyEncounters
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredAnyEncounters
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 451
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> RequiredAnyEncounters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property RequiredAnyEncounters As List(Of String)
+  overload: Global.ConversationFields.RequiredAnyEncounters*
+- uid: Global.ConversationFields.RequiredAnyEncountersLastRun
+  commentId: P:Global.ConversationFields.RequiredAnyEncountersLastRun
+  id: RequiredAnyEncountersLastRun
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredAnyEncountersLastRun
+  nameWithType: ConversationFields.RequiredAnyEncountersLastRun
+  fullName: ConversationFields.RequiredAnyEncountersLastRun
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredAnyEncountersLastRun
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 457
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> RequiredAnyEncountersLastRun { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property RequiredAnyEncountersLastRun As List(Of String)
+  overload: Global.ConversationFields.RequiredAnyEncountersLastRun*
+- uid: Global.ConversationFields.RequiredAnyEncountersThisRun
+  commentId: P:Global.ConversationFields.RequiredAnyEncountersThisRun
+  id: RequiredAnyEncountersThisRun
+  parent: Global.ConversationFields
+  langs:
+  - csharp
+  - vb
+  name: RequiredAnyEncountersThisRun
+  nameWithType: ConversationFields.RequiredAnyEncountersThisRun
+  fullName: ConversationFields.RequiredAnyEncountersThisRun
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RequiredAnyEncountersThisRun
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 463
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> RequiredAnyEncountersThisRun { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property RequiredAnyEncountersThisRun As List(Of String)
+  overload: Global.ConversationFields.RequiredAnyEncountersThisRun*
+references:
+- uid: Global
+- uid: Global.ConversationFields.#ctor*
+  commentId: Overload:Global.ConversationFields.#ctor
+  name: ConversationFields
+  nameWithType: ConversationFields.ConversationFields
+  fullName: ConversationFields.ConversationFields
+  nameWithType.vb: ConversationFields.New
+  fullName.vb: ConversationFields.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.ConversationFields.SuperPriority*
+  commentId: Overload:Global.ConversationFields.SuperPriority
+  name: SuperPriority
+  nameWithType: ConversationFields.SuperPriority
+  fullName: ConversationFields.SuperPriority
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.ConversationFields.Priority*
+  commentId: Overload:Global.ConversationFields.Priority
+  name: Priority
+  nameWithType: ConversationFields.Priority
+  fullName: ConversationFields.Priority
+- uid: Global.ConversationFields.PlayOnce*
+  commentId: Overload:Global.ConversationFields.PlayOnce
+  name: PlayOnce
+  nameWithType: ConversationFields.PlayOnce
+  fullName: ConversationFields.PlayOnce
+- uid: Global.ConversationFields.RequiredMinNPCInteractions*
+  commentId: Overload:Global.ConversationFields.RequiredMinNPCInteractions
+  name: RequiredMinNPCInteractions
+  nameWithType: ConversationFields.RequiredMinNPCInteractions
+  fullName: ConversationFields.RequiredMinNPCInteractions
+- uid: Global.ConversationFields.RequiresRunCleared*
+  commentId: Overload:Global.ConversationFields.RequiresRunCleared
+  name: RequiresRunCleared
+  nameWithType: ConversationFields.RequiresRunCleared
+  fullName: ConversationFields.RequiresRunCleared
+- uid: Global.ConversationFields.RequiresRunNotCleared*
+  commentId: Overload:Global.ConversationFields.RequiresRunNotCleared
+  name: RequiresRunNotCleared
+  nameWithType: ConversationFields.RequiresRunNotCleared
+  fullName: ConversationFields.RequiresRunNotCleared
+- uid: Global.ConversationFields.RequiresLastRunCleared*
+  commentId: Overload:Global.ConversationFields.RequiresLastRunCleared
+  name: RequiresLastRunCleared
+  nameWithType: ConversationFields.RequiresLastRunCleared
+  fullName: ConversationFields.RequiresLastRunCleared
+- uid: Global.ConversationFields.RequiresLastRunNotCleared*
+  commentId: Overload:Global.ConversationFields.RequiresLastRunNotCleared
+  name: RequiresLastRunNotCleared
+  nameWithType: ConversationFields.RequiresLastRunNotCleared
+  fullName: ConversationFields.RequiresLastRunNotCleared
+- uid: Global.ConversationFields.RequiredConversations*
+  commentId: Overload:Global.ConversationFields.RequiredConversations
+  name: RequiredConversations
+  nameWithType: ConversationFields.RequiredConversations
+  fullName: ConversationFields.RequiredConversations
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.ConversationFields.RequiredFalseConversations*
+  commentId: Overload:Global.ConversationFields.RequiredFalseConversations
+  name: RequiredFalseConversations
+  nameWithType: ConversationFields.RequiredFalseConversations
+  fullName: ConversationFields.RequiredFalseConversations
+- uid: Global.ConversationFields.RequiredEncounters*
+  commentId: Overload:Global.ConversationFields.RequiredEncounters
+  name: RequiredEncounters
+  nameWithType: ConversationFields.RequiredEncounters
+  fullName: ConversationFields.RequiredEncounters
+- uid: Global.ConversationFields.RequiredEncountersLastRun*
+  commentId: Overload:Global.ConversationFields.RequiredEncountersLastRun
+  name: RequiredEncountersLastRun
+  nameWithType: ConversationFields.RequiredEncountersLastRun
+  fullName: ConversationFields.RequiredEncountersLastRun
+- uid: Global.ConversationFields.RequiredEncountersThisRun*
+  commentId: Overload:Global.ConversationFields.RequiredEncountersThisRun
+  name: RequiredEncountersThisRun
+  nameWithType: ConversationFields.RequiredEncountersThisRun
+  fullName: ConversationFields.RequiredEncountersThisRun
+- uid: Global.ConversationFields.RequiredAnyEncounters*
+  commentId: Overload:Global.ConversationFields.RequiredAnyEncounters
+  name: RequiredAnyEncounters
+  nameWithType: ConversationFields.RequiredAnyEncounters
+  fullName: ConversationFields.RequiredAnyEncounters
+- uid: Global.ConversationFields.RequiredAnyEncountersLastRun*
+  commentId: Overload:Global.ConversationFields.RequiredAnyEncountersLastRun
+  name: RequiredAnyEncountersLastRun
+  nameWithType: ConversationFields.RequiredAnyEncountersLastRun
+  fullName: ConversationFields.RequiredAnyEncountersLastRun
+- uid: Global.ConversationFields.RequiredAnyEncountersThisRun*
+  commentId: Overload:Global.ConversationFields.RequiredAnyEncountersThisRun
+  name: RequiredAnyEncountersThisRun
+  nameWithType: ConversationFields.RequiredAnyEncountersThisRun
+  fullName: ConversationFields.RequiredAnyEncountersThisRun

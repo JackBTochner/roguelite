@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TransformEventChannelSO
+  commentId: T:Global.TransformEventChannelSO
+  id: TransformEventChannelSO
+  parent: Global
+  children:
+  - Global.TransformEventChannelSO.OnEventRaised
+  - Global.TransformEventChannelSO.RaiseEvent(UnityEngine.Transform)
+  langs:
+  - csharp
+  - vb
+  name: TransformEventChannelSO
+  nameWithType: TransformEventChannelSO
+  fullName: TransformEventChannelSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Events/TransformEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: TransformEventChannelSO
+    path: ../Assets/Scripts/Events/TransformEventChannelSO.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis class is used for Events that have one transform argument.\nExample: Spawn system initializes player and fire event, where the transform is the position of player.\n"
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "Events/Transform Event Channel")]
+
+      public class TransformEventChannelSO : DescriptionBaseSO
+    content.vb: >-
+      <CreateAssetMenu(menuName:="Events/Transform Event Channel")>
+
+      Public Class TransformEventChannelSO Inherits DescriptionBaseSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: Events/Transform Event Channel
+- uid: Global.TransformEventChannelSO.OnEventRaised
+  commentId: F:Global.TransformEventChannelSO.OnEventRaised
+  id: OnEventRaised
+  parent: Global.TransformEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: OnEventRaised
+  nameWithType: TransformEventChannelSO.OnEventRaised
+  fullName: TransformEventChannelSO.OnEventRaised
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Events/TransformEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnEventRaised
+    path: ../Assets/Scripts/Events/TransformEventChannelSO.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityAction<Transform> OnEventRaised
+    return:
+      type: UnityEngine.Events.UnityAction{UnityEngine.Transform}
+    content.vb: Public OnEventRaised As UnityAction(Of Transform)
+- uid: Global.TransformEventChannelSO.RaiseEvent(UnityEngine.Transform)
+  commentId: M:Global.TransformEventChannelSO.RaiseEvent(UnityEngine.Transform)
+  id: RaiseEvent(UnityEngine.Transform)
+  parent: Global.TransformEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: RaiseEvent(Transform)
+  nameWithType: TransformEventChannelSO.RaiseEvent(Transform)
+  fullName: TransformEventChannelSO.RaiseEvent(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Events/TransformEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RaiseEvent
+    path: ../Assets/Scripts/Events/TransformEventChannelSO.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RaiseEvent(Transform value)
+    parameters:
+    - id: value
+      type: UnityEngine.Transform
+    content.vb: Public Sub [RaiseEvent](value As Transform)
+  overload: Global.TransformEventChannelSO.RaiseEvent*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityAction{UnityEngine.Transform}
+  commentId: T:UnityEngine.Events.UnityAction{UnityEngine.Transform}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityAction`1
+  name: UnityAction<Transform>
+  nameWithType: UnityAction<Transform>
+  fullName: UnityEngine.Events.UnityAction<UnityEngine.Transform>
+  nameWithType.vb: UnityAction(Of Transform)
+  fullName.vb: UnityEngine.Events.UnityAction(Of UnityEngine.Transform)
+  name.vb: UnityAction(Of Transform)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Events.UnityAction`1
+  commentId: T:UnityEngine.Events.UnityAction`1
+  isExternal: true
+  name: UnityAction<T0>
+  nameWithType: UnityAction<T0>
+  fullName: UnityEngine.Events.UnityAction<T0>
+  nameWithType.vb: UnityAction(Of T0)
+  fullName.vb: UnityEngine.Events.UnityAction(Of T0)
+  name.vb: UnityAction(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.TransformEventChannelSO.RaiseEvent*
+  commentId: Overload:Global.TransformEventChannelSO.RaiseEvent
+  name: RaiseEvent
+  nameWithType: TransformEventChannelSO.RaiseEvent
+  fullName: TransformEventChannelSO.RaiseEvent
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform

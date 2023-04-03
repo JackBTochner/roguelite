@@ -1,0 +1,180 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.UIVisibility
+  commentId: T:Global.UIVisibility
+  id: UIVisibility
+  parent: Global
+  children:
+  - Global.UIVisibility.AlwaysFromStart
+  - Global.UIVisibility.AlwaysOnceShown
+  - Global.UIVisibility.OnlyDuringContent
+  - Global.UIVisibility.UntilSuperceded
+  - Global.UIVisibility.UntilSupercededOrActorChange
+  langs:
+  - csharp
+  - vb
+  name: UIVisibility
+  nameWithType: UIVisibility
+  fullName: UIVisibility
+  type: Enum
+  source:
+    remote:
+      path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: UIVisibility
+    path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+    startLine: 2
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: public enum UIVisibility
+    content.vb: Public Enum UIVisibility
+- uid: Global.UIVisibility.OnlyDuringContent
+  commentId: F:Global.UIVisibility.OnlyDuringContent
+  id: OnlyDuringContent
+  parent: Global.UIVisibility
+  langs:
+  - csharp
+  - vb
+  name: OnlyDuringContent
+  nameWithType: UIVisibility.OnlyDuringContent
+  fullName: UIVisibility.OnlyDuringContent
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnlyDuringContent
+    path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  summary: "\nOnly visible when actively showing content (e.g., ShowSubtitle). Hidden when done (e.g., HideSubtitle).\n"
+  example: []
+  syntax:
+    content: OnlyDuringContent = 0
+    return:
+      type: Global.UIVisibility
+- uid: Global.UIVisibility.UntilSuperceded
+  commentId: F:Global.UIVisibility.UntilSuperceded
+  id: UntilSuperceded
+  parent: Global.UIVisibility
+  langs:
+  - csharp
+  - vb
+  name: UntilSuperceded
+  nameWithType: UIVisibility.UntilSuperceded
+  fullName: UIVisibility.UntilSuperceded
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: UntilSuperceded
+    path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  summary: "\nAppears when showing content (e.g., NPC.ShowSubtitle). Hidden only when content is shown in a different UI section (e.g., PC.ShowSubtitle).\n"
+  example: []
+  syntax:
+    content: UntilSuperceded = 1
+    return:
+      type: Global.UIVisibility
+- uid: Global.UIVisibility.AlwaysOnceShown
+  commentId: F:Global.UIVisibility.AlwaysOnceShown
+  id: AlwaysOnceShown
+  parent: Global.UIVisibility
+  langs:
+  - csharp
+  - vb
+  name: AlwaysOnceShown
+  nameWithType: UIVisibility.AlwaysOnceShown
+  fullName: UIVisibility.AlwaysOnceShown
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: AlwaysOnceShown
+    path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  summary: "\nAppears when showing first content. Never hidden after that.\n"
+  example: []
+  syntax:
+    content: AlwaysOnceShown = 2
+    return:
+      type: Global.UIVisibility
+- uid: Global.UIVisibility.AlwaysFromStart
+  commentId: F:Global.UIVisibility.AlwaysFromStart
+  id: AlwaysFromStart
+  parent: Global.UIVisibility
+  langs:
+  - csharp
+  - vb
+  name: AlwaysFromStart
+  nameWithType: UIVisibility.AlwaysFromStart
+  fullName: UIVisibility.AlwaysFromStart
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: AlwaysFromStart
+    path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  summary: "\nAppears when dialogue UI opens. Also sets portrait names and images.\n"
+  example: []
+  syntax:
+    content: AlwaysFromStart = 3
+    return:
+      type: Global.UIVisibility
+- uid: Global.UIVisibility.UntilSupercededOrActorChange
+  commentId: F:Global.UIVisibility.UntilSupercededOrActorChange
+  id: UntilSupercededOrActorChange
+  parent: Global.UIVisibility
+  langs:
+  - csharp
+  - vb
+  name: UntilSupercededOrActorChange
+  nameWithType: UIVisibility.UntilSupercededOrActorChange
+  fullName: UIVisibility.UntilSupercededOrActorChange
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: UntilSupercededOrActorChange
+    path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  summary: "\nLike UntilSuperceded, but will also hide and re-show if actor changes but wants to use same panel.\n"
+  example: []
+  syntax:
+    content: UntilSupercededOrActorChange = 4
+    return:
+      type: Global.UIVisibility
+references:
+- uid: Global
+- uid: Global.UIVisibility
+  commentId: T:Global.UIVisibility
+  name: UIVisibility
+  nameWithType: UIVisibility
+  fullName: UIVisibility

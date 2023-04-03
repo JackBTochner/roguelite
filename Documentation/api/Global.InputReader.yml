@@ -1,0 +1,729 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.InputReader
+  commentId: T:Global.InputReader
+  id: InputReader
+  parent: Global
+  children:
+  - Global.InputReader.controls
+  - Global.InputReader.Look
+  - Global.InputReader.MousePosition
+  - Global.InputReader.MoveComposite
+  - Global.InputReader.OnDisable
+  - Global.InputReader.OnEnable
+  - Global.InputReader.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnJumpPerformed
+  - Global.InputReader.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnRestartPerformed
+  langs:
+  - csharp
+  - vb
+  name: InputReader
+  nameWithType: InputReader
+  fullName: InputReader
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: InputReader
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "InputReader", menuName = "Game/Input Reader")]
+
+      public class InputReader : DescriptionBaseSO, Controls.IPlayerActions
+    content.vb: >-
+      <CreateAssetMenu(fileName:="InputReader", menuName:="Game/Input Reader")>
+
+      Public Class InputReader Inherits DescriptionBaseSO Implements Controls.IPlayerActions
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  implements:
+  - Global.Controls.IPlayerActions
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: InputReader
+    - name: menuName
+      type: System.String
+      value: Game/Input Reader
+- uid: Global.InputReader.Look
+  commentId: F:Global.InputReader.Look
+  id: Look
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: Look
+  nameWithType: InputReader.Look
+  fullName: InputReader.Look
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Look
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 Look
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Look As Vector2
+- uid: Global.InputReader.MousePosition
+  commentId: F:Global.InputReader.MousePosition
+  id: MousePosition
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: MousePosition
+  nameWithType: InputReader.MousePosition
+  fullName: InputReader.MousePosition
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: MousePosition
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 MousePosition
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public MousePosition As Vector2
+- uid: Global.InputReader.MoveComposite
+  commentId: F:Global.InputReader.MoveComposite
+  id: MoveComposite
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: MoveComposite
+  nameWithType: InputReader.MoveComposite
+  fullName: InputReader.MoveComposite
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: MoveComposite
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Vector2 MoveComposite
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public MoveComposite As Vector2
+- uid: Global.InputReader.OnJumpPerformed
+  commentId: F:Global.InputReader.OnJumpPerformed
+  id: OnJumpPerformed
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnJumpPerformed
+  nameWithType: InputReader.OnJumpPerformed
+  fullName: InputReader.OnJumpPerformed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnJumpPerformed
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Action OnJumpPerformed
+    return:
+      type: System.Action
+    content.vb: Public OnJumpPerformed As Action
+- uid: Global.InputReader.OnRestartPerformed
+  commentId: F:Global.InputReader.OnRestartPerformed
+  id: OnRestartPerformed
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnRestartPerformed
+  nameWithType: InputReader.OnRestartPerformed
+  fullName: InputReader.OnRestartPerformed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnRestartPerformed
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Action OnRestartPerformed
+    return:
+      type: System.Action
+    content.vb: Public OnRestartPerformed As Action
+- uid: Global.InputReader.controls
+  commentId: F:Global.InputReader.controls
+  id: controls
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: controls
+  nameWithType: InputReader.controls
+  fullName: InputReader.controls
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: controls
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Controls controls
+    return:
+      type: Global.Controls
+    content.vb: Public controls As Controls
+- uid: Global.InputReader.OnEnable
+  commentId: M:Global.InputReader.OnEnable
+  id: OnEnable
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: InputReader.OnEnable()
+  fullName: InputReader.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnEnable
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnEnable()
+    content.vb: Public Sub OnEnable()
+  overload: Global.InputReader.OnEnable*
+- uid: Global.InputReader.OnDisable
+  commentId: M:Global.InputReader.OnDisable
+  id: OnDisable
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnDisable()
+  nameWithType: InputReader.OnDisable()
+  fullName: InputReader.OnDisable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnDisable
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnDisable()
+    content.vb: Public Sub OnDisable()
+  overload: Global.InputReader.OnDisable*
+- uid: Global.InputReader.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnJump(CallbackContext)
+  nameWithType: InputReader.OnJump(InputAction.CallbackContext)
+  fullName: InputReader.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnJump
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnJump(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnJump(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnJump*
+  implements:
+  - Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+- uid: Global.InputReader.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnRestart(CallbackContext)
+  nameWithType: InputReader.OnRestart(InputAction.CallbackContext)
+  fullName: InputReader.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnRestart
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnRestart(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnRestart(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnRestart*
+  implements:
+  - Global.Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+- uid: Global.InputReader.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnLook(CallbackContext)
+  nameWithType: InputReader.OnLook(InputAction.CallbackContext)
+  fullName: InputReader.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnLook
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnLook(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnLook(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnLook*
+  implements:
+  - Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+- uid: Global.InputReader.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnMousePosition(CallbackContext)
+  nameWithType: InputReader.OnMousePosition(InputAction.CallbackContext)
+  fullName: InputReader.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnMousePosition
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnMousePosition(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnMousePosition(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnMousePosition*
+  implements:
+  - Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+- uid: Global.InputReader.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnMove(CallbackContext)
+  nameWithType: InputReader.OnMove(InputAction.CallbackContext)
+  fullName: InputReader.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnMove
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnMove(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnMove(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnMove*
+  implements:
+  - Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.Controls.IPlayerActions
+  commentId: T:Global.Controls.IPlayerActions
+  name: Controls.IPlayerActions
+  nameWithType: Controls.IPlayerActions
+  fullName: Controls.IPlayerActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IPlayerActions
+    name: IPlayerActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IPlayerActions
+    name: IPlayerActions
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Global.Controls
+  commentId: T:Global.Controls
+  name: Controls
+  nameWithType: Controls
+  fullName: Controls
+- uid: Global.InputReader.OnEnable*
+  commentId: Overload:Global.InputReader.OnEnable
+  name: OnEnable
+  nameWithType: InputReader.OnEnable
+  fullName: InputReader.OnEnable
+- uid: Global.InputReader.OnDisable*
+  commentId: Overload:Global.InputReader.OnDisable
+  name: OnDisable
+  nameWithType: InputReader.OnDisable
+  fullName: InputReader.OnDisable
+- uid: Global.InputReader.OnJump*
+  commentId: Overload:Global.InputReader.OnJump
+  name: OnJump
+  nameWithType: InputReader.OnJump
+  fullName: InputReader.OnJump
+- uid: Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnJump(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnJump(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnJump
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnJump
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+- uid: UnityEngine.InputSystem.InputAction.CallbackContext
+  commentId: T:UnityEngine.InputSystem.InputAction.CallbackContext
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputAction.CallbackContext
+  nameWithType: InputAction.CallbackContext
+  fullName: UnityEngine.InputSystem.InputAction.CallbackContext
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: Global.InputReader.OnRestart*
+  commentId: Overload:Global.InputReader.OnRestart
+  name: OnRestart
+  nameWithType: InputReader.OnRestart
+  fullName: InputReader.OnRestart
+- uid: Global.Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnRestart(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnRestart(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnRestart
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnRestart
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+- uid: Global.InputReader.OnLook*
+  commentId: Overload:Global.InputReader.OnLook
+  name: OnLook
+  nameWithType: InputReader.OnLook
+  fullName: InputReader.OnLook
+- uid: Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnLook(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnLook(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnLook
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnLook
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+- uid: Global.InputReader.OnMousePosition*
+  commentId: Overload:Global.InputReader.OnMousePosition
+  name: OnMousePosition
+  nameWithType: InputReader.OnMousePosition
+  fullName: InputReader.OnMousePosition
+- uid: Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnMousePosition(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnMousePosition(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnMousePosition
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnMousePosition
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+- uid: Global.InputReader.OnMove*
+  commentId: Overload:Global.InputReader.OnMove
+  name: OnMove
+  nameWithType: InputReader.OnMove
+  fullName: InputReader.OnMove
+- uid: Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnMove(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnMove(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnMove
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnMove
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )

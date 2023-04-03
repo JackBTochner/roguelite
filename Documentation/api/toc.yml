@@ -1,0 +1,105 @@
+### YamlMime:TableOfContent
+- uid: Global
+  name: ''
+  items:
+  - uid: Global.Actor
+    name: Actor
+  - uid: Global.BoolEventChannelSO
+    name: BoolEventChannelSO
+  - uid: Global.CameraAnchor
+    name: CameraAnchor
+  - uid: Global.CameraManager
+    name: CameraManager
+  - uid: Global.ChatController
+    name: ChatController
+  - uid: Global.ColorChangedEvent
+    name: ColorChangedEvent
+  - uid: Global.Controls
+    name: Controls
+  - uid: Global.Controls.IPlayerActions
+    name: Controls.IPlayerActions
+  - uid: Global.Controls.PlayerActions
+    name: Controls.PlayerActions
+  - uid: Global.ConversationFields
+    name: ConversationFields
+  - uid: Global.DescriptionBaseSO
+    name: DescriptionBaseSO
+  - uid: Global.DialogueManagerAnchorProvider
+    name: DialogueManagerAnchorProvider
+  - uid: Global.DialogueSystemEventsAnchor
+    name: DialogueSystemEventsAnchor
+  - uid: Global.DropdownSample
+    name: DropdownSample
+  - uid: Global.EditorColdStartup
+    name: EditorColdStartup
+  - uid: Global.EnvMapAnimator
+    name: EnvMapAnimator
+  - uid: Global.Exit
+    name: Exit
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - uid: Global.GameSceneSO.GameSceneType
+    name: GameSceneSO.GameSceneType
+  - uid: Global.HSVChangedEvent
+    name: HSVChangedEvent
+  - uid: Global.HubExit
+    name: HubExit
+  - uid: Global.HubNPC
+    name: HubNPC
+  - uid: Global.HubNPCManager
+    name: HubNPCManager
+  - uid: Global.Initializer
+    name: Initializer
+  - uid: Global.InputReader
+    name: InputReader
+  - uid: Global.LEGACY_UILineRenderer
+    name: LEGACY_UILineRenderer
+  - uid: Global.LoadEventChannelSO
+    name: LoadEventChannelSO
+  - uid: Global.LocationSceneSO
+    name: LocationSceneSO
+  - uid: Global.MenuSceneSO
+    name: MenuSceneSO
+  - uid: Global.PersistentManagerSceneSO
+    name: PersistentManagerSceneSO
+  - uid: Global.PlayerCharacter
+    name: PlayerCharacter
+  - uid: Global.PlayerExit
+    name: PlayerExit
+  - uid: Global.PlayerSpawn
+    name: PlayerSpawn
+  - uid: Global.PlayerSpawnSystem
+    name: PlayerSpawnSystem
+  - uid: Global.Run
+    name: Run
+  - uid: Global.RunManager
+    name: RunManager
+  - uid: Global.RunManagerAnchor
+    name: RunManagerAnchor
+  - uid: Global.RunStatistics
+    name: RunStatistics
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase<T>
+    name.vb: RuntimeAnchorBase(Of T)
+  - uid: Global.SceneLoader
+    name: SceneLoader
+  - uid: Global.SerializableScriptableObject
+    name: SerializableScriptableObject
+  - uid: Global.SerializerUtility
+    name: SerializerUtility
+  - uid: Global.StartGame
+    name: StartGame
+  - uid: Global.TestCompression
+    name: TestCompression
+  - uid: Global.TransformAnchor
+    name: TransformAnchor
+  - uid: Global.TransformEventChannelSO
+    name: TransformEventChannelSO
+  - uid: Global.TransitionChannelSO
+    name: TransitionChannelSO
+  - uid: Global.UIGridRenderer
+    name: UIGridRenderer
+  - uid: Global.UIVisibility
+    name: UIVisibility
+  - uid: Global.VoidEventChannelSO
+    name: VoidEventChannelSO

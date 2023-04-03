@@ -1,0 +1,340 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TransitionChannelSO
+  commentId: T:Global.TransitionChannelSO
+  id: TransitionChannelSO
+  parent: Global
+  children:
+  - Global.TransitionChannelSO.FadeIn(System.Single)
+  - Global.TransitionChannelSO.FadeOut(System.Single)
+  - Global.TransitionChannelSO.OnEventRaised
+  langs:
+  - csharp
+  - vb
+  name: TransitionChannelSO
+  nameWithType: TransitionChannelSO
+  fullName: TransitionChannelSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: TransitionChannelSO
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "Events/UI/Transition Channel")]
+
+      public class TransitionChannelSO : DescriptionBaseSO
+    content.vb: >-
+      <CreateAssetMenu(menuName:="Events/UI/Transition Channel")>
+
+      Public Class TransitionChannelSO Inherits DescriptionBaseSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: Events/UI/Transition Channel
+- uid: Global.TransitionChannelSO.OnEventRaised
+  commentId: F:Global.TransitionChannelSO.OnEventRaised
+  id: OnEventRaised
+  parent: Global.TransitionChannelSO
+  langs:
+  - csharp
+  - vb
+  name: OnEventRaised
+  nameWithType: TransitionChannelSO.OnEventRaised
+  fullName: TransitionChannelSO.OnEventRaised
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnEventRaised
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityAction<bool, float, Color> OnEventRaised
+    return:
+      type: UnityEngine.Events.UnityAction{System.Boolean,System.Single,UnityEngine.Color}
+    content.vb: Public OnEventRaised As UnityAction(Of Boolean, Single, Color)
+- uid: Global.TransitionChannelSO.FadeIn(System.Single)
+  commentId: M:Global.TransitionChannelSO.FadeIn(System.Single)
+  id: FadeIn(System.Single)
+  parent: Global.TransitionChannelSO
+  langs:
+  - csharp
+  - vb
+  name: FadeIn(float)
+  nameWithType: TransitionChannelSO.FadeIn(float)
+  fullName: TransitionChannelSO.FadeIn(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: FadeIn
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nFade helper function to simplify usage. Fades the screen in to gameplay.\n"
+  example: []
+  syntax:
+    content: public void FadeIn(float duration)
+    parameters:
+    - id: duration
+      type: System.Single
+      description: How long it takes to the image to fade in.
+    content.vb: Public Sub FadeIn(duration As Single)
+  overload: Global.TransitionChannelSO.FadeIn*
+  nameWithType.vb: TransitionChannelSO.FadeIn(Single)
+  fullName.vb: TransitionChannelSO.FadeIn(Single)
+  name.vb: FadeIn(Single)
+- uid: Global.TransitionChannelSO.FadeOut(System.Single)
+  commentId: M:Global.TransitionChannelSO.FadeOut(System.Single)
+  id: FadeOut(System.Single)
+  parent: Global.TransitionChannelSO
+  langs:
+  - csharp
+  - vb
+  name: FadeOut(float)
+  nameWithType: TransitionChannelSO.FadeOut(float)
+  fullName: TransitionChannelSO.FadeOut(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: FadeOut
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nFade helper function to simplify usage. Fades the screen out to black.\n"
+  example: []
+  syntax:
+    content: public void FadeOut(float duration)
+    parameters:
+    - id: duration
+      type: System.Single
+      description: How long it takes to the image to fade out.
+    content.vb: Public Sub FadeOut(duration As Single)
+  overload: Global.TransitionChannelSO.FadeOut*
+  nameWithType.vb: TransitionChannelSO.FadeOut(Single)
+  fullName.vb: TransitionChannelSO.FadeOut(Single)
+  name.vb: FadeOut(Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityAction{System.Boolean,System.Single,UnityEngine.Color}
+  commentId: T:UnityEngine.Events.UnityAction{System.Boolean,System.Single,UnityEngine.Color}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityAction`3
+  name: UnityAction<bool, float, Color>
+  nameWithType: UnityAction<bool, float, Color>
+  fullName: UnityEngine.Events.UnityAction<bool, float, UnityEngine.Color>
+  nameWithType.vb: UnityAction(Of Boolean, Single, Color)
+  fullName.vb: UnityEngine.Events.UnityAction(Of Boolean, Single, UnityEngine.Color)
+  name.vb: UnityAction(Of Boolean, Single, Color)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`3
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`3
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Events.UnityAction`3
+  commentId: T:UnityEngine.Events.UnityAction`3
+  isExternal: true
+  name: UnityAction<T0, T1, T2>
+  nameWithType: UnityAction<T0, T1, T2>
+  fullName: UnityEngine.Events.UnityAction<T0, T1, T2>
+  nameWithType.vb: UnityAction(Of T0, T1, T2)
+  fullName.vb: UnityEngine.Events.UnityAction(Of T0, T1, T2)
+  name.vb: UnityAction(Of T0, T1, T2)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`3
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`3
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.TransitionChannelSO.FadeIn*
+  commentId: Overload:Global.TransitionChannelSO.FadeIn
+  name: FadeIn
+  nameWithType: TransitionChannelSO.FadeIn
+  fullName: TransitionChannelSO.FadeIn
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.TransitionChannelSO.FadeOut*
+  commentId: Overload:Global.TransitionChannelSO.FadeOut
+  name: FadeOut
+  nameWithType: TransitionChannelSO.FadeOut
+  fullName: TransitionChannelSO.FadeOut

@@ -1,0 +1,250 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Controls.IPlayerActions
+  commentId: T:Global.Controls.IPlayerActions
+  id: Controls.IPlayerActions
+  parent: Global
+  children:
+  - Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  langs:
+  - csharp
+  - vb
+  name: Controls.IPlayerActions
+  nameWithType: Controls.IPlayerActions
+  fullName: Controls.IPlayerActions
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: IPlayerActions
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 376
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public interface Controls.IPlayerActions
+    content.vb: Public Interface Controls.IPlayerActions
+- uid: Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnJump(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnJump(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnJump
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 378
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnJump(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnJump(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnJump*
+- uid: Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnMove(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnMove(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnMove
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 379
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnMove(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnMove(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnMove*
+- uid: Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnLook(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnLook(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnLook
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 380
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnLook(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnLook(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnLook*
+- uid: Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnMousePosition(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnMousePosition(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnMousePosition
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 381
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnMousePosition(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnMousePosition(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnMousePosition*
+- uid: Global.Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnRestart(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnRestart(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnRestart(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnRestart
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 382
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnRestart(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnRestart(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnRestart*
+references:
+- uid: Global
+- uid: Global.Controls.IPlayerActions.OnJump*
+  commentId: Overload:Global.Controls.IPlayerActions.OnJump
+  name: OnJump
+  nameWithType: Controls.IPlayerActions.OnJump
+  fullName: Controls.IPlayerActions.OnJump
+- uid: UnityEngine.InputSystem.InputAction.CallbackContext
+  commentId: T:UnityEngine.InputSystem.InputAction.CallbackContext
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputAction.CallbackContext
+  nameWithType: InputAction.CallbackContext
+  fullName: UnityEngine.InputSystem.InputAction.CallbackContext
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: Global.Controls.IPlayerActions.OnMove*
+  commentId: Overload:Global.Controls.IPlayerActions.OnMove
+  name: OnMove
+  nameWithType: Controls.IPlayerActions.OnMove
+  fullName: Controls.IPlayerActions.OnMove
+- uid: Global.Controls.IPlayerActions.OnLook*
+  commentId: Overload:Global.Controls.IPlayerActions.OnLook
+  name: OnLook
+  nameWithType: Controls.IPlayerActions.OnLook
+  fullName: Controls.IPlayerActions.OnLook
+- uid: Global.Controls.IPlayerActions.OnMousePosition*
+  commentId: Overload:Global.Controls.IPlayerActions.OnMousePosition
+  name: OnMousePosition
+  nameWithType: Controls.IPlayerActions.OnMousePosition
+  fullName: Controls.IPlayerActions.OnMousePosition
+- uid: Global.Controls.IPlayerActions.OnRestart*
+  commentId: Overload:Global.Controls.IPlayerActions.OnRestart
+  name: OnRestart
+  nameWithType: Controls.IPlayerActions.OnRestart
+  fullName: Controls.IPlayerActions.OnRestart

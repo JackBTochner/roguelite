@@ -1,0 +1,400 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LEGACY_UILineRenderer
+  commentId: T:Global.LEGACY_UILineRenderer
+  id: LEGACY_UILineRenderer
+  parent: Global
+  children:
+  - Global.LEGACY_UILineRenderer.gridSize
+  - Global.LEGACY_UILineRenderer.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  - Global.LEGACY_UILineRenderer.points
+  - Global.LEGACY_UILineRenderer.thickness
+  langs:
+  - csharp
+  - vb
+  name: LEGACY_UILineRenderer
+  nameWithType: LEGACY_UILineRenderer
+  fullName: LEGACY_UILineRenderer
+  type: Class
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: LEGACY_UILineRenderer
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: 'public class LEGACY_UILineRenderer : Graphic'
+    content.vb: Public Class LEGACY_UILineRenderer Inherits Graphic
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - UnityEngine.EventSystems.UIBehaviour
+  - UnityEngine.UI.Graphic
+- uid: Global.LEGACY_UILineRenderer.points
+  commentId: F:Global.LEGACY_UILineRenderer.points
+  id: points
+  parent: Global.LEGACY_UILineRenderer
+  langs:
+  - csharp
+  - vb
+  name: points
+  nameWithType: LEGACY_UILineRenderer.points
+  fullName: LEGACY_UILineRenderer.points
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: points
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: public List<Vector2> points
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+    content.vb: Public points As List(Of Vector2)
+- uid: Global.LEGACY_UILineRenderer.thickness
+  commentId: F:Global.LEGACY_UILineRenderer.thickness
+  id: thickness
+  parent: Global.LEGACY_UILineRenderer
+  langs:
+  - csharp
+  - vb
+  name: thickness
+  nameWithType: LEGACY_UILineRenderer.thickness
+  fullName: LEGACY_UILineRenderer.thickness
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: thickness
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: public float thickness
+    return:
+      type: System.Single
+    content.vb: Public thickness As Single
+- uid: Global.LEGACY_UILineRenderer.gridSize
+  commentId: F:Global.LEGACY_UILineRenderer.gridSize
+  id: gridSize
+  parent: Global.LEGACY_UILineRenderer
+  langs:
+  - csharp
+  - vb
+  name: gridSize
+  nameWithType: LEGACY_UILineRenderer.gridSize
+  fullName: LEGACY_UILineRenderer.gridSize
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: gridSize
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: public Vector2Int gridSize
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public gridSize As Vector2Int
+- uid: Global.LEGACY_UILineRenderer.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  commentId: M:Global.LEGACY_UILineRenderer.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  id: OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  parent: Global.LEGACY_UILineRenderer
+  langs:
+  - csharp
+  - vb
+  name: OnPopulateMesh(VertexHelper)
+  nameWithType: LEGACY_UILineRenderer.OnPopulateMesh(VertexHelper)
+  fullName: LEGACY_UILineRenderer.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  type: Method
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnPopulateMesh
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: protected override void OnPopulateMesh(VertexHelper vh)
+    parameters:
+    - id: vh
+      type: UnityEngine.UI.VertexHelper
+    content.vb: Protected Overrides Sub OnPopulateMesh(vh As VertexHelper)
+  overridden: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  overload: Global.LEGACY_UILineRenderer.OnPopulateMesh*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.EventSystems.UIBehaviour
+  commentId: T:UnityEngine.EventSystems.UIBehaviour
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: UIBehaviour
+  nameWithType: UIBehaviour
+  fullName: UnityEngine.EventSystems.UIBehaviour
+- uid: UnityEngine.UI.Graphic
+  commentId: T:UnityEngine.UI.Graphic
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Graphic
+  nameWithType: Graphic
+  fullName: UnityEngine.UI.Graphic
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: System.Collections.Generic.List{UnityEngine.Vector2}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector2>
+  nameWithType: List<Vector2>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2>
+  nameWithType.vb: List(Of Vector2)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2)
+  name.vb: List(Of Vector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  commentId: M:UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  parent: UnityEngine.UI.Graphic
+  isExternal: true
+  name: OnPopulateMesh(VertexHelper)
+  nameWithType: Graphic.OnPopulateMesh(VertexHelper)
+  fullName: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  spec.csharp:
+  - uid: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+    name: OnPopulateMesh
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UI.VertexHelper
+    name: VertexHelper
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+    name: OnPopulateMesh
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UI.VertexHelper
+    name: VertexHelper
+    isExternal: true
+  - name: )
+- uid: Global.LEGACY_UILineRenderer.OnPopulateMesh*
+  commentId: Overload:Global.LEGACY_UILineRenderer.OnPopulateMesh
+  name: OnPopulateMesh
+  nameWithType: LEGACY_UILineRenderer.OnPopulateMesh
+  fullName: LEGACY_UILineRenderer.OnPopulateMesh
+- uid: UnityEngine.UI.VertexHelper
+  commentId: T:UnityEngine.UI.VertexHelper
+  parent: UnityEngine.UI
+  isExternal: true
+  name: VertexHelper
+  nameWithType: VertexHelper
+  fullName: UnityEngine.UI.VertexHelper

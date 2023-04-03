@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Controls.PlayerActions
+  commentId: T:Global.Controls.PlayerActions
+  id: Controls.PlayerActions
+  parent: Global
+  children:
+  - Global.Controls.PlayerActions.#ctor(Controls)
+  - Global.Controls.PlayerActions.Disable
+  - Global.Controls.PlayerActions.Enable
+  - Global.Controls.PlayerActions.enabled
+  - Global.Controls.PlayerActions.Get
+  - Global.Controls.PlayerActions.Jump
+  - Global.Controls.PlayerActions.Look
+  - Global.Controls.PlayerActions.MousePosition
+  - Global.Controls.PlayerActions.Move
+  - Global.Controls.PlayerActions.op_Implicit(Controls.PlayerActions)~UnityEngine.InputSystem.InputActionMap
+  - Global.Controls.PlayerActions.Restart
+  - Global.Controls.PlayerActions.SetCallbacks(Controls.IPlayerActions)
+  langs:
+  - csharp
+  - vb
+  name: Controls.PlayerActions
+  nameWithType: Controls.PlayerActions
+  fullName: Controls.PlayerActions
+  type: Struct
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayerActions
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 302
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public struct Controls.PlayerActions
+    content.vb: Public Structure Controls.PlayerActions
+- uid: Global.Controls.PlayerActions.#ctor(Controls)
+  commentId: M:Global.Controls.PlayerActions.#ctor(Controls)
+  id: '#ctor(Controls)'
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: PlayerActions(Controls)
+  nameWithType: Controls.PlayerActions.PlayerActions(Controls)
+  fullName: Controls.PlayerActions.PlayerActions(Controls)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: .ctor
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 305
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public PlayerActions(Controls wrapper)
+    parameters:
+    - id: wrapper
+      type: Global.Controls
+    content.vb: Public Sub New(wrapper As Controls)
+  overload: Global.Controls.PlayerActions.#ctor*
+  nameWithType.vb: Controls.PlayerActions.New(Controls)
+  fullName.vb: Controls.PlayerActions.New(Controls)
+  name.vb: New(Controls)
+- uid: Global.Controls.PlayerActions.Jump
+  commentId: P:Global.Controls.PlayerActions.Jump
+  id: Jump
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Jump
+  nameWithType: Controls.PlayerActions.Jump
+  fullName: Controls.PlayerActions.Jump
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Jump
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 306
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Jump { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Jump As InputAction
+  overload: Global.Controls.PlayerActions.Jump*
+- uid: Global.Controls.PlayerActions.Move
+  commentId: P:Global.Controls.PlayerActions.Move
+  id: Move
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Move
+  nameWithType: Controls.PlayerActions.Move
+  fullName: Controls.PlayerActions.Move
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Move
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 307
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Move { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Move As InputAction
+  overload: Global.Controls.PlayerActions.Move*
+- uid: Global.Controls.PlayerActions.Look
+  commentId: P:Global.Controls.PlayerActions.Look
+  id: Look
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Look
+  nameWithType: Controls.PlayerActions.Look
+  fullName: Controls.PlayerActions.Look
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Look
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 308
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Look { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Look As InputAction
+  overload: Global.Controls.PlayerActions.Look*
+- uid: Global.Controls.PlayerActions.MousePosition
+  commentId: P:Global.Controls.PlayerActions.MousePosition
+  id: MousePosition
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: MousePosition
+  nameWithType: Controls.PlayerActions.MousePosition
+  fullName: Controls.PlayerActions.MousePosition
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: MousePosition
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 309
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction MousePosition { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property MousePosition As InputAction
+  overload: Global.Controls.PlayerActions.MousePosition*
+- uid: Global.Controls.PlayerActions.Restart
+  commentId: P:Global.Controls.PlayerActions.Restart
+  id: Restart
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Restart
+  nameWithType: Controls.PlayerActions.Restart
+  fullName: Controls.PlayerActions.Restart
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Restart
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 310
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Restart { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Restart As InputAction
+  overload: Global.Controls.PlayerActions.Restart*
+- uid: Global.Controls.PlayerActions.Get
+  commentId: M:Global.Controls.PlayerActions.Get
+  id: Get
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: Controls.PlayerActions.Get()
+  fullName: Controls.PlayerActions.Get()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Get
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 311
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputActionMap Get()
+    return:
+      type: UnityEngine.InputSystem.InputActionMap
+    content.vb: Public Function [Get]() As InputActionMap
+  overload: Global.Controls.PlayerActions.Get*
+- uid: Global.Controls.PlayerActions.Enable
+  commentId: M:Global.Controls.PlayerActions.Enable
+  id: Enable
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Enable()
+  nameWithType: Controls.PlayerActions.Enable()
+  fullName: Controls.PlayerActions.Enable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Enable
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 312
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Enable()
+    content.vb: Public Sub Enable()
+  overload: Global.Controls.PlayerActions.Enable*
+- uid: Global.Controls.PlayerActions.Disable
+  commentId: M:Global.Controls.PlayerActions.Disable
+  id: Disable
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: Controls.PlayerActions.Disable()
+  fullName: Controls.PlayerActions.Disable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Disable
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 313
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Disable()
+    content.vb: Public Sub Disable()
+  overload: Global.Controls.PlayerActions.Disable*
+- uid: Global.Controls.PlayerActions.enabled
+  commentId: P:Global.Controls.PlayerActions.enabled
+  id: enabled
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: enabled
+  nameWithType: Controls.PlayerActions.enabled
+  fullName: Controls.PlayerActions.enabled
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: enabled
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 314
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool enabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property enabled As Boolean
+  overload: Global.Controls.PlayerActions.enabled*
+- uid: Global.Controls.PlayerActions.op_Implicit(Controls.PlayerActions)~UnityEngine.InputSystem.InputActionMap
+  commentId: M:Global.Controls.PlayerActions.op_Implicit(Controls.PlayerActions)~UnityEngine.InputSystem.InputActionMap
+  id: op_Implicit(Controls.PlayerActions)~UnityEngine.InputSystem.InputActionMap
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: implicit operator InputActionMap(PlayerActions)
+  nameWithType: Controls.PlayerActions.implicit operator InputActionMap(Controls.PlayerActions)
+  fullName: Controls.PlayerActions.implicit operator UnityEngine.InputSystem.InputActionMap(Controls.PlayerActions)
+  type: Operator
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: op_Implicit
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 315
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static implicit operator InputActionMap(Controls.PlayerActions set)
+    parameters:
+    - id: set
+      type: Global.Controls.PlayerActions
+    return:
+      type: UnityEngine.InputSystem.InputActionMap
+    content.vb: Public Shared Widening Operator CType([set] As Controls.PlayerActions) As InputActionMap
+  overload: Global.Controls.PlayerActions.op_Implicit*
+  nameWithType.vb: Controls.PlayerActions.CType(Controls.PlayerActions)
+  fullName.vb: Controls.PlayerActions.CType(Controls.PlayerActions)
+  name.vb: CType(PlayerActions)
+- uid: Global.Controls.PlayerActions.SetCallbacks(Controls.IPlayerActions)
+  commentId: M:Global.Controls.PlayerActions.SetCallbacks(Controls.IPlayerActions)
+  id: SetCallbacks(Controls.IPlayerActions)
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: SetCallbacks(IPlayerActions)
+  nameWithType: Controls.PlayerActions.SetCallbacks(Controls.IPlayerActions)
+  fullName: Controls.PlayerActions.SetCallbacks(Controls.IPlayerActions)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SetCallbacks
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 316
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetCallbacks(Controls.IPlayerActions instance)
+    parameters:
+    - id: instance
+      type: Global.Controls.IPlayerActions
+    content.vb: Public Sub SetCallbacks(instance As Controls.IPlayerActions)
+  overload: Global.Controls.PlayerActions.SetCallbacks*
+references:
+- uid: Global
+- uid: Global.Controls.PlayerActions.#ctor*
+  commentId: Overload:Global.Controls.PlayerActions.#ctor
+  name: PlayerActions
+  nameWithType: Controls.PlayerActions.PlayerActions
+  fullName: Controls.PlayerActions.PlayerActions
+  nameWithType.vb: Controls.PlayerActions.New
+  fullName.vb: Controls.PlayerActions.New
+  name.vb: New
+- uid: Global.Controls
+  commentId: T:Global.Controls
+  name: Controls
+  nameWithType: Controls
+  fullName: Controls
+- uid: Global.Controls.PlayerActions.Jump*
+  commentId: Overload:Global.Controls.PlayerActions.Jump
+  name: Jump
+  nameWithType: Controls.PlayerActions.Jump
+  fullName: Controls.PlayerActions.Jump
+- uid: UnityEngine.InputSystem.InputAction
+  commentId: T:UnityEngine.InputSystem.InputAction
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputAction
+  nameWithType: InputAction
+  fullName: UnityEngine.InputSystem.InputAction
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: Global.Controls.PlayerActions.Move*
+  commentId: Overload:Global.Controls.PlayerActions.Move
+  name: Move
+  nameWithType: Controls.PlayerActions.Move
+  fullName: Controls.PlayerActions.Move
+- uid: Global.Controls.PlayerActions.Look*
+  commentId: Overload:Global.Controls.PlayerActions.Look
+  name: Look
+  nameWithType: Controls.PlayerActions.Look
+  fullName: Controls.PlayerActions.Look
+- uid: Global.Controls.PlayerActions.MousePosition*
+  commentId: Overload:Global.Controls.PlayerActions.MousePosition
+  name: MousePosition
+  nameWithType: Controls.PlayerActions.MousePosition
+  fullName: Controls.PlayerActions.MousePosition
+- uid: Global.Controls.PlayerActions.Restart*
+  commentId: Overload:Global.Controls.PlayerActions.Restart
+  name: Restart
+  nameWithType: Controls.PlayerActions.Restart
+  fullName: Controls.PlayerActions.Restart
+- uid: Global.Controls.PlayerActions.Get*
+  commentId: Overload:Global.Controls.PlayerActions.Get
+  name: Get
+  nameWithType: Controls.PlayerActions.Get
+  fullName: Controls.PlayerActions.Get
+- uid: UnityEngine.InputSystem.InputActionMap
+  commentId: T:UnityEngine.InputSystem.InputActionMap
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputActionMap
+  nameWithType: InputActionMap
+  fullName: UnityEngine.InputSystem.InputActionMap
+- uid: Global.Controls.PlayerActions.Enable*
+  commentId: Overload:Global.Controls.PlayerActions.Enable
+  name: Enable
+  nameWithType: Controls.PlayerActions.Enable
+  fullName: Controls.PlayerActions.Enable
+- uid: Global.Controls.PlayerActions.Disable*
+  commentId: Overload:Global.Controls.PlayerActions.Disable
+  name: Disable
+  nameWithType: Controls.PlayerActions.Disable
+  fullName: Controls.PlayerActions.Disable
+- uid: Global.Controls.PlayerActions.enabled*
+  commentId: Overload:Global.Controls.PlayerActions.enabled
+  name: enabled
+  nameWithType: Controls.PlayerActions.enabled
+  fullName: Controls.PlayerActions.enabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Controls.PlayerActions.op_Implicit*
+  commentId: Overload:Global.Controls.PlayerActions.op_Implicit
+  name: implicit operator
+  nameWithType: Controls.PlayerActions.implicit operator
+  fullName: Controls.PlayerActions.implicit operator
+  nameWithType.vb: Controls.PlayerActions.CType
+  fullName.vb: Controls.PlayerActions.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Global.Controls.PlayerActions
+  commentId: T:Global.Controls.PlayerActions
+  name: Controls.PlayerActions
+  nameWithType: Controls.PlayerActions
+  fullName: Controls.PlayerActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.PlayerActions
+    name: PlayerActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.PlayerActions
+    name: PlayerActions
+- uid: Global.Controls.PlayerActions.SetCallbacks*
+  commentId: Overload:Global.Controls.PlayerActions.SetCallbacks
+  name: SetCallbacks
+  nameWithType: Controls.PlayerActions.SetCallbacks
+  fullName: Controls.PlayerActions.SetCallbacks
+- uid: Global.Controls.IPlayerActions
+  commentId: T:Global.Controls.IPlayerActions
+  name: Controls.IPlayerActions
+  nameWithType: Controls.IPlayerActions
+  fullName: Controls.IPlayerActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IPlayerActions
+    name: IPlayerActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IPlayerActions
+    name: IPlayerActions

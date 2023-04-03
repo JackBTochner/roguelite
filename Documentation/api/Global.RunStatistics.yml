@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RunStatistics
+  commentId: T:Global.RunStatistics
+  id: RunStatistics
+  parent: Global
+  children:
+  - Global.RunStatistics.boonsGained
+  - Global.RunStatistics.bossNodesTravelled
+  - Global.RunStatistics.characterBoons
+  - Global.RunStatistics.currencyGained
+  - Global.RunStatistics.currencySpent
+  - Global.RunStatistics.diedTo
+  - Global.RunStatistics.enemiesDefeated
+  - Global.RunStatistics.nodesTravelled
+  - Global.RunStatistics.VisitedEncounters
+  langs:
+  - csharp
+  - vb
+  name: RunStatistics
+  nameWithType: RunStatistics
+  fullName: RunStatistics
+  type: Struct
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RunStatistics
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 104
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct RunStatistics
+    content.vb: >-
+      <Serializable>
+
+      Public Structure RunStatistics
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.RunStatistics.VisitedEncounters
+  commentId: F:Global.RunStatistics.VisitedEncounters
+  id: VisitedEncounters
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: VisitedEncounters
+  nameWithType: RunStatistics.VisitedEncounters
+  fullName: RunStatistics.VisitedEncounters
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: VisitedEncounters
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> VisitedEncounters
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public VisitedEncounters As List(Of String)
+- uid: Global.RunStatistics.nodesTravelled
+  commentId: F:Global.RunStatistics.nodesTravelled
+  id: nodesTravelled
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: nodesTravelled
+  nameWithType: RunStatistics.nodesTravelled
+  fullName: RunStatistics.nodesTravelled
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: nodesTravelled
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 108
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int nodesTravelled
+    return:
+      type: System.Int32
+    content.vb: Public nodesTravelled As Integer
+- uid: Global.RunStatistics.bossNodesTravelled
+  commentId: F:Global.RunStatistics.bossNodesTravelled
+  id: bossNodesTravelled
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: bossNodesTravelled
+  nameWithType: RunStatistics.bossNodesTravelled
+  fullName: RunStatistics.bossNodesTravelled
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: bossNodesTravelled
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 109
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int bossNodesTravelled
+    return:
+      type: System.Int32
+    content.vb: Public bossNodesTravelled As Integer
+- uid: Global.RunStatistics.enemiesDefeated
+  commentId: F:Global.RunStatistics.enemiesDefeated
+  id: enemiesDefeated
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: enemiesDefeated
+  nameWithType: RunStatistics.enemiesDefeated
+  fullName: RunStatistics.enemiesDefeated
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: enemiesDefeated
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Dictionary<string, int> enemiesDefeated
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+    content.vb: Public enemiesDefeated As Dictionary(Of String, Integer)
+- uid: Global.RunStatistics.diedTo
+  commentId: F:Global.RunStatistics.diedTo
+  id: diedTo
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: diedTo
+  nameWithType: RunStatistics.diedTo
+  fullName: RunStatistics.diedTo
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: diedTo
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public string diedTo
+    return:
+      type: System.String
+    content.vb: Public diedTo As String
+- uid: Global.RunStatistics.currencyGained
+  commentId: F:Global.RunStatistics.currencyGained
+  id: currencyGained
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: currencyGained
+  nameWithType: RunStatistics.currencyGained
+  fullName: RunStatistics.currencyGained
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: currencyGained
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 114
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int currencyGained
+    return:
+      type: System.Int32
+    content.vb: Public currencyGained As Integer
+- uid: Global.RunStatistics.currencySpent
+  commentId: F:Global.RunStatistics.currencySpent
+  id: currencySpent
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: currencySpent
+  nameWithType: RunStatistics.currencySpent
+  fullName: RunStatistics.currencySpent
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: currencySpent
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 115
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int currencySpent
+    return:
+      type: System.Int32
+    content.vb: Public currencySpent As Integer
+- uid: Global.RunStatistics.boonsGained
+  commentId: F:Global.RunStatistics.boonsGained
+  id: boonsGained
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: boonsGained
+  nameWithType: RunStatistics.boonsGained
+  fullName: RunStatistics.boonsGained
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: boonsGained
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int boonsGained
+    return:
+      type: System.Int32
+    content.vb: Public boonsGained As Integer
+- uid: Global.RunStatistics.characterBoons
+  commentId: F:Global.RunStatistics.characterBoons
+  id: characterBoons
+  parent: Global.RunStatistics
+  langs:
+  - csharp
+  - vb
+  name: characterBoons
+  nameWithType: RunStatistics.characterBoons
+  fullName: RunStatistics.characterBoons
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: characterBoons
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 118
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Dictionary<string, int> characterBoons
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+    content.vb: Public characterBoons As Dictionary(Of String, Integer)
+references:
+- uid: Global
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<string, int>
+  nameWithType: Dictionary<string, int>
+  fullName: System.Collections.Generic.Dictionary<string, int>
+  nameWithType.vb: Dictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Integer)
+  name.vb: Dictionary(Of String, Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

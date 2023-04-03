@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.GameSceneSO
+  commentId: T:Global.GameSceneSO
+  id: GameSceneSO
+  parent: Global
+  children:
+  - Global.GameSceneSO.sceneReference
+  - Global.GameSceneSO.sceneType
+  langs:
+  - csharp
+  - vb
+  name: GameSceneSO
+  nameWithType: GameSceneSO
+  fullName: GameSceneSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: GameSceneSO
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nA ScriptableObject template which contains necessary data that is common in all game scenes (Locations, Managers, Menus, (music?)), and acts as an addressable identifier.\n"
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "NewGameplayScene", menuName = "Scene Data/Gameplay")]
+
+      public class GameSceneSO : DescriptionBaseSO
+    content.vb: >-
+      <CreateAssetMenu(fileName:="NewGameplayScene", menuName:="Scene Data/Gameplay")>
+
+      Public Class GameSceneSO Inherits DescriptionBaseSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  derivedClasses:
+  - Global.LocationSceneSO
+  - Global.MenuSceneSO
+  - Global.PersistentManagerSceneSO
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: NewGameplayScene
+    - name: menuName
+      type: System.String
+      value: Scene Data/Gameplay
+- uid: Global.GameSceneSO.sceneType
+  commentId: F:Global.GameSceneSO.sceneType
+  id: sceneType
+  parent: Global.GameSceneSO
+  langs:
+  - csharp
+  - vb
+  name: sceneType
+  nameWithType: GameSceneSO.sceneType
+  fullName: GameSceneSO.sceneType
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: sceneType
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameSceneSO.GameSceneType sceneType
+    return:
+      type: Global.GameSceneSO.GameSceneType
+    content.vb: Public sceneType As GameSceneSO.GameSceneType
+- uid: Global.GameSceneSO.sceneReference
+  commentId: F:Global.GameSceneSO.sceneReference
+  id: sceneReference
+  parent: Global.GameSceneSO
+  langs:
+  - csharp
+  - vb
+  name: sceneReference
+  nameWithType: GameSceneSO.sceneReference
+  fullName: GameSceneSO.sceneReference
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: sceneReference
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public AssetReference sceneReference
+    return:
+      type: UnityEngine.AddressableAssets.AssetReference
+    content.vb: Public sceneReference As AssetReference
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.GameSceneSO.GameSceneType
+  commentId: T:Global.GameSceneSO.GameSceneType
+  name: GameSceneSO.GameSceneType
+  nameWithType: GameSceneSO.GameSceneType
+  fullName: GameSceneSO.GameSceneType
+  spec.csharp:
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - name: .
+  - uid: Global.GameSceneSO.GameSceneType
+    name: GameSceneType
+  spec.vb:
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - name: .
+  - uid: Global.GameSceneSO.GameSceneType
+    name: GameSceneType
+- uid: UnityEngine.AddressableAssets.AssetReference
+  commentId: T:UnityEngine.AddressableAssets.AssetReference
+  parent: UnityEngine.AddressableAssets
+  isExternal: true
+  name: AssetReference
+  nameWithType: AssetReference
+  fullName: UnityEngine.AddressableAssets.AssetReference
+- uid: UnityEngine.AddressableAssets
+  commentId: N:UnityEngine.AddressableAssets
+  isExternal: true
+  name: UnityEngine.AddressableAssets
+  nameWithType: UnityEngine.AddressableAssets
+  fullName: UnityEngine.AddressableAssets
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.AddressableAssets
+    name: AddressableAssets
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.AddressableAssets
+    name: AddressableAssets
+    isExternal: true

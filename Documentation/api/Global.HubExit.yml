@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.HubExit
+  commentId: T:Global.HubExit
+  id: HubExit
+  parent: Global
+  children:
+  - Global.HubExit.ExitTriggered(UnityEngine.Collider)
+  langs:
+  - csharp
+  - vb
+  name: HubExit
+  nameWithType: HubExit
+  fullName: HubExit
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Level/HubExit.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: HubExit
+    path: ../Assets/Scripts/Level/HubExit.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class HubExit : Exit'
+    content.vb: Public Class HubExit Inherits Exit
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.Exit
+  inheritedMembers:
+  - Global.Exit.loadsSceneByName
+  - Global.Exit.nextSceneName
+  - Global.Exit.locked
+  - Global.Exit.PlayerEnteredExit
+- uid: Global.HubExit.ExitTriggered(UnityEngine.Collider)
+  commentId: M:Global.HubExit.ExitTriggered(UnityEngine.Collider)
+  id: ExitTriggered(UnityEngine.Collider)
+  parent: Global.HubExit
+  langs:
+  - csharp
+  - vb
+  name: ExitTriggered(Collider)
+  nameWithType: HubExit.ExitTriggered(Collider)
+  fullName: HubExit.ExitTriggered(UnityEngine.Collider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Level/HubExit.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ExitTriggered
+    path: ../Assets/Scripts/Level/HubExit.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void ExitTriggered(Collider other)
+    parameters:
+    - id: other
+      type: UnityEngine.Collider
+    content.vb: Public Overrides Sub ExitTriggered(other As Collider)
+  overridden: Global.Exit.ExitTriggered(UnityEngine.Collider)
+  overload: Global.HubExit.ExitTriggered*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.Exit
+  commentId: T:Global.Exit
+  name: Exit
+  nameWithType: Exit
+  fullName: Exit
+- uid: Global.Exit.loadsSceneByName
+  commentId: F:Global.Exit.loadsSceneByName
+  parent: Global.Exit
+  name: loadsSceneByName
+  nameWithType: Exit.loadsSceneByName
+  fullName: Exit.loadsSceneByName
+- uid: Global.Exit.nextSceneName
+  commentId: F:Global.Exit.nextSceneName
+  parent: Global.Exit
+  name: nextSceneName
+  nameWithType: Exit.nextSceneName
+  fullName: Exit.nextSceneName
+- uid: Global.Exit.locked
+  commentId: F:Global.Exit.locked
+  parent: Global.Exit
+  name: locked
+  nameWithType: Exit.locked
+  fullName: Exit.locked
+- uid: Global.Exit.PlayerEnteredExit
+  commentId: F:Global.Exit.PlayerEnteredExit
+  parent: Global.Exit
+  name: PlayerEnteredExit
+  nameWithType: Exit.PlayerEnteredExit
+  fullName: Exit.PlayerEnteredExit
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.Exit.ExitTriggered(UnityEngine.Collider)
+  commentId: M:Global.Exit.ExitTriggered(UnityEngine.Collider)
+  parent: Global.Exit
+  isExternal: true
+  name: ExitTriggered(Collider)
+  nameWithType: Exit.ExitTriggered(Collider)
+  fullName: Exit.ExitTriggered(UnityEngine.Collider)
+  spec.csharp:
+  - uid: Global.Exit.ExitTriggered(UnityEngine.Collider)
+    name: ExitTriggered
+  - name: (
+  - uid: UnityEngine.Collider
+    name: Collider
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Exit.ExitTriggered(UnityEngine.Collider)
+    name: ExitTriggered
+  - name: (
+  - uid: UnityEngine.Collider
+    name: Collider
+    isExternal: true
+  - name: )
+- uid: Global.HubExit.ExitTriggered*
+  commentId: Overload:Global.HubExit.ExitTriggered
+  name: ExitTriggered
+  nameWithType: HubExit.ExitTriggered
+  fullName: HubExit.ExitTriggered
+- uid: UnityEngine.Collider
+  commentId: T:UnityEngine.Collider
+  parent: UnityEngine
+  isExternal: true
+  name: Collider
+  nameWithType: Collider
+  fullName: UnityEngine.Collider

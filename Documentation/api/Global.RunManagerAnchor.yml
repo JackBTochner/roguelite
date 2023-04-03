@@ -1,0 +1,290 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RunManagerAnchor
+  commentId: T:Global.RunManagerAnchor
+  id: RunManagerAnchor
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: RunManagerAnchor
+  nameWithType: RunManagerAnchor
+  fullName: RunManagerAnchor
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/RuntimeAnchors/RunManagerAnchor.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RunManagerAnchor
+    path: ../Assets/Scripts/RuntimeAnchors/RunManagerAnchor.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "Runtime Anchors/RunManager")]
+
+      public class RunManagerAnchor : RuntimeAnchorBase<RunManager>
+    content.vb: >-
+      <CreateAssetMenu(menuName:="Runtime Anchors/RunManager")>
+
+      Public Class RunManagerAnchor Inherits RuntimeAnchorBase(Of RunManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  - Global.RuntimeAnchorBase{RunManager}
+  inheritedMembers:
+  - Global.RuntimeAnchorBase{RunManager}.OnAnchorProvided
+  - Global.RuntimeAnchorBase{RunManager}.isSet
+  - Global.RuntimeAnchorBase{RunManager}.Value
+  - Global.RuntimeAnchorBase{RunManager}.Provide(RunManager)
+  - Global.RuntimeAnchorBase{RunManager}.Unset
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: Runtime Anchors/RunManager
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.RuntimeAnchorBase{RunManager}
+  commentId: T:Global.RuntimeAnchorBase{RunManager}
+  definition: Global.RuntimeAnchorBase`1
+  name: RuntimeAnchorBase<RunManager>
+  nameWithType: RuntimeAnchorBase<RunManager>
+  fullName: RuntimeAnchorBase<RunManager>
+  nameWithType.vb: RuntimeAnchorBase(Of RunManager)
+  fullName.vb: RuntimeAnchorBase(Of RunManager)
+  name.vb: RuntimeAnchorBase(Of RunManager)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: <
+  - uid: Global.RunManager
+    name: RunManager
+  - name: '>'
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.RunManager
+    name: RunManager
+  - name: )
+- uid: Global.RuntimeAnchorBase{RunManager}.OnAnchorProvided
+  commentId: F:Global.RuntimeAnchorBase{RunManager}.OnAnchorProvided
+  parent: Global.RuntimeAnchorBase{RunManager}
+  definition: Global.RuntimeAnchorBase`1.OnAnchorProvided
+  name: OnAnchorProvided
+  nameWithType: RuntimeAnchorBase<RunManager>.OnAnchorProvided
+  fullName: RuntimeAnchorBase<RunManager>.OnAnchorProvided
+  nameWithType.vb: RuntimeAnchorBase(Of RunManager).OnAnchorProvided
+  fullName.vb: RuntimeAnchorBase(Of RunManager).OnAnchorProvided
+- uid: Global.RuntimeAnchorBase{RunManager}.isSet
+  commentId: F:Global.RuntimeAnchorBase{RunManager}.isSet
+  parent: Global.RuntimeAnchorBase{RunManager}
+  definition: Global.RuntimeAnchorBase`1.isSet
+  name: isSet
+  nameWithType: RuntimeAnchorBase<RunManager>.isSet
+  fullName: RuntimeAnchorBase<RunManager>.isSet
+  nameWithType.vb: RuntimeAnchorBase(Of RunManager).isSet
+  fullName.vb: RuntimeAnchorBase(Of RunManager).isSet
+- uid: Global.RuntimeAnchorBase{RunManager}.Value
+  commentId: P:Global.RuntimeAnchorBase{RunManager}.Value
+  parent: Global.RuntimeAnchorBase{RunManager}
+  definition: Global.RuntimeAnchorBase`1.Value
+  name: Value
+  nameWithType: RuntimeAnchorBase<RunManager>.Value
+  fullName: RuntimeAnchorBase<RunManager>.Value
+  nameWithType.vb: RuntimeAnchorBase(Of RunManager).Value
+  fullName.vb: RuntimeAnchorBase(Of RunManager).Value
+- uid: Global.RuntimeAnchorBase{RunManager}.Provide(RunManager)
+  commentId: M:Global.RuntimeAnchorBase{RunManager}.Provide(RunManager)
+  parent: Global.RuntimeAnchorBase{RunManager}
+  definition: Global.RuntimeAnchorBase`1.Provide(`0)
+  name: Provide(RunManager)
+  nameWithType: RuntimeAnchorBase<RunManager>.Provide(RunManager)
+  fullName: RuntimeAnchorBase<RunManager>.Provide(RunManager)
+  nameWithType.vb: RuntimeAnchorBase(Of RunManager).Provide(RunManager)
+  fullName.vb: RuntimeAnchorBase(Of RunManager).Provide(RunManager)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase{RunManager}.Provide(RunManager)
+    name: Provide
+  - name: (
+  - uid: Global.RunManager
+    name: RunManager
+  - name: )
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase{RunManager}.Provide(RunManager)
+    name: Provide
+  - name: (
+  - uid: Global.RunManager
+    name: RunManager
+  - name: )
+- uid: Global.RuntimeAnchorBase{RunManager}.Unset
+  commentId: M:Global.RuntimeAnchorBase{RunManager}.Unset
+  parent: Global.RuntimeAnchorBase{RunManager}
+  definition: Global.RuntimeAnchorBase`1.Unset
+  name: Unset()
+  nameWithType: RuntimeAnchorBase<RunManager>.Unset()
+  fullName: RuntimeAnchorBase<RunManager>.Unset()
+  nameWithType.vb: RuntimeAnchorBase(Of RunManager).Unset()
+  fullName.vb: RuntimeAnchorBase(Of RunManager).Unset()
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase{RunManager}.Unset
+    name: Unset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase{RunManager}.Unset
+    name: Unset
+  - name: (
+  - name: )
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.RuntimeAnchorBase`1
+  commentId: T:Global.RuntimeAnchorBase`1
+  name: RuntimeAnchorBase<T>
+  nameWithType: RuntimeAnchorBase<T>
+  fullName: RuntimeAnchorBase<T>
+  nameWithType.vb: RuntimeAnchorBase(Of T)
+  fullName.vb: RuntimeAnchorBase(Of T)
+  name.vb: RuntimeAnchorBase(Of T)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.RuntimeAnchorBase`1.OnAnchorProvided
+  commentId: F:Global.RuntimeAnchorBase`1.OnAnchorProvided
+  name: OnAnchorProvided
+  nameWithType: RuntimeAnchorBase<T>.OnAnchorProvided
+  fullName: RuntimeAnchorBase<T>.OnAnchorProvided
+  nameWithType.vb: RuntimeAnchorBase(Of T).OnAnchorProvided
+  fullName.vb: RuntimeAnchorBase(Of T).OnAnchorProvided
+- uid: Global.RuntimeAnchorBase`1.isSet
+  commentId: F:Global.RuntimeAnchorBase`1.isSet
+  name: isSet
+  nameWithType: RuntimeAnchorBase<T>.isSet
+  fullName: RuntimeAnchorBase<T>.isSet
+  nameWithType.vb: RuntimeAnchorBase(Of T).isSet
+  fullName.vb: RuntimeAnchorBase(Of T).isSet
+- uid: Global.RuntimeAnchorBase`1.Value
+  commentId: P:Global.RuntimeAnchorBase`1.Value
+  name: Value
+  nameWithType: RuntimeAnchorBase<T>.Value
+  fullName: RuntimeAnchorBase<T>.Value
+  nameWithType.vb: RuntimeAnchorBase(Of T).Value
+  fullName.vb: RuntimeAnchorBase(Of T).Value
+- uid: Global.RuntimeAnchorBase`1.Provide(`0)
+  commentId: M:Global.RuntimeAnchorBase`1.Provide(`0)
+  name: Provide(T)
+  nameWithType: RuntimeAnchorBase<T>.Provide(T)
+  fullName: RuntimeAnchorBase<T>.Provide(T)
+  nameWithType.vb: RuntimeAnchorBase(Of T).Provide(T)
+  fullName.vb: RuntimeAnchorBase(Of T).Provide(T)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1.Provide(`0)
+    name: Provide
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1.Provide(`0)
+    name: Provide
+  - name: (
+  - name: T
+  - name: )
+- uid: Global.RuntimeAnchorBase`1.Unset
+  commentId: M:Global.RuntimeAnchorBase`1.Unset
+  name: Unset()
+  nameWithType: RuntimeAnchorBase<T>.Unset()
+  fullName: RuntimeAnchorBase<T>.Unset()
+  nameWithType.vb: RuntimeAnchorBase(Of T).Unset()
+  fullName.vb: RuntimeAnchorBase(Of T).Unset()
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1.Unset
+    name: Unset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1.Unset
+    name: Unset
+  - name: (
+  - name: )

@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.LoadEventChannelSO
+  commentId: T:Global.LoadEventChannelSO
+  id: LoadEventChannelSO
+  parent: Global
+  children:
+  - Global.LoadEventChannelSO.OnLoadingRequested
+  - Global.LoadEventChannelSO.RaiseEvent(GameSceneSO,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: LoadEventChannelSO
+  nameWithType: LoadEventChannelSO
+  fullName: LoadEventChannelSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Events/LoadEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: LoadEventChannelSO
+    path: ../Assets/Scripts/Events/LoadEventChannelSO.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis class is used for scene-loading events.\nTakes a GameSceneSO of the location or menu that needs to be loaded, and a bool to specify if a loading screen needs to display.\n"
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "Events/Load Event Channel")]
+
+      public class LoadEventChannelSO : DescriptionBaseSO
+    content.vb: >-
+      <CreateAssetMenu(menuName:="Events/Load Event Channel")>
+
+      Public Class LoadEventChannelSO Inherits DescriptionBaseSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: Events/Load Event Channel
+- uid: Global.LoadEventChannelSO.OnLoadingRequested
+  commentId: F:Global.LoadEventChannelSO.OnLoadingRequested
+  id: OnLoadingRequested
+  parent: Global.LoadEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: OnLoadingRequested
+  nameWithType: LoadEventChannelSO.OnLoadingRequested
+  fullName: LoadEventChannelSO.OnLoadingRequested
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Events/LoadEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnLoadingRequested
+    path: ../Assets/Scripts/Events/LoadEventChannelSO.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityAction<GameSceneSO, bool, bool> OnLoadingRequested
+    return:
+      type: UnityEngine.Events.UnityAction{GameSceneSO,System.Boolean,System.Boolean}
+    content.vb: Public OnLoadingRequested As UnityAction(Of GameSceneSO, Boolean, Boolean)
+- uid: Global.LoadEventChannelSO.RaiseEvent(GameSceneSO,System.Boolean,System.Boolean)
+  commentId: M:Global.LoadEventChannelSO.RaiseEvent(GameSceneSO,System.Boolean,System.Boolean)
+  id: RaiseEvent(GameSceneSO,System.Boolean,System.Boolean)
+  parent: Global.LoadEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: RaiseEvent(GameSceneSO, bool, bool)
+  nameWithType: LoadEventChannelSO.RaiseEvent(GameSceneSO, bool, bool)
+  fullName: LoadEventChannelSO.RaiseEvent(GameSceneSO, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Events/LoadEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RaiseEvent
+    path: ../Assets/Scripts/Events/LoadEventChannelSO.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RaiseEvent(GameSceneSO locationToLoad, bool showLoadingScreen = false, bool fadeScreen = false)
+    parameters:
+    - id: locationToLoad
+      type: Global.GameSceneSO
+    - id: showLoadingScreen
+      type: System.Boolean
+    - id: fadeScreen
+      type: System.Boolean
+    content.vb: Public Sub [RaiseEvent](locationToLoad As GameSceneSO, showLoadingScreen As Boolean = False, fadeScreen As Boolean = False)
+  overload: Global.LoadEventChannelSO.RaiseEvent*
+  nameWithType.vb: LoadEventChannelSO.RaiseEvent(GameSceneSO, Boolean, Boolean)
+  fullName.vb: LoadEventChannelSO.RaiseEvent(GameSceneSO, Boolean, Boolean)
+  name.vb: RaiseEvent(GameSceneSO, Boolean, Boolean)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityAction{GameSceneSO,System.Boolean,System.Boolean}
+  commentId: T:UnityEngine.Events.UnityAction{GameSceneSO,System.Boolean,System.Boolean}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityAction`3
+  name: UnityAction<GameSceneSO, bool, bool>
+  nameWithType: UnityAction<GameSceneSO, bool, bool>
+  fullName: UnityEngine.Events.UnityAction<GameSceneSO, bool, bool>
+  nameWithType.vb: UnityAction(Of GameSceneSO, Boolean, Boolean)
+  fullName.vb: UnityEngine.Events.UnityAction(Of GameSceneSO, Boolean, Boolean)
+  name.vb: UnityAction(Of GameSceneSO, Boolean, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`3
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`3
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Events.UnityAction`3
+  commentId: T:UnityEngine.Events.UnityAction`3
+  isExternal: true
+  name: UnityAction<T0, T1, T2>
+  nameWithType: UnityAction<T0, T1, T2>
+  fullName: UnityEngine.Events.UnityAction<T0, T1, T2>
+  nameWithType.vb: UnityAction(Of T0, T1, T2)
+  fullName.vb: UnityEngine.Events.UnityAction(Of T0, T1, T2)
+  name.vb: UnityAction(Of T0, T1, T2)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`3
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`3
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.LoadEventChannelSO.RaiseEvent*
+  commentId: Overload:Global.LoadEventChannelSO.RaiseEvent
+  name: RaiseEvent
+  nameWithType: LoadEventChannelSO.RaiseEvent
+  fullName: LoadEventChannelSO.RaiseEvent
+- uid: Global.GameSceneSO
+  commentId: T:Global.GameSceneSO
+  name: GameSceneSO
+  nameWithType: GameSceneSO
+  fullName: GameSceneSO
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

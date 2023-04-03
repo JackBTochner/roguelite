@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PersistentManagerSceneSO
+  commentId: T:Global.PersistentManagerSceneSO
+  id: PersistentManagerSceneSO
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PersistentManagerSceneSO
+  nameWithType: PersistentManagerSceneSO
+  fullName: PersistentManagerSceneSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/PersistentManagerSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PersistentManagerSceneSO
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/PersistentManagerSceneSO.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class PersistentManagerSceneSO : GameSceneSO'
+    content.vb: Public Class PersistentManagerSceneSO Inherits GameSceneSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  - Global.GameSceneSO
+  inheritedMembers:
+  - Global.GameSceneSO.sceneType
+  - Global.GameSceneSO.sceneReference
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.GameSceneSO
+  commentId: T:Global.GameSceneSO
+  name: GameSceneSO
+  nameWithType: GameSceneSO
+  fullName: GameSceneSO
+- uid: Global.GameSceneSO.sceneType
+  commentId: F:Global.GameSceneSO.sceneType
+  parent: Global.GameSceneSO
+  name: sceneType
+  nameWithType: GameSceneSO.sceneType
+  fullName: GameSceneSO.sceneType
+- uid: Global.GameSceneSO.sceneReference
+  commentId: F:Global.GameSceneSO.sceneReference
+  parent: Global.GameSceneSO
+  name: sceneReference
+  nameWithType: GameSceneSO.sceneReference
+  fullName: GameSceneSO.sceneReference
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

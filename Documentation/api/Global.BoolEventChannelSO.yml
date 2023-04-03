@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BoolEventChannelSO
+  commentId: T:Global.BoolEventChannelSO
+  id: BoolEventChannelSO
+  parent: Global
+  children:
+  - Global.BoolEventChannelSO.OnEventRaised
+  - Global.BoolEventChannelSO.RaiseEvent(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: BoolEventChannelSO
+  nameWithType: BoolEventChannelSO
+  fullName: BoolEventChannelSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Events/BoolEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: BoolEventChannelSO
+    path: ../Assets/Scripts/Events/BoolEventChannelSO.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis class is used for Events that have a bool argument.\nExample: An event to toggle a UI interface\n"
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "Events/Bool Event Channel")]
+
+      public class BoolEventChannelSO : DescriptionBaseSO
+    content.vb: >-
+      <CreateAssetMenu(menuName:="Events/Bool Event Channel")>
+
+      Public Class BoolEventChannelSO Inherits DescriptionBaseSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: Events/Bool Event Channel
+- uid: Global.BoolEventChannelSO.OnEventRaised
+  commentId: E:Global.BoolEventChannelSO.OnEventRaised
+  id: OnEventRaised
+  parent: Global.BoolEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: OnEventRaised
+  nameWithType: BoolEventChannelSO.OnEventRaised
+  fullName: BoolEventChannelSO.OnEventRaised
+  type: Event
+  source:
+    remote:
+      path: Assets/Scripts/Events/BoolEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnEventRaised
+    path: ../Assets/Scripts/Events/BoolEventChannelSO.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public event UnityAction<bool> OnEventRaised
+    return:
+      type: UnityEngine.Events.UnityAction{System.Boolean}
+    content.vb: Public Event OnEventRaised As UnityAction(Of Boolean)
+- uid: Global.BoolEventChannelSO.RaiseEvent(System.Boolean)
+  commentId: M:Global.BoolEventChannelSO.RaiseEvent(System.Boolean)
+  id: RaiseEvent(System.Boolean)
+  parent: Global.BoolEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: RaiseEvent(bool)
+  nameWithType: BoolEventChannelSO.RaiseEvent(bool)
+  fullName: BoolEventChannelSO.RaiseEvent(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Events/BoolEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RaiseEvent
+    path: ../Assets/Scripts/Events/BoolEventChannelSO.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RaiseEvent(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub [RaiseEvent](value As Boolean)
+  overload: Global.BoolEventChannelSO.RaiseEvent*
+  nameWithType.vb: BoolEventChannelSO.RaiseEvent(Boolean)
+  fullName.vb: BoolEventChannelSO.RaiseEvent(Boolean)
+  name.vb: RaiseEvent(Boolean)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityAction{System.Boolean}
+  commentId: T:UnityEngine.Events.UnityAction{System.Boolean}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityAction`1
+  name: UnityAction<bool>
+  nameWithType: UnityAction<bool>
+  fullName: UnityEngine.Events.UnityAction<bool>
+  nameWithType.vb: UnityAction(Of Boolean)
+  fullName.vb: UnityEngine.Events.UnityAction(Of Boolean)
+  name.vb: UnityAction(Of Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Events.UnityAction`1
+  commentId: T:UnityEngine.Events.UnityAction`1
+  isExternal: true
+  name: UnityAction<T0>
+  nameWithType: UnityAction<T0>
+  fullName: UnityEngine.Events.UnityAction<T0>
+  nameWithType.vb: UnityAction(Of T0)
+  fullName.vb: UnityEngine.Events.UnityAction(Of T0)
+  name.vb: UnityAction(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.BoolEventChannelSO.RaiseEvent*
+  commentId: Overload:Global.BoolEventChannelSO.RaiseEvent
+  name: RaiseEvent
+  nameWithType: BoolEventChannelSO.RaiseEvent
+  fullName: BoolEventChannelSO.RaiseEvent
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

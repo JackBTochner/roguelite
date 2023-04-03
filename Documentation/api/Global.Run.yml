@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Run
+  commentId: T:Global.Run
+  id: Run
+  parent: Global
+  children:
+  - Global.Run.runStatistics
+  langs:
+  - csharp
+  - vb
+  name: Run
+  nameWithType: Run
+  fullName: Run
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Run
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 96
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Run
+    content.vb: >-
+      <Serializable>
+
+      Public Class Run
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.Run.runStatistics
+  commentId: F:Global.Run.runStatistics
+  id: runStatistics
+  parent: Global.Run
+  langs:
+  - csharp
+  - vb
+  name: runStatistics
+  nameWithType: Run.runStatistics
+  fullName: Run.runStatistics
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: runStatistics
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 101
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [SerializeField]
+
+      public RunStatistics runStatistics
+    return:
+      type: Global.RunStatistics
+    content.vb: >-
+      <SerializeField>
+
+      Public runStatistics As RunStatistics
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.RunStatistics
+  commentId: T:Global.RunStatistics
+  name: RunStatistics
+  nameWithType: RunStatistics
+  fullName: RunStatistics

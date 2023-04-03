@@ -1,0 +1,368 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global
+  id: Global
+  children:
+  - Global.Actor
+  - Global.BoolEventChannelSO
+  - Global.CameraAnchor
+  - Global.CameraManager
+  - Global.ChatController
+  - Global.ColorChangedEvent
+  - Global.Controls
+  - Global.Controls.IPlayerActions
+  - Global.Controls.PlayerActions
+  - Global.ConversationFields
+  - Global.DescriptionBaseSO
+  - Global.DialogueManagerAnchorProvider
+  - Global.DialogueSystemEventsAnchor
+  - Global.DropdownSample
+  - Global.EditorColdStartup
+  - Global.EnvMapAnimator
+  - Global.Exit
+  - Global.GameSceneSO
+  - Global.GameSceneSO.GameSceneType
+  - Global.HSVChangedEvent
+  - Global.HubExit
+  - Global.HubNPC
+  - Global.HubNPCManager
+  - Global.Initializer
+  - Global.InputReader
+  - Global.LEGACY_UILineRenderer
+  - Global.LoadEventChannelSO
+  - Global.LocationSceneSO
+  - Global.MenuSceneSO
+  - Global.PersistentManagerSceneSO
+  - Global.PlayerCharacter
+  - Global.PlayerExit
+  - Global.PlayerSpawn
+  - Global.PlayerSpawnSystem
+  - Global.Run
+  - Global.RunManager
+  - Global.RunManagerAnchor
+  - Global.RunStatistics
+  - Global.RuntimeAnchorBase`1
+  - Global.SceneLoader
+  - Global.SerializableScriptableObject
+  - Global.SerializerUtility
+  - Global.StartGame
+  - Global.TestCompression
+  - Global.TransformAnchor
+  - Global.TransformEventChannelSO
+  - Global.TransitionChannelSO
+  - Global.UIGridRenderer
+  - Global.UIVisibility
+  - Global.VoidEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: ''
+  nameWithType: ''
+  fullName: ''
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp-firstpass
+references:
+- uid: Global.ChatController
+  commentId: T:Global.ChatController
+  name: ChatController
+  nameWithType: ChatController
+  fullName: ChatController
+- uid: Global.TestCompression
+  commentId: T:Global.TestCompression
+  name: TestCompression
+  nameWithType: TestCompression
+  fullName: TestCompression
+- uid: Global.UIGridRenderer
+  commentId: T:Global.UIGridRenderer
+  name: UIGridRenderer
+  nameWithType: UIGridRenderer
+  fullName: UIGridRenderer
+- uid: Global.UIVisibility
+  commentId: T:Global.UIVisibility
+  name: UIVisibility
+  nameWithType: UIVisibility
+  fullName: UIVisibility
+- uid: Global.EnvMapAnimator
+  commentId: T:Global.EnvMapAnimator
+  name: EnvMapAnimator
+  nameWithType: EnvMapAnimator
+  fullName: EnvMapAnimator
+- uid: Global.LEGACY_UILineRenderer
+  commentId: T:Global.LEGACY_UILineRenderer
+  name: LEGACY_UILineRenderer
+  nameWithType: LEGACY_UILineRenderer
+  fullName: LEGACY_UILineRenderer
+- uid: Global.HSVChangedEvent
+  commentId: T:Global.HSVChangedEvent
+  name: HSVChangedEvent
+  nameWithType: HSVChangedEvent
+  fullName: HSVChangedEvent
+- uid: Global.DropdownSample
+  commentId: T:Global.DropdownSample
+  name: DropdownSample
+  nameWithType: DropdownSample
+  fullName: DropdownSample
+- uid: Global.ColorChangedEvent
+  commentId: T:Global.ColorChangedEvent
+  name: ColorChangedEvent
+  nameWithType: ColorChangedEvent
+  fullName: ColorChangedEvent
+- uid: Global.CameraManager
+  commentId: T:Global.CameraManager
+  name: CameraManager
+  nameWithType: CameraManager
+  fullName: CameraManager
+- uid: Global.PersistentManagerSceneSO
+  commentId: T:Global.PersistentManagerSceneSO
+  name: PersistentManagerSceneSO
+  nameWithType: PersistentManagerSceneSO
+  fullName: PersistentManagerSceneSO
+- uid: Global.PlayerExit
+  commentId: T:Global.PlayerExit
+  name: PlayerExit
+  nameWithType: PlayerExit
+  fullName: PlayerExit
+- uid: Global.RunManagerAnchor
+  commentId: T:Global.RunManagerAnchor
+  name: RunManagerAnchor
+  nameWithType: RunManagerAnchor
+  fullName: RunManagerAnchor
+- uid: Global.StartGame
+  commentId: T:Global.StartGame
+  name: StartGame
+  nameWithType: StartGame
+  fullName: StartGame
+- uid: Global.SceneLoader
+  commentId: T:Global.SceneLoader
+  name: SceneLoader
+  nameWithType: SceneLoader
+  fullName: SceneLoader
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.CameraAnchor
+  commentId: T:Global.CameraAnchor
+  name: CameraAnchor
+  nameWithType: CameraAnchor
+  fullName: CameraAnchor
+- uid: Global.PlayerSpawnSystem
+  commentId: T:Global.PlayerSpawnSystem
+  name: PlayerSpawnSystem
+  nameWithType: PlayerSpawnSystem
+  fullName: PlayerSpawnSystem
+- uid: Global.SerializerUtility
+  commentId: T:Global.SerializerUtility
+  name: SerializerUtility
+  nameWithType: SerializerUtility
+  fullName: SerializerUtility
+- uid: Global.Actor
+  commentId: T:Global.Actor
+  name: Actor
+  nameWithType: Actor
+  fullName: Actor
+- uid: Global.DialogueSystemEventsAnchor
+  commentId: T:Global.DialogueSystemEventsAnchor
+  name: DialogueSystemEventsAnchor
+  nameWithType: DialogueSystemEventsAnchor
+  fullName: DialogueSystemEventsAnchor
+- uid: Global.RuntimeAnchorBase`1
+  commentId: T:Global.RuntimeAnchorBase`1
+  name: RuntimeAnchorBase<T>
+  nameWithType: RuntimeAnchorBase<T>
+  fullName: RuntimeAnchorBase<T>
+  nameWithType.vb: RuntimeAnchorBase(Of T)
+  fullName.vb: RuntimeAnchorBase(Of T)
+  name.vb: RuntimeAnchorBase(Of T)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.MenuSceneSO
+  commentId: T:Global.MenuSceneSO
+  name: MenuSceneSO
+  nameWithType: MenuSceneSO
+  fullName: MenuSceneSO
+- uid: Global.Exit
+  commentId: T:Global.Exit
+  name: Exit
+  nameWithType: Exit
+  fullName: Exit
+- uid: Global.LocationSceneSO
+  commentId: T:Global.LocationSceneSO
+  name: LocationSceneSO
+  nameWithType: LocationSceneSO
+  fullName: LocationSceneSO
+- uid: Global.EditorColdStartup
+  commentId: T:Global.EditorColdStartup
+  name: EditorColdStartup
+  nameWithType: EditorColdStartup
+  fullName: EditorColdStartup
+- uid: Global.DialogueManagerAnchorProvider
+  commentId: T:Global.DialogueManagerAnchorProvider
+  name: DialogueManagerAnchorProvider
+  nameWithType: DialogueManagerAnchorProvider
+  fullName: DialogueManagerAnchorProvider
+- uid: Global.TransformEventChannelSO
+  commentId: T:Global.TransformEventChannelSO
+  name: TransformEventChannelSO
+  nameWithType: TransformEventChannelSO
+  fullName: TransformEventChannelSO
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.Initializer
+  commentId: T:Global.Initializer
+  name: Initializer
+  nameWithType: Initializer
+  fullName: Initializer
+- uid: Global.PlayerSpawn
+  commentId: T:Global.PlayerSpawn
+  name: PlayerSpawn
+  nameWithType: PlayerSpawn
+  fullName: PlayerSpawn
+- uid: Global.RunManager
+  commentId: T:Global.RunManager
+  name: RunManager
+  nameWithType: RunManager
+  fullName: RunManager
+- uid: Global.Run
+  commentId: T:Global.Run
+  name: Run
+  nameWithType: Run
+  fullName: Run
+- uid: Global.RunStatistics
+  commentId: T:Global.RunStatistics
+  name: RunStatistics
+  nameWithType: RunStatistics
+  fullName: RunStatistics
+- uid: Global.LoadEventChannelSO
+  commentId: T:Global.LoadEventChannelSO
+  name: LoadEventChannelSO
+  nameWithType: LoadEventChannelSO
+  fullName: LoadEventChannelSO
+- uid: Global.InputReader
+  commentId: T:Global.InputReader
+  name: InputReader
+  nameWithType: InputReader
+  fullName: InputReader
+- uid: Global.Controls
+  commentId: T:Global.Controls
+  name: Controls
+  nameWithType: Controls
+  fullName: Controls
+- uid: Global.Controls.PlayerActions
+  commentId: T:Global.Controls.PlayerActions
+  name: Controls.PlayerActions
+  nameWithType: Controls.PlayerActions
+  fullName: Controls.PlayerActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.PlayerActions
+    name: PlayerActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.PlayerActions
+    name: PlayerActions
+- uid: Global.Controls.IPlayerActions
+  commentId: T:Global.Controls.IPlayerActions
+  name: Controls.IPlayerActions
+  nameWithType: Controls.IPlayerActions
+  fullName: Controls.IPlayerActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IPlayerActions
+    name: IPlayerActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IPlayerActions
+    name: IPlayerActions
+- uid: Global.TransformAnchor
+  commentId: T:Global.TransformAnchor
+  name: TransformAnchor
+  nameWithType: TransformAnchor
+  fullName: TransformAnchor
+- uid: Global.GameSceneSO
+  commentId: T:Global.GameSceneSO
+  name: GameSceneSO
+  nameWithType: GameSceneSO
+  fullName: GameSceneSO
+- uid: Global.GameSceneSO.GameSceneType
+  commentId: T:Global.GameSceneSO.GameSceneType
+  name: GameSceneSO.GameSceneType
+  nameWithType: GameSceneSO.GameSceneType
+  fullName: GameSceneSO.GameSceneType
+  spec.csharp:
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - name: .
+  - uid: Global.GameSceneSO.GameSceneType
+    name: GameSceneType
+  spec.vb:
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - name: .
+  - uid: Global.GameSceneSO.GameSceneType
+    name: GameSceneType
+- uid: Global.PlayerCharacter
+  commentId: T:Global.PlayerCharacter
+  name: PlayerCharacter
+  nameWithType: PlayerCharacter
+  fullName: PlayerCharacter
+- uid: Global.TransitionChannelSO
+  commentId: T:Global.TransitionChannelSO
+  name: TransitionChannelSO
+  nameWithType: TransitionChannelSO
+  fullName: TransitionChannelSO
+- uid: Global.VoidEventChannelSO
+  commentId: T:Global.VoidEventChannelSO
+  name: VoidEventChannelSO
+  nameWithType: VoidEventChannelSO
+  fullName: VoidEventChannelSO
+- uid: Global.BoolEventChannelSO
+  commentId: T:Global.BoolEventChannelSO
+  name: BoolEventChannelSO
+  nameWithType: BoolEventChannelSO
+  fullName: BoolEventChannelSO
+- uid: Global.HubNPC
+  commentId: T:Global.HubNPC
+  name: HubNPC
+  nameWithType: HubNPC
+  fullName: HubNPC
+- uid: Global.HubExit
+  commentId: T:Global.HubExit
+  name: HubExit
+  nameWithType: HubExit
+  fullName: HubExit
+- uid: Global.HubNPCManager
+  commentId: T:Global.HubNPCManager
+  name: HubNPCManager
+  nameWithType: HubNPCManager
+  fullName: HubNPCManager
+- uid: Global.ConversationFields
+  commentId: T:Global.ConversationFields
+  name: ConversationFields
+  nameWithType: ConversationFields
+  fullName: ConversationFields

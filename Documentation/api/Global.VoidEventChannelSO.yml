@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.VoidEventChannelSO
+  commentId: T:Global.VoidEventChannelSO
+  id: VoidEventChannelSO
+  parent: Global
+  children:
+  - Global.VoidEventChannelSO.OnEventRaised
+  - Global.VoidEventChannelSO.RaiseEvent
+  langs:
+  - csharp
+  - vb
+  name: VoidEventChannelSO
+  nameWithType: VoidEventChannelSO
+  fullName: VoidEventChannelSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Events/VoidEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: VoidEventChannelSO
+    path: ../Assets/Scripts/Events/VoidEventChannelSO.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nThis class is used for Events that have no arguments (Example: Exit game event)\n"
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "Events/Void Event Channel")]
+
+      public class VoidEventChannelSO : DescriptionBaseSO
+    content.vb: >-
+      <CreateAssetMenu(menuName:="Events/Void Event Channel")>
+
+      Public Class VoidEventChannelSO Inherits DescriptionBaseSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: Events/Void Event Channel
+- uid: Global.VoidEventChannelSO.OnEventRaised
+  commentId: F:Global.VoidEventChannelSO.OnEventRaised
+  id: OnEventRaised
+  parent: Global.VoidEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: OnEventRaised
+  nameWithType: VoidEventChannelSO.OnEventRaised
+  fullName: VoidEventChannelSO.OnEventRaised
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Events/VoidEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnEventRaised
+    path: ../Assets/Scripts/Events/VoidEventChannelSO.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityAction OnEventRaised
+    return:
+      type: UnityEngine.Events.UnityAction
+    content.vb: Public OnEventRaised As UnityAction
+- uid: Global.VoidEventChannelSO.RaiseEvent
+  commentId: M:Global.VoidEventChannelSO.RaiseEvent
+  id: RaiseEvent
+  parent: Global.VoidEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: RaiseEvent()
+  nameWithType: VoidEventChannelSO.RaiseEvent()
+  fullName: VoidEventChannelSO.RaiseEvent()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Events/VoidEventChannelSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RaiseEvent
+    path: ../Assets/Scripts/Events/VoidEventChannelSO.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void RaiseEvent()
+    content.vb: Public Sub [RaiseEvent]()
+  overload: Global.VoidEventChannelSO.RaiseEvent*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityAction
+  commentId: T:UnityEngine.Events.UnityAction
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityAction
+  nameWithType: UnityAction
+  fullName: UnityEngine.Events.UnityAction
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.VoidEventChannelSO.RaiseEvent*
+  commentId: Overload:Global.VoidEventChannelSO.RaiseEvent
+  name: RaiseEvent
+  nameWithType: VoidEventChannelSO.RaiseEvent
+  fullName: VoidEventChannelSO.RaiseEvent

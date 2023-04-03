@@ -1,0 +1,1013 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Controls
+  commentId: T:Global.Controls
+  id: Controls
+  parent: Global
+  children:
+  - Global.Controls.#ctor
+  - Global.Controls.asset
+  - Global.Controls.bindingMask
+  - Global.Controls.bindings
+  - Global.Controls.Contains(UnityEngine.InputSystem.InputAction)
+  - Global.Controls.controlSchemes
+  - Global.Controls.devices
+  - Global.Controls.Disable
+  - Global.Controls.Dispose
+  - Global.Controls.Enable
+  - Global.Controls.FindAction(System.String,System.Boolean)
+  - Global.Controls.FindBinding(UnityEngine.InputSystem.InputBinding,UnityEngine.InputSystem.InputAction@)
+  - Global.Controls.GamepadScheme
+  - Global.Controls.GetEnumerator
+  - Global.Controls.KeyboardandMouseScheme
+  - Global.Controls.Player
+  langs:
+  - csharp
+  - vb
+  name: Controls
+  nameWithType: Controls
+  fullName: Controls
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Controls
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public class Controls
+    content.vb: Public Class Controls
+  inheritance:
+  - System.Object
+- uid: Global.Controls.asset
+  commentId: P:Global.Controls.asset
+  id: asset
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: asset
+  nameWithType: Controls.asset
+  fullName: Controls.asset
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: asset
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputActionAsset asset { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputActionAsset
+    content.vb: Public ReadOnly Property asset As InputActionAsset
+  overload: Global.Controls.asset*
+- uid: Global.Controls.#ctor
+  commentId: M:Global.Controls.#ctor
+  id: '#ctor'
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: Controls()
+  nameWithType: Controls.Controls()
+  fullName: Controls.Controls()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: .ctor
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Controls()
+    content.vb: Public Sub New()
+  overload: Global.Controls.#ctor*
+  nameWithType.vb: Controls.New()
+  fullName.vb: Controls.New()
+  name.vb: New()
+- uid: Global.Controls.Dispose
+  commentId: M:Global.Controls.Dispose
+  id: Dispose
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Controls.Dispose()
+  fullName: Controls.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Dispose
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 240
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Global.Controls.Dispose*
+- uid: Global.Controls.bindingMask
+  commentId: P:Global.Controls.bindingMask
+  id: bindingMask
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: bindingMask
+  nameWithType: Controls.bindingMask
+  fullName: Controls.bindingMask
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: bindingMask
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 245
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputBinding? bindingMask { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{UnityEngine.InputSystem.InputBinding}
+    content.vb: Public Property bindingMask As InputBinding?
+  overload: Global.Controls.bindingMask*
+- uid: Global.Controls.devices
+  commentId: P:Global.Controls.devices
+  id: devices
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: devices
+  nameWithType: Controls.devices
+  fullName: Controls.devices
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: devices
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 251
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ReadOnlyArray<InputDevice>? devices { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{UnityEngine.InputSystem.Utilities.ReadOnlyArray{UnityEngine.InputSystem.InputDevice}}
+    content.vb: Public Property devices As ReadOnlyArray(Of InputDevice)?
+  overload: Global.Controls.devices*
+- uid: Global.Controls.controlSchemes
+  commentId: P:Global.Controls.controlSchemes
+  id: controlSchemes
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: controlSchemes
+  nameWithType: Controls.controlSchemes
+  fullName: Controls.controlSchemes
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: controlSchemes
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 257
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ReadOnlyArray<InputControlScheme> controlSchemes { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.Utilities.ReadOnlyArray{UnityEngine.InputSystem.InputControlScheme}
+    content.vb: Public ReadOnly Property controlSchemes As ReadOnlyArray(Of InputControlScheme)
+  overload: Global.Controls.controlSchemes*
+- uid: Global.Controls.Contains(UnityEngine.InputSystem.InputAction)
+  commentId: M:Global.Controls.Contains(UnityEngine.InputSystem.InputAction)
+  id: Contains(UnityEngine.InputSystem.InputAction)
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: Contains(InputAction)
+  nameWithType: Controls.Contains(InputAction)
+  fullName: Controls.Contains(UnityEngine.InputSystem.InputAction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Contains
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 259
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool Contains(InputAction action)
+    parameters:
+    - id: action
+      type: UnityEngine.InputSystem.InputAction
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(action As InputAction) As Boolean
+  overload: Global.Controls.Contains*
+- uid: Global.Controls.GetEnumerator
+  commentId: M:Global.Controls.GetEnumerator
+  id: GetEnumerator
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: Controls.GetEnumerator()
+  fullName: Controls.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: GetEnumerator
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 264
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IEnumerator<InputAction> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{UnityEngine.InputSystem.InputAction}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of InputAction)
+  overload: Global.Controls.GetEnumerator*
+- uid: Global.Controls.Enable
+  commentId: M:Global.Controls.Enable
+  id: Enable
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: Enable()
+  nameWithType: Controls.Enable()
+  fullName: Controls.Enable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Enable
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 274
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Enable()
+    content.vb: Public Sub Enable()
+  overload: Global.Controls.Enable*
+- uid: Global.Controls.Disable
+  commentId: M:Global.Controls.Disable
+  id: Disable
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: Controls.Disable()
+  fullName: Controls.Disable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Disable
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 279
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Disable()
+    content.vb: Public Sub Disable()
+  overload: Global.Controls.Disable*
+- uid: Global.Controls.bindings
+  commentId: P:Global.Controls.bindings
+  id: bindings
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: bindings
+  nameWithType: Controls.bindings
+  fullName: Controls.bindings
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: bindings
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 283
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IEnumerable<InputBinding> bindings { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{UnityEngine.InputSystem.InputBinding}
+    content.vb: Public ReadOnly Property bindings As IEnumerable(Of InputBinding)
+  overload: Global.Controls.bindings*
+- uid: Global.Controls.FindAction(System.String,System.Boolean)
+  commentId: M:Global.Controls.FindAction(System.String,System.Boolean)
+  id: FindAction(System.String,System.Boolean)
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: FindAction(string, bool)
+  nameWithType: Controls.FindAction(string, bool)
+  fullName: Controls.FindAction(string, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: FindAction
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 285
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false)
+    parameters:
+    - id: actionNameOrId
+      type: System.String
+    - id: throwIfNotFound
+      type: System.Boolean
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public Function FindAction(actionNameOrId As String, throwIfNotFound As Boolean = False) As InputAction
+  overload: Global.Controls.FindAction*
+  nameWithType.vb: Controls.FindAction(String, Boolean)
+  fullName.vb: Controls.FindAction(String, Boolean)
+  name.vb: FindAction(String, Boolean)
+- uid: Global.Controls.FindBinding(UnityEngine.InputSystem.InputBinding,UnityEngine.InputSystem.InputAction@)
+  commentId: M:Global.Controls.FindBinding(UnityEngine.InputSystem.InputBinding,UnityEngine.InputSystem.InputAction@)
+  id: FindBinding(UnityEngine.InputSystem.InputBinding,UnityEngine.InputSystem.InputAction@)
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: FindBinding(InputBinding, out InputAction)
+  nameWithType: Controls.FindBinding(InputBinding, out InputAction)
+  fullName: Controls.FindBinding(UnityEngine.InputSystem.InputBinding, out UnityEngine.InputSystem.InputAction)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: FindBinding
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 289
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int FindBinding(InputBinding bindingMask, out InputAction action)
+    parameters:
+    - id: bindingMask
+      type: UnityEngine.InputSystem.InputBinding
+    - id: action
+      type: UnityEngine.InputSystem.InputAction
+    return:
+      type: System.Int32
+    content.vb: Public Function FindBinding(bindingMask As InputBinding, action As InputAction) As Integer
+  overload: Global.Controls.FindBinding*
+  nameWithType.vb: Controls.FindBinding(InputBinding, InputAction)
+  fullName.vb: Controls.FindBinding(UnityEngine.InputSystem.InputBinding, UnityEngine.InputSystem.InputAction)
+  name.vb: FindBinding(InputBinding, InputAction)
+- uid: Global.Controls.Player
+  commentId: P:Global.Controls.Player
+  id: Player
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: Controls.Player
+  fullName: Controls.Player
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Player
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 357
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Controls.PlayerActions Player { get; }
+    parameters: []
+    return:
+      type: Global.Controls.PlayerActions
+    content.vb: Public ReadOnly Property Player As Controls.PlayerActions
+  overload: Global.Controls.Player*
+- uid: Global.Controls.KeyboardandMouseScheme
+  commentId: P:Global.Controls.KeyboardandMouseScheme
+  id: KeyboardandMouseScheme
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: KeyboardandMouseScheme
+  nameWithType: Controls.KeyboardandMouseScheme
+  fullName: Controls.KeyboardandMouseScheme
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: KeyboardandMouseScheme
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 359
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputControlScheme KeyboardandMouseScheme { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputControlScheme
+    content.vb: Public ReadOnly Property KeyboardandMouseScheme As InputControlScheme
+  overload: Global.Controls.KeyboardandMouseScheme*
+- uid: Global.Controls.GamepadScheme
+  commentId: P:Global.Controls.GamepadScheme
+  id: GamepadScheme
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: GamepadScheme
+  nameWithType: Controls.GamepadScheme
+  fullName: Controls.GamepadScheme
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: GamepadScheme
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 368
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputControlScheme GamepadScheme { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputControlScheme
+    content.vb: Public ReadOnly Property GamepadScheme As InputControlScheme
+  overload: Global.Controls.GamepadScheme*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Controls.asset*
+  commentId: Overload:Global.Controls.asset
+  name: asset
+  nameWithType: Controls.asset
+  fullName: Controls.asset
+- uid: UnityEngine.InputSystem.InputActionAsset
+  commentId: T:UnityEngine.InputSystem.InputActionAsset
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputActionAsset
+  nameWithType: InputActionAsset
+  fullName: UnityEngine.InputSystem.InputActionAsset
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: Global.Controls.#ctor*
+  commentId: Overload:Global.Controls.#ctor
+  name: Controls
+  nameWithType: Controls.Controls
+  fullName: Controls.Controls
+  nameWithType.vb: Controls.New
+  fullName.vb: Controls.New
+  name.vb: New
+- uid: Global.Controls.Dispose*
+  commentId: Overload:Global.Controls.Dispose
+  name: Dispose
+  nameWithType: Controls.Dispose
+  fullName: Controls.Dispose
+- uid: Global.Controls.bindingMask*
+  commentId: Overload:Global.Controls.bindingMask
+  name: bindingMask
+  nameWithType: Controls.bindingMask
+  fullName: Controls.bindingMask
+- uid: System.Nullable{UnityEngine.InputSystem.InputBinding}
+  commentId: T:System.Nullable{UnityEngine.InputSystem.InputBinding}
+  parent: System
+  definition: System.Nullable`1
+  name: InputBinding?
+  nameWithType: InputBinding?
+  fullName: UnityEngine.InputSystem.InputBinding?
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputBinding
+    name: InputBinding
+    isExternal: true
+  - name: '?'
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputBinding
+    name: InputBinding
+    isExternal: true
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.Controls.devices*
+  commentId: Overload:Global.Controls.devices
+  name: devices
+  nameWithType: Controls.devices
+  fullName: Controls.devices
+- uid: System.Nullable{UnityEngine.InputSystem.Utilities.ReadOnlyArray{UnityEngine.InputSystem.InputDevice}}
+  commentId: T:System.Nullable{UnityEngine.InputSystem.Utilities.ReadOnlyArray{UnityEngine.InputSystem.InputDevice}}
+  parent: System
+  definition: System.Nullable`1
+  name: ReadOnlyArray<InputDevice>?
+  nameWithType: ReadOnlyArray<InputDevice>?
+  fullName: UnityEngine.InputSystem.Utilities.ReadOnlyArray<UnityEngine.InputSystem.InputDevice>?
+  nameWithType.vb: ReadOnlyArray(Of InputDevice)?
+  fullName.vb: UnityEngine.InputSystem.Utilities.ReadOnlyArray(Of UnityEngine.InputSystem.InputDevice)?
+  name.vb: ReadOnlyArray(Of InputDevice)?
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+    name: ReadOnlyArray
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.InputSystem.InputDevice
+    name: InputDevice
+    isExternal: true
+  - name: '>'
+  - name: '?'
+  spec.vb:
+  - uid: UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+    name: ReadOnlyArray
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.InputSystem.InputDevice
+    name: InputDevice
+    isExternal: true
+  - name: )
+  - name: '?'
+- uid: Global.Controls.controlSchemes*
+  commentId: Overload:Global.Controls.controlSchemes
+  name: controlSchemes
+  nameWithType: Controls.controlSchemes
+  fullName: Controls.controlSchemes
+- uid: UnityEngine.InputSystem.Utilities.ReadOnlyArray{UnityEngine.InputSystem.InputControlScheme}
+  commentId: T:UnityEngine.InputSystem.Utilities.ReadOnlyArray{UnityEngine.InputSystem.InputControlScheme}
+  parent: UnityEngine.InputSystem.Utilities
+  definition: UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+  name: ReadOnlyArray<InputControlScheme>
+  nameWithType: ReadOnlyArray<InputControlScheme>
+  fullName: UnityEngine.InputSystem.Utilities.ReadOnlyArray<UnityEngine.InputSystem.InputControlScheme>
+  nameWithType.vb: ReadOnlyArray(Of InputControlScheme)
+  fullName.vb: UnityEngine.InputSystem.Utilities.ReadOnlyArray(Of UnityEngine.InputSystem.InputControlScheme)
+  name.vb: ReadOnlyArray(Of InputControlScheme)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+    name: ReadOnlyArray
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.InputSystem.InputControlScheme
+    name: InputControlScheme
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+    name: ReadOnlyArray
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.InputSystem.InputControlScheme
+    name: InputControlScheme
+    isExternal: true
+  - name: )
+- uid: UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+  commentId: T:UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+  isExternal: true
+  name: ReadOnlyArray<TValue>
+  nameWithType: ReadOnlyArray<TValue>
+  fullName: UnityEngine.InputSystem.Utilities.ReadOnlyArray<TValue>
+  nameWithType.vb: ReadOnlyArray(Of TValue)
+  fullName.vb: UnityEngine.InputSystem.Utilities.ReadOnlyArray(Of TValue)
+  name.vb: ReadOnlyArray(Of TValue)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+    name: ReadOnlyArray
+    isExternal: true
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.InputSystem.Utilities.ReadOnlyArray`1
+    name: ReadOnlyArray
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: UnityEngine.InputSystem.Utilities
+  commentId: N:UnityEngine.InputSystem.Utilities
+  isExternal: true
+  name: UnityEngine.InputSystem.Utilities
+  nameWithType: UnityEngine.InputSystem.Utilities
+  fullName: UnityEngine.InputSystem.Utilities
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.Utilities
+    name: Utilities
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.Utilities
+    name: Utilities
+    isExternal: true
+- uid: Global.Controls.Contains*
+  commentId: Overload:Global.Controls.Contains
+  name: Contains
+  nameWithType: Controls.Contains
+  fullName: Controls.Contains
+- uid: UnityEngine.InputSystem.InputAction
+  commentId: T:UnityEngine.InputSystem.InputAction
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputAction
+  nameWithType: InputAction
+  fullName: UnityEngine.InputSystem.InputAction
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.Controls.GetEnumerator*
+  commentId: Overload:Global.Controls.GetEnumerator
+  name: GetEnumerator
+  nameWithType: Controls.GetEnumerator
+  fullName: Controls.GetEnumerator
+- uid: System.Collections.Generic.IEnumerator{UnityEngine.InputSystem.InputAction}
+  commentId: T:System.Collections.Generic.IEnumerator{UnityEngine.InputSystem.InputAction}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<InputAction>
+  nameWithType: IEnumerator<InputAction>
+  fullName: System.Collections.Generic.IEnumerator<UnityEngine.InputSystem.InputAction>
+  nameWithType.vb: IEnumerator(Of InputAction)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of UnityEngine.InputSystem.InputAction)
+  name.vb: IEnumerator(Of InputAction)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.Controls.Enable*
+  commentId: Overload:Global.Controls.Enable
+  name: Enable
+  nameWithType: Controls.Enable
+  fullName: Controls.Enable
+- uid: Global.Controls.Disable*
+  commentId: Overload:Global.Controls.Disable
+  name: Disable
+  nameWithType: Controls.Disable
+  fullName: Controls.Disable
+- uid: Global.Controls.bindings*
+  commentId: Overload:Global.Controls.bindings
+  name: bindings
+  nameWithType: Controls.bindings
+  fullName: Controls.bindings
+- uid: System.Collections.Generic.IEnumerable{UnityEngine.InputSystem.InputBinding}
+  commentId: T:System.Collections.Generic.IEnumerable{UnityEngine.InputSystem.InputBinding}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<InputBinding>
+  nameWithType: IEnumerable<InputBinding>
+  fullName: System.Collections.Generic.IEnumerable<UnityEngine.InputSystem.InputBinding>
+  nameWithType.vb: IEnumerable(Of InputBinding)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of UnityEngine.InputSystem.InputBinding)
+  name.vb: IEnumerable(Of InputBinding)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.InputSystem.InputBinding
+    name: InputBinding
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.InputSystem.InputBinding
+    name: InputBinding
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.Controls.FindAction*
+  commentId: Overload:Global.Controls.FindAction
+  name: FindAction
+  nameWithType: Controls.FindAction
+  fullName: Controls.FindAction
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Global.Controls.FindBinding*
+  commentId: Overload:Global.Controls.FindBinding
+  name: FindBinding
+  nameWithType: Controls.FindBinding
+  fullName: Controls.FindBinding
+- uid: UnityEngine.InputSystem.InputBinding
+  commentId: T:UnityEngine.InputSystem.InputBinding
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputBinding
+  nameWithType: InputBinding
+  fullName: UnityEngine.InputSystem.InputBinding
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.Controls.Player*
+  commentId: Overload:Global.Controls.Player
+  name: Player
+  nameWithType: Controls.Player
+  fullName: Controls.Player
+- uid: Global.Controls.PlayerActions
+  commentId: T:Global.Controls.PlayerActions
+  name: Controls.PlayerActions
+  nameWithType: Controls.PlayerActions
+  fullName: Controls.PlayerActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.PlayerActions
+    name: PlayerActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.PlayerActions
+    name: PlayerActions
+- uid: Global.Controls.KeyboardandMouseScheme*
+  commentId: Overload:Global.Controls.KeyboardandMouseScheme
+  name: KeyboardandMouseScheme
+  nameWithType: Controls.KeyboardandMouseScheme
+  fullName: Controls.KeyboardandMouseScheme
+- uid: UnityEngine.InputSystem.InputControlScheme
+  commentId: T:UnityEngine.InputSystem.InputControlScheme
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputControlScheme
+  nameWithType: InputControlScheme
+  fullName: UnityEngine.InputSystem.InputControlScheme
+- uid: Global.Controls.GamepadScheme*
+  commentId: Overload:Global.Controls.GamepadScheme
+  name: GamepadScheme
+  nameWithType: Controls.GamepadScheme
+  fullName: Controls.GamepadScheme

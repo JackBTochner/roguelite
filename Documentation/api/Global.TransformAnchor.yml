@@ -1,0 +1,294 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TransformAnchor
+  commentId: T:Global.TransformAnchor
+  id: TransformAnchor
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: TransformAnchor
+  nameWithType: TransformAnchor
+  fullName: TransformAnchor
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/RuntimeAnchors/TransformAnchor.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: TransformAnchor
+    path: ../Assets/Scripts/RuntimeAnchors/TransformAnchor.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "Runtime Anchors/Transform")]
+
+      public class TransformAnchor : RuntimeAnchorBase<Transform>
+    content.vb: >-
+      <CreateAssetMenu(menuName:="Runtime Anchors/Transform")>
+
+      Public Class TransformAnchor Inherits RuntimeAnchorBase(Of Transform)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  - Global.RuntimeAnchorBase{UnityEngine.Transform}
+  inheritedMembers:
+  - Global.RuntimeAnchorBase{UnityEngine.Transform}.OnAnchorProvided
+  - Global.RuntimeAnchorBase{UnityEngine.Transform}.isSet
+  - Global.RuntimeAnchorBase{UnityEngine.Transform}.Value
+  - Global.RuntimeAnchorBase{UnityEngine.Transform}.Provide(UnityEngine.Transform)
+  - Global.RuntimeAnchorBase{UnityEngine.Transform}.Unset
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: Runtime Anchors/Transform
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.RuntimeAnchorBase{UnityEngine.Transform}
+  commentId: T:Global.RuntimeAnchorBase{UnityEngine.Transform}
+  definition: Global.RuntimeAnchorBase`1
+  name: RuntimeAnchorBase<Transform>
+  nameWithType: RuntimeAnchorBase<Transform>
+  fullName: RuntimeAnchorBase<UnityEngine.Transform>
+  nameWithType.vb: RuntimeAnchorBase(Of Transform)
+  fullName.vb: RuntimeAnchorBase(Of UnityEngine.Transform)
+  name.vb: RuntimeAnchorBase(Of Transform)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: <
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.OnAnchorProvided
+  commentId: F:Global.RuntimeAnchorBase{UnityEngine.Transform}.OnAnchorProvided
+  parent: Global.RuntimeAnchorBase{UnityEngine.Transform}
+  definition: Global.RuntimeAnchorBase`1.OnAnchorProvided
+  name: OnAnchorProvided
+  nameWithType: RuntimeAnchorBase<Transform>.OnAnchorProvided
+  fullName: RuntimeAnchorBase<UnityEngine.Transform>.OnAnchorProvided
+  nameWithType.vb: RuntimeAnchorBase(Of Transform).OnAnchorProvided
+  fullName.vb: RuntimeAnchorBase(Of UnityEngine.Transform).OnAnchorProvided
+- uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.isSet
+  commentId: F:Global.RuntimeAnchorBase{UnityEngine.Transform}.isSet
+  parent: Global.RuntimeAnchorBase{UnityEngine.Transform}
+  definition: Global.RuntimeAnchorBase`1.isSet
+  name: isSet
+  nameWithType: RuntimeAnchorBase<Transform>.isSet
+  fullName: RuntimeAnchorBase<UnityEngine.Transform>.isSet
+  nameWithType.vb: RuntimeAnchorBase(Of Transform).isSet
+  fullName.vb: RuntimeAnchorBase(Of UnityEngine.Transform).isSet
+- uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.Value
+  commentId: P:Global.RuntimeAnchorBase{UnityEngine.Transform}.Value
+  parent: Global.RuntimeAnchorBase{UnityEngine.Transform}
+  definition: Global.RuntimeAnchorBase`1.Value
+  name: Value
+  nameWithType: RuntimeAnchorBase<Transform>.Value
+  fullName: RuntimeAnchorBase<UnityEngine.Transform>.Value
+  nameWithType.vb: RuntimeAnchorBase(Of Transform).Value
+  fullName.vb: RuntimeAnchorBase(Of UnityEngine.Transform).Value
+- uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.Provide(UnityEngine.Transform)
+  commentId: M:Global.RuntimeAnchorBase{UnityEngine.Transform}.Provide(UnityEngine.Transform)
+  parent: Global.RuntimeAnchorBase{UnityEngine.Transform}
+  definition: Global.RuntimeAnchorBase`1.Provide(`0)
+  name: Provide(Transform)
+  nameWithType: RuntimeAnchorBase<Transform>.Provide(Transform)
+  fullName: RuntimeAnchorBase<UnityEngine.Transform>.Provide(UnityEngine.Transform)
+  nameWithType.vb: RuntimeAnchorBase(Of Transform).Provide(Transform)
+  fullName.vb: RuntimeAnchorBase(Of UnityEngine.Transform).Provide(UnityEngine.Transform)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.Provide(UnityEngine.Transform)
+    name: Provide
+  - name: (
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.Provide(UnityEngine.Transform)
+    name: Provide
+  - name: (
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.Unset
+  commentId: M:Global.RuntimeAnchorBase{UnityEngine.Transform}.Unset
+  parent: Global.RuntimeAnchorBase{UnityEngine.Transform}
+  definition: Global.RuntimeAnchorBase`1.Unset
+  name: Unset()
+  nameWithType: RuntimeAnchorBase<Transform>.Unset()
+  fullName: RuntimeAnchorBase<UnityEngine.Transform>.Unset()
+  nameWithType.vb: RuntimeAnchorBase(Of Transform).Unset()
+  fullName.vb: RuntimeAnchorBase(Of UnityEngine.Transform).Unset()
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.Unset
+    name: Unset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase{UnityEngine.Transform}.Unset
+    name: Unset
+  - name: (
+  - name: )
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.RuntimeAnchorBase`1
+  commentId: T:Global.RuntimeAnchorBase`1
+  name: RuntimeAnchorBase<T>
+  nameWithType: RuntimeAnchorBase<T>
+  fullName: RuntimeAnchorBase<T>
+  nameWithType.vb: RuntimeAnchorBase(Of T)
+  fullName.vb: RuntimeAnchorBase(Of T)
+  name.vb: RuntimeAnchorBase(Of T)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1
+    name: RuntimeAnchorBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Global.RuntimeAnchorBase`1.OnAnchorProvided
+  commentId: F:Global.RuntimeAnchorBase`1.OnAnchorProvided
+  name: OnAnchorProvided
+  nameWithType: RuntimeAnchorBase<T>.OnAnchorProvided
+  fullName: RuntimeAnchorBase<T>.OnAnchorProvided
+  nameWithType.vb: RuntimeAnchorBase(Of T).OnAnchorProvided
+  fullName.vb: RuntimeAnchorBase(Of T).OnAnchorProvided
+- uid: Global.RuntimeAnchorBase`1.isSet
+  commentId: F:Global.RuntimeAnchorBase`1.isSet
+  name: isSet
+  nameWithType: RuntimeAnchorBase<T>.isSet
+  fullName: RuntimeAnchorBase<T>.isSet
+  nameWithType.vb: RuntimeAnchorBase(Of T).isSet
+  fullName.vb: RuntimeAnchorBase(Of T).isSet
+- uid: Global.RuntimeAnchorBase`1.Value
+  commentId: P:Global.RuntimeAnchorBase`1.Value
+  name: Value
+  nameWithType: RuntimeAnchorBase<T>.Value
+  fullName: RuntimeAnchorBase<T>.Value
+  nameWithType.vb: RuntimeAnchorBase(Of T).Value
+  fullName.vb: RuntimeAnchorBase(Of T).Value
+- uid: Global.RuntimeAnchorBase`1.Provide(`0)
+  commentId: M:Global.RuntimeAnchorBase`1.Provide(`0)
+  name: Provide(T)
+  nameWithType: RuntimeAnchorBase<T>.Provide(T)
+  fullName: RuntimeAnchorBase<T>.Provide(T)
+  nameWithType.vb: RuntimeAnchorBase(Of T).Provide(T)
+  fullName.vb: RuntimeAnchorBase(Of T).Provide(T)
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1.Provide(`0)
+    name: Provide
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1.Provide(`0)
+    name: Provide
+  - name: (
+  - name: T
+  - name: )
+- uid: Global.RuntimeAnchorBase`1.Unset
+  commentId: M:Global.RuntimeAnchorBase`1.Unset
+  name: Unset()
+  nameWithType: RuntimeAnchorBase<T>.Unset()
+  fullName: RuntimeAnchorBase<T>.Unset()
+  nameWithType.vb: RuntimeAnchorBase(Of T).Unset()
+  fullName.vb: RuntimeAnchorBase(Of T).Unset()
+  spec.csharp:
+  - uid: Global.RuntimeAnchorBase`1.Unset
+    name: Unset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.RuntimeAnchorBase`1.Unset
+    name: Unset
+  - name: (
+  - name: )

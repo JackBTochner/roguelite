@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.StartGame
+  commentId: T:Global.StartGame
+  id: StartGame
+  parent: Global
+  children:
+  - Global.StartGame.StartNewGame
+  langs:
+  - csharp
+  - vb
+  name: StartGame
+  nameWithType: StartGame
+  fullName: StartGame
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/StartGame.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: StartGame
+    path: ../Assets/Scripts/SceneManagement/StartGame.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class StartGame : MonoBehaviour'
+    content.vb: Public Class StartGame Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.StartGame.StartNewGame
+  commentId: M:Global.StartGame.StartNewGame
+  id: StartNewGame
+  parent: Global.StartGame
+  langs:
+  - csharp
+  - vb
+  name: StartNewGame()
+  nameWithType: StartGame.StartNewGame()
+  fullName: StartGame.StartNewGame()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/StartGame.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: StartNewGame
+    path: ../Assets/Scripts/SceneManagement/StartGame.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void StartNewGame()
+    content.vb: Public Sub StartNewGame()
+  overload: Global.StartGame.StartNewGame*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.StartGame.StartNewGame*
+  commentId: Overload:Global.StartGame.StartNewGame
+  name: StartNewGame
+  nameWithType: StartGame.StartNewGame
+  fullName: StartGame.StartNewGame

@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.UIGridRenderer
+  commentId: T:Global.UIGridRenderer
+  id: UIGridRenderer
+  parent: Global
+  children:
+  - Global.UIGridRenderer.gridSize
+  - Global.UIGridRenderer.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  - Global.UIGridRenderer.thickness
+  langs:
+  - csharp
+  - vb
+  name: UIGridRenderer
+  nameWithType: UIGridRenderer
+  fullName: UIGridRenderer
+  type: Class
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UIGridRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: UIGridRenderer
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UIGridRenderer.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: 'public class UIGridRenderer : Graphic'
+    content.vb: Public Class UIGridRenderer Inherits Graphic
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - UnityEngine.EventSystems.UIBehaviour
+  - UnityEngine.UI.Graphic
+- uid: Global.UIGridRenderer.thickness
+  commentId: F:Global.UIGridRenderer.thickness
+  id: thickness
+  parent: Global.UIGridRenderer
+  langs:
+  - csharp
+  - vb
+  name: thickness
+  nameWithType: UIGridRenderer.thickness
+  fullName: UIGridRenderer.thickness
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UIGridRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: thickness
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UIGridRenderer.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: public float thickness
+    return:
+      type: System.Single
+    content.vb: Public thickness As Single
+- uid: Global.UIGridRenderer.gridSize
+  commentId: F:Global.UIGridRenderer.gridSize
+  id: gridSize
+  parent: Global.UIGridRenderer
+  langs:
+  - csharp
+  - vb
+  name: gridSize
+  nameWithType: UIGridRenderer.gridSize
+  fullName: UIGridRenderer.gridSize
+  type: Field
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UIGridRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: gridSize
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UIGridRenderer.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: public Vector2Int gridSize
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public gridSize As Vector2Int
+- uid: Global.UIGridRenderer.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  commentId: M:Global.UIGridRenderer.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  id: OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  parent: Global.UIGridRenderer
+  langs:
+  - csharp
+  - vb
+  name: OnPopulateMesh(VertexHelper)
+  nameWithType: UIGridRenderer.OnPopulateMesh(VertexHelper)
+  fullName: UIGridRenderer.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  type: Method
+  source:
+    remote:
+      path: Assets/Plugins/UI/Legacy/LEGACY_UIGridRenderer.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnPopulateMesh
+    path: ../Assets/Plugins/UI/Legacy/LEGACY_UIGridRenderer.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: protected override void OnPopulateMesh(VertexHelper vh)
+    parameters:
+    - id: vh
+      type: UnityEngine.UI.VertexHelper
+    content.vb: Protected Overrides Sub OnPopulateMesh(vh As VertexHelper)
+  overridden: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  overload: Global.UIGridRenderer.OnPopulateMesh*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.EventSystems.UIBehaviour
+  commentId: T:UnityEngine.EventSystems.UIBehaviour
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: UIBehaviour
+  nameWithType: UIBehaviour
+  fullName: UnityEngine.EventSystems.UIBehaviour
+- uid: UnityEngine.UI.Graphic
+  commentId: T:UnityEngine.UI.Graphic
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Graphic
+  nameWithType: Graphic
+  fullName: UnityEngine.UI.Graphic
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2Int
+  commentId: T:UnityEngine.Vector2Int
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  commentId: M:UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  parent: UnityEngine.UI.Graphic
+  isExternal: true
+  name: OnPopulateMesh(VertexHelper)
+  nameWithType: Graphic.OnPopulateMesh(VertexHelper)
+  fullName: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+  spec.csharp:
+  - uid: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+    name: OnPopulateMesh
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UI.VertexHelper
+    name: VertexHelper
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)
+    name: OnPopulateMesh
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UI.VertexHelper
+    name: VertexHelper
+    isExternal: true
+  - name: )
+- uid: Global.UIGridRenderer.OnPopulateMesh*
+  commentId: Overload:Global.UIGridRenderer.OnPopulateMesh
+  name: OnPopulateMesh
+  nameWithType: UIGridRenderer.OnPopulateMesh
+  fullName: UIGridRenderer.OnPopulateMesh
+- uid: UnityEngine.UI.VertexHelper
+  commentId: T:UnityEngine.UI.VertexHelper
+  parent: UnityEngine.UI
+  isExternal: true
+  name: VertexHelper
+  nameWithType: VertexHelper
+  fullName: UnityEngine.UI.VertexHelper

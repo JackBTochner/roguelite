@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.HubNPCManager
+  commentId: T:Global.HubNPCManager
+  id: HubNPCManager
+  parent: Global
+  children:
+  - Global.HubNPCManager.ActivateNPCs
+  - Global.HubNPCManager.Actors
+  - Global.HubNPCManager.DeactivateNPCs
+  langs:
+  - csharp
+  - vb
+  name: HubNPCManager
+  nameWithType: HubNPCManager
+  fullName: HubNPCManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: HubNPCManager
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class HubNPCManager : MonoBehaviour'
+    content.vb: Public Class HubNPCManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.HubNPCManager.Actors
+  commentId: F:Global.HubNPCManager.Actors
+  id: Actors
+  parent: Global.HubNPCManager
+  langs:
+  - csharp
+  - vb
+  name: Actors
+  nameWithType: HubNPCManager.Actors
+  fullName: HubNPCManager.Actors
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Actors
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public HubNPC[] Actors
+    return:
+      type: Global.HubNPC[]
+    content.vb: Public Actors As HubNPC()
+- uid: Global.HubNPCManager.ActivateNPCs
+  commentId: M:Global.HubNPCManager.ActivateNPCs
+  id: ActivateNPCs
+  parent: Global.HubNPCManager
+  langs:
+  - csharp
+  - vb
+  name: ActivateNPCs()
+  nameWithType: HubNPCManager.ActivateNPCs()
+  fullName: HubNPCManager.ActivateNPCs()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ActivateNPCs
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ActivateNPCs()
+    content.vb: Public Sub ActivateNPCs()
+  overload: Global.HubNPCManager.ActivateNPCs*
+- uid: Global.HubNPCManager.DeactivateNPCs
+  commentId: M:Global.HubNPCManager.DeactivateNPCs
+  id: DeactivateNPCs
+  parent: Global.HubNPCManager
+  langs:
+  - csharp
+  - vb
+  name: DeactivateNPCs()
+  nameWithType: HubNPCManager.DeactivateNPCs()
+  fullName: HubNPCManager.DeactivateNPCs()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/HubNPCManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: DeactivateNPCs
+    path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
+    startLine: 106
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DeactivateNPCs()
+    content.vb: Public Sub DeactivateNPCs()
+  overload: Global.HubNPCManager.DeactivateNPCs*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.HubNPC[]
+  isExternal: true
+  name: HubNPC[]
+  nameWithType: HubNPC[]
+  fullName: HubNPC[]
+  nameWithType.vb: HubNPC()
+  fullName.vb: HubNPC()
+  name.vb: HubNPC()
+  spec.csharp:
+  - uid: Global.HubNPC
+    name: HubNPC
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.HubNPC
+    name: HubNPC
+  - name: (
+  - name: )
+- uid: Global.HubNPCManager.ActivateNPCs*
+  commentId: Overload:Global.HubNPCManager.ActivateNPCs
+  name: ActivateNPCs
+  nameWithType: HubNPCManager.ActivateNPCs
+  fullName: HubNPCManager.ActivateNPCs
+- uid: Global.HubNPCManager.DeactivateNPCs*
+  commentId: Overload:Global.HubNPCManager.DeactivateNPCs
+  name: DeactivateNPCs
+  nameWithType: HubNPCManager.DeactivateNPCs
+  fullName: HubNPCManager.DeactivateNPCs

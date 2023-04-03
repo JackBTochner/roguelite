@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RuntimeAnchorBase`1
+  commentId: T:Global.RuntimeAnchorBase`1
+  id: RuntimeAnchorBase`1
+  parent: Global
+  children:
+  - Global.RuntimeAnchorBase`1.isSet
+  - Global.RuntimeAnchorBase`1.OnAnchorProvided
+  - Global.RuntimeAnchorBase`1.Provide(`0)
+  - Global.RuntimeAnchorBase`1.Unset
+  - Global.RuntimeAnchorBase`1.Value
+  langs:
+  - csharp
+  - vb
+  name: RuntimeAnchorBase<T>
+  nameWithType: RuntimeAnchorBase<T>
+  fullName: RuntimeAnchorBase<T>
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RuntimeAnchorBase
+    path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class RuntimeAnchorBase<T> : DescriptionBaseSO where T : Object'
+    typeParameters:
+    - id: T
+    content.vb: Public Class RuntimeAnchorBase(Of T As [Object]) Inherits DescriptionBaseSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  derivedClasses:
+  - Global.CameraAnchor
+  - Global.DialogueSystemEventsAnchor
+  - Global.RunManagerAnchor
+  - Global.TransformAnchor
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  nameWithType.vb: RuntimeAnchorBase(Of T)
+  fullName.vb: RuntimeAnchorBase(Of T)
+  name.vb: RuntimeAnchorBase(Of T)
+- uid: Global.RuntimeAnchorBase`1.OnAnchorProvided
+  commentId: F:Global.RuntimeAnchorBase`1.OnAnchorProvided
+  id: OnAnchorProvided
+  parent: Global.RuntimeAnchorBase`1
+  langs:
+  - csharp
+  - vb
+  name: OnAnchorProvided
+  nameWithType: RuntimeAnchorBase<T>.OnAnchorProvided
+  fullName: RuntimeAnchorBase<T>.OnAnchorProvided
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnAnchorProvided
+    path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityAction OnAnchorProvided
+    return:
+      type: UnityEngine.Events.UnityAction
+    content.vb: Public OnAnchorProvided As UnityAction
+  nameWithType.vb: RuntimeAnchorBase(Of T).OnAnchorProvided
+  fullName.vb: RuntimeAnchorBase(Of T).OnAnchorProvided
+- uid: Global.RuntimeAnchorBase`1.isSet
+  commentId: F:Global.RuntimeAnchorBase`1.isSet
+  id: isSet
+  parent: Global.RuntimeAnchorBase`1
+  langs:
+  - csharp
+  - vb
+  name: isSet
+  nameWithType: RuntimeAnchorBase<T>.isSet
+  fullName: RuntimeAnchorBase<T>.isSet
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: isSet
+    path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Debug")]
+
+      public bool isSet
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Debug")>
+
+      Public isSet As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Debug
+  nameWithType.vb: RuntimeAnchorBase(Of T).isSet
+  fullName.vb: RuntimeAnchorBase(Of T).isSet
+- uid: Global.RuntimeAnchorBase`1.Value
+  commentId: P:Global.RuntimeAnchorBase`1.Value
+  id: Value
+  parent: Global.RuntimeAnchorBase`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: RuntimeAnchorBase<T>.Value
+  fullName: RuntimeAnchorBase<T>.Value
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Value
+    path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public T Value { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property Value As T
+  overload: Global.RuntimeAnchorBase`1.Value*
+  nameWithType.vb: RuntimeAnchorBase(Of T).Value
+  fullName.vb: RuntimeAnchorBase(Of T).Value
+- uid: Global.RuntimeAnchorBase`1.Provide(`0)
+  commentId: M:Global.RuntimeAnchorBase`1.Provide(`0)
+  id: Provide(`0)
+  parent: Global.RuntimeAnchorBase`1
+  langs:
+  - csharp
+  - vb
+  name: Provide(T)
+  nameWithType: RuntimeAnchorBase<T>.Provide(T)
+  fullName: RuntimeAnchorBase<T>.Provide(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Provide
+    path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Provide(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+    content.vb: Public Sub Provide(value As T)
+  overload: Global.RuntimeAnchorBase`1.Provide*
+  nameWithType.vb: RuntimeAnchorBase(Of T).Provide(T)
+  fullName.vb: RuntimeAnchorBase(Of T).Provide(T)
+- uid: Global.RuntimeAnchorBase`1.Unset
+  commentId: M:Global.RuntimeAnchorBase`1.Unset
+  id: Unset
+  parent: Global.RuntimeAnchorBase`1
+  langs:
+  - csharp
+  - vb
+  name: Unset()
+  nameWithType: RuntimeAnchorBase<T>.Unset()
+  fullName: RuntimeAnchorBase<T>.Unset()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Unset
+    path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Unset()
+    content.vb: Public Sub Unset()
+  overload: Global.RuntimeAnchorBase`1.Unset*
+  nameWithType.vb: RuntimeAnchorBase(Of T).Unset()
+  fullName.vb: RuntimeAnchorBase(Of T).Unset()
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityAction
+  commentId: T:UnityEngine.Events.UnityAction
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityAction
+  nameWithType: UnityAction
+  fullName: UnityEngine.Events.UnityAction
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.RuntimeAnchorBase`1.Value*
+  commentId: Overload:Global.RuntimeAnchorBase`1.Value
+  name: Value
+  nameWithType: RuntimeAnchorBase<T>.Value
+  fullName: RuntimeAnchorBase<T>.Value
+  nameWithType.vb: RuntimeAnchorBase(Of T).Value
+  fullName.vb: RuntimeAnchorBase(Of T).Value
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Global.RuntimeAnchorBase`1.Provide*
+  commentId: Overload:Global.RuntimeAnchorBase`1.Provide
+  name: Provide
+  nameWithType: RuntimeAnchorBase<T>.Provide
+  fullName: RuntimeAnchorBase<T>.Provide
+  nameWithType.vb: RuntimeAnchorBase(Of T).Provide
+  fullName.vb: RuntimeAnchorBase(Of T).Provide
+- uid: Global.RuntimeAnchorBase`1.Unset*
+  commentId: Overload:Global.RuntimeAnchorBase`1.Unset
+  name: Unset
+  nameWithType: RuntimeAnchorBase<T>.Unset
+  fullName: RuntimeAnchorBase<T>.Unset
+  nameWithType.vb: RuntimeAnchorBase(Of T).Unset
+  fullName.vb: RuntimeAnchorBase(Of T).Unset

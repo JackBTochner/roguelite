@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.HSVChangedEvent
+  commentId: T:Global.HSVChangedEvent
+  id: HSVChangedEvent
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: HSVChangedEvent
+  nameWithType: HSVChangedEvent
+  fullName: HSVChangedEvent
+  type: Class
+  source:
+    remote:
+      path: Assets/Plugins/UI/Controls/ColorPicker/Events/HSVChangedEvent.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: HSVChangedEvent
+    path: ../Assets/Plugins/UI/Controls/ColorPicker/Events/HSVChangedEvent.cs
+    startLine: 2
+  assemblies:
+  - Assembly-CSharp-firstpass
+  namespace: Global
+  syntax:
+    content: 'public class HSVChangedEvent : UnityEvent<float, float, float>'
+    content.vb: Public Class HSVChangedEvent Inherits UnityEvent(Of Single, Single, Single)
+  inheritance:
+  - System.Object
+  - UnityEngine.Events.UnityEventBase
+  - UnityEngine.Events.UnityEvent{System.Single,System.Single,System.Single}
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Events.UnityEventBase
+  commentId: T:UnityEngine.Events.UnityEventBase
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEventBase
+  nameWithType: UnityEventBase
+  fullName: UnityEngine.Events.UnityEventBase
+- uid: UnityEngine.Events.UnityEvent{System.Single,System.Single,System.Single}
+  commentId: T:UnityEngine.Events.UnityEvent{System.Single,System.Single,System.Single}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`3
+  name: UnityEvent<float, float, float>
+  nameWithType: UnityEvent<float, float, float>
+  fullName: UnityEngine.Events.UnityEvent<float, float, float>
+  nameWithType.vb: UnityEvent(Of Single, Single, Single)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of Single, Single, Single)
+  name.vb: UnityEvent(Of Single, Single, Single)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`3
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`3
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: UnityEngine.Events.UnityEvent`3
+  commentId: T:UnityEngine.Events.UnityEvent`3
+  isExternal: true
+  name: UnityEvent<T0, T1, T2>
+  nameWithType: UnityEvent<T0, T1, T2>
+  fullName: UnityEngine.Events.UnityEvent<T0, T1, T2>
+  nameWithType.vb: UnityEvent(Of T0, T1, T2)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0, T1, T2)
+  name.vb: UnityEvent(Of T0, T1, T2)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`3
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`3
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )

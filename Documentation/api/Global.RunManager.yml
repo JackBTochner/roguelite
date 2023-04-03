@@ -1,0 +1,562 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.RunManager
+  commentId: T:Global.RunManager
+  id: RunManager
+  parent: Global
+  children:
+  - Global.RunManager.currentRun
+  - Global.RunManager.hubSceneSO
+  - Global.RunManager.lastRun
+  - Global.RunManager.loadLocation
+  - Global.RunManager.mapCanvas
+  - Global.RunManager.mapManager
+  - Global.RunManager.OnPlayerEnterExit
+  - Global.RunManager.playerExit
+  - Global.RunManager.ReturnToHub
+  - Global.RunManager.runManagerAnchor
+  - Global.RunManager.StartNewRun
+  - Global.RunManager.VisitedEncounters
+  langs:
+  - csharp
+  - vb
+  name: RunManager
+  nameWithType: RunManager
+  fullName: RunManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RunManager
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class RunManager : MonoBehaviour'
+    content.vb: Public Class RunManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.RunManager.VisitedEncounters
+  commentId: F:Global.RunManager.VisitedEncounters
+  id: VisitedEncounters
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: VisitedEncounters
+  nameWithType: RunManager.VisitedEncounters
+  fullName: RunManager.VisitedEncounters
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: VisitedEncounters
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<string> VisitedEncounters
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public VisitedEncounters As List(Of String)
+- uid: Global.RunManager.currentRun
+  commentId: F:Global.RunManager.currentRun
+  id: currentRun
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: currentRun
+  nameWithType: RunManager.currentRun
+  fullName: RunManager.currentRun
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: currentRun
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Run currentRun
+    return:
+      type: Global.Run
+    content.vb: Public currentRun As Run
+- uid: Global.RunManager.lastRun
+  commentId: F:Global.RunManager.lastRun
+  id: lastRun
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: lastRun
+  nameWithType: RunManager.lastRun
+  fullName: RunManager.lastRun
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: lastRun
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Run lastRun
+    return:
+      type: Global.Run
+    content.vb: Public lastRun As Run
+- uid: Global.RunManager.mapManager
+  commentId: F:Global.RunManager.mapManager
+  id: mapManager
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: mapManager
+  nameWithType: RunManager.mapManager
+  fullName: RunManager.mapManager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: mapManager
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public MapManagerSO mapManager
+    return:
+      type: Map.MapManagerSO
+    content.vb: Public mapManager As MapManagerSO
+- uid: Global.RunManager.mapCanvas
+  commentId: F:Global.RunManager.mapCanvas
+  id: mapCanvas
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: mapCanvas
+  nameWithType: RunManager.mapCanvas
+  fullName: RunManager.mapCanvas
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: mapCanvas
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject mapCanvas
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public mapCanvas As GameObject
+- uid: Global.RunManager.playerExit
+  commentId: F:Global.RunManager.playerExit
+  id: playerExit
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: playerExit
+  nameWithType: RunManager.playerExit
+  fullName: RunManager.playerExit
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: playerExit
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Exit playerExit
+    return:
+      type: Global.Exit
+    content.vb: Public playerExit As [Exit]
+- uid: Global.RunManager.runManagerAnchor
+  commentId: F:Global.RunManager.runManagerAnchor
+  id: runManagerAnchor
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: runManagerAnchor
+  nameWithType: RunManager.runManagerAnchor
+  fullName: RunManager.runManagerAnchor
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: runManagerAnchor
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public RunManagerAnchor runManagerAnchor
+    return:
+      type: Global.RunManagerAnchor
+    content.vb: Public runManagerAnchor As RunManagerAnchor
+- uid: Global.RunManager.hubSceneSO
+  commentId: F:Global.RunManager.hubSceneSO
+  id: hubSceneSO
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: hubSceneSO
+  nameWithType: RunManager.hubSceneSO
+  fullName: RunManager.hubSceneSO
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: hubSceneSO
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameSceneSO hubSceneSO
+    return:
+      type: Global.GameSceneSO
+    content.vb: Public hubSceneSO As GameSceneSO
+- uid: Global.RunManager.loadLocation
+  commentId: F:Global.RunManager.loadLocation
+  id: loadLocation
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: loadLocation
+  nameWithType: RunManager.loadLocation
+  fullName: RunManager.loadLocation
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: loadLocation
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LoadEventChannelSO loadLocation
+    return:
+      type: Global.LoadEventChannelSO
+    content.vb: Public loadLocation As LoadEventChannelSO
+- uid: Global.RunManager.ReturnToHub
+  commentId: M:Global.RunManager.ReturnToHub
+  id: ReturnToHub
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: ReturnToHub()
+  nameWithType: RunManager.ReturnToHub()
+  fullName: RunManager.ReturnToHub()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ReturnToHub
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void ReturnToHub()
+    content.vb: Public Sub ReturnToHub()
+  overload: Global.RunManager.ReturnToHub*
+- uid: Global.RunManager.StartNewRun
+  commentId: M:Global.RunManager.StartNewRun
+  id: StartNewRun
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: StartNewRun()
+  nameWithType: RunManager.StartNewRun()
+  fullName: RunManager.StartNewRun()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: StartNewRun
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void StartNewRun()
+    content.vb: Public Sub StartNewRun()
+  overload: Global.RunManager.StartNewRun*
+- uid: Global.RunManager.OnPlayerEnterExit
+  commentId: M:Global.RunManager.OnPlayerEnterExit
+  id: OnPlayerEnterExit
+  parent: Global.RunManager
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerEnterExit()
+  nameWithType: RunManager.OnPlayerEnterExit()
+  fullName: RunManager.OnPlayerEnterExit()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/RunManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnPlayerEnterExit
+    path: ../Assets/Scripts/Gameplay/RunManager.cs
+    startLine: 86
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnPlayerEnterExit()
+    content.vb: Public Sub OnPlayerEnterExit()
+  overload: Global.RunManager.OnPlayerEnterExit*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.Run
+  commentId: T:Global.Run
+  name: Run
+  nameWithType: Run
+  fullName: Run
+- uid: Map.MapManagerSO
+  commentId: T:Map.MapManagerSO
+  parent: Map
+  name: MapManagerSO
+  nameWithType: MapManagerSO
+  fullName: Map.MapManagerSO
+- uid: Map
+  commentId: N:Map
+  name: Map
+  nameWithType: Map
+  fullName: Map
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.Exit
+  commentId: T:Global.Exit
+  name: Exit
+  nameWithType: Exit
+  fullName: Exit
+- uid: Global.RunManagerAnchor
+  commentId: T:Global.RunManagerAnchor
+  name: RunManagerAnchor
+  nameWithType: RunManagerAnchor
+  fullName: RunManagerAnchor
+- uid: Global.GameSceneSO
+  commentId: T:Global.GameSceneSO
+  name: GameSceneSO
+  nameWithType: GameSceneSO
+  fullName: GameSceneSO
+- uid: Global.LoadEventChannelSO
+  commentId: T:Global.LoadEventChannelSO
+  name: LoadEventChannelSO
+  nameWithType: LoadEventChannelSO
+  fullName: LoadEventChannelSO
+- uid: Global.RunManager.ReturnToHub*
+  commentId: Overload:Global.RunManager.ReturnToHub
+  name: ReturnToHub
+  nameWithType: RunManager.ReturnToHub
+  fullName: RunManager.ReturnToHub
+- uid: Global.RunManager.StartNewRun*
+  commentId: Overload:Global.RunManager.StartNewRun
+  name: StartNewRun
+  nameWithType: RunManager.StartNewRun
+  fullName: RunManager.StartNewRun
+- uid: Global.RunManager.OnPlayerEnterExit*
+  commentId: Overload:Global.RunManager.OnPlayerEnterExit
+  name: OnPlayerEnterExit
+  nameWithType: RunManager.OnPlayerEnterExit
+  fullName: RunManager.OnPlayerEnterExit

@@ -1,0 +1,312 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Exit
+  commentId: T:Global.Exit
+  id: Exit
+  parent: Global
+  children:
+  - Global.Exit.ExitTriggered(UnityEngine.Collider)
+  - Global.Exit.loadsSceneByName
+  - Global.Exit.locked
+  - Global.Exit.nextSceneName
+  - Global.Exit.PlayerEnteredExit
+  langs:
+  - csharp
+  - vb
+  name: Exit
+  nameWithType: Exit
+  fullName: Exit
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Level/Exit.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Exit
+    path: ../Assets/Scripts/Level/Exit.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class Exit : MonoBehaviour'
+    content.vb: Public Class [Exit] Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - Global.HubExit
+  - Global.PlayerExit
+- uid: Global.Exit.loadsSceneByName
+  commentId: F:Global.Exit.loadsSceneByName
+  id: loadsSceneByName
+  parent: Global.Exit
+  langs:
+  - csharp
+  - vb
+  name: loadsSceneByName
+  nameWithType: Exit.loadsSceneByName
+  fullName: Exit.loadsSceneByName
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Level/Exit.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: loadsSceneByName
+    path: ../Assets/Scripts/Level/Exit.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public bool loadsSceneByName
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HideInInspector>
+
+      Public loadsSceneByName As Boolean
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.Exit.nextSceneName
+  commentId: F:Global.Exit.nextSceneName
+  id: nextSceneName
+  parent: Global.Exit
+  langs:
+  - csharp
+  - vb
+  name: nextSceneName
+  nameWithType: Exit.nextSceneName
+  fullName: Exit.nextSceneName
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Level/Exit.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: nextSceneName
+    path: ../Assets/Scripts/Level/Exit.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public string nextSceneName
+    return:
+      type: System.String
+    content.vb: >-
+      <HideInInspector>
+
+      Public nextSceneName As String
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.Exit.locked
+  commentId: F:Global.Exit.locked
+  id: locked
+  parent: Global.Exit
+  langs:
+  - csharp
+  - vb
+  name: locked
+  nameWithType: Exit.locked
+  fullName: Exit.locked
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Level/Exit.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: locked
+    path: ../Assets/Scripts/Level/Exit.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool locked
+    return:
+      type: System.Boolean
+    content.vb: Public locked As Boolean
+- uid: Global.Exit.PlayerEnteredExit
+  commentId: F:Global.Exit.PlayerEnteredExit
+  id: PlayerEnteredExit
+  parent: Global.Exit
+  langs:
+  - csharp
+  - vb
+  name: PlayerEnteredExit
+  nameWithType: Exit.PlayerEnteredExit
+  fullName: Exit.PlayerEnteredExit
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Level/Exit.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayerEnteredExit
+    path: ../Assets/Scripts/Level/Exit.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityEvent PlayerEnteredExit
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public PlayerEnteredExit As UnityEvent
+- uid: Global.Exit.ExitTriggered(UnityEngine.Collider)
+  commentId: M:Global.Exit.ExitTriggered(UnityEngine.Collider)
+  id: ExitTriggered(UnityEngine.Collider)
+  parent: Global.Exit
+  langs:
+  - csharp
+  - vb
+  name: ExitTriggered(Collider)
+  nameWithType: Exit.ExitTriggered(Collider)
+  fullName: Exit.ExitTriggered(UnityEngine.Collider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Level/Exit.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ExitTriggered
+    path: ../Assets/Scripts/Level/Exit.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void ExitTriggered(Collider other)
+    parameters:
+    - id: other
+      type: UnityEngine.Collider
+    content.vb: Public Overridable Sub ExitTriggered(other As Collider)
+  overload: Global.Exit.ExitTriggered*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.Exit.ExitTriggered*
+  commentId: Overload:Global.Exit.ExitTriggered
+  name: ExitTriggered
+  nameWithType: Exit.ExitTriggered
+  fullName: Exit.ExitTriggered
+- uid: UnityEngine.Collider
+  commentId: T:UnityEngine.Collider
+  parent: UnityEngine
+  isExternal: true
+  name: Collider
+  nameWithType: Collider
+  fullName: UnityEngine.Collider

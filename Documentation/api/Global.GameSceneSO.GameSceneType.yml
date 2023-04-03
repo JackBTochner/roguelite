@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.GameSceneSO.GameSceneType
+  commentId: T:Global.GameSceneSO.GameSceneType
+  id: GameSceneSO.GameSceneType
+  parent: Global
+  children:
+  - Global.GameSceneSO.GameSceneType.Editor
+  - Global.GameSceneSO.GameSceneType.Gameplay
+  - Global.GameSceneSO.GameSceneType.Initialisation
+  - Global.GameSceneSO.GameSceneType.Location
+  - Global.GameSceneSO.GameSceneType.Menu
+  - Global.GameSceneSO.GameSceneType.PersistentManagers
+  langs:
+  - csharp
+  - vb
+  name: GameSceneSO.GameSceneType
+  nameWithType: GameSceneSO.GameSceneType
+  fullName: GameSceneSO.GameSceneType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: GameSceneType
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nUsed by the SceneSelector tool to discern what type of scene it needs to load.\n"
+  example: []
+  syntax:
+    content: public enum GameSceneSO.GameSceneType
+    content.vb: Public Enum GameSceneSO.GameSceneType
+- uid: Global.GameSceneSO.GameSceneType.Location
+  commentId: F:Global.GameSceneSO.GameSceneType.Location
+  id: Location
+  parent: Global.GameSceneSO.GameSceneType
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: GameSceneSO.GameSceneType.Location
+  fullName: GameSceneSO.GameSceneType.Location
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Location
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Location = 0
+    return:
+      type: Global.GameSceneSO.GameSceneType
+- uid: Global.GameSceneSO.GameSceneType.Menu
+  commentId: F:Global.GameSceneSO.GameSceneType.Menu
+  id: Menu
+  parent: Global.GameSceneSO.GameSceneType
+  langs:
+  - csharp
+  - vb
+  name: Menu
+  nameWithType: GameSceneSO.GameSceneType.Menu
+  fullName: GameSceneSO.GameSceneType.Menu
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Menu
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Menu = 1
+    return:
+      type: Global.GameSceneSO.GameSceneType
+- uid: Global.GameSceneSO.GameSceneType.Initialisation
+  commentId: F:Global.GameSceneSO.GameSceneType.Initialisation
+  id: Initialisation
+  parent: Global.GameSceneSO.GameSceneType
+  langs:
+  - csharp
+  - vb
+  name: Initialisation
+  nameWithType: GameSceneSO.GameSceneType.Initialisation
+  fullName: GameSceneSO.GameSceneType.Initialisation
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Initialisation
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Initialisation = 2
+    return:
+      type: Global.GameSceneSO.GameSceneType
+- uid: Global.GameSceneSO.GameSceneType.PersistentManagers
+  commentId: F:Global.GameSceneSO.GameSceneType.PersistentManagers
+  id: PersistentManagers
+  parent: Global.GameSceneSO.GameSceneType
+  langs:
+  - csharp
+  - vb
+  name: PersistentManagers
+  nameWithType: GameSceneSO.GameSceneType.PersistentManagers
+  fullName: GameSceneSO.GameSceneType.PersistentManagers
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PersistentManagers
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: PersistentManagers = 3
+    return:
+      type: Global.GameSceneSO.GameSceneType
+- uid: Global.GameSceneSO.GameSceneType.Gameplay
+  commentId: F:Global.GameSceneSO.GameSceneType.Gameplay
+  id: Gameplay
+  parent: Global.GameSceneSO.GameSceneType
+  langs:
+  - csharp
+  - vb
+  name: Gameplay
+  nameWithType: GameSceneSO.GameSceneType.Gameplay
+  fullName: GameSceneSO.GameSceneType.Gameplay
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Gameplay
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Gameplay = 4
+    return:
+      type: Global.GameSceneSO.GameSceneType
+- uid: Global.GameSceneSO.GameSceneType.Editor
+  commentId: F:Global.GameSceneSO.GameSceneType.Editor
+  id: Editor
+  parent: Global.GameSceneSO.GameSceneType
+  langs:
+  - csharp
+  - vb
+  name: Editor
+  nameWithType: GameSceneSO.GameSceneType.Editor
+  fullName: GameSceneSO.GameSceneType.Editor
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Editor
+    path: ../Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Editor = 5
+    return:
+      type: Global.GameSceneSO.GameSceneType
+references:
+- uid: Global
+- uid: Global.GameSceneSO.GameSceneType
+  commentId: T:Global.GameSceneSO.GameSceneType
+  name: GameSceneSO.GameSceneType
+  nameWithType: GameSceneSO.GameSceneType
+  fullName: GameSceneSO.GameSceneType
+  spec.csharp:
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - name: .
+  - uid: Global.GameSceneSO.GameSceneType
+    name: GameSceneType
+  spec.vb:
+  - uid: Global.GameSceneSO
+    name: GameSceneSO
+  - name: .
+  - uid: Global.GameSceneSO.GameSceneType
+    name: GameSceneType

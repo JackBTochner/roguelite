@@ -1,0 +1,334 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SerializerUtility
+  commentId: T:Global.SerializerUtility
+  id: SerializerUtility
+  parent: Global
+  children:
+  - Global.SerializerUtility.ListToString(System.Collections.Generic.List{System.String})
+  - Global.SerializerUtility.StringToDictionary(System.String)
+  - Global.SerializerUtility.StringToList(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SerializerUtility
+  nameWithType: SerializerUtility
+  fullName: SerializerUtility
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Utility/SerializerUtility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SerializerUtility
+    path: ../Assets/Scripts/Utility/SerializerUtility.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static class SerializerUtility
+    content.vb: Public Module SerializerUtility
+  inheritance:
+  - System.Object
+- uid: Global.SerializerUtility.StringToList(System.String)
+  commentId: M:Global.SerializerUtility.StringToList(System.String)
+  id: StringToList(System.String)
+  parent: Global.SerializerUtility
+  langs:
+  - csharp
+  - vb
+  name: StringToList(string)
+  nameWithType: SerializerUtility.StringToList(string)
+  fullName: SerializerUtility.StringToList(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utility/SerializerUtility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: StringToList
+    path: ../Assets/Scripts/Utility/SerializerUtility.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static List<string> StringToList(string field)
+    parameters:
+    - id: field
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function StringToList(field As String) As List(Of String)
+  overload: Global.SerializerUtility.StringToList*
+  nameWithType.vb: SerializerUtility.StringToList(String)
+  fullName.vb: SerializerUtility.StringToList(String)
+  name.vb: StringToList(String)
+- uid: Global.SerializerUtility.ListToString(System.Collections.Generic.List{System.String})
+  commentId: M:Global.SerializerUtility.ListToString(System.Collections.Generic.List{System.String})
+  id: ListToString(System.Collections.Generic.List{System.String})
+  parent: Global.SerializerUtility
+  langs:
+  - csharp
+  - vb
+  name: ListToString(List<string>)
+  nameWithType: SerializerUtility.ListToString(List<string>)
+  fullName: SerializerUtility.ListToString(System.Collections.Generic.List<string>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utility/SerializerUtility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ListToString
+    path: ../Assets/Scripts/Utility/SerializerUtility.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static string ListToString(List<string> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.List{System.String}
+    return:
+      type: System.String
+    content.vb: Public Shared Function ListToString(list As List(Of String)) As String
+  overload: Global.SerializerUtility.ListToString*
+  nameWithType.vb: SerializerUtility.ListToString(List(Of String))
+  fullName.vb: SerializerUtility.ListToString(System.Collections.Generic.List(Of String))
+  name.vb: ListToString(List(Of String))
+- uid: Global.SerializerUtility.StringToDictionary(System.String)
+  commentId: M:Global.SerializerUtility.StringToDictionary(System.String)
+  id: StringToDictionary(System.String)
+  parent: Global.SerializerUtility
+  langs:
+  - csharp
+  - vb
+  name: StringToDictionary(string)
+  nameWithType: SerializerUtility.StringToDictionary(string)
+  fullName: SerializerUtility.StringToDictionary(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utility/SerializerUtility.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: StringToDictionary
+    path: ../Assets/Scripts/Utility/SerializerUtility.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static Dictionary<string, int> StringToDictionary(string field)
+    parameters:
+    - id: field
+      type: System.String
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+    content.vb: Public Shared Function StringToDictionary(field As String) As Dictionary(Of String, Integer)
+  overload: Global.SerializerUtility.StringToDictionary*
+  nameWithType.vb: SerializerUtility.StringToDictionary(String)
+  fullName.vb: SerializerUtility.StringToDictionary(String)
+  name.vb: StringToDictionary(String)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.SerializerUtility.StringToList*
+  commentId: Overload:Global.SerializerUtility.StringToList
+  name: StringToList
+  nameWithType: SerializerUtility.StringToList
+  fullName: SerializerUtility.StringToList
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.SerializerUtility.ListToString*
+  commentId: Overload:Global.SerializerUtility.ListToString
+  name: ListToString
+  nameWithType: SerializerUtility.ListToString
+  fullName: SerializerUtility.ListToString
+- uid: Global.SerializerUtility.StringToDictionary*
+  commentId: Overload:Global.SerializerUtility.StringToDictionary
+  name: StringToDictionary
+  nameWithType: SerializerUtility.StringToDictionary
+  fullName: SerializerUtility.StringToDictionary
+- uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<string, int>
+  nameWithType: Dictionary<string, int>
+  fullName: System.Collections.Generic.Dictionary<string, int>
+  nameWithType.vb: Dictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Integer)
+  name.vb: Dictionary(Of String, Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )

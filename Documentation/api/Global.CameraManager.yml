@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CameraManager
+  commentId: T:Global.CameraManager
+  id: CameraManager
+  parent: Global
+  children:
+  - Global.CameraManager.inputReader
+  - Global.CameraManager.mainCamera
+  - Global.CameraManager.SetupProtagonistVirtualCamera
+  langs:
+  - csharp
+  - vb
+  name: CameraManager
+  nameWithType: CameraManager
+  fullName: CameraManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: CameraManager
+    path: ../Assets/Scripts/Camera/CameraManager.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class CameraManager : MonoBehaviour'
+    content.vb: Public Class CameraManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.CameraManager.inputReader
+  commentId: F:Global.CameraManager.inputReader
+  id: inputReader
+  parent: Global.CameraManager
+  langs:
+  - csharp
+  - vb
+  name: inputReader
+  nameWithType: CameraManager.inputReader
+  fullName: CameraManager.inputReader
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: inputReader
+    path: ../Assets/Scripts/Camera/CameraManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputReader inputReader
+    return:
+      type: Global.InputReader
+    content.vb: Public inputReader As InputReader
+- uid: Global.CameraManager.mainCamera
+  commentId: F:Global.CameraManager.mainCamera
+  id: mainCamera
+  parent: Global.CameraManager
+  langs:
+  - csharp
+  - vb
+  name: mainCamera
+  nameWithType: CameraManager.mainCamera
+  fullName: CameraManager.mainCamera
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: mainCamera
+    path: ../Assets/Scripts/Camera/CameraManager.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Camera mainCamera
+    return:
+      type: UnityEngine.Camera
+    content.vb: Public mainCamera As Camera
+- uid: Global.CameraManager.SetupProtagonistVirtualCamera
+  commentId: M:Global.CameraManager.SetupProtagonistVirtualCamera
+  id: SetupProtagonistVirtualCamera
+  parent: Global.CameraManager
+  langs:
+  - csharp
+  - vb
+  name: SetupProtagonistVirtualCamera()
+  nameWithType: CameraManager.SetupProtagonistVirtualCamera()
+  fullName: CameraManager.SetupProtagonistVirtualCamera()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SetupProtagonistVirtualCamera
+    path: ../Assets/Scripts/Camera/CameraManager.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  summary: "\nProvides Cinemachine with its target, taken from the TransformAnchor SO containing a reference to the player&apos;s Transform component.\nThis method is called every time the player is reinstantiated.\n"
+  example: []
+  syntax:
+    content: public void SetupProtagonistVirtualCamera()
+    content.vb: Public Sub SetupProtagonistVirtualCamera()
+  overload: Global.CameraManager.SetupProtagonistVirtualCamera*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.InputReader
+  commentId: T:Global.InputReader
+  name: InputReader
+  nameWithType: InputReader
+  fullName: InputReader
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: Global.CameraManager.SetupProtagonistVirtualCamera*
+  commentId: Overload:Global.CameraManager.SetupProtagonistVirtualCamera
+  name: SetupProtagonistVirtualCamera
+  nameWithType: CameraManager.SetupProtagonistVirtualCamera
+  fullName: CameraManager.SetupProtagonistVirtualCamera
