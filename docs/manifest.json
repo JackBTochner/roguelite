@@ -2,11 +2,11 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
-        "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+        "baseUrl": "https://pmuenjohn.github.io/roguelite/",
         "changefreq": "daily"
       }
     },
-    "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+    "baseUrl": "https://pmuenjohn.github.io/roguelite/",
     "changefreq": "weekly"
   },
   "homepages": [],
@@ -82,7 +82,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.ColorChangedEvent.html",
-          "hash": "NhhgE6B0lu8DYTLqyNAbaptRFdk+UYnyGTktR0hWYhU="
+          "hash": "3h83AJfuX2mKkQq277ZqcGJE4SlFMjn4x9LPgRPRvZo="
         }
       },
       "version": ""
@@ -126,18 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.ConversationFields.html",
-          "hash": "pRMbW/FcZAOGGIH3uIjv7tNciuFAkCWqf5t5+CuJACw="
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.DEBUG_RunSimulator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.DEBUG_RunSimulator.html",
-          "hash": "jDH/tSU++aFoVAPvl8neMNn6MJg5nd77Tpng1l8/C6w="
+          "hash": "wOOSAHbysA8CN5WZ1o8fu92RQd02QOZFR/TGGMvWT/g="
         }
       },
       "version": ""
@@ -247,7 +236,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.HSVChangedEvent.html",
-          "hash": "z+wzFZFy4R91Tot7zkTMfEF9udAp1kpQfR+pis3exMY="
+          "hash": "4EJDlCSTc90wPodVfXqrgWMqB1w7D2GjGjcxkQdmSWE="
         }
       },
       "version": ""
@@ -313,7 +302,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.LEGACY_UILineRenderer.html",
-          "hash": "Z1RXMmxYdopDDiEuITntEw6zyjzAcvYOWGwgKfPseHE="
+          "hash": "wo4G8ii10K7ugjTGy2j7Y/hj/PhGlDRDvLl6N92KmrY="
         }
       },
       "version": ""
@@ -489,7 +478,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.SerializerUtility.html",
-          "hash": "kgNhtrIs69l66faFsA6OfffRWcQTSVC9MJQK9bKS/54="
+          "hash": "shkTIIQ89sOCZf83pEU8p1PkrcJp+QWLAIw/gqArdO0="
         }
       },
       "version": ""
@@ -511,7 +500,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.TestCompression.html",
-          "hash": "fli6fg8dcpzFPmaAx53Nf1x/GgTLvM16U9dgglCIMxg="
+          "hash": "ehG8Y1T2D1r4HXo2BxtU0pnyfkrDvatVdyHbZhLxgM8="
         }
       },
       "version": ""
@@ -555,7 +544,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.UIGridRenderer.html",
-          "hash": "KBRqEBN7Ga+/UVFpAFikJhiceHev3Sm/1WhpRJHlTk0="
+          "hash": "wkiUtCoN99HTVTj5MK6sg4kPUANRE7I8t/JyUDSvGLU="
         }
       },
       "version": ""
@@ -588,7 +577,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.html",
-          "hash": "4QrP2O5ggbwFnaMgIXHYK966G5w2mUKRdZXLkItxsKI="
+          "hash": "msbNhTQ4LAROzzhd69dHkmRUd81XbAYRyxow7grtzIw="
         }
       },
       "version": ""
@@ -599,7 +588,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "tm9pyJLdjNkuwiSyVBkxTOvPFl+pSPebBb/iSKvvZ4w="
+          "hash": "KPlmyHS03dZjVsFnK7TIy40wZt3sCwoxWteJWrkmoEI="
         }
       },
       "version": ""

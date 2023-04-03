@@ -62,7 +62,7 @@
             }
         ],
         "sitemap": {
-            "baseUrl": "https://normanderwan.github.io/DocFxForUnity",
+            "baseUrl": "https://pmuenjohn.github.io/roguelite",
             "changefreq": "weekly",
             "fileOptions": {
                 "api/*": {

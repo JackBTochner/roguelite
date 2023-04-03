@@ -256,7 +256,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Priority
-      value: 5
+      value: 10
       type: 1
       typeString: CustomFieldType_Number
     - title: PlayOnce
@@ -264,7 +264,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: RequiredMinNPCInteractions
-      value: 1
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: RequiresRunCleared
@@ -1862,7 +1862,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: RequiredMinNPCInteractions
-      value: 1
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: RequiresRunCleared
