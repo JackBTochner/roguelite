@@ -54,15 +54,6 @@ public class SceneLoader : MonoBehaviour
 #endif
     }
 
-    private void LoadLocation()
-    { 
-
-    }
-
-    private void LoadMenu()
-    { 
-
-    }
     private void LocationColdStartup(GameSceneSO currentlyOpenedLocation, bool showLoadingScreen, bool fadeScreen)
     { 
 		_currentlyLoadedScene = currentlyOpenedLocation;
@@ -173,8 +164,9 @@ public class SceneLoader : MonoBehaviour
 			_toggleLoadingScreen.RaiseEvent(true);
 		}
 
-		_loadingOperationHandle = _sceneToLoad.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true, 0);
-		_loadingOperationHandle.Completed += OnNewSceneLoaded;
+		// _loadingOperationHandle = _sceneToLoad.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true, 0);
+        _loadingOperationHandle = Addressables.LoadSceneAsync(_sceneToLoad.sceneReference, LoadSceneMode.Additive, true, 0);
+        _loadingOperationHandle.Completed += OnNewSceneLoaded;
 	}
 
 	private void OnNewSceneLoaded(AsyncOperationHandle<SceneInstance> obj)

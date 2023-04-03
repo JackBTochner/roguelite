@@ -315,10 +315,6 @@ MonoBehaviour:
       value: '[]'
       type: 0
       typeString: CustomFieldType_Text
-    - title: HasBeenPlayed
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -866,10 +862,6 @@ MonoBehaviour:
       value: '[]'
       type: 0
       typeString: CustomFieldType_Text
-    - title: HasBeenPlayed
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -1360,10 +1352,6 @@ MonoBehaviour:
       value: '[]'
       type: 0
       typeString: CustomFieldType_Text
-    - title: HasBeenPlayed
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
     - title: RequiresLastRunCleared
       value: False
       type: 2
@@ -1917,10 +1905,6 @@ MonoBehaviour:
       value: '[]'
       type: 0
       typeString: CustomFieldType_Text
-    - title: HasBeenPlayed
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
     - title: RequiresLastRunCleared
       value: False
       type: 2
@@ -2538,10 +2522,6 @@ MonoBehaviour:
       value: '[]'
       type: 0
       typeString: CustomFieldType_Text
-    - title: HasBeenPlayed
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -3095,10 +3075,6 @@ MonoBehaviour:
       value: '[]'
       type: 0
       typeString: CustomFieldType_Text
-    - title: HasBeenPlayed
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -3529,6 +3505,6 @@ MonoBehaviour:
     Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Failure
     Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"State","value":"unassigned","type":0,"typeString":"CustomFieldType_QuestState"},{"title":"Is
     Item","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Initial
-    Value","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"SuperPriority","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"Priority","value":"5","type":1,"typeString":"CustomFieldType_Number"},{"title":"PlayOnce","value":"True","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiredMinNPCInteractions","value":"1","type":1,"typeString":"CustomFieldType_Number"},{"title":"RequiresRunCleared","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiresRunNotCleared","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiresLastRunCleared","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiresLastRunNotCleared","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiredConversations","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredFalseConversations","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredEncounters","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredEncountersLastRun","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredEncountersThisRun","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredAnyEncounters","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredAnyEncountersLastRun","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredAnyEncountersThisRun","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"HasBeenPlayed","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
+    Value","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"SuperPriority","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"Priority","value":"5","type":1,"typeString":"CustomFieldType_Number"},{"title":"PlayOnce","value":"True","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiredMinNPCInteractions","value":"1","type":1,"typeString":"CustomFieldType_Number"},{"title":"RequiresRunCleared","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiresRunNotCleared","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiresLastRunCleared","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiresLastRunNotCleared","value":"False","type":2,"typeString":"CustomFieldType_Boolean"},{"title":"RequiredConversations","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredFalseConversations","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredEncounters","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredEncountersLastRun","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredEncountersThisRun","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredAnyEncounters","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredAnyEncountersLastRun","value":"[]","type":0,"typeString":"CustomFieldType_Text"},{"title":"RequiredAnyEncountersThisRun","value":"[]","type":0,"typeString":"CustomFieldType_Text"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
     Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Dialogue
     Text","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Sequence","value":"","type":0,"typeString":"CustomFieldType_Text"}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'

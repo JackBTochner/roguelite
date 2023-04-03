@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using UnityEngine;
 
 // Modified version of https://github.com/silverua/slay-the-spire-map-in-unity
@@ -16,7 +14,6 @@ namespace Map
 
         public readonly List<Point> outgoing = new List<Point>();
 
-        [JsonConverter(typeof (StringEnumConverter))]
         public readonly NodeType nodeType;
 
         public readonly string templateName;

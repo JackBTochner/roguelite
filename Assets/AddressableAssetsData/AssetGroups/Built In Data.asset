@@ -9,24 +9,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Script: {fileID: 0}
   m_Name: Built In Data
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Unity.Addressables.Editor:UnityEditor.AddressableAssets.Settings:AddressableAssetGroup
   m_GroupName: Built In Data
   m_Data:
     m_SerializedData: []
-  m_GUID: 344ccfeb913d0df49a221b4fdf65c9f3
+  m_GUID: 8c2f7f6d6fd3f8d47840eacc26ab1d02
   m_SerializeEntries:
   - m_GUID: Resources
     m_Address: Resources
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: EditorSceneList
     m_Address: EditorSceneList
     m_ReadOnly: 1
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
-  m_Settings: {fileID: 11400000, guid: 7c8bec47dba423b4ea39c7c5e627f101, type: 2}
+  m_Settings: {fileID: 11400000, guid: 81aaf3cf73564c142aaf014d2342932d, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 63728e220550ccd4c8794c4cd387a894, type: 2}
+    - {fileID: 11400000, guid: d58bcb27a2c3786478e6bcfbb488fd37, type: 2}

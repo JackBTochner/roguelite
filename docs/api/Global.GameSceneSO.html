@@ -82,19 +82,20 @@
 
   <h1 id="Global_GameSceneSO" data-uid="Global.GameSceneSO" class="text-break">Class GameSceneSO
 </h1>
-  <div class="markdown level0 summary"><p>A ScriptableObject template which contains necessary data that is common in all game scenes (Locations, Managers, Menus), and acts as an addressable identifier.</p>
+  <div class="markdown level0 summary"><p>A ScriptableObject template which contains necessary data that is common in all game scenes (Locations, Managers, Menus, (music?)), and acts as an addressable identifier.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Object.html">Object</a></div>
-    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
-    <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
-    <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
-    <div class="level5"><a class="xref" href="Global.SerializableScriptableObject.html">SerializableScriptableObject</a></div>
-    <div class="level6"><a class="xref" href="Global.DescriptionBaseSO.html">DescriptionBaseSO</a></div>
-    <div class="level7"><span class="xref">GameSceneSO</span></div>
+    <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a></div>
+    <div class="level3"><a class="xref" href="Global.SerializableScriptableObject.html">SerializableScriptableObject</a></div>
+    <div class="level4"><a class="xref" href="Global.DescriptionBaseSO.html">DescriptionBaseSO</a></div>
+    <div class="level5"><span class="xref">GameSceneSO</span></div>
+      <div class="level6"><a class="xref" href="Global.LocationSceneSO.html">LocationSceneSO</a></div>
+      <div class="level6"><a class="xref" href="Global.MenuSceneSO.html">MenuSceneSO</a></div>
+      <div class="level6"><a class="xref" href="Global.PersistentManagerSceneSO.html">PersistentManagerSceneSO</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -109,7 +110,8 @@
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
   <h5 id="Global_GameSceneSO_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GameSceneSO : DescriptionBaseSO</code></pre>
+    <pre><code class="lang-csharp hljs">[CreateAssetMenu(fileName = &quot;NewGameplayScene&quot;, menuName = &quot;Scene Data/Gameplay&quot;)]
+public class GameSceneSO : DescriptionBaseSO</code></pre>
   </div>
   <h3 id="fields">Fields
 </h3>
@@ -118,7 +120,7 @@
     <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_GameSceneSO_sceneReference.md&amp;value=---%0Auid%3A%20Global.GameSceneSO.sceneReference%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs/#L12">View Source</a>
+    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs/#L13">View Source</a>
   </span>
   <h4 id="Global_GameSceneSO_sceneReference" data-uid="Global.GameSceneSO.sceneReference">sceneReference</h4>
   <div class="markdown level1 summary"></div>
@@ -147,7 +149,7 @@
     <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_GameSceneSO_sceneType.md&amp;value=---%0Auid%3A%20Global.GameSceneSO.sceneType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs/#L11">View Source</a>
+    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/SceneManagement/ScriptableObjects/GameSceneSO.cs/#L12">View Source</a>
   </span>
   <h4 id="Global_GameSceneSO_sceneType" data-uid="Global.GameSceneSO.sceneType">sceneType</h4>
   <div class="markdown level1 summary"></div>

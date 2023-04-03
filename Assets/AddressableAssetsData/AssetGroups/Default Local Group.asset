@@ -9,57 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Script: {fileID: 0}
   m_Name: Default Local Group
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Unity.Addressables.Editor:UnityEditor.AddressableAssets.Settings:AddressableAssetGroup
   m_GroupName: Default Local Group
   m_Data:
     m_SerializedData: []
-  m_GUID: 35152dcedf4fddb45abb9ba93055a9e4
-  m_SerializeEntries:
-  - m_GUID: 13e8bbdbc26c5fd4aa7fea9d60df9702
-    m_Address: Assets/Scenes/Locations/Levels/Start.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 0ab658c12c0a7e8469dcdcd2ee9ef5e2
-    m_Address: Assets/Scenes/Locations/Levels/store.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 40499818643cd3448bf125039b23bf6a
-    m_Address: Assets/Scenes/Locations/Levels/minor_enemy_1.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 6aca74c6ff66a6a4aa492a17bf2723d0
-    m_Address: Assets/Scenes/Locations/Levels/minor_enemy_2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: ae0e827285b18b447b13c221766a6d69
-    m_Address: Assets/Scenes/Locations/Levels/minor_enemy_3.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: e2ce14255dd45c74baa700a390952c3c
-    m_Address: Assets/Scenes/Locations/Levels/minor_enemy_4.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 691ce7014dbde0e46a996067e88e702f
-    m_Address: Assets/Scenes/Locations/Levels/encounter.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: d2ede50cca5f16c4881684609e7751d2
-    m_Address: Assets/Scenes/Locations/Levels/elite_enemy_1.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 1e052e4a48cc88d40a12e286721d85ec
-    m_Address: Assets/Scenes/Locations/Levels/elite_enemy_2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: a16ac44224f3a6a438eba415c2be87e7
-    m_Address: Assets/Scenes/Locations/Levels/boss.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_GUID: 355ec963db292e44288bac3bff15ad7b
+  m_SerializeEntries: []
   m_ReadOnly: 0
-  m_Settings: {fileID: 11400000, guid: 7c8bec47dba423b4ea39c7c5e627f101, type: 2}
+  m_Settings: {fileID: 11400000, guid: 81aaf3cf73564c142aaf014d2342932d, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 92f5230567534f54d9f839af0b1fe762, type: 2}
-    - {fileID: 11400000, guid: 6ed5fc782d819da48b426ef9a2033610, type: 2}
+    - {fileID: 11400000, guid: e5e1177bcebe2a540be4bb2ce0f143fc, type: 2}
+    - {fileID: 11400000, guid: 0a4f15655ecad1842a5f80e807bd3538, type: 2}

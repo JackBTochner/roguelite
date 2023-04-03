@@ -182,7 +182,11 @@ public class HubNPCManager : MonoBehaviour
 
         //        Debug.Log("NotDiscarded");
         // Check that PlayOnce & HasBeenPlayed
-        if (fields.PlayOnce && fields.HasBeenPlayed) isValid = false;
+        if (fields.PlayOnce)
+            if(playedConversations.Contains(DialogueLua
+                    .GetConversationField(id, "Title")
+                    .asString))
+            isValid = false;
 
         //        Debug.Log("Passed PlayOnce+HasBeenPlayed Check");
         // Check RequiredMinNPCInteractions
@@ -462,7 +466,4 @@ public struct ConversationFields
             .StringToList(DialogueLua
                 .GetConversationField(id, "RequiredAnyEncountersThisRun")
                 .asString);
-
-    public bool HasBeenPlayed =>
-        DialogueLua.GetConversationField(id, "HasBeenPlayed").asBool;
 }

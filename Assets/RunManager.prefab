@@ -45,11 +45,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5921718658032362132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5031f4a10056926438ca8d1b90ce9e48, type: 3}
+  m_Script: {fileID: 11500000, guid: 693d6b65f9ba2b4419f219cb11723579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VisitedEncounters: []
   currentRun:
     runStatistics:
+      VisitedEncounters: []
+      nodesTravelled: 0
+      bossNodesTravelled: 0
+      diedTo: 
+      currencyGained: 0
+      currencySpent: 0
+      boonsGained: 0
+  lastRun:
+    runStatistics:
+      VisitedEncounters: []
       nodesTravelled: 0
       bossNodesTravelled: 0
       diedTo: 
@@ -59,6 +70,9 @@ MonoBehaviour:
   mapManager: {fileID: 5921718658032362131}
   mapCanvas: {fileID: 5756427435594230542}
   playerExit: {fileID: 0}
+  runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
+  hubSceneSO: {fileID: 11400000, guid: 7b6cd1183f48c084abe1deadb620fde5, type: 2}
+  loadLocation: {fileID: 11400000, guid: 9f9b3cba6cfbbbe448d4be335e5ce5b2, type: 2}
 --- !u!114 &5921718658032362131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +150,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5921718658032362130}
     m_Modifications:
     - target: {fileID: 2147333006667349350, guid: 7a0544e38854d6a46a6288ab30597e75,
@@ -254,6 +269,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a0544e38854d6a46a6288ab30597e75, type: 3}
 --- !u!224 &5756427434139172349 stripped
 RectTransform:

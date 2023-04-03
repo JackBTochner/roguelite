@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
 using UnityEngine;
 using Utilities;
 
@@ -59,10 +58,12 @@ namespace Map
             return nodes.FirstOrDefault(n => n.point.Equals(point));
         }
 
+/*
         public string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
+*/
     }
 }
 

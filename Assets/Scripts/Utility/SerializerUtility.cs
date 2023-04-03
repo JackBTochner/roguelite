@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
 
+
 // TODO: methods NEED TO SANITISE THEIR INPUTS. PLEASE FIX.
 public static class SerializerUtility
 {

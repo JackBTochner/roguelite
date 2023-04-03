@@ -1,62 +1,332 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.Actor.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.BoolEventChannelSO.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.CameraAnchor.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.CameraManager.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.ChatController.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.ColorChangedEvent.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.Controls.IPlayerActions.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.Controls.PlayerActions.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.Controls.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.ConversationFields.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.DEBUG_RunSimulator.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.DescriptionBaseSO.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.DialogueManagerAnchorProvider.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.DialogueSystemEventsAnchor.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.DropdownSample.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.EditorColdStartup.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.EnvMapAnimator.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.Exit.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.GameSceneSO.GameSceneType.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.GameSceneSO.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.HSVChangedEvent.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.HubExit.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.HubNPC.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.HubNPCManager.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.Initializer.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.InputReader.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.LEGACY_UILineRenderer.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.LoadEventChannelSO.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.LocationSceneSO.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.MenuSceneSO.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.PersistentManagerSceneSO.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.PlayerCharacter.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.PlayerExit.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.PlayerSpawn.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.PlayerSpawnSystem.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.Run.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.RunManager.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.RunManagerAnchor.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.RunStatistics.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.RuntimeAnchorBase-1.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.SceneLoader.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.SerializableScriptableObject.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.SerializerUtility.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.StartGame.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.TestCompression.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.TransformAnchor.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.TransformEventChannelSO.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.TransitionChannelSO.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.UIGridRenderer.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.UIVisibility.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.VoidEventChannelSO.html</loc>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/index.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/manual/coniunctis.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/manual/etiam.html</loc>
-    <lastmod>2023-03-05T01:16:35+11:00</lastmod>
+    <lastmod>2023-04-01T12:46:54+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

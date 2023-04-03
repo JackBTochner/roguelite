@@ -1,8 +1,93 @@
 {
+  "api/Global.Actor.html": {
+    "href": "api/Global.Actor.html",
+    "title": "Class Actor | Roguelite documentation",
+    "keywords": "Class Actor Inheritance object Object Component Behaviour MonoBehaviour Actor Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class Actor : MonoBehaviour Fields | Improve this Doc View Source Instance Declaration public static Actor Instance Field Value Type Description Actor | Improve this Doc View Source staticUnique Declaration public bool staticUnique Field Value Type Description bool"
+  },
+  "api/Global.BoolEventChannelSO.html": {
+    "href": "api/Global.BoolEventChannelSO.html",
+    "title": "Class BoolEventChannelSO | Roguelite documentation",
+    "keywords": "Class BoolEventChannelSO This class is used for Events that have a bool argument. Example: An event to toggle a UI interface Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO BoolEventChannelSO Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Events/Bool Event Channel\")] public class BoolEventChannelSO : DescriptionBaseSO Methods | Improve this Doc View Source RaiseEvent(bool) Declaration public void RaiseEvent(bool value) Parameters Type Name Description bool value Events | Improve this Doc View Source OnEventRaised Declaration public event UnityAction<bool> OnEventRaised Event Type Type Description UnityAction<bool>"
+  },
+  "api/Global.CameraAnchor.html": {
+    "href": "api/Global.CameraAnchor.html",
+    "title": "Class CameraAnchor | Roguelite documentation",
+    "keywords": "Class CameraAnchor Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO RuntimeAnchorBase<Camera> CameraAnchor Inherited Members RuntimeAnchorBase<Camera>.OnAnchorProvided RuntimeAnchorBase<Camera>.isSet RuntimeAnchorBase<Camera>.Value RuntimeAnchorBase<Camera>.Provide(Camera) RuntimeAnchorBase<Camera>.Unset() DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Runtime Anchors/Camera\")] public class CameraAnchor : RuntimeAnchorBase<Camera>"
+  },
+  "api/Global.CameraManager.html": {
+    "href": "api/Global.CameraManager.html",
+    "title": "Class CameraManager | Roguelite documentation",
+    "keywords": "Class CameraManager Inheritance object Object Component Behaviour MonoBehaviour CameraManager Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class CameraManager : MonoBehaviour Fields | Improve this Doc View Source inputReader Declaration public InputReader inputReader Field Value Type Description InputReader | Improve this Doc View Source mainCamera Declaration public Camera mainCamera Field Value Type Description Camera Methods | Improve this Doc View Source SetupProtagonistVirtualCamera() Provides Cinemachine with its target, taken from the TransformAnchor SO containing a reference to the player's Transform component. This method is called every time the player is reinstantiated. Declaration public void SetupProtagonistVirtualCamera()"
+  },
+  "api/Global.ChatController.html": {
+    "href": "api/Global.ChatController.html",
+    "title": "Class ChatController | Roguelite documentation",
+    "keywords": "Class ChatController Inheritance object Object Component Behaviour MonoBehaviour ChatController Namespace: Global Assembly: Assembly-CSharp-firstpass.dll Syntax public class ChatController : MonoBehaviour Fields | Improve this Doc View Source ChatDisplayOutput Declaration public TMP_Text ChatDisplayOutput Field Value Type Description TMPro.TMP_Text | Improve this Doc View Source ChatInputField Declaration public TMP_InputField ChatInputField Field Value Type Description TMPro.TMP_InputField | Improve this Doc View Source ChatScrollbar Declaration public Scrollbar ChatScrollbar Field Value Type Description UnityEngine.UI.Scrollbar"
+  },
+  "api/Global.ColorChangedEvent.html": {
+    "href": "api/Global.ColorChangedEvent.html",
+    "title": "Class ColorChangedEvent | Roguelite documentation",
+    "keywords": "Class ColorChangedEvent Inheritance object UnityEventBase UnityEvent<Color> ColorChangedEvent Namespace: Global Assembly: Assembly-CSharp.dll Syntax [Serializable] public class ColorChangedEvent : UnityEvent<Color>"
+  },
+  "api/Global.Controls.html": {
+    "href": "api/Global.Controls.html",
+    "title": "Class Controls | Roguelite documentation",
+    "keywords": "Class Controls Inheritance object Controls Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class Controls Constructors | Improve this Doc View Source Controls() Declaration public Controls() Properties | Improve this Doc View Source asset Declaration public InputActionAsset asset { get; } Property Value Type Description UnityEngine.InputSystem.InputActionAsset | Improve this Doc View Source bindingMask Declaration public InputBinding? bindingMask { get; set; } Property Value Type Description UnityEngine.InputSystem.InputBinding? | Improve this Doc View Source bindings Declaration public IEnumerable<InputBinding> bindings { get; } Property Value Type Description IEnumerable<UnityEngine.InputSystem.InputBinding> | Improve this Doc View Source controlSchemes Declaration public ReadOnlyArray<InputControlScheme> controlSchemes { get; } Property Value Type Description UnityEngine.InputSystem.Utilities.ReadOnlyArray<TValue><UnityEngine.InputSystem.InputControlScheme> | Improve this Doc View Source devices Declaration public ReadOnlyArray<InputDevice>? devices { get; set; } Property Value Type Description UnityEngine.InputSystem.Utilities.ReadOnlyArray<TValue><InputDevice>? | Improve this Doc View Source GamepadScheme Declaration public InputControlScheme GamepadScheme { get; } Property Value Type Description UnityEngine.InputSystem.InputControlScheme | Improve this Doc View Source KeyboardandMouseScheme Declaration public InputControlScheme KeyboardandMouseScheme { get; } Property Value Type Description UnityEngine.InputSystem.InputControlScheme | Improve this Doc View Source Player Declaration public Controls.PlayerActions Player { get; } Property Value Type Description Controls.PlayerActions Methods | Improve this Doc View Source Contains(InputAction) Declaration public bool Contains(InputAction action) Parameters Type Name Description UnityEngine.InputSystem.InputAction action Returns Type Description bool | Improve this Doc View Source Disable() Declaration public void Disable() | Improve this Doc View Source Dispose() Declaration public void Dispose() | Improve this Doc View Source Enable() Declaration public void Enable() | Improve this Doc View Source FindAction(string, bool) Declaration public InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false) Parameters Type Name Description string actionNameOrId bool throwIfNotFound Returns Type Description UnityEngine.InputSystem.InputAction | Improve this Doc View Source FindBinding(InputBinding, out InputAction) Declaration public int FindBinding(InputBinding bindingMask, out InputAction action) Parameters Type Name Description UnityEngine.InputSystem.InputBinding bindingMask UnityEngine.InputSystem.InputAction action Returns Type Description int | Improve this Doc View Source GetEnumerator() Declaration public IEnumerator<InputAction> GetEnumerator() Returns Type Description IEnumerator<UnityEngine.InputSystem.InputAction>"
+  },
+  "api/Global.Controls.IPlayerActions.html": {
+    "href": "api/Global.Controls.IPlayerActions.html",
+    "title": "Interface Controls.IPlayerActions | Roguelite documentation",
+    "keywords": "Interface Controls.IPlayerActions Namespace: Global Assembly: Assembly-CSharp.dll Syntax public interface Controls.IPlayerActions Methods | Improve this Doc View Source OnJump(CallbackContext) Declaration void OnJump(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context | Improve this Doc View Source OnLook(CallbackContext) Declaration void OnLook(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context | Improve this Doc View Source OnMousePosition(CallbackContext) Declaration void OnMousePosition(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context | Improve this Doc View Source OnMove(CallbackContext) Declaration void OnMove(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context | Improve this Doc View Source OnRestart(CallbackContext) Declaration void OnRestart(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context"
+  },
+  "api/Global.Controls.PlayerActions.html": {
+    "href": "api/Global.Controls.PlayerActions.html",
+    "title": "Struct Controls.PlayerActions | Roguelite documentation",
+    "keywords": "Struct Controls.PlayerActions Namespace: Global Assembly: Assembly-CSharp.dll Syntax public struct Controls.PlayerActions Constructors | Improve this Doc View Source PlayerActions(Controls) Declaration public PlayerActions(Controls wrapper) Parameters Type Name Description Controls wrapper Properties | Improve this Doc View Source enabled Declaration public bool enabled { get; } Property Value Type Description bool | Improve this Doc View Source Jump Declaration public InputAction Jump { get; } Property Value Type Description UnityEngine.InputSystem.InputAction | Improve this Doc View Source Look Declaration public InputAction Look { get; } Property Value Type Description UnityEngine.InputSystem.InputAction | Improve this Doc View Source MousePosition Declaration public InputAction MousePosition { get; } Property Value Type Description UnityEngine.InputSystem.InputAction | Improve this Doc View Source Move Declaration public InputAction Move { get; } Property Value Type Description UnityEngine.InputSystem.InputAction | Improve this Doc View Source Restart Declaration public InputAction Restart { get; } Property Value Type Description UnityEngine.InputSystem.InputAction Methods | Improve this Doc View Source Disable() Declaration public void Disable() | Improve this Doc View Source Enable() Declaration public void Enable() | Improve this Doc View Source Get() Declaration public InputActionMap Get() Returns Type Description UnityEngine.InputSystem.InputActionMap | Improve this Doc View Source SetCallbacks(IPlayerActions) Declaration public void SetCallbacks(Controls.IPlayerActions instance) Parameters Type Name Description Controls.IPlayerActions instance Operators | Improve this Doc View Source implicit operator InputActionMap(PlayerActions) Declaration public static implicit operator InputActionMap(Controls.PlayerActions set) Parameters Type Name Description Controls.PlayerActions set Returns Type Description UnityEngine.InputSystem.InputActionMap"
+  },
+  "api/Global.ConversationFields.html": {
+    "href": "api/Global.ConversationFields.html",
+    "title": "Struct ConversationFields | Roguelite documentation",
+    "keywords": "Struct ConversationFields Namespace: Global Assembly: Assembly-CSharp.dll Syntax public struct ConversationFields Constructors | Improve this Doc View Source ConversationFields(int) Declaration public ConversationFields(int id) Parameters Type Name Description int id Properties | Improve this Doc View Source HasBeenPlayed Declaration public bool HasBeenPlayed { get; } Property Value Type Description bool | Improve this Doc View Source PlayOnce Declaration public bool PlayOnce { get; } Property Value Type Description bool | Improve this Doc View Source Priority Declaration public int Priority { get; } Property Value Type Description int | Improve this Doc View Source RequiredAnyEncounters Declaration public List<string> RequiredAnyEncounters { get; } Property Value Type Description List<string> | Improve this Doc View Source RequiredAnyEncountersLastRun Declaration public List<string> RequiredAnyEncountersLastRun { get; } Property Value Type Description List<string> | Improve this Doc View Source RequiredAnyEncountersThisRun Declaration public List<string> RequiredAnyEncountersThisRun { get; } Property Value Type Description List<string> | Improve this Doc View Source RequiredConversations Declaration public List<string> RequiredConversations { get; } Property Value Type Description List<string> | Improve this Doc View Source RequiredEncounters Declaration public List<string> RequiredEncounters { get; } Property Value Type Description List<string> | Improve this Doc View Source RequiredEncountersLastRun Declaration public List<string> RequiredEncountersLastRun { get; } Property Value Type Description List<string> | Improve this Doc View Source RequiredEncountersThisRun Declaration public List<string> RequiredEncountersThisRun { get; } Property Value Type Description List<string> | Improve this Doc View Source RequiredFalseConversations Declaration public List<string> RequiredFalseConversations { get; } Property Value Type Description List<string> | Improve this Doc View Source RequiredMinNPCInteractions Declaration public int RequiredMinNPCInteractions { get; } Property Value Type Description int | Improve this Doc View Source RequiresLastRunCleared Declaration public bool RequiresLastRunCleared { get; } Property Value Type Description bool | Improve this Doc View Source RequiresLastRunNotCleared Declaration public bool RequiresLastRunNotCleared { get; } Property Value Type Description bool | Improve this Doc View Source RequiresRunCleared Declaration public bool RequiresRunCleared { get; } Property Value Type Description bool | Improve this Doc View Source RequiresRunNotCleared Declaration public bool RequiresRunNotCleared { get; } Property Value Type Description bool | Improve this Doc View Source SuperPriority Declaration public bool SuperPriority { get; } Property Value Type Description bool"
+  },
+  "api/Global.DEBUG_RunSimulator.html": {
+    "href": "api/Global.DEBUG_RunSimulator.html",
+    "title": "Class DEBUG_RunSimulator | Roguelite documentation",
+    "keywords": "Class DEBUG_RunSimulator Inheritance object Object Component Behaviour MonoBehaviour DEBUG_RunSimulator Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class DEBUG_RunSimulator : MonoBehaviour Fields | Improve this Doc View Source dialogueDatabase Declaration public DialogueDatabase dialogueDatabase Field Value Type Description PixelCrushers.DialogueSystem.DialogueDatabase"
+  },
   "api/Global.DescriptionBaseSO.html": {
     "href": "api/Global.DescriptionBaseSO.html",
     "title": "Class DescriptionBaseSO | Roguelite documentation",
-    "keywords": "Class DescriptionBaseSO Base class for ScriptableObjects which need a public description field. Inheritance object Object Component Behaviour MonoBehaviour SerializableScriptableObject DescriptionBaseSO GameSceneSO LoadEventChannelSO Inherited Members SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class DescriptionBaseSO : SerializableScriptableObject Fields | Improve this Doc View Source description Declaration [TextArea] public string description Field Value Type Description string"
+    "keywords": "Class DescriptionBaseSO Base class for ScriptableObjects which need a public description field. Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO BoolEventChannelSO GameSceneSO InputReader LoadEventChannelSO RuntimeAnchorBase<T> TransformEventChannelSO TransitionChannelSO VoidEventChannelSO Inherited Members SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class DescriptionBaseSO : SerializableScriptableObject Fields | Improve this Doc View Source description Declaration [TextArea] public string description Field Value Type Description string"
+  },
+  "api/Global.DialogueManagerAnchorProvider.html": {
+    "href": "api/Global.DialogueManagerAnchorProvider.html",
+    "title": "Class DialogueManagerAnchorProvider | Roguelite documentation",
+    "keywords": "Class DialogueManagerAnchorProvider Inheritance object Object Component Behaviour MonoBehaviour DialogueManagerAnchorProvider Namespace: Global Assembly: Assembly-CSharp.dll Syntax [RequireComponent(typeof(DialogueSystemEvents))] public class DialogueManagerAnchorProvider : MonoBehaviour"
+  },
+  "api/Global.DialogueSystemEventsAnchor.html": {
+    "href": "api/Global.DialogueSystemEventsAnchor.html",
+    "title": "Class DialogueSystemEventsAnchor | Roguelite documentation",
+    "keywords": "Class DialogueSystemEventsAnchor Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO RuntimeAnchorBase<DialogueSystemEvents> DialogueSystemEventsAnchor Inherited Members RuntimeAnchorBase<DialogueSystemEvents>.OnAnchorProvided RuntimeAnchorBase<DialogueSystemEvents>.isSet RuntimeAnchorBase<DialogueSystemEvents>.Value RuntimeAnchorBase<DialogueSystemEvents>.Provide(DialogueSystemEvents) RuntimeAnchorBase<DialogueSystemEvents>.Unset() DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Runtime Anchors/DialogueSystemEvents\")] public class DialogueSystemEventsAnchor : RuntimeAnchorBase<DialogueSystemEvents>"
+  },
+  "api/Global.DropdownSample.html": {
+    "href": "api/Global.DropdownSample.html",
+    "title": "Class DropdownSample | Roguelite documentation",
+    "keywords": "Class DropdownSample Inheritance object Object Component Behaviour MonoBehaviour DropdownSample Namespace: Global Assembly: Assembly-CSharp-firstpass.dll Syntax public class DropdownSample : MonoBehaviour Methods | Improve this Doc View Source OnButtonClick() Declaration public void OnButtonClick()"
+  },
+  "api/Global.EditorColdStartup.html": {
+    "href": "api/Global.EditorColdStartup.html",
+    "title": "Class EditorColdStartup | Roguelite documentation",
+    "keywords": "Class EditorColdStartup Inheritance object Object Component Behaviour MonoBehaviour EditorColdStartup Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class EditorColdStartup : MonoBehaviour"
+  },
+  "api/Global.EnvMapAnimator.html": {
+    "href": "api/Global.EnvMapAnimator.html",
+    "title": "Class EnvMapAnimator | Roguelite documentation",
+    "keywords": "Class EnvMapAnimator Inheritance object Object Component Behaviour MonoBehaviour EnvMapAnimator Namespace: Global Assembly: Assembly-CSharp-firstpass.dll Syntax public class EnvMapAnimator : MonoBehaviour Fields | Improve this Doc View Source RotationSpeeds Declaration public Vector3 RotationSpeeds Field Value Type Description Vector3"
+  },
+  "api/Global.Exit.html": {
+    "href": "api/Global.Exit.html",
+    "title": "Class Exit | Roguelite documentation",
+    "keywords": "Class Exit Inheritance object Object Component Behaviour MonoBehaviour Exit HubExit PlayerExit Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class Exit : MonoBehaviour Fields | Improve this Doc View Source loadsSceneByName Declaration [HideInInspector] public bool loadsSceneByName Field Value Type Description bool | Improve this Doc View Source locked Declaration public bool locked Field Value Type Description bool | Improve this Doc View Source nextSceneName Declaration [HideInInspector] public string nextSceneName Field Value Type Description string | Improve this Doc View Source PlayerEnteredExit Declaration public UnityEvent PlayerEnteredExit Field Value Type Description UnityEvent Methods | Improve this Doc View Source ExitTriggered(Collider) Declaration public virtual void ExitTriggered(Collider other) Parameters Type Name Description Collider other"
   },
   "api/Global.GameSceneSO.GameSceneType.html": {
     "href": "api/Global.GameSceneSO.GameSceneType.html",
@@ -12,27 +97,167 @@
   "api/Global.GameSceneSO.html": {
     "href": "api/Global.GameSceneSO.html",
     "title": "Class GameSceneSO | Roguelite documentation",
-    "keywords": "Class GameSceneSO A ScriptableObject template which contains necessary data that is common in all game scenes (Locations, Managers, Menus), and acts as an addressable identifier. Inheritance object Object Component Behaviour MonoBehaviour SerializableScriptableObject DescriptionBaseSO GameSceneSO Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class GameSceneSO : DescriptionBaseSO Fields | Improve this Doc View Source sceneReference Declaration public AssetReference sceneReference Field Value Type Description UnityEngine.AddressableAssets.AssetReference | Improve this Doc View Source sceneType Declaration public GameSceneSO.GameSceneType sceneType Field Value Type Description GameSceneSO.GameSceneType"
+    "keywords": "Class GameSceneSO A ScriptableObject template which contains necessary data that is common in all game scenes (Locations, Managers, Menus, (music?)), and acts as an addressable identifier. Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO GameSceneSO LocationSceneSO MenuSceneSO PersistentManagerSceneSO Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(fileName = \"NewGameplayScene\", menuName = \"Scene Data/Gameplay\")] public class GameSceneSO : DescriptionBaseSO Fields | Improve this Doc View Source sceneReference Declaration public AssetReference sceneReference Field Value Type Description UnityEngine.AddressableAssets.AssetReference | Improve this Doc View Source sceneType Declaration public GameSceneSO.GameSceneType sceneType Field Value Type Description GameSceneSO.GameSceneType"
+  },
+  "api/Global.HSVChangedEvent.html": {
+    "href": "api/Global.HSVChangedEvent.html",
+    "title": "Class HSVChangedEvent | Roguelite documentation",
+    "keywords": "Class HSVChangedEvent Inheritance object UnityEventBase UnityEvent<float, float, float> HSVChangedEvent Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class HSVChangedEvent : UnityEvent<float, float, float>"
   },
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace | Roguelite documentation",
-    "keywords": "Namespace Classes DescriptionBaseSO Base class for ScriptableObjects which need a public description field. GameSceneSO A ScriptableObject template which contains necessary data that is common in all game scenes (Locations, Managers, Menus), and acts as an addressable identifier. Initializer This class is responsible for starting the game by loading the persistent managers scene and raising the event to load the Main Menu LoadEventChannelSO This class is used for scene-loading events. Takes a GameSceneSO of the location or menu that needs to be loaded, and a bool to specify if a loading screen needs to display. SerializableScriptableObject Enums GameSceneSO.GameSceneType Used by the SceneSelector tool to discern what type of scene it needs to load."
+    "keywords": "Namespace Classes Actor BoolEventChannelSO This class is used for Events that have a bool argument. Example: An event to toggle a UI interface CameraAnchor CameraManager ChatController ColorChangedEvent Controls DEBUG_RunSimulator DescriptionBaseSO Base class for ScriptableObjects which need a public description field. DialogueManagerAnchorProvider DialogueSystemEventsAnchor DropdownSample EditorColdStartup EnvMapAnimator Exit GameSceneSO A ScriptableObject template which contains necessary data that is common in all game scenes (Locations, Managers, Menus, (music?)), and acts as an addressable identifier. HSVChangedEvent HubExit HubNPC HubNPCManager Initializer This class is responsible for starting the game by loading the persistent managers scene and raising the event to load the Main Menu InputReader LEGACY_UILineRenderer LoadEventChannelSO This class is used for scene-loading events. Takes a GameSceneSO of the location or menu that needs to be loaded, and a bool to specify if a loading screen needs to display. LocationSceneSO This class contains Settings specific to Locations only MenuSceneSO This class contains Settings specific to Menus only PersistentManagerSceneSO PlayerCharacter PlayerExit PlayerSpawn PlayerSpawnSystem Run RunManager RunManagerAnchor RuntimeAnchorBase<T> SceneLoader This class manages the scene loading and unloading. It is generally placed in the PersistentManagers scene and acts as a singleton (through SO event channels) SerializableScriptableObject SerializerUtility StartGame TestCompression TransformAnchor TransformEventChannelSO This class is used for Events that have one transform argument. Example: Spawn system initializes player and fire event, where the transform is the position of player. TransitionChannelSO UIGridRenderer VoidEventChannelSO This class is used for Events that have no arguments (Example: Exit game event) Structs Controls.PlayerActions ConversationFields RunStatistics Interfaces Controls.IPlayerActions Enums GameSceneSO.GameSceneType Used by the SceneSelector tool to discern what type of scene it needs to load. UIVisibility"
+  },
+  "api/Global.HubExit.html": {
+    "href": "api/Global.HubExit.html",
+    "title": "Class HubExit | Roguelite documentation",
+    "keywords": "Class HubExit Inheritance object Object Component Behaviour MonoBehaviour Exit HubExit Inherited Members Exit.loadsSceneByName Exit.nextSceneName Exit.locked Exit.PlayerEnteredExit Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class HubExit : Exit Methods | Improve this Doc View Source ExitTriggered(Collider) Declaration public override void ExitTriggered(Collider other) Parameters Type Name Description Collider other Overrides Exit.ExitTriggered(Collider)"
+  },
+  "api/Global.HubNPC.html": {
+    "href": "api/Global.HubNPC.html",
+    "title": "Class HubNPC | Roguelite documentation",
+    "keywords": "Class HubNPC Inheritance object Object Component Behaviour MonoBehaviour HubNPC Namespace: Global Assembly: Assembly-CSharp.dll Syntax [RequireComponent(typeof(DialogueSystemTrigger))] public class HubNPC : MonoBehaviour Fields | Improve this Doc View Source ActorID Declaration public int ActorID Field Value Type Description int Methods | Improve this Doc View Source AssignConversation(string) Declaration public void AssignConversation(string conversationTitle) Parameters Type Name Description string conversationTitle | Improve this Doc View Source OnConversationEnd() Declaration public void OnConversationEnd()"
+  },
+  "api/Global.HubNPCManager.html": {
+    "href": "api/Global.HubNPCManager.html",
+    "title": "Class HubNPCManager | Roguelite documentation",
+    "keywords": "Class HubNPCManager Inheritance object Object Component Behaviour MonoBehaviour HubNPCManager Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class HubNPCManager : MonoBehaviour Fields | Improve this Doc View Source Actors Declaration public HubNPC[] Actors Field Value Type Description HubNPC[] Methods | Improve this Doc View Source ActivateNPCs() Declaration public void ActivateNPCs() | Improve this Doc View Source DeactivateNPCs() Declaration public void DeactivateNPCs()"
   },
   "api/Global.Initializer.html": {
     "href": "api/Global.Initializer.html",
     "title": "Class Initializer | Roguelite documentation",
     "keywords": "Class Initializer This class is responsible for starting the game by loading the persistent managers scene and raising the event to load the Main Menu Inheritance object Object Component Behaviour MonoBehaviour Initializer Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class Initializer : MonoBehaviour"
   },
+  "api/Global.InputReader.html": {
+    "href": "api/Global.InputReader.html",
+    "title": "Class InputReader | Roguelite documentation",
+    "keywords": "Class InputReader Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO InputReader Implements Controls.IPlayerActions Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(fileName = \"InputReader\", menuName = \"Game/Input Reader\")] public class InputReader : DescriptionBaseSO, Controls.IPlayerActions Fields | Improve this Doc View Source controls Declaration public Controls controls Field Value Type Description Controls | Improve this Doc View Source Look Declaration public Vector2 Look Field Value Type Description Vector2 | Improve this Doc View Source MousePosition Declaration public Vector2 MousePosition Field Value Type Description Vector2 | Improve this Doc View Source MoveComposite Declaration public Vector2 MoveComposite Field Value Type Description Vector2 | Improve this Doc View Source OnJumpPerformed Declaration public Action OnJumpPerformed Field Value Type Description Action | Improve this Doc View Source OnRestartPerformed Declaration public Action OnRestartPerformed Field Value Type Description Action Methods | Improve this Doc View Source OnDisable() Declaration public void OnDisable() | Improve this Doc View Source OnEnable() Declaration public void OnEnable() | Improve this Doc View Source OnJump(CallbackContext) Declaration public void OnJump(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context | Improve this Doc View Source OnLook(CallbackContext) Declaration public void OnLook(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context | Improve this Doc View Source OnMousePosition(CallbackContext) Declaration public void OnMousePosition(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context | Improve this Doc View Source OnMove(CallbackContext) Declaration public void OnMove(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context | Improve this Doc View Source OnRestart(CallbackContext) Declaration public void OnRestart(InputAction.CallbackContext context) Parameters Type Name Description UnityEngine.InputSystem.InputAction.UnityEngine.InputSystem.InputAction.CallbackContext context Implements Controls.IPlayerActions"
+  },
+  "api/Global.LEGACY_UILineRenderer.html": {
+    "href": "api/Global.LEGACY_UILineRenderer.html",
+    "title": "Class LEGACY_UILineRenderer | Roguelite documentation",
+    "keywords": "Class LEGACY_UILineRenderer Inheritance object Object Component Behaviour MonoBehaviour UnityEngine.EventSystems.UIBehaviour UnityEngine.UI.Graphic LEGACY_UILineRenderer Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class LEGACY_UILineRenderer : Graphic Fields | Improve this Doc View Source gridSize Declaration public Vector2Int gridSize Field Value Type Description Vector2Int | Improve this Doc View Source points Declaration public List<Vector2> points Field Value Type Description List<Vector2> | Improve this Doc View Source thickness Declaration public float thickness Field Value Type Description float Methods | Improve this Doc View Source OnPopulateMesh(VertexHelper) Declaration protected override void OnPopulateMesh(VertexHelper vh) Parameters Type Name Description UnityEngine.UI.VertexHelper vh Overrides UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)"
+  },
   "api/Global.LoadEventChannelSO.html": {
     "href": "api/Global.LoadEventChannelSO.html",
     "title": "Class LoadEventChannelSO | Roguelite documentation",
-    "keywords": "Class LoadEventChannelSO This class is used for scene-loading events. Takes a GameSceneSO of the location or menu that needs to be loaded, and a bool to specify if a loading screen needs to display. Inheritance object Object Component Behaviour MonoBehaviour SerializableScriptableObject DescriptionBaseSO LoadEventChannelSO Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Events/Load Event Channel\")] public class LoadEventChannelSO : DescriptionBaseSO Fields | Improve this Doc View Source OnLoadingRequested Declaration public UnityAction<GameSceneSO, bool, bool> OnLoadingRequested Field Value Type Description UnityAction<GameSceneSO, bool, bool> Methods | Improve this Doc View Source RaiseEvent(GameSceneSO, bool, bool) Declaration public void RaiseEvent(GameSceneSO locationToLoad, bool showLoadingScreen = false, bool fadeScreen = false) Parameters Type Name Description GameSceneSO locationToLoad bool showLoadingScreen bool fadeScreen"
+    "keywords": "Class LoadEventChannelSO This class is used for scene-loading events. Takes a GameSceneSO of the location or menu that needs to be loaded, and a bool to specify if a loading screen needs to display. Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO LoadEventChannelSO Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Events/Load Event Channel\")] public class LoadEventChannelSO : DescriptionBaseSO Fields | Improve this Doc View Source OnLoadingRequested Declaration public UnityAction<GameSceneSO, bool, bool> OnLoadingRequested Field Value Type Description UnityAction<GameSceneSO, bool, bool> Methods | Improve this Doc View Source RaiseEvent(GameSceneSO, bool, bool) Declaration public void RaiseEvent(GameSceneSO locationToLoad, bool showLoadingScreen = false, bool fadeScreen = false) Parameters Type Name Description GameSceneSO locationToLoad bool showLoadingScreen bool fadeScreen"
+  },
+  "api/Global.LocationSceneSO.html": {
+    "href": "api/Global.LocationSceneSO.html",
+    "title": "Class LocationSceneSO | Roguelite documentation",
+    "keywords": "Class LocationSceneSO This class contains Settings specific to Locations only Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO GameSceneSO LocationSceneSO Inherited Members GameSceneSO.sceneType GameSceneSO.sceneReference DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(fileName = \"NewLocation\", menuName = \"Scene Data/Location\")] public class LocationSceneSO : GameSceneSO Fields | Improve this Doc View Source locationName Declaration public string locationName Field Value Type Description string"
+  },
+  "api/Global.MenuSceneSO.html": {
+    "href": "api/Global.MenuSceneSO.html",
+    "title": "Class MenuSceneSO | Roguelite documentation",
+    "keywords": "Class MenuSceneSO This class contains Settings specific to Menus only Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO GameSceneSO MenuSceneSO Inherited Members GameSceneSO.sceneType GameSceneSO.sceneReference DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(fileName = \"NewMenu\", menuName = \"Scene Data/Menu\")] public class MenuSceneSO : GameSceneSO"
+  },
+  "api/Global.PersistentManagerSceneSO.html": {
+    "href": "api/Global.PersistentManagerSceneSO.html",
+    "title": "Class PersistentManagerSceneSO | Roguelite documentation",
+    "keywords": "Class PersistentManagerSceneSO Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO GameSceneSO PersistentManagerSceneSO Inherited Members GameSceneSO.sceneType GameSceneSO.sceneReference DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class PersistentManagerSceneSO : GameSceneSO"
+  },
+  "api/Global.PlayerCharacter.html": {
+    "href": "api/Global.PlayerCharacter.html",
+    "title": "Class PlayerCharacter | Roguelite documentation",
+    "keywords": "Class PlayerCharacter Inheritance object Object Component Behaviour MonoBehaviour PlayerCharacter Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class PlayerCharacter : MonoBehaviour"
+  },
+  "api/Global.PlayerExit.html": {
+    "href": "api/Global.PlayerExit.html",
+    "title": "Class PlayerExit | Roguelite documentation",
+    "keywords": "Class PlayerExit Inheritance object Object Component Behaviour MonoBehaviour Exit PlayerExit Inherited Members Exit.loadsSceneByName Exit.nextSceneName Exit.locked Exit.PlayerEnteredExit Exit.ExitTriggered(Collider) Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class PlayerExit : Exit"
+  },
+  "api/Global.PlayerSpawn.html": {
+    "href": "api/Global.PlayerSpawn.html",
+    "title": "Class PlayerSpawn | Roguelite documentation",
+    "keywords": "Class PlayerSpawn Inheritance object Object Component Behaviour MonoBehaviour PlayerSpawn Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class PlayerSpawn : MonoBehaviour"
+  },
+  "api/Global.PlayerSpawnSystem.html": {
+    "href": "api/Global.PlayerSpawnSystem.html",
+    "title": "Class PlayerSpawnSystem | Roguelite documentation",
+    "keywords": "Class PlayerSpawnSystem Inheritance object Object Component Behaviour MonoBehaviour PlayerSpawnSystem Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class PlayerSpawnSystem : MonoBehaviour"
+  },
+  "api/Global.Run.html": {
+    "href": "api/Global.Run.html",
+    "title": "Class Run | Roguelite documentation",
+    "keywords": "Class Run Inheritance object Run Namespace: Global Assembly: Assembly-CSharp.dll Syntax [Serializable] public class Run Fields | Improve this Doc View Source runStatistics Declaration [SerializeField] public RunStatistics runStatistics Field Value Type Description RunStatistics"
+  },
+  "api/Global.RunManager.html": {
+    "href": "api/Global.RunManager.html",
+    "title": "Class RunManager | Roguelite documentation",
+    "keywords": "Class RunManager Inheritance object Object Component Behaviour MonoBehaviour RunManager Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class RunManager : MonoBehaviour Fields | Improve this Doc View Source currentRun Declaration public Run currentRun Field Value Type Description Run | Improve this Doc View Source hubSceneSO Declaration public GameSceneSO hubSceneSO Field Value Type Description GameSceneSO | Improve this Doc View Source lastRun Declaration public Run lastRun Field Value Type Description Run | Improve this Doc View Source loadLocation Declaration public LoadEventChannelSO loadLocation Field Value Type Description LoadEventChannelSO | Improve this Doc View Source mapCanvas Declaration public GameObject mapCanvas Field Value Type Description GameObject | Improve this Doc View Source mapManager Declaration public MapManagerSO mapManager Field Value Type Description Map.MapManagerSO | Improve this Doc View Source playerExit Declaration public Exit playerExit Field Value Type Description Exit | Improve this Doc View Source runManagerAnchor Declaration public RunManagerAnchor runManagerAnchor Field Value Type Description RunManagerAnchor | Improve this Doc View Source VisitedEncounters Declaration public List<string> VisitedEncounters Field Value Type Description List<string> Methods | Improve this Doc View Source OnPlayerEnterExit() Declaration public void OnPlayerEnterExit() | Improve this Doc View Source ReturnToHub() Declaration public void ReturnToHub() | Improve this Doc View Source StartNewRun() Declaration public void StartNewRun()"
+  },
+  "api/Global.RunManagerAnchor.html": {
+    "href": "api/Global.RunManagerAnchor.html",
+    "title": "Class RunManagerAnchor | Roguelite documentation",
+    "keywords": "Class RunManagerAnchor Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO RuntimeAnchorBase<RunManager> RunManagerAnchor Inherited Members RuntimeAnchorBase<RunManager>.OnAnchorProvided RuntimeAnchorBase<RunManager>.isSet RuntimeAnchorBase<RunManager>.Value RuntimeAnchorBase<RunManager>.Provide(RunManager) RuntimeAnchorBase<RunManager>.Unset() DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Runtime Anchors/RunManager\")] public class RunManagerAnchor : RuntimeAnchorBase<RunManager>"
+  },
+  "api/Global.RunStatistics.html": {
+    "href": "api/Global.RunStatistics.html",
+    "title": "Struct RunStatistics | Roguelite documentation",
+    "keywords": "Struct RunStatistics Namespace: Global Assembly: Assembly-CSharp.dll Syntax [Serializable] public struct RunStatistics Fields | Improve this Doc View Source boonsGained Declaration public int boonsGained Field Value Type Description int | Improve this Doc View Source bossNodesTravelled Declaration public int bossNodesTravelled Field Value Type Description int | Improve this Doc View Source characterBoons Declaration public Dictionary<string, int> characterBoons Field Value Type Description Dictionary<string, int> | Improve this Doc View Source currencyGained Declaration public int currencyGained Field Value Type Description int | Improve this Doc View Source currencySpent Declaration public int currencySpent Field Value Type Description int | Improve this Doc View Source diedTo Declaration public string diedTo Field Value Type Description string | Improve this Doc View Source enemiesDefeated Declaration public Dictionary<string, int> enemiesDefeated Field Value Type Description Dictionary<string, int> | Improve this Doc View Source nodesTravelled Declaration public int nodesTravelled Field Value Type Description int | Improve this Doc View Source VisitedEncounters Declaration public List<string> VisitedEncounters Field Value Type Description List<string>"
+  },
+  "api/Global.RuntimeAnchorBase-1.html": {
+    "href": "api/Global.RuntimeAnchorBase-1.html",
+    "title": "Class RuntimeAnchorBase<T> | Roguelite documentation",
+    "keywords": "Class RuntimeAnchorBase<T> Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO RuntimeAnchorBase<T> CameraAnchor DialogueSystemEventsAnchor RunManagerAnchor TransformAnchor Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class RuntimeAnchorBase<T> : DescriptionBaseSO where T : Object Type Parameters Name Description T Fields | Improve this Doc View Source isSet Declaration [Header(\"Debug\")] public bool isSet Field Value Type Description bool | Improve this Doc View Source OnAnchorProvided Declaration public UnityAction OnAnchorProvided Field Value Type Description UnityAction Properties | Improve this Doc View Source Value Declaration public T Value { get; } Property Value Type Description T Methods | Improve this Doc View Source Provide(T) Declaration public void Provide(T value) Parameters Type Name Description T value | Improve this Doc View Source Unset() Declaration public void Unset()"
+  },
+  "api/Global.SceneLoader.html": {
+    "href": "api/Global.SceneLoader.html",
+    "title": "Class SceneLoader | Roguelite documentation",
+    "keywords": "Class SceneLoader This class manages the scene loading and unloading. It is generally placed in the PersistentManagers scene and acts as a singleton (through SO event channels) Inheritance object Object Component Behaviour MonoBehaviour SceneLoader Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class SceneLoader : MonoBehaviour"
   },
   "api/Global.SerializableScriptableObject.html": {
     "href": "api/Global.SerializableScriptableObject.html",
     "title": "Class SerializableScriptableObject | Roguelite documentation",
-    "keywords": "Class SerializableScriptableObject Inheritance object Object Component Behaviour MonoBehaviour SerializableScriptableObject DescriptionBaseSO Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class SerializableScriptableObject : MonoBehaviour Properties | Improve this Doc View Source Guid Declaration public string Guid { get; } Property Value Type Description string"
+    "keywords": "Class SerializableScriptableObject Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class SerializableScriptableObject : ScriptableObject Properties | Improve this Doc View Source Guid Declaration public string Guid { get; } Property Value Type Description string"
+  },
+  "api/Global.SerializerUtility.html": {
+    "href": "api/Global.SerializerUtility.html",
+    "title": "Class SerializerUtility | Roguelite documentation",
+    "keywords": "Class SerializerUtility Inheritance object SerializerUtility Namespace: Global Assembly: Assembly-CSharp.dll Syntax public static class SerializerUtility Methods | Improve this Doc View Source ListToString(List<string>) Declaration public static string ListToString(List<string> list) Parameters Type Name Description List<string> list Returns Type Description string | Improve this Doc View Source StringToDictionary(string) Declaration public static Dictionary<string, int> StringToDictionary(string field) Parameters Type Name Description string field Returns Type Description Dictionary<string, int> | Improve this Doc View Source StringToList(string) Declaration public static List<string> StringToList(string field) Parameters Type Name Description string field Returns Type Description List<string>"
+  },
+  "api/Global.StartGame.html": {
+    "href": "api/Global.StartGame.html",
+    "title": "Class StartGame | Roguelite documentation",
+    "keywords": "Class StartGame Inheritance object Object Component Behaviour MonoBehaviour StartGame Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class StartGame : MonoBehaviour Methods | Improve this Doc View Source StartNewGame() Declaration public void StartNewGame()"
+  },
+  "api/Global.TestCompression.html": {
+    "href": "api/Global.TestCompression.html",
+    "title": "Class TestCompression | Roguelite documentation",
+    "keywords": "Class TestCompression Inheritance object Object Component Behaviour MonoBehaviour TestCompression Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class TestCompression : MonoBehaviour"
+  },
+  "api/Global.TransformAnchor.html": {
+    "href": "api/Global.TransformAnchor.html",
+    "title": "Class TransformAnchor | Roguelite documentation",
+    "keywords": "Class TransformAnchor Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO RuntimeAnchorBase<Transform> TransformAnchor Inherited Members RuntimeAnchorBase<Transform>.OnAnchorProvided RuntimeAnchorBase<Transform>.isSet RuntimeAnchorBase<Transform>.Value RuntimeAnchorBase<Transform>.Provide(Transform) RuntimeAnchorBase<Transform>.Unset() DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Runtime Anchors/Transform\")] public class TransformAnchor : RuntimeAnchorBase<Transform>"
+  },
+  "api/Global.TransformEventChannelSO.html": {
+    "href": "api/Global.TransformEventChannelSO.html",
+    "title": "Class TransformEventChannelSO | Roguelite documentation",
+    "keywords": "Class TransformEventChannelSO This class is used for Events that have one transform argument. Example: Spawn system initializes player and fire event, where the transform is the position of player. Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO TransformEventChannelSO Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Events/Transform Event Channel\")] public class TransformEventChannelSO : DescriptionBaseSO Fields | Improve this Doc View Source OnEventRaised Declaration public UnityAction<Transform> OnEventRaised Field Value Type Description UnityAction<Transform> Methods | Improve this Doc View Source RaiseEvent(Transform) Declaration public void RaiseEvent(Transform value) Parameters Type Name Description Transform value"
+  },
+  "api/Global.TransitionChannelSO.html": {
+    "href": "api/Global.TransitionChannelSO.html",
+    "title": "Class TransitionChannelSO | Roguelite documentation",
+    "keywords": "Class TransitionChannelSO Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO TransitionChannelSO Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Events/UI/Transition Channel\")] public class TransitionChannelSO : DescriptionBaseSO Fields | Improve this Doc View Source OnEventRaised Declaration public UnityAction<bool, float, Color> OnEventRaised Field Value Type Description UnityAction<bool, float, Color> Methods | Improve this Doc View Source FadeIn(float) Fade helper function to simplify usage. Fades the screen in to gameplay. Declaration public void FadeIn(float duration) Parameters Type Name Description float duration How long it takes to the image to fade in. | Improve this Doc View Source FadeOut(float) Fade helper function to simplify usage. Fades the screen out to black. Declaration public void FadeOut(float duration) Parameters Type Name Description float duration How long it takes to the image to fade out."
+  },
+  "api/Global.UIGridRenderer.html": {
+    "href": "api/Global.UIGridRenderer.html",
+    "title": "Class UIGridRenderer | Roguelite documentation",
+    "keywords": "Class UIGridRenderer Inheritance object Object Component Behaviour MonoBehaviour UnityEngine.EventSystems.UIBehaviour UnityEngine.UI.Graphic UIGridRenderer Namespace: Global Assembly: Assembly-CSharp.dll Syntax public class UIGridRenderer : Graphic Fields | Improve this Doc View Source gridSize Declaration public Vector2Int gridSize Field Value Type Description Vector2Int | Improve this Doc View Source thickness Declaration public float thickness Field Value Type Description float Methods | Improve this Doc View Source OnPopulateMesh(VertexHelper) Declaration protected override void OnPopulateMesh(VertexHelper vh) Parameters Type Name Description UnityEngine.UI.VertexHelper vh Overrides UnityEngine.UI.Graphic.OnPopulateMesh(UnityEngine.UI.VertexHelper)"
+  },
+  "api/Global.UIVisibility.html": {
+    "href": "api/Global.UIVisibility.html",
+    "title": "Enum UIVisibility | Roguelite documentation",
+    "keywords": "Enum UIVisibility Namespace: Global Assembly: Assembly-CSharp-firstpass.dll Syntax public enum UIVisibility Fields Name Description AlwaysFromStart Appears when dialogue UI opens. Also sets portrait names and images. AlwaysOnceShown Appears when showing first content. Never hidden after that. OnlyDuringContent Only visible when actively showing content (e.g., ShowSubtitle). Hidden when done (e.g., HideSubtitle). UntilSuperceded Appears when showing content (e.g., NPC.ShowSubtitle). Hidden only when content is shown in a different UI section (e.g., PC.ShowSubtitle). UntilSupercededOrActorChange Like UntilSuperceded, but will also hide and re-show if actor changes but wants to use same panel."
+  },
+  "api/Global.VoidEventChannelSO.html": {
+    "href": "api/Global.VoidEventChannelSO.html",
+    "title": "Class VoidEventChannelSO | Roguelite documentation",
+    "keywords": "Class VoidEventChannelSO This class is used for Events that have no arguments (Example: Exit game event) Inheritance object Object ScriptableObject SerializableScriptableObject DescriptionBaseSO VoidEventChannelSO Inherited Members DescriptionBaseSO.description SerializableScriptableObject.Guid Namespace: Global Assembly: Assembly-CSharp.dll Syntax [CreateAssetMenu(menuName = \"Events/Void Event Channel\")] public class VoidEventChannelSO : DescriptionBaseSO Fields | Improve this Doc View Source OnEventRaised Declaration public UnityAction OnEventRaised Field Value Type Description UnityAction Methods | Improve this Doc View Source RaiseEvent() Declaration public void RaiseEvent()"
   },
   "index.html": {
     "href": "index.html",
