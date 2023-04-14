@@ -18,7 +18,6 @@ Assets/**/obj*
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
-UnityPackageManager/*
 **/UnityCsReference*
 
 ## Visual Studio cache directory
