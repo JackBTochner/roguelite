@@ -24,6 +24,7 @@ public class Exit : MonoBehaviour
     public virtual void ExitTriggered(Collider other)
     {
         PlayerEnteredExit.Invoke();
+        Debug.Log("ExitTriggered");
         if(nextSceneName != "")
         {
             StartCoroutine(LoadNextSceneAsync());

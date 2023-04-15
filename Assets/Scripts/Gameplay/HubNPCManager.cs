@@ -37,6 +37,9 @@ public class HubNPCManager : MonoBehaviour
     [SerializeField]
     private RunManagerAnchor _runManagerAnchor;
 
+    [Header("Scene Ready Event")]
+	[SerializeField] private VoidEventChannelSO _onSceneReady = default; //Raised by SceneLoader when the scene is set to active
+
     private void Start()
     {
         // DEBUG_PLAYGROUND_DELETE_LATER();
@@ -44,8 +47,16 @@ public class HubNPCManager : MonoBehaviour
         {
             runManager = _runManagerAnchor.Value;
         }
+    }
 
-        ActivateNPCs();
+    private void OnEnable()
+    { 
+        _onSceneReady.OnEventRaised += ActivateNPCs;
+    }
+
+    private void OnDisable()
+    {
+        _onSceneReady.OnEventRaised -= ActivateNPCs;
     }
 
     private void DEBUG_PLAYGROUND_DELETE_LATER()

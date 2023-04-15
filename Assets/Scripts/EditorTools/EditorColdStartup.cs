@@ -3,6 +3,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
+using UnityEditor.SceneManagement;
 
 public class EditorColdStartup : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class EditorColdStartup : MonoBehaviour
 	// [SerializeField] private PathStorageSO _pathStorage = default;
 	// [SerializeField] private SaveSystem _saveSystem = default;
     private bool isColdStart = false;
-    private void Awake()
+    
+	private void Awake()
 	{
 		if (!SceneManager.GetSceneByName(_persistentManagersSO.sceneReference.editorAsset.name).isLoaded)
 		{
@@ -31,11 +33,9 @@ public class EditorColdStartup : MonoBehaviour
 		if (isColdStart)
 		{
 			_persistentManagersSO.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true).Completed += LoadEventChannel;
-
 		}
 		CreateSaveFileIfNotPresent();
 	}
-
     private void CreateSaveFileIfNotPresent()
 	{
 		/*

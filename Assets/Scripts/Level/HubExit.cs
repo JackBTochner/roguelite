@@ -6,16 +6,11 @@ using UnityEngine.Events;
 
 public class HubExit : Exit
 {
-    private RunManager runManager;
     [SerializeField]
     private RunManagerAnchor _runManagerAnchor = default;
     
     void Start()
     { 
-        if (_runManagerAnchor.isSet)
-        {
-            runManager = _runManagerAnchor.Value;
-        }
     }
 
     public override void ExitTriggered(Collider other)
@@ -24,14 +19,11 @@ public class HubExit : Exit
 
         base.ExitTriggered(other);
         Debug.Log(other.name);
-        runManager.StartNewRun();
+        Debug.Log(_runManagerAnchor.Value);
+        _runManagerAnchor.Value.StartNewRun();
     }
 
     void OnSceneChanged(Scene current, Scene next)
     {
-        if (_runManagerAnchor.isSet)
-        {
-            runManager = _runManagerAnchor.Value;
-        }
     }
 }

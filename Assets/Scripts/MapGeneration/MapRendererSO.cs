@@ -82,6 +82,7 @@ namespace Map
                 Debug.LogWarning("Map was null in MapRenderer.ShowMap()");
                 return;
             }
+            Debug.Log("ShowingMap");
 
             ClearMap();
             
@@ -101,7 +102,7 @@ namespace Map
             var offset = new Vector2(mapHolderRect.rect.width * horizontalMargin, mapHolderRect.rect.height * verticalMargin);
             var innerArea = new Vector2(mapHolderRect.rect.width - (offset.x * 2), mapHolderRect.rect.height - (offset.y * 2));
             var units = new Vector2(innerArea.x / mapManager.CurrentMap.DistanceBetweenFirstAndLastLayers(), innerArea.y / nodesHeight);
-            Debug.Log(innerArea);
+//            Debug.Log(innerArea);
             
             foreach (var node in nodes)
             {

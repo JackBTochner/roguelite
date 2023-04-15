@@ -31,6 +31,11 @@ public class RunManager : MonoBehaviour
         SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
 
+    private void Start()
+    { 
+        AssignPlayerExit();
+    }
+
     // TODO: REPLACE WITH A WAY TO END THE RUN
     /*
     IEnumerator LoadNextSceneAsync()
@@ -49,6 +54,7 @@ public class RunManager : MonoBehaviour
         ClearCurrentRun();
     }*/
 
+
     public void ReturnToHub()
     {
         ClearCurrentRun();
@@ -59,6 +65,7 @@ public class RunManager : MonoBehaviour
     {
         ClearCurrentRun();
         mapManager.GenerateNewMap();
+        Debug.Log("StartingNewRun");
     }
 
     private void ClearCurrentRun()
@@ -67,19 +74,24 @@ public class RunManager : MonoBehaviour
         currentRun = new Run();
     }
 
-    void OnSceneUnloaded(Scene current)
+    private void OnSceneUnloaded(Scene current)
     {
         mapCanvas.SetActive(false);
         playerExit = null;
     }
 
-    void OnSceneChanged(Scene current, Scene next)
+    private void OnSceneChanged(Scene current, Scene next)
     {
-        
+        AssignPlayerExit();
+    }
+
+    private void AssignPlayerExit()
+    { 
         playerExit = GameObject.FindGameObjectWithTag("PlayerExit").GetComponent<Exit>();
         //TODO: add check to see which type of scene we are in.
         if (playerExit != null)
         {
+            playerExit.PlayerEnteredExit.RemoveListener(OnPlayerEnterExit);
             playerExit.PlayerEnteredExit.AddListener(OnPlayerEnterExit);
         }
     }

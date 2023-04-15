@@ -36,6 +36,7 @@ namespace Map
 
         public void GenerateNewMap()
         {
+            Debug.Log("GeneratingMap");
             var map = MapGeneratorSO.GetMap(config);
             CurrentMap = map;
             // Debug.Log(map.ToJson());

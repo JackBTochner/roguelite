@@ -7,6 +7,8 @@ MonoImporter:
   - _thisSceneSO: {instanceID: 0}
   - _persistentManagersSO: {fileID: 11400000, guid: 545b9d52d69cec14e806768f21440e15,
       type: 2}
+  - _gameplayManagersSO: {fileID: 11400000, guid: ef3aac08b66bee44585601725b0e0b61,
+      type: 2}
   - _onSceneReadyChannel: {fileID: 11400000, guid: 8e43b1aa16e3e1640ad837326d4c8ab9,
       type: 2}
   executionOrder: 0
