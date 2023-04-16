@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3708834870753350099}
   - component: {fileID: 3708834870753349929}
+  - component: {fileID: 6774762930659214622}
   - component: {fileID: 3708834870753350101}
   - component: {fileID: 3708834870753350098}
   - component: {fileID: 3708834870753350102}
@@ -153,8 +154,25 @@ MonoBehaviour:
     m_Bits: 0
   detected: 0
   detectionRange: 20
+  OnEnemyDied:
+    m_PersistentCalls:
+      m_Calls: []
   hitParticle: {fileID: 3479186766190414694, guid: 647402e3d9351aa4187e6d2494882a16,
     type: 3}
+--- !u!114 &6774762930659214622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708834870753350096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 487df7d13481ba342bab6003837d059e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileCount: 0
+  pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
 --- !u!114 &3708834870753350101
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.Events;
 
 public class BasicEnemy : Hittable
 {
@@ -7,7 +8,7 @@ public class BasicEnemy : Hittable
     public Rigidbody rb;
     public Transform lookAt;
 
-    public string[] itemDrops;
+    public GameObject[] itemDrops;
 
     public TransformAnchor playerTransformAnchor = default;
     public AIDestinationSetter AI;
@@ -18,6 +19,8 @@ public class BasicEnemy : Hittable
     public float detectionRange;
 
     bool died;
+
+    public UnityEvent OnEnemyDied = new UnityEvent();
 
     public GameObject hitParticle;
 
@@ -83,26 +86,34 @@ public class BasicEnemy : Hittable
             }
             else if (!died) //so that the enemy can't die multiple times
             {
-                //die
-                anim.SetTrigger("Die");
-
-                //spawn a hit particle in the opposite direction of the player;
-                Vector3 hitDirection = playerTransformAnchor.Value.position - transform.position;
-                lookAt.forward = -hitDirection;
-                Instantiate(hitParticle, transform.position, lookAt.rotation);
-
-                //item drops
-                for (int i = 0; i < itemDrops.Length; i++)
-                {
-                    objectPooler.SpawnFromPool(itemDrops[i], transform.position, Quaternion.identity);
-                }
-
-                //give 0.5 seconds for the death animation to happen before disabling the object
-                Invoke("Delete", 0.5f);
-
-                died = true;
+                Die();
             }
         }
+    }
+
+    public void Die()
+    {
+        //die
+        OnEnemyDied.Invoke();
+        anim.SetTrigger("Die");
+
+        //spawn a hit particle in the opposite direction of the player;
+        Vector3 hitDirection = playerTransformAnchor.Value.position - transform.position;
+        lookAt.forward = -hitDirection;
+        Instantiate(hitParticle, transform.position, lookAt.rotation);
+
+        //item drops
+        if (itemDrops.Length > 0)
+        {
+            for (int i = 0; i < itemDrops.Length; i++)
+            {
+                Instantiate(itemDrops[i], transform.position, Quaternion.identity);
+            }
+        }
+        //give 0.5 seconds for the death animation to happen before disabling the object
+        Invoke("Delete", 0.5f);
+
+        died = true;
     }
 
     void Delete()

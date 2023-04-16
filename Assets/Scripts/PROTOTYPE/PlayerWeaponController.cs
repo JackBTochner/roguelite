@@ -11,8 +11,8 @@ public class PlayerWeaponController : MonoBehaviour
     public int bulletsPerShot = 1;
     public float spreadAngle;
 
-    public int magazineSize = 5;
-    public int currentMagazineAmount = 5;
+    public int magazineSize = 8;
+    public int currentMagazineAmount = 8;
 
 //    public float reloadTime = 2.5f;
 //    public bool isReloading = false;

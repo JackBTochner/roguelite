@@ -468,8 +468,8 @@ MonoBehaviour:
   fireRate: 200
   bulletsPerShot: 1
   spreadAngle: 0
-  magazineSize: 5
-  currentMagazineAmount: 5
+  magazineSize: 8
+  currentMagazineAmount: 8
   muzzle: {fileID: 3590575991436919140}
   muzzleFlash: {fileID: 0}
   muzzleWorldVelocity: {x: 0, y: 0, z: 0}
