@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Hittable : MonoBehaviour
 {
     public float health;
@@ -15,7 +15,9 @@ public class Hittable : MonoBehaviour
 
     public int poisonDamage;
 
- //   PlayerCharacter playerChar;
+    public UnityEvent OnHit = new UnityEvent();
+
+    //   PlayerCharacter playerChar;
 
     virtual public void Start()
     {
@@ -35,6 +37,6 @@ public class Hittable : MonoBehaviour
 
     virtual public void Hit(float knockback, Vector3 direction)
     {
-
+        OnHit.Invoke();
     }
 }

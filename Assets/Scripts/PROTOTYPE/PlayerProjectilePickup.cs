@@ -11,7 +11,6 @@ public class PlayerProjectilePickup : MonoBehaviour
     private void Start()
     {
         timeSpawned = Time.time;
-        Debug.Log(timeSpawned);
     }
     private void Update()
     {

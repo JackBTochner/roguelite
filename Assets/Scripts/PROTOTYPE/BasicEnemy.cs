@@ -70,6 +70,7 @@ public class BasicEnemy : Hittable
 
     override public void Hit(float knockback, Vector3 direction)
     {
+        base.Hit(knockback, direction);
         if (playerTransformAnchor.isSet)
         {
             if (health > 0)

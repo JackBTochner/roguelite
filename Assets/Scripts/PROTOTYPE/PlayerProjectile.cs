@@ -5,6 +5,8 @@ using UnityEngine;
 // TODO: Derive from AttackObject.
 public class PlayerProjectile : MonoBehaviour
 {
+    PlayerProjectileEffectSO projectileEffect;
+
     public float radius = 0.5f;
 
     // root of the projectile for collision detection
@@ -59,7 +61,7 @@ public class PlayerProjectile : MonoBehaviour
 
     private float timeSpawned = Mathf.NegativeInfinity;
 
-    public void InitialiseProjectile(PlayerWeaponController controller)
+    public void InitialiseProjectile(PlayerWeaponController controller, PlayerProjectileEffectSO effect)
     {
         instigator = controller.gameObject;
         initialPosition = transform.position;
@@ -75,6 +77,9 @@ public class PlayerProjectile : MonoBehaviour
         Collider[] instigatorColliders =
             instigator.GetComponentsInChildren<Collider>();
         ignoredColliders.AddRange (instigatorColliders);
+        // Debug.Log(effect);
+        projectileEffect = effect;
+        projectileEffect.Initialise(this.gameObject);
         timeSpawned = Time.time;
     }
 
@@ -196,7 +201,7 @@ public class PlayerProjectile : MonoBehaviour
             collider.GetComponent<PlayerProjectileReceiver>();
         if (receiver)
         {
-            receiver.projectileCount++;
+            receiver.AddProjectile(projectileEffect);
             Destroy(this.gameObject);
         }
         else

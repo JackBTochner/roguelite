@@ -14,8 +14,10 @@ public class PlayerWeaponController : MonoBehaviour
     public int magazineSize = 8;
     public int currentMagazineAmount = 8;
 
-//    public float reloadTime = 2.5f;
-//    public bool isReloading = false;
+    public List<PlayerProjectileEffectSO> effects = new List<PlayerProjectileEffectSO>();
+
+    //    public float reloadTime = 2.5f;
+    //    public bool isReloading = false;
 
     public Transform muzzle;
     public ParticleSystem muzzleFlash;
@@ -62,7 +64,8 @@ public class PlayerWeaponController : MonoBehaviour
             {
                 Vector3 shotDirection = GetShotDirectionWithinSpread(muzzle);
                 GameObject newProjectile = Instantiate(projectilePrefab, muzzle.position, Quaternion.LookRotation(shotDirection));
-                newProjectile.GetComponent<PlayerProjectile>().InitialiseProjectile(this);
+                Debug.Log(effects[currentMagazineAmount]);
+                newProjectile.GetComponent<PlayerProjectile>().InitialiseProjectile(this, effects[currentMagazineAmount]);
             }
 
             if (muzzleFlash != null)

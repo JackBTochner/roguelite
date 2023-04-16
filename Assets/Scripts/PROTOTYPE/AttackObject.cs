@@ -5,7 +5,7 @@ using Player;
 
 public class AttackObject : MonoBehaviour
 {
-    public int damage;
+    public float damage;
 
     public bool onlyHitEachObjOnce;
 
