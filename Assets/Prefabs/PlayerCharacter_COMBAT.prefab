@@ -204,6 +204,7 @@ Transform:
   - {fileID: 4093581273836692510}
   - {fileID: 1546271338885843474}
   - {fileID: 2294309005697451458}
+  - {fileID: 3590575991436919140}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -417,6 +418,64 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4079335582967231072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3590575991436919140}
+  - component: {fileID: 1179168583726322836}
+  m_Layer: 3
+  m_Name: ProjectileLauncher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3590575991436919140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079335582967231072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1723506523967855883}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1179168583726322836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079335582967231072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f298cbc9dbaa6e4aa71da6895a8826f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeedMultiplier: 0
+  projectilePrefab: {fileID: 7388412658097730135, guid: 86e434b4d45adbf47891b2013a31c6b9,
+    type: 3}
+  fireRate: 200
+  bulletsPerShot: 1
+  spreadAngle: 0
+  magazineSize: 5
+  currentMagazineAmount: 5
+  reloadTime: 2.5
+  isReloading: 0
+  muzzle: {fileID: 3590575991436919140}
+  muzzleFlash: {fileID: 0}
+  muzzleWorldVelocity: {x: 0, y: 0, z: 0}
+  inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
 --- !u!1 &4093581272656194235
 GameObject:
   m_ObjectHideFlags: 0

@@ -58,7 +58,6 @@ public class AttackObject : MonoBehaviour
             hittable.Hit(knockback, Vector3.Normalize(hittable.transform.position - playerChar.transform.position));
         }
         hittable = null;
-
     }
 
 }
