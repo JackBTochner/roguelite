@@ -11,7 +11,11 @@ public class AttackObject : MonoBehaviour
     //public GameObject[] objsHit;
     //public int objsHitIndex;
 
+    public float critChance;
+    public float critMultiplier;
     public bool ignoreCrit;
+
+    public float knockback;
 
     public Hittable hittable;
     public PlayerCharacter playerChar;
@@ -22,8 +26,8 @@ public class AttackObject : MonoBehaviour
 
     void Awake()
     {
-        objectPooler = ObjectPooler.Instance;
-        playerChar = GameObject.FindWithTag("Player").GetComponent<PlayerCharacter>();
+        //objectPooler = ObjectPooler.Instance;
+        //playerChar = GameObject.FindWithTag("Player").GetComponent<PlayerCharacter>();
     }
 
     public void Hit(GameObject otherG)
@@ -34,12 +38,12 @@ public class AttackObject : MonoBehaviour
             if (otherG.CompareTag("Enemy"))
             {
                 int crit = Random.Range(0, 100);
-                if (crit <= playerChar.critChance && !ignoreCrit)
+                if (crit <= critChance && !ignoreCrit)
                 {
                     GameObject hitMarkerObj = Instantiate(critMarker, otherG.transform.position, Quaternion.identity);
-                    hitMarkerObj.GetComponent<HitMarker>().damage = playerChar.critMultiplier * damage;
+                    hitMarkerObj.GetComponent<HitMarker>().damage = critMultiplier * damage;
                     hitMarkerObj.GetComponent<HitMarker>().OnObjectSpawn();
-                    hittable.health -= playerChar.critMultiplier * damage;
+                    hittable.health -= critMultiplier * damage;
                 }
                 else
                 {
@@ -50,7 +54,7 @@ public class AttackObject : MonoBehaviour
                 }
             }
 
-            hittable.Hit();
+            hittable.Hit(knockback);
         }
         hittable = null;
 

@@ -3,19 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - AttackObject
+  - PlayerExit
+  - Dirt
+  - RunManager
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
+  - Enemy
   - 
   - 
   - 
-  - 
-  - 
+  - PlayerBuffer
   - 
   - 
   - 

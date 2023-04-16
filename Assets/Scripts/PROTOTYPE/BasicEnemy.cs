@@ -62,14 +62,14 @@ public class BasicEnemy : Hittable
         }
     }
 
-    override public void Hit()
+    override public void Hit(float knockback)
     {
         if (playerTransformAnchor.isSet)
         {
             if (health > 0)
             {
                 //knockback
-                //rb.AddForce(-lookAt.right * knockback);
+                rb.AddForce(-lookAt.right * knockback);
 
                 //spawn a hit particle in the opposite direction of the player;
                 Vector2 hitDirection = playerTransformAnchor.Value.position - transform.position;

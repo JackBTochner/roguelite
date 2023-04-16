@@ -29,12 +29,11 @@ public class Hittable : MonoBehaviour
         if (other.gameObject.CompareTag("AttackObject"))
         {
             other.gameObject.GetComponent<AttackObject>().Hit(gameObject);
-            Hit();
+            //Hit(0);
         }
-
     }
 
-    virtual public void Hit()
+    virtual public void Hit(float knockback)
     {
 
     }

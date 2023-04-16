@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3708834870081609177}
   - component: {fileID: 3708834870081609158}
   - component: {fileID: 3708834870081609159}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 3708834870753350100}
   - component: {fileID: 3708834870753349928}
   - component: {fileID: 3708834870753349931}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -146,7 +146,8 @@ MonoBehaviour:
   rb: {fileID: 3708834870753350100}
   lookAt: {fileID: 3708834870814586814}
   itemDrops: []
-  player: {fileID: 0}
+  playerTransformAnchor: {fileID: 0}
+  AI: {fileID: 0}
   detectionObstacles:
     serializedVersion: 2
     m_Bits: 0
@@ -326,7 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3708834870814586814}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: LookAtPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +360,7 @@ GameObject:
   - component: {fileID: 3708834870845149215}
   - component: {fileID: 3708834870845149212}
   - component: {fileID: 3708834870845149213}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3708834872003618035}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}

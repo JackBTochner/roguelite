@@ -17,6 +17,14 @@ public class InputReader : DescriptionBaseSO, Controls.IPlayerActions
 
     public Action OnRestartPerformed;
 
+    public Action OnDigPerformed;
+
+    public Action OnAttack1Performed;
+
+    public Action OnAttack2Performed;
+
+    public Action OnDashPerformed;
+
     public Controls controls;
 
     public void OnEnable()
@@ -58,5 +66,26 @@ public class InputReader : DescriptionBaseSO, Controls.IPlayerActions
     public void OnMove(InputAction.CallbackContext context)
     {
         MoveComposite = context.ReadValue<Vector2>();
+    }
+
+    public void OnDig(InputAction.CallbackContext context)
+    { 
+        if (!context.performed) return;
+        OnDigPerformed?.Invoke();
+    }
+    public void OnAttack1(InputAction.CallbackContext context)
+    { 
+        if (!context.performed) return;
+        OnAttack1Performed?.Invoke();
+    }
+     public void OnAttack2(InputAction.CallbackContext context)
+    { 
+        if (!context.performed) return;
+        OnAttack2Performed?.Invoke();
+    }
+    public void OnDash(InputAction.CallbackContext context)
+    { 
+        if (!context.performed) return;
+        OnDashPerformed?.Invoke();
     }
 }
