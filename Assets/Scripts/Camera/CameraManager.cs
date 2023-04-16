@@ -15,6 +15,8 @@ public class CameraManager : MonoBehaviour
 	[Tooltip("The CameraManager listens to this event, fired by an event from the player, to shake camera")]
 	[SerializeField] private VoidEventChannelSO _camShakeEvent = default;
 
+    [SerializeField] private float _cameraFollowAcceleration = 3;
+
     private bool _cameraMovementLock = false;
 
     private void OnEnable()
@@ -48,11 +50,19 @@ public class CameraManager : MonoBehaviour
 			SetupProtagonistVirtualCamera();
 	}
 
-	/// <summary>
-	/// Provides Cinemachine with its target, taken from the TransformAnchor SO containing a reference to the player's Transform component.
-	/// This method is called every time the player is reinstantiated.
-	/// </summary>
-	public void SetupProtagonistVirtualCamera()
+    private void Update()
+    {
+        if (_playerTransformAnchor.isSet)
+        {
+            transform.position = Vector3.Lerp(transform.position, _playerTransformAnchor.Value.position, Time.deltaTime * _cameraFollowAcceleration);
+        }
+    }
+
+    /// <summary>
+    /// Provides Cinemachine with its target, taken from the TransformAnchor SO containing a reference to the player's Transform component.
+    /// This method is called every time the player is reinstantiated.
+    /// </summary>
+    public void SetupProtagonistVirtualCamera()
 	{
 		// Transform target = _protagonistTransformAnchor.Value;
 
