@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Player;
 
 public class AttackObject : MonoBehaviour
 {
@@ -54,7 +55,7 @@ public class AttackObject : MonoBehaviour
                 }
             }
 
-            hittable.Hit(knockback);
+            hittable.Hit(knockback, Vector3.Normalize(hittable.transform.position - playerChar.transform.position));
         }
         hittable = null;
 

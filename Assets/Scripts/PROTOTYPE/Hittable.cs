@@ -33,7 +33,7 @@ public class Hittable : MonoBehaviour
         }
     }
 
-    virtual public void Hit(float knockback)
+    virtual public void Hit(float knockback, Vector3 direction)
     {
 
     }

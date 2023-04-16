@@ -1,29 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PlayerCharacter : MonoBehaviour
+namespace Player
 {
-    public float critChance;
-    public float critMultiplier;
-    
-    public GameObject playerGFX;
-    public GameObject playerDigGFX;
-
-    public void PlayerToggleDig(bool isDigging)
+    public class PlayerCharacter : MonoBehaviour
     {
-        Debug.Log("YEAHAYAH");
-        if (isDigging)
+
+        public GameObject playerGFX;
+        public GameObject playerDigGFX;
+        public AttackObject playerDigAttack;
+        public float digFreezeTime;
+
+        public void PlayerToggleDig(bool isDigging)
         {
+            Debug.Log("YEAHAYAH");
+            if (isDigging)
+            {
+                StartCoroutine(EmergeFromDig(digFreezeTime));
+            }
+            else
+            {
+                playerGFX.SetActive(false);
+                playerDigGFX.SetActive(true);
+                Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+            }
+        }
+
+        IEnumerator EmergeFromDig(float freezeTime)
+        {
+            // gameObject.GetComponent<CharacterController>().detectCollisions = false;
             playerGFX.SetActive(true);
             playerDigGFX.SetActive(false);
             Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
-        }
-        else
-        {
-            playerGFX.SetActive(false);
-            playerDigGFX.SetActive(true);
-            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+            playerDigAttack.gameObject.SetActive(true);
+            gameObject.GetComponent<PlayerMovement>().allowMovement = false;
+            yield return new WaitForSeconds(freezeTime);
+            // gameObject.GetComponent<CharacterController>().detectCollisions = true;
+            gameObject.GetComponent<PlayerMovement>().allowMovement = true;
+            playerDigAttack.gameObject.SetActive(false);
+            Debug.Log("FinishedFreeze");
         }
     }
 }

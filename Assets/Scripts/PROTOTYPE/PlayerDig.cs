@@ -2,93 +2,97 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDig : MonoBehaviour
+namespace Player
 {
-    public LayerMask digIgnoreLayerMask = default;
-
-    public Transform digDetectionLocation;
-
-    public float digRayLength = 2f;
-
-    public InputReader inputReader = default;
-
-    public PlayerBufferPoint[] playerBuffers;
-
-    public bool isDigging;
-
-    public GameObject digDownParticle = default;
-    public GameObject digUpParticle = default;
-
-    [SerializeField]
-    private TransformAnchor _playerTransformAnchor = default;
-
-    private void Awake()
+    public class PlayerDig : MonoBehaviour
     {
-        inputReader.OnDigPerformed += AttemptToggleDig;
+        public LayerMask digIgnoreLayerMask = default;
 
-    }
+        public Transform digDetectionLocation;
 
-    private void Update()
-    {
-        if (_playerTransformAnchor.isSet)
+        public float digRayLength = 2f;
+
+        public InputReader inputReader = default;
+
+        public PlayerBufferPoint[] playerBuffers;
+
+        public bool isDigging;
+
+        public GameObject digDownParticle = default;
+        public GameObject digUpParticle = default;
+
+        [SerializeField]
+        private TransformAnchor _playerTransformAnchor = default;
+
+        private void Awake()
         {
-            transform.position = _playerTransformAnchor.Value.position;
-            transform.rotation = _playerTransformAnchor.Value.rotation;
+            inputReader.OnDigPerformed += AttemptToggleDig;
+
         }
-    }
 
-    private void AttemptToggleDig()
-    {
-        RaycastHit hit;
-        if (
-            Physics
-                .Raycast(digDetectionLocation.position,
-                -Vector3.up,
-                out hit,
-                digRayLength,
-                ~digIgnoreLayerMask,
-                QueryTriggerInteraction.Collide)
-        )
+        private void Update()
         {
-            ToggleDig (hit);
-        }
-        else
-        {
-            Debug.Log("Nothing to Dig!");
-        }
-    }
-
-    private void ToggleDig(RaycastHit hit)
-    {
-        if (hit.transform.gameObject.CompareTag("Dirt"))
-        {
-            Debug.Log("Can Dig!");
-            if (isDigging)
+            if (_playerTransformAnchor.isSet)
             {
-                foreach (var buffer in playerBuffers)
-                { 
-                    buffer.groundCollider = hit.collider;
-                    Instantiate(digUpParticle, transform.position, transform.rotation);
-                    buffer.gameObject.SetActive(false);
-                }
-
-                _playerTransformAnchor.Value.GetComponent<PlayerCharacter>().PlayerToggleDig(isDigging);
-                isDigging = false;
-            } else
-            { 
-                foreach (var buffer in playerBuffers)
-                { 
-                    buffer.groundCollider = hit.collider;
-                    Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
-                    buffer.gameObject.SetActive(true);
-                }
-                _playerTransformAnchor.Value.GetComponent<PlayerCharacter>().PlayerToggleDig(isDigging);
-                isDigging = true;
+                transform.position = _playerTransformAnchor.Value.position;
+                transform.rotation = _playerTransformAnchor.Value.rotation;
             }
         }
-        else
+
+        private void AttemptToggleDig()
         {
-            Debug.Log("Can't Dig this!");
+            RaycastHit hit;
+            if (
+                Physics
+                    .Raycast(digDetectionLocation.position,
+                    -Vector3.up,
+                    out hit,
+                    digRayLength,
+                    ~digIgnoreLayerMask,
+                    QueryTriggerInteraction.Collide)
+            )
+            {
+                ToggleDig(hit);
+            }
+            else
+            {
+                Debug.Log("Nothing to Dig!");
+            }
+        }
+
+        private void ToggleDig(RaycastHit hit)
+        {
+            if (hit.transform.gameObject.CompareTag("Dirt"))
+            {
+                Debug.Log("Can Dig!");
+                if (isDigging)
+                {
+                    foreach (var buffer in playerBuffers)
+                    {
+                        buffer.groundCollider = hit.collider;
+                        Instantiate(digUpParticle, transform.position, transform.rotation);
+                        buffer.gameObject.SetActive(false);
+                    }
+
+                    _playerTransformAnchor.Value.GetComponent<PlayerCharacter>().PlayerToggleDig(isDigging);
+                    isDigging = false;
+                }
+                else
+                {
+                    foreach (var buffer in playerBuffers)
+                    {
+                        buffer.groundCollider = hit.collider;
+                        Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
+                        buffer.gameObject.SetActive(true);
+                    }
+                    _playerTransformAnchor.Value.GetComponent<PlayerCharacter>().PlayerToggleDig(isDigging);
+                    isDigging = true;
+                }
+            }
+            else
+            {
+                Debug.Log("Can't Dig this!");
+            }
         }
     }
 }

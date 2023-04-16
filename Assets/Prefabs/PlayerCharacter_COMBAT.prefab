@@ -203,6 +203,7 @@ Transform:
   - {fileID: 4093581272656194234}
   - {fileID: 4093581273836692510}
   - {fileID: 1546271338885843474}
+  - {fileID: 2294309005697451458}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -251,6 +252,7 @@ MonoBehaviour:
   isGamepad: 0
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
   currentSpeed: 0
+  allowMovement: 1
 --- !u!114 &248407811704461207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,11 +265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd030a2997aea5418d97aff25b0b961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  critChance: 50
-  critMultiplier: 2
-  knockback: 1000
   playerGFX: {fileID: 4093581273836692511}
   playerDigGFX: {fileID: 673654281541197107}
+  playerDigAttack: {fileID: 8061398196671414934}
+  digFreezeTime: 0.2
 --- !u!114 &248407811704461206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,7 +463,7 @@ GameObject:
   - component: {fileID: 4093581273772840501}
   - component: {fileID: 4093581273772840500}
   m_Layer: 3
-  m_Name: Cube (1)
+  m_Name: AttackObject
   m_TagString: AttackObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -547,9 +548,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   onlyHitEachObjOnce: 0
+  critChance: 50
+  critMultiplier: 2
   ignoreCrit: 0
+  knockback: 1000
   hittable: {fileID: 0}
-  playerChar: {fileID: 0}
+  playerChar: {fileID: 248407811704461207}
   objectPooler: {fileID: 0}
   hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
     type: 3}
@@ -608,3 +612,82 @@ Transform:
   m_Father: {fileID: 1723506523967855883}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6594151525475843122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2294309005697451458}
+  - component: {fileID: 8061398196671414934}
+  - component: {fileID: 3896151020917793843}
+  m_Layer: 3
+  m_Name: DigAttackObject
+  m_TagString: AttackObject
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2294309005697451458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594151525475843122}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1723506523967855883}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8061398196671414934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594151525475843122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908af4587fea5704bac1dfc03bee479e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+  onlyHitEachObjOnce: 0
+  critChance: 50
+  critMultiplier: 2
+  ignoreCrit: 0
+  knockback: 1500
+  hittable: {fileID: 0}
+  playerChar: {fileID: 248407811704461207}
+  objectPooler: {fileID: 0}
+  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+    type: 3}
+  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+    type: 3}
+--- !u!135 &3896151020917793843
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594151525475843122}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}

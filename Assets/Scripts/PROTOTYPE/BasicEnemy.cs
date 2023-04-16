@@ -28,7 +28,10 @@ public class BasicEnemy : Hittable
 
     void AssignAITarget()
     {
-        AI.target = playerTransformAnchor.Value;
+        if (AI != null)
+        {
+            AI.target = playerTransformAnchor.Value;
+        }
     }
 
     void Update()
@@ -62,14 +65,14 @@ public class BasicEnemy : Hittable
         }
     }
 
-    override public void Hit(float knockback)
+    override public void Hit(float knockback, Vector3 direction)
     {
         if (playerTransformAnchor.isSet)
         {
             if (health > 0)
             {
                 //knockback
-                rb.AddForce(-lookAt.right * knockback);
+                rb.AddForce(direction * knockback);
 
                 //spawn a hit particle in the opposite direction of the player;
                 Vector2 hitDirection = playerTransformAnchor.Value.position - transform.position;

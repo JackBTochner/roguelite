@@ -34,6 +34,8 @@ namespace Player
 
         private Controls controls;
 
+        public bool allowMovement = true;
+
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
@@ -53,9 +55,10 @@ namespace Player
         private void Update()
         {
             ApplyGravity();
+            if(allowMovement)
             HandleMovement();
             HandleRotation();
-            currentSpeed = controller.velocity.magnitude;
+                currentSpeed = controller.velocity.magnitude;
         }
 
         private void ApplyGravity()
