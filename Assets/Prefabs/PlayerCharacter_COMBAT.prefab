@@ -470,8 +470,6 @@ MonoBehaviour:
   spreadAngle: 0
   magazineSize: 5
   currentMagazineAmount: 5
-  reloadTime: 2.5
-  isReloading: 0
   muzzle: {fileID: 3590575991436919140}
   muzzleFlash: {fileID: 0}
   muzzleWorldVelocity: {x: 0, y: 0, z: 0}
@@ -605,7 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908af4587fea5704bac1dfc03bee479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 3
   onlyHitEachObjOnce: 0
   critChance: 50
   critMultiplier: 2

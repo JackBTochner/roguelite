@@ -14,8 +14,8 @@ public class PlayerWeaponController : MonoBehaviour
     public int magazineSize = 5;
     public int currentMagazineAmount = 5;
 
-    public float reloadTime = 2.5f;
-    public bool isReloading = false;
+//    public float reloadTime = 2.5f;
+//    public bool isReloading = false;
 
     public Transform muzzle;
     public ParticleSystem muzzleFlash;
@@ -47,11 +47,11 @@ public class PlayerWeaponController : MonoBehaviour
 
     public bool FireWeapon()
     {
-        if (isReloading)
-            return false;
+        //if (isReloading)
+        //    return false;
         if (currentMagazineAmount <= 0)
         {
-            StartCoroutine(StartReload());
+            // StartCoroutine(StartReload());
             return false;
         }
         if (lastTimeShot + 60 / fireRate < Time.time)
@@ -76,13 +76,22 @@ public class PlayerWeaponController : MonoBehaviour
         return false;
     }
 
-    IEnumerator StartReload()
+    public void AddToCurrentMagazine(int count)
     {
-        isReloading = true;
-        yield return new WaitForSeconds(reloadTime);
-        currentMagazineAmount = magazineSize;
-        isReloading = false;
+        if (currentMagazineAmount < magazineSize)
+        {
+            currentMagazineAmount += count;
+        }
     }
+
+    /*
+        IEnumerator StartReload()
+        {
+            isReloading = true;
+            yield return new WaitForSeconds(reloadTime);
+            currentMagazineAmount = magazineSize;
+            isReloading = false;
+        }*/
 
     public Vector3 GetShotDirectionWithinSpread(Transform origin)
     {

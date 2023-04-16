@@ -41,10 +41,12 @@ public class PlayerProjectile : MonoBehaviour
     public GameObject hitMarker;
     public GameObject critMarker;
 
+    public GameObject pickup;
+
+    private float timeSpawned = Mathf.NegativeInfinity;
 
     public void InitialiseProjectile(PlayerWeaponController controller)
     {
-        // Destroy(gameObject, maxLifeTime);
         instigator = controller.gameObject;
         initialPosition = transform.position;
         initialDirection = transform.forward;
@@ -58,6 +60,7 @@ public class PlayerProjectile : MonoBehaviour
 
         Collider[] instigatorColliders = instigator.GetComponentsInChildren<Collider>();
         ignoredColliders.AddRange(instigatorColliders);
+        timeSpawned = Time.time;
     }
 
     void Update()
@@ -74,6 +77,11 @@ public class PlayerProjectile : MonoBehaviour
 
         HitDetection();
         lastRootPosition = root.position;
+
+        if (Time.time > timeSpawned + maxLifeTime)
+        {
+            SpawnPickupAndRemove();
+        }
     }
 
     void HitDetection()
@@ -152,6 +160,12 @@ public class PlayerProjectile : MonoBehaviour
         }
 
         // Add impact SFX
+        SpawnPickupAndRemove();
+    }
+
+    private void SpawnPickupAndRemove()
+    {
+        GameObject.Instantiate(pickup, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
 

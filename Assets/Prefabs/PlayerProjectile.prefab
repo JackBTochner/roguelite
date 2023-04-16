@@ -99,7 +99,7 @@ MonoBehaviour:
   radius: 0.25
   root: {fileID: 7388412658097730130}
   tip: {fileID: 7388412658097730130}
-  maxLifeTime: 20
+  maxLifeTime: 5
   hittableLayers:
     serializedVersion: 2
     m_Bits: 81
@@ -117,3 +117,4 @@ MonoBehaviour:
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
     type: 3}
+  pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
