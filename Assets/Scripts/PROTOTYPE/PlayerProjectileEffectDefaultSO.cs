@@ -7,6 +7,5 @@ public class PlayerProjectileEffectDefaultSO : PlayerProjectileEffectSO
 {
     public override void Initialise(GameObject target)
     {
-        Debug.Log("DefaultEffect Initialised");
     }
 }
