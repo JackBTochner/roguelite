@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 248407811704461207}
   - component: {fileID: 248407811704461206}
   - component: {fileID: 248407811704461205}
+  - component: {fileID: 3358802077836176017}
   m_Layer: 3
   m_Name: PlayerCharacter_COMBAT
   m_TagString: Player
@@ -270,6 +271,8 @@ MonoBehaviour:
   playerDigGFX: {fileID: 673654281541197107}
   playerDigAttack: {fileID: 8061398196671414934}
   digFreezeTime: 0.2
+  maxHealth: 100
+  currentHealth: 0
 --- !u!114 &248407811704461206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +306,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!135 &3358802077836176017
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723506523967855882}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1723506524451289130
 GameObject:
   m_ObjectHideFlags: 0

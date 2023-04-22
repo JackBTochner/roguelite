@@ -9,6 +9,7 @@ TagManager:
   - PlayerExit
   - Dirt
   - RunManager
+  - Trap
   layers:
   - Default
   - TransparentFX

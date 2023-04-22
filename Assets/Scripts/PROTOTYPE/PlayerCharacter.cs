@@ -11,6 +11,14 @@ namespace Player
         public AttackObject playerDigAttack;
         public float digFreezeTime;
 
+        public float maxHealth = 100.0f;
+        public float currentHealth;
+
+        void Start()
+        {
+            currentHealth = maxHealth;
+        }
+
         public void PlayerToggleDig(bool isDigging)
         {
             Debug.Log("YEAHAYAH");
@@ -39,6 +47,27 @@ namespace Player
             gameObject.GetComponent<PlayerMovement>().allowMovement = true;
             playerDigAttack.gameObject.SetActive(false);
             Debug.Log("FinishedFreeze");
+        }
+
+        public void takeDamage(float amount)
+        {
+            float nextHealth = currentHealth - amount;
+            if (nextHealth <= 0)
+            {
+                currentHealth = 0;
+                playerDie();
+            }
+            else
+            {
+                currentHealth = nextHealth;
+            }
+
+            Debug.Log(currentHealth);
+        }
+
+        public void playerDie()
+        {
+            Debug.Log("Player dead");
         }
     }
 }
