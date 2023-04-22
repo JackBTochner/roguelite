@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4606808088954363667}
   - component: {fileID: 4606808088954363666}
   - component: {fileID: 4606808088954363671}
+  - component: {fileID: 7003430640504242972}
   m_Layer: 0
   m_Name: Tram
   m_TagString: Untagged
@@ -101,7 +102,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -133,3 +134,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideBound: 30
+--- !u!114 &7003430640504242972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606808088954363677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ecd90f818281148befe47aca3e5dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
