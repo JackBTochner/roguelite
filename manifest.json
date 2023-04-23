@@ -36,6 +36,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.AstarPath.AstarDistribution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AstarPath.AstarDistribution.html",
+          "hash": "ppriqxoBOhEDGqLpotFC+c1XcDrt76FMl2k5Wa/LokU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AstarPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AstarPath.html",
+          "hash": "mq957r2L336P/+FffCb/52ltxkHF1Gg3u/fKoBtUAnE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AttackObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AttackObject.html",
+          "hash": "vtg2iqoRd9ubnu8YKp9x0vxJVcVogOufTLgVcbPQGnM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.AttackTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.AttackTemplate.html",
+          "hash": "rFil6saEEXwPy/Y9EHTGVH8tSd169Ef0jEqEU8CpraY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.BasicEnemy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.BasicEnemy.html",
+          "hash": "ekREGYe6WvHVByyR3Xvlq3XC3I55+aPV5tkOgam+g4s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.BoolEventChannelSO.yml",
       "output": {
         ".html": {
@@ -60,11 +120,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.CameraFollow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.CameraFollow.html",
+          "hash": "uyPKOyhM2RSBOPtxbR8MzGzoALUPvsQLY55NjXXQ0Nc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.CameraManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/Global.CameraManager.html",
-          "hash": "NfRVjRTnsk+3xED942Lu1ETalhzQLYZUMu+xI7+X/gQ="
+          "hash": "dJGjCuP2U5sxJn6J/Al/PaKwEHS1fdLSmwACTKaFhK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.CameraShake.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.CameraShake.html",
+          "hash": "VpPUAUpwF+TNfWGUr8bKwpz8hR0bbHTAr75yO3+Lhyg="
         }
       },
       "is_incremental": false,
@@ -100,7 +184,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Controls.IPlayerActions.html",
-          "hash": "XZwsSdVh5sepVYnGGheqVY3D/VL4rK4Ma+FlGSxy6uk="
+          "hash": "iKh0o128ZGAyXTsmshMcNxFP7IFWw5kCzvP86swSyDA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Controls.IUIActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Controls.IUIActions.html",
+          "hash": "l9x0nrJkubZOrLfh23oPiN27NfW+LhdLxRlA2JHlVpk="
         }
       },
       "is_incremental": false,
@@ -112,7 +208,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Controls.PlayerActions.html",
-          "hash": "ox55yORPVmq7NUxklGvdgvBFZnQyp8Jx3eoiFCJakyQ="
+          "hash": "DB0CoVd5dTgYjXTf0UYh2kFeBrMRVp7EklWdTuVcG2c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Controls.UIActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Controls.UIActions.html",
+          "hash": "B+/Pu6Nj7j92Ex1JN78fvqg7D6gwH0crFORKkOxJFKE="
         }
       },
       "is_incremental": false,
@@ -124,7 +232,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Controls.html",
-          "hash": "R+F/5MOgIkC+vmn7jA9PxvBMPfGM3/kW7hMkb3gIdKQ="
+          "hash": "wcghetHh9SXMMotwb/V7PlX3lPHNaXFmRVOCjaF7u0Y="
         }
       },
       "is_incremental": false,
@@ -136,7 +244,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.ConversationFields.html",
-          "hash": "+rxud1BjxeFoxOCScgmCm+InoDRUY1izCptBaos4TrE="
+          "hash": "cVykqopEK3brosch90QBVfWtVLe9gsuWuqAYtYDSCoU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.CustomPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.CustomPath.html",
+          "hash": "2/1XIcB2iYprOcjz+b/lMXaFTa87bWRZzKNKo3eS2Y0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.DeleteAfterTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.DeleteAfterTime.html",
+          "hash": "MtVVA6i6znXHShEAeBeI6FR5bvcsCxXjdN0BdpmupsU="
         }
       },
       "is_incremental": false,
@@ -148,7 +280,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.DescriptionBaseSO.html",
-          "hash": "0naSwnOnG0E4Kxn3LNCUyeaIsXZg+tSCqwQayPA6JKI="
+          "hash": "a4i5zdAA51+AoJ2lhKl/l4PJJs2P9Dblx5Ocfb3/7zw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.DestoryTram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.DestoryTram.html",
+          "hash": "3CEcX/qHJzP5KVYYGsrBgVzwQnyHBkZ1tcYwzniNkRY="
         }
       },
       "is_incremental": false,
@@ -196,7 +340,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.EditorColdStartup.html",
-          "hash": "lpcswiq6qiMCftsLMoGRRABM2ps+Sdr/A91DLKhqIfA="
+          "hash": "H9ZThcZ9rPyBo70jOO6B2QJH86miT3iFaJkUYBEvs08="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.EnemySpawnManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.EnemySpawnManager.html",
+          "hash": "04SUWoA+bowq1nzgMaUAQOUUQe1ME5ue8To7DSbORY8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.EnemySpawnWave.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.EnemySpawnWave.html",
+          "hash": "IOvPnhGPZwx5ZHAwWloetUVJ7tHbeTu8Gcqfzaz1pb4="
         }
       },
       "is_incremental": false,
@@ -220,7 +388,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Exit.html",
-          "hash": "mlG3rFetfl0XVIZs8rFRJkk4zV85QY5LbGXoyT7I0UU="
+          "hash": "faSqEAHZhKkdpuLgrDqghuPpdrEOyz2nOEkAAf86pqY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.FrozenTrap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.FrozenTrap.html",
+          "hash": "qL5ptPiPnlVa1SUZKv4laIFb+2zV7BLmdJh+Q8ZnItc="
         }
       },
       "is_incremental": false,
@@ -264,11 +444,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.HitMarker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.HitMarker.html",
+          "hash": "pRdZKJ+rOro7AKJkDVKCSMfrOsGxgcbJE6Cz9toeCKA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Hittable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Hittable.html",
+          "hash": "OAI4uI1ajiVnaCCjNeOC3CL5+QeIlfqjL/6VfXf4sSU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.HubExit.yml",
       "output": {
         ".html": {
           "relative_path": "api/Global.HubExit.html",
-          "hash": "GoocBOYlxRD6AGZWJqu4CCXUof7PDEQTHqeTBS48rmk="
+          "hash": "rhqu1BrjKAlep4lcXkJj+Cmewxxhu1C8UX4vQ4caGUw="
         }
       },
       "is_incremental": false,
@@ -292,7 +496,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.HubNPCManager.html",
-          "hash": "vbMANu+xzBhsGS1NLPp/hIqo6EL/IkITmbi8DgVgnYQ="
+          "hash": "saxnLQm6mOd/OetvdbVI2HzTfSRPvwzuuNp3rvKOHj8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.IPooledObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.IPooledObject.html",
+          "hash": "Q4PVr4O16kzFvSxmn0BkPg0XGQKrKXBpYerTqk6wwE4="
         }
       },
       "is_incremental": false,
@@ -316,7 +532,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.InputReader.html",
-          "hash": "fltkE5BE19zUU1Pk8Qpwu8FZopwhCXHidPZB81ZeACk="
+          "hash": "L3c1Xiwi0LcGf5dmt1Ojf72RP+GED8GaPCkYm9bObA0="
         }
       },
       "is_incremental": false,
@@ -329,6 +545,18 @@
         ".html": {
           "relative_path": "api/Global.LEGACY_UILineRenderer.html",
           "hash": "EILqd61zyFK8xBlRyUOK/wtoNp9AkOsRo3vM/1SQGzc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.ListOfEnemySpawnWaves.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.ListOfEnemySpawnWaves.html",
+          "hash": "vEGBB8HKspw0V+YtB/OzWPlbsffk1jzWTuK8GUm8Oqs="
         }
       },
       "is_incremental": false,
@@ -372,6 +600,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.MoveForward.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.MoveForward.html",
+          "hash": "zNvTXV1E1M3ORSnBEuuQoL+Me4KttpWUqJctvM0iCMQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.ObjectPooler.Pool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.ObjectPooler.Pool.html",
+          "hash": "cxsZ+/BIW4igYDyZprhqdSGn5nBmChBZyC0TaPUSksI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.ObjectPooler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.ObjectPooler.html",
+          "hash": "JP/7J1q5ButvijZlF0JXq4u8DtVrVYT9/Ow8OYJMbZ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.PersistentManagerSceneSO.yml",
       "output": {
         ".html": {
@@ -384,11 +648,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.PlayerCharacter.yml",
+      "source_relative_path": "api/Global.PlayerBufferPoint.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Global.PlayerCharacter.html",
-          "hash": "+FRnA5RfEUrSJyzTPPQIjFOdqJDyNMD9dp+ISGhkg0M="
+          "relative_path": "api/Global.PlayerBufferPoint.html",
+          "hash": "mxjbHI83vqbmLnpAhy1YJc+65QOva/18dE2dYHsP5IM="
         }
       },
       "is_incremental": false,
@@ -401,6 +665,66 @@
         ".html": {
           "relative_path": "api/Global.PlayerExit.html",
           "hash": "TGCzbxuKWjaFZgc2nV+sMGllIXZ4zVNUC2cOY93eeRA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerProjectile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerProjectile.html",
+          "hash": "wy3t4vq1Hi7TcyugJfWOxyPdt2fxuLkuZz1XaCYVWns="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerProjectileEffectDefaultSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerProjectileEffectDefaultSO.html",
+          "hash": "z+5LxPXyBnVnfabReaQjdGXAdlr19mcSSgvMQvPyRqA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerProjectileEffectSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerProjectileEffectSO.html",
+          "hash": "Z3eSDHQCDxTyNTSRudi6cjUey5M3+YCQgVpG9UOPChA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerProjectilePickup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerProjectilePickup.html",
+          "hash": "zkIf8GQPN1JHptrXPneUz0yEnpvsZJs1QKqh+pTQHcc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerProjectileReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerProjectileReceiver.html",
+          "hash": "0s+jHho74ViwlY7SB2HIWJLLrp6qESDy0G3pHIu8Uqw="
         }
       },
       "is_incremental": false,
@@ -424,7 +748,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.PlayerSpawnSystem.html",
-          "hash": "dFpDzTotxsbxL6WVk/Gq36tz3sDempI7sYYj5hxiNX8="
+          "hash": "k2jGW7HYQfG+tkYWxcwQmdjuSKCNNUO1kfXJWFoOrcU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerWeaponController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerWeaponController.html",
+          "hash": "piDYDT6AE4K0+ZZaWtKUVtH/jXwxuCnXLwF/3BSoDns="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.ProjectileEffectExtraDamageSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.ProjectileEffectExtraDamageSO.html",
+          "hash": "yFHzFYFaRiSyuVUwHQWZ492xnqQhGBX8ynw64xgFX1o="
         }
       },
       "is_incremental": false,
@@ -436,7 +784,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.Run.html",
-          "hash": "PNjfiHepRX1ckJ+lLKqEPAdAqgeNJrpDep1zSmcCwf4="
+          "hash": "UP1PvHO8PmkkdIhpNLvlGQeiP+OXNDwnKycVJhls/5Q="
         }
       },
       "is_incremental": false,
@@ -448,7 +796,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.RunManager.html",
-          "hash": "j56QrfacPAzovw1jLtTdgw0FNQZRBgXfLG/h6pe7hEs="
+          "hash": "FwLjwVy4q9VxE1HCO5v/dSEsrhDWNooVw6f8m++Cnr0="
         }
       },
       "is_incremental": false,
@@ -472,7 +820,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.RunStatistics.html",
-          "hash": "inptqW+s0quQKCrsEa/yDbOiQp/PoRu8PocUxNK+tbo="
+          "hash": "BAtW3jept0TWEc0qyqY4mNGVCacU14Qn5Hs1HsS6jtE="
         }
       },
       "is_incremental": false,
@@ -528,6 +876,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.SpawnWaveTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.SpawnWaveTrigger.html",
+          "hash": "gWkengzSV3geIJNMcI3D1DixcfLjZjR9mPQwmBWkAA8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.StartGame.yml",
       "output": {
         ".html": {
@@ -545,6 +905,30 @@
         ".html": {
           "relative_path": "api/Global.TestCompression.html",
           "hash": "WLs71GTrqBHue2+B725RoYYx5P9YLoZ6kzKNI9VYNtQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TramDeltDamage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TramDeltDamage.html",
+          "hash": "Lj4sCKGPasigdgWXH+Bjv4UiQ5kUGx6t/AOeTtfAgxI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TramSpawn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TramSpawn.html",
+          "hash": "I+SNg/R/rVACwGnIqGKqjBOmhUhryW/7MJQXoVHNM2w="
         }
       },
       "is_incremental": false,
@@ -588,6 +972,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.Trap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Trap.html",
+          "hash": "17O+SmxOP2mYek2kE8vNdTYWhZnP432PAqf/hzU1k0U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.UIGridRenderer.yml",
       "output": {
         ".html": {
@@ -624,11 +1020,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.WaveSpawnType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.WaveSpawnType.html",
+          "hash": "IvZkmUHVrMmjIs7pvH/AtemhAyyB4KevlWQv3tUCjMw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.WaveTriggerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.WaveTriggerType.html",
+          "hash": "au4WjPq1vaROHrkTZlEV/ZTpXLNxsLi4WLbgVQNO5Jo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.yml",
       "output": {
         ".html": {
           "relative_path": "api/Global.html",
-          "hash": "oQMuWytnkWMGVv5i/tpma7zlIXAPBlwuHGM1/V+tf1A="
+          "hash": "Kw5tvxHICCMkBj1VmMkNedW6gPJ181a38TAMeetiNFw="
         }
       },
       "is_incremental": false,
@@ -640,7 +1060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8C0wK1A2vWWsuewuBPO0Sva5lWFXe2ff/mNTxZDy2BQ="
+          "hash": "mgGPLaIDmLUvkXXz7Jgdeup7HOQaT4mM4rV88/Tm1Jc="
         }
       },
       "is_incremental": false,
@@ -653,6 +1073,18 @@
         ".html": {
           "relative_path": "index.html",
           "hash": "EtQWnnJMsKEV4L7u848f3wc/3gWq/W5asutlx/Bk0h0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/SpawningEnemies.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/SpawningEnemies.html",
+          "hash": "RQ5nos+7ANeAGqcY8J9p9reuvZ7jTVwsakvsoEXg2NQ="
         }
       },
       "is_incremental": false,
@@ -688,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "GVQu6axty4iWiHNfRp77sQwsRm8G0NXNBodmmYW1s6Q="
+          "hash": "oZge3cuN0FLTfZHphn8XNs86R5ShYXHgW0b1vjk3DNk="
         }
       },
       "is_incremental": false,
@@ -711,6 +1143,39 @@
       "output": {
         "resource": {
           "relative_path": "resources/ExampleScriptingApi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SpawningEnemies/SpawningEnemies_Waves.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SpawningEnemies/SpawningEnemies_Waves.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SpawningEnemies/wave_details.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SpawningEnemies/wave_details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/SpawningEnemies/waves_example.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/SpawningEnemies/waves_example.png"
         }
       },
       "is_incremental": false,
@@ -743,13 +1208,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 51,
+          "total_file_count": 86,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

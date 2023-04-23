@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Spawning Enemies | Roguelite documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Spawning Enemies | Roguelite documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="spawning-enemies">Spawning Enemies</h1>
+
+<p>When entering a <a href="">Location</a>, the EnemySpawnManager (if present) will lock the PlayerExit (if present) and prepare to spawn the first wave of enemies.</p>
+<p>Each wave has its own preconditions for spawning and conditions to be considered complete.</p>
+<p>When all waves have been considered complete, the EnemySpawnManager will unlock the PlayerExit.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To start using the EnemySpawnManager, there needs to be:</p>
+<p>Within the Scene:
+1)  An A* prefab object (this is the navmesh that the enemies will use to spawn and walk upon).
+2)  EnemySpawnManager prefab (this comes with mostly empty values and should be set up manually).</p>
+<p>Outside of the Scene:
+1) The PersistentManagers scene needs to be additively loaded alongside the current scene (This should be done automatically). The EnemySpawnManager listens and waits upon the OnSceneReady channel to start spawning enemies.</p>
+<p>Optionally, you might also need:
+1) PlayerExit prefab (with the &quot;PlayerExit&quot; tag).</p>
+<p>All of these can be found in the Assets/Prefabs folder.</p>
+<h2 id="assigning-enemies-to-spawn">Assigning enemies to spawn</h2>
+<p>Waves will not spawn until the previous wave has been cleared.
+Under waves, click the plus button to add a new wave.</p>
+<p><img src="../resources/SpawningEnemies/SpawningEnemies_Waves.png" alt="waves"></p>
+<h3 id="wave-details">Wave details</h3>
+<p><img src="../resources/SpawningEnemies/wave_details.png" alt="wave details"></p>
+<p>Populate the enemiesToSpawn array with enemy prefabs under Assets/Prefabs/Enemies.
+Feel free to use duplicate entries in order to spawn more than one of the same type of enemy.</p>
+<h4 id="preconditions">Preconditions</h4>
+<p>Preconditions dictate what needs to happen <em>before</em> spawning in the wave.</p>
+<p><strong>waveInitialSpawnDelay</strong> : If assigned to the first wave, it will spawn n seconds after OnSceneReady.\
+Subsequent waves will spawn n seconds after the previous wave has been considered Complete.\
+Good to keep this &gt;0.5 in order to give the player some time to breathe when entering a location or after a wave.</p>
+<h4 id="complete-conditions">Complete Conditions</h4>
+<p>Complete conditions dictate what needs to happen for the wave to be considered complete, so the EnemySpawnManager can consider the next wave, or to unlock the PlayerExit if this is the last wave.\
+Each of these is completely optional, and if left unassigned or set to 0 will not be calculated.</p>
+<p><strong>waveCompleteDelay</strong> : Will allow the wave to complete n seconds after spawning</p>
+<p><strong>nextWaveSpawnTrigger</strong>: If assigned a SpawnWaveTrigger, it will not consider the current wave complete until the player walks through the SpawnWaveTrigger.</p>
+<p><strong>mustKillAllEnemiesToCompleteWave</strong>: Self explanatory</p>
+<h2 id="example">Example</h2>
+<p>The following example will has three &quot;Waves&quot;, although only two waves actually spawn in enemies.</p>
+<p>The first &quot;PreWave Trigger&quot; is an empty Wave with no enemies assigned, and its nextWaveSpawnTrigger is assigned to a SpawnWaveTrigger somewhere in the map.\
+This will prevent the next wave (the first enemy spawning wave) from activating until the player enters the assigned SpawnWaveTrigger.</p>
+<p>The second wave &quot;FirstWave&quot; is the first wave which will actually spawn in enemies, after 1 second (waveInitialSpawnDelay) of the player &quot;completing&quot; the previous wave (Entering the SpawnWaveTrigger).</p>
+<p>The third wave &quot;SecondWave&quot; will activate 1 second (waveInitialSpawnDelay) after the previous wave is completed (&quot;FirstWave&quot; requires all enemies in the wave killed to complete (mustKillAllEnemiesToCompleteWave))</p>
+<p><img src="../resources/SpawningEnemies/waves_example.png" alt="Example"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Documentation/manual/SpawningEnemies.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Roguelite documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

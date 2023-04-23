@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class HubNPCManager
+    <title>Class EnemySpawnManager
    | Roguelite documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class HubNPCManager
+    <meta name="title" content="Class EnemySpawnManager
    | Roguelite documentation ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,10 +78,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Global.HubNPCManager">
+            <article class="content wrap" id="_content" data-uid="Global.EnemySpawnManager">
   
   
-  <h1 id="Global_HubNPCManager" data-uid="Global.HubNPCManager" class="text-break">Class HubNPCManager
+  <h1 id="Global_EnemySpawnManager" data-uid="Global.EnemySpawnManager" class="text-break">Class EnemySpawnManager
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -92,29 +92,29 @@
     <div class="level2"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Component.html">Component</a></div>
     <div class="level3"><a class="xref" href="https://docs.unity3d.com/ScriptReference/Behaviour.html">Behaviour</a></div>
     <div class="level4"><a class="xref" href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviour</a></div>
-    <div class="level5"><span class="xref">HubNPCManager</span></div>
+    <div class="level5"><span class="xref">EnemySpawnManager</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Global.html">Global</a></h6>
   <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
-  <h5 id="Global_HubNPCManager_syntax">Syntax</h5>
+  <h5 id="Global_EnemySpawnManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HubNPCManager : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class EnemySpawnManager : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_HubNPCManager_Actors.md&amp;value=---%0Auid%3A%20Global.HubNPCManager.Actors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_EnemySpawnManager_currentWave.md&amp;value=---%0Auid%3A%20Global.EnemySpawnManager.currentWave%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/Gameplay/HubNPCManager.cs/#L15">View Source</a>
+    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/Gameplay/EnemySpawnManager.cs/#L12">View Source</a>
   </span>
-  <h4 id="Global_HubNPCManager_Actors" data-uid="Global.HubNPCManager.Actors">Actors</h4>
+  <h4 id="Global_EnemySpawnManager_currentWave" data-uid="Global.EnemySpawnManager.currentWave">currentWave</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HubNPC[] Actors</code></pre>
+    <pre><code class="lang-csharp hljs">public float currentWave</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -126,43 +126,70 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Global.HubNPC.html">HubNPC</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_HubNPCManager_ActivateNPCs.md&amp;value=---%0Auid%3A%20Global.HubNPCManager.ActivateNPCs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_EnemySpawnManager_playerExit.md&amp;value=---%0Auid%3A%20Global.EnemySpawnManager.playerExit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/Gameplay/HubNPCManager.cs/#L83">View Source</a>
+    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/Gameplay/EnemySpawnManager.cs/#L14">View Source</a>
   </span>
-  <a id="Global_HubNPCManager_ActivateNPCs_" data-uid="Global.HubNPCManager.ActivateNPCs*"></a>
-  <h4 id="Global_HubNPCManager_ActivateNPCs" data-uid="Global.HubNPCManager.ActivateNPCs">ActivateNPCs()</h4>
+  <h4 id="Global_EnemySpawnManager_playerExit" data-uid="Global.EnemySpawnManager.playerExit">playerExit</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ActivateNPCs()</code></pre>
+    <pre><code class="lang-csharp hljs">public Exit playerExit</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.Exit.html">Exit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_HubNPCManager_DeactivateNPCs.md&amp;value=---%0Auid%3A%20Global.HubNPCManager.DeactivateNPCs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_EnemySpawnManager_waves.md&amp;value=---%0Auid%3A%20Global.EnemySpawnManager.waves%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/Gameplay/HubNPCManager.cs/#L118">View Source</a>
+    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/Gameplay/EnemySpawnManager.cs/#L10">View Source</a>
   </span>
-  <a id="Global_HubNPCManager_DeactivateNPCs_" data-uid="Global.HubNPCManager.DeactivateNPCs*"></a>
-  <h4 id="Global_HubNPCManager_DeactivateNPCs" data-uid="Global.HubNPCManager.DeactivateNPCs">DeactivateNPCs()</h4>
+  <h4 id="Global_EnemySpawnManager_waves" data-uid="Global.EnemySpawnManager.waves">waves</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DeactivateNPCs()</code></pre>
+    <pre><code class="lang-csharp hljs">[Reorderable]
+public ListOfEnemySpawnWaves waves</code></pre>
   </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Global.ListOfEnemySpawnWaves.html">ListOfEnemySpawnWaves</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -171,10 +198,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_HubNPCManager.md&amp;value=---%0Auid%3A%20Global.HubNPCManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/pmuenjohn/roguelite/new/main/apiSpec/new?filename=Global_EnemySpawnManager.md&amp;value=---%0Auid%3A%20Global.EnemySpawnManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/Gameplay/HubNPCManager.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/pmuenjohn/roguelite/blob/main/Assets/Scripts/Gameplay/EnemySpawnManager.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
