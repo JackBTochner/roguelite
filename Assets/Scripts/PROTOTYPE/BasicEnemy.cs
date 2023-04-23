@@ -29,6 +29,13 @@ public class BasicEnemy : Hittable
     void OnEnable()
     {
         playerTransformAnchor.OnAnchorProvided += AssignAITarget;
+        if (playerTransformAnchor.isSet)
+            AssignAITarget();
+    }
+
+    void OnDisable()
+    { 
+        playerTransformAnchor.OnAnchorProvided -= AssignAITarget;
     }
 
     void AssignAITarget()
