@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2857990952377429054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2857990952377429049}
+  - component: {fileID: 2857990952377429048}
+  m_Layer: 0
+  m_Name: EnemySpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2857990952377429049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2857990952377429054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2857990952377429048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2857990952377429054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034263cad715f0a4a9a991056f17016c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+    array:
+    - name: 
+      spawnRadius: 10
+      enemiesToSpawn:
+      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      currentEnemies: 0
+      waveComplete: 0
+    - name: BIGGERWAVE
+      spawnRadius: 10
+      enemiesToSpawn:
+      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      currentEnemies: 0
+      waveComplete: 0
+  currentWave: 0
+  spawnRadius: 10
+  playerExit: {fileID: 0}
+  _onSceneReady: {fileID: 11400000, guid: 8e43b1aa16e3e1640ad837326d4c8ab9, type: 2}

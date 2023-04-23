@@ -143,12 +143,16 @@ MonoBehaviour:
   camShake: {fileID: 0}
   objectPooler: {fileID: 0}
   poisonDamage: 0
+  OnHit:
+    m_PersistentCalls:
+      m_Calls: []
   anim: {fileID: 3708834870753349928}
   rb: {fileID: 3708834870753350100}
   lookAt: {fileID: 3708834870814586814}
   itemDrops: []
-  playerTransformAnchor: {fileID: 0}
-  AI: {fileID: 0}
+  playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
+    type: 2}
+  AI: {fileID: 3708834870753350103}
   detectionObstacles:
     serializedVersion: 2
     m_Bits: 0
@@ -173,6 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileCount: 0
   pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
+  effectSOs: []
 --- !u!114 &3708834870753350101
 MonoBehaviour:
   m_ObjectHideFlags: 0

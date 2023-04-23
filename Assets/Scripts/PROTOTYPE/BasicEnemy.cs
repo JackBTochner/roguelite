@@ -20,10 +20,12 @@ public class BasicEnemy : Hittable
 
     bool died;
 
-    public UnityEvent OnEnemyDied = new UnityEvent();
+    public UnityEvent<BasicEnemy> OnEnemyDied = new UnityEvent<BasicEnemy>();
+
 
     public GameObject hitParticle;
 
+    
     void OnEnable()
     {
         playerTransformAnchor.OnAnchorProvided += AssignAITarget;
@@ -95,7 +97,7 @@ public class BasicEnemy : Hittable
     public void Die()
     {
         //die
-        OnEnemyDied.Invoke();
+        
         anim.SetTrigger("Die");
 
         //spawn a hit particle in the opposite direction of the player;
@@ -111,9 +113,9 @@ public class BasicEnemy : Hittable
                 Instantiate(itemDrops[i], transform.position, Quaternion.identity);
             }
         }
+        OnEnemyDied.Invoke(this);
         //give 0.5 seconds for the death animation to happen before disabling the object
         Invoke("Delete", 0.5f);
-
         died = true;
     }
 

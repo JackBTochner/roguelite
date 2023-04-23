@@ -16,10 +16,8 @@ public class Exit : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(!locked || other.tag == "Player")
-        {
+        if(!locked && other.tag == "Player")
             ExitTriggered(other);
-        }
     }
     public virtual void ExitTriggered(Collider other)
     {

@@ -166,7 +166,7 @@ namespace Pathfinding {
 				}
 
 				if (GUILayout.Button("Tags can be used to restrict which units can walk on what ground. Click here for more info", "HelpBox")) {
-					Application.OpenURL(AstarUpdateChecker.GetURL("tags"));
+					// Application.OpenURL(AstarUpdateChecker.GetURL("tags"));
 				}
 				EditorGUI.indentLevel--;
 			}

@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Map;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Map;
 
 public class RunManager : MonoBehaviour
 {
     public List<string> VisitedEncounters;
+
     public Run currentRun;
+
     public Run lastRun;
 
     public MapManagerSO mapManager;
+
     public GameObject mapCanvas;
 
     public Exit playerExit;
@@ -18,6 +21,7 @@ public class RunManager : MonoBehaviour
     public RunManagerAnchor runManagerAnchor;
 
     public GameSceneSO hubSceneSO = default;
+
     public LoadEventChannelSO loadLocation = default;
 
     private void OnEnable()
@@ -32,7 +36,7 @@ public class RunManager : MonoBehaviour
     }
 
     private void Start()
-    { 
+    {
         AssignPlayerExit();
     }
 
@@ -53,8 +57,6 @@ public class RunManager : MonoBehaviour
         StartCoroutine(LoadNextSceneAsync());
         ClearCurrentRun();
     }*/
-
-
     public void ReturnToHub()
     {
         ClearCurrentRun();
@@ -86,13 +88,18 @@ public class RunManager : MonoBehaviour
     }
 
     private void AssignPlayerExit()
-    { 
-        playerExit = GameObject.FindGameObjectWithTag("PlayerExit").GetComponent<Exit>();
+    {
+        var exitGO = GameObject.FindWithTag("PlayerExit");
+        if (exitGO)
+        {
+            playerExit = exitGO.GetComponent<Exit>();
+        }
+
         //TODO: add check to see which type of scene we are in.
         if (playerExit != null)
         {
-            playerExit.PlayerEnteredExit.RemoveListener(OnPlayerEnterExit);
-            playerExit.PlayerEnteredExit.AddListener(OnPlayerEnterExit);
+            playerExit.PlayerEnteredExit.RemoveListener (OnPlayerEnterExit);
+            playerExit.PlayerEnteredExit.AddListener (OnPlayerEnterExit);
         }
     }
 
@@ -102,14 +109,11 @@ public class RunManager : MonoBehaviour
         mapCanvas.SetActive(true);
         Debug.Log("PlayerEnteredExit");
     }
-    
 }
-
 
 [System.Serializable]
 public class Run
 {
-    
     [SerializeField]
     public RunStatistics runStatistics;
 }
@@ -118,15 +122,20 @@ public class Run
 public struct RunStatistics
 {
     public List<string> VisitedEncounters;
+
     public int nodesTravelled;
+
     public int bossNodesTravelled;
 
     public Dictionary<string, int> enemiesDefeated; // key: enemy, value: amt killed
+
     public string diedTo;
 
     public int currencyGained;
+
     public int currencySpent;
 
     public int boonsGained;
+
     public Dictionary<string, int> characterBoons; // key: character, value: amt of boons
 }

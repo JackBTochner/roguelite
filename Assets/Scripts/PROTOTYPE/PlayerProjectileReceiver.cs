@@ -24,7 +24,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
         projectileEffect.Initialise(this.gameObject);
     }
 
-    public void DropProjectiles()
+    public void DropProjectiles(BasicEnemy enemy)
     {
         Debug.Log("DropProjectiles");
         if (projectileCount > 0)

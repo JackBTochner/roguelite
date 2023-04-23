@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 1127366651219219520}
   m_Layer: 0
   m_Name: PlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,6 +224,7 @@ MonoBehaviour:
   isGamepad: 0
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
   currentSpeed: 0
+  allowMovement: 1
 --- !u!95 &8827232853832920793
 Animator:
   serializedVersion: 5
@@ -269,9 +270,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd030a2997aea5418d97aff25b0b961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  critChance: 50
-  critMultiplier: 2
-  knockback: 1000
+  playerGFX: {fileID: 0}
+  playerDigGFX: {fileID: 0}
+  playerDigAttack: {fileID: 0}
+  digFreezeTime: 0
+  maxHealth: 100
+  currentHealth: 0
 --- !u!114 &3153501817403051458
 MonoBehaviour:
   m_ObjectHideFlags: 0
