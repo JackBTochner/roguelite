@@ -1,0 +1,422 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Hittable
+  commentId: T:Global.Hittable
+  id: Hittable
+  parent: Global
+  children:
+  - Global.Hittable.camShake
+  - Global.Hittable.duration
+  - Global.Hittable.health
+  - Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
+  - Global.Hittable.intensity
+  - Global.Hittable.objectPooler
+  - Global.Hittable.OnHit
+  - Global.Hittable.poisonDamage
+  - Global.Hittable.Start
+  langs:
+  - csharp
+  - vb
+  name: Hittable
+  nameWithType: Hittable
+  fullName: Hittable
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Hittable
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class Hittable : MonoBehaviour'
+    content.vb: Public Class Hittable Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - Global.BasicEnemy
+- uid: Global.Hittable.health
+  commentId: F:Global.Hittable.health
+  id: health
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: health
+  nameWithType: Hittable.health
+  fullName: Hittable.health
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: health
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float health
+    return:
+      type: System.Single
+    content.vb: Public health As Single
+- uid: Global.Hittable.duration
+  commentId: F:Global.Hittable.duration
+  id: duration
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: duration
+  nameWithType: Hittable.duration
+  fullName: Hittable.duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: duration
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float duration
+    return:
+      type: System.Single
+    content.vb: Public duration As Single
+- uid: Global.Hittable.intensity
+  commentId: F:Global.Hittable.intensity
+  id: intensity
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: intensity
+  nameWithType: Hittable.intensity
+  fullName: Hittable.intensity
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: intensity
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float intensity
+    return:
+      type: System.Single
+    content.vb: Public intensity As Single
+- uid: Global.Hittable.camShake
+  commentId: F:Global.Hittable.camShake
+  id: camShake
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: camShake
+  nameWithType: Hittable.camShake
+  fullName: Hittable.camShake
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: camShake
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public CameraShake camShake
+    return:
+      type: Global.CameraShake
+    content.vb: Public camShake As CameraShake
+- uid: Global.Hittable.objectPooler
+  commentId: F:Global.Hittable.objectPooler
+  id: objectPooler
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: objectPooler
+  nameWithType: Hittable.objectPooler
+  fullName: Hittable.objectPooler
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: objectPooler
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public ObjectPooler objectPooler
+    return:
+      type: Global.ObjectPooler
+    content.vb: Public objectPooler As ObjectPooler
+- uid: Global.Hittable.poisonDamage
+  commentId: F:Global.Hittable.poisonDamage
+  id: poisonDamage
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: poisonDamage
+  nameWithType: Hittable.poisonDamage
+  fullName: Hittable.poisonDamage
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: poisonDamage
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int poisonDamage
+    return:
+      type: System.Int32
+    content.vb: Public poisonDamage As Integer
+- uid: Global.Hittable.OnHit
+  commentId: F:Global.Hittable.OnHit
+  id: OnHit
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: OnHit
+  nameWithType: Hittable.OnHit
+  fullName: Hittable.OnHit
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnHit
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityEvent OnHit
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public OnHit As UnityEvent
+- uid: Global.Hittable.Start
+  commentId: M:Global.Hittable.Start
+  id: Start
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: Hittable.Start()
+  fullName: Hittable.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Start
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void Start()
+    content.vb: Public Overridable Sub Start()
+  overload: Global.Hittable.Start*
+- uid: Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
+  commentId: M:Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
+  id: Hit(System.Single,UnityEngine.Vector3)
+  parent: Global.Hittable
+  langs:
+  - csharp
+  - vb
+  name: Hit(float, Vector3)
+  nameWithType: Hittable.Hit(float, Vector3)
+  fullName: Hittable.Hit(float, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/Hittable.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Hit
+    path: ../Assets/Scripts/PROTOTYPE/Hittable.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public virtual void Hit(float knockback, Vector3 direction)
+    parameters:
+    - id: knockback
+      type: System.Single
+    - id: direction
+      type: UnityEngine.Vector3
+    content.vb: Public Overridable Sub Hit(knockback As Single, direction As Vector3)
+  overload: Global.Hittable.Hit*
+  nameWithType.vb: Hittable.Hit(Single, Vector3)
+  fullName.vb: Hittable.Hit(Single, UnityEngine.Vector3)
+  name.vb: Hit(Single, Vector3)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.CameraShake
+  commentId: T:Global.CameraShake
+  name: CameraShake
+  nameWithType: CameraShake
+  fullName: CameraShake
+- uid: Global.ObjectPooler
+  commentId: T:Global.ObjectPooler
+  name: ObjectPooler
+  nameWithType: ObjectPooler
+  fullName: ObjectPooler
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.Hittable.Start*
+  commentId: Overload:Global.Hittable.Start
+  name: Start
+  nameWithType: Hittable.Start
+  fullName: Hittable.Start
+- uid: Global.Hittable.Hit*
+  commentId: Overload:Global.Hittable.Hit
+  name: Hit
+  nameWithType: Hittable.Hit
+  fullName: Hittable.Hit
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3

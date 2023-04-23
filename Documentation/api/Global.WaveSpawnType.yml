@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.WaveSpawnType
+  commentId: T:Global.WaveSpawnType
+  id: WaveSpawnType
+  parent: Global
+  children:
+  - Global.WaveSpawnType.All
+  - Global.WaveSpawnType.OneByOne
+  - Global.WaveSpawnType.Random
+  langs:
+  - csharp
+  - vb
+  name: WaveSpawnType
+  nameWithType: WaveSpawnType
+  fullName: WaveSpawnType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: WaveSpawnType
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 174
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum WaveSpawnType
+    content.vb: Public Enum WaveSpawnType
+- uid: Global.WaveSpawnType.All
+  commentId: F:Global.WaveSpawnType.All
+  id: All
+  parent: Global.WaveSpawnType
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: WaveSpawnType.All
+  fullName: WaveSpawnType.All
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: All
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 176
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: All = 0
+    return:
+      type: Global.WaveSpawnType
+- uid: Global.WaveSpawnType.OneByOne
+  commentId: F:Global.WaveSpawnType.OneByOne
+  id: OneByOne
+  parent: Global.WaveSpawnType
+  langs:
+  - csharp
+  - vb
+  name: OneByOne
+  nameWithType: WaveSpawnType.OneByOne
+  fullName: WaveSpawnType.OneByOne
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OneByOne
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 177
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: OneByOne = 1
+    return:
+      type: Global.WaveSpawnType
+- uid: Global.WaveSpawnType.Random
+  commentId: F:Global.WaveSpawnType.Random
+  id: Random
+  parent: Global.WaveSpawnType
+  langs:
+  - csharp
+  - vb
+  name: Random
+  nameWithType: WaveSpawnType.Random
+  fullName: WaveSpawnType.Random
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Random
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 178
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Random = 2
+    return:
+      type: Global.WaveSpawnType
+references:
+- uid: Global
+- uid: Global.WaveSpawnType
+  commentId: T:Global.WaveSpawnType
+  name: WaveSpawnType
+  nameWithType: WaveSpawnType
+  fullName: WaveSpawnType

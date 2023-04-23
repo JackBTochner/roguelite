@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerProjectileEffectSO
+  commentId: T:Global.PlayerProjectileEffectSO
+  id: PlayerProjectileEffectSO
+  parent: Global
+  children:
+  - Global.PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: PlayerProjectileEffectSO
+  nameWithType: PlayerProjectileEffectSO
+  fullName: PlayerProjectileEffectSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileEffectSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayerProjectileEffectSO
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileEffectSO.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public abstract class PlayerProjectileEffectSO : DescriptionBaseSO'
+    content.vb: Public MustInherit Class PlayerProjectileEffectSO Inherits DescriptionBaseSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  derivedClasses:
+  - Global.PlayerProjectileEffectDefaultSO
+  - Global.ProjectileEffectExtraDamageSO
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+- uid: Global.PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+  commentId: M:Global.PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+  id: Initialise(UnityEngine.GameObject)
+  parent: Global.PlayerProjectileEffectSO
+  langs:
+  - csharp
+  - vb
+  name: Initialise(GameObject)
+  nameWithType: PlayerProjectileEffectSO.Initialise(GameObject)
+  fullName: PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileEffectSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Initialise
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileEffectSO.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public abstract void Initialise(GameObject target)
+    parameters:
+    - id: target
+      type: UnityEngine.GameObject
+    content.vb: Public MustOverride Sub Initialise(target As GameObject)
+  overload: Global.PlayerProjectileEffectSO.Initialise*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.PlayerProjectileEffectSO.Initialise*
+  commentId: Overload:Global.PlayerProjectileEffectSO.Initialise
+  name: Initialise
+  nameWithType: PlayerProjectileEffectSO.Initialise
+  fullName: PlayerProjectileEffectSO.Initialise
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject

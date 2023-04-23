@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerBufferPoint
+  commentId: T:Global.PlayerBufferPoint
+  id: PlayerBufferPoint
+  parent: Global
+  children:
+  - Global.PlayerBufferPoint.debugMaterial
+  - Global.PlayerBufferPoint.groundCollider
+  - Global.PlayerBufferPoint.playerBuffer
+  - Global.PlayerBufferPoint.showDebug
+  langs:
+  - csharp
+  - vb
+  name: PlayerBufferPoint
+  nameWithType: PlayerBufferPoint
+  fullName: PlayerBufferPoint
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Player/PlayerBufferPoint.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayerBufferPoint
+    path: ../Assets/Scripts/Player/PlayerBufferPoint.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class PlayerBufferPoint : MonoBehaviour'
+    content.vb: Public Class PlayerBufferPoint Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.PlayerBufferPoint.showDebug
+  commentId: F:Global.PlayerBufferPoint.showDebug
+  id: showDebug
+  parent: Global.PlayerBufferPoint
+  langs:
+  - csharp
+  - vb
+  name: showDebug
+  nameWithType: PlayerBufferPoint.showDebug
+  fullName: PlayerBufferPoint.showDebug
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Player/PlayerBufferPoint.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: showDebug
+    path: ../Assets/Scripts/Player/PlayerBufferPoint.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool showDebug
+    return:
+      type: System.Boolean
+    content.vb: Public showDebug As Boolean
+- uid: Global.PlayerBufferPoint.debugMaterial
+  commentId: F:Global.PlayerBufferPoint.debugMaterial
+  id: debugMaterial
+  parent: Global.PlayerBufferPoint
+  langs:
+  - csharp
+  - vb
+  name: debugMaterial
+  nameWithType: PlayerBufferPoint.debugMaterial
+  fullName: PlayerBufferPoint.debugMaterial
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Player/PlayerBufferPoint.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: debugMaterial
+    path: ../Assets/Scripts/Player/PlayerBufferPoint.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Material debugMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: Public debugMaterial As Material
+- uid: Global.PlayerBufferPoint.groundCollider
+  commentId: F:Global.PlayerBufferPoint.groundCollider
+  id: groundCollider
+  parent: Global.PlayerBufferPoint
+  langs:
+  - csharp
+  - vb
+  name: groundCollider
+  nameWithType: PlayerBufferPoint.groundCollider
+  fullName: PlayerBufferPoint.groundCollider
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Player/PlayerBufferPoint.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: groundCollider
+    path: ../Assets/Scripts/Player/PlayerBufferPoint.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Collider groundCollider
+    return:
+      type: UnityEngine.Collider
+    content.vb: Public groundCollider As Collider
+- uid: Global.PlayerBufferPoint.playerBuffer
+  commentId: F:Global.PlayerBufferPoint.playerBuffer
+  id: playerBuffer
+  parent: Global.PlayerBufferPoint
+  langs:
+  - csharp
+  - vb
+  name: playerBuffer
+  nameWithType: PlayerBufferPoint.playerBuffer
+  fullName: PlayerBufferPoint.playerBuffer
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Player/PlayerBufferPoint.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: playerBuffer
+    path: ../Assets/Scripts/Player/PlayerBufferPoint.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Transform playerBuffer
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public playerBuffer As Transform
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEngine.Collider
+  commentId: T:UnityEngine.Collider
+  parent: UnityEngine
+  isExternal: true
+  name: Collider
+  nameWithType: Collider
+  fullName: UnityEngine.Collider
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform

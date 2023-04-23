@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.MoveForward
+  commentId: T:Global.MoveForward
+  id: MoveForward
+  parent: Global
+  children:
+  - Global.MoveForward.speed
+  langs:
+  - csharp
+  - vb
+  name: MoveForward
+  nameWithType: MoveForward
+  fullName: MoveForward
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/MoveForward.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: MoveForward
+    path: ../Assets/Scripts/MoveForward.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class MoveForward : MonoBehaviour'
+    content.vb: Public Class MoveForward Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.MoveForward.speed
+  commentId: F:Global.MoveForward.speed
+  id: speed
+  parent: Global.MoveForward
+  langs:
+  - csharp
+  - vb
+  name: speed
+  nameWithType: MoveForward.speed
+  fullName: MoveForward.speed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/MoveForward.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: speed
+    path: ../Assets/Scripts/MoveForward.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float speed
+    return:
+      type: System.Single
+    content.vb: Public speed As Single
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

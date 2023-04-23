@@ -1,0 +1,727 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Controls.UIActions
+  commentId: T:Global.Controls.UIActions
+  id: Controls.UIActions
+  parent: Global
+  children:
+  - Global.Controls.UIActions.#ctor(Controls)
+  - Global.Controls.UIActions.Cancel
+  - Global.Controls.UIActions.Click
+  - Global.Controls.UIActions.Disable
+  - Global.Controls.UIActions.Enable
+  - Global.Controls.UIActions.enabled
+  - Global.Controls.UIActions.Get
+  - Global.Controls.UIActions.MiddleClick
+  - Global.Controls.UIActions.Navigate
+  - Global.Controls.UIActions.op_Implicit(Controls.UIActions)~UnityEngine.InputSystem.InputActionMap
+  - Global.Controls.UIActions.Point
+  - Global.Controls.UIActions.RightClick
+  - Global.Controls.UIActions.ScrollWheel
+  - Global.Controls.UIActions.SetCallbacks(Controls.IUIActions)
+  - Global.Controls.UIActions.Submit
+  - Global.Controls.UIActions.TrackedDeviceOrientation
+  - Global.Controls.UIActions.TrackedDevicePosition
+  langs:
+  - csharp
+  - vb
+  name: Controls.UIActions
+  nameWithType: Controls.UIActions
+  fullName: Controls.UIActions
+  type: Struct
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: UIActions
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1015
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public struct Controls.UIActions
+    content.vb: Public Structure Controls.UIActions
+- uid: Global.Controls.UIActions.#ctor(Controls)
+  commentId: M:Global.Controls.UIActions.#ctor(Controls)
+  id: '#ctor(Controls)'
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: UIActions(Controls)
+  nameWithType: Controls.UIActions.UIActions(Controls)
+  fullName: Controls.UIActions.UIActions(Controls)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: .ctor
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1018
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UIActions(Controls wrapper)
+    parameters:
+    - id: wrapper
+      type: Global.Controls
+    content.vb: Public Sub New(wrapper As Controls)
+  overload: Global.Controls.UIActions.#ctor*
+  nameWithType.vb: Controls.UIActions.New(Controls)
+  fullName.vb: Controls.UIActions.New(Controls)
+  name.vb: New(Controls)
+- uid: Global.Controls.UIActions.Navigate
+  commentId: P:Global.Controls.UIActions.Navigate
+  id: Navigate
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: Navigate
+  nameWithType: Controls.UIActions.Navigate
+  fullName: Controls.UIActions.Navigate
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Navigate
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1019
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Navigate { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Navigate As InputAction
+  overload: Global.Controls.UIActions.Navigate*
+- uid: Global.Controls.UIActions.Submit
+  commentId: P:Global.Controls.UIActions.Submit
+  id: Submit
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: Submit
+  nameWithType: Controls.UIActions.Submit
+  fullName: Controls.UIActions.Submit
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Submit
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1020
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Submit { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Submit As InputAction
+  overload: Global.Controls.UIActions.Submit*
+- uid: Global.Controls.UIActions.Cancel
+  commentId: P:Global.Controls.UIActions.Cancel
+  id: Cancel
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: Cancel
+  nameWithType: Controls.UIActions.Cancel
+  fullName: Controls.UIActions.Cancel
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Cancel
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1021
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Cancel { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Cancel As InputAction
+  overload: Global.Controls.UIActions.Cancel*
+- uid: Global.Controls.UIActions.Point
+  commentId: P:Global.Controls.UIActions.Point
+  id: Point
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: Point
+  nameWithType: Controls.UIActions.Point
+  fullName: Controls.UIActions.Point
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Point
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1022
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Point { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Point As InputAction
+  overload: Global.Controls.UIActions.Point*
+- uid: Global.Controls.UIActions.Click
+  commentId: P:Global.Controls.UIActions.Click
+  id: Click
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: Click
+  nameWithType: Controls.UIActions.Click
+  fullName: Controls.UIActions.Click
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Click
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1023
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Click { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Click As InputAction
+  overload: Global.Controls.UIActions.Click*
+- uid: Global.Controls.UIActions.ScrollWheel
+  commentId: P:Global.Controls.UIActions.ScrollWheel
+  id: ScrollWheel
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: ScrollWheel
+  nameWithType: Controls.UIActions.ScrollWheel
+  fullName: Controls.UIActions.ScrollWheel
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ScrollWheel
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1024
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction ScrollWheel { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property ScrollWheel As InputAction
+  overload: Global.Controls.UIActions.ScrollWheel*
+- uid: Global.Controls.UIActions.MiddleClick
+  commentId: P:Global.Controls.UIActions.MiddleClick
+  id: MiddleClick
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: MiddleClick
+  nameWithType: Controls.UIActions.MiddleClick
+  fullName: Controls.UIActions.MiddleClick
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: MiddleClick
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1025
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction MiddleClick { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property MiddleClick As InputAction
+  overload: Global.Controls.UIActions.MiddleClick*
+- uid: Global.Controls.UIActions.RightClick
+  commentId: P:Global.Controls.UIActions.RightClick
+  id: RightClick
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: RightClick
+  nameWithType: Controls.UIActions.RightClick
+  fullName: Controls.UIActions.RightClick
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: RightClick
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1026
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction RightClick { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property RightClick As InputAction
+  overload: Global.Controls.UIActions.RightClick*
+- uid: Global.Controls.UIActions.TrackedDevicePosition
+  commentId: P:Global.Controls.UIActions.TrackedDevicePosition
+  id: TrackedDevicePosition
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: TrackedDevicePosition
+  nameWithType: Controls.UIActions.TrackedDevicePosition
+  fullName: Controls.UIActions.TrackedDevicePosition
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: TrackedDevicePosition
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1027
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction TrackedDevicePosition { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property TrackedDevicePosition As InputAction
+  overload: Global.Controls.UIActions.TrackedDevicePosition*
+- uid: Global.Controls.UIActions.TrackedDeviceOrientation
+  commentId: P:Global.Controls.UIActions.TrackedDeviceOrientation
+  id: TrackedDeviceOrientation
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: TrackedDeviceOrientation
+  nameWithType: Controls.UIActions.TrackedDeviceOrientation
+  fullName: Controls.UIActions.TrackedDeviceOrientation
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: TrackedDeviceOrientation
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1028
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction TrackedDeviceOrientation { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property TrackedDeviceOrientation As InputAction
+  overload: Global.Controls.UIActions.TrackedDeviceOrientation*
+- uid: Global.Controls.UIActions.Get
+  commentId: M:Global.Controls.UIActions.Get
+  id: Get
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: Controls.UIActions.Get()
+  fullName: Controls.UIActions.Get()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Get
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1029
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputActionMap Get()
+    return:
+      type: UnityEngine.InputSystem.InputActionMap
+    content.vb: Public Function [Get]() As InputActionMap
+  overload: Global.Controls.UIActions.Get*
+- uid: Global.Controls.UIActions.Enable
+  commentId: M:Global.Controls.UIActions.Enable
+  id: Enable
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: Enable()
+  nameWithType: Controls.UIActions.Enable()
+  fullName: Controls.UIActions.Enable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Enable
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1030
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Enable()
+    content.vb: Public Sub Enable()
+  overload: Global.Controls.UIActions.Enable*
+- uid: Global.Controls.UIActions.Disable
+  commentId: M:Global.Controls.UIActions.Disable
+  id: Disable
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: Controls.UIActions.Disable()
+  fullName: Controls.UIActions.Disable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Disable
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1031
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Disable()
+    content.vb: Public Sub Disable()
+  overload: Global.Controls.UIActions.Disable*
+- uid: Global.Controls.UIActions.enabled
+  commentId: P:Global.Controls.UIActions.enabled
+  id: enabled
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: enabled
+  nameWithType: Controls.UIActions.enabled
+  fullName: Controls.UIActions.enabled
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: enabled
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1032
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool enabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property enabled As Boolean
+  overload: Global.Controls.UIActions.enabled*
+- uid: Global.Controls.UIActions.op_Implicit(Controls.UIActions)~UnityEngine.InputSystem.InputActionMap
+  commentId: M:Global.Controls.UIActions.op_Implicit(Controls.UIActions)~UnityEngine.InputSystem.InputActionMap
+  id: op_Implicit(Controls.UIActions)~UnityEngine.InputSystem.InputActionMap
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: implicit operator InputActionMap(UIActions)
+  nameWithType: Controls.UIActions.implicit operator InputActionMap(Controls.UIActions)
+  fullName: Controls.UIActions.implicit operator UnityEngine.InputSystem.InputActionMap(Controls.UIActions)
+  type: Operator
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: op_Implicit
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1033
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static implicit operator InputActionMap(Controls.UIActions set)
+    parameters:
+    - id: set
+      type: Global.Controls.UIActions
+    return:
+      type: UnityEngine.InputSystem.InputActionMap
+    content.vb: Public Shared Widening Operator CType([set] As Controls.UIActions) As InputActionMap
+  overload: Global.Controls.UIActions.op_Implicit*
+  nameWithType.vb: Controls.UIActions.CType(Controls.UIActions)
+  fullName.vb: Controls.UIActions.CType(Controls.UIActions)
+  name.vb: CType(UIActions)
+- uid: Global.Controls.UIActions.SetCallbacks(Controls.IUIActions)
+  commentId: M:Global.Controls.UIActions.SetCallbacks(Controls.IUIActions)
+  id: SetCallbacks(Controls.IUIActions)
+  parent: Global.Controls.UIActions
+  langs:
+  - csharp
+  - vb
+  name: SetCallbacks(IUIActions)
+  nameWithType: Controls.UIActions.SetCallbacks(Controls.IUIActions)
+  fullName: Controls.UIActions.SetCallbacks(Controls.IUIActions)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SetCallbacks
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1034
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void SetCallbacks(Controls.IUIActions instance)
+    parameters:
+    - id: instance
+      type: Global.Controls.IUIActions
+    content.vb: Public Sub SetCallbacks(instance As Controls.IUIActions)
+  overload: Global.Controls.UIActions.SetCallbacks*
+references:
+- uid: Global
+- uid: Global.Controls.UIActions.#ctor*
+  commentId: Overload:Global.Controls.UIActions.#ctor
+  name: UIActions
+  nameWithType: Controls.UIActions.UIActions
+  fullName: Controls.UIActions.UIActions
+  nameWithType.vb: Controls.UIActions.New
+  fullName.vb: Controls.UIActions.New
+  name.vb: New
+- uid: Global.Controls
+  commentId: T:Global.Controls
+  name: Controls
+  nameWithType: Controls
+  fullName: Controls
+- uid: Global.Controls.UIActions.Navigate*
+  commentId: Overload:Global.Controls.UIActions.Navigate
+  name: Navigate
+  nameWithType: Controls.UIActions.Navigate
+  fullName: Controls.UIActions.Navigate
+- uid: UnityEngine.InputSystem.InputAction
+  commentId: T:UnityEngine.InputSystem.InputAction
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputAction
+  nameWithType: InputAction
+  fullName: UnityEngine.InputSystem.InputAction
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: Global.Controls.UIActions.Submit*
+  commentId: Overload:Global.Controls.UIActions.Submit
+  name: Submit
+  nameWithType: Controls.UIActions.Submit
+  fullName: Controls.UIActions.Submit
+- uid: Global.Controls.UIActions.Cancel*
+  commentId: Overload:Global.Controls.UIActions.Cancel
+  name: Cancel
+  nameWithType: Controls.UIActions.Cancel
+  fullName: Controls.UIActions.Cancel
+- uid: Global.Controls.UIActions.Point*
+  commentId: Overload:Global.Controls.UIActions.Point
+  name: Point
+  nameWithType: Controls.UIActions.Point
+  fullName: Controls.UIActions.Point
+- uid: Global.Controls.UIActions.Click*
+  commentId: Overload:Global.Controls.UIActions.Click
+  name: Click
+  nameWithType: Controls.UIActions.Click
+  fullName: Controls.UIActions.Click
+- uid: Global.Controls.UIActions.ScrollWheel*
+  commentId: Overload:Global.Controls.UIActions.ScrollWheel
+  name: ScrollWheel
+  nameWithType: Controls.UIActions.ScrollWheel
+  fullName: Controls.UIActions.ScrollWheel
+- uid: Global.Controls.UIActions.MiddleClick*
+  commentId: Overload:Global.Controls.UIActions.MiddleClick
+  name: MiddleClick
+  nameWithType: Controls.UIActions.MiddleClick
+  fullName: Controls.UIActions.MiddleClick
+- uid: Global.Controls.UIActions.RightClick*
+  commentId: Overload:Global.Controls.UIActions.RightClick
+  name: RightClick
+  nameWithType: Controls.UIActions.RightClick
+  fullName: Controls.UIActions.RightClick
+- uid: Global.Controls.UIActions.TrackedDevicePosition*
+  commentId: Overload:Global.Controls.UIActions.TrackedDevicePosition
+  name: TrackedDevicePosition
+  nameWithType: Controls.UIActions.TrackedDevicePosition
+  fullName: Controls.UIActions.TrackedDevicePosition
+- uid: Global.Controls.UIActions.TrackedDeviceOrientation*
+  commentId: Overload:Global.Controls.UIActions.TrackedDeviceOrientation
+  name: TrackedDeviceOrientation
+  nameWithType: Controls.UIActions.TrackedDeviceOrientation
+  fullName: Controls.UIActions.TrackedDeviceOrientation
+- uid: Global.Controls.UIActions.Get*
+  commentId: Overload:Global.Controls.UIActions.Get
+  name: Get
+  nameWithType: Controls.UIActions.Get
+  fullName: Controls.UIActions.Get
+- uid: UnityEngine.InputSystem.InputActionMap
+  commentId: T:UnityEngine.InputSystem.InputActionMap
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputActionMap
+  nameWithType: InputActionMap
+  fullName: UnityEngine.InputSystem.InputActionMap
+- uid: Global.Controls.UIActions.Enable*
+  commentId: Overload:Global.Controls.UIActions.Enable
+  name: Enable
+  nameWithType: Controls.UIActions.Enable
+  fullName: Controls.UIActions.Enable
+- uid: Global.Controls.UIActions.Disable*
+  commentId: Overload:Global.Controls.UIActions.Disable
+  name: Disable
+  nameWithType: Controls.UIActions.Disable
+  fullName: Controls.UIActions.Disable
+- uid: Global.Controls.UIActions.enabled*
+  commentId: Overload:Global.Controls.UIActions.enabled
+  name: enabled
+  nameWithType: Controls.UIActions.enabled
+  fullName: Controls.UIActions.enabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Controls.UIActions.op_Implicit*
+  commentId: Overload:Global.Controls.UIActions.op_Implicit
+  name: implicit operator
+  nameWithType: Controls.UIActions.implicit operator
+  fullName: Controls.UIActions.implicit operator
+  nameWithType.vb: Controls.UIActions.CType
+  fullName.vb: Controls.UIActions.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Global.Controls.UIActions
+  commentId: T:Global.Controls.UIActions
+  name: Controls.UIActions
+  nameWithType: Controls.UIActions
+  fullName: Controls.UIActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.UIActions
+    name: UIActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.UIActions
+    name: UIActions
+- uid: Global.Controls.UIActions.SetCallbacks*
+  commentId: Overload:Global.Controls.UIActions.SetCallbacks
+  name: SetCallbacks
+  nameWithType: Controls.UIActions.SetCallbacks
+  fullName: Controls.UIActions.SetCallbacks
+- uid: Global.Controls.IUIActions
+  commentId: T:Global.Controls.IUIActions
+  name: Controls.IUIActions
+  nameWithType: Controls.IUIActions
+  fullName: Controls.IUIActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IUIActions
+    name: IUIActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IUIActions
+    name: IUIActions

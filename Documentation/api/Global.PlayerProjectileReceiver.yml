@@ -1,0 +1,382 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerProjectileReceiver
+  commentId: T:Global.PlayerProjectileReceiver
+  id: PlayerProjectileReceiver
+  parent: Global
+  children:
+  - Global.PlayerProjectileReceiver.AddProjectile(PlayerProjectileEffectSO)
+  - Global.PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
+  - Global.PlayerProjectileReceiver.effectSOs
+  - Global.PlayerProjectileReceiver.pickup
+  - Global.PlayerProjectileReceiver.projectileCount
+  - Global.PlayerProjectileReceiver.Start
+  langs:
+  - csharp
+  - vb
+  name: PlayerProjectileReceiver
+  nameWithType: PlayerProjectileReceiver
+  fullName: PlayerProjectileReceiver
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayerProjectileReceiver
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class PlayerProjectileReceiver : MonoBehaviour'
+    content.vb: Public Class PlayerProjectileReceiver Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.PlayerProjectileReceiver.projectileCount
+  commentId: F:Global.PlayerProjectileReceiver.projectileCount
+  id: projectileCount
+  parent: Global.PlayerProjectileReceiver
+  langs:
+  - csharp
+  - vb
+  name: projectileCount
+  nameWithType: PlayerProjectileReceiver.projectileCount
+  fullName: PlayerProjectileReceiver.projectileCount
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: projectileCount
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public int projectileCount
+    return:
+      type: System.Int32
+    content.vb: Public projectileCount As Integer
+- uid: Global.PlayerProjectileReceiver.pickup
+  commentId: F:Global.PlayerProjectileReceiver.pickup
+  id: pickup
+  parent: Global.PlayerProjectileReceiver
+  langs:
+  - csharp
+  - vb
+  name: pickup
+  nameWithType: PlayerProjectileReceiver.pickup
+  fullName: PlayerProjectileReceiver.pickup
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: pickup
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject pickup
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public pickup As GameObject
+- uid: Global.PlayerProjectileReceiver.effectSOs
+  commentId: F:Global.PlayerProjectileReceiver.effectSOs
+  id: effectSOs
+  parent: Global.PlayerProjectileReceiver
+  langs:
+  - csharp
+  - vb
+  name: effectSOs
+  nameWithType: PlayerProjectileReceiver.effectSOs
+  fullName: PlayerProjectileReceiver.effectSOs
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: effectSOs
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<PlayerProjectileEffectSO> effectSOs
+    return:
+      type: System.Collections.Generic.List{PlayerProjectileEffectSO}
+    content.vb: Public effectSOs As List(Of PlayerProjectileEffectSO)
+- uid: Global.PlayerProjectileReceiver.Start
+  commentId: M:Global.PlayerProjectileReceiver.Start
+  id: Start
+  parent: Global.PlayerProjectileReceiver
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: PlayerProjectileReceiver.Start()
+  fullName: PlayerProjectileReceiver.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Start
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: Global.PlayerProjectileReceiver.Start*
+- uid: Global.PlayerProjectileReceiver.AddProjectile(PlayerProjectileEffectSO)
+  commentId: M:Global.PlayerProjectileReceiver.AddProjectile(PlayerProjectileEffectSO)
+  id: AddProjectile(PlayerProjectileEffectSO)
+  parent: Global.PlayerProjectileReceiver
+  langs:
+  - csharp
+  - vb
+  name: AddProjectile(PlayerProjectileEffectSO)
+  nameWithType: PlayerProjectileReceiver.AddProjectile(PlayerProjectileEffectSO)
+  fullName: PlayerProjectileReceiver.AddProjectile(PlayerProjectileEffectSO)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: AddProjectile
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void AddProjectile(PlayerProjectileEffectSO projectileEffect)
+    parameters:
+    - id: projectileEffect
+      type: Global.PlayerProjectileEffectSO
+    content.vb: Public Sub AddProjectile(projectileEffect As PlayerProjectileEffectSO)
+  overload: Global.PlayerProjectileReceiver.AddProjectile*
+- uid: Global.PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
+  commentId: M:Global.PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
+  id: DropProjectiles(BasicEnemy)
+  parent: Global.PlayerProjectileReceiver
+  langs:
+  - csharp
+  - vb
+  name: DropProjectiles(BasicEnemy)
+  nameWithType: PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
+  fullName: PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: DropProjectiles
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileReceiver.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void DropProjectiles(BasicEnemy enemy)
+    parameters:
+    - id: enemy
+      type: Global.BasicEnemy
+    content.vb: Public Sub DropProjectiles(enemy As BasicEnemy)
+  overload: Global.PlayerProjectileReceiver.DropProjectiles*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: System.Collections.Generic.List{PlayerProjectileEffectSO}
+  commentId: T:System.Collections.Generic.List{PlayerProjectileEffectSO}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<PlayerProjectileEffectSO>
+  nameWithType: List<PlayerProjectileEffectSO>
+  fullName: System.Collections.Generic.List<PlayerProjectileEffectSO>
+  nameWithType.vb: List(Of PlayerProjectileEffectSO)
+  fullName.vb: System.Collections.Generic.List(Of PlayerProjectileEffectSO)
+  name.vb: List(Of PlayerProjectileEffectSO)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.PlayerProjectileEffectSO
+    name: PlayerProjectileEffectSO
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.PlayerProjectileEffectSO
+    name: PlayerProjectileEffectSO
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: Global.PlayerProjectileReceiver.Start*
+  commentId: Overload:Global.PlayerProjectileReceiver.Start
+  name: Start
+  nameWithType: PlayerProjectileReceiver.Start
+  fullName: PlayerProjectileReceiver.Start
+- uid: Global.PlayerProjectileReceiver.AddProjectile*
+  commentId: Overload:Global.PlayerProjectileReceiver.AddProjectile
+  name: AddProjectile
+  nameWithType: PlayerProjectileReceiver.AddProjectile
+  fullName: PlayerProjectileReceiver.AddProjectile
+- uid: Global.PlayerProjectileEffectSO
+  commentId: T:Global.PlayerProjectileEffectSO
+  name: PlayerProjectileEffectSO
+  nameWithType: PlayerProjectileEffectSO
+  fullName: PlayerProjectileEffectSO
+- uid: Global.PlayerProjectileReceiver.DropProjectiles*
+  commentId: Overload:Global.PlayerProjectileReceiver.DropProjectiles
+  name: DropProjectiles
+  nameWithType: PlayerProjectileReceiver.DropProjectiles
+  fullName: PlayerProjectileReceiver.DropProjectiles
+- uid: Global.BasicEnemy
+  commentId: T:Global.BasicEnemy
+  name: BasicEnemy
+  nameWithType: BasicEnemy
+  fullName: BasicEnemy

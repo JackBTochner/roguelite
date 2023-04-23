@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: TransitionChannelSO
     path: ../Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
     startLine: 3
@@ -67,7 +67,7 @@ items:
     remote:
       path: Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnEventRaised
     path: ../Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
     startLine: 6
@@ -94,7 +94,7 @@ items:
     remote:
       path: Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: FadeIn
     path: ../Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
     startLine: 13
@@ -129,7 +129,7 @@ items:
     remote:
       path: Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: FadeOut
     path: ../Assets/Scripts/SceneManagement/ScriptableObjects/TransitionChannelSO.cs
     startLine: 22

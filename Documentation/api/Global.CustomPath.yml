@@ -1,0 +1,261 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CustomPath
+  commentId: T:Global.CustomPath
+  id: CustomPath
+  parent: Global
+  children:
+  - Global.CustomPath.nextWaypointDistance
+  - Global.CustomPath.rb
+  - Global.CustomPath.seeker
+  - Global.CustomPath.speed
+  - Global.CustomPath.target
+  langs:
+  - csharp
+  - vb
+  name: CustomPath
+  nameWithType: CustomPath
+  fullName: CustomPath
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/CustomPath.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: CustomPath
+    path: ../Assets/Scripts/PROTOTYPE/CustomPath.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class CustomPath : MonoBehaviour'
+    content.vb: Public Class CustomPath Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.CustomPath.target
+  commentId: F:Global.CustomPath.target
+  id: target
+  parent: Global.CustomPath
+  langs:
+  - csharp
+  - vb
+  name: target
+  nameWithType: CustomPath.target
+  fullName: CustomPath.target
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/CustomPath.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: target
+    path: ../Assets/Scripts/PROTOTYPE/CustomPath.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Transform target
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public target As Transform
+- uid: Global.CustomPath.speed
+  commentId: F:Global.CustomPath.speed
+  id: speed
+  parent: Global.CustomPath
+  langs:
+  - csharp
+  - vb
+  name: speed
+  nameWithType: CustomPath.speed
+  fullName: CustomPath.speed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/CustomPath.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: speed
+    path: ../Assets/Scripts/PROTOTYPE/CustomPath.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float speed
+    return:
+      type: System.Single
+    content.vb: Public speed As Single
+- uid: Global.CustomPath.nextWaypointDistance
+  commentId: F:Global.CustomPath.nextWaypointDistance
+  id: nextWaypointDistance
+  parent: Global.CustomPath
+  langs:
+  - csharp
+  - vb
+  name: nextWaypointDistance
+  nameWithType: CustomPath.nextWaypointDistance
+  fullName: CustomPath.nextWaypointDistance
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/CustomPath.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: nextWaypointDistance
+    path: ../Assets/Scripts/PROTOTYPE/CustomPath.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float nextWaypointDistance
+    return:
+      type: System.Single
+    content.vb: Public nextWaypointDistance As Single
+- uid: Global.CustomPath.seeker
+  commentId: F:Global.CustomPath.seeker
+  id: seeker
+  parent: Global.CustomPath
+  langs:
+  - csharp
+  - vb
+  name: seeker
+  nameWithType: CustomPath.seeker
+  fullName: CustomPath.seeker
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/CustomPath.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: seeker
+    path: ../Assets/Scripts/PROTOTYPE/CustomPath.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Seeker seeker
+    return:
+      type: Pathfinding.Seeker
+    content.vb: Public seeker As Seeker
+- uid: Global.CustomPath.rb
+  commentId: F:Global.CustomPath.rb
+  id: rb
+  parent: Global.CustomPath
+  langs:
+  - csharp
+  - vb
+  name: rb
+  nameWithType: CustomPath.rb
+  fullName: CustomPath.rb
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/CustomPath.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: rb
+    path: ../Assets/Scripts/PROTOTYPE/CustomPath.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Rigidbody rb
+    return:
+      type: UnityEngine.Rigidbody
+    content.vb: Public rb As Rigidbody
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Pathfinding.Seeker
+  commentId: T:Pathfinding.Seeker
+  parent: Pathfinding
+  name: Seeker
+  nameWithType: Seeker
+  fullName: Pathfinding.Seeker
+- uid: Pathfinding
+  commentId: N:Pathfinding
+  name: Pathfinding
+  nameWithType: Pathfinding
+  fullName: Pathfinding
+- uid: UnityEngine.Rigidbody
+  commentId: T:UnityEngine.Rigidbody
+  parent: UnityEngine
+  isExternal: true
+  name: Rigidbody
+  nameWithType: Rigidbody
+  fullName: UnityEngine.Rigidbody

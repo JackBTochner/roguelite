@@ -21,7 +21,7 @@ items:
     remote:
       path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: UIVisibility
     path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
     startLine: 2
@@ -46,7 +46,7 @@ items:
     remote:
       path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnlyDuringContent
     path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
     startLine: 7
@@ -74,7 +74,7 @@ items:
     remote:
       path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: UntilSuperceded
     path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
     startLine: 12
@@ -102,7 +102,7 @@ items:
     remote:
       path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: AlwaysOnceShown
     path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
     startLine: 17
@@ -130,7 +130,7 @@ items:
     remote:
       path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: AlwaysFromStart
     path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
     startLine: 22
@@ -158,7 +158,7 @@ items:
     remote:
       path: Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: UntilSupercededOrActorChange
     path: ../Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/UI/Utility/UIVisibility.cs
     startLine: 27

@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CameraFollow
+  commentId: T:Global.CameraFollow
+  id: CameraFollow
+  parent: Global
+  children:
+  - Global.CameraFollow.accel
+  - Global.CameraFollow.player
+  langs:
+  - csharp
+  - vb
+  name: CameraFollow
+  nameWithType: CameraFollow
+  fullName: CameraFollow
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraFollow.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: CameraFollow
+    path: ../Assets/Scripts/Camera/CameraFollow.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class CameraFollow : MonoBehaviour'
+    content.vb: Public Class CameraFollow Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.CameraFollow.player
+  commentId: F:Global.CameraFollow.player
+  id: player
+  parent: Global.CameraFollow
+  langs:
+  - csharp
+  - vb
+  name: player
+  nameWithType: CameraFollow.player
+  fullName: CameraFollow.player
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraFollow.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: player
+    path: ../Assets/Scripts/Camera/CameraFollow.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Transform player
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public player As Transform
+- uid: Global.CameraFollow.accel
+  commentId: F:Global.CameraFollow.accel
+  id: accel
+  parent: Global.CameraFollow
+  langs:
+  - csharp
+  - vb
+  name: accel
+  nameWithType: CameraFollow.accel
+  fullName: CameraFollow.accel
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraFollow.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: accel
+    path: ../Assets/Scripts/Camera/CameraFollow.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float accel
+    return:
+      type: System.Single
+    content.vb: Public accel As Single
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

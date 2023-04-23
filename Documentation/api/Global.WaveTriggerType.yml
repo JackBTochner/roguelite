@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.WaveTriggerType
+  commentId: T:Global.WaveTriggerType
+  id: WaveTriggerType
+  parent: Global
+  children:
+  - Global.WaveTriggerType.EliminateLastWave
+  - Global.WaveTriggerType.Timer
+  - Global.WaveTriggerType.TriggerCollider
+  langs:
+  - csharp
+  - vb
+  name: WaveTriggerType
+  nameWithType: WaveTriggerType
+  fullName: WaveTriggerType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: WaveTriggerType
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 167
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public enum WaveTriggerType
+    content.vb: Public Enum WaveTriggerType
+- uid: Global.WaveTriggerType.Timer
+  commentId: F:Global.WaveTriggerType.Timer
+  id: Timer
+  parent: Global.WaveTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Timer
+  nameWithType: WaveTriggerType.Timer
+  fullName: WaveTriggerType.Timer
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Timer
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 169
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: Timer = 0
+    return:
+      type: Global.WaveTriggerType
+- uid: Global.WaveTriggerType.EliminateLastWave
+  commentId: F:Global.WaveTriggerType.EliminateLastWave
+  id: EliminateLastWave
+  parent: Global.WaveTriggerType
+  langs:
+  - csharp
+  - vb
+  name: EliminateLastWave
+  nameWithType: WaveTriggerType.EliminateLastWave
+  fullName: WaveTriggerType.EliminateLastWave
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: EliminateLastWave
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 170
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: EliminateLastWave = 1
+    return:
+      type: Global.WaveTriggerType
+- uid: Global.WaveTriggerType.TriggerCollider
+  commentId: F:Global.WaveTriggerType.TriggerCollider
+  id: TriggerCollider
+  parent: Global.WaveTriggerType
+  langs:
+  - csharp
+  - vb
+  name: TriggerCollider
+  nameWithType: WaveTriggerType.TriggerCollider
+  fullName: WaveTriggerType.TriggerCollider
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: TriggerCollider
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 171
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: TriggerCollider = 2
+    return:
+      type: Global.WaveTriggerType
+references:
+- uid: Global
+- uid: Global.WaveTriggerType
+  commentId: T:Global.WaveTriggerType
+  name: WaveTriggerType
+  nameWithType: WaveTriggerType
+  fullName: WaveTriggerType

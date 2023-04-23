@@ -14,10 +14,8 @@ public class PlayerWeaponController : MonoBehaviour
     public int magazineSize = 8;
     public int currentMagazineAmount = 8;
 
+    public List<PlayerProjectileEffectSO> effectTemplates = new List<PlayerProjectileEffectSO>();
     public List<PlayerProjectileEffectSO> effects = new List<PlayerProjectileEffectSO>();
-
-    //    public float reloadTime = 2.5f;
-    //    public bool isReloading = false;
 
     public Transform muzzle;
     public ParticleSystem muzzleFlash;
@@ -29,10 +27,23 @@ public class PlayerWeaponController : MonoBehaviour
 
     [SerializeField] private InputReader inputReader = default;
 
+
     private void OnEnable()
     {
         inputReader.OnAttack2Performed += TryAttack;
     }
+
+    private void OnDisable()
+    {
+        inputReader.OnAttack2Performed -= TryAttack;
+    }
+
+    
+    private void Awake()
+    {
+           
+    }
+
     void Update()
     {
         if (Time.deltaTime > 0)
@@ -49,11 +60,8 @@ public class PlayerWeaponController : MonoBehaviour
 
     public bool FireWeapon()
     {
-        //if (isReloading)
-        //    return false;
         if (currentMagazineAmount <= 0)
         {
-            // StartCoroutine(StartReload());
             return false;
         }
         if (lastTimeShot + 60 / fireRate < Time.time)
@@ -86,15 +94,6 @@ public class PlayerWeaponController : MonoBehaviour
             currentMagazineAmount += count;
         }
     }
-
-    /*
-        IEnumerator StartReload()
-        {
-            isReloading = true;
-            yield return new WaitForSeconds(reloadTime);
-            currentMagazineAmount = magazineSize;
-            isReloading = false;
-        }*/
 
     public Vector3 GetShotDirectionWithinSpread(Transform origin)
     {

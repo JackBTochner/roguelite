@@ -17,7 +17,7 @@ items:
     remote:
       path: Assets/Scripts/Utility/DescriptionBaseSO.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: DescriptionBaseSO
     path: ../Assets/Scripts/Utility/DescriptionBaseSO.cs
     startLine: 5
@@ -39,6 +39,7 @@ items:
   - Global.GameSceneSO
   - Global.InputReader
   - Global.LoadEventChannelSO
+  - Global.PlayerProjectileEffectSO
   - Global.RuntimeAnchorBase`1
   - Global.TransformEventChannelSO
   - Global.TransitionChannelSO
@@ -60,7 +61,7 @@ items:
     remote:
       path: Assets/Scripts/Utility/DescriptionBaseSO.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: description
     path: ../Assets/Scripts/Utility/DescriptionBaseSO.cs
     startLine: 7

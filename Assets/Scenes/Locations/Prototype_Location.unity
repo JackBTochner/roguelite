@@ -145,12 +145,12 @@ PrefabInstance:
     - target: {fileID: 7073137617198807644, guid: 3a6de7580757a7b4895b1ae540f5a350,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.478
+      value: 5.8173704
       objectReference: {fileID: 0}
     - target: {fileID: 7073137617198807644, guid: 3a6de7580757a7b4895b1ae540f5a350,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.6469
+      value: 5.9987855
       objectReference: {fileID: 0}
     - target: {fileID: 7073137617198807644, guid: 3a6de7580757a7b4895b1ae540f5a350,
         type: 3}
@@ -3104,7 +3104,17 @@ PrefabInstance:
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
       propertyPath: waves.array.Array.data[0].name
-      value: small wave
+      value: PreWave Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[1].name
+      value: FirstWave
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[2].name
+      value: SecondWave
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
@@ -3123,12 +3133,37 @@ PrefabInstance:
       objectReference: {fileID: 6643194}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
+      propertyPath: waves.array.Array.data[1].nextWaveSpawnTrigger
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
       propertyPath: waves.array.Array.data[0].waveInitialSpawnDelay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
       propertyPath: waves.array.Array.data[1].waveInitialSpawnDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[2].waveInitialSpawnDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[0].enemiesToSpawn.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[1].enemiesToSpawn.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[2].enemiesToSpawn.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429049, guid: e02f1da5ef0b8394190ee738d105c58a,

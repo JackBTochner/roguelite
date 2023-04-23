@@ -1,0 +1,749 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BasicEnemy
+  commentId: T:Global.BasicEnemy
+  id: BasicEnemy
+  parent: Global
+  children:
+  - Global.BasicEnemy.AI
+  - Global.BasicEnemy.anim
+  - Global.BasicEnemy.detected
+  - Global.BasicEnemy.detectionObstacles
+  - Global.BasicEnemy.detectionRange
+  - Global.BasicEnemy.Die
+  - Global.BasicEnemy.Hit(System.Single,UnityEngine.Vector3)
+  - Global.BasicEnemy.hitParticle
+  - Global.BasicEnemy.itemDrops
+  - Global.BasicEnemy.lookAt
+  - Global.BasicEnemy.OnEnemyDied
+  - Global.BasicEnemy.playerTransformAnchor
+  - Global.BasicEnemy.rb
+  langs:
+  - csharp
+  - vb
+  name: BasicEnemy
+  nameWithType: BasicEnemy
+  fullName: BasicEnemy
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: BasicEnemy
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class BasicEnemy : Hittable'
+    content.vb: Public Class BasicEnemy Inherits Hittable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Global.Hittable
+  inheritedMembers:
+  - Global.Hittable.health
+  - Global.Hittable.duration
+  - Global.Hittable.intensity
+  - Global.Hittable.camShake
+  - Global.Hittable.objectPooler
+  - Global.Hittable.poisonDamage
+  - Global.Hittable.OnHit
+  - Global.Hittable.Start
+- uid: Global.BasicEnemy.anim
+  commentId: F:Global.BasicEnemy.anim
+  id: anim
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: anim
+  nameWithType: BasicEnemy.anim
+  fullName: BasicEnemy.anim
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: anim
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Animator anim
+    return:
+      type: UnityEngine.Animator
+    content.vb: Public anim As Animator
+- uid: Global.BasicEnemy.rb
+  commentId: F:Global.BasicEnemy.rb
+  id: rb
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: rb
+  nameWithType: BasicEnemy.rb
+  fullName: BasicEnemy.rb
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: rb
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Rigidbody rb
+    return:
+      type: UnityEngine.Rigidbody
+    content.vb: Public rb As Rigidbody
+- uid: Global.BasicEnemy.lookAt
+  commentId: F:Global.BasicEnemy.lookAt
+  id: lookAt
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: lookAt
+  nameWithType: BasicEnemy.lookAt
+  fullName: BasicEnemy.lookAt
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: lookAt
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Transform lookAt
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public lookAt As Transform
+- uid: Global.BasicEnemy.itemDrops
+  commentId: F:Global.BasicEnemy.itemDrops
+  id: itemDrops
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: itemDrops
+  nameWithType: BasicEnemy.itemDrops
+  fullName: BasicEnemy.itemDrops
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: itemDrops
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject[] itemDrops
+    return:
+      type: UnityEngine.GameObject[]
+    content.vb: Public itemDrops As GameObject()
+- uid: Global.BasicEnemy.playerTransformAnchor
+  commentId: F:Global.BasicEnemy.playerTransformAnchor
+  id: playerTransformAnchor
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: playerTransformAnchor
+  nameWithType: BasicEnemy.playerTransformAnchor
+  fullName: BasicEnemy.playerTransformAnchor
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: playerTransformAnchor
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public TransformAnchor playerTransformAnchor
+    return:
+      type: Global.TransformAnchor
+    content.vb: Public playerTransformAnchor As TransformAnchor
+- uid: Global.BasicEnemy.AI
+  commentId: F:Global.BasicEnemy.AI
+  id: AI
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: AI
+  nameWithType: BasicEnemy.AI
+  fullName: BasicEnemy.AI
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: AI
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public AIDestinationSetter AI
+    return:
+      type: Pathfinding.AIDestinationSetter
+    content.vb: Public AI As AIDestinationSetter
+- uid: Global.BasicEnemy.detectionObstacles
+  commentId: F:Global.BasicEnemy.detectionObstacles
+  id: detectionObstacles
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: detectionObstacles
+  nameWithType: BasicEnemy.detectionObstacles
+  fullName: BasicEnemy.detectionObstacles
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: detectionObstacles
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LayerMask detectionObstacles
+    return:
+      type: UnityEngine.LayerMask
+    content.vb: Public detectionObstacles As LayerMask
+- uid: Global.BasicEnemy.detected
+  commentId: F:Global.BasicEnemy.detected
+  id: detected
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: detected
+  nameWithType: BasicEnemy.detected
+  fullName: BasicEnemy.detected
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: detected
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool detected
+    return:
+      type: System.Boolean
+    content.vb: Public detected As Boolean
+- uid: Global.BasicEnemy.detectionRange
+  commentId: F:Global.BasicEnemy.detectionRange
+  id: detectionRange
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: detectionRange
+  nameWithType: BasicEnemy.detectionRange
+  fullName: BasicEnemy.detectionRange
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: detectionRange
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float detectionRange
+    return:
+      type: System.Single
+    content.vb: Public detectionRange As Single
+- uid: Global.BasicEnemy.OnEnemyDied
+  commentId: F:Global.BasicEnemy.OnEnemyDied
+  id: OnEnemyDied
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: OnEnemyDied
+  nameWithType: BasicEnemy.OnEnemyDied
+  fullName: BasicEnemy.OnEnemyDied
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnEnemyDied
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityEvent<BasicEnemy> OnEnemyDied
+    return:
+      type: UnityEngine.Events.UnityEvent{BasicEnemy}
+    content.vb: Public OnEnemyDied As UnityEvent(Of BasicEnemy)
+- uid: Global.BasicEnemy.hitParticle
+  commentId: F:Global.BasicEnemy.hitParticle
+  id: hitParticle
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: hitParticle
+  nameWithType: BasicEnemy.hitParticle
+  fullName: BasicEnemy.hitParticle
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: hitParticle
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject hitParticle
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public hitParticle As GameObject
+- uid: Global.BasicEnemy.Hit(System.Single,UnityEngine.Vector3)
+  commentId: M:Global.BasicEnemy.Hit(System.Single,UnityEngine.Vector3)
+  id: Hit(System.Single,UnityEngine.Vector3)
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: Hit(float, Vector3)
+  nameWithType: BasicEnemy.Hit(float, Vector3)
+  fullName: BasicEnemy.Hit(float, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Hit
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Hit(float knockback, Vector3 direction)
+    parameters:
+    - id: knockback
+      type: System.Single
+    - id: direction
+      type: UnityEngine.Vector3
+    content.vb: Public Overrides Sub Hit(knockback As Single, direction As Vector3)
+  overridden: Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
+  overload: Global.BasicEnemy.Hit*
+  nameWithType.vb: BasicEnemy.Hit(Single, Vector3)
+  fullName.vb: BasicEnemy.Hit(Single, UnityEngine.Vector3)
+  name.vb: Hit(Single, Vector3)
+- uid: Global.BasicEnemy.Die
+  commentId: M:Global.BasicEnemy.Die
+  id: Die
+  parent: Global.BasicEnemy
+  langs:
+  - csharp
+  - vb
+  name: Die()
+  nameWithType: BasicEnemy.Die()
+  fullName: BasicEnemy.Die()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Die
+    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    startLine: 103
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void Die()
+    content.vb: Public Sub Die()
+  overload: Global.BasicEnemy.Die*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Global.Hittable
+  commentId: T:Global.Hittable
+  name: Hittable
+  nameWithType: Hittable
+  fullName: Hittable
+- uid: Global.Hittable.health
+  commentId: F:Global.Hittable.health
+  parent: Global.Hittable
+  name: health
+  nameWithType: Hittable.health
+  fullName: Hittable.health
+- uid: Global.Hittable.duration
+  commentId: F:Global.Hittable.duration
+  parent: Global.Hittable
+  name: duration
+  nameWithType: Hittable.duration
+  fullName: Hittable.duration
+- uid: Global.Hittable.intensity
+  commentId: F:Global.Hittable.intensity
+  parent: Global.Hittable
+  name: intensity
+  nameWithType: Hittable.intensity
+  fullName: Hittable.intensity
+- uid: Global.Hittable.camShake
+  commentId: F:Global.Hittable.camShake
+  parent: Global.Hittable
+  name: camShake
+  nameWithType: Hittable.camShake
+  fullName: Hittable.camShake
+- uid: Global.Hittable.objectPooler
+  commentId: F:Global.Hittable.objectPooler
+  parent: Global.Hittable
+  name: objectPooler
+  nameWithType: Hittable.objectPooler
+  fullName: Hittable.objectPooler
+- uid: Global.Hittable.poisonDamage
+  commentId: F:Global.Hittable.poisonDamage
+  parent: Global.Hittable
+  name: poisonDamage
+  nameWithType: Hittable.poisonDamage
+  fullName: Hittable.poisonDamage
+- uid: Global.Hittable.OnHit
+  commentId: F:Global.Hittable.OnHit
+  parent: Global.Hittable
+  name: OnHit
+  nameWithType: Hittable.OnHit
+  fullName: Hittable.OnHit
+- uid: Global.Hittable.Start
+  commentId: M:Global.Hittable.Start
+  parent: Global.Hittable
+  name: Start()
+  nameWithType: Hittable.Start()
+  fullName: Hittable.Start()
+  spec.csharp:
+  - uid: Global.Hittable.Start
+    name: Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Global.Hittable.Start
+    name: Start
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: UnityEngine.Rigidbody
+  commentId: T:UnityEngine.Rigidbody
+  parent: UnityEngine
+  isExternal: true
+  name: Rigidbody
+  nameWithType: Rigidbody
+  fullName: UnityEngine.Rigidbody
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine.GameObject[]
+  isExternal: true
+  name: GameObject[]
+  nameWithType: GameObject[]
+  fullName: UnityEngine.GameObject[]
+  nameWithType.vb: GameObject()
+  fullName.vb: UnityEngine.GameObject()
+  name.vb: GameObject()
+  spec.csharp:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Global.TransformAnchor
+  commentId: T:Global.TransformAnchor
+  name: TransformAnchor
+  nameWithType: TransformAnchor
+  fullName: TransformAnchor
+- uid: Pathfinding.AIDestinationSetter
+  commentId: T:Pathfinding.AIDestinationSetter
+  parent: Pathfinding
+  name: AIDestinationSetter
+  nameWithType: AIDestinationSetter
+  fullName: Pathfinding.AIDestinationSetter
+- uid: Pathfinding
+  commentId: N:Pathfinding
+  name: Pathfinding
+  nameWithType: Pathfinding
+  fullName: Pathfinding
+- uid: UnityEngine.LayerMask
+  commentId: T:UnityEngine.LayerMask
+  parent: UnityEngine
+  isExternal: true
+  name: LayerMask
+  nameWithType: LayerMask
+  fullName: UnityEngine.LayerMask
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Events.UnityEvent{BasicEnemy}
+  commentId: T:UnityEngine.Events.UnityEvent{BasicEnemy}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`1
+  name: UnityEvent<BasicEnemy>
+  nameWithType: UnityEvent<BasicEnemy>
+  fullName: UnityEngine.Events.UnityEvent<BasicEnemy>
+  nameWithType.vb: UnityEvent(Of BasicEnemy)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of BasicEnemy)
+  name.vb: UnityEvent(Of BasicEnemy)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: Global.BasicEnemy
+    name: BasicEnemy
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.BasicEnemy
+    name: BasicEnemy
+  - name: )
+- uid: UnityEngine.Events.UnityEvent`1
+  commentId: T:UnityEngine.Events.UnityEvent`1
+  isExternal: true
+  name: UnityEvent<T0>
+  nameWithType: UnityEvent<T0>
+  fullName: UnityEngine.Events.UnityEvent<T0>
+  nameWithType.vb: UnityEvent(Of T0)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0)
+  name.vb: UnityEvent(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
+  commentId: M:Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
+  parent: Global.Hittable
+  isExternal: true
+  name: Hit(float, Vector3)
+  nameWithType: Hittable.Hit(float, Vector3)
+  fullName: Hittable.Hit(float, UnityEngine.Vector3)
+  nameWithType.vb: Hittable.Hit(Single, Vector3)
+  fullName.vb: Hittable.Hit(Single, UnityEngine.Vector3)
+  name.vb: Hit(Single, Vector3)
+  spec.csharp:
+  - uid: Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
+    name: Hit
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
+    name: Hit
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: Global.BasicEnemy.Hit*
+  commentId: Overload:Global.BasicEnemy.Hit
+  name: Hit
+  nameWithType: BasicEnemy.Hit
+  fullName: BasicEnemy.Hit
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: Global.BasicEnemy.Die*
+  commentId: Overload:Global.BasicEnemy.Die
+  name: Die
+  nameWithType: BasicEnemy.Die
+  fullName: BasicEnemy.Die

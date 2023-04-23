@@ -21,7 +21,7 @@ items:
     remote:
       path: Assets/Scripts/Level/Exit.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Exit
     path: ../Assets/Scripts/Level/Exit.cs
     startLine: 9
@@ -55,7 +55,7 @@ items:
     remote:
       path: Assets/Scripts/Level/Exit.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: loadsSceneByName
     path: ../Assets/Scripts/Level/Exit.cs
     startLine: 11
@@ -92,7 +92,7 @@ items:
     remote:
       path: Assets/Scripts/Level/Exit.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: nextSceneName
     path: ../Assets/Scripts/Level/Exit.cs
     startLine: 12
@@ -129,7 +129,7 @@ items:
     remote:
       path: Assets/Scripts/Level/Exit.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: locked
     path: ../Assets/Scripts/Level/Exit.cs
     startLine: 13
@@ -156,7 +156,7 @@ items:
     remote:
       path: Assets/Scripts/Level/Exit.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: PlayerEnteredExit
     path: ../Assets/Scripts/Level/Exit.cs
     startLine: 14
@@ -183,10 +183,10 @@ items:
     remote:
       path: Assets/Scripts/Level/Exit.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: ExitTriggered
     path: ../Assets/Scripts/Level/Exit.cs
-    startLine: 23
+    startLine: 21
   assemblies:
   - Assembly-CSharp
   namespace: Global

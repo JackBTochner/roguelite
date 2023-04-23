@@ -9,6 +9,14 @@ items:
   - Global.InputReader.Look
   - Global.InputReader.MousePosition
   - Global.InputReader.MoveComposite
+  - Global.InputReader.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnAttack1Performed
+  - Global.InputReader.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnAttack2Performed
+  - Global.InputReader.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnDashPerformed
+  - Global.InputReader.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.InputReader.OnDigPerformed
   - Global.InputReader.OnDisable
   - Global.InputReader.OnEnable
   - Global.InputReader.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
@@ -29,7 +37,7 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: InputReader
     path: ../Assets/Scripts/Input/InputReader.cs
     startLine: 6
@@ -82,7 +90,7 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Look
     path: ../Assets/Scripts/Input/InputReader.cs
     startLine: 9
@@ -109,7 +117,7 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: MousePosition
     path: ../Assets/Scripts/Input/InputReader.cs
     startLine: 11
@@ -136,7 +144,7 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: MoveComposite
     path: ../Assets/Scripts/Input/InputReader.cs
     startLine: 13
@@ -163,7 +171,7 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnJumpPerformed
     path: ../Assets/Scripts/Input/InputReader.cs
     startLine: 15
@@ -190,7 +198,7 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnRestartPerformed
     path: ../Assets/Scripts/Input/InputReader.cs
     startLine: 17
@@ -202,6 +210,114 @@ items:
     return:
       type: System.Action
     content.vb: Public OnRestartPerformed As Action
+- uid: Global.InputReader.OnDigPerformed
+  commentId: F:Global.InputReader.OnDigPerformed
+  id: OnDigPerformed
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnDigPerformed
+  nameWithType: InputReader.OnDigPerformed
+  fullName: InputReader.OnDigPerformed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnDigPerformed
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Action OnDigPerformed
+    return:
+      type: System.Action
+    content.vb: Public OnDigPerformed As Action
+- uid: Global.InputReader.OnAttack1Performed
+  commentId: F:Global.InputReader.OnAttack1Performed
+  id: OnAttack1Performed
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnAttack1Performed
+  nameWithType: InputReader.OnAttack1Performed
+  fullName: InputReader.OnAttack1Performed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnAttack1Performed
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Action OnAttack1Performed
+    return:
+      type: System.Action
+    content.vb: Public OnAttack1Performed As Action
+- uid: Global.InputReader.OnAttack2Performed
+  commentId: F:Global.InputReader.OnAttack2Performed
+  id: OnAttack2Performed
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnAttack2Performed
+  nameWithType: InputReader.OnAttack2Performed
+  fullName: InputReader.OnAttack2Performed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnAttack2Performed
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Action OnAttack2Performed
+    return:
+      type: System.Action
+    content.vb: Public OnAttack2Performed As Action
+- uid: Global.InputReader.OnDashPerformed
+  commentId: F:Global.InputReader.OnDashPerformed
+  id: OnDashPerformed
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnDashPerformed
+  nameWithType: InputReader.OnDashPerformed
+  fullName: InputReader.OnDashPerformed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnDashPerformed
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Action OnDashPerformed
+    return:
+      type: System.Action
+    content.vb: Public OnDashPerformed As Action
 - uid: Global.InputReader.controls
   commentId: F:Global.InputReader.controls
   id: controls
@@ -217,10 +333,10 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: controls
     path: ../Assets/Scripts/Input/InputReader.cs
-    startLine: 19
+    startLine: 27
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -244,10 +360,10 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnEnable
     path: ../Assets/Scripts/Input/InputReader.cs
-    startLine: 21
+    startLine: 29
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -270,10 +386,10 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnDisable
     path: ../Assets/Scripts/Input/InputReader.cs
-    startLine: 30
+    startLine: 38
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -296,10 +412,10 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnJump
     path: ../Assets/Scripts/Input/InputReader.cs
-    startLine: 35
+    startLine: 43
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -327,10 +443,10 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnRestart
     path: ../Assets/Scripts/Input/InputReader.cs
-    startLine: 41
+    startLine: 49
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -358,10 +474,10 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnLook
     path: ../Assets/Scripts/Input/InputReader.cs
-    startLine: 47
+    startLine: 55
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -389,10 +505,10 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnMousePosition
     path: ../Assets/Scripts/Input/InputReader.cs
-    startLine: 52
+    startLine: 60
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -420,10 +536,10 @@ items:
     remote:
       path: Assets/Scripts/Input/InputReader.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnMove
     path: ../Assets/Scripts/Input/InputReader.cs
-    startLine: 57
+    startLine: 65
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -436,6 +552,130 @@ items:
   overload: Global.InputReader.OnMove*
   implements:
   - Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+- uid: Global.InputReader.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnDig(CallbackContext)
+  nameWithType: InputReader.OnDig(InputAction.CallbackContext)
+  fullName: InputReader.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnDig
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnDig(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnDig(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnDig*
+  implements:
+  - Global.Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+- uid: Global.InputReader.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnAttack1(CallbackContext)
+  nameWithType: InputReader.OnAttack1(InputAction.CallbackContext)
+  fullName: InputReader.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnAttack1
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnAttack1(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnAttack1(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnAttack1*
+  implements:
+  - Global.Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+- uid: Global.InputReader.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnAttack2(CallbackContext)
+  nameWithType: InputReader.OnAttack2(InputAction.CallbackContext)
+  fullName: InputReader.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnAttack2
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnAttack2(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnAttack2(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnAttack2*
+  implements:
+  - Global.Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+- uid: Global.InputReader.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.InputReader.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.InputReader
+  langs:
+  - csharp
+  - vb
+  name: OnDash(CallbackContext)
+  nameWithType: InputReader.OnDash(InputAction.CallbackContext)
+  fullName: InputReader.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/InputReader.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnDash
+    path: ../Assets/Scripts/Input/InputReader.cs
+    startLine: 85
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnDash(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnDash(context As InputAction.CallbackContext)
+  overload: Global.InputReader.OnDash*
+  implements:
+  - Global.Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
 references:
 - uid: Global
 - uid: System.Object
@@ -722,6 +962,118 @@ references:
   spec.vb:
   - uid: Global.Controls.IPlayerActions.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
     name: OnMove
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+- uid: Global.InputReader.OnDig*
+  commentId: Overload:Global.InputReader.OnDig
+  name: OnDig
+  nameWithType: InputReader.OnDig
+  fullName: InputReader.OnDig
+- uid: Global.Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnDig(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnDig(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnDig
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnDig
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+- uid: Global.InputReader.OnAttack1*
+  commentId: Overload:Global.InputReader.OnAttack1
+  name: OnAttack1
+  nameWithType: InputReader.OnAttack1
+  fullName: InputReader.OnAttack1
+- uid: Global.Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnAttack1(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnAttack1(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnAttack1
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnAttack1
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+- uid: Global.InputReader.OnAttack2*
+  commentId: Overload:Global.InputReader.OnAttack2
+  name: OnAttack2
+  nameWithType: InputReader.OnAttack2
+  fullName: InputReader.OnAttack2
+- uid: Global.Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnAttack2(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnAttack2(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnAttack2
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnAttack2
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+- uid: Global.InputReader.OnDash*
+  commentId: Overload:Global.InputReader.OnDash
+  name: OnDash
+  nameWithType: InputReader.OnDash
+  fullName: InputReader.OnDash
+- uid: Global.Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  isExternal: true
+  name: OnDash(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnDash(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  spec.csharp:
+  - uid: Global.Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnDash
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+    name: OnDash
   - name: (
   - uid: UnityEngine.InputSystem.InputAction.CallbackContext
     name: CallbackContext

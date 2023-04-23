@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CameraShake
+  commentId: T:Global.CameraShake
+  id: CameraShake
+  parent: Global
+  children:
+  - Global.CameraShake.duration
+  - Global.CameraShake.intensity
+  langs:
+  - csharp
+  - vb
+  name: CameraShake
+  nameWithType: CameraShake
+  fullName: CameraShake
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraShake.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: CameraShake
+    path: ../Assets/Scripts/Camera/CameraShake.cs
+    startLine: 2
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class CameraShake : MonoBehaviour'
+    content.vb: Public Class CameraShake Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.CameraShake.intensity
+  commentId: F:Global.CameraShake.intensity
+  id: intensity
+  parent: Global.CameraShake
+  langs:
+  - csharp
+  - vb
+  name: intensity
+  nameWithType: CameraShake.intensity
+  fullName: CameraShake.intensity
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraShake.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: intensity
+    path: ../Assets/Scripts/Camera/CameraShake.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float intensity
+    return:
+      type: System.Single
+    content.vb: Public intensity As Single
+- uid: Global.CameraShake.duration
+  commentId: F:Global.CameraShake.duration
+  id: duration
+  parent: Global.CameraShake
+  langs:
+  - csharp
+  - vb
+  name: duration
+  nameWithType: CameraShake.duration
+  fullName: CameraShake.duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Camera/CameraShake.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: duration
+    path: ../Assets/Scripts/Camera/CameraShake.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float duration
+    return:
+      type: System.Single
+    content.vb: Public duration As Single
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

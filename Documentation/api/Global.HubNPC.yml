@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/Scripts/NPC/HubNPC.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: HubNPC
     path: ../Assets/Scripts/NPC/HubNPC.cs
     startLine: 5
@@ -56,7 +56,7 @@ items:
     remote:
       path: Assets/Scripts/NPC/HubNPC.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: ActorID
     path: ../Assets/Scripts/NPC/HubNPC.cs
     startLine: 8
@@ -83,7 +83,7 @@ items:
     remote:
       path: Assets/Scripts/NPC/HubNPC.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnConversationEnd
     path: ../Assets/Scripts/NPC/HubNPC.cs
     startLine: 15
@@ -109,7 +109,7 @@ items:
     remote:
       path: Assets/Scripts/NPC/HubNPC.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: AssignConversation
     path: ../Assets/Scripts/NPC/HubNPC.cs
     startLine: 23

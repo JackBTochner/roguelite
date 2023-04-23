@@ -25,10 +25,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RunStatistics
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 104
+    startLine: 120
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -60,10 +60,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: VisitedEncounters
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 107
+    startLine: 123
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -87,10 +87,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: nodesTravelled
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 108
+    startLine: 125
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -114,10 +114,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: bossNodesTravelled
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 109
+    startLine: 127
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -141,10 +141,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: enemiesDefeated
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 111
+    startLine: 129
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -168,10 +168,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: diedTo
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 112
+    startLine: 131
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -195,10 +195,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: currencyGained
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 114
+    startLine: 133
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -222,10 +222,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: currencySpent
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 115
+    startLine: 135
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -249,10 +249,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: boonsGained
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 117
+    startLine: 137
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -276,10 +276,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/RunManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: characterBoons
     path: ../Assets/Scripts/Gameplay/RunManager.cs
-    startLine: 118
+    startLine: 139
   assemblies:
   - Assembly-CSharp
   namespace: Global

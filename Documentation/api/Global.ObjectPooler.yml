@@ -1,0 +1,476 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ObjectPooler
+  commentId: T:Global.ObjectPooler
+  id: ObjectPooler
+  parent: Global
+  children:
+  - Global.ObjectPooler.Instance
+  - Global.ObjectPooler.poolDictionary
+  - Global.ObjectPooler.pools
+  - Global.ObjectPooler.SpawnFromPool(System.String,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - Global.ObjectPooler.SpawnMarkerFromPool(System.String,UnityEngine.Vector3,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: ObjectPooler
+  nameWithType: ObjectPooler
+  fullName: ObjectPooler
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ObjectPooler
+    path: ../Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class ObjectPooler : MonoBehaviour'
+    content.vb: Public Class ObjectPooler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.ObjectPooler.Instance
+  commentId: F:Global.ObjectPooler.Instance
+  id: Instance
+  parent: Global.ObjectPooler
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ObjectPooler.Instance
+  fullName: ObjectPooler.Instance
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Instance
+    path: ../Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public static ObjectPooler Instance
+    return:
+      type: Global.ObjectPooler
+    content.vb: Public Shared Instance As ObjectPooler
+- uid: Global.ObjectPooler.pools
+  commentId: F:Global.ObjectPooler.pools
+  id: pools
+  parent: Global.ObjectPooler
+  langs:
+  - csharp
+  - vb
+  name: pools
+  nameWithType: ObjectPooler.pools
+  fullName: ObjectPooler.pools
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: pools
+    path: ../Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public List<ObjectPooler.Pool> pools
+    return:
+      type: System.Collections.Generic.List{ObjectPooler.Pool}
+    content.vb: Public pools As List(Of ObjectPooler.Pool)
+- uid: Global.ObjectPooler.poolDictionary
+  commentId: F:Global.ObjectPooler.poolDictionary
+  id: poolDictionary
+  parent: Global.ObjectPooler
+  langs:
+  - csharp
+  - vb
+  name: poolDictionary
+  nameWithType: ObjectPooler.poolDictionary
+  fullName: ObjectPooler.poolDictionary
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: poolDictionary
+    path: ../Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Dictionary<string, Queue<GameObject>> poolDictionary
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Queue{UnityEngine.GameObject}}
+    content.vb: Public poolDictionary As Dictionary(Of String, Queue(Of GameObject))
+- uid: Global.ObjectPooler.SpawnFromPool(System.String,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:Global.ObjectPooler.SpawnFromPool(System.String,UnityEngine.Vector3,UnityEngine.Quaternion)
+  id: SpawnFromPool(System.String,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: Global.ObjectPooler
+  langs:
+  - csharp
+  - vb
+  name: SpawnFromPool(string, Vector3, Quaternion)
+  nameWithType: ObjectPooler.SpawnFromPool(string, Vector3, Quaternion)
+  fullName: ObjectPooler.SpawnFromPool(string, UnityEngine.Vector3, UnityEngine.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SpawnFromPool
+    path: ../Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
+    parameters:
+    - id: tag
+      type: System.String
+    - id: position
+      type: UnityEngine.Vector3
+    - id: rotation
+      type: UnityEngine.Quaternion
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Function SpawnFromPool(tag As String, position As Vector3, rotation As Quaternion) As GameObject
+  overload: Global.ObjectPooler.SpawnFromPool*
+  nameWithType.vb: ObjectPooler.SpawnFromPool(String, Vector3, Quaternion)
+  fullName.vb: ObjectPooler.SpawnFromPool(String, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: SpawnFromPool(String, Vector3, Quaternion)
+- uid: Global.ObjectPooler.SpawnMarkerFromPool(System.String,UnityEngine.Vector3,System.Single)
+  commentId: M:Global.ObjectPooler.SpawnMarkerFromPool(System.String,UnityEngine.Vector3,System.Single)
+  id: SpawnMarkerFromPool(System.String,UnityEngine.Vector3,System.Single)
+  parent: Global.ObjectPooler
+  langs:
+  - csharp
+  - vb
+  name: SpawnMarkerFromPool(string, Vector3, float)
+  nameWithType: ObjectPooler.SpawnMarkerFromPool(string, Vector3, float)
+  fullName: ObjectPooler.SpawnMarkerFromPool(string, UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SpawnMarkerFromPool
+    path: ../Assets/Scripts/PROTOTYPE/ObjectPooler.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject SpawnMarkerFromPool(string tag, Vector3 position, float damage)
+    parameters:
+    - id: tag
+      type: System.String
+    - id: position
+      type: UnityEngine.Vector3
+    - id: damage
+      type: System.Single
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Function SpawnMarkerFromPool(tag As String, position As Vector3, damage As Single) As GameObject
+  overload: Global.ObjectPooler.SpawnMarkerFromPool*
+  nameWithType.vb: ObjectPooler.SpawnMarkerFromPool(String, Vector3, Single)
+  fullName.vb: ObjectPooler.SpawnMarkerFromPool(String, UnityEngine.Vector3, Single)
+  name.vb: SpawnMarkerFromPool(String, Vector3, Single)
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ObjectPooler
+  commentId: T:Global.ObjectPooler
+  name: ObjectPooler
+  nameWithType: ObjectPooler
+  fullName: ObjectPooler
+- uid: System.Collections.Generic.List{ObjectPooler.Pool}
+  commentId: T:System.Collections.Generic.List{ObjectPooler.Pool}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ObjectPooler.Pool>
+  nameWithType: List<ObjectPooler.Pool>
+  fullName: System.Collections.Generic.List<ObjectPooler.Pool>
+  nameWithType.vb: List(Of ObjectPooler.Pool)
+  fullName.vb: System.Collections.Generic.List(Of ObjectPooler.Pool)
+  name.vb: List(Of ObjectPooler.Pool)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: Global.ObjectPooler
+    name: ObjectPooler
+  - name: .
+  - uid: Global.ObjectPooler.Pool
+    name: Pool
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.ObjectPooler
+    name: ObjectPooler
+  - name: .
+  - uid: Global.ObjectPooler.Pool
+    name: Pool
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Queue{UnityEngine.GameObject}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Queue{UnityEngine.GameObject}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<string, Queue<GameObject>>
+  nameWithType: Dictionary<string, Queue<GameObject>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.Queue<UnityEngine.GameObject>>
+  nameWithType.vb: Dictionary(Of String, Queue(Of GameObject))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.Queue(Of UnityEngine.GameObject))
+  name.vb: Dictionary(Of String, Queue(Of GameObject))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Queue`1
+    name: Queue
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Queue`1
+    name: Queue
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Global.ObjectPooler.SpawnFromPool*
+  commentId: Overload:Global.ObjectPooler.SpawnFromPool
+  name: SpawnFromPool
+  nameWithType: ObjectPooler.SpawnFromPool
+  fullName: ObjectPooler.SpawnFromPool
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.ObjectPooler.SpawnMarkerFromPool*
+  commentId: Overload:Global.ObjectPooler.SpawnMarkerFromPool
+  name: SpawnMarkerFromPool
+  nameWithType: ObjectPooler.SpawnMarkerFromPool
+  fullName: ObjectPooler.SpawnMarkerFromPool
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.SpawnWaveTrigger
+  commentId: T:Global.SpawnWaveTrigger
+  id: SpawnWaveTrigger
+  parent: Global
+  children:
+  - Global.SpawnWaveTrigger.OnEnable
+  - Global.SpawnWaveTrigger.OnTriggerEnter(UnityEngine.Collider)
+  - Global.SpawnWaveTrigger.playerEnteredTrigger
+  langs:
+  - csharp
+  - vb
+  name: SpawnWaveTrigger
+  nameWithType: SpawnWaveTrigger
+  fullName: SpawnWaveTrigger
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/SpawnWaveTrigger.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SpawnWaveTrigger
+    path: ../Assets/Scripts/SpawnWaveTrigger.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(Collider))]
+
+      [RequireComponent(typeof(Rigidbody))]
+
+      public class SpawnWaveTrigger : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(Collider))>
+
+      <RequireComponent(GetType(Rigidbody))>
+
+      Public Class SpawnWaveTrigger Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.SpawnWaveTrigger.playerEnteredTrigger
+  commentId: F:Global.SpawnWaveTrigger.playerEnteredTrigger
+  id: playerEnteredTrigger
+  parent: Global.SpawnWaveTrigger
+  langs:
+  - csharp
+  - vb
+  name: playerEnteredTrigger
+  nameWithType: SpawnWaveTrigger.playerEnteredTrigger
+  fullName: SpawnWaveTrigger.playerEnteredTrigger
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/SpawnWaveTrigger.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: playerEnteredTrigger
+    path: ../Assets/Scripts/SpawnWaveTrigger.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public UnityEvent<Collider> playerEnteredTrigger
+    return:
+      type: UnityEngine.Events.UnityEvent{UnityEngine.Collider}
+    content.vb: Public playerEnteredTrigger As UnityEvent(Of Collider)
+- uid: Global.SpawnWaveTrigger.OnEnable
+  commentId: M:Global.SpawnWaveTrigger.OnEnable
+  id: OnEnable
+  parent: Global.SpawnWaveTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: SpawnWaveTrigger.OnEnable()
+  fullName: SpawnWaveTrigger.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SpawnWaveTrigger.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnEnable
+    path: ../Assets/Scripts/SpawnWaveTrigger.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnEnable()
+    content.vb: Public Sub OnEnable()
+  overload: Global.SpawnWaveTrigger.OnEnable*
+- uid: Global.SpawnWaveTrigger.OnTriggerEnter(UnityEngine.Collider)
+  commentId: M:Global.SpawnWaveTrigger.OnTriggerEnter(UnityEngine.Collider)
+  id: OnTriggerEnter(UnityEngine.Collider)
+  parent: Global.SpawnWaveTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnTriggerEnter(Collider)
+  nameWithType: SpawnWaveTrigger.OnTriggerEnter(Collider)
+  fullName: SpawnWaveTrigger.OnTriggerEnter(UnityEngine.Collider)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SpawnWaveTrigger.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnTriggerEnter
+    path: ../Assets/Scripts/SpawnWaveTrigger.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnTriggerEnter(Collider col)
+    parameters:
+    - id: col
+      type: UnityEngine.Collider
+    content.vb: Public Sub OnTriggerEnter(col As Collider)
+  overload: Global.SpawnWaveTrigger.OnTriggerEnter*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityEvent{UnityEngine.Collider}
+  commentId: T:UnityEngine.Events.UnityEvent{UnityEngine.Collider}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`1
+  name: UnityEvent<Collider>
+  nameWithType: UnityEvent<Collider>
+  fullName: UnityEngine.Events.UnityEvent<UnityEngine.Collider>
+  nameWithType.vb: UnityEvent(Of Collider)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of UnityEngine.Collider)
+  name.vb: UnityEvent(Of Collider)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.Collider
+    name: Collider
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Collider
+    name: Collider
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Events.UnityEvent`1
+  commentId: T:UnityEngine.Events.UnityEvent`1
+  isExternal: true
+  name: UnityEvent<T0>
+  nameWithType: UnityEvent<T0>
+  fullName: UnityEngine.Events.UnityEvent<T0>
+  nameWithType.vb: UnityEvent(Of T0)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0)
+  name.vb: UnityEvent(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Global.SpawnWaveTrigger.OnEnable*
+  commentId: Overload:Global.SpawnWaveTrigger.OnEnable
+  name: OnEnable
+  nameWithType: SpawnWaveTrigger.OnEnable
+  fullName: SpawnWaveTrigger.OnEnable
+- uid: Global.SpawnWaveTrigger.OnTriggerEnter*
+  commentId: Overload:Global.SpawnWaveTrigger.OnTriggerEnter
+  name: OnTriggerEnter
+  nameWithType: SpawnWaveTrigger.OnTriggerEnter
+  fullName: SpawnWaveTrigger.OnTriggerEnter
+- uid: UnityEngine.Collider
+  commentId: T:UnityEngine.Collider
+  parent: UnityEngine
+  isExternal: true
+  name: Collider
+  nameWithType: Collider
+  fullName: UnityEngine.Collider

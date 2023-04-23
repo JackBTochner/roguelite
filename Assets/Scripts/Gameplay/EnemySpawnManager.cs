@@ -11,8 +11,6 @@ public class EnemySpawnManager : MonoBehaviour
 
     public float currentWave = 0;
 
-    public float spawnRadius = 10f;
-
     public Exit playerExit;
 
     [Header("Listening On")]
@@ -61,9 +59,8 @@ public class EnemySpawnManager : MonoBehaviour
         {
             // waves[i].SpawnWave();
             StartCoroutine(waves[i].SpawnWave());
-            while (!waves[i].IsWaveComplete())
-                yield return null;
-            Debug.Log("Wave: " + (i+1) + "Completed!");
+            while (!waves[i].IsWaveComplete()) yield return null;
+            Debug.Log("Wave: " + (i + 1) + "Completed!");
         }
         UnlockPlayerExit();
     }
@@ -87,31 +84,40 @@ public class EnemySpawnWave
 {
     public string name;
 
+    [Header("Preconditions")]
     public float waveInitialSpawnDelay = 0.0f;
 
+    [Header("Complete Conditions")]
     public float waveCompleteDelay = 0.0f;
+
     private float _delayCompleteTime = Mathf.NegativeInfinity;
 
-    [Tooltip("If assigned, wave will require the player to activate the trigger to complete the wave.\n If left unassigned, will ignore the requirement")]
+    [
+        Tooltip(
+            "If assigned, wave will require the player to activate the trigger to complete the wave.\n If left unassigned, will ignore the requirement")
+    ]
     public SpawnWaveTrigger nextWaveSpawnTrigger;
+
     private bool triggeredNextWave = false;
 
     public bool mustKillAllEnemiesToCompleteWave = true;
 
+    [Header("Wave Details")]
     public float spawnRadius = 10f;
 
     public BasicEnemy[] enemiesToSpawn;
+
     [HideInInspector]
     public int currentEnemies;
 
-    public bool IsWaveComplete (){
+    public bool IsWaveComplete()
+    {
         bool complete = true;
 
-        if(mustKillAllEnemiesToCompleteWave && currentEnemies > 0)
+        if (mustKillAllEnemiesToCompleteWave && currentEnemies > 0)
             complete = false;
-        if(Time.time < _delayCompleteTime)
-            complete = false;
-        if(nextWaveSpawnTrigger != null && triggeredNextWave == false)
+        if (Time.time < _delayCompleteTime) complete = false;
+        if (nextWaveSpawnTrigger != null && triggeredNextWave == false)
             complete = false;
 
         return complete;
@@ -122,13 +128,20 @@ public class EnemySpawnWave
         currentEnemies = enemiesToSpawn.Length;
         _delayCompleteTime = Time.time + waveCompleteDelay;
         if (nextWaveSpawnTrigger != null)
-            nextWaveSpawnTrigger.playerEnteredTrigger.AddListener(PlayerEnteredTrigger);
+            nextWaveSpawnTrigger
+                .playerEnteredTrigger
+                .AddListener(PlayerEnteredTrigger);
 
         yield return new WaitForSeconds(waveInitialSpawnDelay);
 
         foreach (var enemyPrefab in enemiesToSpawn)
         {
-            BasicEnemy enemy = GameObject.Instantiate(enemyPrefab, PickRandomSpawnPoint(), Quaternion.identity).GetComponent<BasicEnemy>();
+            BasicEnemy enemy =
+                GameObject
+                    .Instantiate(enemyPrefab,
+                    PickRandomSpawnPoint(),
+                    Quaternion.identity)
+                    .GetComponent<BasicEnemy>();
             enemy.OnEnemyDied.AddListener (EnemyKilled);
         }
     }

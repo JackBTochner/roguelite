@@ -21,7 +21,7 @@ items:
     remote:
       path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RuntimeAnchorBase
     path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
     startLine: 5
@@ -65,7 +65,7 @@ items:
     remote:
       path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnAnchorProvided
     path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
     startLine: 7
@@ -94,7 +94,7 @@ items:
     remote:
       path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: isSet
     path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
     startLine: 10
@@ -135,7 +135,7 @@ items:
     remote:
       path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Value
     path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
     startLine: 13
@@ -166,7 +166,7 @@ items:
     remote:
       path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Provide
     path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
     startLine: 18
@@ -197,7 +197,7 @@ items:
     remote:
       path: Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Unset
     path: ../Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs
     startLine: 33

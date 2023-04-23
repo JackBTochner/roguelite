@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DeleteAfterTime
+  commentId: T:Global.DeleteAfterTime
+  id: DeleteAfterTime
+  parent: Global
+  children:
+  - Global.DeleteAfterTime.destroy
+  - Global.DeleteAfterTime.time
+  langs:
+  - csharp
+  - vb
+  name: DeleteAfterTime
+  nameWithType: DeleteAfterTime
+  fullName: DeleteAfterTime
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/DeleteAfterTime.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: DeleteAfterTime
+    path: ../Assets/Scripts/PROTOTYPE/DeleteAfterTime.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class DeleteAfterTime : MonoBehaviour'
+    content.vb: Public Class DeleteAfterTime Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.DeleteAfterTime.time
+  commentId: F:Global.DeleteAfterTime.time
+  id: time
+  parent: Global.DeleteAfterTime
+  langs:
+  - csharp
+  - vb
+  name: time
+  nameWithType: DeleteAfterTime.time
+  fullName: DeleteAfterTime.time
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/DeleteAfterTime.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: time
+    path: ../Assets/Scripts/PROTOTYPE/DeleteAfterTime.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float time
+    return:
+      type: System.Single
+    content.vb: Public time As Single
+- uid: Global.DeleteAfterTime.destroy
+  commentId: F:Global.DeleteAfterTime.destroy
+  id: destroy
+  parent: Global.DeleteAfterTime
+  langs:
+  - csharp
+  - vb
+  name: destroy
+  nameWithType: DeleteAfterTime.destroy
+  fullName: DeleteAfterTime.destroy
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/DeleteAfterTime.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: destroy
+    path: ../Assets/Scripts/PROTOTYPE/DeleteAfterTime.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool destroy
+    return:
+      type: System.Boolean
+    content.vb: Public destroy As Boolean
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

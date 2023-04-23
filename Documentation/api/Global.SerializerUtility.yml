@@ -19,7 +19,7 @@ items:
     remote:
       path: Assets/Scripts/Utility/SerializerUtility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: SerializerUtility
     path: ../Assets/Scripts/Utility/SerializerUtility.cs
     startLine: 7
@@ -46,7 +46,7 @@ items:
     remote:
       path: Assets/Scripts/Utility/SerializerUtility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: StringToList
     path: ../Assets/Scripts/Utility/SerializerUtility.cs
     startLine: 9
@@ -80,7 +80,7 @@ items:
     remote:
       path: Assets/Scripts/Utility/SerializerUtility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: ListToString
     path: ../Assets/Scripts/Utility/SerializerUtility.cs
     startLine: 14
@@ -114,7 +114,7 @@ items:
     remote:
       path: Assets/Scripts/Utility/SerializerUtility.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: StringToDictionary
     path: ../Assets/Scripts/Utility/SerializerUtility.cs
     startLine: 19

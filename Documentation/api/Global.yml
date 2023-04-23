@@ -4,39 +4,68 @@ items:
   id: Global
   children:
   - Global.Actor
+  - Global.AstarPath
+  - Global.AstarPath.AstarDistribution
+  - Global.AttackObject
+  - Global.AttackTemplate
+  - Global.BasicEnemy
   - Global.BoolEventChannelSO
   - Global.CameraAnchor
+  - Global.CameraFollow
   - Global.CameraManager
+  - Global.CameraShake
   - Global.ChatController
   - Global.ColorChangedEvent
   - Global.Controls
   - Global.Controls.IPlayerActions
+  - Global.Controls.IUIActions
   - Global.Controls.PlayerActions
+  - Global.Controls.UIActions
   - Global.ConversationFields
+  - Global.CustomPath
+  - Global.DeleteAfterTime
   - Global.DescriptionBaseSO
+  - Global.DestoryTram
   - Global.DialogueManagerAnchorProvider
   - Global.DialogueSystemEventsAnchor
   - Global.DropdownSample
   - Global.EditorColdStartup
+  - Global.EnemySpawnManager
+  - Global.EnemySpawnWave
   - Global.EnvMapAnimator
   - Global.Exit
+  - Global.FrozenTrap
   - Global.GameSceneSO
   - Global.GameSceneSO.GameSceneType
+  - Global.HitMarker
+  - Global.Hittable
   - Global.HSVChangedEvent
   - Global.HubExit
   - Global.HubNPC
   - Global.HubNPCManager
   - Global.Initializer
   - Global.InputReader
+  - Global.IPooledObject
   - Global.LEGACY_UILineRenderer
+  - Global.ListOfEnemySpawnWaves
   - Global.LoadEventChannelSO
   - Global.LocationSceneSO
   - Global.MenuSceneSO
+  - Global.MoveForward
+  - Global.ObjectPooler
+  - Global.ObjectPooler.Pool
   - Global.PersistentManagerSceneSO
-  - Global.PlayerCharacter
+  - Global.PlayerBufferPoint
   - Global.PlayerExit
+  - Global.PlayerProjectile
+  - Global.PlayerProjectileEffectDefaultSO
+  - Global.PlayerProjectileEffectSO
+  - Global.PlayerProjectilePickup
+  - Global.PlayerProjectileReceiver
   - Global.PlayerSpawn
   - Global.PlayerSpawnSystem
+  - Global.PlayerWeaponController
+  - Global.ProjectileEffectExtraDamageSO
   - Global.Run
   - Global.RunManager
   - Global.RunManagerAnchor
@@ -45,14 +74,20 @@ items:
   - Global.SceneLoader
   - Global.SerializableScriptableObject
   - Global.SerializerUtility
+  - Global.SpawnWaveTrigger
   - Global.StartGame
   - Global.TestCompression
+  - Global.TramDeltDamage
+  - Global.TramSpawn
   - Global.TransformAnchor
   - Global.TransformEventChannelSO
   - Global.TransitionChannelSO
+  - Global.Trap
   - Global.UIGridRenderer
   - Global.UIVisibility
   - Global.VoidEventChannelSO
+  - Global.WaveSpawnType
+  - Global.WaveTriggerType
   langs:
   - csharp
   - vb
@@ -118,11 +153,41 @@ references:
   name: PersistentManagerSceneSO
   nameWithType: PersistentManagerSceneSO
   fullName: PersistentManagerSceneSO
+- uid: Global.EnemySpawnManager
+  commentId: T:Global.EnemySpawnManager
+  name: EnemySpawnManager
+  nameWithType: EnemySpawnManager
+  fullName: EnemySpawnManager
+- uid: Global.ListOfEnemySpawnWaves
+  commentId: T:Global.ListOfEnemySpawnWaves
+  name: ListOfEnemySpawnWaves
+  nameWithType: ListOfEnemySpawnWaves
+  fullName: ListOfEnemySpawnWaves
+- uid: Global.EnemySpawnWave
+  commentId: T:Global.EnemySpawnWave
+  name: EnemySpawnWave
+  nameWithType: EnemySpawnWave
+  fullName: EnemySpawnWave
+- uid: Global.WaveTriggerType
+  commentId: T:Global.WaveTriggerType
+  name: WaveTriggerType
+  nameWithType: WaveTriggerType
+  fullName: WaveTriggerType
+- uid: Global.WaveSpawnType
+  commentId: T:Global.WaveSpawnType
+  name: WaveSpawnType
+  nameWithType: WaveSpawnType
+  fullName: WaveSpawnType
 - uid: Global.PlayerExit
   commentId: T:Global.PlayerExit
   name: PlayerExit
   nameWithType: PlayerExit
   fullName: PlayerExit
+- uid: Global.PlayerBufferPoint
+  commentId: T:Global.PlayerBufferPoint
+  name: PlayerBufferPoint
+  nameWithType: PlayerBufferPoint
+  fullName: PlayerBufferPoint
 - uid: Global.RunManagerAnchor
   commentId: T:Global.RunManagerAnchor
   name: RunManagerAnchor
@@ -143,11 +208,36 @@ references:
   name: SerializableScriptableObject
   nameWithType: SerializableScriptableObject
   fullName: SerializableScriptableObject
+- uid: Global.PlayerProjectilePickup
+  commentId: T:Global.PlayerProjectilePickup
+  name: PlayerProjectilePickup
+  nameWithType: PlayerProjectilePickup
+  fullName: PlayerProjectilePickup
+- uid: Global.IPooledObject
+  commentId: T:Global.IPooledObject
+  name: IPooledObject
+  nameWithType: IPooledObject
+  fullName: IPooledObject
+- uid: Global.TramDeltDamage
+  commentId: T:Global.TramDeltDamage
+  name: TramDeltDamage
+  nameWithType: TramDeltDamage
+  fullName: TramDeltDamage
+- uid: Global.PlayerProjectileEffectDefaultSO
+  commentId: T:Global.PlayerProjectileEffectDefaultSO
+  name: PlayerProjectileEffectDefaultSO
+  nameWithType: PlayerProjectileEffectDefaultSO
+  fullName: PlayerProjectileEffectDefaultSO
 - uid: Global.CameraAnchor
   commentId: T:Global.CameraAnchor
   name: CameraAnchor
   nameWithType: CameraAnchor
   fullName: CameraAnchor
+- uid: Global.AttackObject
+  commentId: T:Global.AttackObject
+  name: AttackObject
+  nameWithType: AttackObject
+  fullName: AttackObject
 - uid: Global.PlayerSpawnSystem
   commentId: T:Global.PlayerSpawnSystem
   name: PlayerSpawnSystem
@@ -158,11 +248,43 @@ references:
   name: SerializerUtility
   nameWithType: SerializerUtility
   fullName: SerializerUtility
+- uid: Global.ObjectPooler
+  commentId: T:Global.ObjectPooler
+  name: ObjectPooler
+  nameWithType: ObjectPooler
+  fullName: ObjectPooler
+- uid: Global.ObjectPooler.Pool
+  commentId: T:Global.ObjectPooler.Pool
+  name: ObjectPooler.Pool
+  nameWithType: ObjectPooler.Pool
+  fullName: ObjectPooler.Pool
+  spec.csharp:
+  - uid: Global.ObjectPooler
+    name: ObjectPooler
+  - name: .
+  - uid: Global.ObjectPooler.Pool
+    name: Pool
+  spec.vb:
+  - uid: Global.ObjectPooler
+    name: ObjectPooler
+  - name: .
+  - uid: Global.ObjectPooler.Pool
+    name: Pool
 - uid: Global.Actor
   commentId: T:Global.Actor
   name: Actor
   nameWithType: Actor
   fullName: Actor
+- uid: Global.FrozenTrap
+  commentId: T:Global.FrozenTrap
+  name: FrozenTrap
+  nameWithType: FrozenTrap
+  fullName: FrozenTrap
+- uid: Global.CustomPath
+  commentId: T:Global.CustomPath
+  name: CustomPath
+  nameWithType: CustomPath
+  fullName: CustomPath
 - uid: Global.DialogueSystemEventsAnchor
   commentId: T:Global.DialogueSystemEventsAnchor
   name: DialogueSystemEventsAnchor
@@ -190,6 +312,11 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Global.DeleteAfterTime
+  commentId: T:Global.DeleteAfterTime
+  name: DeleteAfterTime
+  nameWithType: DeleteAfterTime
+  fullName: DeleteAfterTime
 - uid: Global.MenuSceneSO
   commentId: T:Global.MenuSceneSO
   name: MenuSceneSO
@@ -205,6 +332,11 @@ references:
   name: LocationSceneSO
   nameWithType: LocationSceneSO
   fullName: LocationSceneSO
+- uid: Global.AttackTemplate
+  commentId: T:Global.AttackTemplate
+  name: AttackTemplate
+  nameWithType: AttackTemplate
+  fullName: AttackTemplate
 - uid: Global.EditorColdStartup
   commentId: T:Global.EditorColdStartup
   name: EditorColdStartup
@@ -220,6 +352,21 @@ references:
   name: TransformEventChannelSO
   nameWithType: TransformEventChannelSO
   fullName: TransformEventChannelSO
+- uid: Global.SpawnWaveTrigger
+  commentId: T:Global.SpawnWaveTrigger
+  name: SpawnWaveTrigger
+  nameWithType: SpawnWaveTrigger
+  fullName: SpawnWaveTrigger
+- uid: Global.PlayerProjectile
+  commentId: T:Global.PlayerProjectile
+  name: PlayerProjectile
+  nameWithType: PlayerProjectile
+  fullName: PlayerProjectile
+- uid: Global.BasicEnemy
+  commentId: T:Global.BasicEnemy
+  name: BasicEnemy
+  nameWithType: BasicEnemy
+  fullName: BasicEnemy
 - uid: Global.DescriptionBaseSO
   commentId: T:Global.DescriptionBaseSO
   name: DescriptionBaseSO
@@ -235,6 +382,16 @@ references:
   name: PlayerSpawn
   nameWithType: PlayerSpawn
   fullName: PlayerSpawn
+- uid: Global.PlayerProjectileEffectSO
+  commentId: T:Global.PlayerProjectileEffectSO
+  name: PlayerProjectileEffectSO
+  nameWithType: PlayerProjectileEffectSO
+  fullName: PlayerProjectileEffectSO
+- uid: Global.DestoryTram
+  commentId: T:Global.DestoryTram
+  name: DestoryTram
+  nameWithType: DestoryTram
+  fullName: DestoryTram
 - uid: Global.RunManager
   commentId: T:Global.RunManager
   name: RunManager
@@ -260,6 +417,21 @@ references:
   name: InputReader
   nameWithType: InputReader
   fullName: InputReader
+- uid: Global.TramSpawn
+  commentId: T:Global.TramSpawn
+  name: TramSpawn
+  nameWithType: TramSpawn
+  fullName: TramSpawn
+- uid: Global.Trap
+  commentId: T:Global.Trap
+  name: Trap
+  nameWithType: Trap
+  fullName: Trap
+- uid: Global.CameraFollow
+  commentId: T:Global.CameraFollow
+  name: CameraFollow
+  nameWithType: CameraFollow
+  fullName: CameraFollow
 - uid: Global.Controls
   commentId: T:Global.Controls
   name: Controls
@@ -282,6 +454,23 @@ references:
   - name: .
   - uid: Global.Controls.PlayerActions
     name: PlayerActions
+- uid: Global.Controls.UIActions
+  commentId: T:Global.Controls.UIActions
+  name: Controls.UIActions
+  nameWithType: Controls.UIActions
+  fullName: Controls.UIActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.UIActions
+    name: UIActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.UIActions
+    name: UIActions
 - uid: Global.Controls.IPlayerActions
   commentId: T:Global.Controls.IPlayerActions
   name: Controls.IPlayerActions
@@ -299,11 +488,33 @@ references:
   - name: .
   - uid: Global.Controls.IPlayerActions
     name: IPlayerActions
+- uid: Global.Controls.IUIActions
+  commentId: T:Global.Controls.IUIActions
+  name: Controls.IUIActions
+  nameWithType: Controls.IUIActions
+  fullName: Controls.IUIActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IUIActions
+    name: IUIActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.IUIActions
+    name: IUIActions
 - uid: Global.TransformAnchor
   commentId: T:Global.TransformAnchor
   name: TransformAnchor
   nameWithType: TransformAnchor
   fullName: TransformAnchor
+- uid: Global.MoveForward
+  commentId: T:Global.MoveForward
+  name: MoveForward
+  nameWithType: MoveForward
+  fullName: MoveForward
 - uid: Global.GameSceneSO
   commentId: T:Global.GameSceneSO
   name: GameSceneSO
@@ -326,21 +537,31 @@ references:
   - name: .
   - uid: Global.GameSceneSO.GameSceneType
     name: GameSceneType
-- uid: Global.PlayerCharacter
-  commentId: T:Global.PlayerCharacter
-  name: PlayerCharacter
-  nameWithType: PlayerCharacter
-  fullName: PlayerCharacter
+- uid: Global.PlayerWeaponController
+  commentId: T:Global.PlayerWeaponController
+  name: PlayerWeaponController
+  nameWithType: PlayerWeaponController
+  fullName: PlayerWeaponController
 - uid: Global.TransitionChannelSO
   commentId: T:Global.TransitionChannelSO
   name: TransitionChannelSO
   nameWithType: TransitionChannelSO
   fullName: TransitionChannelSO
+- uid: Global.ProjectileEffectExtraDamageSO
+  commentId: T:Global.ProjectileEffectExtraDamageSO
+  name: ProjectileEffectExtraDamageSO
+  nameWithType: ProjectileEffectExtraDamageSO
+  fullName: ProjectileEffectExtraDamageSO
 - uid: Global.VoidEventChannelSO
   commentId: T:Global.VoidEventChannelSO
   name: VoidEventChannelSO
   nameWithType: VoidEventChannelSO
   fullName: VoidEventChannelSO
+- uid: Global.PlayerProjectileReceiver
+  commentId: T:Global.PlayerProjectileReceiver
+  name: PlayerProjectileReceiver
+  nameWithType: PlayerProjectileReceiver
+  fullName: PlayerProjectileReceiver
 - uid: Global.BoolEventChannelSO
   commentId: T:Global.BoolEventChannelSO
   name: BoolEventChannelSO
@@ -351,11 +572,26 @@ references:
   name: HubNPC
   nameWithType: HubNPC
   fullName: HubNPC
+- uid: Global.HitMarker
+  commentId: T:Global.HitMarker
+  name: HitMarker
+  nameWithType: HitMarker
+  fullName: HitMarker
 - uid: Global.HubExit
   commentId: T:Global.HubExit
   name: HubExit
   nameWithType: HubExit
   fullName: HubExit
+- uid: Global.Hittable
+  commentId: T:Global.Hittable
+  name: Hittable
+  nameWithType: Hittable
+  fullName: Hittable
+- uid: Global.CameraShake
+  commentId: T:Global.CameraShake
+  name: CameraShake
+  nameWithType: CameraShake
+  fullName: CameraShake
 - uid: Global.HubNPCManager
   commentId: T:Global.HubNPCManager
   name: HubNPCManager
@@ -366,3 +602,25 @@ references:
   name: ConversationFields
   nameWithType: ConversationFields
   fullName: ConversationFields
+- uid: Global.AstarPath
+  commentId: T:Global.AstarPath
+  name: AstarPath
+  nameWithType: AstarPath
+  fullName: AstarPath
+- uid: Global.AstarPath.AstarDistribution
+  commentId: T:Global.AstarPath.AstarDistribution
+  name: AstarPath.AstarDistribution
+  nameWithType: AstarPath.AstarDistribution
+  fullName: AstarPath.AstarDistribution
+  spec.csharp:
+  - uid: Global.AstarPath
+    name: AstarPath
+  - name: .
+  - uid: Global.AstarPath.AstarDistribution
+    name: AstarDistribution
+  spec.vb:
+  - uid: Global.AstarPath
+    name: AstarPath
+  - name: .
+  - uid: Global.AstarPath.AstarDistribution
+    name: AstarDistribution

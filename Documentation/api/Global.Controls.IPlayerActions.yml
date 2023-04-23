@@ -5,6 +5,10 @@ items:
   id: Controls.IPlayerActions
   parent: Global
   children:
+  - Global.Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
   - Global.Controls.IPlayerActions.OnJump(UnityEngine.InputSystem.InputAction.CallbackContext)
   - Global.Controls.IPlayerActions.OnLook(UnityEngine.InputSystem.InputAction.CallbackContext)
   - Global.Controls.IPlayerActions.OnMousePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
@@ -21,10 +25,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: IPlayerActions
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 376
+    startLine: 1124
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -46,10 +50,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnJump
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 378
+    startLine: 1126
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -75,10 +79,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnMove
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 379
+    startLine: 1127
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -104,10 +108,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnLook
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 380
+    startLine: 1128
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -133,10 +137,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnMousePosition
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 381
+    startLine: 1129
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -162,10 +166,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnRestart
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 382
+    startLine: 1130
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -176,6 +180,122 @@ items:
       type: UnityEngine.InputSystem.InputAction.CallbackContext
     content.vb: Sub OnRestart(context As InputAction.CallbackContext)
   overload: Global.Controls.IPlayerActions.OnRestart*
+- uid: Global.Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnDig(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnDig(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnDig(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnDig
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1131
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnDig(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnDig(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnDig*
+- uid: Global.Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnAttack1(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnAttack1(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnAttack1(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnAttack1
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1132
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnAttack1(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnAttack1(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnAttack1*
+- uid: Global.Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnAttack2(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnAttack2(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnAttack2(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnAttack2
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1133
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnAttack2(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnAttack2(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnAttack2*
+- uid: Global.Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IPlayerActions
+  langs:
+  - csharp
+  - vb
+  name: OnDash(CallbackContext)
+  nameWithType: Controls.IPlayerActions.OnDash(InputAction.CallbackContext)
+  fullName: Controls.IPlayerActions.OnDash(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnDash
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1134
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnDash(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnDash(context As InputAction.CallbackContext)
+  overload: Global.Controls.IPlayerActions.OnDash*
 references:
 - uid: Global
 - uid: Global.Controls.IPlayerActions.OnJump*
@@ -248,3 +368,23 @@ references:
   name: OnRestart
   nameWithType: Controls.IPlayerActions.OnRestart
   fullName: Controls.IPlayerActions.OnRestart
+- uid: Global.Controls.IPlayerActions.OnDig*
+  commentId: Overload:Global.Controls.IPlayerActions.OnDig
+  name: OnDig
+  nameWithType: Controls.IPlayerActions.OnDig
+  fullName: Controls.IPlayerActions.OnDig
+- uid: Global.Controls.IPlayerActions.OnAttack1*
+  commentId: Overload:Global.Controls.IPlayerActions.OnAttack1
+  name: OnAttack1
+  nameWithType: Controls.IPlayerActions.OnAttack1
+  fullName: Controls.IPlayerActions.OnAttack1
+- uid: Global.Controls.IPlayerActions.OnAttack2*
+  commentId: Overload:Global.Controls.IPlayerActions.OnAttack2
+  name: OnAttack2
+  nameWithType: Controls.IPlayerActions.OnAttack2
+  fullName: Controls.IPlayerActions.OnAttack2
+- uid: Global.Controls.IPlayerActions.OnDash*
+  commentId: Overload:Global.Controls.IPlayerActions.OnDash
+  name: OnDash
+  nameWithType: Controls.IPlayerActions.OnDash
+  fullName: Controls.IPlayerActions.OnDash

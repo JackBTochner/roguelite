@@ -33,10 +33,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: ConversationFields
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 384
+    startLine: 395
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -58,10 +58,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: .ctor
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 388
+    startLine: 399
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -90,10 +90,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: SuperPriority
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 393
+    startLine: 404
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -119,10 +119,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Priority
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 396
+    startLine: 407
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -148,10 +148,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: PlayOnce
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 399
+    startLine: 410
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -177,10 +177,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredMinNPCInteractions
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 402
+    startLine: 413
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -206,10 +206,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiresRunCleared
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 407
+    startLine: 418
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -235,10 +235,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiresRunNotCleared
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 410
+    startLine: 421
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -264,10 +264,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiresLastRunCleared
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 413
+    startLine: 424
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -293,10 +293,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiresLastRunNotCleared
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 416
+    startLine: 427
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -322,10 +322,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredConversations
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 421
+    startLine: 432
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -351,10 +351,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredFalseConversations
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 427
+    startLine: 438
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -380,10 +380,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredEncounters
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 433
+    startLine: 444
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -409,10 +409,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredEncountersLastRun
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 439
+    startLine: 450
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -438,10 +438,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredEncountersThisRun
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 445
+    startLine: 456
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -467,10 +467,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredAnyEncounters
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 451
+    startLine: 462
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -496,10 +496,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredAnyEncountersLastRun
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 457
+    startLine: 468
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -525,10 +525,10 @@ items:
     remote:
       path: Assets/Scripts/Gameplay/HubNPCManager.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: RequiredAnyEncountersThisRun
     path: ../Assets/Scripts/Gameplay/HubNPCManager.cs
-    startLine: 463
+    startLine: 474
   assemblies:
   - Assembly-CSharp
   namespace: Global

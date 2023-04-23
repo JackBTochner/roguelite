@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerProjectilePickup
+  commentId: T:Global.PlayerProjectilePickup
+  id: PlayerProjectilePickup
+  parent: Global
+  children:
+  - Global.PlayerProjectilePickup.maxLifeTime
+  langs:
+  - csharp
+  - vb
+  name: PlayerProjectilePickup
+  nameWithType: PlayerProjectilePickup
+  fullName: PlayerProjectilePickup
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectilePickup.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayerProjectilePickup
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectilePickup.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [RequireComponent(typeof(Hittable))]
+
+      public class PlayerProjectilePickup : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(Hittable))>
+
+      Public Class PlayerProjectilePickup Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Global.Hittable
+- uid: Global.PlayerProjectilePickup.maxLifeTime
+  commentId: F:Global.PlayerProjectilePickup.maxLifeTime
+  id: maxLifeTime
+  parent: Global.PlayerProjectilePickup
+  langs:
+  - csharp
+  - vb
+  name: maxLifeTime
+  nameWithType: PlayerProjectilePickup.maxLifeTime
+  fullName: PlayerProjectilePickup.maxLifeTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectilePickup.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: maxLifeTime
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectilePickup.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float maxLifeTime
+    return:
+      type: System.Single
+    content.vb: Public maxLifeTime As Single
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

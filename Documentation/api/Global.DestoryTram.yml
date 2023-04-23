@@ -1,37 +1,65 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.PlayerCharacter
-  commentId: T:Global.PlayerCharacter
-  id: PlayerCharacter
+- uid: Global.DestoryTram
+  commentId: T:Global.DestoryTram
+  id: DestoryTram
   parent: Global
-  children: []
+  children:
+  - Global.DestoryTram.sideBound
   langs:
   - csharp
   - vb
-  name: PlayerCharacter
-  nameWithType: PlayerCharacter
-  fullName: PlayerCharacter
+  name: DestoryTram
+  nameWithType: DestoryTram
+  fullName: DestoryTram
   type: Class
   source:
     remote:
-      path: Assets/Scripts/Player/PlayerCharacter.cs
+      path: Assets/Scripts/DestoryTran.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
-    id: PlayerCharacter
-    path: ../Assets/Scripts/Player/PlayerCharacter.cs
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: DestoryTram
+    path: ../Assets/Scripts/DestoryTran.cs
     startLine: 4
   assemblies:
   - Assembly-CSharp
   namespace: Global
   syntax:
-    content: 'public class PlayerCharacter : MonoBehaviour'
-    content.vb: Public Class PlayerCharacter Inherits MonoBehaviour
+    content: 'public class DestoryTram : MonoBehaviour'
+    content.vb: Public Class DestoryTram Inherits MonoBehaviour
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+- uid: Global.DestoryTram.sideBound
+  commentId: F:Global.DestoryTram.sideBound
+  id: sideBound
+  parent: Global.DestoryTram
+  langs:
+  - csharp
+  - vb
+  name: sideBound
+  nameWithType: DestoryTram.sideBound
+  fullName: DestoryTram.sideBound
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DestoryTran.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: sideBound
+    path: ../Assets/Scripts/DestoryTran.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float sideBound
+    return:
+      type: System.Single
+    content.vb: Public sideBound As Single
 references:
 - uid: Global
 - uid: System.Object
@@ -84,3 +112,13 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

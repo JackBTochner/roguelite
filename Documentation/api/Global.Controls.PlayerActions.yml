@@ -6,6 +6,10 @@ items:
   parent: Global
   children:
   - Global.Controls.PlayerActions.#ctor(Controls)
+  - Global.Controls.PlayerActions.Attack1
+  - Global.Controls.PlayerActions.Attack2
+  - Global.Controls.PlayerActions.Dash
+  - Global.Controls.PlayerActions.Dig
   - Global.Controls.PlayerActions.Disable
   - Global.Controls.PlayerActions.Enable
   - Global.Controls.PlayerActions.enabled
@@ -28,10 +32,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: PlayerActions
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 302
+    startLine: 917
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -53,10 +57,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: .ctor
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 305
+    startLine: 920
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -85,10 +89,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Jump
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 306
+    startLine: 921
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -114,10 +118,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Move
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 307
+    startLine: 922
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -143,10 +147,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Look
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 308
+    startLine: 923
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -172,10 +176,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: MousePosition
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 309
+    startLine: 924
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -201,10 +205,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Restart
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 310
+    startLine: 925
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -215,6 +219,122 @@ items:
       type: UnityEngine.InputSystem.InputAction
     content.vb: Public ReadOnly Property Restart As InputAction
   overload: Global.Controls.PlayerActions.Restart*
+- uid: Global.Controls.PlayerActions.Dig
+  commentId: P:Global.Controls.PlayerActions.Dig
+  id: Dig
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Dig
+  nameWithType: Controls.PlayerActions.Dig
+  fullName: Controls.PlayerActions.Dig
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Dig
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 926
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Dig { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Dig As InputAction
+  overload: Global.Controls.PlayerActions.Dig*
+- uid: Global.Controls.PlayerActions.Attack1
+  commentId: P:Global.Controls.PlayerActions.Attack1
+  id: Attack1
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Attack1
+  nameWithType: Controls.PlayerActions.Attack1
+  fullName: Controls.PlayerActions.Attack1
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Attack1
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 927
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Attack1 { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Attack1 As InputAction
+  overload: Global.Controls.PlayerActions.Attack1*
+- uid: Global.Controls.PlayerActions.Attack2
+  commentId: P:Global.Controls.PlayerActions.Attack2
+  id: Attack2
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Attack2
+  nameWithType: Controls.PlayerActions.Attack2
+  fullName: Controls.PlayerActions.Attack2
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Attack2
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 928
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Attack2 { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Attack2 As InputAction
+  overload: Global.Controls.PlayerActions.Attack2*
+- uid: Global.Controls.PlayerActions.Dash
+  commentId: P:Global.Controls.PlayerActions.Dash
+  id: Dash
+  parent: Global.Controls.PlayerActions
+  langs:
+  - csharp
+  - vb
+  name: Dash
+  nameWithType: Controls.PlayerActions.Dash
+  fullName: Controls.PlayerActions.Dash
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Dash
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 929
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public InputAction Dash { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.InputAction
+    content.vb: Public ReadOnly Property Dash As InputAction
+  overload: Global.Controls.PlayerActions.Dash*
 - uid: Global.Controls.PlayerActions.Get
   commentId: M:Global.Controls.PlayerActions.Get
   id: Get
@@ -230,10 +350,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Get
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 311
+    startLine: 930
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -258,10 +378,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Enable
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 312
+    startLine: 931
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -284,10 +404,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Disable
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 313
+    startLine: 932
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -310,10 +430,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: enabled
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 314
+    startLine: 933
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -339,10 +459,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: op_Implicit
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 315
+    startLine: 934
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -373,10 +493,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: SetCallbacks
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 316
+    startLine: 935
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -456,6 +576,26 @@ references:
   name: Restart
   nameWithType: Controls.PlayerActions.Restart
   fullName: Controls.PlayerActions.Restart
+- uid: Global.Controls.PlayerActions.Dig*
+  commentId: Overload:Global.Controls.PlayerActions.Dig
+  name: Dig
+  nameWithType: Controls.PlayerActions.Dig
+  fullName: Controls.PlayerActions.Dig
+- uid: Global.Controls.PlayerActions.Attack1*
+  commentId: Overload:Global.Controls.PlayerActions.Attack1
+  name: Attack1
+  nameWithType: Controls.PlayerActions.Attack1
+  fullName: Controls.PlayerActions.Attack1
+- uid: Global.Controls.PlayerActions.Attack2*
+  commentId: Overload:Global.Controls.PlayerActions.Attack2
+  name: Attack2
+  nameWithType: Controls.PlayerActions.Attack2
+  fullName: Controls.PlayerActions.Attack2
+- uid: Global.Controls.PlayerActions.Dash*
+  commentId: Overload:Global.Controls.PlayerActions.Dash
+  name: Dash
+  nameWithType: Controls.PlayerActions.Dash
+  fullName: Controls.PlayerActions.Dash
 - uid: Global.Controls.PlayerActions.Get*
   commentId: Overload:Global.Controls.PlayerActions.Get
   name: Get

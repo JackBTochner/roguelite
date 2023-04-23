@@ -20,7 +20,7 @@ items:
     remote:
       path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: LEGACY_UILineRenderer
     path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
     startLine: 5
@@ -53,7 +53,7 @@ items:
     remote:
       path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: points
     path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
     startLine: 7
@@ -80,7 +80,7 @@ items:
     remote:
       path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: thickness
     path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
     startLine: 9
@@ -107,7 +107,7 @@ items:
     remote:
       path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: gridSize
     path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
     startLine: 11
@@ -134,7 +134,7 @@ items:
     remote:
       path: Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnPopulateMesh
     path: ../Assets/Plugins/UI/Legacy/LEGACY_UILineRenderer.cs
     startLine: 17

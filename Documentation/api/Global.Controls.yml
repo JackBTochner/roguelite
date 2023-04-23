@@ -21,6 +21,7 @@ items:
   - Global.Controls.GetEnumerator
   - Global.Controls.KeyboardandMouseScheme
   - Global.Controls.Player
+  - Global.Controls.UI
   langs:
   - csharp
   - vb
@@ -32,10 +33,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Controls
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -59,10 +60,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: asset
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -88,10 +89,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: .ctor
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -117,10 +118,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Dispose
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 240
+    startLine: 851
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -143,10 +144,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: bindingMask
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 245
+    startLine: 856
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -172,10 +173,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: devices
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 251
+    startLine: 862
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -201,10 +202,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: controlSchemes
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 257
+    startLine: 868
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -230,10 +231,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Contains
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 259
+    startLine: 870
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -261,10 +262,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: GetEnumerator
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 264
+    startLine: 875
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -289,10 +290,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Enable
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 274
+    startLine: 885
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -315,10 +316,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Disable
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 279
+    startLine: 890
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -341,10 +342,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: bindings
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 283
+    startLine: 894
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -370,10 +371,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: FindAction
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 285
+    startLine: 896
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -406,10 +407,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: FindBinding
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 289
+    startLine: 900
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -442,10 +443,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Player
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 357
+    startLine: 1000
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -456,6 +457,35 @@ items:
       type: Global.Controls.PlayerActions
     content.vb: Public ReadOnly Property Player As Controls.PlayerActions
   overload: Global.Controls.Player*
+- uid: Global.Controls.UI
+  commentId: P:Global.Controls.UI
+  id: UI
+  parent: Global.Controls
+  langs:
+  - csharp
+  - vb
+  name: UI
+  nameWithType: Controls.UI
+  fullName: Controls.UI
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: UI
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1105
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Controls.UIActions UI { get; }
+    parameters: []
+    return:
+      type: Global.Controls.UIActions
+    content.vb: Public ReadOnly Property UI As Controls.UIActions
+  overload: Global.Controls.UI*
 - uid: Global.Controls.KeyboardandMouseScheme
   commentId: P:Global.Controls.KeyboardandMouseScheme
   id: KeyboardandMouseScheme
@@ -471,10 +501,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: KeyboardandMouseScheme
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 359
+    startLine: 1107
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -500,10 +530,10 @@ items:
     remote:
       path: Assets/Scripts/Input/Controls.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: GamepadScheme
     path: ../Assets/Scripts/Input/Controls.cs
-    startLine: 368
+    startLine: 1116
   assemblies:
   - Assembly-CSharp
   namespace: Global
@@ -994,6 +1024,28 @@ references:
   - name: .
   - uid: Global.Controls.PlayerActions
     name: PlayerActions
+- uid: Global.Controls.UI*
+  commentId: Overload:Global.Controls.UI
+  name: UI
+  nameWithType: Controls.UI
+  fullName: Controls.UI
+- uid: Global.Controls.UIActions
+  commentId: T:Global.Controls.UIActions
+  name: Controls.UIActions
+  nameWithType: Controls.UIActions
+  fullName: Controls.UIActions
+  spec.csharp:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.UIActions
+    name: UIActions
+  spec.vb:
+  - uid: Global.Controls
+    name: Controls
+  - name: .
+  - uid: Global.Controls.UIActions
+    name: UIActions
 - uid: Global.Controls.KeyboardandMouseScheme*
   commentId: Overload:Global.Controls.KeyboardandMouseScheme
   name: KeyboardandMouseScheme

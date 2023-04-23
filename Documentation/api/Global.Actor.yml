@@ -18,7 +18,7 @@ items:
     remote:
       path: Assets/Scripts/Actors/Actor.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Actor
     path: ../Assets/Scripts/Actors/Actor.cs
     startLine: 4
@@ -49,7 +49,7 @@ items:
     remote:
       path: Assets/Scripts/Actors/Actor.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Instance
     path: ../Assets/Scripts/Actors/Actor.cs
     startLine: 6
@@ -76,7 +76,7 @@ items:
     remote:
       path: Assets/Scripts/Actors/Actor.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: staticUnique
     path: ../Assets/Scripts/Actors/Actor.cs
     startLine: 8

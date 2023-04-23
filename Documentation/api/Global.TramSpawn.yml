@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.TramSpawn
+  commentId: T:Global.TramSpawn
+  id: TramSpawn
+  parent: Global
+  children:
+  - Global.TramSpawn.spawnTram
+  - Global.TramSpawn.tram
+  langs:
+  - csharp
+  - vb
+  name: TramSpawn
+  nameWithType: TramSpawn
+  fullName: TramSpawn
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/TranSpawn.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: TramSpawn
+    path: ../Assets/Scripts/TranSpawn.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class TramSpawn : MonoBehaviour'
+    content.vb: Public Class TramSpawn Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.TramSpawn.tram
+  commentId: F:Global.TramSpawn.tram
+  id: tram
+  parent: Global.TramSpawn
+  langs:
+  - csharp
+  - vb
+  name: tram
+  nameWithType: TramSpawn.tram
+  fullName: TramSpawn.tram
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/TranSpawn.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: tram
+    path: ../Assets/Scripts/TranSpawn.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject tram
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public tram As GameObject
+- uid: Global.TramSpawn.spawnTram
+  commentId: M:Global.TramSpawn.spawnTram
+  id: spawnTram
+  parent: Global.TramSpawn
+  langs:
+  - csharp
+  - vb
+  name: spawnTram()
+  nameWithType: TramSpawn.spawnTram()
+  fullName: TramSpawn.spawnTram()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/TranSpawn.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: spawnTram
+    path: ../Assets/Scripts/TranSpawn.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void spawnTram()
+    content.vb: Public Sub spawnTram()
+  overload: Global.TramSpawn.spawnTram*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.TramSpawn.spawnTram*
+  commentId: Overload:Global.TramSpawn.spawnTram
+  name: spawnTram
+  nameWithType: TramSpawn.spawnTram
+  fullName: TramSpawn.spawnTram

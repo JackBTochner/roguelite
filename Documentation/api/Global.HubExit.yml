@@ -17,7 +17,7 @@ items:
     remote:
       path: Assets/Scripts/Level/HubExit.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: HubExit
     path: ../Assets/Scripts/Level/HubExit.cs
     startLine: 6
@@ -54,10 +54,10 @@ items:
     remote:
       path: Assets/Scripts/Level/HubExit.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: ExitTriggered
     path: ../Assets/Scripts/Level/HubExit.cs
-    startLine: 20
+    startLine: 15
   assemblies:
   - Assembly-CSharp
   namespace: Global

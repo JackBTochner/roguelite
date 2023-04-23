@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.AttackTemplate
+  commentId: T:Global.AttackTemplate
+  id: AttackTemplate
+  parent: Global
+  children:
+  - Global.AttackTemplate.playerAnim
+  langs:
+  - csharp
+  - vb
+  name: AttackTemplate
+  nameWithType: AttackTemplate
+  fullName: AttackTemplate
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/AttackTemplate.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: AttackTemplate
+    path: ../Assets/Scripts/PROTOTYPE/AttackTemplate.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class AttackTemplate : MonoBehaviour'
+    content.vb: Public Class AttackTemplate Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.AttackTemplate.playerAnim
+  commentId: F:Global.AttackTemplate.playerAnim
+  id: playerAnim
+  parent: Global.AttackTemplate
+  langs:
+  - csharp
+  - vb
+  name: playerAnim
+  nameWithType: AttackTemplate.playerAnim
+  fullName: AttackTemplate.playerAnim
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/AttackTemplate.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: playerAnim
+    path: ../Assets/Scripts/PROTOTYPE/AttackTemplate.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Animator playerAnim
+    return:
+      type: UnityEngine.Animator
+    content.vb: Public playerAnim As Animator
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator

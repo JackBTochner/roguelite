@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.EnemySpawnWave
+  commentId: T:Global.EnemySpawnWave
+  id: EnemySpawnWave
+  parent: Global
+  children:
+  - Global.EnemySpawnWave.currentEnemies
+  - Global.EnemySpawnWave.enemiesToSpawn
+  - Global.EnemySpawnWave.IsWaveComplete
+  - Global.EnemySpawnWave.mustKillAllEnemiesToCompleteWave
+  - Global.EnemySpawnWave.name
+  - Global.EnemySpawnWave.nextWaveSpawnTrigger
+  - Global.EnemySpawnWave.spawnRadius
+  - Global.EnemySpawnWave.SpawnWave
+  - Global.EnemySpawnWave.waveCompleteDelay
+  - Global.EnemySpawnWave.waveInitialSpawnDelay
+  langs:
+  - csharp
+  - vb
+  name: EnemySpawnWave
+  nameWithType: EnemySpawnWave
+  fullName: EnemySpawnWave
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: EnemySpawnWave
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class EnemySpawnWave
+    content.vb: >-
+      <Serializable>
+
+      Public Class EnemySpawnWave
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Global.EnemySpawnWave.name
+  commentId: F:Global.EnemySpawnWave.name
+  id: name
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: EnemySpawnWave.name
+  fullName: EnemySpawnWave.name
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: name
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 84
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+- uid: Global.EnemySpawnWave.waveInitialSpawnDelay
+  commentId: F:Global.EnemySpawnWave.waveInitialSpawnDelay
+  id: waveInitialSpawnDelay
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: waveInitialSpawnDelay
+  nameWithType: EnemySpawnWave.waveInitialSpawnDelay
+  fullName: EnemySpawnWave.waveInitialSpawnDelay
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: waveInitialSpawnDelay
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Preconditions")]
+
+      public float waveInitialSpawnDelay
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Preconditions")>
+
+      Public waveInitialSpawnDelay As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Preconditions
+- uid: Global.EnemySpawnWave.waveCompleteDelay
+  commentId: F:Global.EnemySpawnWave.waveCompleteDelay
+  id: waveCompleteDelay
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: waveCompleteDelay
+  nameWithType: EnemySpawnWave.waveCompleteDelay
+  fullName: EnemySpawnWave.waveCompleteDelay
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: waveCompleteDelay
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Complete Conditions")]
+
+      public float waveCompleteDelay
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Complete Conditions")>
+
+      Public waveCompleteDelay As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Complete Conditions
+- uid: Global.EnemySpawnWave.nextWaveSpawnTrigger
+  commentId: F:Global.EnemySpawnWave.nextWaveSpawnTrigger
+  id: nextWaveSpawnTrigger
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: nextWaveSpawnTrigger
+  nameWithType: EnemySpawnWave.nextWaveSpawnTrigger
+  fullName: EnemySpawnWave.nextWaveSpawnTrigger
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: nextWaveSpawnTrigger
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Tooltip("If assigned, wave will require the player to activate the trigger to complete the wave.\n If left unassigned, will ignore the requirement")]
+
+      public SpawnWaveTrigger nextWaveSpawnTrigger
+    return:
+      type: Global.SpawnWaveTrigger
+    content.vb: >-
+      <Tooltip("If assigned, wave will require the player to activate the trigger to complete the wave." & vbLf & " If left unassigned, will ignore the requirement")>
+
+      Public nextWaveSpawnTrigger As SpawnWaveTrigger
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: >-
+        If assigned, wave will require the player to activate the trigger to complete the wave.
+         If left unassigned, will ignore the requirement
+- uid: Global.EnemySpawnWave.mustKillAllEnemiesToCompleteWave
+  commentId: F:Global.EnemySpawnWave.mustKillAllEnemiesToCompleteWave
+  id: mustKillAllEnemiesToCompleteWave
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: mustKillAllEnemiesToCompleteWave
+  nameWithType: EnemySpawnWave.mustKillAllEnemiesToCompleteWave
+  fullName: EnemySpawnWave.mustKillAllEnemiesToCompleteWave
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: mustKillAllEnemiesToCompleteWave
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 102
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool mustKillAllEnemiesToCompleteWave
+    return:
+      type: System.Boolean
+    content.vb: Public mustKillAllEnemiesToCompleteWave As Boolean
+- uid: Global.EnemySpawnWave.spawnRadius
+  commentId: F:Global.EnemySpawnWave.spawnRadius
+  id: spawnRadius
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: spawnRadius
+  nameWithType: EnemySpawnWave.spawnRadius
+  fullName: EnemySpawnWave.spawnRadius
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: spawnRadius
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 105
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Header("Wave Details")]
+
+      public float spawnRadius
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Wave Details")>
+
+      Public spawnRadius As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Wave Details
+- uid: Global.EnemySpawnWave.enemiesToSpawn
+  commentId: F:Global.EnemySpawnWave.enemiesToSpawn
+  id: enemiesToSpawn
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: enemiesToSpawn
+  nameWithType: EnemySpawnWave.enemiesToSpawn
+  fullName: EnemySpawnWave.enemiesToSpawn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: enemiesToSpawn
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public BasicEnemy[] enemiesToSpawn
+    return:
+      type: Global.BasicEnemy[]
+    content.vb: Public enemiesToSpawn As BasicEnemy()
+- uid: Global.EnemySpawnWave.currentEnemies
+  commentId: F:Global.EnemySpawnWave.currentEnemies
+  id: currentEnemies
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: currentEnemies
+  nameWithType: EnemySpawnWave.currentEnemies
+  fullName: EnemySpawnWave.currentEnemies
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: currentEnemies
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 110
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public int currentEnemies
+    return:
+      type: System.Int32
+    content.vb: >-
+      <HideInInspector>
+
+      Public currentEnemies As Integer
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Global.EnemySpawnWave.IsWaveComplete
+  commentId: M:Global.EnemySpawnWave.IsWaveComplete
+  id: IsWaveComplete
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: IsWaveComplete()
+  nameWithType: EnemySpawnWave.IsWaveComplete()
+  fullName: EnemySpawnWave.IsWaveComplete()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: IsWaveComplete
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool IsWaveComplete()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsWaveComplete() As Boolean
+  overload: Global.EnemySpawnWave.IsWaveComplete*
+- uid: Global.EnemySpawnWave.SpawnWave
+  commentId: M:Global.EnemySpawnWave.SpawnWave
+  id: SpawnWave
+  parent: Global.EnemySpawnWave
+  langs:
+  - csharp
+  - vb
+  name: SpawnWave()
+  nameWithType: EnemySpawnWave.SpawnWave()
+  fullName: EnemySpawnWave.SpawnWave()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: SpawnWave
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 125
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public IEnumerator SpawnWave()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function SpawnWave() As IEnumerator
+  overload: Global.EnemySpawnWave.SpawnWave*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.SpawnWaveTrigger
+  commentId: T:Global.SpawnWaveTrigger
+  name: SpawnWaveTrigger
+  nameWithType: SpawnWaveTrigger
+  fullName: SpawnWaveTrigger
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Global.BasicEnemy[]
+  isExternal: true
+  name: BasicEnemy[]
+  nameWithType: BasicEnemy[]
+  fullName: BasicEnemy[]
+  nameWithType.vb: BasicEnemy()
+  fullName.vb: BasicEnemy()
+  name.vb: BasicEnemy()
+  spec.csharp:
+  - uid: Global.BasicEnemy
+    name: BasicEnemy
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Global.BasicEnemy
+    name: BasicEnemy
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Global.EnemySpawnWave.IsWaveComplete*
+  commentId: Overload:Global.EnemySpawnWave.IsWaveComplete
+  name: IsWaveComplete
+  nameWithType: EnemySpawnWave.IsWaveComplete
+  fullName: EnemySpawnWave.IsWaveComplete
+- uid: Global.EnemySpawnWave.SpawnWave*
+  commentId: Overload:Global.EnemySpawnWave.SpawnWave
+  name: SpawnWave
+  nameWithType: EnemySpawnWave.SpawnWave
+  fullName: EnemySpawnWave.SpawnWave
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true

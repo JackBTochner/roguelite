@@ -1,0 +1,425 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Controls.IUIActions
+  commentId: T:Global.Controls.IUIActions
+  id: Controls.IUIActions
+  parent: Global
+  children:
+  - Global.Controls.IUIActions.OnCancel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnMiddleClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnNavigate(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnPoint(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnRightClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnScrollWheel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnSubmit(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnTrackedDeviceOrientation(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - Global.Controls.IUIActions.OnTrackedDevicePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  langs:
+  - csharp
+  - vb
+  name: Controls.IUIActions
+  nameWithType: Controls.IUIActions
+  fullName: Controls.IUIActions
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: IUIActions
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1136
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public interface Controls.IUIActions
+    content.vb: Public Interface Controls.IUIActions
+- uid: Global.Controls.IUIActions.OnNavigate(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnNavigate(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnNavigate(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnNavigate(CallbackContext)
+  nameWithType: Controls.IUIActions.OnNavigate(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnNavigate(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnNavigate
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1138
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnNavigate(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnNavigate(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnNavigate*
+- uid: Global.Controls.IUIActions.OnSubmit(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnSubmit(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnSubmit(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnSubmit(CallbackContext)
+  nameWithType: Controls.IUIActions.OnSubmit(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnSubmit(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnSubmit
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1139
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnSubmit(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnSubmit(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnSubmit*
+- uid: Global.Controls.IUIActions.OnCancel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnCancel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnCancel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnCancel(CallbackContext)
+  nameWithType: Controls.IUIActions.OnCancel(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnCancel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnCancel
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1140
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnCancel(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnCancel(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnCancel*
+- uid: Global.Controls.IUIActions.OnPoint(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnPoint(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnPoint(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnPoint(CallbackContext)
+  nameWithType: Controls.IUIActions.OnPoint(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnPoint(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnPoint
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1141
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnPoint(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnPoint(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnPoint*
+- uid: Global.Controls.IUIActions.OnClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnClick(CallbackContext)
+  nameWithType: Controls.IUIActions.OnClick(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnClick
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1142
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnClick(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnClick(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnClick*
+- uid: Global.Controls.IUIActions.OnScrollWheel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnScrollWheel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnScrollWheel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnScrollWheel(CallbackContext)
+  nameWithType: Controls.IUIActions.OnScrollWheel(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnScrollWheel(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnScrollWheel
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1143
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnScrollWheel(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnScrollWheel(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnScrollWheel*
+- uid: Global.Controls.IUIActions.OnMiddleClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnMiddleClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnMiddleClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnMiddleClick(CallbackContext)
+  nameWithType: Controls.IUIActions.OnMiddleClick(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnMiddleClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnMiddleClick
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1144
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnMiddleClick(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnMiddleClick(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnMiddleClick*
+- uid: Global.Controls.IUIActions.OnRightClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnRightClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnRightClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnRightClick(CallbackContext)
+  nameWithType: Controls.IUIActions.OnRightClick(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnRightClick(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnRightClick
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1145
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnRightClick(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnRightClick(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnRightClick*
+- uid: Global.Controls.IUIActions.OnTrackedDevicePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnTrackedDevicePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnTrackedDevicePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnTrackedDevicePosition(CallbackContext)
+  nameWithType: Controls.IUIActions.OnTrackedDevicePosition(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnTrackedDevicePosition(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnTrackedDevicePosition
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1146
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnTrackedDevicePosition(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnTrackedDevicePosition(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnTrackedDevicePosition*
+- uid: Global.Controls.IUIActions.OnTrackedDeviceOrientation(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:Global.Controls.IUIActions.OnTrackedDeviceOrientation(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnTrackedDeviceOrientation(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: Global.Controls.IUIActions
+  langs:
+  - csharp
+  - vb
+  name: OnTrackedDeviceOrientation(CallbackContext)
+  nameWithType: Controls.IUIActions.OnTrackedDeviceOrientation(InputAction.CallbackContext)
+  fullName: Controls.IUIActions.OnTrackedDeviceOrientation(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Input/Controls.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnTrackedDeviceOrientation
+    path: ../Assets/Scripts/Input/Controls.cs
+    startLine: 1147
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnTrackedDeviceOrientation(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Sub OnTrackedDeviceOrientation(context As InputAction.CallbackContext)
+  overload: Global.Controls.IUIActions.OnTrackedDeviceOrientation*
+references:
+- uid: Global
+- uid: Global.Controls.IUIActions.OnNavigate*
+  commentId: Overload:Global.Controls.IUIActions.OnNavigate
+  name: OnNavigate
+  nameWithType: Controls.IUIActions.OnNavigate
+  fullName: Controls.IUIActions.OnNavigate
+- uid: UnityEngine.InputSystem.InputAction.CallbackContext
+  commentId: T:UnityEngine.InputSystem.InputAction.CallbackContext
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputAction.CallbackContext
+  nameWithType: InputAction.CallbackContext
+  fullName: UnityEngine.InputSystem.InputAction.CallbackContext
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: Global.Controls.IUIActions.OnSubmit*
+  commentId: Overload:Global.Controls.IUIActions.OnSubmit
+  name: OnSubmit
+  nameWithType: Controls.IUIActions.OnSubmit
+  fullName: Controls.IUIActions.OnSubmit
+- uid: Global.Controls.IUIActions.OnCancel*
+  commentId: Overload:Global.Controls.IUIActions.OnCancel
+  name: OnCancel
+  nameWithType: Controls.IUIActions.OnCancel
+  fullName: Controls.IUIActions.OnCancel
+- uid: Global.Controls.IUIActions.OnPoint*
+  commentId: Overload:Global.Controls.IUIActions.OnPoint
+  name: OnPoint
+  nameWithType: Controls.IUIActions.OnPoint
+  fullName: Controls.IUIActions.OnPoint
+- uid: Global.Controls.IUIActions.OnClick*
+  commentId: Overload:Global.Controls.IUIActions.OnClick
+  name: OnClick
+  nameWithType: Controls.IUIActions.OnClick
+  fullName: Controls.IUIActions.OnClick
+- uid: Global.Controls.IUIActions.OnScrollWheel*
+  commentId: Overload:Global.Controls.IUIActions.OnScrollWheel
+  name: OnScrollWheel
+  nameWithType: Controls.IUIActions.OnScrollWheel
+  fullName: Controls.IUIActions.OnScrollWheel
+- uid: Global.Controls.IUIActions.OnMiddleClick*
+  commentId: Overload:Global.Controls.IUIActions.OnMiddleClick
+  name: OnMiddleClick
+  nameWithType: Controls.IUIActions.OnMiddleClick
+  fullName: Controls.IUIActions.OnMiddleClick
+- uid: Global.Controls.IUIActions.OnRightClick*
+  commentId: Overload:Global.Controls.IUIActions.OnRightClick
+  name: OnRightClick
+  nameWithType: Controls.IUIActions.OnRightClick
+  fullName: Controls.IUIActions.OnRightClick
+- uid: Global.Controls.IUIActions.OnTrackedDevicePosition*
+  commentId: Overload:Global.Controls.IUIActions.OnTrackedDevicePosition
+  name: OnTrackedDevicePosition
+  nameWithType: Controls.IUIActions.OnTrackedDevicePosition
+  fullName: Controls.IUIActions.OnTrackedDevicePosition
+- uid: Global.Controls.IUIActions.OnTrackedDeviceOrientation*
+  commentId: Overload:Global.Controls.IUIActions.OnTrackedDeviceOrientation
+  name: OnTrackedDeviceOrientation
+  nameWithType: Controls.IUIActions.OnTrackedDeviceOrientation
+  fullName: Controls.IUIActions.OnTrackedDeviceOrientation

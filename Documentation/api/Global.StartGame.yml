@@ -17,7 +17,7 @@ items:
     remote:
       path: Assets/Scripts/SceneManagement/StartGame.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: StartGame
     path: ../Assets/Scripts/SceneManagement/StartGame.cs
     startLine: 4
@@ -48,7 +48,7 @@ items:
     remote:
       path: Assets/Scripts/SceneManagement/StartGame.cs
       branch: main
-      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: StartNewGame
     path: ../Assets/Scripts/SceneManagement/StartGame.cs
     startLine: 12

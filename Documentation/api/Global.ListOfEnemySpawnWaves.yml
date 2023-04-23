@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.ListOfEnemySpawnWaves
+  commentId: T:Global.ListOfEnemySpawnWaves
+  id: ListOfEnemySpawnWaves
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ListOfEnemySpawnWaves
+  nameWithType: ListOfEnemySpawnWaves
+  fullName: ListOfEnemySpawnWaves
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ListOfEnemySpawnWaves
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class ListOfEnemySpawnWaves : ReorderableArray<EnemySpawnWave>
+    content.vb: >-
+      <Serializable>
+
+      Public Class ListOfEnemySpawnWaves Inherits ReorderableArray(Of EnemySpawnWave)
+  inheritance:
+  - System.Object
+  - Malee.List.ReorderableArray{EnemySpawnWave}
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Malee.List.ReorderableArray{EnemySpawnWave}
+  commentId: T:Malee.List.ReorderableArray{EnemySpawnWave}
+  parent: Malee.List
+  definition: Malee.List.ReorderableArray`1
+  name: ReorderableArray<EnemySpawnWave>
+  nameWithType: ReorderableArray<EnemySpawnWave>
+  fullName: Malee.List.ReorderableArray<EnemySpawnWave>
+  nameWithType.vb: ReorderableArray(Of EnemySpawnWave)
+  fullName.vb: Malee.List.ReorderableArray(Of EnemySpawnWave)
+  name.vb: ReorderableArray(Of EnemySpawnWave)
+  spec.csharp:
+  - uid: Malee.List.ReorderableArray`1
+    name: ReorderableArray
+    isExternal: true
+  - name: <
+  - uid: Global.EnemySpawnWave
+    name: EnemySpawnWave
+  - name: '>'
+  spec.vb:
+  - uid: Malee.List.ReorderableArray`1
+    name: ReorderableArray
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Global.EnemySpawnWave
+    name: EnemySpawnWave
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Malee.List.ReorderableArray`1
+  commentId: T:Malee.List.ReorderableArray`1
+  isExternal: true
+  name: ReorderableArray<T>
+  nameWithType: ReorderableArray<T>
+  fullName: Malee.List.ReorderableArray<T>
+  nameWithType.vb: ReorderableArray(Of T)
+  fullName.vb: Malee.List.ReorderableArray(Of T)
+  name.vb: ReorderableArray(Of T)
+  spec.csharp:
+  - uid: Malee.List.ReorderableArray`1
+    name: ReorderableArray
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Malee.List.ReorderableArray`1
+    name: ReorderableArray
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Malee.List
+  commentId: N:Malee.List
+  isExternal: true
+  name: Malee.List
+  nameWithType: Malee.List
+  fullName: Malee.List
+  spec.csharp:
+  - uid: Malee
+    name: Malee
+    isExternal: true
+  - name: .
+  - uid: Malee.List
+    name: List
+    isExternal: true
+  spec.vb:
+  - uid: Malee
+    name: Malee
+    isExternal: true
+  - name: .
+  - uid: Malee.List
+    name: List
+    isExternal: true

@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerProjectileEffectDefaultSO
+  commentId: T:Global.PlayerProjectileEffectDefaultSO
+  id: PlayerProjectileEffectDefaultSO
+  parent: Global
+  children:
+  - Global.PlayerProjectileEffectDefaultSO.Initialise(UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: PlayerProjectileEffectDefaultSO
+  nameWithType: PlayerProjectileEffectDefaultSO
+  fullName: PlayerProjectileEffectDefaultSO
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileEffectDefaultSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayerProjectileEffectDefaultSO
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileEffectDefaultSO.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "DefaultEffect", menuName = "Player/ProjectileEffect/DefaultEffect")]
+
+      public class PlayerProjectileEffectDefaultSO : PlayerProjectileEffectSO
+    content.vb: >-
+      <CreateAssetMenu(fileName:="DefaultEffect", menuName:="Player/ProjectileEffect/DefaultEffect")>
+
+      Public Class PlayerProjectileEffectDefaultSO Inherits PlayerProjectileEffectSO
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - Global.SerializableScriptableObject
+  - Global.DescriptionBaseSO
+  - Global.PlayerProjectileEffectSO
+  inheritedMembers:
+  - Global.DescriptionBaseSO.description
+  - Global.SerializableScriptableObject.Guid
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: DefaultEffect
+    - name: menuName
+      type: System.String
+      value: Player/ProjectileEffect/DefaultEffect
+- uid: Global.PlayerProjectileEffectDefaultSO.Initialise(UnityEngine.GameObject)
+  commentId: M:Global.PlayerProjectileEffectDefaultSO.Initialise(UnityEngine.GameObject)
+  id: Initialise(UnityEngine.GameObject)
+  parent: Global.PlayerProjectileEffectDefaultSO
+  langs:
+  - csharp
+  - vb
+  name: Initialise(GameObject)
+  nameWithType: PlayerProjectileEffectDefaultSO.Initialise(GameObject)
+  fullName: PlayerProjectileEffectDefaultSO.Initialise(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectileEffectDefaultSO.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: Initialise
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectileEffectDefaultSO.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public override void Initialise(GameObject target)
+    parameters:
+    - id: target
+      type: UnityEngine.GameObject
+    content.vb: Public Overrides Sub Initialise(target As GameObject)
+  overridden: Global.PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+  overload: Global.PlayerProjectileEffectDefaultSO.Initialise*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: Global.SerializableScriptableObject
+  commentId: T:Global.SerializableScriptableObject
+  name: SerializableScriptableObject
+  nameWithType: SerializableScriptableObject
+  fullName: SerializableScriptableObject
+- uid: Global.DescriptionBaseSO
+  commentId: T:Global.DescriptionBaseSO
+  name: DescriptionBaseSO
+  nameWithType: DescriptionBaseSO
+  fullName: DescriptionBaseSO
+- uid: Global.PlayerProjectileEffectSO
+  commentId: T:Global.PlayerProjectileEffectSO
+  name: PlayerProjectileEffectSO
+  nameWithType: PlayerProjectileEffectSO
+  fullName: PlayerProjectileEffectSO
+- uid: Global.DescriptionBaseSO.description
+  commentId: F:Global.DescriptionBaseSO.description
+  parent: Global.DescriptionBaseSO
+  name: description
+  nameWithType: DescriptionBaseSO.description
+  fullName: DescriptionBaseSO.description
+- uid: Global.SerializableScriptableObject.Guid
+  commentId: P:Global.SerializableScriptableObject.Guid
+  parent: Global.SerializableScriptableObject
+  name: Guid
+  nameWithType: SerializableScriptableObject.Guid
+  fullName: SerializableScriptableObject.Guid
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+  commentId: M:Global.PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+  parent: Global.PlayerProjectileEffectSO
+  isExternal: true
+  name: Initialise(GameObject)
+  nameWithType: PlayerProjectileEffectSO.Initialise(GameObject)
+  fullName: PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: Global.PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+    name: Initialise
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Global.PlayerProjectileEffectSO.Initialise(UnityEngine.GameObject)
+    name: Initialise
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: Global.PlayerProjectileEffectDefaultSO.Initialise*
+  commentId: Overload:Global.PlayerProjectileEffectDefaultSO.Initialise
+  name: Initialise
+  nameWithType: PlayerProjectileEffectDefaultSO.Initialise
+  fullName: PlayerProjectileEffectDefaultSO.Initialise
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject

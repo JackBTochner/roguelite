@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.IPooledObject
+  commentId: T:Global.IPooledObject
+  id: IPooledObject
+  parent: Global
+  children:
+  - Global.IPooledObject.OnObjectSpawn
+  langs:
+  - csharp
+  - vb
+  name: IPooledObject
+  nameWithType: IPooledObject
+  fullName: IPooledObject
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/IPooledObject.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: IPooledObject
+    path: ../Assets/Scripts/PROTOTYPE/IPooledObject.cs
+    startLine: 2
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public interface IPooledObject
+    content.vb: Public Interface IPooledObject
+- uid: Global.IPooledObject.OnObjectSpawn
+  commentId: M:Global.IPooledObject.OnObjectSpawn
+  id: OnObjectSpawn
+  parent: Global.IPooledObject
+  langs:
+  - csharp
+  - vb
+  name: OnObjectSpawn()
+  nameWithType: IPooledObject.OnObjectSpawn()
+  fullName: IPooledObject.OnObjectSpawn()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/IPooledObject.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnObjectSpawn
+    path: ../Assets/Scripts/PROTOTYPE/IPooledObject.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: void OnObjectSpawn()
+    content.vb: Sub OnObjectSpawn()
+  overload: Global.IPooledObject.OnObjectSpawn*
+references:
+- uid: Global
+- uid: Global.IPooledObject.OnObjectSpawn*
+  commentId: Overload:Global.IPooledObject.OnObjectSpawn
+  name: OnObjectSpawn
+  nameWithType: IPooledObject.OnObjectSpawn
+  fullName: IPooledObject.OnObjectSpawn

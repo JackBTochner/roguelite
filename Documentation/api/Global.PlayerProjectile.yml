@@ -1,0 +1,650 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PlayerProjectile
+  commentId: T:Global.PlayerProjectile
+  id: PlayerProjectile
+  parent: Global
+  children:
+  - Global.PlayerProjectile.critChance
+  - Global.PlayerProjectile.critMarker
+  - Global.PlayerProjectile.critMultiplier
+  - Global.PlayerProjectile.damage
+  - Global.PlayerProjectile.gravityAcceleration
+  - Global.PlayerProjectile.hitMarker
+  - Global.PlayerProjectile.hittableLayers
+  - Global.PlayerProjectile.ignoreCrit
+  - Global.PlayerProjectile.impactVFX
+  - Global.PlayerProjectile.inheritWeaponVelocity
+  - Global.PlayerProjectile.InitialiseProjectile(PlayerWeaponController,PlayerProjectileEffectSO)
+  - Global.PlayerProjectile.knockback
+  - Global.PlayerProjectile.maxLifeTime
+  - Global.PlayerProjectile.pickup
+  - Global.PlayerProjectile.radius
+  - Global.PlayerProjectile.root
+  - Global.PlayerProjectile.speed
+  - Global.PlayerProjectile.tip
+  langs:
+  - csharp
+  - vb
+  name: PlayerProjectile
+  nameWithType: PlayerProjectile
+  fullName: PlayerProjectile
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: PlayerProjectile
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class PlayerProjectile : MonoBehaviour'
+    content.vb: Public Class PlayerProjectile Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.PlayerProjectile.radius
+  commentId: F:Global.PlayerProjectile.radius
+  id: radius
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: radius
+  nameWithType: PlayerProjectile.radius
+  fullName: PlayerProjectile.radius
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: radius
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float radius
+    return:
+      type: System.Single
+    content.vb: Public radius As Single
+- uid: Global.PlayerProjectile.root
+  commentId: F:Global.PlayerProjectile.root
+  id: root
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: root
+  nameWithType: PlayerProjectile.root
+  fullName: PlayerProjectile.root
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: root
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Transform root
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public root As Transform
+- uid: Global.PlayerProjectile.tip
+  commentId: F:Global.PlayerProjectile.tip
+  id: tip
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: tip
+  nameWithType: PlayerProjectile.tip
+  fullName: PlayerProjectile.tip
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: tip
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Transform tip
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public tip As Transform
+- uid: Global.PlayerProjectile.maxLifeTime
+  commentId: F:Global.PlayerProjectile.maxLifeTime
+  id: maxLifeTime
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: maxLifeTime
+  nameWithType: PlayerProjectile.maxLifeTime
+  fullName: PlayerProjectile.maxLifeTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: maxLifeTime
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float maxLifeTime
+    return:
+      type: System.Single
+    content.vb: Public maxLifeTime As Single
+- uid: Global.PlayerProjectile.hittableLayers
+  commentId: F:Global.PlayerProjectile.hittableLayers
+  id: hittableLayers
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: hittableLayers
+  nameWithType: PlayerProjectile.hittableLayers
+  fullName: PlayerProjectile.hittableLayers
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: hittableLayers
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public LayerMask hittableLayers
+    return:
+      type: UnityEngine.LayerMask
+    content.vb: Public hittableLayers As LayerMask
+- uid: Global.PlayerProjectile.speed
+  commentId: F:Global.PlayerProjectile.speed
+  id: speed
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: speed
+  nameWithType: PlayerProjectile.speed
+  fullName: PlayerProjectile.speed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: speed
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float speed
+    return:
+      type: System.Single
+    content.vb: Public speed As Single
+- uid: Global.PlayerProjectile.gravityAcceleration
+  commentId: F:Global.PlayerProjectile.gravityAcceleration
+  id: gravityAcceleration
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: gravityAcceleration
+  nameWithType: PlayerProjectile.gravityAcceleration
+  fullName: PlayerProjectile.gravityAcceleration
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: gravityAcceleration
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float gravityAcceleration
+    return:
+      type: System.Single
+    content.vb: Public gravityAcceleration As Single
+- uid: Global.PlayerProjectile.inheritWeaponVelocity
+  commentId: F:Global.PlayerProjectile.inheritWeaponVelocity
+  id: inheritWeaponVelocity
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: inheritWeaponVelocity
+  nameWithType: PlayerProjectile.inheritWeaponVelocity
+  fullName: PlayerProjectile.inheritWeaponVelocity
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: inheritWeaponVelocity
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool inheritWeaponVelocity
+    return:
+      type: System.Boolean
+    content.vb: Public inheritWeaponVelocity As Boolean
+- uid: Global.PlayerProjectile.damage
+  commentId: F:Global.PlayerProjectile.damage
+  id: damage
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: damage
+  nameWithType: PlayerProjectile.damage
+  fullName: PlayerProjectile.damage
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: damage
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float damage
+    return:
+      type: System.Single
+    content.vb: Public damage As Single
+- uid: Global.PlayerProjectile.impactVFX
+  commentId: F:Global.PlayerProjectile.impactVFX
+  id: impactVFX
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: impactVFX
+  nameWithType: PlayerProjectile.impactVFX
+  fullName: PlayerProjectile.impactVFX
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: impactVFX
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject impactVFX
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public impactVFX As GameObject
+- uid: Global.PlayerProjectile.critChance
+  commentId: F:Global.PlayerProjectile.critChance
+  id: critChance
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: critChance
+  nameWithType: PlayerProjectile.critChance
+  fullName: PlayerProjectile.critChance
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: critChance
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float critChance
+    return:
+      type: System.Single
+    content.vb: Public critChance As Single
+- uid: Global.PlayerProjectile.critMultiplier
+  commentId: F:Global.PlayerProjectile.critMultiplier
+  id: critMultiplier
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: critMultiplier
+  nameWithType: PlayerProjectile.critMultiplier
+  fullName: PlayerProjectile.critMultiplier
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: critMultiplier
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float critMultiplier
+    return:
+      type: System.Single
+    content.vb: Public critMultiplier As Single
+- uid: Global.PlayerProjectile.ignoreCrit
+  commentId: F:Global.PlayerProjectile.ignoreCrit
+  id: ignoreCrit
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: ignoreCrit
+  nameWithType: PlayerProjectile.ignoreCrit
+  fullName: PlayerProjectile.ignoreCrit
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: ignoreCrit
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public bool ignoreCrit
+    return:
+      type: System.Boolean
+    content.vb: Public ignoreCrit As Boolean
+- uid: Global.PlayerProjectile.knockback
+  commentId: F:Global.PlayerProjectile.knockback
+  id: knockback
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: knockback
+  nameWithType: PlayerProjectile.knockback
+  fullName: PlayerProjectile.knockback
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: knockback
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float knockback
+    return:
+      type: System.Single
+    content.vb: Public knockback As Single
+- uid: Global.PlayerProjectile.hitMarker
+  commentId: F:Global.PlayerProjectile.hitMarker
+  id: hitMarker
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: hitMarker
+  nameWithType: PlayerProjectile.hitMarker
+  fullName: PlayerProjectile.hitMarker
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: hitMarker
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject hitMarker
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public hitMarker As GameObject
+- uid: Global.PlayerProjectile.critMarker
+  commentId: F:Global.PlayerProjectile.critMarker
+  id: critMarker
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: critMarker
+  nameWithType: PlayerProjectile.critMarker
+  fullName: PlayerProjectile.critMarker
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: critMarker
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject critMarker
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public critMarker As GameObject
+- uid: Global.PlayerProjectile.pickup
+  commentId: F:Global.PlayerProjectile.pickup
+  id: pickup
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: pickup
+  nameWithType: PlayerProjectile.pickup
+  fullName: PlayerProjectile.pickup
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: pickup
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public GameObject pickup
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public pickup As GameObject
+- uid: Global.PlayerProjectile.InitialiseProjectile(PlayerWeaponController,PlayerProjectileEffectSO)
+  commentId: M:Global.PlayerProjectile.InitialiseProjectile(PlayerWeaponController,PlayerProjectileEffectSO)
+  id: InitialiseProjectile(PlayerWeaponController,PlayerProjectileEffectSO)
+  parent: Global.PlayerProjectile
+  langs:
+  - csharp
+  - vb
+  name: InitialiseProjectile(PlayerWeaponController, PlayerProjectileEffectSO)
+  nameWithType: PlayerProjectile.InitialiseProjectile(PlayerWeaponController, PlayerProjectileEffectSO)
+  fullName: PlayerProjectile.InitialiseProjectile(PlayerWeaponController, PlayerProjectileEffectSO)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: InitialiseProjectile
+    path: ../Assets/Scripts/PROTOTYPE/PlayerProjectile.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void InitialiseProjectile(PlayerWeaponController controller, PlayerProjectileEffectSO effect)
+    parameters:
+    - id: controller
+      type: Global.PlayerWeaponController
+    - id: effect
+      type: Global.PlayerProjectileEffectSO
+    content.vb: Public Sub InitialiseProjectile(controller As PlayerWeaponController, effect As PlayerProjectileEffectSO)
+  overload: Global.PlayerProjectile.InitialiseProjectile*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine.LayerMask
+  commentId: T:UnityEngine.LayerMask
+  parent: UnityEngine
+  isExternal: true
+  name: LayerMask
+  nameWithType: LayerMask
+  fullName: UnityEngine.LayerMask
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: Global.PlayerProjectile.InitialiseProjectile*
+  commentId: Overload:Global.PlayerProjectile.InitialiseProjectile
+  name: InitialiseProjectile
+  nameWithType: PlayerProjectile.InitialiseProjectile
+  fullName: PlayerProjectile.InitialiseProjectile
+- uid: Global.PlayerWeaponController
+  commentId: T:Global.PlayerWeaponController
+  name: PlayerWeaponController
+  nameWithType: PlayerWeaponController
+  fullName: PlayerWeaponController
+- uid: Global.PlayerProjectileEffectSO
+  commentId: T:Global.PlayerProjectileEffectSO
+  name: PlayerProjectileEffectSO
+  nameWithType: PlayerProjectileEffectSO
+  fullName: PlayerProjectileEffectSO

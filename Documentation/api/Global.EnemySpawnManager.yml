@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.EnemySpawnManager
+  commentId: T:Global.EnemySpawnManager
+  id: EnemySpawnManager
+  parent: Global
+  children:
+  - Global.EnemySpawnManager.currentWave
+  - Global.EnemySpawnManager.playerExit
+  - Global.EnemySpawnManager.waves
+  langs:
+  - csharp
+  - vb
+  name: EnemySpawnManager
+  nameWithType: EnemySpawnManager
+  fullName: EnemySpawnManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: EnemySpawnManager
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class EnemySpawnManager : MonoBehaviour'
+    content.vb: Public Class EnemySpawnManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.EnemySpawnManager.waves
+  commentId: F:Global.EnemySpawnManager.waves
+  id: waves
+  parent: Global.EnemySpawnManager
+  langs:
+  - csharp
+  - vb
+  name: waves
+  nameWithType: EnemySpawnManager.waves
+  fullName: EnemySpawnManager.waves
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: waves
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: >-
+      [Reorderable]
+
+      public ListOfEnemySpawnWaves waves
+    return:
+      type: Global.ListOfEnemySpawnWaves
+    content.vb: >-
+      <Reorderable>
+
+      Public waves As ListOfEnemySpawnWaves
+  attributes:
+  - type: Malee.List.ReorderableAttribute
+    ctor: Malee.List.ReorderableAttribute.#ctor
+    arguments: []
+- uid: Global.EnemySpawnManager.currentWave
+  commentId: F:Global.EnemySpawnManager.currentWave
+  id: currentWave
+  parent: Global.EnemySpawnManager
+  langs:
+  - csharp
+  - vb
+  name: currentWave
+  nameWithType: EnemySpawnManager.currentWave
+  fullName: EnemySpawnManager.currentWave
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: currentWave
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float currentWave
+    return:
+      type: System.Single
+    content.vb: Public currentWave As Single
+- uid: Global.EnemySpawnManager.playerExit
+  commentId: F:Global.EnemySpawnManager.playerExit
+  id: playerExit
+  parent: Global.EnemySpawnManager
+  langs:
+  - csharp
+  - vb
+  name: playerExit
+  nameWithType: EnemySpawnManager.playerExit
+  fullName: EnemySpawnManager.playerExit
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/EnemySpawnManager.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: playerExit
+    path: ../Assets/Scripts/Gameplay/EnemySpawnManager.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Exit playerExit
+    return:
+      type: Global.Exit
+    content.vb: Public playerExit As [Exit]
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Global.ListOfEnemySpawnWaves
+  commentId: T:Global.ListOfEnemySpawnWaves
+  name: ListOfEnemySpawnWaves
+  nameWithType: ListOfEnemySpawnWaves
+  fullName: ListOfEnemySpawnWaves
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Global.Exit
+  commentId: T:Global.Exit
+  name: Exit
+  nameWithType: Exit
+  fullName: Exit

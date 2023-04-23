@@ -1,0 +1,311 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.HitMarker
+  commentId: T:Global.HitMarker
+  id: HitMarker
+  parent: Global
+  children:
+  - Global.HitMarker.damage
+  - Global.HitMarker.OnObjectSpawn
+  - Global.HitMarker.rb
+  - Global.HitMarker.rotHandler
+  - Global.HitMarker.text
+  - Global.HitMarker.text2
+  langs:
+  - csharp
+  - vb
+  name: HitMarker
+  nameWithType: HitMarker
+  fullName: HitMarker
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/HitMarker.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: HitMarker
+    path: ../Assets/Scripts/PROTOTYPE/HitMarker.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: 'public class HitMarker : MonoBehaviour'
+    content.vb: Public Class HitMarker Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: Global.HitMarker.damage
+  commentId: F:Global.HitMarker.damage
+  id: damage
+  parent: Global.HitMarker
+  langs:
+  - csharp
+  - vb
+  name: damage
+  nameWithType: HitMarker.damage
+  fullName: HitMarker.damage
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/HitMarker.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: damage
+    path: ../Assets/Scripts/PROTOTYPE/HitMarker.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public float damage
+    return:
+      type: System.Single
+    content.vb: Public damage As Single
+- uid: Global.HitMarker.text
+  commentId: F:Global.HitMarker.text
+  id: text
+  parent: Global.HitMarker
+  langs:
+  - csharp
+  - vb
+  name: text
+  nameWithType: HitMarker.text
+  fullName: HitMarker.text
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/HitMarker.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: text
+    path: ../Assets/Scripts/PROTOTYPE/HitMarker.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Text text
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public text As Text
+- uid: Global.HitMarker.text2
+  commentId: F:Global.HitMarker.text2
+  id: text2
+  parent: Global.HitMarker
+  langs:
+  - csharp
+  - vb
+  name: text2
+  nameWithType: HitMarker.text2
+  fullName: HitMarker.text2
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/HitMarker.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: text2
+    path: ../Assets/Scripts/PROTOTYPE/HitMarker.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Text text2
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public text2 As Text
+- uid: Global.HitMarker.rotHandler
+  commentId: F:Global.HitMarker.rotHandler
+  id: rotHandler
+  parent: Global.HitMarker
+  langs:
+  - csharp
+  - vb
+  name: rotHandler
+  nameWithType: HitMarker.rotHandler
+  fullName: HitMarker.rotHandler
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/HitMarker.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: rotHandler
+    path: ../Assets/Scripts/PROTOTYPE/HitMarker.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Transform rotHandler
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public rotHandler As Transform
+- uid: Global.HitMarker.rb
+  commentId: F:Global.HitMarker.rb
+  id: rb
+  parent: Global.HitMarker
+  langs:
+  - csharp
+  - vb
+  name: rb
+  nameWithType: HitMarker.rb
+  fullName: HitMarker.rb
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/HitMarker.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: rb
+    path: ../Assets/Scripts/PROTOTYPE/HitMarker.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public Rigidbody rb
+    return:
+      type: UnityEngine.Rigidbody
+    content.vb: Public rb As Rigidbody
+- uid: Global.HitMarker.OnObjectSpawn
+  commentId: M:Global.HitMarker.OnObjectSpawn
+  id: OnObjectSpawn
+  parent: Global.HitMarker
+  langs:
+  - csharp
+  - vb
+  name: OnObjectSpawn()
+  nameWithType: HitMarker.OnObjectSpawn()
+  fullName: HitMarker.OnObjectSpawn()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/PROTOTYPE/HitMarker.cs
+      branch: main
+      repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
+    id: OnObjectSpawn
+    path: ../Assets/Scripts/PROTOTYPE/HitMarker.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Global
+  syntax:
+    content: public void OnObjectSpawn()
+    content.vb: Public Sub OnObjectSpawn()
+  overload: Global.HitMarker.OnObjectSpawn*
+references:
+- uid: Global
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine.Rigidbody
+  commentId: T:UnityEngine.Rigidbody
+  parent: UnityEngine
+  isExternal: true
+  name: Rigidbody
+  nameWithType: Rigidbody
+  fullName: UnityEngine.Rigidbody
+- uid: Global.HitMarker.OnObjectSpawn*
+  commentId: Overload:Global.HitMarker.OnObjectSpawn
+  name: OnObjectSpawn
+  nameWithType: HitMarker.OnObjectSpawn
+  fullName: HitMarker.OnObjectSpawn

@@ -46,22 +46,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
     array:
-    - name: 
+    - name: FirstWave
+      waveInitialSpawnDelay: 0.5
+      waveCompleteDelay: 0
+      nextWaveSpawnTrigger: {fileID: 0}
+      mustKillAllEnemiesToCompleteWave: 1
       spawnRadius: 10
       enemiesToSpawn:
       - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
       - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
       currentEnemies: 0
-      waveComplete: 0
-    - name: BIGGERWAVE
+    - name: SecondWave
+      waveInitialSpawnDelay: 0.5
+      waveCompleteDelay: 0
+      nextWaveSpawnTrigger: {fileID: 0}
+      mustKillAllEnemiesToCompleteWave: 1
       spawnRadius: 10
       enemiesToSpawn:
       - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
       - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
       - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
       currentEnemies: 0
-      waveComplete: 0
+    - name: ThirdWave
+      waveInitialSpawnDelay: 0.5
+      waveCompleteDelay: 0
+      nextWaveSpawnTrigger: {fileID: 0}
+      mustKillAllEnemiesToCompleteWave: 1
+      spawnRadius: 10
+      enemiesToSpawn:
+      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      currentEnemies: 0
   currentWave: 0
-  spawnRadius: 10
   playerExit: {fileID: 0}
   _onSceneReady: {fileID: 11400000, guid: 8e43b1aa16e3e1640ad837326d4c8ab9, type: 2}
