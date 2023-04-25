@@ -5,25 +5,15 @@ using Player;
 
 public class Trap : MonoBehaviour
 {
-    public float damage = 25.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int damage = 25;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Take Damage From Trap");
             PlayerCharacter playerCharacter = other.gameObject.GetComponent<PlayerCharacter>();
-            playerCharacter.takeDamage(damage);
+            playerCharacter.TakeDamage(damage);
         }
     }
 

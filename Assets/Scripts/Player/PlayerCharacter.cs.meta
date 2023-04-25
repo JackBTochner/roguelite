@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1fd030a2997aea5418d97aff25b0b961
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _healthConfigSO: {fileID: 11400000, guid: c8c4a15e4ce16fd4ab67d704da812939, type: 2}
+  - _currentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
+  - playerGFX: {instanceID: 0}
+  - playerDigGFX: {instanceID: 0}
+  - playerDigAttack: {instanceID: 0}
+  - _deathEvent: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

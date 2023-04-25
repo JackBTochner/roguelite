@@ -24,6 +24,8 @@ public class RunManager : MonoBehaviour
 
     public LoadEventChannelSO loadLocation = default;
 
+    public VoidEventChannelSO returnToHub = default;
+
     private void OnEnable()
     {
         runManagerAnchor.Provide(this);
@@ -57,10 +59,12 @@ public class RunManager : MonoBehaviour
         StartCoroutine(LoadNextSceneAsync());
         ClearCurrentRun();
     }*/
+    
     public void ReturnToHub()
     {
         ClearCurrentRun();
         loadLocation.RaiseEvent(hubSceneSO, false, false);
+        returnToHub.RaiseEvent();
     }
 
     public void StartNewRun()

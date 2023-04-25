@@ -20,7 +20,7 @@ public class AttackObject : MonoBehaviour
 
     public Hittable hittable;
     public PlayerCharacter playerChar;
-    public ObjectPooler objectPooler;
+    //public ObjectPooler objectPooler;
 
     public GameObject hitMarker;
     public GameObject critMarker;

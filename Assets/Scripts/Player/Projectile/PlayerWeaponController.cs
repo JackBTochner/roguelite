@@ -15,6 +15,7 @@ public class PlayerWeaponController : MonoBehaviour
     public int currentMagazineAmount = 8;
 
     public List<PlayerProjectileEffectSO> effectTemplates = new List<PlayerProjectileEffectSO>();
+
     public List<PlayerProjectileEffectSO> effects = new List<PlayerProjectileEffectSO>();
 
     public Transform muzzle;
@@ -36,12 +37,17 @@ public class PlayerWeaponController : MonoBehaviour
     private void OnDisable()
     {
         inputReader.OnAttack2Performed -= TryAttack;
+        DestroyEffects();
     }
 
-    
-    private void Awake()
+    private void DestroyEffects()
+    { 
+
+    }
+
+    private void Start()
     {
-           
+
     }
 
     void Update()
@@ -97,7 +103,6 @@ public class PlayerWeaponController : MonoBehaviour
 
     public Vector3 GetShotDirectionWithinSpread(Transform origin)
     {
-        Debug.Log(origin.gameObject.name);
         float spreadAngleRatio = spreadAngle / 180f;
         Vector3 spreadWorldDirection = Vector3.Slerp(origin.forward, Random.insideUnitSphere, spreadAngleRatio);
         return spreadWorldDirection;

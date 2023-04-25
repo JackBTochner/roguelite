@@ -11,7 +11,7 @@ public class Hittable : MonoBehaviour
 
     public CameraShake camShake;
 
-    public ObjectPooler objectPooler;
+    // public ObjectPooler objectPooler;
 
     public int poisonDamage;
 
@@ -22,7 +22,7 @@ public class Hittable : MonoBehaviour
     virtual public void Start()
     {
   //      playerChar = GameObject.FindWithTag("Player").GetComponent<PlayerCharacter>();
-        objectPooler = ObjectPooler.Instance;
+        // objectPooler = ObjectPooler.Instance;
         camShake = Camera.main.gameObject.GetComponent<CameraShake>();
     }
 

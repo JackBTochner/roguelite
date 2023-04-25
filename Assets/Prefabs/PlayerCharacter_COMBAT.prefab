@@ -180,7 +180,6 @@ GameObject:
   - component: {fileID: 248407811704461207}
   - component: {fileID: 248407811704461206}
   - component: {fileID: 248407811704461205}
-  - component: {fileID: 3358802077836176017}
   m_Layer: 3
   m_Name: PlayerCharacter_COMBAT
   m_TagString: Player
@@ -267,12 +266,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd030a2997aea5418d97aff25b0b961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialHealth_DEBUG: 0
+  maxHealth_DEBUG: 0
+  currentHealth_DEBUG: 0
+  _currentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
+  _deathDelay: 0.5
   playerGFX: {fileID: 4093581273836692511}
   playerDigGFX: {fileID: 673654281541197107}
   playerDigAttack: {fileID: 8061398196671414934}
   digFreezeTime: 0.2
-  maxHealth: 100
-  currentHealth: 0
+  _deathEvent: {fileID: 0}
+  _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
+    type: 2}
 --- !u!114 &248407811704461206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,27 +311,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!135 &3358802077836176017
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723506523967855882}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &1723506524451289130
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +478,7 @@ MonoBehaviour:
   spreadAngle: 0
   magazineSize: 8
   currentMagazineAmount: 8
+  effectTemplates: []
   effects:
   - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
   - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
@@ -644,7 +629,6 @@ MonoBehaviour:
   knockback: 1000
   hittable: {fileID: 0}
   playerChar: {fileID: 248407811704461207}
-  objectPooler: {fileID: 0}
   hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
@@ -755,7 +739,6 @@ MonoBehaviour:
   knockback: 1500
   hittable: {fileID: 0}
   playerChar: {fileID: 248407811704461207}
-  objectPooler: {fileID: 0}
   hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,

@@ -148,11 +148,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3396965877584387918}
+  - component: {fileID: 2366832292239458743}
   - component: {fileID: 3396965877584387916}
   - component: {fileID: 3396965877584387917}
   - component: {fileID: 8827232853832920793}
   - component: {fileID: 2411346288805919270}
-  - component: {fileID: 4304834229037290962}
   - component: {fileID: 3153501817403051458}
   - component: {fileID: 1127366651219219520}
   m_Layer: 0
@@ -179,6 +179,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2366832292239458743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3396965877584387919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd030a2997aea5418d97aff25b0b961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialHealth_DEBUG: 0
+  maxHealth_DEBUG: 0
+  currentHealth_DEBUG: 0
+  _currentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
+  _deathDelay: 0.5
+  playerGFX: {fileID: 0}
+  playerDigGFX: {fileID: 0}
+  playerDigAttack: {fileID: 0}
+  digFreezeTime: 0
+  _deathEvent: {fileID: 0}
+  _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
+    type: 2}
 --- !u!143 &3396965877584387916
 CharacterController:
   m_ObjectHideFlags: 0
@@ -258,24 +282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnim: {fileID: 0}
---- !u!114 &4304834229037290962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3396965877584387919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fd030a2997aea5418d97aff25b0b961, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerGFX: {fileID: 0}
-  playerDigGFX: {fileID: 0}
-  playerDigAttack: {fileID: 0}
-  digFreezeTime: 0
-  maxHealth: 100
-  currentHealth: 0
 --- !u!114 &3153501817403051458
 MonoBehaviour:
   m_ObjectHideFlags: 0

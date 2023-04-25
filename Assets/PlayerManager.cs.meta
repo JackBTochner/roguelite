@@ -3,7 +3,14 @@ guid: fc5e0345df68b044b8cd0bbd8867e497
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - CurrentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
+  - _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
+      type: 2}
+  - _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936,
+      type: 2}
+  - _onSceneReady: {fileID: 11400000, guid: 8e43b1aa16e3e1640ad837326d4c8ab9, type: 2}
+  - _onReturnToHub: {fileID: 11400000, guid: 9f9f1ddb1f8cc2e459decbed3ba6f9cf, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

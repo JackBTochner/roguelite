@@ -5,7 +5,7 @@ using Player;
 
 public class TramDeltDamage : MonoBehaviour
 {
-    public float damage = 50.0f;
+    public int damage = 50;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class TramDeltDamage : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerCharacter playerCharacter = other.gameObject.GetComponent<PlayerCharacter>();
-            playerCharacter.takeDamage(damage);
+            playerCharacter.TakeDamage(damage);
         }
     }
 }
