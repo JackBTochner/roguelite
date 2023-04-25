@@ -380,6 +380,7 @@
   "Global.PlayerBufferPoint.playerBuffer": "Global.PlayerBufferPoint.yml",
   "Global.PlayerBufferPoint.showDebug": "Global.PlayerBufferPoint.yml",
   "Global.PlayerExit": "Global.PlayerExit.yml",
+  "Global.PlayerManager": "Global.PlayerManager.yml",
   "Global.PlayerProjectile": "Global.PlayerProjectile.yml",
   "Global.PlayerProjectile.critChance": "Global.PlayerProjectile.yml",
   "Global.PlayerProjectile.critMarker": "Global.PlayerProjectile.yml",

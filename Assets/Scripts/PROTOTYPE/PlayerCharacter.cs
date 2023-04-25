@@ -55,7 +55,7 @@ namespace Player
             if (nextHealth <= 0)
             {
                 currentHealth = 0;
-                playerDie();
+                PlayerDie();
             }
             else
             {
@@ -65,9 +65,11 @@ namespace Player
             Debug.Log(currentHealth);
         }
 
-        public void playerDie()
+        public void PlayerDie()
         {
             Debug.Log("Player dead");
+            // Maybe create a listener and invoke here.
+            // RunManager.ReturnToHub
         }
     }
 }

@@ -110,6 +110,8 @@
     name: PlayerBufferPoint
   - uid: Global.PlayerExit
     name: PlayerExit
+  - uid: Global.PlayerManager
+    name: PlayerManager
   - uid: Global.PlayerProjectile
     name: PlayerProjectile
   - uid: Global.PlayerProjectileEffectDefaultSO

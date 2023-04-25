@@ -57,6 +57,7 @@ items:
   - Global.PersistentManagerSceneSO
   - Global.PlayerBufferPoint
   - Global.PlayerExit
+  - Global.PlayerManager
   - Global.PlayerProjectile
   - Global.PlayerProjectileEffectDefaultSO
   - Global.PlayerProjectileEffectSO
@@ -542,6 +543,11 @@ references:
   name: PlayerWeaponController
   nameWithType: PlayerWeaponController
   fullName: PlayerWeaponController
+- uid: Global.PlayerManager
+  commentId: T:Global.PlayerManager
+  name: PlayerManager
+  nameWithType: PlayerManager
+  fullName: PlayerManager
 - uid: Global.TransitionChannelSO
   commentId: T:Global.TransitionChannelSO
   name: TransitionChannelSO
