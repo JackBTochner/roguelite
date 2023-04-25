@@ -672,6 +672,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerManager.html",
+          "hash": "LzBnOlEczzJtmCupEWepQXxH857OINv4F/kGZAL5L0E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.PlayerProjectile.yml",
       "output": {
         ".html": {
@@ -1048,7 +1060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.html",
-          "hash": "Kw5tvxHICCMkBj1VmMkNedW6gPJ181a38TAMeetiNFw="
+          "hash": "x3JtYR8HMnjdnRhqoxAYJ+Yzd9yOTAwptaa8ZY+4St4="
         }
       },
       "is_incremental": false,
@@ -1060,7 +1072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "mgGPLaIDmLUvkXXz7Jgdeup7HOQaT4mM4rV88/Tm1Jc="
+          "hash": "bCsVcIvtnyP3sG4bnMMYMAb94F5xh+sKh9zl8WXeqck="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1084,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "EtQWnnJMsKEV4L7u848f3wc/3gWq/W5asutlx/Bk0h0="
+          "hash": "AupwuHHktjhwhsLx5zqo5OTXTdbegPeVotyDKeXNH5A="
         }
       },
       "is_incremental": false,
@@ -1084,7 +1096,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/SpawningEnemies.html",
-          "hash": "RQ5nos+7ANeAGqcY8J9p9reuvZ7jTVwsakvsoEXg2NQ="
+          "hash": "FqW/XGRs2cW8xcmYoW44TSWf6Qsck+KFIyDoz08WEug="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1108,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/documentation.html",
-          "hash": "y5C8BmJ1kKcgYm1388boRvHeeMq4JPdlvxVkhpyEC5U="
+          "hash": "aUYcvzPhguV4wyknhxo/EO0eN3vR2aR3UddqZoNXBjE="
         }
       },
       "is_incremental": false,
@@ -1108,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/overview.html",
-          "hash": "UoNeJKuNiYX5X+/HBg3sNqYy++1coiwHtoO2T4NEghI="
+          "hash": "fMFlV2AmXIiGUHnDLKjNkS4xBgXunBYhfQ97h7QF66M="
         }
       },
       "is_incremental": false,
@@ -1214,7 +1226,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 86,
+          "total_file_count": 87,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

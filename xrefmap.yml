@@ -3470,6 +3470,12 @@ references:
   commentId: T:Global.PlayerExit
   fullName: PlayerExit
   nameWithType: PlayerExit
+- uid: Global.PlayerManager
+  name: PlayerManager
+  href: api/Global.PlayerManager.html
+  commentId: T:Global.PlayerManager
+  fullName: PlayerManager
+  nameWithType: PlayerManager
 - uid: Global.PlayerProjectile
   name: PlayerProjectile
   href: api/Global.PlayerProjectile.html
