@@ -18,6 +18,7 @@ public class RunManager : MonoBehaviour
 
     public Exit playerExit;
 
+    [Header("Broadcasting on")]
     public RunManagerAnchor runManagerAnchor;
 
     public GameSceneSO hubSceneSO = default;
@@ -25,6 +26,12 @@ public class RunManager : MonoBehaviour
     public LoadEventChannelSO loadLocation = default;
 
     public VoidEventChannelSO returnToHub = default;
+
+    public VoidEventChannelSO startRun = default;
+
+    // [Header("Listening on")]
+    // Have a set of all enemies
+    // Have a set of all player projectile receivers 
 
     private void OnEnable()
     {
@@ -72,6 +79,7 @@ public class RunManager : MonoBehaviour
         ClearCurrentRun();
         mapManager.GenerateNewMap();
         Debug.Log("StartingNewRun");
+        startRun.RaiseEvent();
     }
 
     private void ClearCurrentRun()

@@ -8,7 +8,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
     public int projectileCount = 0;
     public GameObject pickup;
 
-    public List<PlayerProjectileEffectSO> effectSOs = new List<PlayerProjectileEffectSO>();
+    public List<ProjectileEffectSO> effectSOs = new List<ProjectileEffectSO>();
     
     public void Start()
     {
@@ -17,7 +17,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
             enemy.OnEnemyDied.AddListener(DropProjectiles);
     }
 
-    public void AddProjectile(PlayerProjectileEffectSO projectileEffect)
+    public void AddProjectile(ProjectileEffectSO projectileEffect)
     {
         projectileCount++;
         effectSOs.Add(projectileEffect);

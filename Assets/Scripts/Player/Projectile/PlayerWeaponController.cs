@@ -14,9 +14,10 @@ public class PlayerWeaponController : MonoBehaviour
     public int magazineSize = 8;
     public int currentMagazineAmount = 8;
 
-    public ProjectileEffectListSO effectTemplates = default;
+    public ProjectileEffectSlots effectTemplate = default;
     // public List<PlayerProjectileEffectSO> effectTemplates = new List<PlayerProjectileEffectSO>();
-    public List<PlayerProjectileEffectSO> effectInstances = new List<PlayerProjectileEffectSO>();
+    [SerializeField]
+    private List<ProjectileEffectSO> effectInstances = new List<ProjectileEffectSO>();
 
     public Transform muzzle;
     public ParticleSystem muzzleFlash;
@@ -32,25 +33,32 @@ public class PlayerWeaponController : MonoBehaviour
     private void OnEnable()
     {
         inputReader.OnAttack2Performed += TryAttack;
+        effectTemplate.OnSlotsUpdated += AssignEffectInstances;
     }
 
     private void OnDisable()
     {
         inputReader.OnAttack2Performed -= TryAttack;
-        DestroyEffectInstances();
-    }
-
-    private void DestroyEffectInstances()
-    { 
-
+        effectTemplate.OnSlotsUpdated -= AssignEffectInstances;
     }
 
     private void Start()
     {
-
+        AssignEffectInstances(effectTemplate.Effects);
     }
 
-    void Update()
+// TODO: Make sure to find a way to garbage collect cleared scriptable object instances.
+    private void AssignEffectInstances(List<ProjectileEffectSO> effectTemplates)
+    {
+        effectInstances.Clear();
+        foreach (var effect in effectTemplates)
+        {
+            string effectTemplateName = effect.GetType().ToString();
+            effectInstances.Add((ProjectileEffectSO)ScriptableObject.CreateInstance(effectTemplateName));
+        }
+    }
+
+    private void Update()
     {
         if (Time.deltaTime > 0)
         {

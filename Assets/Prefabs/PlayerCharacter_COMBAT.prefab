@@ -480,7 +480,7 @@ MonoBehaviour:
   spreadAngle: 0
   magazineSize: 8
   currentMagazineAmount: 8
-  effectTemplates: {fileID: 0}
+  effectTemplate: {fileID: 11400000, guid: 74de9591fd5d3894fb6002d02832e873, type: 2}
   effectInstances:
   - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
   - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}

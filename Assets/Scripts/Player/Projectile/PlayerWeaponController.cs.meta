@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - projectilePrefab: {instanceID: 0}
+  - effectTemplate: {fileID: 11400000, guid: 74de9591fd5d3894fb6002d02832e873, type: 2}
   - muzzle: {instanceID: 0}
   - muzzleFlash: {instanceID: 0}
   - inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}

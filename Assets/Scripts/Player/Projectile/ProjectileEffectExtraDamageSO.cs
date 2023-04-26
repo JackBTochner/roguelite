@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "ExtraDamageEffect", menuName = "Player/ProjectileEffect/ExtraDamageEffect")]
-public class ProjectileEffectExtraDamageSO : PlayerProjectileEffectSO
+public class ProjectileEffectExtraDamageSO : ProjectileEffectSO
 {
     public float extraDamage = 5f;
     Hittable hittable = null;

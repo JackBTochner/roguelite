@@ -11,7 +11,7 @@ public class BoolEventChannelSO : DescriptionBaseSO
 {
 	public event UnityAction<bool> OnEventRaised;
 
-	public void RaiseEvent(bool value)
+    public void RaiseEvent(bool value)
 	{
 		if (OnEventRaised != null)
 			OnEventRaised.Invoke(value);

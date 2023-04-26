@@ -5,7 +5,7 @@ using UnityEngine;
 // TODO: Derive from AttackObject.
 public class PlayerProjectile : MonoBehaviour
 {
-    PlayerProjectileEffectSO projectileEffect;
+    ProjectileEffectSO projectileEffect;
 
     public float radius = 0.5f;
 
@@ -61,7 +61,7 @@ public class PlayerProjectile : MonoBehaviour
 
     private float timeSpawned = Mathf.NegativeInfinity;
 
-    public void InitialiseProjectile(PlayerWeaponController controller, PlayerProjectileEffectSO effect)
+    public void InitialiseProjectile(PlayerWeaponController controller, ProjectileEffectSO effect)
     {
         instigator = controller.gameObject;
         initialPosition = transform.position;
