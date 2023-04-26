@@ -13,6 +13,8 @@ namespace Player
 
         [SerializeField]
         private float playerSpeed = 5f;
+        [SerializeField]
+        private float playerEyeHeight = 0.75f;
 
         [SerializeField]
         private float gamepadDeadzone = 0.01f;
@@ -127,7 +129,7 @@ namespace Player
         private void MouseLook()
         {
             Ray ray = Camera.main.ScreenPointToRay(inputReader.MousePosition);
-            Plane xzPlane = new Plane(Vector3.up, Vector3.zero);
+            Plane xzPlane = new Plane(Vector3.up, new Vector3(0, transform.position.y + playerEyeHeight, 0));
             float rayDistance;
 
             if(xzPlane.Raycast(ray, out rayDistance))

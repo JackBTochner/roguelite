@@ -10,6 +10,7 @@ TagManager:
   - Dirt
   - RunManager
   - Trap
+  - ProjectileLauncher
   layers:
   - Default
   - TransparentFX

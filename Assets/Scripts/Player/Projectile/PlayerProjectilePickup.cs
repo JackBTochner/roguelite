@@ -16,14 +16,14 @@ public class PlayerProjectilePickup : MonoBehaviour
     {
         if (Time.time > timeSpawned + maxLifeTime)
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            AddToMagAndDestroy(player);
+            GameObject Launcher = GameObject.FindGameObjectWithTag("ProjectileLauncher");
+            AddToMagAndDestroy(Launcher);
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "ProjectileLauncher")
         {
             AddToMagAndDestroy(other.gameObject);
         }
@@ -32,7 +32,7 @@ public class PlayerProjectilePickup : MonoBehaviour
     void AddToMagAndDestroy(GameObject player)
     { 
         if (player)
-        { 
+        {
             PlayerWeaponController playerWeaponController = player.GetComponentInChildren<PlayerWeaponController>();
             playerWeaponController.AddToCurrentMagazine(1);
         }

@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Player;
 
-namespace Player
-{
-    public class PlayerDig : MonoBehaviour
+
+public class PlayerDig : MonoBehaviour
     {
         public LayerMask digIgnoreLayerMask = default;
 
@@ -94,5 +94,4 @@ namespace Player
                 Debug.Log("Can't Dig this!");
             }
         }
-    }
 }

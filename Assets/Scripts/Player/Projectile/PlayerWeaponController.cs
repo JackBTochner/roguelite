@@ -14,9 +14,9 @@ public class PlayerWeaponController : MonoBehaviour
     public int magazineSize = 8;
     public int currentMagazineAmount = 8;
 
-    public List<PlayerProjectileEffectSO> effectTemplates = new List<PlayerProjectileEffectSO>();
-
-    public List<PlayerProjectileEffectSO> effects = new List<PlayerProjectileEffectSO>();
+    public ProjectileEffectListSO effectTemplates = default;
+    // public List<PlayerProjectileEffectSO> effectTemplates = new List<PlayerProjectileEffectSO>();
+    public List<PlayerProjectileEffectSO> effectInstances = new List<PlayerProjectileEffectSO>();
 
     public Transform muzzle;
     public ParticleSystem muzzleFlash;
@@ -37,10 +37,10 @@ public class PlayerWeaponController : MonoBehaviour
     private void OnDisable()
     {
         inputReader.OnAttack2Performed -= TryAttack;
-        DestroyEffects();
+        DestroyEffectInstances();
     }
 
-    private void DestroyEffects()
+    private void DestroyEffectInstances()
     { 
 
     }
@@ -78,8 +78,8 @@ public class PlayerWeaponController : MonoBehaviour
             {
                 Vector3 shotDirection = GetShotDirectionWithinSpread(muzzle);
                 GameObject newProjectile = Instantiate(projectilePrefab, muzzle.position, Quaternion.LookRotation(shotDirection));
-                Debug.Log(effects[currentMagazineAmount]);
-                newProjectile.GetComponent<PlayerProjectile>().InitialiseProjectile(this, effects[currentMagazineAmount]);
+                Debug.Log(effectInstances[currentMagazineAmount]);
+                newProjectile.GetComponent<PlayerProjectile>().InitialiseProjectile(this, effectInstances[currentMagazineAmount]);
             }
 
             if (muzzleFlash != null)

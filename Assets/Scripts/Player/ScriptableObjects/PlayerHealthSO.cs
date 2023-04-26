@@ -2,7 +2,6 @@ using UnityEngine;
 
 /// <summary>
 /// An instance of the health of the player character.
-/// The initial values are usually contained in another SO of type HealthConfigSO.
 /// </summary>
 [CreateAssetMenu(fileName = "PlayersHealth", menuName = "EntityConfig/Player's Health")]
 public class HealthSO : ScriptableObject

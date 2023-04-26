@@ -248,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
   playerSpeed: 5
+  playerEyeHeight: 0.75
   gamepadDeadzone: 0.01
   gamepadRotateSmoothing: 500
   isGamepad: 0
@@ -436,9 +437,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3590575991436919140}
   - component: {fileID: 1179168583726322836}
+  - component: {fileID: 1785347205479445270}
   m_Layer: 3
   m_Name: ProjectileLauncher
-  m_TagString: Untagged
+  m_TagString: ProjectileLauncher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,20 +480,41 @@ MonoBehaviour:
   spreadAngle: 0
   magazineSize: 8
   currentMagazineAmount: 8
-  effectTemplates: []
-  effects:
-  - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
-  - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
-  - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
-  - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
-  - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
-  - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
+  effectTemplates: {fileID: 0}
+  effectInstances:
   - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
-  - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
+  - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
+  - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
+  - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
+  - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
+  - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
+  - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
+  - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
   muzzle: {fileID: 3590575991436919140}
   muzzleFlash: {fileID: 0}
   muzzleWorldVelocity: {x: 0, y: 0, z: 0}
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
+--- !u!135 &1785347205479445270
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079335582967231072}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: -0.1, z: -0.8}
 --- !u!1 &4093581272656194235
 GameObject:
   m_ObjectHideFlags: 0
