@@ -647,10 +647,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908af4587fea5704bac1dfc03bee479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 2
   onlyHitEachObjOnce: 0
-  critChance: 50
-  critMultiplier: 2
+  critChance: 30
+  critMultiplier: 1.5
   ignoreCrit: 0
   knockback: 1000
   hittable: {fileID: 0}

@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fe6af78c3334e8666ed5412a2a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   debugMaterial: {fileID: 2100000, guid: 82e4386f75cea4446bdfaedda15319b7, type: 2}
   groundCollider: {fileID: 0}
   playerBuffer: {fileID: 9193397121107329366}
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fe6af78c3334e8666ed5412a2a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   debugMaterial: {fileID: 2100000, guid: 82e4386f75cea4446bdfaedda15319b7, type: 2}
   groundCollider: {fileID: 0}
   playerBuffer: {fileID: 1710115836056658085}
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fe6af78c3334e8666ed5412a2a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   debugMaterial: {fileID: 2100000, guid: 82e4386f75cea4446bdfaedda15319b7, type: 2}
   groundCollider: {fileID: 0}
   playerBuffer: {fileID: 524362183636846868}
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fe6af78c3334e8666ed5412a2a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   debugMaterial: {fileID: 2100000, guid: 82e4386f75cea4446bdfaedda15319b7, type: 2}
   groundCollider: {fileID: 0}
   playerBuffer: {fileID: 7529322277266129421}
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fe6af78c3334e8666ed5412a2a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   debugMaterial: {fileID: 2100000, guid: 82e4386f75cea4446bdfaedda15319b7, type: 2}
   groundCollider: {fileID: 0}
   playerBuffer: {fileID: 5353666700440976106}
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fe6af78c3334e8666ed5412a2a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   debugMaterial: {fileID: 2100000, guid: 82e4386f75cea4446bdfaedda15319b7, type: 2}
   groundCollider: {fileID: 0}
   playerBuffer: {fileID: 4178310641523243254}
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fe6af78c3334e8666ed5412a2a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   debugMaterial: {fileID: 2100000, guid: 82e4386f75cea4446bdfaedda15319b7, type: 2}
   groundCollider: {fileID: 0}
   playerBuffer: {fileID: 6280490842465686708}
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518fe6af78c3334e8666ed5412a2a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showDebug: 1
+  showDebug: 0
   debugMaterial: {fileID: 2100000, guid: 82e4386f75cea4446bdfaedda15319b7, type: 2}
   groundCollider: {fileID: 0}
   playerBuffer: {fileID: 7022019595606771339}

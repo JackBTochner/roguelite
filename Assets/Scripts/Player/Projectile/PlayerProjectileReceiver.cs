@@ -26,7 +26,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
 
     public void DropProjectiles(BasicEnemy enemy)
     {
-        Debug.Log("DropProjectiles");
+        Debug.Log("DropProjectiles" + projectileCount);
         if (projectileCount > 0)
         {
             for (int i = 0; i < projectileCount; i++)

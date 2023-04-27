@@ -12,15 +12,21 @@ using UnityEngine;
 ]
 public class ProjectileEffectSlots : DescriptionBaseSO
 {
-    public int maxProjectiles = 8;
     [SerializeField]
     private List<ProjectileEffectSO> _effects = new List<ProjectileEffectSO>();
     public List<ProjectileEffectSO> Effects => _effects;
 
     public event UnityAction<List<ProjectileEffectSO>> OnSlotsUpdated;
 
+    [SerializeField]
+    private ProjectileCountSO _projectileCount = default;
+    private VoidEventChannelSO _updateProjectileUI = default;
+
+
     public void UpdateSlots(List<ProjectileEffectSO> value)
 	{
+        if (_updateProjectileUI != null)
+            _updateProjectileUI.RaiseEvent();
 		if (OnSlotsUpdated != null)
 			OnSlotsUpdated.Invoke(value);
 	}
@@ -33,11 +39,12 @@ public class ProjectileEffectSlots : DescriptionBaseSO
 
     public void AddEffect(ProjectileEffectSO effect)
     {
-        if (_effects.Count < maxProjectiles)
-        {
-            _effects.Add(effect);
-            UpdateSlots(_effects);
-        }
+        int nextProjectileIndex = _projectileCount.MaxProjectileCount + 1;
+        ReplaceEffect(effect, nextProjectileIndex);
+        _projectileCount.AddNewProjectiles(1);
+        UpdateSlots(_effects);
+        //_effects.Add(effect);
+        //UpdateSlots(_effects);
     }
 
     public void ReplaceEffect(ProjectileEffectSO effect, int index)

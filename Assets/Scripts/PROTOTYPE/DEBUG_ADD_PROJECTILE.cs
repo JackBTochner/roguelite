@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class DEBUG_ADD_PROJECTILE : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AddProjectileEventChannel _playerGetProjectile = default;
+    [SerializeField] private ReplaceProjectileEventChannel _playerReplaceProjectile = default;
+    [SerializeField] private IntEventChannel _playerRemoveProjectile = default;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private ProjectileEffectSO effectToGive;
+
+    public void AddProjectile()
     {
-        
+        _playerGetProjectile.RaiseEvent(effectToGive);
     }
 }

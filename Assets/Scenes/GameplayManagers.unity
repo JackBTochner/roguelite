@@ -636,10 +636,10 @@ RectTransform:
   m_Father: {fileID: 1284330036}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.0055208337, y: 0.91600007}
-  m_AnchorMax: {x: 0.34847918, y: 0.98600006}
-  m_AnchoredPosition: {x: -0.7999878, y: 0.2999878}
-  m_SizeDelta: {x: 0.00050354004, y: -0.68579865}
+  m_AnchorMin: {x: 0.0055208337, y: 0.77444446}
+  m_AnchorMax: {x: 0.34587502, y: 0.84300005}
+  m_AnchoredPosition: {x: -0.7999878, y: 1}
+  m_SizeDelta: {x: 5.0005035, y: 1.314209}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &348029378
 MonoBehaviour:
@@ -1075,10 +1075,10 @@ RectTransform:
   m_Father: {fileID: 1284330036}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.0055208337, y: 0.84300005}
-  m_AnchorMax: {x: 0.34587502, y: 0.9132223}
-  m_AnchoredPosition: {x: -1, y: -1}
-  m_SizeDelta: {x: -437.3843, y: -0.6858}
+  m_AnchorMin: {x: 0.0055208337, y: 0.6977037}
+  m_AnchorMax: {x: 0.34587502, y: 0.77444446}
+  m_AnchoredPosition: {x: -1, y: -5.300049}
+  m_SizeDelta: {x: -437.3843, y: -7.685791}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &488993585
 MonoBehaviour:
@@ -1740,7 +1740,7 @@ GameObject:
   - component: {fileID: 1284330034}
   - component: {fileID: 1284330033}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2296,7 +2296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1948929123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2393,6 +2393,7 @@ GameObject:
   - component: {fileID: 2009963555}
   - component: {fileID: 2009963554}
   - component: {fileID: 2009963553}
+  - component: {fileID: 2009963556}
   m_Layer: 5
   m_Name: AddProjectile
   m_TagString: Untagged
@@ -2464,7 +2465,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2009963554}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2009963556}
+        m_TargetAssemblyTypeName: DEBUG_ADD_PROJECTILE, Assembly-CSharp
+        m_MethodName: AddProjectile
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2009963554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2503,6 +2516,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009963551}
   m_CullTransparentMesh: 1
+--- !u!114 &2009963556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009963551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0d0f17fc49036843acc6a2995a94cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerGetProjectile: {fileID: 11400000, guid: d8fe95baa7bc4d04e89445acee1f5a11,
+    type: 2}
+  _playerReplaceProjectile: {fileID: 11400000, guid: ce35dc59b332dfb4482bd9f3400e07a1,
+    type: 2}
+  _playerRemoveProjectile: {fileID: 11400000, guid: e379698ec8e26e44aa274308328dee12,
+    type: 2}
+  effectToGive: {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
 --- !u!1 &2072847327
 GameObject:
   m_ObjectHideFlags: 0

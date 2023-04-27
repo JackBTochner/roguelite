@@ -23,3 +23,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
   - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
   - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
+  _projectileCount: {fileID: 11400000, guid: 8f2786a78b1eefd45af030d157879e27, type: 2}

@@ -14,6 +14,10 @@ public class Exit : MonoBehaviour
     public bool locked = false;
     public UnityEvent PlayerEnteredExit = new UnityEvent();
 
+    public Material lockedMat = default;
+    public Material unlockedMat = default;
+    public MeshRenderer lockIndicator = default;
+
     void OnTriggerEnter(Collider other)
     {
         if(!locked && other.tag == "Player")
@@ -39,6 +43,18 @@ public class Exit : MonoBehaviour
         {
             yield return null;
         }
+    }
+
+    public void LockExit()
+    {
+        locked = true;
+        lockIndicator.material = lockedMat;
+    }
+
+    public void UnlockExit()
+    { 
+        locked = false;
+        lockIndicator.material = unlockedMat;
     }
 
     void OnDrawGizmos()

@@ -156,6 +156,18 @@ public class PlayerProjectile : MonoBehaviour
 
     void OnHit(Vector3 point, Vector3 normal, Collider collider)
     {
+        
+        PlayerProjectileReceiver receiver =
+            collider.GetComponent<PlayerProjectileReceiver>();
+        if (receiver)
+        {
+            receiver.AddProjectile(projectileEffect);
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            SpawnPickupAndRemove();
+        }
         Hittable hittable = collider.GetComponent<Hittable>();
         if (hittable)
         {
@@ -197,17 +209,6 @@ public class PlayerProjectile : MonoBehaviour
                     Quaternion.LookRotation(normal));
         }
 
-        PlayerProjectileReceiver receiver =
-            collider.GetComponent<PlayerProjectileReceiver>();
-        if (receiver)
-        {
-            receiver.AddProjectile(projectileEffect);
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            SpawnPickupAndRemove();
-        }
     }
 
     private void SpawnPickupAndRemove()

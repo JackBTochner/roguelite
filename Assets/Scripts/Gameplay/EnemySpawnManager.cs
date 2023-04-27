@@ -67,12 +67,12 @@ public class EnemySpawnManager : MonoBehaviour
 
     private void LockPlayerExit()
     {
-        if (playerExit != null) playerExit.locked = true;
+        if (playerExit != null) playerExit.LockExit();
     }
 
     private void UnlockPlayerExit()
     {
-        if (playerExit != null) playerExit.locked = false;
+        if (playerExit != null) playerExit.UnlockExit();
     }
 }
 

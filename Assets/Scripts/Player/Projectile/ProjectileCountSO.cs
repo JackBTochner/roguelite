@@ -48,8 +48,8 @@ public class ProjectileCountSO : DescriptionBaseSO
 
     public void AddNewProjectiles(int value)
     {
-        SetMaxProjectiles(value);
-        SetCurrentProjectiles(value);
+        SetMaxProjectiles(_maxProjectileCount + value);
+        SetCurrentProjectiles(_currentProjectileCount + value);
     }
 
     public void RestoreProjectileCount()

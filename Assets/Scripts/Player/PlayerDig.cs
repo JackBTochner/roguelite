@@ -24,10 +24,13 @@ public class PlayerDig : MonoBehaviour
         [SerializeField]
         private TransformAnchor _playerTransformAnchor = default;
 
-        private void Awake()
+        private void OnEnable()
         {
             inputReader.OnDigPerformed += AttemptToggleDig;
-
+        }
+        private void OnDisable()
+        {
+            inputReader.OnDigPerformed -= AttemptToggleDig;
         }
 
         private void Update()
