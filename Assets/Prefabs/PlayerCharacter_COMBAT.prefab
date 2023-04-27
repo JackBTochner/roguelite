@@ -276,9 +276,11 @@ MonoBehaviour:
   playerDigGFX: {fileID: 673654281541197107}
   playerDigAttack: {fileID: 8061398196671414934}
   digFreezeTime: 0.2
+  _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
   _deathEvent: {fileID: 0}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
+  _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
 --- !u!114 &248407811704461206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,8 +480,6 @@ MonoBehaviour:
   fireRate: 200
   bulletsPerShot: 1
   spreadAngle: 0
-  magazineSize: 8
-  currentMagazineAmount: 8
   effectTemplate: {fileID: 11400000, guid: 74de9591fd5d3894fb6002d02832e873, type: 2}
   effectInstances:
   - {fileID: 11400000, guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba, type: 2}
@@ -494,6 +494,9 @@ MonoBehaviour:
   muzzleFlash: {fileID: 0}
   muzzleWorldVelocity: {x: 0, y: 0, z: 0}
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
+  _projectileCount: {fileID: 11400000, guid: 8f2786a78b1eefd45af030d157879e27, type: 2}
+  _updateProjectileUI: {fileID: 11400000, guid: 7c371bd7e9f3dfd4280a1796446c5604,
+    type: 2}
 --- !u!135 &1785347205479445270
 SphereCollider:
   m_ObjectHideFlags: 0

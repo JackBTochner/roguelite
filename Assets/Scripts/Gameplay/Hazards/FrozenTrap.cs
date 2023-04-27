@@ -29,20 +29,20 @@ public class FrozenTrap : MonoBehaviour
 
     private void DisablePlayerMovement() // Turn Off
     {
-        playerController.enabled = false;
+        playerController.GetComponent<PlayerMovement>().allowMovement = false;
     }
 
     private void EnablePlayerMovement() // Turn On
     {
-        playerController.enabled = true;
+        playerController.GetComponent<PlayerMovement>().allowMovement = true;
     }
 
     IEnumerator frozen()
     {
+        
         yield return new WaitForSeconds(time);
         // Destroy first, then player can move.
-        Destroy(gameObject);
-        
+        Destroy(gameObject, time);
         EnablePlayerMovement();
     }
 }

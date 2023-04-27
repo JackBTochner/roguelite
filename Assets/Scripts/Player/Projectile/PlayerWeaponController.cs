@@ -10,10 +10,9 @@ public class PlayerWeaponController : MonoBehaviour
     public float fireRate = 200;
     public int bulletsPerShot = 1;
     public float spreadAngle;
-
-    public int magazineSize = 8;
-    public int currentMagazineAmount = 8;
-
+    //public int magazineSize = 8;
+    //public int currentMagazineAmount = 8;
+    
     public ProjectileEffectSlots effectTemplate = default;
     // public List<PlayerProjectileEffectSO> effectTemplates = new List<PlayerProjectileEffectSO>();
     [SerializeField]
@@ -29,6 +28,9 @@ public class PlayerWeaponController : MonoBehaviour
 
     [SerializeField] private InputReader inputReader = default;
 
+    [Header("Broadcasting On")]
+    [SerializeField] private ProjectileCountSO _projectileCount;
+    [SerializeField] private VoidEventChannelSO _updateProjectileUI = default;
 
     private void OnEnable()
     {
@@ -45,6 +47,8 @@ public class PlayerWeaponController : MonoBehaviour
     private void Start()
     {
         AssignEffectInstances(effectTemplate.Effects);
+        if (_updateProjectileUI != null)
+                _updateProjectileUI.RaiseEvent();
     }
 
 // TODO: Make sure to find a way to garbage collect cleared scriptable object instances.
@@ -67,6 +71,13 @@ public class PlayerWeaponController : MonoBehaviour
         }
     }
 
+    public void AddNewProjectile()
+    {
+        _projectileCount.AddNewProjectiles(1);
+        if (_updateProjectileUI != null)
+                _updateProjectileUI.RaiseEvent();
+    }
+
     public void TryAttack()
     {
         FireWeapon();
@@ -74,20 +85,21 @@ public class PlayerWeaponController : MonoBehaviour
 
     public bool FireWeapon()
     {
-        if (currentMagazineAmount <= 0)
+        if (_projectileCount.CurrentProjectileCount <= 0)
         {
             return false;
         }
         if (lastTimeShot + 60 / fireRate < Time.time)
         {
-            currentMagazineAmount -= 1;
-
+            _projectileCount.RemoveCurrentProjectiles(1);
+            if (_updateProjectileUI != null)
+                    _updateProjectileUI.RaiseEvent();
             for (int i = 0; i < bulletsPerShot; i++)
             {
                 Vector3 shotDirection = GetShotDirectionWithinSpread(muzzle);
                 GameObject newProjectile = Instantiate(projectilePrefab, muzzle.position, Quaternion.LookRotation(shotDirection));
-                Debug.Log(effectInstances[currentMagazineAmount]);
-                newProjectile.GetComponent<PlayerProjectile>().InitialiseProjectile(this, effectInstances[currentMagazineAmount]);
+                Debug.Log(effectInstances[_projectileCount.CurrentProjectileCount]);
+                newProjectile.GetComponent<PlayerProjectile>().InitialiseProjectile(this, effectInstances[_projectileCount.CurrentProjectileCount]);
             }
 
             if (muzzleFlash != null)
@@ -103,10 +115,9 @@ public class PlayerWeaponController : MonoBehaviour
 
     public void AddToCurrentMagazine(int count)
     {
-        if (currentMagazineAmount < magazineSize)
-        {
-            currentMagazineAmount += count;
-        }
+        _projectileCount.AddCurrentProjectiles(count);
+        if (_updateProjectileUI != null)
+                _updateProjectileUI.RaiseEvent();
     }
 
     public Vector3 GetShotDirectionWithinSpread(Transform origin)

@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a7bfe3f1045e4140b6597cacf16d784, type: 3}
-  m_Name: PlayerHealth
+  m_Script: {fileID: 11500000, guid: 5c38162b60887b74ca55535a85ea032f, type: 3}
+  m_Name: UIUpdateProjectileCount
   m_EditorClassIdentifier: 
-  _initialHealth: 100
-  _maxHealth: 100
-  _currentHealth: 99
+  _guid: 
+  description: 

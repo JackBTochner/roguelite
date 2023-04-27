@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     public ProjectileEffectSlots ProjectileEffects => _projectileEffects;
 
     public HealthSO CurrentHealthSO = default;
+    public ProjectileCountSO projectileCountSO = default;
 
     [Header("Broadcasting on")]
     [SerializeField]private PlayerManagerAnchor _playerManagerAnchor = default;
@@ -36,6 +38,7 @@ public class PlayerManager : MonoBehaviour
         _playerManagerAnchor.Provide(this);
         _onReturnToHub.OnEventRaised += SetInitialStats;
         _onStartRun.OnEventRaised += SetInitialStats;
+        _onSceneReady.OnEventRaised += OnSceneReady;
         /*
         _playerGetPerk.OnEventRaised += GetPerkEventRaised;
         _playerReplacePerk.OnEventRaised += ReplacePerkEventRaised;
@@ -49,6 +52,7 @@ public class PlayerManager : MonoBehaviour
     {
         _onReturnToHub.OnEventRaised -= SetInitialStats;
         _onStartRun.OnEventRaised -= SetInitialStats;
+        _onSceneReady.OnEventRaised -= OnSceneReady;
         /*
         _playerGetPerk.OnEventRaised -= GetPerkEventRaised;
         _playerReplacePerk.OnEventRaised -= ReplacePerkEventRaised;
@@ -63,6 +67,11 @@ public class PlayerManager : MonoBehaviour
     {
         CurrentHealthSO.SetCurrentHealth(CurrentHealthSO.InitialHealth);
         _projectileEffects.ClearEffects();
+    }
+
+    private void OnSceneReady()
+    { 
+        projectileCountSO.ResetProjectileCount();
     }
 
     private void GetProjectileEventRaised(ProjectileEffectSO newEffect)

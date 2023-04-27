@@ -161,7 +161,8 @@ public class EnemySpawnWave
 
     private Vector3 PickRandomSpawnPoint()
     {
-        return Vector3.zero;
+        //TODO: Replace with spawn on navmesh
+        return new Vector3(Random.Range(-spawnRadius, spawnRadius), 0, Random.Range(-spawnRadius, spawnRadius));
     }
 }
 

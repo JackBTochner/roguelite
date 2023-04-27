@@ -23,15 +23,17 @@ namespace Player
         public float digFreezeTime;
 
         [Header("Broadcasting on")]
+        [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
         [SerializeField] private VoidEventChannelSO _deathEvent = default;
         [Header("Listening on")]
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
+        [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
         private PlayerManager _playerManager;
 
         private void Awake()
         {
-                //if (_updateHealthUI != null)
-                //_updateHealthUI.RaiseEvent();
+            if (_updateHealthUI != null)
+                _updateHealthUI.RaiseEvent();
             Debug.Log("Player Current Health: " + _currentHealthSO.CurrentHealth);
         }
 
@@ -88,7 +90,6 @@ namespace Player
 
         public void TakeDamage(int amount)
         {
-
             float nextHealth = _currentHealthSO.CurrentHealth - amount;
             if (nextHealth <= 0)
             {
@@ -99,17 +100,22 @@ namespace Player
             {
                 _currentHealthSO.InflictDamage(amount);
             }
-            Debug.Log("Player Current Health: " + _currentHealthSO.CurrentHealth);
+            if (_updateHealthUI != null)
+                _updateHealthUI.RaiseEvent();
+            // Debug.Log("Player Current Health: " + _currentHealthSO.CurrentHealth);
         }
 
         IEnumerator PlayerDie(float delay)
         {
+            if (_updateHealthUI != null)
+                _updateHealthUI.RaiseEvent();
             Debug.Log("Player dead");
             // TURN OFF CHARACTER INPUT
             // SHOW DEATH ANIMATION
             yield return new WaitForSeconds(delay);
             // Maybe create a listener and invoke here.
-            // RunManager.ReturnToHub
+            if(_runManagerAnchor != null)
+                _runManagerAnchor.Value.ReturnToHub();
         }
     }
 }

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b7904f9984096ca4298cab6e8cc7ed9b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _playerHealth: {instanceID: 0}
+  - _healthBar: {instanceID: 0}
+  - _healthText: {instanceID: 0}
+  - _UIUpdateNeeded: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
