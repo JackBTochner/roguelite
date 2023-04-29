@@ -32,11 +32,9 @@ Link these pages to and from relevant Trello cards in your team's board, so that
 
 ## Brand Identity
 
-What makes your product unique in terms of its branding?
-What kinds of concepts and emotions do you aim to associate with the brand?
-In this instance the brand is simultaneously the game, the developer and the publisher, who all may convey very particular characteristics that you wish to leverage.
-Present an overview of your target demographic
-Substantiate your claim with reference to government, industry or academically-sourced statistics.
+Kitsune Corner is fully designed and produced in the heart of Melbounre. Therefore, the setting of the game is also fully based in a cyberpunk, synthwave futureistic fantasy version of Melbourne Victoria. Unlike other Melbourne based games, Kitsune Corner aims to intergrate various Melbourne street culture and location within the game. All the levels in the game will be various locations of the Melbourne CBD including famous iconic spaces such as Federation Square, Southbank Walk and Hozier Lane. There will also be less known locations that are still a symbol of Melbourne such as The Block Arcade. According to the UNESCO Institude for Statistics, in 2018 the United States of America accounted for 24% of global cultural creative export. This includes many forms entertainment like Films, video games, music and other media items. This means that various of these contents display American landmarks and locations. Australia is only known for 6.5% of contribution in the creative and cultural industries in 2019. 
+The game will also comprise of characters from different cultural folklore. Melbourne is a very diverse and multicultral city with a significant population of people from different cultural background. In fact, almost half of the population in Melbourne are either born overseas or have at least one parent who was born overseas (Australian Bureau of Statistics 2016 Cenus). Having these different cultural characters will highlight the city's multiculturalism.
+Kitsune Corner aims to impress players with the games take on the cyberpunk aesthetic and its hand drawn 2D illustrations. The game also aims to generate connectivity within Australian players, particularly those who reside in Melbourne and display the identical levels to the locations of Melbourne.
 
 ## Schedule
 
