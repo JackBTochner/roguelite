@@ -12,19 +12,15 @@ Index of pages in the wiki broken down into sub-sections as follows
 
 ## Team
 
-- Writer: Audrey He 103597518
-- Programmer: Ricky Huo 101453511
-- Designer: Ethan Babatsikos 103619218
+- Writer/Producer: Audrey He 103597518
 - Programmer: Peamawat Muenjohn 102326287
+- Programmer: Ricky Huo 101453511
 - Artist 2D/3D: Brittany Holmes 101116966
+- Designer: Ethan Babatsikos 103619218
 
 ## Platforms
 ```
-What delivery platform do you propose (web, mobile, PC, etc) and why?
-Why is your project uniquely suited to this/these platform/s
-Research this component and provide a brief, evidence-based argument to support your platform selection
-```
-Built for PC, playable with standard controller.
+The game will be built for PC to be played on mouse and keyboard, however the controls are designed to easily map and copy onto a controller for players who prefer a hand held experience. Various succesful rouguelikes have been released and made available on PC and the Nintendo Switch. These include The Binding of Isaac, Hades, Risk of Rain 2, Enter The Gungeon. The controls in the game will be programmed onto mouse and keyboard giving players easy and comfortable ergonomic access to use all available abilities without straining their hands. In a research report done by DFC Intelligence, it is found that approximately 48% of all gaming happens on PC. Releasing this game on PC gives access to a wider player base.
 
 ## Machinery
 ```
