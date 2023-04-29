@@ -20,7 +20,11 @@ Index of pages in the wiki broken down into sub-sections as follows
 
 ## Platforms
 
-The game will be built for PC to be played on mouse and keyboard, however the controls are designed to easily map and copy onto a controller for players who prefer a hand held experience. Various succesful rouguelikes have been released and made available on PC and the Nintendo Switch. These include The Binding of Isaac, Hades, Risk of Rain 2, Enter The Gungeon. The controls in the game will be programmed onto mouse and keyboard giving players easy and comfortable ergonomic access to use all available abilities without straining their hands. In a research report done by DFC Intelligence, it is found that approximately 48% of all gaming happens on PC. Releasing this game on PC gives access to a wider player base.
+The game will be built for PC to be played on mouse and keyboard, however the controls are designed to easily map and copy onto a controller for players who prefer a hand held experience.\
+Various successful roguelikes have been released and made available on PC and the Nintendo Switch. These include The Binding of Isaac, Hades, Risk of Rain 2, Enter The Gungeon.\
+The controls in the game will be programmed onto mouse and keyboard giving players easy and comfortable ergonomic access to use all available abilities without straining their hands.
+
+In a research report done by DFC Intelligence, it is found that approximately 48% of all gaming happens on PC. Releasing this game on PC gives access to a wider player base.
 
 ## Machinery
 
@@ -32,9 +36,16 @@ Link these pages to and from relevant Trello cards in your team's board, so that
 
 ## Brand Identity
 
-Kitsune Corner is fully designed and produced in the heart of Melbounre. Therefore, the setting of the game is also fully based in a cyberpunk, synthwave futureistic fantasy version of Melbourne Victoria. Unlike other Melbourne based games, Kitsune Corner aims to intergrate various Melbourne street culture and location within the game. All the levels in the game will be various locations of the Melbourne CBD including famous iconic spaces such as Federation Square, Southbank Walk and Hozier Lane. There will also be less known locations that are still a symbol of Melbourne such as The Block Arcade. According to the UNESCO Institude for Statistics, in 2018 the United States of America accounted for 24% of global cultural creative export. This includes many forms entertainment like Films, video games, music and other media items. This means that various of these contents display American landmarks and locations. Australia is only known for 6.5% of contribution in the creative and cultural industries in 2019. 
-The game will also comprise of characters from different cultural folklore. Melbourne is a very diverse and multicultral city with a significant population of people from different cultural background. In fact, almost half of the population in Melbourne are either born overseas or have at least one parent who was born overseas (Australian Bureau of Statistics 2016 Cenus). Having these different cultural characters will highlight the city's multiculturalism.
+Kitsune Corner is fully designed and produced in the heart of Melbourne. Therefore, the setting of the game is also fully based in a cyberpunk, synthwave futuristic fantasy version of Melbourne Victoria. Unlike other Melbourne based games, Kitsune Corner aims to integrate various Melbourne street culture and location within the game.
+
+All the levels in the game will be various locations of the Melbourne CBD including famous iconic spaces such as Federation Square, Southbank Walk and Hozier Lane. There will also be less known locations that are still a symbol of Melbourne such as The Block Arcade.
+
+According to the UNESCO Institute for Statistics, in 2018 the United States of America accounted for 24% of global cultural creative export. This includes many forms of entertainment like Films, video games, music and other media items. This means that various of these contents display American landmarks and locations. Australia is only known for 6.5% of contribution in the creative and cultural industries in 2019.
+
+The game will also comprise characters from different cultural folklore. Melbourne is a very diverse and multicultural city with a significant population of people from different cultural backgrounds. In fact, almost half of the population in Melbourne are either born overseas or have at least one parent who was born overseas (Australian Bureau of Statistics 2016 Census). Having these different cultural characters will highlight the city's multiculturalism.
+
 Kitsune Corner aims to impress players with the games take on the cyberpunk aesthetic and its hand drawn 2D illustrations. The game also aims to generate connectivity within Australian players, particularly those who reside in Melbourne and display the identical levels to the locations of Melbourne.
+
 
 ## Schedule
 
