@@ -92,7 +92,7 @@ Banshee: Customer \
 Horus: Customer \
 Milton: Customer \
 Aziel: Main enemy/Final boss \
-Herbert: Upgrade keeper \
+Herbert: Upgrade keeper 
 
 Narrative: synopsis / back-story / characters / settings
 Paper design of game-play mechanics
