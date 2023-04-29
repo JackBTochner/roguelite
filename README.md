@@ -45,11 +45,11 @@ During the day, players run a pen shop where NPC customers arrive to purchase wr
 Players also interact with the customer learning around their own stories as the game progresses. The relationship and story you build with the customer may be affected by your choices as well as fulfilling their needs.\
 Building a strong relationship with the customer can benefit the player's combat and stats at night. 
 
-Customers will pay with the in-game world currency known as Modulars. Modular coins can be used to upgrade the shop game-play wise or simply its appearance. To activate night-time, players can close their shop to time-skip to night which generates the roguelike gameplay. The levels are all randomly generated based on locations of Melbourne. There is no set order that the level come and go. 
+Customers will pay with the in-game world currency known as Modulars. Modular coins can be used to upgrade the shop game-play wise or simply its appearance. To activate night-time, players can close their shop to time-skip to night which generates the roguelike gameplay. The levels are all randomly generated based on locations of Melbourne. There is no set order that the level come and go. As the levels are based on Melbourne locations, the traps are also fixated on distinguishable Melbourne attributes such as tram traps. Trams go pass in levels that are applicable and can collide with Kit and the enemies. Collion will result in being damaged and stunned as well as pushed.
 
-(Insert Kit's abilities, mechanics, movesets here)
+Kit has nine abilties in corespondent to her nine-tails. As Kit is a fox, she has the abilities to dig into the ground where dirt is present to avoid enemies and act as a invulnerable ability.
 
-(Insert enemy movement, attacks and abilities here) Enemies will drop items that can be brought back to the shop and used as equipment and ingredients for the pens. For example, blue enemies will drop blue pigmentation that can be used for blue ink. 
+There will be various enemies within the game with unique abilities and movesets. The main form of enemies are known as wisps. Enemies will drop items that can be brought back to the shop and used as equipment and ingredients for the pens. For example, blue enemies will drop blue pigmentation that can be used for blue ink. Kit will also have to battle the final boss who has an upgraded moveset and power level compared to other and previous enemies.
 
 After each level is completed, random drops will occur. This can include Modulars, fish and power-ups. Fish can be used to exchange goods with Hebert the bear, who is a lonely shop keeper. Herbert randomly spawns in between levels and has a small stall where goods can be exchanged given the player has enough fish. Power-ups can also randomly drop which powers up Kit's abilties and movesets.
 
