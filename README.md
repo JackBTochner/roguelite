@@ -83,16 +83,16 @@ At some point, Kit also discovers that Wisp man is also physically trapped somew
 
 ## Characters
 
-List of all Characters:
-Kit: Player
-Winnie: Wisp sidekick/guide
-Schrodinger: Customer
-Chang-E: Customer
-Banshee: Customer
-Horus: Customer
-Milton: Customer
-Aziel: Main enemy/Final boss
-Herbert: Upgrade keeper
+List of all Characters: \
+Kit: Player \
+Winnie: Wisp sidekick/guide \
+Schrodinger: Customer \
+Chang-E: Customer \
+Banshee: Customer \
+Horus: Customer \
+Milton: Customer \
+Aziel: Main enemy/Final boss \
+Herbert: Upgrade keeper \
 
 Narrative: synopsis / back-story / characters / settings
 Paper design of game-play mechanics
