@@ -81,6 +81,19 @@ She becomes determined to stop them as they are making her hunting process more 
 
 At some point, Kit also discovers that Wisp man is also physically trapped somewhere, and he is also just a walking spirit. The initial boss fight was only Kit fighting his spirit but the final boss fight with him is Kit fighting his physical body. Both Kit and wisp man must get to each other’s physical body before the other one does.
 
+## Characters
+
+List of all Characters:
+Kit: Player
+Winnie: Wisp sidekick/guide
+Schrodinger: Customer
+Chang-E: Customer
+Banshee: Customer
+Horus: Customer
+Milton: Customer
+Aziel: Main enemy/Final boss
+Herbert: Upgrade keeper
+
 Narrative: synopsis / back-story / characters / settings
 Paper design of game-play mechanics
 Draft level design
