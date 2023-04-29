@@ -68,9 +68,6 @@ Kitsune Corner aims to impress players with the games take on the cyberpunk aest
 
 ## Schedule
 
-Detailed schedule broken down into tasks, milestones, deliverables and dependencies across the remaining weeks of Semester
-The Design doc may also include sections for additional or archival project reference / details, such as:
-
 ![Capstone Project: JIRA Schedule](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/ab8c5bd4-1259-47ab-8090-a1f2f89e3002_rw_1920.png?h=4669792ed5c773a4a054dab251f89ecb)
 
 
@@ -107,8 +104,3 @@ Below are the character concepts completed by our 2D artist:
 
 ![KIT Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/18178751-955a-4ef9-9ba2-f2e6af06844c_rw_1920.png?h=6860a4b9cffbcc17721d7aee0aab8744)
 
-Narrative: synopsis / back-story / characters / settings
-Paper design of game-play mechanics
-Draft level design
-Functional specification of key features
-Concept art and visual reference
