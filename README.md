@@ -45,7 +45,13 @@ During the day, players run a pen shop where NPC customers arrive to purchase wr
 Players also interact with the customer learning around their own stories as the game progresses. The relationship and story you build with the customer may be affected by your choices as well as fulfilling their needs.\
 Building a strong relationship with the customer can benefit the player's combat and stats at night. 
 
-Customers will pay with the in-game world currency known as Modulars. Modular coins can be used to upgrade the shop game-play wise or simply its appearance. To activate night-time, players can close their shop to time-skip to night which generates the roguelike gameplay.
+Customers will pay with the in-game world currency known as Modulars. Modular coins can be used to upgrade the shop game-play wise or simply its appearance. To activate night-time, players can close their shop to time-skip to night which generates the roguelike gameplay. The levels are all randomly generated based on locations of Melbourne. There is no set order that the level come and go. 
+
+(Insert Kit's abilities, mechanics, movesets here)
+
+(Insert enemy movement, attacks and abilities here) Enemies will drop items that can be brought back to the shop and used as equipment and ingredients for the pens. For example, blue enemies will drop blue pigmentation that can be used for blue ink. 
+
+After each level is completed, random drops will occur. This can include Modulars, fish and power-ups. Fish can be used to exchange goods with Hebert the bear, who is a lonely shop keeper. Herbert randomly spawns in between levels and has a small stall where goods can be exchanged given the player has enough fish. Power-ups can also randomly drop which powers up Kit's abilties and movesets.
 
 
 ## Brand Identity
