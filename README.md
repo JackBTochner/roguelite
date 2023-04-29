@@ -71,6 +71,9 @@ Kitsune Corner aims to impress players with the games take on the cyberpunk aest
 Detailed schedule broken down into tasks, milestones, deliverables and dependencies across the remaining weeks of Semester
 The Design doc may also include sections for additional or archival project reference / details, such as:
 
+![Capstone Project: JIRA Schedule](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/ab8c5bd4-1259-47ab-8090-a1f2f89e3002_rw_1920.png?h=4669792ed5c773a4a054dab251f89ecb)
+
+
 ## Narrative
 
 Kit was an unnamed Kitsune who was given their name by Winnie. She was physically cursed into a room due to her past action that brought shame upon the Deity. She decided to revamp the room and refurnish it into a shop, pen shop to be exact. Believing pens have different uses and variations which to unique and special to everyone. Felt tips, ball-ink, gel-ink, Kit knew it all. She was happy running her shop, she found that as a Kitsune she was able to escape her physical body and roam as a soul at night. She discovers from Schrodinger that you can unbind yourself if you prove yourself worthy top the Deity. Kit initially has no interest in this as she is content with staying in her shop.
@@ -93,6 +96,16 @@ Horus: Customer \
 Milton: Customer \
 Aziel: Main enemy/Final boss \
 Herbert: Upgrade keeper 
+
+## Concept Art
+
+Below are the character concepts completed by our 2D artist:
+
+![KIT OUTFIT Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/19ed6fb4-ba7e-4314-920e-430a31e40f5f_rw_1920.png?h=b8a10fdecbe7a4e625e73b920cfd5e96)
+
+![FOX CONCEPT Turnaround](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/aad3a189-3246-46c4-a6d0-7273872063a1_rw_1920.png?h=f3a505eb38d5e52f74342f1905c546f9)
+
+![KIT Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/18178751-955a-4ef9-9ba2-f2e6af06844c_rw_1920.png?h=6860a4b9cffbcc17721d7aee0aab8744)
 
 Narrative: synopsis / back-story / characters / settings
 Paper design of game-play mechanics
