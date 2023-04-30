@@ -7,8 +7,12 @@ For more in-depth or implementation specific documentation, see the [Manual](htt
 To edit this document please only edit the README.md file, the github-pages will be updated automatically after you commit README.md, and use [Github Flavored Markdown (GFM)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
 
 ## Overview
-Provisional logo and top-line description of the game. Keep narrative content to a minimum
-Index of pages in the wiki broken down into sub-sections as follows
+![provisional_logo](Documentation/resources/provisional_logo.png)
+
+Play as a shape-shifting Kitsune who runs a Melbourne based pencil store by day, and hunts for various trinkets and supplies during the night.
+
+Build relationships with new customers that arrive at your store each day. Listen to their stories and serve them their favourite items to learn new abilities and unlock new recipes.
+
 
 ## Team
 
@@ -20,8 +24,8 @@ Index of pages in the wiki broken down into sub-sections as follows
 
 ## Platforms
 
-The game will be built for PC to be played on mouse and keyboard, however the controls are designed to easily map and copy onto a controller for players who prefer a hand held experience.\
-Various successful roguelikes have been released and made available on PC and the Nintendo Switch.\
+The game will be built for PC to be played on mouse and keyboard, however the controls are designed to easily map and copy onto a controller for players who prefer a hand held experience.  
+Various successful roguelikes have been released and made available on PC and the Nintendo Switch.  
 These include The Binding of Isaac, Hades, Risk of Rain 2, Enter The Gungeon. 
 
 The controls in the game will be programmed onto mouse and keyboard giving players easy and comfortable ergonomic access to use all available abilities without straining their hands. 
@@ -31,32 +35,63 @@ In a research report done by DFC Intelligence, it is found that approximately 48
 
 ## Machinery
 
-What are the mechanics, rules and economies you’re basing your project around? What are the larger meta-structures?
-Comprehensively detail these core mechanics and features of your game individually (separate the Power Pellets, Ghosts and Cherries!), and cross link them to one another. 
-Present as a clearly and consistently formatted combination of images, diagrams and text.
-Sometimes a diagram or flowchart can more quickly communicate mechanical ideas than words alone. Consider also using Finite State Machines (FSMs) in these cases.
-Link these pages to and from relevant Trello cards in your team's board, so that team members working on tasks can refer easily to the documentation.
+Players will play as a Kitsune in human form during the day time and a fully transformed nine-tailed fox at night who goes out to hunt.
 
+> During the day, players run a pencil shop where NPC customers arrive to purchase writing goods.
+> 
+> During the night, they will fight through a randomly generated route of combat encounters, gaining abilities and resources along the way.
 
-Players will play as a Kitsune known as Kit who is human-like during the day time and a fully transformed nine-tailed fox at night who goes out to hunt.\
-During the day, players run a pen shop where NPC customers arrive to purchase writing goods. The gameplay during this time will mainly revolve around making pens for the customers based on their preferences.\
- This includes using various components of a pen such as ink colour, body build and thin/thickness to create the pen of the customer's desires.
+To activate night-time, players can close their shop to time-skip to night.
 
-Players also interact with the customer learning around their own stories as the game progresses. The relationship and story you build with the customer may be affected by your choices as well as fulfilling their needs.\
-Building a strong relationship with the customer can benefit the player's combat and stats at night. 
+### Macro Gameplay Loop
 
-Customers will pay with the in-game world currency known as Modulars. Modular coins can be used to upgrade the shop game-play wise or simply its appearance. To activate night-time, players can close their shop to time-skip to night which generates the roguelike gameplay. The levels are all randomly generated based on locations of Melbourne. There is no set order that the level come and go. As the levels are based on Melbourne locations, the traps are also fixated on distinguishable Melbourne attributes such as tram traps. Trams go pass in levels that are applicable and can collide with Kit and the enemies. Collion will result in being damaged and stunned as well as pushed.
+![Alt text](resources/Macro_GameplayLoop.png)
 
-Kit has nine abilties in corespondent to her nine-tails. As Kit is a fox, she has the abilities to dig into the ground where dirt is present to avoid enemies and act as a invulnerable ability.
+[Link to diagrams on Miro](https://miro.com/app/board/uXjVMZTNF-k=/?share_link_id=762415482083)
 
-There will be various enemies within the game with unique abilities and movesets. The main form of enemies are known as wisps. Enemies will drop items that can be brought back to the shop and used as equipment and ingredients for the pens. For example, blue enemies will drop blue pigmentation that can be used for blue ink. Kit will also have to battle the final boss who has an upgraded moveset and power level compared to other and previous enemies.
+The hub scene acts as the vehicle for the main narrative, whilst the combat acts as the main gameplay pull. 
+
+### Micro Gameplay Loops
+
+#### Roguelite Gameplay Overview
+
+Kit has nine abilties corespondent to her nine-tails. As Kit is a fox, she has the abilities to dig into the ground where dirt is present to avoid enemies and act as a invulnerable ability.
+
+There will be various enemies within the game with unique abilities and movesets. The main form of enemies are known as wisps. Enemies will drop items that can be brought back to the shop and used as equipment and ingredients for the pens. For example, blue enemies will drop blue pigments that can be used for blue ink. Kit will also have to battle the final boss who has an upgraded moveset and power level compared to other and previous enemies.
 
 After each level is completed, random drops will occur. This can include Modulars, fish and power-ups. Fish can be used to exchange goods with Hebert the bear, who is a lonely shop keeper. Herbert randomly spawns in between levels and has a small stall where goods can be exchanged given the player has enough fish. Power-ups can also randomly drop which powers up Kit's abilties and movesets.
+
+The levels are all randomly generated based on locations of Melbourne. There is no set order that the level come and go. As the levels are based on Melbourne locations, the traps are also fixated on distinguishable Melbourne attributes such as tram traps. Trams go pass in levels that are applicable and can collide with Kit and the enemies. Collison will result in being damaged and stunned as well as pushed.
+
+#### Hub/Storefront Gameplay Overview
+
+The gameplay during this time will mainly revolve around making stationary for the customers based on their preferences.
+
+This includes using various components of a pen such as pigment colour, body build and thin/thickness to create the pencil of the customer's desires.
+
+Players also interact with the customer learning around their own stories as the game progresses. The relationship and story you build with the customer may be affected by your choices as well as fulfilling their needs.  
+Building a strong relationship with the customer can benefit the player's combat and stats at night. 
+
+Customers will pay with the in-game world currency known as Modulars. Modular coins can be used to upgrade the shop game-play wise or simply its appearance.
+
+### Systems
+(TODO: link to and write manual pages)
+#### Scene Loading
+
+#### Narrative System
+
+#### Storefront Gameplay
+
+#### Map Generation System
+
+#### Combat System
+
+#### Perk/Ability System
 
 
 ## Brand Identity
 
-Kitsune Corner is fully designed and produced in the heart of Melbourne. Therefore, the setting of the game is also fully based in a cyberpunk, synthwave futuristic fantasy version of Melbourne Victoria.\
+Kitsune Corner is fully designed and produced in the heart of Melbourne. Therefore, the setting of the game is also fully based in a cyberpunk, synthwave futuristic fantasy version of Melbourne Victoria.  
 Unlike other Melbourne based games, Kitsune Corner aims to integrate various Melbourne street culture and location within the game. All the levels in the game will be various locations of the Melbourne CBD including famous iconic spaces such as Federation Square, Southbank Walk and Hozier Lane. There will also be less known locations that are still a symbol of Melbourne such as The Block Arcade.
 
 According to the UNESCO Institute for Statistics, in 2018 the United States of America accounted for 24% of global cultural creative export. This includes many forms of entertainment like Films, video games, music and other media items. This means that various of these contents display American landmarks and locations. Australia is only known for 6.5% of contribution in the creative and cultural industries in 2019. 
@@ -70,6 +105,7 @@ Kitsune Corner aims to impress players with the games take on the cyberpunk aest
 
 ![Capstone Project: JIRA Schedule](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/ab8c5bd4-1259-47ab-8090-a1f2f89e3002_rw_1920.png?h=4669792ed5c773a4a054dab251f89ecb)
 
+https://gamecapstone2023.atlassian.net/jira/software/projects/CP/boards/1
 
 ## Narrative
 
@@ -81,18 +117,20 @@ She becomes determined to stop them as they are making her hunting process more 
 
 At some point, Kit also discovers that Wisp man is also physically trapped somewhere, and he is also just a walking spirit. The initial boss fight was only Kit fighting his spirit but the final boss fight with him is Kit fighting his physical body. Both Kit and wisp man must get to each other’s physical body before the other one does.
 
-## Characters
+### Characters
 
-List of all Characters: \
-Kit: Player \
-Winnie: Wisp sidekick/guide \
-Schrodinger: Customer \
-Chang-E: Customer \
-Banshee: Customer \
-Horus: Customer \
-Milton: Customer \
-Aziel: Main enemy/Final boss \
+List of all Characters:  
+```
+Kit: Player  
+Winnie: Wisp sidekick/guide  
+Schrodinger: Customer  
+Chang-E: Customer  
+Banshee: Customer  
+Horus: Customer  
+Milton: Customer  
+Aziel: Main enemy/Final boss  
 Herbert: Upgrade keeper 
+```
 
 ## Concept Art
 
