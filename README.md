@@ -1,6 +1,7 @@
 # Kitsune Corner (Working title)
 > Narrative focussed roguelite with store management.
 
+https://github.com/pmuenjohn/roguelite  
 This is the birds-eye-view Design Documentation for Kitsune Corner (Working title).
 For more in-depth or implementation specific documentation, see the [Manual](https://pmuenjohn.github.io/roguelite/manual/overview.html) (also in the navbar above) for details.
 
