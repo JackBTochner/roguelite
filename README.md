@@ -8,7 +8,7 @@ For more in-depth or implementation specific documentation, see the [Manual](htt
 To edit this document please only edit the README.md file, the github-pages will be updated automatically after you commit README.md, and use [Github Flavored Markdown (GFM)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
 
 ## Overview
-![provisional_logo](Documentation/resources/provisional_logo.png)
+![provisional_logo](resources/provisional_logo.png)
 
 Play as a shape-shifting Kitsune who runs a Melbourne based pencil store by day, and hunts for various trinkets and supplies during the night.
 
