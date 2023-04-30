@@ -1079,12 +1079,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "4i8IMmtdW7xHuEDoNtKGbCfrOMVozkRKbh572MvUX8w="
+          "hash": "n6sw0V2bqICU7thSxVoloqC1d+YXXlGTyK9MucUC7DA="
         }
       },
       "is_incremental": false,
@@ -1140,21 +1143,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "resources/ExampleManual.png",
+      "source_relative_path": "resources/Macro_GameplayLoop.png",
       "output": {
         "resource": {
-          "relative_path": "resources/ExampleManual.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/ExampleScriptingApi.png",
-      "output": {
-        "resource": {
-          "relative_path": "resources/ExampleScriptingApi.png"
+          "relative_path": "resources/Macro_GameplayLoop.png"
         }
       },
       "is_incremental": false,
@@ -1188,6 +1180,17 @@
       "output": {
         "resource": {
           "relative_path": "resources/SpawningEnemies/waves_example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/provisional_logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/provisional_logo.png"
         }
       },
       "is_incremental": false,
