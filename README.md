@@ -87,7 +87,26 @@ Customers will pay with the in-game world currency known as Modulars. Modular co
 
 #### Combat System
 
+Combat will be majoritly based on shooting projectiles at enemies, but you will also have a melee ability at your disposal. As the game progresses, you will unlock a total of 8 different projectiles. Each weapon represents a tail of the Kitsune, and will do the following:
+```
+Regular tail: Melee weapon.
+Lightning Chain: Hits multiple enemies for chain damage (lock on).
+Fire: Inflicts burn damage.
+Ice: Slows enemies.
+Earthquake: Inflicts impact damage on enemies in a straight line.
+Poison: Reduces enemies total health by a percentage.
+Piercing: Can hit multiple enemies (aimed).
+Boomerang: Will inflict damage on initial release and when received.
+Cupids Arrow: Will link enemy that's hit with the next closest enemy, any damage done to one will be inflicted on the other.
+
+```
+
+When attacking an enemy for the first time upon entering a room, you will attach your cast to the enemy you hit. Your cast will increase damage inflicted on that enemy, and your cast will be dropped once the enemy is defeated. You can regain your cast by picking it up after the enemy you affected is defeated or by entering the next room. You may not change the enemy that your cast is on until it is defeated.
+
+
 #### Perk/Ability System
+
+As you progress through the game and create bonds with the NPCs, you will gain passive perks and abilities. Each NPC will be able to give you a passive perk that you will keep throughout the game and will stack with other passive perks you may receive from other NPCs. When you complete a relationship with an NPC, you will receive an ultimate ability. You may unlock multiple ultimates, but you may only equip one at a time. These abilities and perks will be active in every run, and will stay with you when you die. 
 
 
 ## Brand Identity
