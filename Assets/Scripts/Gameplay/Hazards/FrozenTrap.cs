@@ -42,7 +42,7 @@ public class FrozenTrap : MonoBehaviour
         
         yield return new WaitForSeconds(time);
         // Destroy first, then player can move.
-        Destroy(gameObject, time);
+        Destroy(gameObject, 0.2f);
         EnablePlayerMovement();
     }
 }
