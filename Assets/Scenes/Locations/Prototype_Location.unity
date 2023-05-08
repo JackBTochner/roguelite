@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 475355454}
-  player: {fileID: 0}
+  player: {fileID: 475355452}
   spawnPoint: {fileID: 771879792}
   timer: 2
   enemyBullet: {fileID: 1782343558926592847, guid: ffe1fe6925fb2c64db0203cae393c3ea,
