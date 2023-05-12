@@ -20,7 +20,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]private PlayerManagerAnchor _playerManagerAnchor = default;
 
     [Header("Listening on")]
-    // [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
+    [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
 	[SerializeField] private VoidEventChannelSO _onSceneReady = default; //Raised by SceneLoader when the scene is set to active
     [SerializeField] private VoidEventChannelSO _onReturnToHub = default;
     [SerializeField] private VoidEventChannelSO _onStartRun = default;
@@ -66,12 +66,13 @@ public class PlayerManager : MonoBehaviour
     private void SetInitialStats()
     {
         CurrentHealthSO.SetCurrentHealth(CurrentHealthSO.InitialHealth);
+        projectileCountSO.ResetProjectileCount();
         _projectileEffects.ClearEffects();
     }
 
     private void OnSceneReady()
     { 
-        projectileCountSO.ResetProjectileCount();
+        
     }
 
     private void GetProjectileEventRaised(ProjectileEffectSO newEffect)

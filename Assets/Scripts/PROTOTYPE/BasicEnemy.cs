@@ -15,7 +15,7 @@ public class BasicEnemy : Hittable
 
     public LayerMask detectionObstacles;
 
-    public bool detected;
+    public bool detected = true;
     public float detectionRange;
 
     bool died;
@@ -48,6 +48,7 @@ public class BasicEnemy : Hittable
 
     void Update()
     {
+        /*
         if (playerTransformAnchor.isSet)
         {
             //detect
@@ -70,11 +71,12 @@ public class BasicEnemy : Hittable
                 }
             }
 
-            if (rb.velocity != Vector3.zero)
+      
+        }*/
+              if (rb.velocity != Vector3.zero)
             {
                 rb.velocity = Vector3.Lerp(rb.velocity, Vector3.zero, Time.deltaTime * 3);
             }
-        }
     }
 
     override public void Hit(float knockback, Vector3 direction)

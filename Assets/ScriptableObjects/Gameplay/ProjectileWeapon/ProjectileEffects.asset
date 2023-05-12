@@ -24,3 +24,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
   - {fileID: 11400000, guid: 55a1b7d41fac4c1428f09a3b26cd2ec5, type: 2}
   _projectileCount: {fileID: 11400000, guid: 8f2786a78b1eefd45af030d157879e27, type: 2}
+  _updateProjectileUI: {fileID: 11400000, guid: 7c371bd7e9f3dfd4280a1796446c5604,
+    type: 2}

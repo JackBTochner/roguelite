@@ -27,7 +27,7 @@ public class TestScript : MonoBehaviour
     void Update()
     {   //1. Face the Player for always. Problem now: it will face the player position when hits the max follow range,
         //when player move in this range the enemy will keep focusing on the first position, not the update position.
-        transform.LookAt(facePlayer);
+        // transform.LookAt(facePlayer);
         ShootAtPlayer();
     }
     void ShootAtPlayer()

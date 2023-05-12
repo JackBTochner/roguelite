@@ -4,26 +4,27 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
-public class HubExit : Exit
+public class HubExit : MonoBehaviour
 {
+    [HideInInspector] public bool loadsSceneByName;
+    [HideInInspector] public string nextSceneName;
+    public bool locked = false;
+    public UnityEvent PlayerEnteredExit = new UnityEvent();
+
+    public Material lockedMat = default;
+    public Material unlockedMat = default;
+    public MeshRenderer lockIndicator = default;
+
     [SerializeField]
     private RunManagerAnchor _runManagerAnchor = default;
     
-    void Start()
-    { 
-    }
-
-    public override void ExitTriggered(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        SceneManager.activeSceneChanged += OnSceneChanged;
-
-        base.ExitTriggered(other);
-        Debug.Log(other.name);
-        Debug.Log(_runManagerAnchor.Value);
+        if(!locked && other.tag == "Player")
+            ExitTriggered(other);
+    }
+    public void ExitTriggered(Collider other)
+    {
         _runManagerAnchor.Value.StartNewRun();
-    }
-
-    void OnSceneChanged(Scene current, Scene next)
-    {
     }
 }
