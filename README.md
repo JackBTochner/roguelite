@@ -44,8 +44,6 @@ Players will play as a Kitsune in human form during the day time and a fully tra
 
 To activate night-time, players can close their shop to time-skip to night.
 
-Programming(Ricky)
-
 
 ### Macro Gameplay Loop
 
