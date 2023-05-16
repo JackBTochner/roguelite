@@ -104,21 +104,27 @@ SourceTree
 Get privacy from the project manager first, always check SourceTree before starting your daywork, and constantly push the files when the work is finished.
 Push: push the newly edited files you made, stage all -> comments-> push.
 Pull: get the new version of the file.
+
 Jira
 1.	RoadMap
 a.	Timeline, working expectation: we can create a new task timeline by pressing the “CreateEpic” button, and then you can make the timeline by dragging the left and right of the bar. After finalising the time, you can add sub-tasks (“Child issues”).
 2.	Board
 a.	Similar to Trello, create a new issue by pressing the create issue button and a new attribute by pressing the “+”. Make sure to put the problems in the right attribute column and assign the name of who will do this task.
 3.	The task description: make sure to fill in all tasks description, describe this task, what it will do, the plan of how to do it, and always plan before starting work.
+
+
 Toggle(Track)
 https://toggl.com/
 There are three products of Toggle, “toggl track”, “toggl plan”, and “toggle hire”, we use toggl track. 
 Toggle is a software that can collect our working time. We can see how much time we spent working on each task.
 How to use the toggl track?
+
 1.	We start a new project for our project, and we put every task and time of this project into this project.
+
 2.	When creating any task for this project, assign it to the project. There are two ways of adding tasks and time in the time slot, don’t worry about the previous working time you didn’t add, you can add whenever.
 a.	For a previous working time, forgot to add: In the top left, go to -> Track, Timer. -> You will see the current date on the page, select Today – Data with the logo. Now it is available to select the date you want, you can also change the month using the left or right tap. -> Click on the time of the table, for example, 12:00 PM stated, press the inside of the table the same horizontally as 12:00 PM, It will append a box, and you can fill in the data, don’t forget to assign the project with the folder icon. If you press the wrong place, you can still edit the time inside the append box. For example: if you press 12:00 PM, but you start at 1:00 PM, in the append box, it will display 12:00 PM to 12:30 PM. You can change 12:00 PM to 1:00 PM by pressing the text and typing in 1:00.
 b.	If you are ready to start the work, In the top left, go to -> Track, Timer. On the top of the page, there is a start button. If pressed, it will start counting the time. When you finish your current task, stop it. It will save this task. Don’t forget to name it first and assign it to the project.
+
 3.	Report
 a.	To see the report go to the report, the bar left of the map. You can select the range by pressing “This week – WXX” with the Icon and selecting the project.
 b.	To see the full view of the project report,  the bar left of the map, select Project-> Your project, it will display the data in a “line chart”, “bar chart”, and a pie chart. 
