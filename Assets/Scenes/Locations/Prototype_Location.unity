@@ -600,6 +600,7 @@ MonoBehaviour:
   target: {fileID: 0}
   explosionPrefab: {fileID: 793397576}
   triggerDistance: 3
+  damage: 50
 --- !u!1001 &308215269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1233,7 +1234,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
