@@ -359,7 +359,8 @@ MonoBehaviour:
   enemyBullet: {fileID: 1782343558926592847, guid: ffe1fe6925fb2c64db0203cae393c3ea,
     type: 3}
   enemySpeed: 1000
-  facePlayer: {fileID: 0}
+  playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
+    type: 2}
 --- !u!1 &3708834870814586815
 GameObject:
   m_ObjectHideFlags: 0

@@ -102,7 +102,7 @@ namespace Player
             }
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
-            // Debug.Log("Player Current Health: " + _currentHealthSO.CurrentHealth);
+             //Debug.Log("Player Current Health: " + _currentHealthSO.CurrentHealth);
         }
 
         IEnumerator PlayerDie(float delay)

@@ -15,7 +15,7 @@ public class DestroyBullet : MonoBehaviour
         {
             PlayerCharacter PlayerCharacter = other.gameObject.GetComponent<PlayerCharacter>();
             PlayerCharacter.TakeDamage(damage);
-            Debug.Log("Bullet hits!");
+            //Debug.Log("Bullet hits!");
             Destroy(gameObject);
         }
     }
