@@ -14,6 +14,7 @@ public class MoveForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // The tram movement with the speed.
         transform.Translate(transform.forward * Time.deltaTime * speed);
     }
 }
