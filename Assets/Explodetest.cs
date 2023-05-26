@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Player;
+using Pathfinding; // Using "Pathfinding" for AIPath
 
 public class Explodetest : MonoBehaviour
 {
@@ -10,14 +11,23 @@ public class Explodetest : MonoBehaviour
     public float triggerDistance = 1.0f; // The distance.
     public int fulldamage = 25; 
     public int middamage = 10;
-
+    public float normalSpeed = 3.0f; // After the trigger speed.
+    private AIPath aiPath; 
 
     void Update()
-    {
+    {   
+        // Let the explodeEnemy face the Player all the time.
+        transform.LookAt(playerTransformAnchor.Value);
         //If the object hits the distance with the playe, it will do....
         if (Vector3.Distance(transform.position, playerTransformAnchor.Value.position) < triggerDistance)
         {
-            //Do this 
+            // Get the current object component "AIPath".
+            aiPath = GetComponent<AIPath>();
+
+            // Set the AIPath maxSpeed, slow the explodeEnemy.
+            aiPath.maxSpeed = normalSpeed;
+
+            
             StartCoroutine(WaitForExplode(2.0f)); //Do after 2 seconds.
         }
     }

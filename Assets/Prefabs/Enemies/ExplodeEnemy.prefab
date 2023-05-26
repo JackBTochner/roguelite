@@ -246,8 +246,6 @@ GameObject:
   - component: {fileID: 6855407244047730898}
   - component: {fileID: 6855407244047730734}
   - component: {fileID: 6855407244047730733}
-  - component: {fileID: 1737891740347835306}
-  - component: {fileID: 7807870916541280813}
   - component: {fileID: 7807870916541280812}
   m_Layer: 6
   m_Name: ExplodeEnemy
@@ -272,7 +270,7 @@ Transform:
   - {fileID: 6855407243990609592}
   - {fileID: 164384233636618939}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6855407244047730735
 MonoBehaviour:
@@ -489,39 +487,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1737891740347835306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6855407244047730902}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27a63d4d0f17d444394fad713db90bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 164384233636618939}
-  timer: 2
-  enemyBullet: {fileID: 1782343558926592847, guid: ffe1fe6925fb2c64db0203cae393c3ea,
-    type: 3}
-  enemySpeed: 1000
-  playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
-    type: 2}
---- !u!114 &7807870916541280813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6855407244047730902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d36ac546313767e4ba247cd94a4763bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
-    type: 2}
 --- !u!114 &7807870916541280812
 MonoBehaviour:
   m_ObjectHideFlags: 0
