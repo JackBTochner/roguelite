@@ -18,17 +18,22 @@ public class Explodetest : MonoBehaviour
     {   
         // Let the explodeEnemy face the Player all the time.
         transform.LookAt(playerTransformAnchor.Value);
-        //If the object hits the distance with the playe, it will do....
-        if (Vector3.Distance(transform.position, playerTransformAnchor.Value.position) < triggerDistance)
+        // The player is not spawnning immediately, so it may cause errors, added a if statement to check, the - 
+        // - playerTransformAnchor.value is assign to the player object.
+        if (playerTransformAnchor != null && playerTransformAnchor.Value != null)
         {
-            // Get the current object component "AIPath".
-            aiPath = GetComponent<AIPath>();
+            //If the object hits the distance with the playe, it will do....
+            if (Vector3.Distance(transform.position, playerTransformAnchor.Value.position) < triggerDistance)
+            {
+                // Get the current object component "AIPath".
+                aiPath = GetComponent<AIPath>();
 
-            // Set the AIPath maxSpeed, slow the explodeEnemy.
-            aiPath.maxSpeed = normalSpeed;
+                // Set the AIPath maxSpeed, slow the explodeEnemy.
+                aiPath.maxSpeed = normalSpeed;
 
-            
-            StartCoroutine(WaitForExplode(2.0f)); //Do after 2 seconds.
+
+                StartCoroutine(WaitForExplode(2.0f)); //Do after 2 seconds.
+            }
         }
     }
 
@@ -47,7 +52,7 @@ public class Explodetest : MonoBehaviour
         {   
             playerCharacter.TakeDamage(fulldamage);
         }
-        else if (Vector3.Distance(transform.position, playerTransformAnchor.Value.position) < 10f) // Take mid damage.
+        else if (Vector3.Distance(transform.position, playerTransformAnchor.Value.position) < 6f) // Take mid damage.
         {
             playerCharacter.TakeDamage(middamage);
         }
