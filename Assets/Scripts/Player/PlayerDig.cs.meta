@@ -6,7 +6,11 @@ MonoImporter:
   defaultReferences:
   - digDetectionLocation: {instanceID: 0}
   - inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
+  - digDownParticle: {instanceID: 0}
+  - digUpParticle: {instanceID: 0}
   - _playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
+      type: 2}
+  - _projectileHighlighters: {fileID: 11400000, guid: de704ed33b0585140b9220b53be341ce,
       type: 2}
   executionOrder: 0
   icon: {instanceID: 0}

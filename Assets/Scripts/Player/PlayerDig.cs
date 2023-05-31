@@ -20,11 +20,13 @@ public class PlayerDig : MonoBehaviour
 
         public GameObject digDownParticle = default;
         public GameObject digUpParticle = default;
-
+        [Header("Listening on")]
         [SerializeField]
         private TransformAnchor _playerTransformAnchor = default;
+        [SerializeField]
+        private RuntimeSetBase<Highlighter> _projectileHighlighters = default;
 
-        private void OnEnable()
+    private void OnEnable()
         {
             inputReader.OnDigPerformed += AttemptToggleDig;
         }
@@ -59,7 +61,7 @@ public class PlayerDig : MonoBehaviour
             }
             else
             {
-                Debug.Log("Nothing to Dig!");
+                // Debug.Log("Nothing to Dig!");
             }
         }
 
@@ -67,7 +69,7 @@ public class PlayerDig : MonoBehaviour
         {
             if (hit.transform.gameObject.CompareTag("Dirt"))
             {
-                Debug.Log("Can Dig!");
+                // Debug.Log("Can Dig!");
                 if (isDigging)
                 {
                     foreach (var buffer in playerBuffers)
@@ -76,10 +78,13 @@ public class PlayerDig : MonoBehaviour
                         Instantiate(digUpParticle, transform.position, transform.rotation);
                         buffer.gameObject.SetActive(false);
                     }
-
+                    foreach (var highlighter in _projectileHighlighters.Items)
+                    {
+                    highlighter.ToggleHighlight(false);
+                    }
                     _playerTransformAnchor.Value.GetComponent<PlayerCharacter>().PlayerToggleDig(isDigging);
                     isDigging = false;
-                }
+            }
                 else
                 {
                     foreach (var buffer in playerBuffers)
@@ -88,13 +93,17 @@ public class PlayerDig : MonoBehaviour
                         Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
                         buffer.gameObject.SetActive(true);
                     }
+                    foreach (var highlighter in _projectileHighlighters.Items)
+                    {
+                        highlighter.ToggleHighlight(true);
+                    }
                     _playerTransformAnchor.Value.GetComponent<PlayerCharacter>().PlayerToggleDig(isDigging);
                     isDigging = true;
                 }
             }
             else
             {
-                Debug.Log("Can't Dig this!");
+                // Debug.Log("Can't Dig this!");
             }
         }
 }
