@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Highlighter : MonoBehaviour
 {
@@ -17,16 +18,18 @@ public class Highlighter : MonoBehaviour
     [Header("Listening On")]
     public RuntimeSetBase<Highlighter> highlighters;
 
+    public PlayerProjectileReceiver projectileReceiver;
+    
     private void OnEnable()
     {
         if(highlighters)
-        highlighters.Add(this);
+            highlighters.Add(this);
     }
 
     private void OnDisable()
     {
         if(highlighters)
-        highlighters.Remove(this);
+            highlighters.Remove(this);
     }
     
     private void Awake()
@@ -45,12 +48,17 @@ public class Highlighter : MonoBehaviour
 
     public void ToggleHighlight(bool val)
     {
+        if (projectileReceiver)
+        { 
+            if (projectileReceiver.projectileCount <= 0)
+                return;
+        }
         if (val)
         {
             foreach (var material in materials)
             {
-                material.SetColor("_EmissionColor", targetColor);
-
+                // material.SetColor("_EmissionColor", targetColor);
+                material.DOColor(targetColor, "_EmissionColor", 0.5f);
             }
             if(particles)
                 particles.Play();
@@ -59,7 +67,7 @@ public class Highlighter : MonoBehaviour
         {
             for (int i = 0; i < materials.Count; i++)
             {
-                materials[i].SetColor("_EmissionColor", originalEmissiveColors[i]);
+                materials[i].DOColor(originalEmissiveColors[i], "_EmissionColor", 0.5f);
             }
             if(particles)
                     particles.Stop();

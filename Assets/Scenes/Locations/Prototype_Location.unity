@@ -1231,6 +1231,7 @@ MonoBehaviour:
   targetColor: {r: 1, g: 1, b: 1, a: 1}
   particles: {fileID: 1626546981}
   highlighters: {fileID: 11400000, guid: de704ed33b0585140b9220b53be341ce, type: 2}
+  projectileReceiver: {fileID: 913176357}
 --- !u!1 &1007195009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2217,6 +2218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ProjectileReceiverHighlightParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 3479186766190414694, guid: edd49af3a3d246d428ff688f2ba64520,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3479186766190414712, guid: edd49af3a3d246d428ff688f2ba64520,
         type: 3}
