@@ -669,18 +669,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908af4587fea5704bac1dfc03bee479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageType: 0
   damage: 2
   onlyHitEachObjOnce: 0
-  critChance: 30
-  critMultiplier: 1.5
-  ignoreCrit: 0
+  criticalData:
+    Chance: 50
+    Multiplier: 1.5
+    Ignore: 0
   knockback: 1000
-  hittable: {fileID: 0}
-  playerChar: {fileID: 248407811704461207}
-  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
-    type: 3}
-  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
-    type: 3}
 --- !u!65 &4093581273772840500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -779,18 +775,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908af4587fea5704bac1dfc03bee479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageType: 0
   damage: 2
   onlyHitEachObjOnce: 0
-  critChance: 50
-  critMultiplier: 2
-  ignoreCrit: 0
+  criticalData:
+    Chance: 50
+    Multiplier: 1.5
+    Ignore: 0
   knockback: 1500
-  hittable: {fileID: 0}
-  playerChar: {fileID: 248407811704461207}
-  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
-    type: 3}
-  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
-    type: 3}
 --- !u!135 &3896151020917793843
 SphereCollider:
   m_ObjectHideFlags: 0

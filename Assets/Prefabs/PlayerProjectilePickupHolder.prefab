@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 6065857108698038213}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6065857107710913236
 MeshFilter:
@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e440561df55a974a8464d987ea8b51e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLifeTime: 5
 --- !u!135 &6065857108698038210
 SphereCollider:
   m_ObjectHideFlags: 0

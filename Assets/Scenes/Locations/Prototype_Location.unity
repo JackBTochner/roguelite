@@ -526,8 +526,11 @@ MonoBehaviour:
   health: 20
   duration: 0
   intensity: 0
-  camShake: {fileID: 0}
   poisonDamage: 0
+  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+    type: 3}
+  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+    type: 3}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -718,6 +721,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6855407244047730735, guid: 8a94824cbb7897e438cd91587107f380,
+        type: 3}
+      propertyPath: hitMarker
+      value: 
+      objectReference: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+        type: 3}
+    - target: {fileID: 6855407244047730735, guid: 8a94824cbb7897e438cd91587107f380,
+        type: 3}
+      propertyPath: critMarker
+      value: 
+      objectReference: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+        type: 3}
     - target: {fileID: 6855407244047730900, guid: 8a94824cbb7897e438cd91587107f380,
         type: 3}
       propertyPath: maxSpeed
@@ -1174,8 +1189,11 @@ MonoBehaviour:
   health: 20
   duration: 0
   intensity: 0
-  camShake: {fileID: 0}
   poisonDamage: 0
+  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+    type: 3}
+  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+    type: 3}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -1351,8 +1369,11 @@ MonoBehaviour:
   health: 20
   duration: 0
   intensity: 0
-  camShake: {fileID: 0}
   poisonDamage: 0
+  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+    type: 3}
+  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+    type: 3}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -1541,8 +1562,11 @@ MonoBehaviour:
   health: 20
   duration: 0
   intensity: 0
-  camShake: {fileID: 0}
   poisonDamage: 0
+  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+    type: 3}
+  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+    type: 3}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -2489,6 +2513,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7435886305550892116, guid: 9a7aa54d0cab51248a56259b3004f7cf,
+        type: 3}
+      propertyPath: hitMarker
+      value: 
+      objectReference: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+        type: 3}
+    - target: {fileID: 7435886305550892116, guid: 9a7aa54d0cab51248a56259b3004f7cf,
+        type: 3}
+      propertyPath: critMarker
+      value: 
+      objectReference: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+        type: 3}
     - target: {fileID: 7435886305550892117, guid: 9a7aa54d0cab51248a56259b3004f7cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -3164,7 +3200,7 @@ PrefabInstance:
     - target: {fileID: 2857990952377429054, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3645,8 +3681,11 @@ MonoBehaviour:
   health: 20
   duration: 0
   intensity: 0
-  camShake: {fileID: 0}
   poisonDamage: 0
+  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+    type: 3}
+  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+    type: 3}
   OnHit:
     m_PersistentCalls:
       m_Calls: []

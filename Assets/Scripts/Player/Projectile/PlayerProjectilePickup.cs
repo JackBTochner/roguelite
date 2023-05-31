@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Hittable))]
 public class PlayerProjectilePickup : MonoBehaviour
 {
     public float maxLifeTime = 5;

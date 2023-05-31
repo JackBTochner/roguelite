@@ -103,29 +103,23 @@ public class BeamEnemy : Hittable
         }
     }
 
-    override public void Hit(float knockback, Vector3 direction)
+    override public void Hit(DamageType damageType, float damage, CriticalData criticalData, float knockback, Vector3 direction)
     {
-        base.Hit(knockback, direction);
-        if (playerTransformAnchor.isSet)
+        base.Hit(damageType, damage, criticalData, knockback, direction);
+        if (health > 0)
         {
-            if (health > 0)
-            {
-                //knockback
-                rb.AddForce(direction * knockback);
+            rb.AddForce(direction * knockback);
+            lookAt.forward = direction;
+            Instantiate(hitParticle, transform.position, lookAt.rotation);
 
-                //spawn a hit particle in the opposite direction of the player;
-                Vector2 hitDirection = playerTransformAnchor.Value.position - transform.position;
-                // lookAt.forward = -hitDirection;
-                Instantiate(hitParticle, transform.position, lookAt.rotation);
-
-                anim.SetTrigger("Hit");
-            }
-            else if (!died) //so that the enemy can't die multiple times
-            {
-                Die();
-            }
+            anim.SetTrigger("Hit");
+        }
+        else if (!died)
+        {
+            Die();
         }
     }
+    
     public void Die()
     {
         //die

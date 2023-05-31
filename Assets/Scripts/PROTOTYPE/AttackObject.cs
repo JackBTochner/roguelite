@@ -5,59 +5,53 @@ using Player;
 
 public class AttackObject : MonoBehaviour
 {
-    public float damage;
+    public DamageType damageType;
+
+    public float damage = 2;
 
     public bool onlyHitEachObjOnce;
 
-    //public GameObject[] objsHit;
-    //public int objsHitIndex;
+    public CriticalData criticalData = new CriticalData(50, 1.5f, false);
 
-    public float critChance;
-    public float critMultiplier;
-    public bool ignoreCrit;
+    public float knockback = 1000;
 
-    public float knockback;
 
-    public Hittable hittable;
-    public PlayerCharacter playerChar;
-    //public ObjectPooler objectPooler;
-
-    public GameObject hitMarker;
-    public GameObject critMarker;
-
-    void Awake()
+    public void Hit(Hittable hitReceiver)
     {
-        //objectPooler = ObjectPooler.Instance;
-        //playerChar = GameObject.FindWithTag("Player").GetComponent<PlayerCharacter>();
-    }
-
-    public void Hit(GameObject otherG)
-    {
-        hittable = otherG.GetComponent<Hittable>();
-        if (hittable != null)
+        if (hitReceiver != null)
         {
-            if (otherG.CompareTag("Enemy"))
-            {
-                int crit = Random.Range(0, 100);
-                if (crit <= critChance && !ignoreCrit)
-                {
-                    GameObject hitMarkerObj = Instantiate(critMarker, otherG.transform.position, Quaternion.identity);
-                    hitMarkerObj.GetComponent<HitMarker>().damage = critMultiplier * damage;
-                    hitMarkerObj.GetComponent<HitMarker>().OnObjectSpawn();
-                    hittable.health -= critMultiplier * damage;
-                }
-                else
-                {
-                    GameObject hitMarkerObj = Instantiate(hitMarker, otherG.transform.position, Quaternion.identity);
-                    hitMarkerObj.GetComponent<HitMarker>().damage = damage;
-                    hitMarkerObj.GetComponent<HitMarker>().OnObjectSpawn();
-                    hittable.health -= damage;
-                }
-            }
-
-            hittable.Hit(knockback, Vector3.Normalize(hittable.transform.position - playerChar.transform.position));
+            Vector3 knockbackDir = Vector3.Normalize(hitReceiver.transform.position - this.transform.position);
+            hitReceiver.Hit(damageType, damage, criticalData, knockback, knockbackDir);
         }
-        hittable = null;
+        hitReceiver = null;
     }
 
+}
+
+[System.Serializable]
+public struct CriticalData
+{
+    public CriticalData(float chance, float multiplier, bool ignore)
+    {
+        Chance = chance;
+        Multiplier = multiplier;
+        Ignore = ignore;
+    }
+
+    [Range(0, 100)]
+    public float Chance;
+    public float Multiplier;
+    public bool Ignore;
+
+    public override string ToString() => $"({Chance}, {Multiplier}, {Ignore})";
+}
+
+public enum DamageType
+{ 
+    Default,
+    Dig,
+    Projectile,
+    Melee,
+    Environmental,
+    Poison
 }
