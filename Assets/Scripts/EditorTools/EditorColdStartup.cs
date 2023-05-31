@@ -3,7 +3,6 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
 
 public class EditorColdStartup : MonoBehaviour
 {
