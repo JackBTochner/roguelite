@@ -54,7 +54,7 @@ public class EnemySpawnManager : MonoBehaviour
 
     IEnumerator SpawnWavesRoutine()
     {
-        Debug.Log("Spawning waves");
+//        Debug.Log("Spawning waves");
         for (int i = 0; i < waves.Count; i++)
         {
             // waves[i].SpawnWave();

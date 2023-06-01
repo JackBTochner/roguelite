@@ -54,13 +54,13 @@ public class BasicEnemy : Hittable
         }
     }
 
-    override public void Hit(DamageType damageType, float damage, CriticalData criticalData, float knockback, Vector3 direction)
+    override public void Hit(DamageInfo damageInfo)
     {
-        base.Hit(damageType, damage, criticalData, knockback, direction);
+        base.Hit(damageInfo);
         if (health > 0)
         {
-            rb.AddForce(direction * knockback);
-            lookAt.forward = direction;
+            rb.AddForce(damageInfo.Direction * damageInfo.Knockback);
+            lookAt.forward = damageInfo.Direction;
             Instantiate(hitParticle, transform.position, lookAt.rotation);
 
             anim.SetTrigger("Hit");

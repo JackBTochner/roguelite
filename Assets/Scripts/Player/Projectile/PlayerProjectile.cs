@@ -8,11 +8,7 @@ public class PlayerProjectile : MonoBehaviour
     ProjectileEffectSO projectileEffect;
 
     [Header("Damage")]
-    public DamageType damageType;
-    public CriticalData criticalData = new CriticalData(50, 1.5f, false);
-    public float damage = 1f;
-
-    public float knockback = 1000;
+    public DamageInfo damageInfo = new DamageInfo(DamageType.Default, 2, new CriticalData(50, 1.5f, false), 1000, Vector3.zero);
 
     public GameObject hitMarker;
     public GameObject critMarker;
@@ -162,7 +158,7 @@ public class PlayerProjectile : MonoBehaviour
         if (hitReceiver)
         {
             Vector3 knockbackDir = Vector3.Normalize(hitReceiver.transform.position - this.transform.position);
-            hitReceiver.Hit(damageType, damage, criticalData, knockback, knockbackDir);
+            hitReceiver.Hit(damageInfo);
         }
 
         // Add impact SFX

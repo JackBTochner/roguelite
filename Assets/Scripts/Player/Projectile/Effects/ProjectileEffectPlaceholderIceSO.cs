@@ -16,7 +16,7 @@ public class ProjectileEffectPlaceholderIceSO : ProjectileEffectSO
         }
     }
 
-    public void OnHitPerformed()
+    public void OnHitPerformed(DamageInfo damageInfo)
     {
         if (hittable)
         {

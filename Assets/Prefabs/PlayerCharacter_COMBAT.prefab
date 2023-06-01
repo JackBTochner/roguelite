@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 4093581273772840496}
   - component: {fileID: 4093581273772840502}
   - component: {fileID: 4093581273772840503}
-  - component: {fileID: 4093581273772840501}
+  - component: {fileID: 5386627909878316655}
   - component: {fileID: 4093581273772840500}
   m_Layer: 3
   m_Name: AttackObject
@@ -657,7 +657,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4093581273772840501
+--- !u!114 &5386627909878316655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -669,14 +669,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908af4587fea5704bac1dfc03bee479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageType: 0
-  damage: 2
-  onlyHitEachObjOnce: 0
-  criticalData:
-    Chance: 50
-    Multiplier: 1.5
-    Ignore: 0
-  knockback: 1000
+  damageInfo:
+    DamageType: 0
+    Damage: 2
+    CriticalData:
+      Chance: 50
+      Multiplier: 1.5
+      Ignore: 0
+    Knockback: 1000
 --- !u!65 &4093581273772840500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -775,14 +775,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908af4587fea5704bac1dfc03bee479e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageType: 0
-  damage: 2
-  onlyHitEachObjOnce: 0
-  criticalData:
-    Chance: 50
-    Multiplier: 1.5
-    Ignore: 0
-  knockback: 1500
+  damageInfo:
+    DamageType: 0
+    Damage: 0
+    CriticalData:
+      Chance: 0
+      Multiplier: 0
+      Ignore: 0
+    Knockback: 0
 --- !u!135 &3896151020917793843
 SphereCollider:
   m_ObjectHideFlags: 0

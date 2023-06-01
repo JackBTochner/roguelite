@@ -36,7 +36,6 @@ public class Highlighter : MonoBehaviour
     {
         foreach (var renderer in renderers)
         {
-            Debug.Log(renderer.materials.Length);
             for (int i = 0; i < renderer.materials.Length; i++)
             {
                 renderer.materials[i].EnableKeyword("_EMISSION");

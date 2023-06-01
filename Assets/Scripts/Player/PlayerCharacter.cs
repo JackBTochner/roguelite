@@ -34,7 +34,6 @@ namespace Player
         {
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
-            Debug.Log("Player Current Health: " + _currentHealthSO.CurrentHealth);
         }
 
         public void Start()
@@ -48,7 +47,6 @@ namespace Player
             if (_playerManager)
             {
                 _currentHealthSO = _playerManager.CurrentHealthSO;
-                Debug.Log("Player currentHealth set to: " + _currentHealthSO.CurrentHealth);
             } else
             { 
                 if (_currentHealthSO == null)
@@ -102,7 +100,6 @@ namespace Player
             }
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
-             //Debug.Log("Player Current Health: " + _currentHealthSO.CurrentHealth);
         }
 
         IEnumerator PlayerDie(float delay)
