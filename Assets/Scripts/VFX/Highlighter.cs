@@ -67,7 +67,7 @@ public class Highlighter : MonoBehaviour
         {
             for (int i = 0; i < materials.Count; i++)
             {
-                tweener.Kill();
+                materials[i].DOKill();
                 materials[i].DOColor(originalEmissiveColors[i], "_EmissionColor", 0.5f);
             }
             if(particles)

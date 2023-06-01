@@ -87,7 +87,7 @@ namespace Player
             }
             else
             {
-                if (_currentStaminaSO.CurrentStamina - digStaminaCost <= 0)
+                if (!HasStaminaForDig())
                 {
                     NotifyCantDig();
                     return;
@@ -98,6 +98,11 @@ namespace Player
                 Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
                 isDigging = true;
             }
+        }
+
+        public bool HasStaminaForDig()
+        {
+            return _currentStaminaSO.CurrentStamina - digStaminaCost > 0;
         }
 
         public void NotifyCantDig()

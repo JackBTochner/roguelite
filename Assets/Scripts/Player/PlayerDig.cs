@@ -23,10 +23,11 @@ public class PlayerDig : MonoBehaviour
         [Header("Listening on")]
         [SerializeField]
         private TransformAnchor _playerTransformAnchor = default;
+        
         [SerializeField]
         private RuntimeSetBase<Highlighter> _projectileHighlighters = default;
 
-    private void OnEnable()
+        private void OnEnable()
         {
             inputReader.OnDigPerformed += AttemptToggleDig;
         }
@@ -47,20 +48,13 @@ public class PlayerDig : MonoBehaviour
         private void AttemptToggleDig()
         {
             RaycastHit hit;
-            if (
-                Physics
-                    .Raycast(digDetectionLocation.position,
-                    -Vector3.up,
-                    out hit,
-                    digRayLength,
-                    ~digIgnoreLayerMask,
-                    QueryTriggerInteraction.Collide)
-            )
+            if (Physics.Raycast(digDetectionLocation.position,-Vector3.up,out hit,digRayLength,~digIgnoreLayerMask,QueryTriggerInteraction.Collide))
             {
                 ToggleDig(hit);
             }
             else
             {
+                
                 // Debug.Log("Nothing to Dig!");
             }
         }
@@ -87,6 +81,8 @@ public class PlayerDig : MonoBehaviour
             }
                 else
                 {
+                    if(!_playerTransformAnchor.Value.GetComponent<PlayerCharacter>().HasStaminaForDig())
+                        return;
                     foreach (var buffer in playerBuffers)
                     {
                         buffer.groundCollider = hit.collider;

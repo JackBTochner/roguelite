@@ -105,7 +105,7 @@ public class EnemySpawnWave
     [Header("Wave Details")]
     public float spawnRadius = 10f;
 
-    public BasicEnemy[] enemiesToSpawn;
+    public Enemy[] enemiesToSpawn;
 
     [HideInInspector]
     public int currentEnemies;
@@ -136,12 +136,12 @@ public class EnemySpawnWave
 
         foreach (var enemyPrefab in enemiesToSpawn)
         {
-            BasicEnemy enemy =
+            Enemy enemy =
                 GameObject
                     .Instantiate(enemyPrefab,
                     PickRandomSpawnPoint(),
                     Quaternion.identity)
-                    .GetComponent<BasicEnemy>();
+                    .GetComponent<Enemy>();
             enemy.OnEnemyDied.AddListener (EnemyKilled);
         }
     }
@@ -151,7 +151,7 @@ public class EnemySpawnWave
         triggeredNextWave = true;
     }
 
-    private void EnemyKilled(BasicEnemy enemy)
+    private void EnemyKilled(Enemy enemy)
     {
         if (currentEnemies - 1 <= 0)
             currentEnemies = 0;

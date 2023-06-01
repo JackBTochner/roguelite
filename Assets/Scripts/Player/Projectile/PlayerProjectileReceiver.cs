@@ -14,7 +14,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
 
     void OnEnable()
     { 
-        BasicEnemy enemy = GetComponent<BasicEnemy>();
+        Enemy enemy = GetComponent<Enemy>();
         BeamEnemy bEnemy = GetComponent<BeamEnemy>();
         // on enemy take dig damage, drop projectiles.
         if (enemy)
@@ -27,7 +27,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
     }
     void OnDisable()
     { 
-        BasicEnemy enemy = GetComponent<BasicEnemy>();
+        Enemy enemy = GetComponent<Enemy>();
         BeamEnemy bEnemy = GetComponent<BeamEnemy>();
         // on enemy take dig damage, drop projectiles.
         if (enemy)
@@ -49,7 +49,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
         projectileMarker.AddIconAt(projectileEffect.Icon, effectSOs.Count-1);
     }
 
-    public void DropProjectiles(BasicEnemy enemy)
+    public void DropProjectiles(Enemy enemy)
     {
         if (projectileCount > 0)
         {

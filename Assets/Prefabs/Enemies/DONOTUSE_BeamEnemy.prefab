@@ -5074,7 +5074,7 @@ GameObject:
   - component: {fileID: 4849024780899951025}
   - component: {fileID: 1633379795915146649}
   m_Layer: 6
-  m_Name: BeamEnemy
+  m_Name: DONOTUSE_BeamEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

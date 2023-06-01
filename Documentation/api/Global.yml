@@ -8,7 +8,7 @@ items:
   - Global.AstarPath.AstarDistribution
   - Global.AttackObject
   - Global.AttackTemplate
-  - Global.BasicEnemy
+  - Global.Enemy
   - Global.BoolEventChannelSO
   - Global.CameraAnchor
   - Global.CameraFollow
@@ -363,11 +363,11 @@ references:
   name: PlayerProjectile
   nameWithType: PlayerProjectile
   fullName: PlayerProjectile
-- uid: Global.BasicEnemy
-  commentId: T:Global.BasicEnemy
-  name: BasicEnemy
-  nameWithType: BasicEnemy
-  fullName: BasicEnemy
+- uid: Global.Enemy
+  commentId: T:Global.Enemy
+  name: Enemy
+  nameWithType: Enemy
+  fullName: Enemy
 - uid: Global.DescriptionBaseSO
   commentId: T:Global.DescriptionBaseSO
   name: DescriptionBaseSO

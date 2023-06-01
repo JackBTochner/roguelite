@@ -283,10 +283,10 @@ items:
   - Assembly-CSharp
   namespace: Global
   syntax:
-    content: public BasicEnemy[] enemiesToSpawn
+    content: public Enemy[] enemiesToSpawn
     return:
-      type: Global.BasicEnemy[]
-    content.vb: Public enemiesToSpawn As BasicEnemy()
+      type: Global.Enemy[]
+    content.vb: Public enemiesToSpawn As Enemy()
 - uid: Global.EnemySpawnWave.currentEnemies
   commentId: F:Global.EnemySpawnWave.currentEnemies
   id: currentEnemies
@@ -433,22 +433,22 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Global.BasicEnemy[]
+- uid: Global.Enemy[]
   isExternal: true
-  name: BasicEnemy[]
-  nameWithType: BasicEnemy[]
-  fullName: BasicEnemy[]
-  nameWithType.vb: BasicEnemy()
-  fullName.vb: BasicEnemy()
-  name.vb: BasicEnemy()
+  name: Enemy[]
+  nameWithType: Enemy[]
+  fullName: Enemy[]
+  nameWithType.vb: Enemy()
+  fullName.vb: Enemy()
+  name.vb: Enemy()
   spec.csharp:
-  - uid: Global.BasicEnemy
-    name: BasicEnemy
+  - uid: Global.Enemy
+    name: Enemy
   - name: '['
   - name: ']'
   spec.vb:
-  - uid: Global.BasicEnemy
-    name: BasicEnemy
+  - uid: Global.Enemy
+    name: Enemy
   - name: (
   - name: )
 - uid: System.Int32

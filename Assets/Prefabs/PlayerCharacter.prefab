@@ -191,18 +191,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd030a2997aea5418d97aff25b0b961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth_DEBUG: 0
-  maxHealth_DEBUG: 0
-  currentHealth_DEBUG: 0
   _currentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
   _deathDelay: 0.5
+  _currentStaminaSO: {fileID: 11400000, guid: aed2e6adb912c214596a6055e3776d6a, type: 2}
+  allowStaminaRegen: 1
+  digStaminaCost: 25
+  digStaminaDepleteRate: 5
   playerGFX: {fileID: 0}
   playerDigGFX: {fileID: 0}
   playerDigAttack: {fileID: 0}
   digFreezeTime: 0
+  _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
+  _updateStaminaUI: {fileID: 11400000, guid: 7c371bd7e9f3dfd4280a1796446c5604, type: 2}
   _deathEvent: {fileID: 0}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
+  _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
 --- !u!143 &3396965877584387916
 CharacterController:
   m_ObjectHideFlags: 0
@@ -243,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
   playerSpeed: 5
+  playerEyeHeight: 0.75
   gamepadDeadzone: 0.01
   gamepadRotateSmoothing: 500
   isGamepad: 0

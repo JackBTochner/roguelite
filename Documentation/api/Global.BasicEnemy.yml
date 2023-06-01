@@ -1,44 +1,44 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Global.BasicEnemy
-  commentId: T:Global.BasicEnemy
-  id: BasicEnemy
+- uid: Global.Enemy
+  commentId: T:Global.Enemy
+  id: Enemy
   parent: Global
   children:
-  - Global.BasicEnemy.AI
-  - Global.BasicEnemy.anim
-  - Global.BasicEnemy.detected
-  - Global.BasicEnemy.detectionObstacles
-  - Global.BasicEnemy.detectionRange
-  - Global.BasicEnemy.Die
-  - Global.BasicEnemy.Hit(System.Single,UnityEngine.Vector3)
-  - Global.BasicEnemy.hitParticle
-  - Global.BasicEnemy.itemDrops
-  - Global.BasicEnemy.lookAt
-  - Global.BasicEnemy.OnEnemyDied
-  - Global.BasicEnemy.playerTransformAnchor
-  - Global.BasicEnemy.rb
+  - Global.Enemy.AI
+  - Global.Enemy.anim
+  - Global.Enemy.detected
+  - Global.Enemy.detectionObstacles
+  - Global.Enemy.detectionRange
+  - Global.Enemy.Die
+  - Global.Enemy.Hit(System.Single,UnityEngine.Vector3)
+  - Global.Enemy.hitParticle
+  - Global.Enemy.itemDrops
+  - Global.Enemy.lookAt
+  - Global.Enemy.OnEnemyDied
+  - Global.Enemy.playerTransformAnchor
+  - Global.Enemy.rb
   langs:
   - csharp
   - vb
-  name: BasicEnemy
-  nameWithType: BasicEnemy
-  fullName: BasicEnemy
+  name: Enemy
+  nameWithType: Enemy
+  fullName: Enemy
   type: Class
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
-    id: BasicEnemy
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    id: Enemy
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 4
   assemblies:
   - Assembly-CSharp
   namespace: Global
   syntax:
-    content: 'public class BasicEnemy : Hittable'
-    content.vb: Public Class BasicEnemy Inherits Hittable
+    content: 'public class Enemy : Hittable'
+    content.vb: Public Class Enemy Inherits Hittable
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -55,24 +55,24 @@ items:
   - Global.Hittable.poisonDamage
   - Global.Hittable.OnHit
   - Global.Hittable.Start
-- uid: Global.BasicEnemy.anim
-  commentId: F:Global.BasicEnemy.anim
+- uid: Global.Enemy.anim
+  commentId: F:Global.Enemy.anim
   id: anim
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: anim
-  nameWithType: BasicEnemy.anim
-  fullName: BasicEnemy.anim
+  nameWithType: Enemy.anim
+  fullName: Enemy.anim
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: anim
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 6
   assemblies:
   - Assembly-CSharp
@@ -82,24 +82,24 @@ items:
     return:
       type: UnityEngine.Animator
     content.vb: Public anim As Animator
-- uid: Global.BasicEnemy.rb
-  commentId: F:Global.BasicEnemy.rb
+- uid: Global.Enemy.rb
+  commentId: F:Global.Enemy.rb
   id: rb
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: rb
-  nameWithType: BasicEnemy.rb
-  fullName: BasicEnemy.rb
+  nameWithType: Enemy.rb
+  fullName: Enemy.rb
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: rb
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 7
   assemblies:
   - Assembly-CSharp
@@ -109,24 +109,24 @@ items:
     return:
       type: UnityEngine.Rigidbody
     content.vb: Public rb As Rigidbody
-- uid: Global.BasicEnemy.lookAt
-  commentId: F:Global.BasicEnemy.lookAt
+- uid: Global.Enemy.lookAt
+  commentId: F:Global.Enemy.lookAt
   id: lookAt
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: lookAt
-  nameWithType: BasicEnemy.lookAt
-  fullName: BasicEnemy.lookAt
+  nameWithType: Enemy.lookAt
+  fullName: Enemy.lookAt
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: lookAt
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 8
   assemblies:
   - Assembly-CSharp
@@ -136,24 +136,24 @@ items:
     return:
       type: UnityEngine.Transform
     content.vb: Public lookAt As Transform
-- uid: Global.BasicEnemy.itemDrops
-  commentId: F:Global.BasicEnemy.itemDrops
+- uid: Global.Enemy.itemDrops
+  commentId: F:Global.Enemy.itemDrops
   id: itemDrops
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: itemDrops
-  nameWithType: BasicEnemy.itemDrops
-  fullName: BasicEnemy.itemDrops
+  nameWithType: Enemy.itemDrops
+  fullName: Enemy.itemDrops
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: itemDrops
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 10
   assemblies:
   - Assembly-CSharp
@@ -163,24 +163,24 @@ items:
     return:
       type: UnityEngine.GameObject[]
     content.vb: Public itemDrops As GameObject()
-- uid: Global.BasicEnemy.playerTransformAnchor
-  commentId: F:Global.BasicEnemy.playerTransformAnchor
+- uid: Global.Enemy.playerTransformAnchor
+  commentId: F:Global.Enemy.playerTransformAnchor
   id: playerTransformAnchor
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: playerTransformAnchor
-  nameWithType: BasicEnemy.playerTransformAnchor
-  fullName: BasicEnemy.playerTransformAnchor
+  nameWithType: Enemy.playerTransformAnchor
+  fullName: Enemy.playerTransformAnchor
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: playerTransformAnchor
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 12
   assemblies:
   - Assembly-CSharp
@@ -190,24 +190,24 @@ items:
     return:
       type: Global.TransformAnchor
     content.vb: Public playerTransformAnchor As TransformAnchor
-- uid: Global.BasicEnemy.AI
-  commentId: F:Global.BasicEnemy.AI
+- uid: Global.Enemy.AI
+  commentId: F:Global.Enemy.AI
   id: AI
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: AI
-  nameWithType: BasicEnemy.AI
-  fullName: BasicEnemy.AI
+  nameWithType: Enemy.AI
+  fullName: Enemy.AI
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: AI
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 13
   assemblies:
   - Assembly-CSharp
@@ -217,24 +217,24 @@ items:
     return:
       type: Pathfinding.AIDestinationSetter
     content.vb: Public AI As AIDestinationSetter
-- uid: Global.BasicEnemy.detectionObstacles
-  commentId: F:Global.BasicEnemy.detectionObstacles
+- uid: Global.Enemy.detectionObstacles
+  commentId: F:Global.Enemy.detectionObstacles
   id: detectionObstacles
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: detectionObstacles
-  nameWithType: BasicEnemy.detectionObstacles
-  fullName: BasicEnemy.detectionObstacles
+  nameWithType: Enemy.detectionObstacles
+  fullName: Enemy.detectionObstacles
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: detectionObstacles
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 15
   assemblies:
   - Assembly-CSharp
@@ -244,24 +244,24 @@ items:
     return:
       type: UnityEngine.LayerMask
     content.vb: Public detectionObstacles As LayerMask
-- uid: Global.BasicEnemy.detected
-  commentId: F:Global.BasicEnemy.detected
+- uid: Global.Enemy.detected
+  commentId: F:Global.Enemy.detected
   id: detected
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: detected
-  nameWithType: BasicEnemy.detected
-  fullName: BasicEnemy.detected
+  nameWithType: Enemy.detected
+  fullName: Enemy.detected
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: detected
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 17
   assemblies:
   - Assembly-CSharp
@@ -271,24 +271,24 @@ items:
     return:
       type: System.Boolean
     content.vb: Public detected As Boolean
-- uid: Global.BasicEnemy.detectionRange
-  commentId: F:Global.BasicEnemy.detectionRange
+- uid: Global.Enemy.detectionRange
+  commentId: F:Global.Enemy.detectionRange
   id: detectionRange
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: detectionRange
-  nameWithType: BasicEnemy.detectionRange
-  fullName: BasicEnemy.detectionRange
+  nameWithType: Enemy.detectionRange
+  fullName: Enemy.detectionRange
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: detectionRange
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 18
   assemblies:
   - Assembly-CSharp
@@ -298,51 +298,51 @@ items:
     return:
       type: System.Single
     content.vb: Public detectionRange As Single
-- uid: Global.BasicEnemy.OnEnemyDied
-  commentId: F:Global.BasicEnemy.OnEnemyDied
+- uid: Global.Enemy.OnEnemyDied
+  commentId: F:Global.Enemy.OnEnemyDied
   id: OnEnemyDied
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: OnEnemyDied
-  nameWithType: BasicEnemy.OnEnemyDied
-  fullName: BasicEnemy.OnEnemyDied
+  nameWithType: Enemy.OnEnemyDied
+  fullName: Enemy.OnEnemyDied
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: OnEnemyDied
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: Global
   syntax:
-    content: public UnityEvent<BasicEnemy> OnEnemyDied
+    content: public UnityEvent<Enemy> OnEnemyDied
     return:
-      type: UnityEngine.Events.UnityEvent{BasicEnemy}
-    content.vb: Public OnEnemyDied As UnityEvent(Of BasicEnemy)
-- uid: Global.BasicEnemy.hitParticle
-  commentId: F:Global.BasicEnemy.hitParticle
+      type: UnityEngine.Events.UnityEvent{Enemy}
+    content.vb: Public OnEnemyDied As UnityEvent(Of Enemy)
+- uid: Global.Enemy.hitParticle
+  commentId: F:Global.Enemy.hitParticle
   id: hitParticle
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: hitParticle
-  nameWithType: BasicEnemy.hitParticle
-  fullName: BasicEnemy.hitParticle
+  nameWithType: Enemy.hitParticle
+  fullName: Enemy.hitParticle
   type: Field
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: hitParticle
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 25
   assemblies:
   - Assembly-CSharp
@@ -352,24 +352,24 @@ items:
     return:
       type: UnityEngine.GameObject
     content.vb: Public hitParticle As GameObject
-- uid: Global.BasicEnemy.Hit(System.Single,UnityEngine.Vector3)
-  commentId: M:Global.BasicEnemy.Hit(System.Single,UnityEngine.Vector3)
+- uid: Global.Enemy.Hit(System.Single,UnityEngine.Vector3)
+  commentId: M:Global.Enemy.Hit(System.Single,UnityEngine.Vector3)
   id: Hit(System.Single,UnityEngine.Vector3)
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: Hit(float, Vector3)
-  nameWithType: BasicEnemy.Hit(float, Vector3)
-  fullName: BasicEnemy.Hit(float, UnityEngine.Vector3)
+  nameWithType: Enemy.Hit(float, Vector3)
+  fullName: Enemy.Hit(float, UnityEngine.Vector3)
   type: Method
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Hit
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 79
   assemblies:
   - Assembly-CSharp
@@ -383,28 +383,28 @@ items:
       type: UnityEngine.Vector3
     content.vb: Public Overrides Sub Hit(knockback As Single, direction As Vector3)
   overridden: Global.Hittable.Hit(System.Single,UnityEngine.Vector3)
-  overload: Global.BasicEnemy.Hit*
-  nameWithType.vb: BasicEnemy.Hit(Single, Vector3)
-  fullName.vb: BasicEnemy.Hit(Single, UnityEngine.Vector3)
+  overload: Global.Enemy.Hit*
+  nameWithType.vb: Enemy.Hit(Single, Vector3)
+  fullName.vb: Enemy.Hit(Single, UnityEngine.Vector3)
   name.vb: Hit(Single, Vector3)
-- uid: Global.BasicEnemy.Die
-  commentId: M:Global.BasicEnemy.Die
+- uid: Global.Enemy.Die
+  commentId: M:Global.Enemy.Die
   id: Die
-  parent: Global.BasicEnemy
+  parent: Global.Enemy
   langs:
   - csharp
   - vb
   name: Die()
-  nameWithType: BasicEnemy.Die()
-  fullName: BasicEnemy.Die()
+  nameWithType: Enemy.Die()
+  fullName: Enemy.Die()
   type: Method
   source:
     remote:
-      path: Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+      path: Assets/Scripts/PROTOTYPE/Enemy.cs
       branch: main
       repo: https://pmuenjohn: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@github.com/pmuenjohn/roguelite.git
     id: Die
-    path: ../Assets/Scripts/PROTOTYPE/BasicEnemy.cs
+    path: ../Assets/Scripts/PROTOTYPE/Enemy.cs
     startLine: 103
   assemblies:
   - Assembly-CSharp
@@ -412,7 +412,7 @@ items:
   syntax:
     content: public void Die()
     content.vb: Public Sub Die()
-  overload: Global.BasicEnemy.Die*
+  overload: Global.Enemy.Die*
 references:
 - uid: Global
 - uid: System.Object
@@ -612,23 +612,23 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
-- uid: UnityEngine.Events.UnityEvent{BasicEnemy}
-  commentId: T:UnityEngine.Events.UnityEvent{BasicEnemy}
+- uid: UnityEngine.Events.UnityEvent{Enemy}
+  commentId: T:UnityEngine.Events.UnityEvent{Enemy}
   parent: UnityEngine.Events
   definition: UnityEngine.Events.UnityEvent`1
-  name: UnityEvent<BasicEnemy>
-  nameWithType: UnityEvent<BasicEnemy>
-  fullName: UnityEngine.Events.UnityEvent<BasicEnemy>
-  nameWithType.vb: UnityEvent(Of BasicEnemy)
-  fullName.vb: UnityEngine.Events.UnityEvent(Of BasicEnemy)
-  name.vb: UnityEvent(Of BasicEnemy)
+  name: UnityEvent<Enemy>
+  nameWithType: UnityEvent<Enemy>
+  fullName: UnityEngine.Events.UnityEvent<Enemy>
+  nameWithType.vb: UnityEvent(Of Enemy)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of Enemy)
+  name.vb: UnityEvent(Of Enemy)
   spec.csharp:
   - uid: UnityEngine.Events.UnityEvent`1
     name: UnityEvent
     isExternal: true
   - name: <
-  - uid: Global.BasicEnemy
-    name: BasicEnemy
+  - uid: Global.Enemy
+    name: Enemy
   - name: '>'
   spec.vb:
   - uid: UnityEngine.Events.UnityEvent`1
@@ -637,8 +637,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Global.BasicEnemy
-    name: BasicEnemy
+  - uid: Global.Enemy
+    name: Enemy
   - name: )
 - uid: UnityEngine.Events.UnityEvent`1
   commentId: T:UnityEngine.Events.UnityEvent`1
@@ -730,11 +730,11 @@ references:
     name: Vector3
     isExternal: true
   - name: )
-- uid: Global.BasicEnemy.Hit*
-  commentId: Overload:Global.BasicEnemy.Hit
+- uid: Global.Enemy.Hit*
+  commentId: Overload:Global.Enemy.Hit
   name: Hit
-  nameWithType: BasicEnemy.Hit
-  fullName: BasicEnemy.Hit
+  nameWithType: Enemy.Hit
+  fullName: Enemy.Hit
 - uid: UnityEngine.Vector3
   commentId: T:UnityEngine.Vector3
   parent: UnityEngine
@@ -742,8 +742,8 @@ references:
   name: Vector3
   nameWithType: Vector3
   fullName: UnityEngine.Vector3
-- uid: Global.BasicEnemy.Die*
-  commentId: Overload:Global.BasicEnemy.Die
+- uid: Global.Enemy.Die*
+  commentId: Overload:Global.Enemy.Die
   name: Die
-  nameWithType: BasicEnemy.Die
-  fullName: BasicEnemy.Die
+  nameWithType: Enemy.Die
+  fullName: Enemy.Die
