@@ -59,7 +59,7 @@ public class PlayerWeaponController : MonoBehaviour
         {
             string effectTemplateName = effect.GetType().ToString();
             ProjectileEffectSO effectInstance = (ProjectileEffectSO)ScriptableObject.CreateInstance(effectTemplateName);
-            effectInstance.Icon = effect.Icon;
+            effectInstance.Copy(effect);
             effectInstances.Add(effectInstance);
         }
     }

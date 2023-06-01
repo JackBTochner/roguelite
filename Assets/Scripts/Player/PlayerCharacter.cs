@@ -7,23 +7,26 @@ namespace Player
     {
 
         [Header("Health")]
-        [SerializeField] private int initialHealth_DEBUG;
-        [SerializeField] private int maxHealth_DEBUG;
-        [SerializeField] private int currentHealth_DEBUG;
-
         [Tooltip("Health config, default value is used when no PlayerManager is present.")]
         [SerializeField] private HealthSO _currentHealthSO = default;
-
         [SerializeField]private float _deathDelay = 0.5f;
 
         [Header("Dig")]
+        [Tooltip("Stamina config, default value is used when no PlayerManager is present.")]
+        [SerializeField] private StaminaSO _currentStaminaSO = default;
+        public bool allowStaminaRegen = true;
+        public float digStaminaCost = 25;
+        public float digStaminaDepleteRate = 5;
         public GameObject playerGFX;
         public GameObject playerDigGFX;
         public AttackObject playerDigAttack;
         public float digFreezeTime;
+        private bool isDigging;
+        
 
         [Header("Broadcasting on")]
         [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
+        [SerializeField] private VoidEventChannelSO _updateStaminaUI = default;
         [SerializeField] private VoidEventChannelSO _deathEvent = default;
         [Header("Listening on")]
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
@@ -34,9 +37,11 @@ namespace Player
         {
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
+            if (_updateStaminaUI != null)
+                _updateStaminaUI.RaiseEvent();
         }
 
-        public void Start()
+        private void Start()
         {
             if (_playerManagerAnchor.isSet)
                 _playerManager = _playerManagerAnchor.Value;
@@ -47,6 +52,7 @@ namespace Player
             if (_playerManager)
             {
                 _currentHealthSO = _playerManager.CurrentHealthSO;
+                _currentStaminaSO = _playerManager.CurrentStaminaSO;
             } else
             { 
                 if (_currentHealthSO == null)
@@ -58,23 +64,52 @@ namespace Player
             }
         }
 
-        public void PlayerToggleDig(bool isDigging)
+        private void Update()
         {
             if (isDigging)
+            {
+                _currentStaminaSO.InflictDamage(digStaminaDepleteRate * Time.deltaTime);
+                if(_updateStaminaUI != null)
+                    _updateStaminaUI.RaiseEvent();
+            } else if(allowStaminaRegen)
+            {
+                _currentStaminaSO.RestoreStamina(_currentStaminaSO.RegenRate * Time.deltaTime);
+                if(_updateStaminaUI != null)
+                    _updateStaminaUI.RaiseEvent();
+            }
+        }
+
+        public void PlayerToggleDig(bool currentlyDigging)
+        {
+            if (currentlyDigging)
             {
                 StartCoroutine(EmergeFromDig(digFreezeTime));
             }
             else
             {
+                if (_currentStaminaSO.CurrentStamina - digStaminaCost <= 0)
+                {
+                    NotifyCantDig();
+                    return;
+                }
+                _currentStaminaSO.InflictDamage(digStaminaCost);
                 playerGFX.SetActive(false);
                 playerDigGFX.SetActive(true);
                 Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+                isDigging = true;
             }
+        }
+
+        public void NotifyCantDig()
+        {
+            Debug.Log("Can't dig! Stamina Too Low");
+            //TODO: Raise stamina bar UI flashing event
         }
 
         IEnumerator EmergeFromDig(float freezeTime)
         {
             // gameObject.GetComponent<CharacterController>().detectCollisions = false;
+            isDigging = false;
             playerGFX.SetActive(true);
             playerDigGFX.SetActive(false);
             Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);

@@ -1,9 +1,9 @@
 using UnityEngine;
 
 /// <summary>
-/// An instance of the health of the player character.
+/// An instance of the health.
 /// </summary>
-[CreateAssetMenu(fileName = "PlayersHealth", menuName = "EntityConfig/Player's Health")]
+[CreateAssetMenu(fileName = "Health", menuName = "EntityConfig/Health")]
 public class HealthSO : ScriptableObject
 {
     [Tooltip("The initial health")]

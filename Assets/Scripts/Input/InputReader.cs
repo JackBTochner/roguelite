@@ -73,6 +73,7 @@ public class InputReader : DescriptionBaseSO, Controls.IPlayerActions
         if (!context.performed) return;
         OnDigPerformed?.Invoke();
     }
+    
     public void OnAttack1(InputAction.CallbackContext context)
     { 
         if (!context.performed) return;

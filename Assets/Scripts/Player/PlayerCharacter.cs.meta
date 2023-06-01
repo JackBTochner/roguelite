@@ -5,6 +5,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - _currentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
+  - _currentStaminaSO: {fileID: 11400000, guid: aed2e6adb912c214596a6055e3776d6a,
+      type: 2}
   - playerGFX: {instanceID: 0}
   - playerDigGFX: {instanceID: 0}
   - playerDigAttack: {instanceID: 0}
