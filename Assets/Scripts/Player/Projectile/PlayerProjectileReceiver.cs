@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Highlighter))]
 public class PlayerProjectileReceiver : MonoBehaviour
 {
     public int projectileCount = 0;
     public GameObject pickup;
-
+    public GameObject hitParticle = default;
     public List<ProjectileEffectSO> effectSOs = new List<ProjectileEffectSO>();
 
     void OnEnable()
@@ -54,6 +55,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
                 Instantiate(pickup, transform.position, Quaternion.identity);
             }
         }
+        Instantiate(hitParticle, transform.position, Quaternion.LookRotation(transform.up));
         projectileCount = 0;
     }
 

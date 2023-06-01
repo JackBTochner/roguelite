@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 3708834870753349928}
   - component: {fileID: 3708834870753349931}
   - component: {fileID: 8378131748190141100}
+  - component: {fileID: 1023162810943327988}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -163,6 +164,9 @@ MonoBehaviour:
   detected: 0
   detectionRange: 20
   OnEnemyDied:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDigDamage:
     m_PersistentCalls:
       m_Calls: []
   hitParticle: {fileID: 3479186766190414694, guid: 647402e3d9351aa4187e6d2494882a16,
@@ -364,6 +368,25 @@ MonoBehaviour:
   enemySpeed: 1000
   playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
+--- !u!114 &1023162810943327988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708834870753350096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9e35dadcc2dc948a446c74b4c1967e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers:
+  - {fileID: 3708834870081609159}
+  - {fileID: 3708834870845149213}
+  targetColor: {r: 1, g: 1, b: 1, a: 1}
+  particles: {fileID: 0}
+  highlighters: {fileID: 11400000, guid: de704ed33b0585140b9220b53be341ce, type: 2}
+  projectileReceiver: {fileID: 6774762930659214622}
 --- !u!1 &3708834870814586815
 GameObject:
   m_ObjectHideFlags: 0

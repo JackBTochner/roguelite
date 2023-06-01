@@ -8,7 +8,7 @@ public class Highlighter : MonoBehaviour
     [SerializeField]
     private List<Renderer> renderers;
     [SerializeField]
-    private Color targetColor = Color.white;
+    private Color targetColor = new Color(255, 17, 85);
     [SerializeField]
     private ParticleSystem particles;
 
@@ -35,6 +35,7 @@ public class Highlighter : MonoBehaviour
     
     private void Awake()
     {
+        projectileReceiver = GetComponent<PlayerProjectileReceiver>();
         foreach (var renderer in renderers)
         {
             for (int i = 0; i < renderer.materials.Length; i++)

@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 235808717}
   - component: {fileID: 235808716}
   - component: {fileID: 235808715}
+  - component: {fileID: 235808721}
   m_Layer: 6
   m_Name: EnemyDummy
   m_TagString: Enemy
@@ -510,6 +511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileCount: 0
   pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
+  hitParticle: {fileID: 0}
   effectSOs: []
 --- !u!114 &235808719
 MonoBehaviour:
@@ -571,6 +573,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &235808721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235808714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9e35dadcc2dc948a446c74b4c1967e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers: []
+  targetColor: {r: 255, g: 17, b: 85, a: 1}
+  particles: {fileID: 0}
+  highlighters: {fileID: 0}
+  projectileReceiver: {fileID: 0}
 --- !u!1 &386689119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileCount: 0
   pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
+  hitParticle: {fileID: 3479186766190414694, guid: bab69d74b592a7348bff458b8a0a881d,
+    type: 3}
   effectSOs: []
 --- !u!114 &913176358
 MonoBehaviour:
@@ -1252,7 +1273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderers:
   - {fileID: 1461003174}
-  targetColor: {r: 1, g: 1, b: 1, a: 1}
+  targetColor: {r: 1, g: 0.06666667, b: 0.33333334, a: 1}
   particles: {fileID: 1626546981}
   highlighters: {fileID: 11400000, guid: de704ed33b0585140b9220b53be341ce, type: 2}
   projectileReceiver: {fileID: 913176357}
@@ -1270,6 +1291,7 @@ GameObject:
   - component: {fileID: 1007195012}
   - component: {fileID: 1007195011}
   - component: {fileID: 1007195010}
+  - component: {fileID: 1007195016}
   m_Layer: 6
   m_Name: EnemyDummy
   m_TagString: Enemy
@@ -1359,6 +1381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileCount: 0
   pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
+  hitParticle: {fileID: 0}
   effectSOs: []
 --- !u!114 &1007195014
 MonoBehaviour:
@@ -1420,6 +1443,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1007195016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007195009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9e35dadcc2dc948a446c74b4c1967e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers: []
+  targetColor: {r: 255, g: 17, b: 85, a: 1}
+  particles: {fileID: 0}
+  highlighters: {fileID: 0}
+  projectileReceiver: {fileID: 0}
 --- !u!1 &1011363412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,6 +1506,7 @@ GameObject:
   - component: {fileID: 1151608522}
   - component: {fileID: 1151608521}
   - component: {fileID: 1151608520}
+  - component: {fileID: 1151608526}
   m_Layer: 6
   m_Name: EnemyDummy
   m_TagString: Enemy
@@ -1555,6 +1596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileCount: 0
   pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
+  hitParticle: {fileID: 0}
   effectSOs: []
 --- !u!114 &1151608524
 MonoBehaviour:
@@ -1616,6 +1658,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1151608526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151608519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9e35dadcc2dc948a446c74b4c1967e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers: []
+  targetColor: {r: 255, g: 17, b: 85, a: 1}
+  particles: {fileID: 0}
+  highlighters: {fileID: 0}
+  projectileReceiver: {fileID: 0}
 --- !u!1 &1206019407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,6 +3061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileCount: 0
   pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
+  hitParticle: {fileID: 0}
   effectSOs: []
 --- !u!1001 &872067873939336427
 PrefabInstance:
@@ -3752,6 +3812,7 @@ GameObject:
   - component: {fileID: 7326186818763628742}
   - component: {fileID: 7326186818763628602}
   - component: {fileID: 7326186818763628601}
+  - component: {fileID: 7326186818763628743}
   m_Layer: 6
   m_Name: EnemyDummy
   m_TagString: Enemy
@@ -3786,6 +3847,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7326186818763628743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7326186818763628738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9e35dadcc2dc948a446c74b4c1967e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers: []
+  targetColor: {r: 255, g: 17, b: 85, a: 1}
+  particles: {fileID: 0}
+  highlighters: {fileID: 0}
+  projectileReceiver: {fileID: 0}
 --- !u!4 &7326186818824029868
 Transform:
   m_ObjectHideFlags: 0
