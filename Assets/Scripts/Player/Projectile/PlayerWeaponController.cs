@@ -58,7 +58,9 @@ public class PlayerWeaponController : MonoBehaviour
         foreach (var effect in effectTemplates)
         {
             string effectTemplateName = effect.GetType().ToString();
-            effectInstances.Add((ProjectileEffectSO)ScriptableObject.CreateInstance(effectTemplateName));
+            ProjectileEffectSO effectInstance = (ProjectileEffectSO)ScriptableObject.CreateInstance(effectTemplateName);
+            effectInstance.Icon = effect.Icon;
+            effectInstances.Add(effectInstance);
         }
     }
 

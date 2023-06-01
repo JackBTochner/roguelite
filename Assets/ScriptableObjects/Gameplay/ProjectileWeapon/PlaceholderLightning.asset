@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb0d4ae6b1228f7459400236c6a13bf1, type: 3}
   m_Name: PlaceholderLightning
   m_EditorClassIdentifier: 
-  _guid: 
+  _guid: bdd0d97fcbd5a8347bef6010584be8a3
   description: 
+  Icon: {fileID: 21300000, guid: 8072eee21dc76da4995dfa1c685afeb1, type: 3}
   extraDamage: 5

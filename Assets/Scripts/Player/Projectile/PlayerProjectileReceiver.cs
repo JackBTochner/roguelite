@@ -10,6 +10,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
     public GameObject pickup;
     public GameObject hitParticle = default;
     public List<ProjectileEffectSO> effectSOs = new List<ProjectileEffectSO>();
+    public PlayerProjectileMarker projectileMarker;
 
     void OnEnable()
     { 
@@ -43,11 +44,13 @@ public class PlayerProjectileReceiver : MonoBehaviour
         projectileCount++;
         effectSOs.Add(projectileEffect);
         projectileEffect.Initialise(this.gameObject);
+        Debug.Log(projectileEffect.GetType());
+        Debug.Log(projectileEffect.Icon);
+        projectileMarker.AddIconAt(projectileEffect.Icon, effectSOs.Count-1);
     }
 
     public void DropProjectiles(BasicEnemy enemy)
     {
-        Debug.Log("DropProjectiles" + projectileCount);
         if (projectileCount > 0)
         {
             for (int i = 0; i < projectileCount; i++)
@@ -57,11 +60,12 @@ public class PlayerProjectileReceiver : MonoBehaviour
         }
         Instantiate(hitParticle, transform.position, Quaternion.LookRotation(transform.up));
         projectileCount = 0;
+        effectSOs.Clear();
+        projectileMarker.ClearIcons();
     }
 
     public void BDropProjectiles(BeamEnemy enemy)
-    { 
-        Debug.Log("DropProjectiles" + projectileCount);
+    {
         if (projectileCount > 0)
         {
             for (int i = 0; i < projectileCount; i++)
@@ -69,6 +73,9 @@ public class PlayerProjectileReceiver : MonoBehaviour
                 Instantiate(pickup, transform.position, Quaternion.identity);
             }
         }
+        Instantiate(hitParticle, transform.position, Quaternion.LookRotation(transform.up));
         projectileCount = 0;
+        effectSOs.Clear();
+        projectileMarker.ClearIcons();
     }
 }
