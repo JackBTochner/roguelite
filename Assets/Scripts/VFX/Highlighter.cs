@@ -19,7 +19,8 @@ public class Highlighter : MonoBehaviour
     public RuntimeSetBase<Highlighter> highlighters;
 
     public PlayerProjectileReceiver projectileReceiver;
-    
+    Tweener tweener;
+
     private void OnEnable()
     {
         if(highlighters)
@@ -56,8 +57,7 @@ public class Highlighter : MonoBehaviour
         {
             foreach (var material in materials)
             {
-                // material.SetColor("_EmissionColor", targetColor);
-                material.DOColor(targetColor, "_EmissionColor", 0.5f);
+                tweener = material.DOColor(targetColor, "_EmissionColor", 0.5f).SetLoops(-1, LoopType.Yoyo);
             }
             if(particles)
                 particles.Play();
@@ -66,6 +66,7 @@ public class Highlighter : MonoBehaviour
         {
             for (int i = 0; i < materials.Count; i++)
             {
+                tweener.Kill();
                 materials[i].DOColor(originalEmissiveColors[i], "_EmissionColor", 0.5f);
             }
             if(particles)

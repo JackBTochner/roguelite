@@ -9,15 +9,32 @@ public class PlayerProjectileReceiver : MonoBehaviour
     public GameObject pickup;
 
     public List<ProjectileEffectSO> effectSOs = new List<ProjectileEffectSO>();
-    
-    public void Start()
-    {
+
+    void OnEnable()
+    { 
         BasicEnemy enemy = GetComponent<BasicEnemy>();
         BeamEnemy bEnemy = GetComponent<BeamEnemy>();
-        if(enemy)
+        // on enemy take dig damage, drop projectiles.
+        if (enemy)
+        {
             enemy.OnEnemyDied.AddListener(DropProjectiles);
+            enemy.OnTakeDigDamage.AddListener(DropProjectiles);
+        }
         if(bEnemy)
             bEnemy.OnEnemyDied.AddListener(BDropProjectiles);
+    }
+    void OnDisable()
+    { 
+        BasicEnemy enemy = GetComponent<BasicEnemy>();
+        BeamEnemy bEnemy = GetComponent<BeamEnemy>();
+        // on enemy take dig damage, drop projectiles.
+        if (enemy)
+        {
+            enemy.OnEnemyDied.RemoveListener(DropProjectiles);
+            enemy.OnTakeDigDamage.RemoveListener(DropProjectiles);
+        }
+        if(bEnemy)
+            bEnemy.OnEnemyDied.RemoveListener(BDropProjectiles);
     }
 
     public void AddProjectile(ProjectileEffectSO projectileEffect)
@@ -37,6 +54,7 @@ public class PlayerProjectileReceiver : MonoBehaviour
                 Instantiate(pickup, transform.position, Quaternion.identity);
             }
         }
+        projectileCount = 0;
     }
 
     public void BDropProjectiles(BeamEnemy enemy)
@@ -49,5 +67,6 @@ public class PlayerProjectileReceiver : MonoBehaviour
                 Instantiate(pickup, transform.position, Quaternion.identity);
             }
         }
+        projectileCount = 0;
     }
 }

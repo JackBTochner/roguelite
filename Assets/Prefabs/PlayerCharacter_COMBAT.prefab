@@ -776,13 +776,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageInfo:
-    DamageType: 0
-    Damage: 0
+    DamageType: 1
+    Damage: 2
     CriticalData:
-      Chance: 0
-      Multiplier: 0
+      Chance: 50
+      Multiplier: 1.5
       Ignore: 0
-    Knockback: 0
+    Knockback: 1000
 --- !u!135 &3896151020917793843
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class BasicEnemy : Hittable
     bool died;
 
     public UnityEvent<BasicEnemy> OnEnemyDied = new UnityEvent<BasicEnemy>();
-
+    public UnityEvent<BasicEnemy> OnTakeDigDamage = new UnityEvent<BasicEnemy>();
 
     public GameObject hitParticle;
 
@@ -57,6 +57,8 @@ public class BasicEnemy : Hittable
     override public void Hit(DamageInfo damageInfo)
     {
         base.Hit(damageInfo);
+        if (damageInfo.DamageType == DamageType.Dig)
+            OnTakeDigDamage.Invoke(this);
         if (health > 0)
         {
             rb.AddForce(damageInfo.Direction * damageInfo.Knockback);

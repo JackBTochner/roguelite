@@ -96,6 +96,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327544b0811b3434193e37545c2d1ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageInfo:
+    DamageType: 0
+    Damage: 3
+    CriticalData:
+      Chance: 50
+      Multiplier: 1.5
+      Ignore: 0
+    Knockback: 500
+  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
+    type: 3}
+  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
+    type: 3}
+  impactVFX: {fileID: 3479186766190414694, guid: bab69d74b592a7348bff458b8a0a881d,
+    type: 3}
+  pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}
   radius: 0.25
   root: {fileID: 7388412658097730130}
   tip: {fileID: 7388412658097730130}
@@ -106,15 +121,3 @@ MonoBehaviour:
   speed: 30
   gravityAcceleration: 0
   inheritWeaponVelocity: 0
-  damage: 6
-  impactVFX: {fileID: 3479186766190414694, guid: bab69d74b592a7348bff458b8a0a881d,
-    type: 3}
-  critChance: 30
-  critMultiplier: 1.25
-  ignoreCrit: 0
-  knockback: 500
-  hitMarker: {fileID: 7801407444639326987, guid: 355de6dfea0e6dd42a1acc0b5f8e191b,
-    type: 3}
-  critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
-    type: 3}
-  pickup: {fileID: 6065857107710913193, guid: 6628e879488f04743b9cb75f2b382c54, type: 3}

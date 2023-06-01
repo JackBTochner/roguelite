@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _guid: 8f2786a78b1eefd45af030d157879e27
   description: 8
-  _initialProjectileCount: 1
-  _maxProjectileCount: 1
-  _currentProjectileCount: 1
+  _initialProjectileCount: 3
+  _maxProjectileCount: 3
+  _currentProjectileCount: 3
