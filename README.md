@@ -210,6 +210,8 @@ Appearance: Wisp, more feminine
 ## Concept Art
 
 Below are the character concepts completed by our 2D artist:
+### Character Art
+#### Kit
 
 Kit Outfit Designs:
 ![KIT OUTFIT 1 Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/19ed6fb4-ba7e-4314-920e-430a31e40f5f_rw_1920.png?h=b8a10fdecbe7a4e625e73b920cfd5e96)
@@ -227,3 +229,11 @@ Kit Concept Art (Colourway 1):
 
 Kit Concept Art (Colourway 2):
 ![KIT Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/f2477c7a-0df9-42d9-aa4e-b3ae70e945e5_rw_1920.png?h=bd06c3e38a10a8fe3a7d24b82fd9093b)
+
+#### NPCs
+Chang-e and Shrodinger Character Art WIP.
+![Chang-e and Shrodinger Character](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/0054f18a-be3b-4259-b27b-f09b9f08342b_rw_1920.png?h=948c3d8a4777851afe7867edc04a57db)
+
+### Ability and UI Art
+Melee and Dig Ability Icons:
+![Melee and Dig Ability Icons](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/4ce8ef51-4d46-4ef0-99e4-b4c1db810edc_rw_1920.png?h=6a78b347ccf6993e22b1b3ea5043fe45)
