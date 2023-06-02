@@ -1009,107 +1009,6 @@ references:
   commentId: F:Global.AttackTemplate.playerAnim
   fullName: AttackTemplate.playerAnim
   nameWithType: AttackTemplate.playerAnim
-- uid: Global.BasicEnemy
-  name: BasicEnemy
-  href: api/Global.BasicEnemy.html
-  commentId: T:Global.BasicEnemy
-  fullName: BasicEnemy
-  nameWithType: BasicEnemy
-- uid: Global.BasicEnemy.AI
-  name: AI
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_AI
-  commentId: F:Global.BasicEnemy.AI
-  fullName: BasicEnemy.AI
-  nameWithType: BasicEnemy.AI
-- uid: Global.BasicEnemy.anim
-  name: anim
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_anim
-  commentId: F:Global.BasicEnemy.anim
-  fullName: BasicEnemy.anim
-  nameWithType: BasicEnemy.anim
-- uid: Global.BasicEnemy.detected
-  name: detected
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_detected
-  commentId: F:Global.BasicEnemy.detected
-  fullName: BasicEnemy.detected
-  nameWithType: BasicEnemy.detected
-- uid: Global.BasicEnemy.detectionObstacles
-  name: detectionObstacles
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_detectionObstacles
-  commentId: F:Global.BasicEnemy.detectionObstacles
-  fullName: BasicEnemy.detectionObstacles
-  nameWithType: BasicEnemy.detectionObstacles
-- uid: Global.BasicEnemy.detectionRange
-  name: detectionRange
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_detectionRange
-  commentId: F:Global.BasicEnemy.detectionRange
-  fullName: BasicEnemy.detectionRange
-  nameWithType: BasicEnemy.detectionRange
-- uid: Global.BasicEnemy.Die
-  name: Die()
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_Die
-  commentId: M:Global.BasicEnemy.Die
-  fullName: BasicEnemy.Die()
-  nameWithType: BasicEnemy.Die()
-- uid: Global.BasicEnemy.Die*
-  name: Die
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_Die_
-  commentId: Overload:Global.BasicEnemy.Die
-  isSpec: "True"
-  fullName: BasicEnemy.Die
-  nameWithType: BasicEnemy.Die
-- uid: Global.BasicEnemy.Hit(System.Single,UnityEngine.Vector3)
-  name: Hit(float, Vector3)
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_Hit_System_Single_UnityEngine_Vector3_
-  commentId: M:Global.BasicEnemy.Hit(System.Single,UnityEngine.Vector3)
-  name.vb: Hit(Single, Vector3)
-  fullName: BasicEnemy.Hit(float, UnityEngine.Vector3)
-  fullName.vb: BasicEnemy.Hit(Single, UnityEngine.Vector3)
-  nameWithType: BasicEnemy.Hit(float, Vector3)
-  nameWithType.vb: BasicEnemy.Hit(Single, Vector3)
-- uid: Global.BasicEnemy.Hit*
-  name: Hit
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_Hit_
-  commentId: Overload:Global.BasicEnemy.Hit
-  isSpec: "True"
-  fullName: BasicEnemy.Hit
-  nameWithType: BasicEnemy.Hit
-- uid: Global.BasicEnemy.hitParticle
-  name: hitParticle
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_hitParticle
-  commentId: F:Global.BasicEnemy.hitParticle
-  fullName: BasicEnemy.hitParticle
-  nameWithType: BasicEnemy.hitParticle
-- uid: Global.BasicEnemy.itemDrops
-  name: itemDrops
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_itemDrops
-  commentId: F:Global.BasicEnemy.itemDrops
-  fullName: BasicEnemy.itemDrops
-  nameWithType: BasicEnemy.itemDrops
-- uid: Global.BasicEnemy.lookAt
-  name: lookAt
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_lookAt
-  commentId: F:Global.BasicEnemy.lookAt
-  fullName: BasicEnemy.lookAt
-  nameWithType: BasicEnemy.lookAt
-- uid: Global.BasicEnemy.OnEnemyDied
-  name: OnEnemyDied
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_OnEnemyDied
-  commentId: F:Global.BasicEnemy.OnEnemyDied
-  fullName: BasicEnemy.OnEnemyDied
-  nameWithType: BasicEnemy.OnEnemyDied
-- uid: Global.BasicEnemy.playerTransformAnchor
-  name: playerTransformAnchor
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_playerTransformAnchor
-  commentId: F:Global.BasicEnemy.playerTransformAnchor
-  fullName: BasicEnemy.playerTransformAnchor
-  nameWithType: BasicEnemy.playerTransformAnchor
-- uid: Global.BasicEnemy.rb
-  name: rb
-  href: api/Global.BasicEnemy.html#Global_BasicEnemy_rb
-  commentId: F:Global.BasicEnemy.rb
-  fullName: BasicEnemy.rb
-  nameWithType: BasicEnemy.rb
 - uid: Global.BoolEventChannelSO
   name: BoolEventChannelSO
   href: api/Global.BoolEventChannelSO.html
@@ -2552,6 +2451,107 @@ references:
   commentId: T:Global.EditorColdStartup
   fullName: EditorColdStartup
   nameWithType: EditorColdStartup
+- uid: Global.Enemy
+  name: Enemy
+  href: api/Global.BasicEnemy.html
+  commentId: T:Global.Enemy
+  fullName: Enemy
+  nameWithType: Enemy
+- uid: Global.Enemy.AI
+  name: AI
+  href: api/Global.BasicEnemy.html#Global_Enemy_AI
+  commentId: F:Global.Enemy.AI
+  fullName: Enemy.AI
+  nameWithType: Enemy.AI
+- uid: Global.Enemy.anim
+  name: anim
+  href: api/Global.BasicEnemy.html#Global_Enemy_anim
+  commentId: F:Global.Enemy.anim
+  fullName: Enemy.anim
+  nameWithType: Enemy.anim
+- uid: Global.Enemy.detected
+  name: detected
+  href: api/Global.BasicEnemy.html#Global_Enemy_detected
+  commentId: F:Global.Enemy.detected
+  fullName: Enemy.detected
+  nameWithType: Enemy.detected
+- uid: Global.Enemy.detectionObstacles
+  name: detectionObstacles
+  href: api/Global.BasicEnemy.html#Global_Enemy_detectionObstacles
+  commentId: F:Global.Enemy.detectionObstacles
+  fullName: Enemy.detectionObstacles
+  nameWithType: Enemy.detectionObstacles
+- uid: Global.Enemy.detectionRange
+  name: detectionRange
+  href: api/Global.BasicEnemy.html#Global_Enemy_detectionRange
+  commentId: F:Global.Enemy.detectionRange
+  fullName: Enemy.detectionRange
+  nameWithType: Enemy.detectionRange
+- uid: Global.Enemy.Die
+  name: Die()
+  href: api/Global.BasicEnemy.html#Global_Enemy_Die
+  commentId: M:Global.Enemy.Die
+  fullName: Enemy.Die()
+  nameWithType: Enemy.Die()
+- uid: Global.Enemy.Die*
+  name: Die
+  href: api/Global.BasicEnemy.html#Global_Enemy_Die_
+  commentId: Overload:Global.Enemy.Die
+  isSpec: "True"
+  fullName: Enemy.Die
+  nameWithType: Enemy.Die
+- uid: Global.Enemy.Hit(System.Single,UnityEngine.Vector3)
+  name: Hit(float, Vector3)
+  href: api/Global.BasicEnemy.html#Global_Enemy_Hit_System_Single_UnityEngine_Vector3_
+  commentId: M:Global.Enemy.Hit(System.Single,UnityEngine.Vector3)
+  name.vb: Hit(Single, Vector3)
+  fullName: Enemy.Hit(float, UnityEngine.Vector3)
+  fullName.vb: Enemy.Hit(Single, UnityEngine.Vector3)
+  nameWithType: Enemy.Hit(float, Vector3)
+  nameWithType.vb: Enemy.Hit(Single, Vector3)
+- uid: Global.Enemy.Hit*
+  name: Hit
+  href: api/Global.BasicEnemy.html#Global_Enemy_Hit_
+  commentId: Overload:Global.Enemy.Hit
+  isSpec: "True"
+  fullName: Enemy.Hit
+  nameWithType: Enemy.Hit
+- uid: Global.Enemy.hitParticle
+  name: hitParticle
+  href: api/Global.BasicEnemy.html#Global_Enemy_hitParticle
+  commentId: F:Global.Enemy.hitParticle
+  fullName: Enemy.hitParticle
+  nameWithType: Enemy.hitParticle
+- uid: Global.Enemy.itemDrops
+  name: itemDrops
+  href: api/Global.BasicEnemy.html#Global_Enemy_itemDrops
+  commentId: F:Global.Enemy.itemDrops
+  fullName: Enemy.itemDrops
+  nameWithType: Enemy.itemDrops
+- uid: Global.Enemy.lookAt
+  name: lookAt
+  href: api/Global.BasicEnemy.html#Global_Enemy_lookAt
+  commentId: F:Global.Enemy.lookAt
+  fullName: Enemy.lookAt
+  nameWithType: Enemy.lookAt
+- uid: Global.Enemy.OnEnemyDied
+  name: OnEnemyDied
+  href: api/Global.BasicEnemy.html#Global_Enemy_OnEnemyDied
+  commentId: F:Global.Enemy.OnEnemyDied
+  fullName: Enemy.OnEnemyDied
+  nameWithType: Enemy.OnEnemyDied
+- uid: Global.Enemy.playerTransformAnchor
+  name: playerTransformAnchor
+  href: api/Global.BasicEnemy.html#Global_Enemy_playerTransformAnchor
+  commentId: F:Global.Enemy.playerTransformAnchor
+  fullName: Enemy.playerTransformAnchor
+  nameWithType: Enemy.playerTransformAnchor
+- uid: Global.Enemy.rb
+  name: rb
+  href: api/Global.BasicEnemy.html#Global_Enemy_rb
+  commentId: F:Global.Enemy.rb
+  fullName: Enemy.rb
+  nameWithType: Enemy.rb
 - uid: Global.EnemySpawnManager
   name: EnemySpawnManager
   href: api/Global.EnemySpawnManager.html
@@ -3666,12 +3666,12 @@ references:
   isSpec: "True"
   fullName: PlayerProjectileReceiver.AddProjectile
   nameWithType: PlayerProjectileReceiver.AddProjectile
-- uid: Global.PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
-  name: DropProjectiles(BasicEnemy)
-  href: api/Global.PlayerProjectileReceiver.html#Global_PlayerProjectileReceiver_DropProjectiles_BasicEnemy_
-  commentId: M:Global.PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
-  fullName: PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
-  nameWithType: PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
+- uid: Global.PlayerProjectileReceiver.DropProjectiles(Enemy)
+  name: DropProjectiles(Enemy)
+  href: api/Global.PlayerProjectileReceiver.html#Global_PlayerProjectileReceiver_DropProjectiles_Enemy_
+  commentId: M:Global.PlayerProjectileReceiver.DropProjectiles(Enemy)
+  fullName: PlayerProjectileReceiver.DropProjectiles(Enemy)
+  nameWithType: PlayerProjectileReceiver.DropProjectiles(Enemy)
 - uid: Global.PlayerProjectileReceiver.DropProjectiles*
   name: DropProjectiles
   href: api/Global.PlayerProjectileReceiver.html#Global_PlayerProjectileReceiver_DropProjectiles_
