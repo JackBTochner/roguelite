@@ -112,7 +112,7 @@ When attacking an enemy for the first time upon entering a room, you will attach
 As you progress through the game and create bonds with the NPCs, you will gain passive perks and abilities. Each NPC will be able to give you a passive perk that you will keep throughout the game and will stack with other passive perks you may receive from other NPCs. When you complete a relationship with an NPC, you will receive an ultimate ability. You may unlock multiple ultimates, but you may only equip one at a time. These abilities and perks will be active in every run, and will stay with you when you die. 
 
 
-### Pen-Building system
+#### Pen-Building system
 
 Player must walk to their workbench and interact with it. It will open the pen-build UI. It will have a
 work bench and tools. Tools include drill, hammer, saw, clips, and water. The drill can be used to
@@ -127,6 +127,42 @@ need to drag the plastic onto the work bench as well and drag the drill to make 
 will do the same with feathers and clippers. After all the materials are made, if they left all the made
 materials on the work bench, then all they need to do to overlap the materials and drag the hammer
 to make the pen. Double click on items to obtain them. 
+
+### Currency systen
+
+#### Modular
+
+The world currency that customers use to pay for their goods. Modular can also be used to
+upgrade the hub (shop). The shop can be upgraded with aesthetic changes (e.g different coloured
+wallpaper and flooring). The shop can also be upgraded so that the pen making game play can be
+made easier.
+
+Obtainability:
+
+• Making correct items for customers (some customers will pay anyways depending on the
+customer and your relationship with them)
+
+• Herbert the bear
+
+• Completing levels
+
+#### Fish
+
+Fish can be used for Herbert the bear to purchase his shop items. He has a variety stall of items
+including Modulars, Power-ups (boons) and enemy drops.
+
+Obtainability:
+
+• Destroying crates that are spawned around the world.
+
+• Completing a level around the Yarra will have a 40% chance of dropping fish at the end of it.
+
+#### Enemy drops
+
+Colour Pigments: Blue, black, green, yellow, purple, red, pink.
+
+Materials: Plastic, Wood, Aluminium, Feathers, lead.
+
 
 
 ## Brand Identity
