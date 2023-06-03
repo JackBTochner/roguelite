@@ -13,6 +13,7 @@ public class EnemySpawnManager : MonoBehaviour
 
     public Exit playerExit;
 
+
     [Header("Listening On")]
     [SerializeField]
     private VoidEventChannelSO _onSceneReady = default; //Raised by SceneLoader when the scene is set to active
@@ -84,6 +85,9 @@ public class EnemySpawnWave
 {
     public string name;
 
+    public GameObject enemySpawnIndicator;
+    public float individualSpawnDelay = 2.0f;
+
     [Header("Preconditions")]
     public float waveInitialSpawnDelay = 0.0f;
 
@@ -92,10 +96,7 @@ public class EnemySpawnWave
 
     private float _delayCompleteTime = Mathf.NegativeInfinity;
 
-    [
-        Tooltip(
-            "If assigned, wave will require the player to activate the trigger to complete the wave.\n If left unassigned, will ignore the requirement")
-    ]
+    [Tooltip("If assigned, wave will require the player to activate the trigger to complete the wave.\n If left unassigned, will ignore the requirement")]
     public SpawnWaveTrigger nextWaveSpawnTrigger;
 
     private bool triggeredNextWave = false;
@@ -134,15 +135,20 @@ public class EnemySpawnWave
 
         yield return new WaitForSeconds(waveInitialSpawnDelay);
 
-        foreach (var enemyPrefab in enemiesToSpawn)
+        Vector3[] spawnLocation = new Vector3[enemiesToSpawn.Length];
+        
+        for (int i = 0; i < enemiesToSpawn.Length; i++)
         {
-            Enemy enemy =
-                GameObject
-                    .Instantiate(enemyPrefab,
-                    PickRandomSpawnPoint(),
-                    Quaternion.identity)
-                    .GetComponent<Enemy>();
-            enemy.OnEnemyDied.AddListener (EnemyKilled);
+            spawnLocation[i] = PickRandomSpawnPoint();
+            GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
+        }
+
+        yield return new WaitForSeconds(individualSpawnDelay);
+
+        for (int e = 0; e < enemiesToSpawn.Length; e++)
+        {
+            Enemy enemy = GameObject.Instantiate(enemiesToSpawn[e], spawnLocation[e], Quaternion.identity).GetComponent<Enemy>();
+            enemy.OnEnemyDied.AddListener(EnemyKilled);
         }
     }
 
