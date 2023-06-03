@@ -876,6 +876,7 @@ MonoBehaviour:
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
     type: 3}
+  cameraShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -1259,6 +1260,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
         type: 3}
+    - target: {fileID: 6855407244047730735, guid: 8a94824cbb7897e438cd91587107f380,
+        type: 3}
+      propertyPath: cameraShakeEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d,
+        type: 2}
     - target: {fileID: 6855407244047730900, guid: 8a94824cbb7897e438cd91587107f380,
         type: 3}
       propertyPath: maxSpeed
@@ -1813,6 +1820,7 @@ MonoBehaviour:
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
     type: 3}
+  cameraShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -2346,6 +2354,7 @@ MonoBehaviour:
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
     type: 3}
+  cameraShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -2564,6 +2573,7 @@ MonoBehaviour:
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
     type: 3}
+  cameraShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -4799,38 +4809,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3963344385413780892, guid: 8b6ae659732a64b44b50bc377b52cc09,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963344385413780892, guid: 8b6ae659732a64b44b50bc377b52cc09,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8535535
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963344385413780892, guid: 8b6ae659732a64b44b50bc377b52cc09,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.35355338
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963344385413780892, guid: 8b6ae659732a64b44b50bc377b52cc09,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.35355338
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963344385413780892, guid: 8b6ae659732a64b44b50bc377b52cc09,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.1464466
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963344385413780892, guid: 8b6ae659732a64b44b50bc377b52cc09,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 45
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5423081004958038578, guid: 8b6ae659732a64b44b50bc377b52cc09, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5210,6 +5189,7 @@ MonoBehaviour:
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
     type: 3}
+  cameraShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   OnHit:
     m_PersistentCalls:
       m_Calls: []
@@ -5744,6 +5724,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5074558062176136339, guid: 517ea0cec392d7740a52552573e22592,
+        type: 3}
+      propertyPath: cameraShakeEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d,
+        type: 2}
     - target: {fileID: 6121646367202471544, guid: 517ea0cec392d7740a52552573e22592,
         type: 3}
       propertyPath: m_AnchorMax.y

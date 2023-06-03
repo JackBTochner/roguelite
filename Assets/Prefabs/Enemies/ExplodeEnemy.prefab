@@ -294,6 +294,7 @@ MonoBehaviour:
     type: 3}
   critMarker: {fileID: 7801407444639326987, guid: 9a0b355a16715b14ba05b16fa3ec6ed8,
     type: 3}
+  cameraShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   OnHit:
     m_PersistentCalls:
       m_Calls: []

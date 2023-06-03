@@ -28,6 +28,7 @@ namespace Player
         [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
         [SerializeField] private VoidEventChannelSO _updateStaminaUI = default;
         [SerializeField] private VoidEventChannelSO _deathEvent = default;
+        [SerializeField] private VoidEventChannelSO _camShakeEvent = default;
         [Header("Listening on")]
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
@@ -92,6 +93,7 @@ namespace Player
                     NotifyCantDig();
                     return;
                 }
+                _camShakeEvent.RaiseEvent();
                 _currentStaminaSO.InflictDamage(digStaminaCost);
                 playerGFX.SetActive(false);
                 playerDigGFX.SetActive(true);
@@ -128,6 +130,7 @@ namespace Player
 
         public void TakeDamage(int amount)
         {
+            _camShakeEvent.RaiseEvent();
             float nextHealth = _currentHealthSO.CurrentHealth - amount;
             if (nextHealth <= 0)
             {

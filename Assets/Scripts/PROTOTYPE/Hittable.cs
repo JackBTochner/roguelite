@@ -14,6 +14,9 @@ public class Hittable : MonoBehaviour
 
     public GameObject hitMarker = default;
     public GameObject critMarker = default;
+    
+    [Header("Broadcasting on")]
+    public VoidEventChannelSO cameraShakeEvent = default;
 
     public DamageEvent OnHit = new DamageEvent();
 
@@ -36,7 +39,8 @@ public class Hittable : MonoBehaviour
         hitMarkerObj.GetComponent<HitMarker>().Initialise(finalDamage);
         
         health -= finalDamage;
-    
+
+        cameraShakeEvent.RaiseEvent();
         OnHit.Invoke(damageInfo);
     }
 
@@ -52,6 +56,7 @@ public class Hittable : MonoBehaviour
         
         health -= finalDamage;
     
+        cameraShakeEvent.RaiseEvent();
         OnHit.Invoke(damageInfo);
     }
 }

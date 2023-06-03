@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private TransformAnchor _cameraTransformAnchor = default;
     // [SerializeField] private CameraAnchor _cameraAnchor = default;
 	[SerializeField] private TransformAnchor _playerTransformAnchor = default;
+    [SerializeField] private CinemachineImpulseSource impulseSource;
 
     [Header("Listening on channels")]
 	[Tooltip("The CameraManager listens to this event, fired by an event from the player, to shake camera")]
@@ -26,9 +28,9 @@ public class CameraManager : MonoBehaviour
 		// inputReader.DisableMouseControlCameraEvent += OnDisableMouseControlCamera;
 
 		_playerTransformAnchor.OnAnchorProvided += SetupProtagonistVirtualCamera;
-		// _camShakeEvent.OnEventRaised += impulseSource.GenerateImpulse;
+        _camShakeEvent.OnEventRaised += impulseSource.GenerateImpulse;
 
-		_cameraTransformAnchor.Provide(mainCamera.transform);
+        _cameraTransformAnchor.Provide(mainCamera.transform);
 	}
 
     private void OnDisable()
@@ -38,7 +40,7 @@ public class CameraManager : MonoBehaviour
 		// inputReader.DisableMouseControlCameraEvent -= OnDisableMouseControlCamera;
 
 		_playerTransformAnchor.OnAnchorProvided -= SetupProtagonistVirtualCamera;
-		// _camShakeEvent.OnEventRaised -= impulseSource.GenerateImpulse;
+		_camShakeEvent.OnEventRaised -= impulseSource.GenerateImpulse;
 
 		_cameraTransformAnchor.Unset();
 	}

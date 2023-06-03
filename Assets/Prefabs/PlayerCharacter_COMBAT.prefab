@@ -281,6 +281,7 @@ MonoBehaviour:
   _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
   _updateStaminaUI: {fileID: 11400000, guid: 6cadc952f1e60c6449f24be6b928a26d, type: 2}
   _deathEvent: {fileID: 0}
+  _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
   _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
