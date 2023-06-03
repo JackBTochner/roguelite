@@ -29,11 +29,11 @@ public class PlayerDig : MonoBehaviour
 
         private void OnEnable()
         {
-            inputReader.OnDigPerformed += AttemptToggleDig;
+            inputReader.OnDigCancelled += AttemptToggleDig;
         }
         private void OnDisable()
         {
-            inputReader.OnDigPerformed -= AttemptToggleDig;
+            inputReader.OnDigCancelled -= AttemptToggleDig;
         }
 
         private void Update()
