@@ -11,14 +11,42 @@ public class JumpEnemy : MonoBehaviour
     private Rigidbody enemyRB;
 
     private CharacterController playerController;
+    public Enemy enemyBase = default;
+    private bool isAlive = true;
+
+    void OnEnable()
+    {
+        if (enemyBase)
+        {
+            enemyBase.OnEnemyDied.AddListener(EnemyDied);
+        }
+
+    }
+    void OnDisable()
+    {
+        if (enemyBase)
+        {
+            enemyBase.OnEnemyDied.RemoveListener(EnemyDied);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+
+        enemyBase = GetComponent<Enemy>();
         // Get the rigibody component of the current object "Jump Enemy".
         enemyRB = GetComponent<Rigidbody>();
         // Start the jumping coroutine
         StartCoroutine(waitForJump());
+    }
+
+    void EnemyDied(Enemy enemy)
+    {
+        isAlive = false;
+        GetComponent<BoxCollider>().enabled = false;
+        getOutFromEnemy();
+
     }
 
     // Update is called once per frame
@@ -32,7 +60,7 @@ public class JumpEnemy : MonoBehaviour
                                            );
 
             // Rotate to face the player only along the y-axis
-            transform.LookAt(lookDirection);
+            //transform.LookAt(lookDirection);
         }
         // Keep the enemy that faces the player all the time.
         // Dont use this code because the enemy is following the player but not stoping as a longrange enemy.
@@ -96,7 +124,7 @@ public class JumpEnemy : MonoBehaviour
         float startTime = Time.time;
 
         // This means the time now - the before loades, 
-        while (Time.time - startTime < 1.5f)
+        while (Time.time - startTime < 1.5f && isAlive)
         {
             // Keep the player inside the enemy object.
             playerTransformAnchor.Value.position = transform.position;
@@ -137,7 +165,6 @@ public class JumpEnemy : MonoBehaviour
         // Movement turn on.
         EnablePlayerMovement();
     }
-
 
     private void DisablePlayerMovement() // Turn off the player controller.
     {
