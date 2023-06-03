@@ -285,7 +285,7 @@ Kit Concept Art (Colourway 2):
 
 #### NPCs
 Chang-e and Shrodinger Character Art WIP.
-![Chang-e and Shrodinger Character](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/0054f18a-be3b-4259-b27b-f09b9f08342b_rw_1920.png?h=948c3d8a4777851afe7867edc04a57db)
+![Chang-e and Shrodinger Character](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/5de2ec7c-f7ec-4584-99c6-d69f781aa6a7_rw_1920.png?h=68450987376cbaabc94f41d3e6335eb4)
 
 ### Ability and UI Art
 Melee and Dig Ability Icons:
