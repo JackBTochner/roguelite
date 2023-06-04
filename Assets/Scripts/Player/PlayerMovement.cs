@@ -28,7 +28,11 @@ namespace Player
         [SerializeField]
         private TransformAnchor mainCamera = default;
 
-        [SerializeField] private Transform characterToRotate;
+        [SerializeField] private Transform aimTransform;
+        [SerializeField] private Transform gfxTransform;
+        [Tooltip("Angular speed in degrees per sec.")]
+        [SerializeField] private float gfxRotateSpeed = 30;
+        Quaternion lookAt;
 
         private CharacterController controller;
 
@@ -62,7 +66,7 @@ namespace Player
             ApplyGravity();
             if(allowMovement)
                 HandleMovement();
-            if(characterToRotate && allowRotation)
+            if(aimTransform && allowRotation)
                 HandleRotation();
             currentSpeed = controller.velocity.magnitude;
         }
@@ -93,10 +97,14 @@ namespace Player
                 move = new Vector3(inputReader.MoveComposite.x, 0f, inputReader.MoveComposite.y);
             }
             controller.Move(move * Time.deltaTime * playerSpeed);
+
+            lookAt = (inputReader.MoveComposite.magnitude > 0.1f) ? Quaternion.LookRotation(move) : lookAt;
+            gfxTransform.rotation = Quaternion.RotateTowards(gfxTransform.rotation, lookAt, Time.deltaTime * gfxRotateSpeed);
         }
 
         private void HandleRotation()
         {
+            
             if (isGamepad)
                 GamepadLook();
             else
@@ -113,7 +121,7 @@ namespace Player
                 if (playerDirection.sqrMagnitude > 0.0f)
                 {
                     Quaternion newRot = Quaternion.LookRotation(playerDirection, Vector3.up);
-                    characterToRotate.rotation = Quaternion.RotateTowards(transform.rotation, newRot, gamepadRotateSmoothing * Time.deltaTime);
+                    aimTransform.rotation = Quaternion.RotateTowards(transform.rotation, newRot, gamepadRotateSmoothing * Time.deltaTime);
                 }
             }
         }
@@ -128,7 +136,7 @@ namespace Player
             {
                 Vector3 intersect = ray.GetPoint(rayDistance);
                 Vector3 point = new(intersect.x, transform.position.y, intersect.z);
-                characterToRotate.LookAt(point);
+                aimTransform.LookAt(point);
             }
         }
 
