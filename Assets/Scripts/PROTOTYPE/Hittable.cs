@@ -68,6 +68,7 @@ public class DamageEvent : UnityEvent<DamageInfo>
 
 [System.Serializable]
 public class DamageInfo {
+
     public DamageInfo(DamageType damageType, float damage, CriticalData criticalData, float knockback, Vector3 direction)
     {
         this.DamageType = damageType;

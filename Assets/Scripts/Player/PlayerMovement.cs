@@ -32,6 +32,7 @@ namespace Player
         [SerializeField] private Transform gfxTransform;
         [Tooltip("Angular speed in degrees per sec.")]
         [SerializeField] private float gfxRotateSpeed = 30;
+        [SerializeField] private Animator gfxAnimator;
         Quaternion lookAt;
 
         private CharacterController controller;
@@ -96,10 +97,11 @@ namespace Player
                 Debug.LogWarning("No gameplay camera in the scene. Movement orientation will not be correct.");
                 move = new Vector3(inputReader.MoveComposite.x, 0f, inputReader.MoveComposite.y);
             }
-            controller.Move(move * Time.deltaTime * playerSpeed);
 
             lookAt = (inputReader.MoveComposite.magnitude > 0.1f) ? Quaternion.LookRotation(move) : lookAt;
             gfxTransform.rotation = Quaternion.RotateTowards(gfxTransform.rotation, lookAt, Time.deltaTime * gfxRotateSpeed);
+            gfxAnimator.SetFloat("Speed", (currentSpeed > 0) ? currentSpeed / playerSpeed : 0);
+            controller.Move(move * Time.deltaTime * playerSpeed);
         }
 
         private void HandleRotation()
