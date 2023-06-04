@@ -93,7 +93,6 @@ namespace Player
                     NotifyCantDig();
                     return;
                 }
-                _camShakeEvent.RaiseEvent();
                 _currentStaminaSO.InflictDamage(digStaminaCost);
                 playerGFX.SetActive(false);
                 playerDigGFX.SetActive(true);
@@ -117,6 +116,7 @@ namespace Player
         {
             // gameObject.GetComponent<CharacterController>().detectCollisions = false;
             isDigging = false;
+            _camShakeEvent.RaiseEvent();
             playerGFX.SetActive(true);
             playerDigGFX.SetActive(false);
             Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);

@@ -25,8 +25,10 @@ namespace Player
         [SerializeField]
         private bool isGamepad;
                 
-        [SerializeField] 
+        [SerializeField]
         private TransformAnchor mainCamera = default;
+
+        [SerializeField] private Transform characterToRotate;
 
         private CharacterController controller;
 
@@ -37,6 +39,7 @@ namespace Player
         private Controls controls;
 
         public bool allowMovement = true;
+        public bool allowRotation = true;
 
         private void Awake()
         {
@@ -58,9 +61,10 @@ namespace Player
         {
             ApplyGravity();
             if(allowMovement)
-            HandleMovement();
-            HandleRotation();
-                currentSpeed = controller.velocity.magnitude;
+                HandleMovement();
+            if(characterToRotate && allowRotation)
+                HandleRotation();
+            currentSpeed = controller.velocity.magnitude;
         }
 
         private void ApplyGravity()
@@ -77,14 +81,10 @@ namespace Player
             Vector3 move;
             if (mainCamera.isSet)
             {
-                Vector3 playerForward =
-                    Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
-                Vector3 playerRight =
-                    Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
+                Vector3 playerForward = Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
+                Vector3 playerRight = Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
 
-                move =
-                    playerForward.normalized * inputReader.MoveComposite.y +
-                    playerRight.normalized * inputReader.MoveComposite.x;
+                move = playerForward.normalized * inputReader.MoveComposite.y + playerRight.normalized * inputReader.MoveComposite.x;
 
             } else
             { 
@@ -105,23 +105,15 @@ namespace Player
 
         private void GamepadLook()
         {
-            if (
-                Mathf.Abs(inputReader.Look.x) > gamepadDeadzone ||
-                Mathf.Abs(inputReader.Look.y) > gamepadDeadzone
-            )
+            if ( Mathf.Abs(inputReader.Look.x) > gamepadDeadzone || Mathf.Abs(inputReader.Look.y) > gamepadDeadzone )
             {
                 Vector3 playerDirection =
                     Vector3.right * inputReader.Look.x +
                     Vector3.forward * inputReader.Look.y;
                 if (playerDirection.sqrMagnitude > 0.0f)
                 {
-                    Quaternion newRot =
-                        Quaternion.LookRotation(playerDirection, Vector3.up);
-                    transform.rotation =
-                        Quaternion
-                            .RotateTowards(transform.rotation,
-                            newRot,
-                            gamepadRotateSmoothing * Time.deltaTime);
+                    Quaternion newRot = Quaternion.LookRotation(playerDirection, Vector3.up);
+                    characterToRotate.rotation = Quaternion.RotateTowards(transform.rotation, newRot, gamepadRotateSmoothing * Time.deltaTime);
                 }
             }
         }
@@ -136,14 +128,13 @@ namespace Player
             {
                 Vector3 intersect = ray.GetPoint(rayDistance);
                 Vector3 point = new(intersect.x, transform.position.y, intersect.z);
-                transform.LookAt(point);
+                characterToRotate.LookAt(point);
             }
         }
 
         public void OnDeviceChange(PlayerInput pi)
         {
-            isGamepad =
-                pi.currentControlScheme.Equals("Gamepad") ? true : false;
+            isGamepad = pi.currentControlScheme.Equals("Gamepad") ? true : false;
         }
     }
 }
