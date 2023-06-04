@@ -531,10 +531,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9e35dadcc2dc948a446c74b4c1967e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderers: []
-  targetColor: {r: 0.7490196, g: 0.050980393, b: 0.2509804, a: 1}
+  renderers:
+  - {fileID: 6855407243643634881}
+  - {fileID: 6855407244020910363}
+  targetColor: {r: 1, g: 0.06666667, b: 0.33333334, a: 1}
   particles: {fileID: 0}
-  highlighters: {fileID: 0}
+  highlighters: {fileID: 11400000, guid: de704ed33b0585140b9220b53be341ce, type: 2}
   projectileReceiver: {fileID: 3629879063316945944}
 --- !u!1 &6855407245481770486
 GameObject:

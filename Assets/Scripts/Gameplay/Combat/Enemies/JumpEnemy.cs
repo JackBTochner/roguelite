@@ -13,6 +13,7 @@ public class JumpEnemy : MonoBehaviour
     private CharacterController playerController;
     public Enemy enemyBase = default;
     private bool isAlive = true;
+    public bool hasPlayer = false;
 
     void OnEnable()
     {
@@ -33,7 +34,6 @@ public class JumpEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         enemyBase = GetComponent<Enemy>();
         // Get the rigibody component of the current object "Jump Enemy".
         enemyRB = GetComponent<Rigidbody>();
@@ -43,10 +43,10 @@ public class JumpEnemy : MonoBehaviour
 
     void EnemyDied(Enemy enemy)
     {
+        Debug.Log("Spit out player");
         isAlive = false;
         GetComponent<BoxCollider>().enabled = false;
-        getOutFromEnemy();
-
+        EnablePlayerMovement();
     }
 
     // Update is called once per frame
@@ -62,10 +62,6 @@ public class JumpEnemy : MonoBehaviour
             // Rotate to face the player only along the y-axis
             //transform.LookAt(lookDirection);
         }
-        // Keep the enemy that faces the player all the time.
-        // Dont use this code because the enemy is following the player but not stoping as a longrange enemy.
-        //transform.LookAt(playerTransformAnchor.Value);
-
     }
 
     IEnumerator waitForJump()
@@ -98,15 +94,12 @@ public class JumpEnemy : MonoBehaviour
         {
             if (collision.gameObject.tag == "Player")
             {   // Get the playerController
+                hasPlayer = true;
                 playerController = collision.gameObject.GetComponent<CharacterController>();
 
                 // Turn of the player controller.
                 DisablePlayerMovement();
-
-
                 StartCoroutine(MovePlayerToEnemyPosition());
-
-                
             }
         }
     }
@@ -159,9 +152,7 @@ public class JumpEnemy : MonoBehaviour
             // pause until next fram. run once per frame
             yield return null;
         }
-
-        // Turn on.
-        playerController.enabled = true;
+        hasPlayer = false;
         // Movement turn on.
         EnablePlayerMovement();
     }
@@ -173,6 +164,7 @@ public class JumpEnemy : MonoBehaviour
 
     private void EnablePlayerMovement() // Turn on the player controller.
     {
+        playerController.enabled = true;
         playerController.GetComponent<PlayerMovement>().allowMovement = true;
     }
 }

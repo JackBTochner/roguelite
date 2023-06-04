@@ -197,14 +197,14 @@ MonoBehaviour:
   allowStaminaRegen: 1
   digStaminaCost: 25
   digStaminaDepleteRate: 5
-  playerGFX: {fileID: 0}
+  playerGFX: {fileID: 3396965876898961664}
   playerDigGFX: {fileID: 0}
   playerDigAttack: {fileID: 0}
   digFreezeTime: 0
   _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
   _updateStaminaUI: {fileID: 11400000, guid: 7c371bd7e9f3dfd4280a1796446c5604, type: 2}
   _deathEvent: {fileID: 0}
-  _camShakeEvent: {fileID: 0}
+  _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
   _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
@@ -253,7 +253,10 @@ MonoBehaviour:
   gamepadRotateSmoothing: 500
   isGamepad: 0
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
-  characterToRotate: {fileID: 8904289081433289519}
+  aimTransform: {fileID: 8904289081433289519}
+  gfxTransform: {fileID: 0}
+  gfxRotateSpeed: 30
+  gfxAnimator: {fileID: 0}
   currentSpeed: 0
   allowMovement: 1
   allowRotation: 1

@@ -433,7 +433,8 @@ MonoBehaviour:
   playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
   jumpForce: 20
-  enemyBase: {fileID: 0}
+  enemyBase: {fileID: 5074558062176136339}
+  hasPlayer: 0
 --- !u!114 &2051284863485244598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,10 +447,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9e35dadcc2dc948a446c74b4c1967e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderers: []
+  renderers:
+  - {fileID: 5074558061772038269}
+  - {fileID: 5074558062283533735}
   targetColor: {r: 1, g: 0.06666667, b: 0.33333334, a: 1}
   particles: {fileID: 0}
-  highlighters: {fileID: 0}
+  highlighters: {fileID: 11400000, guid: de704ed33b0585140b9220b53be341ce, type: 2}
   projectileReceiver: {fileID: 0}
 --- !u!1 &5074558062253279749
 GameObject:

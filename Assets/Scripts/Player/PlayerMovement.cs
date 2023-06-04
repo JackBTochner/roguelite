@@ -99,8 +99,10 @@ namespace Player
             }
 
             lookAt = (inputReader.MoveComposite.magnitude > 0.1f) ? Quaternion.LookRotation(move) : lookAt;
-            gfxTransform.rotation = Quaternion.RotateTowards(gfxTransform.rotation, lookAt, Time.deltaTime * gfxRotateSpeed);
-            gfxAnimator.SetFloat("Speed", (currentSpeed > 0) ? currentSpeed / playerSpeed : 0);
+            if(gfxTransform)
+                gfxTransform.rotation = Quaternion.RotateTowards(gfxTransform.rotation, lookAt, Time.deltaTime * gfxRotateSpeed);
+            if(gfxAnimator)
+                gfxAnimator.SetFloat("Speed", (currentSpeed > 0) ? currentSpeed / playerSpeed : 0);
             controller.Move(move * Time.deltaTime * playerSpeed);
         }
 
