@@ -258,7 +258,9 @@ Personality: ENFP
 
 Appearance: Wisp, more feminine
 
-
+## Level Design
+City Map Initial Concepts:
+![Kitsune Corner Map](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/1de79ef3-1369-4311-911d-1ef7ae228fbc_rw_1920.png?h=d9c9a3af7ba90fa8bc435944aa03ba0e)
 
 ## Concept Art
 
