@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// An instance of the health.
+/// An instance of health.
 /// </summary>
 [CreateAssetMenu(fileName = "Health", menuName = "EntityConfig/Health")]
 public class HealthSO : ScriptableObject
@@ -17,16 +17,29 @@ public class HealthSO : ScriptableObject
 
     public void SetMaxHealth(int newValue)
 	{
+		Debug.LogError("SetMaxHealth" + newValue);
 		_maxHealth = newValue;
 	}
 
-	public void SetCurrentHealth(int newValue)
+    public void PrintCurrentHealth()
+    {
+        Debug.LogError("Current Health: " + _currentHealth);
+    }
+
+    public int GetCurrentestHealth()
+    {
+        return _currentHealth;
+    }
+
+    public void SetCurrentHealth(int newValue)
 	{
-		_currentHealth = newValue;
+        Debug.LogError("SetCurrentHealth" + newValue);
+        _currentHealth = newValue;
 	}
 	
 	public void InflictDamage(int DamageValue)
 	{
+		Debug.LogError("InflictDamage" + DamageValue);
 		_currentHealth -= DamageValue;
 	}
 

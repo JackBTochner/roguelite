@@ -6,10 +6,10 @@ using TMPro;
 
 public class UIHealthBarManager : MonoBehaviour
 {
-    [SerializeField] private HealthSO _playerHealth = default;
+    public HealthSO _playerHealth = default;
 
-    [SerializeField] private Slider _healthBar;
-    [SerializeField] private TextMeshProUGUI _healthText;
+    public Slider _healthBar;
+    public TextMeshProUGUI _healthText;
 
     [Header("Listening to")]
     [SerializeField] private VoidEventChannelSO _UIUpdateNeeded = default;
@@ -33,6 +33,11 @@ public class UIHealthBarManager : MonoBehaviour
 
     private void UpdateHealthUI()
     {
+        Debug.LogError("UpdateHealthUI");
+        Debug.LogError(_playerHealth.MaxHealth);
+        Debug.LogError(_playerHealth.CurrentHealth);
+        Debug.LogError( "Currentest Health" + _playerHealth.GetCurrentestHealth());
+        _playerHealth.PrintCurrentHealth();
         _healthBar.maxValue = _playerHealth.MaxHealth;
         _healthBar.value = _playerHealth.CurrentHealth;
         _healthText.text = new string(_playerHealth.CurrentHealth.ToString() + "/" + _playerHealth.MaxHealth.ToString());

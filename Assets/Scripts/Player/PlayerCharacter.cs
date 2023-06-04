@@ -54,14 +54,6 @@ namespace Player
             {
                 _currentHealthSO = _playerManager.CurrentHealthSO;
                 _currentStaminaSO = _playerManager.CurrentStaminaSO;
-            } else
-            { 
-                if (_currentHealthSO == null)
-                {
-                    _currentHealthSO = ScriptableObject.CreateInstance<HealthSO>();
-                    _currentHealthSO.SetMaxHealth(_currentHealthSO.InitialHealth);
-                    _currentHealthSO.SetCurrentHealth(_currentHealthSO.InitialHealth);
-                }
             }
         }
 

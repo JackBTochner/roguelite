@@ -54,14 +54,13 @@ public class JumpEnemy : MonoBehaviour
     {
         if (playerTransformAnchor != null && playerTransformAnchor.Value != null)
         {
-            Vector3 lookDirection = new Vector3(playerTransformAnchor.Value.position.x,
-                                            transform.position.y,
-                                            playerTransformAnchor.Value.position.z
-                                           );
-
-            // Rotate to face the player only along the y-axis
-            //transform.LookAt(lookDirection);
+            if (playerController == null)
+            { 
+                playerController = playerTransformAnchor.Value.GetComponent<CharacterController>();
+            }
+            Vector3 lookDirection = new Vector3(playerTransformAnchor.Value.position.x, transform.position.y, playerTransformAnchor.Value.position.z );
         }
+        
     }
 
     IEnumerator waitForJump()
@@ -95,7 +94,7 @@ public class JumpEnemy : MonoBehaviour
             if (collision.gameObject.tag == "Player")
             {   // Get the playerController
                 hasPlayer = true;
-                playerController = collision.gameObject.GetComponent<CharacterController>();
+                
 
                 // Turn of the player controller.
                 DisablePlayerMovement();

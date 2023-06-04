@@ -12,7 +12,8 @@ public class Explodetest : MonoBehaviour
     public int fulldamage = 25; 
     public int middamage = 10;
     public float normalSpeed = 3.0f; // After the trigger speed.
-    private AIPath aiPath; 
+    private AIPath aiPath;
+    private bool exploding = false;
 
     void Update()
     {   
@@ -31,7 +32,6 @@ public class Explodetest : MonoBehaviour
                 // Set the AIPath maxSpeed, slow the explodeEnemy.
                 aiPath.maxSpeed = normalSpeed;
 
-
                 StartCoroutine(WaitForExplode(2.0f)); //Do after 2 seconds.
             }
         }
@@ -39,7 +39,10 @@ public class Explodetest : MonoBehaviour
 
     IEnumerator WaitForExplode(float time)
     {
+        if(exploding)
+            yield break;
         // Trigger then do...
+        exploding = true;
         yield return new WaitForSeconds(time);
         // Do the explosion animation.
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
