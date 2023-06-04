@@ -43,8 +43,8 @@ public class Explodetest : MonoBehaviour
         yield return new WaitForSeconds(time);
         // Do the explosion animation.
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        // Destroy the explodeEnemy.
-        Destroy(gameObject);
+        // KILL
+        GetComponent<Enemy>().Die();
         // let player take damage, when in the damage distance.
         // Get the current value of the player component "PlayerCharacter".
         PlayerCharacter playerCharacter = playerTransformAnchor.Value.GetComponent<PlayerCharacter>();

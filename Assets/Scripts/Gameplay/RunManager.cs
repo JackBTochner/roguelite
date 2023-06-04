@@ -16,6 +16,7 @@ public class RunManager : MonoBehaviour
 
     public GameObject mapCanvas;
     public GameObject rewardCanvas;
+    public GameObject combatCanvas;
 
     public Exit playerExit;
 
@@ -71,6 +72,7 @@ public class RunManager : MonoBehaviour
     public void ReturnToHub()
     {
         ClearCurrentRun();
+        combatCanvas.SetActive(false);
         loadLocation.RaiseEvent(hubSceneSO, false, false);
         returnToHub.RaiseEvent();
     }
@@ -78,6 +80,7 @@ public class RunManager : MonoBehaviour
     public void StartNewRun()
     {
         ClearCurrentRun();
+        combatCanvas.SetActive(true);
         mapCanvas.SetActive(true);
         mapManager.GenerateNewMap();
         Debug.Log("StartingNewRun");

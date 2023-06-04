@@ -66,10 +66,10 @@ public class PlayerDig : MonoBehaviour
                 // Debug.Log("Can Dig!");
                 if (isDigging)
                 {
+                    Instantiate(digUpParticle, transform.position, transform.rotation);
                     foreach (var buffer in playerBuffers)
                     {
                         buffer.groundCollider = hit.collider;
-                        Instantiate(digUpParticle, transform.position, transform.rotation);
                         buffer.gameObject.SetActive(false);
                     }
                     foreach (var highlighter in _projectileHighlighters.Items)
@@ -83,10 +83,10 @@ public class PlayerDig : MonoBehaviour
                 {
                     if(!_playerTransformAnchor.Value.GetComponent<PlayerCharacter>().HasStaminaForDig())
                         return;
+                    Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
                     foreach (var buffer in playerBuffers)
                     {
                         buffer.groundCollider = hit.collider;
-                        Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
                         buffer.gameObject.SetActive(true);
                     }
                     foreach (var highlighter in _projectileHighlighters.Items)
