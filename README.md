@@ -88,18 +88,35 @@ Customers will pay with the in-game world currency known as Modulars. Modular co
 
 #### Map Generation System
 
+#### Enemy Spawn System
+
+ The enemy spawns will vary in every encounter you enter. Majority of enemy spawns will be random, within set conditions. The conditions are as follows:
+ 
+ • Each enemy will receive a rating on how difficult it is to defeat, for example a minor wisp may have a difficulty rating of 1, and an explosive wisp may have a difficulty of 3.
+ 
+ • Each room will receive a rating, similarly to the enemies. For example, a less difficult room may have a rating of 10, and a more difficult room with a rating of 50.
+ 
+ • Each room will randomly spawn a set of enemies, that ratings add up to equal the set rating of the room you've entered. So if the room is a 10 rating, including the 2 enemies from the previous example, there would be 4 possible enemy combinations you could encounter:
+ 
+ ```
+ 3 explosive wisps and 1 minor wisp = 10 points
+ 2 explosive wisps and 4 minor wisps = 10 points
+ 1 explosive wisp and 7 minor wisps = 10 points
+ 10 minor wisps = 10 points
+```
+
 #### Combat System
 
-Combat will be majoritly based on shooting projectiles at enemies, but you will also have a melee ability at your disposal. As the game progresses, you will unlock a total of 8 different projectiles. Each weapon represents a tail of the Kitsune, and will do the following:
+Combat will be majority based on shooting projectiles at enemies, but you will also have a melee ability at your disposal. As the game progresses, you will unlock a total of 8 different projectiles. Each weapon represents a tail of the Kitsune, and will do the following:
 ```
-Regular tail: Melee weapon.
-Lightning Chain: Hits multiple enemies for chain damage (lock on).
-Fire: Inflicts burn damage.
-Ice: Slows enemies.
-Earthquake: Inflicts impact damage on enemies in a straight line.
-Poison: Reduces enemies total health by a percentage.
-Piercing: Can hit multiple enemies (aimed).
-Boomerang: Will inflict damage on initial release and when received.
+Regular tail: Melee weapon, deals damage in a small cone radius, swinging right to left.
+Lightning Chain: Hits the nearest 3 enemies in a chain  formation (nearest enemy will get hit for a higher damage output than the furthest enemy in the chain).
+Fire: Inflicts burn damage over time, (eg. 5 damage ticks per second, lasting 3 seconds).
+Ice: Slows enemies for a small period of time.
+Earthquake: Earth rises from the ground, inflicts impact damage on enemies in a straight line.
+Poison: Reduces enemies total health by a percentage when hit (minor enemies will be affected by this attack more than major enemies).
+Piercing: Can hit multiple enemies in a straight line (aimed).
+Boomerang: Will inflict damage on initial release, will return to sender and deal a second wave of damage on the way back..
 Cupids Arrow: Will link enemy that's hit with the next closest enemy, any damage done to one will be inflicted on the other.
 
 ```
@@ -128,7 +145,7 @@ will do the same with feathers and clippers. After all the materials are made, i
 materials on the work bench, then all they need to do to overlap the materials and drag the hammer
 to make the pen. Double click on items to obtain them. 
 
-### Currency systen
+### Currency system
 
 #### Modular
 
