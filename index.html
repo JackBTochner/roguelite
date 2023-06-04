@@ -120,16 +120,25 @@ For more in-depth or implementation specific documentation, see the <a href="htt
 <h4 id="narrative-system">Narrative System</h4>
 <h4 id="storefront-gameplay">Storefront Gameplay</h4>
 <h4 id="map-generation-system">Map Generation System</h4>
-<h4 id="combat-system">Combat System</h4>
-<p>Combat will be majoritly based on shooting projectiles at enemies, but you will also have a melee ability at your disposal. As the game progresses, you will unlock a total of 8 different projectiles. Each weapon represents a tail of the Kitsune, and will do the following:</p>
-<pre><code>Regular tail: Melee weapon.
-Lightning Chain: Hits multiple enemies for chain damage (lock on).
-Fire: Inflicts burn damage.
-Ice: Slows enemies.
-Earthquake: Inflicts impact damage on enemies in a straight line.
-Poison: Reduces enemies total health by a percentage.
-Piercing: Can hit multiple enemies (aimed).
-Boomerang: Will inflict damage on initial release and when received.
+<h4 id="enemy-spawn-system">Enemy Spawn System</h4>
+<p> The enemy spawns will vary in every encounter you enter. Majority of enemy spawns will be random, within set conditions. The conditions are as follows:</p>
+<p> • Each enemy will receive a rating on how difficult it is to defeat, for example a minor wisp may have a difficulty rating of 1, and an explosive wisp may have a difficulty of 3.</p>
+<p> • Each room will receive a rating, similarly to the enemies. For example, a less difficult room may have a rating of 10, and a more difficult room with a rating of 50.</p>
+<p> • Each room will randomly spawn a set of enemies, that ratings add up to equal the set rating of the room you&#39;ve entered. So if the room is a 10 rating, including the 2 enemies from the previous example, there would be 4 possible enemy combinations you could encounter:</p>
+<pre><code>3 explosive wisps and 1 minor wisp = 10 points
+2 explosive wisps and 4 minor wisps = 10 points
+1 explosive wisp and 7 minor wisps = 10 points
+10 minor wisps = 10 points
+</code></pre><h4 id="combat-system">Combat System</h4>
+<p>Combat will be majority based on shooting projectiles at enemies, but you will also have a melee ability at your disposal. As the game progresses, you will unlock a total of 8 different projectiles. Each weapon represents a tail of the Kitsune, and will do the following:</p>
+<pre><code>Regular tail: Melee weapon, deals damage in a small cone radius, swinging right to left.
+Lightning Chain: Hits the nearest 3 enemies in a chain  formation (nearest enemy will get hit for a higher damage output than the furthest enemy in the chain).
+Fire: Inflicts burn damage over time, (eg. 5 damage ticks per second, lasting 3 seconds).
+Ice: Slows enemies for a small period of time.
+Earthquake: Earth rises from the ground, inflicts impact damage on enemies in a straight line.
+Poison: Reduces enemies total health by a percentage when hit (minor enemies will be affected by this attack more than major enemies).
+Piercing: Can hit multiple enemies in a straight line (aimed).
+Boomerang: Will inflict damage on initial release, will return to sender and deal a second wave of damage on the way back..
 Cupids Arrow: Will link enemy that&#39;s hit with the next closest enemy, any damage done to one will be inflicted on the other.
 </code></pre><p>When attacking an enemy for the first time upon entering a room, you will attach your cast to the enemy you hit. Your cast will increase damage inflicted on that enemy, and your cast will be dropped once the enemy is defeated. You can regain your cast by picking it up after the enemy you affected is defeated or by entering the next room. You may not change the enemy that your cast is on until it is defeated.</p>
 <h4 id="perkability-system">Perk/Ability System</h4>
@@ -148,7 +157,7 @@ need to drag the plastic onto the work bench as well and drag the drill to make 
 will do the same with feathers and clippers. After all the materials are made, if they left all the made
 materials on the work bench, then all they need to do to overlap the materials and drag the hammer
 to make the pen. Double click on items to obtain them. </p>
-<h3 id="currency-systen">Currency systen</h3>
+<h3 id="currency-system">Currency system</h3>
 <h4 id="modular">Modular</h4>
 <p>The world currency that customers use to pay for their goods. Modular can also be used to
 upgrade the hub (shop). The shop can be upgraded with aesthetic changes (e.g different coloured
