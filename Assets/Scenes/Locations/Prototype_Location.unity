@@ -3884,6 +3884,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2051284863485244598, guid: 517ea0cec392d7740a52552573e22592,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103214324045510820, guid: 517ea0cec392d7740a52552573e22592,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3141509694097553993, guid: 517ea0cec392d7740a52552573e22592,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4099,6 +4109,11 @@ PrefabInstance:
       propertyPath: enemyBase
       value: 
       objectReference: {fileID: 1453661604}
+    - target: {fileID: 8436400994030576142, guid: 517ea0cec392d7740a52552573e22592,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8762279958844132247, guid: 517ea0cec392d7740a52552573e22592,
         type: 3}
       propertyPath: m_AnchorMax.y

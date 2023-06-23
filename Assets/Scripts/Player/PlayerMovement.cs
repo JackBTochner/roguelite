@@ -46,10 +46,19 @@ namespace Player
         public bool allowMovement = true;
         public bool allowRotation = true;
 
+        //Dash Variables
+        [SerializeField] private float dashSpeed = 5.0f;
+        [SerializeField] private float dashTime = 0.2f;
+
+        private bool isDashing;
+        private float dashTimer;
+
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
+
             inputReader.OnJumpPerformed += jump;
+            inputReader.OnDashPerformed += dash;
         }
 
         public void Initialise()
@@ -60,6 +69,28 @@ namespace Player
         private void jump()
         {
             Debug.Log("Jump!");
+            if (isDashing)
+            {
+                Debug.Log("Already dashing, ignoring request");
+                return;
+            }
+            Debug.Log("Starting dash");
+            isDashing = true;
+            dashTimer = dashTime;
+        }
+
+        //dash
+        private void dash()
+        {
+            Debug.Log("Attempting to dash");
+            if (isDashing)
+            {
+                Debug.Log("Already dashing, ignoring request");
+                return;
+            }
+            Debug.Log("Starting dash");
+            isDashing = true;
+            dashTimer = dashTime;
         }
 
         private void Update()
@@ -70,6 +101,19 @@ namespace Player
             if(aimTransform && allowRotation)
                 HandleRotation();
             currentSpeed = controller.velocity.magnitude;
+
+            if (isDashing)
+            {
+                if (dashTimer > 0)
+                {
+                    dashTimer -= Time.deltaTime;
+                    controller.Move(aimTransform.forward * dashSpeed);
+                }
+                else
+                {
+                    isDashing = false;
+                }
+            }
         }
 
         private void ApplyGravity()
