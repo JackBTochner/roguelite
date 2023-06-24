@@ -4,3 +4,5 @@
   href: documentation.md
 - name: SpawningEnemies
   href: SpawningEnemies.md
+- name: DialogueSystem
+  href: DialogueSystem.md

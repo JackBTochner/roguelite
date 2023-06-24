@@ -13,7 +13,6 @@ The Dialogue Editor Menu can be found at the menu bar up the top under Tools->Pi
 - Make a note of the _ID_ field (should be uneditable) and recall this as _ActorID_.
 - Open the _Portrait Textures_ dropdown and drag in the actor's portrait art (Will eventually be replaced with _Portrait Sprites_ in due time)
 
-![waves](../resources/SpawningEnemies/SpawningEnemies_Waves.png)
 
 **In the Hub_Location Scene:**
 
@@ -29,43 +28,32 @@ The Actor should now be properly configured and become enabled once they have a 
 
 **In the Dialogue Editor Menu:**
 - Select the Conversations tab (in between Variables & Templates).
-- Directly under the Conversations tab is the Conversations toolbar, press the (+) button next to the dropdown containing all conversations to add a new conversation.
+- Directly under the Conversations tab is the Conversations toolbar, press the (+) button next to the dropdown conversation selector to add a new conversation.
 - Select empty space (the grid) within the Conversation Graph window (this will default to selecting the conversation as a whole in the right hand side inspector).
-- Change the Title field in the RHS inspector 
-- Take note of the _Actor_ and _Conversant_ fields. Change the _Conversant_
+
+- Change the Title field in the RHS inspector. Use naming convention NPC NAME/CONVERSATION TITLE to make use of submenus in the conversation selector. (i.e. "Maurice/FirstMeeting" without quotes)
+- Take note of the _Actor_ and _Conversant_ fields. Change the _Conversant_ to the NPC who owns this conversation. Leave the _Actor_ field as PlayerCharacter.
+
+Now you can edit the conversation flow using the main window (Conversation Graph). 
+
+Grey nodes indicate the NPC is speaking, Blue nodes are the player. 
+
+A Grey node that splits into multiple Blue nodes is a node that gives the PlayerCharacter a branching choice.
 
 ### Conversation settings & conditions
-![wave details](../resources/SpawningEnemies/wave_details.png)
 
-Populate the enemiesToSpawn array with enemy prefabs under Assets/Prefabs/Enemies.
-Feel free to use duplicate entries in order to spawn more than one of the same type of enemy.
+With the conversation selected (Select empty space (the grid) within the Conversation Graph window) open the _All Fields_ dropdown at the bottom of the RHS inspector.
 
-#### Preconditions
-Preconditions dictate what needs to happen _before_ spawning in the wave.
+Important fields to take note of are:
 
-__waveInitialSpawnDelay__ : If assigned to the first wave, it will spawn n seconds after OnSceneReady.\
-Subsequent waves will spawn n seconds after the previous wave has been considered Complete.\
-Good to keep this >0.5 in order to give the player some time to breathe when entering a location or after a wave.
+_RequiredConversations_ : Array of conversation Titles that need to have been triggered by the player before this conversation can spawn in. (Used for sequencing conversations across multiple runs)
 
-#### Complete Conditions
-Complete conditions dictate what needs to happen for the wave to be considered complete, so the EnemySpawnManager can consider the next wave, or to unlock the PlayerExit if this is the last wave.\
-Each of these is completely optional, and if left unassigned or set to 0 will not be calculated.
+_RequiredFalseConversations_: Array of conversation Titles that need to have **not** been triggered by the player before this conversation can spawn in. (Good for making sure that this conversation will not spawn in after a certain event/conversation)
 
-__waveCompleteDelay__ : Will allow the wave to complete n seconds after spawning
+_RequiredMinNPCInteractions_: Amount of total conversations the player has to have had before this conversation can spawn in. (Good for random quips that aren't integral to the storyline)
 
-__nextWaveSpawnTrigger__: If assigned a SpawnWaveTrigger, it will not consider the current wave complete until the player walks through the SpawnWaveTrigger.
+_Priority_: Numerical priority ranking for deciding which conversation to spawn in if there are multiple valid options. (Lower number is higher priority)
 
-__mustKillAllEnemiesToCompleteWave__: Self explanatory
+_PlayOnce_: If true this conversation will not spawn in again after it has triggered once.
 
-
-## Example
-The following example will has three "Waves", although only two waves actually spawn in enemies.
-
-The first "PreWave Trigger" is an empty Wave with no enemies assigned, and its nextWaveSpawnTrigger is assigned to a SpawnWaveTrigger somewhere in the map.\
-This will prevent the next wave (the first enemy spawning wave) from activating until the player enters the assigned SpawnWaveTrigger.
-
-The second wave "FirstWave" is the first wave which will actually spawn in enemies, after 1 second (waveInitialSpawnDelay) of the player "completing" the previous wave (Entering the SpawnWaveTrigger).
-
-The third wave "SecondWave" will activate 1 second (waveInitialSpawnDelay) after the previous wave is completed ("FirstWave" requires all enemies in the wave killed to complete (mustKillAllEnemiesToCompleteWave))
-
-![Example](../resources/SpawningEnemies/waves_example.png)
+Other fields/conditions are not tested/fully implemented yet.
