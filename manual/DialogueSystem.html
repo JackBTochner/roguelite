@@ -89,7 +89,6 @@
 <li>Make a note of the <em>ID</em> field (should be uneditable) and recall this as <em>ActorID</em>.</li>
 <li>Open the <em>Portrait Textures</em> dropdown and drag in the actor&#39;s portrait art (Will eventually be replaced with <em>Portrait Sprites</em> in due time)</li>
 </ul>
-<p><img src="../resources/SpawningEnemies/SpawningEnemies_Waves.png" alt="waves"></p>
 <p><strong>In the Hub_Location Scene:</strong></p>
 <p>The Hub_Location scene can be found in the Project files under Scenes/Locations/Hub_Location.unity</p>
 <ul>
@@ -103,33 +102,25 @@
 <p><strong>In the Dialogue Editor Menu:</strong></p>
 <ul>
 <li>Select the Conversations tab (in between Variables &amp; Templates).</li>
-<li>Directly under the Conversations tab is the Conversations toolbar, press the (+) button next to the dropdown containing all conversations to add a new conversation.</li>
-<li>Select empty space (the grid) within the Conversation Graph window (this will default to selecting the conversation as a whole in the right hand side inspector).</li>
-<li>Change the Title field in the RHS inspector </li>
-<li>Take note of the <em>Actor</em> and <em>Conversant</em> fields. Change the <em>Conversant</em></li>
+<li>Directly under the Conversations tab is the Conversations toolbar, press the (+) button next to the dropdown conversation selector to add a new conversation.</li>
+<li><p>Select empty space (the grid) within the Conversation Graph window (this will default to selecting the conversation as a whole in the right hand side inspector).</p>
+</li>
+<li><p>Change the Title field in the RHS inspector. Use naming convention NPC NAME/CONVERSATION TITLE to make use of submenus in the conversation selector. (i.e. &quot;Maurice/FirstMeeting&quot; without quotes)</p>
+</li>
+<li>Take note of the <em>Actor</em> and <em>Conversant</em> fields. Change the <em>Conversant</em> to the NPC who owns this conversation. Leave the <em>Actor</em> field as PlayerCharacter.</li>
 </ul>
+<p>Now you can edit the conversation flow using the main window (Conversation Graph). </p>
+<p>Grey nodes indicate the NPC is speaking, Blue nodes are the player. </p>
+<p>A Grey node that splits into multiple Blue nodes is a node that gives the PlayerCharacter a branching choice.</p>
 <h3 id="conversation-settings--conditions">Conversation settings &amp; conditions</h3>
-<p><img src="../resources/SpawningEnemies/wave_details.png" alt="wave details"></p>
-<p>Populate the enemiesToSpawn array with enemy prefabs under Assets/Prefabs/Enemies.
-Feel free to use duplicate entries in order to spawn more than one of the same type of enemy.</p>
-<h4 id="preconditions">Preconditions</h4>
-<p>Preconditions dictate what needs to happen <em>before</em> spawning in the wave.</p>
-<p><strong>waveInitialSpawnDelay</strong> : If assigned to the first wave, it will spawn n seconds after OnSceneReady.\
-Subsequent waves will spawn n seconds after the previous wave has been considered Complete.\
-Good to keep this &gt;0.5 in order to give the player some time to breathe when entering a location or after a wave.</p>
-<h4 id="complete-conditions">Complete Conditions</h4>
-<p>Complete conditions dictate what needs to happen for the wave to be considered complete, so the EnemySpawnManager can consider the next wave, or to unlock the PlayerExit if this is the last wave.\
-Each of these is completely optional, and if left unassigned or set to 0 will not be calculated.</p>
-<p><strong>waveCompleteDelay</strong> : Will allow the wave to complete n seconds after spawning</p>
-<p><strong>nextWaveSpawnTrigger</strong>: If assigned a SpawnWaveTrigger, it will not consider the current wave complete until the player walks through the SpawnWaveTrigger.</p>
-<p><strong>mustKillAllEnemiesToCompleteWave</strong>: Self explanatory</p>
-<h2 id="example">Example</h2>
-<p>The following example will has three &quot;Waves&quot;, although only two waves actually spawn in enemies.</p>
-<p>The first &quot;PreWave Trigger&quot; is an empty Wave with no enemies assigned, and its nextWaveSpawnTrigger is assigned to a SpawnWaveTrigger somewhere in the map.\
-This will prevent the next wave (the first enemy spawning wave) from activating until the player enters the assigned SpawnWaveTrigger.</p>
-<p>The second wave &quot;FirstWave&quot; is the first wave which will actually spawn in enemies, after 1 second (waveInitialSpawnDelay) of the player &quot;completing&quot; the previous wave (Entering the SpawnWaveTrigger).</p>
-<p>The third wave &quot;SecondWave&quot; will activate 1 second (waveInitialSpawnDelay) after the previous wave is completed (&quot;FirstWave&quot; requires all enemies in the wave killed to complete (mustKillAllEnemiesToCompleteWave))</p>
-<p><img src="../resources/SpawningEnemies/waves_example.png" alt="Example"></p>
+<p>With the conversation selected (Select empty space (the grid) within the Conversation Graph window) open the <em>All Fields</em> dropdown at the bottom of the RHS inspector.</p>
+<p>Important fields to take note of are:</p>
+<p><em>RequiredConversations</em> : Array of conversation Titles that need to have been triggered by the player before this conversation can spawn in. (Used for sequencing conversations across multiple runs)</p>
+<p><em>RequiredFalseConversations</em>: Array of conversation Titles that need to have <strong>not</strong> been triggered by the player before this conversation can spawn in. (Good for making sure that this conversation will not spawn in after a certain event/conversation)</p>
+<p><em>RequiredMinNPCInteractions</em>: Amount of total conversations the player has to have had before this conversation can spawn in. (Good for random quips that aren&#39;t integral to the storyline)</p>
+<p><em>Priority</em>: Numerical priority ranking for deciding which conversation to spawn in if there are multiple valid options. (Lower number is higher priority)</p>
+<p><em>PlayOnce</em>: If true this conversation will not spawn in again after it has triggered once.</p>
+<p>Other fields/conditions are not tested/fully implemented yet.</p>
 </article>
           </div>
           
