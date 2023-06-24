@@ -56,10 +56,15 @@ namespace Player
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
-
+        }
+        private void OnEnable()
+        {
             inputReader.OnJumpPerformed += jump;
         }
-
+        private void OnDisable()
+        {
+            inputReader.OnJumpPerformed -= jump;
+        }
         public void Initialise()
         {
             // manager.playerInput.controlsChangedEvent.AddListener(OnDeviceChange);

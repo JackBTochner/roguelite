@@ -418,7 +418,7 @@ MonoBehaviour:
   currentSpeed: 0
   allowMovement: 1
   allowRotation: 1
-  dashSpeed: 30
+  dashSpeed: 25
   dashTime: 0.2
   dashCoolTime: 1
   isDashing: 0
