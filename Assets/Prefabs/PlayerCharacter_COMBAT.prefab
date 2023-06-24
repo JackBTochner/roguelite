@@ -418,6 +418,12 @@ MonoBehaviour:
   currentSpeed: 0
   allowMovement: 1
   allowRotation: 1
+  dashSpeed: 30
+  dashTime: 0.2
+  dashCoolTime: 1
+  isDashing: 0
+  canDash: 1
+  lastHorizontalVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &248407811704461207
 MonoBehaviour:
   m_ObjectHideFlags: 0

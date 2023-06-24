@@ -46,19 +46,18 @@ namespace Player
         public bool allowMovement = true;
         public bool allowRotation = true;
 
-        //Dash Variables
-        [SerializeField] private float dashSpeed = 5.0f;
-        [SerializeField] private float dashTime = 0.2f;
-
-        private bool isDashing;
-        private float dashTimer;
+        public float dashSpeed = 15;
+        public float dashTime = 0.25f;
+        public float dashCoolTime = 1;
+        public bool isDashing = false;
+        public bool canDash = true;
+        public Vector3 lastHorizontalVelocity;
 
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
 
             inputReader.OnJumpPerformed += jump;
-            inputReader.OnDashPerformed += dash;
         }
 
         public void Initialise()
@@ -68,31 +67,42 @@ namespace Player
         }
         private void jump()
         {
-            Debug.Log("Jump!");
-            if (isDashing)
+            // Test the jump key is working.
+            Debug.Log("Test: Jump Key working");
+
+            if (canDash)
             {
-                Debug.Log("Already dashing, ignoring request");
-                return;
+                StartCoroutine(BeginDash());
             }
-            Debug.Log("Starting dash");
-            isDashing = true;
-            dashTimer = dashTime;
         }
 
-        //dash
-        private void dash()
+        private IEnumerator BeginDash()
         {
-            Debug.Log("Attempting to dash");
-            if (isDashing)
-            {
-                Debug.Log("Already dashing, ignoring request");
-                return;
-            }
-            Debug.Log("Starting dash");
+            allowMovement = false;
+            allowRotation = false;
             isDashing = true;
-            dashTimer = dashTime;
+            lastHorizontalVelocity = Vector3.ProjectOnPlane(controller.velocity, Vector3.up);
+            float startTime = Time.time;
+
+            while(Time.time < startTime + dashTime)
+            {
+                controller.Move(lastHorizontalVelocity.normalized * dashSpeed * Time.deltaTime);
+                yield return null;
+            }
+            
+            isDashing =false;
+            allowMovement = true;
+            allowRotation = true;
+            lastHorizontalVelocity = Vector3.zero;
+            StartCoroutine(DashCooldown());
         }
 
+        IEnumerator DashCooldown()
+        {
+            canDash = false;
+            yield return new WaitForSeconds(dashCoolTime);
+            canDash = true;
+        }
         private void Update()
         {
             ApplyGravity();
@@ -102,18 +112,6 @@ namespace Player
                 HandleRotation();
             currentSpeed = controller.velocity.magnitude;
 
-            if (isDashing)
-            {
-                if (dashTimer > 0)
-                {
-                    dashTimer -= Time.deltaTime;
-                    controller.Move(aimTransform.forward * dashSpeed);
-                }
-                else
-                {
-                    isDashing = false;
-                }
-            }
         }
 
         private void ApplyGravity()
