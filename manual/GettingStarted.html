@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting started | Roguelite documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting started | Roguelite documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting started</h1>
+
+<h2 id="setting-up-the-project">Setting up the project</h2>
+<p><strong>Prerequisite installs</strong></p>
+<ul>
+<li>Latest version of <a href="https://git-scm.com/downloads">Git</a> (Extremely important.)</li>
+<li>A source control desktop app such as <a href="https://desktop.github.com/">Github Desktop.</a></li>
+<li>Unity Editor 2022.2.4f1<ul>
+<li>This specific version is necessary and you should be prompted to install it after trying to open the project folder in <a href="https://unity.com/download">Unity Hub</a>. If that fails it might be found in the <a href="https://unity.com/releases/editor/archive">Unity download archive.</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="installation"><strong>Installation</strong></h3>
+<p><strong>Git</strong></p>
+<p>Select and download the Latest Source Release for your corresponding platform of Git <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.</p>
+<p>Install Git with default settings and restart your computer.</p>
+<p><strong>Github Desktop</strong></p>
+<p>Download your corresponding version of Github Desktop <a href="https://desktop.github.com/">https://desktop.github.com/</a>.</p>
+<p>Install with default settings and sign-in with your Github account that has access to the repository.</p>
+<p>Select and clone the repository in the right hand side quick menu, OR select &quot;Clone a repository from the Internet&quot; option, OR go to the <a href="https://github.com/pmuenjohn/roguelite">repository url</a>, and in the green <em>&lt;&gt; CODE</em> button, select Open with Github Desktop.
+Clone into your desired project location. (i.e. C:\Users\Percy\Documents\repo)</p>
+<p><strong>Unity</strong></p>
+<p>At the moment only UnityHub is required to be installed. Skipping a default (non 2022.2.4) Unity Editor download might be ideal if it gives you the option.</p>
+<p>From the Unity hub homescreen, select Open and navigate to your cloned local repository (i.e. C:\Users\Percy\Documents\repo\roguelite).</p>
+<p>When attempting to open the project, it should prompt you to download the correct version of the Unity Editor (2022.2.4).
+Select all default options for this Unity Editor download and install.</p>
+<p>After opening the project, it should take some time to build libraries and import assets. </p>
+<h2 id="navigating-the-project">Navigating the project</h2>
+<p>Within the Asset directory (viewable through the Project window), there are 5 relevant subdirectories:
+<strong>Animations, Characters, Prefabs, Scenes, Scripts.</strong></p>
+<p><strong>Animations</strong> : Contains animation data and animation controllers for UI, VFX and eventually non character mesh animations.</p>
+<p><strong>Characters</strong> : Contains character specific data such as Portrait sprites and imported meshes, alongside animated meshes and their animation controllers.</p>
+<p><strong>Prefabs</strong> : Contains the completed prefab objects with all relevant components which can be dragged into gameplay scenes and used.</p>
+<p><strong>Scenes</strong> : Contains all scenes, separated into main Gameplay Locations and additive scenes such as Persistent and Gameplay Manager scenes.</p>
+<p><strong>Scripts</strong> : Contains all script and code for the game.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Roguelite documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

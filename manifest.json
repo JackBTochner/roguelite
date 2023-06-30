@@ -1104,6 +1104,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/GettingStarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/GettingStarted.html",
+          "hash": "I310WygUneVxzYJ49RFu4vxxyzfyCGKkrY2l5Po+AIY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/SpawningEnemies.md",
       "output": {
         ".html": {
@@ -1144,7 +1156,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "4FismvfrwVP/OJ2XBWobM6WOMrvVbG68qg9B7ypwwdA="
+          "hash": "ScVgGU3JF4MjD7GmyMC9KpDNPAZsCAw/gPfwSwKWnKE="
         }
       },
       "is_incremental": false,
@@ -1232,7 +1244,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
