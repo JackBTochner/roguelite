@@ -11,18 +11,18 @@ public class InventoryManager : MonoBehaviour
     public List<Item> items;
     public RectTransform itemContent;
     public GameObject inventoryItem;
-    public RectTransform spritesList;
-    public GameObject itemPrefab;
-    public RectTransform workBenchPanel;
-    public RectTransform inventoryPanel;
 
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
         CreateList();
         ListItems();
     }
-    
+
     public void CreateList()
     {
         Item item1 = ScriptableObject.CreateInstance<Item>();
@@ -93,16 +93,9 @@ public class InventoryManager : MonoBehaviour
             {
                 itemAmount.text = item.amount.ToString();
             }
-
-            // Create itemObject
-            GameObject itemObj = Instantiate(itemPrefab, invItem.transform);
-            var itemImage = itemObj.transform.Find("ItemImage").GetComponent<Image>();
-            itemImage.sprite = item.GetSprite();
-            itemObj.GetComponent<ItemController>().SetReferences(item, spritesList, workBenchPanel, inventoryPanel);
-            itemObj.tag = "Item";
             
-            itemObj.transform.position = invItem.transform.position;
-            Debug.Log(itemAmount.text);
+            // Create the Item Image as an interactable object
+            ItemCreationManager.Instance.CreateInventoryItem(invItem.transform.position, invItem.transform, item);
         }
     }
     

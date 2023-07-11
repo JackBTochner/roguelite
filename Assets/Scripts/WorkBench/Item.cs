@@ -22,6 +22,24 @@ public class Item : ScriptableObject
         Component,
         Pen
     }
+    
+    public ItemType GetItemType(int id)
+    {
+        if (id >= 0 && id < 5)
+        {
+            return ItemType.Component;
+        }
+        if (id >= 6 && id < 10)
+        {
+            return ItemType.Material;
+        }
+        if (id >= 10 && id < 15)
+        {
+            return ItemType.Pen;
+        }
+
+        return ItemType.Component;
+    }
 
     public Sprite GetSprite()
     {

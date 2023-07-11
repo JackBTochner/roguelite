@@ -59,15 +59,18 @@ public class ItemController : DragDrop
         if (!RectTransformUtility.RectangleContainsScreenPoint(workBenchPanel, eventData.position))
         {
             // The sprite is outside the panel, so move it back to a valid position
-            transform.position = workBenchPanel.rect.center;
-        }
-        
-        // Check if the item is inside the inventory panel
-        if (RectTransformUtility.RectangleContainsScreenPoint(inventoryPanel, eventData.position))
-        {
-            // Destroy the item GameObject and add the item back to the inventory
             DestroySelf();
             InventoryManager.Instance.Add(item);
+        }
+        else
+        {
+            // Check if the item is inside the inventory panel
+            if (RectTransformUtility.RectangleContainsScreenPoint(inventoryPanel, eventData.position))
+            {
+                // Destroy the item GameObject and add the item back to the inventory
+                DestroySelf();
+                InventoryManager.Instance.Add(item);
+            }
         }
     }
 }
