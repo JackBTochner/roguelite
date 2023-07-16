@@ -10,6 +10,11 @@ public class StartGame : MonoBehaviour
     [Header("Broadcasting on")]
 	[SerializeField] private LoadEventChannelSO _loadLocation = default;
 
+    public void Start()
+    {
+        Invoke("StartNewGame", 3f);
+    }
+
     public void StartNewGame()
     {
         _loadLocation.RaiseEvent(_locationToLoad, _showLoadScreen);

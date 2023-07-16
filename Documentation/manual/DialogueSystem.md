@@ -53,6 +53,7 @@ Now you can edit the conversation flow using the main window (Conversation Graph
 Grey nodes indicate the NPC is speaking, Blue nodes are the player. 
 
 A Grey node that splits into multiple Blue nodes is a node that gives the PlayerCharacter a branching choice.
+(Please do not make more than 4 branching choices for a one node, the UI at the moment can support only 4 choices max at one time.)
 
 ![Conversation Graph](../resources/DialogueSystem/ConversationGraph.png)
 
