@@ -85,17 +85,27 @@
 <p>The Dialogue Editor Menu can be found at the menu bar up the top under Tools-&gt;Pixel Crushers-&gt;Dialogue System-&gt;Dialogue Editor.</p>
 <ul>
 <li>Select the Actors tab (in between Database &amp; Quests/Items) and Add a new Actor to the list.</li>
+</ul>
+<p><img src="../resources/DialogueSystem/ActorsTab.png" alt="Actors tab"></p>
+<ul>
 <li>Change the <em>Name</em> of the newly created actor and make sure it is selected, view the details of the actor in the right hand side inspector.</li>
 <li>Make a note of the <em>ID</em> field (should be uneditable) and recall this as <em>ActorID</em>.</li>
 <li>Open the <em>Portrait Textures</em> dropdown and drag in the actor&#39;s portrait art (Will eventually be replaced with <em>Portrait Sprites</em> in due time)</li>
 </ul>
+<p><img src="../resources/DialogueSystem/ActorInspector.png" alt="Actor Inspector"></p>
 <p><strong>In the Hub_Location Scene:</strong></p>
 <p>The Hub_Location scene can be found in the Project files under Scenes/Locations/Hub_Location.unity</p>
 <ul>
-<li>In the hierarchy, Duplicate a pre-existing <em>NPC GameObject</em> (i.e. Herbert) and rename AND REPOSITION IT WITHIN THE SCENE SO IT DOES NOT OVERLAP. Make sure the GameObject is disabled (Dark grey in the hierarchy)</li>
+<li>Drag an <em>EmptyNPC</em> prefab from the Project files under Prefabs/Characters into the scene and rename and position it accordingly. Make sure the GameObject is disabled (Dark grey in the hierarchy).</li>
+</ul>
+<p><img src="../resources/DialogueSystem/EmptyNPCProjectWindow.png" alt="Empty NPC Prefab"></p>
+<ul>
 <li>Keeping it selected, within the right hand side inspector, assign <em>Actor ID</em> under the Hub NPC script to the previously noted <em>ActorID</em> from the corresponding Actor entry under the Dialogue Editor Menu.</li>
+</ul>
+<p><img src="../resources/DialogueSystem/ChangeActorID.png" alt="Change Actor ID"></p>
+<ul>
 <li>Under the NPCHubManager object in the hierarchy, In the Hub NPC Manager script, open the Actors dropdown.</li>
-<li>Create a new element in the list, and drag in the newly created/duplicated <em>NPC GameObject</em>.</li>
+<li>Create a new element in the list, and drag in the EmptyNPC you&#39;ve renamed and changed. <img src="../resources/DialogueSystem/NPCManager.png" alt="NPC Manager"></li>
 </ul>
 <p>The Actor should now be properly configured and become enabled once they have a conversation that allows them to spawn.</p>
 <h2 id="adding-new-conversation">Adding new conversation</h2>
@@ -103,17 +113,24 @@
 <ul>
 <li>Select the Conversations tab (in between Variables &amp; Templates).</li>
 <li>Directly under the Conversations tab is the Conversations toolbar, press the (+) button next to the dropdown conversation selector to add a new conversation.</li>
-<li><p>Select empty space (the grid) within the Conversation Graph window (this will default to selecting the conversation as a whole in the right hand side inspector).</p>
+</ul>
+<p><img src="../resources/DialogueSystem/CreateNewConversation.png" alt="Add conversation"></p>
+<ul>
+<li><p>Double click the empty space (the background grid) within the Conversation Graph window (this will default to selecting the conversation as a whole in the right hand side inspector).</p>
 </li>
 <li><p>Change the Title field in the RHS inspector. Use naming convention NPC NAME/CONVERSATION TITLE to make use of submenus in the conversation selector. (i.e. &quot;Maurice/FirstMeeting&quot; without quotes)</p>
 </li>
-<li>Take note of the <em>Actor</em> and <em>Conversant</em> fields. Change the <em>Conversant</em> to the NPC who owns this conversation. Leave the <em>Actor</em> field as PlayerCharacter.</li>
+<li>Take note of the <em>Actor</em> and <em>Conversant</em> fields. Change the <em>Conversant</em> to the NPC who owns this conversation. Leave the <em>Actor</em> field as PlayerCharacter.
+<img src="../resources/DialogueSystem/ConversationInspector.png" alt="Conversation inspector"></li>
 </ul>
 <p>Now you can edit the conversation flow using the main window (Conversation Graph). </p>
 <p>Grey nodes indicate the NPC is speaking, Blue nodes are the player. </p>
-<p>A Grey node that splits into multiple Blue nodes is a node that gives the PlayerCharacter a branching choice.</p>
+<p>A Grey node that splits into multiple Blue nodes is a node that gives the PlayerCharacter a branching choice.
+(Please do not make more than 4 branching choices for a one node, the UI at the moment can support only 4 choices max at one time.)</p>
+<p><img src="../resources/DialogueSystem/ConversationGraph.png" alt="Conversation Graph"></p>
 <h3 id="conversation-settings--conditions">Conversation settings &amp; conditions</h3>
 <p>With the conversation selected (Select empty space (the grid) within the Conversation Graph window) open the <em>All Fields</em> dropdown at the bottom of the RHS inspector.</p>
+<p><img src="../resources/DialogueSystem/AllFields.png" alt="All fields"></p>
 <p>Important fields to take note of are:</p>
 <p><em>RequiredConversations</em> : Array of conversation Titles that need to have been triggered by the player before this conversation can spawn in. (Used for sequencing conversations across multiple runs)</p>
 <p><em>RequiredFalseConversations</em>: Array of conversation Titles that need to have <strong>not</strong> been triggered by the player before this conversation can spawn in. (Good for making sure that this conversation will not spawn in after a certain event/conversation)</p>
