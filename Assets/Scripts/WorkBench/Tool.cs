@@ -10,8 +10,10 @@ public class Tool : DragDrop
 {
     public string itemTag = "Item";
     private Vector3 _initialPosition;
+    protected Item.ItemType _itemType;
+    private Dictionary<int, List<int>> recipes;
 
-    protected virtual void Start()
+    private void Start()
     {
         _initialPosition = transform.position;
     }
@@ -30,10 +32,7 @@ public class Tool : DragDrop
     {
         base.OnEndDrag(eventData);
         List<Collider2D> components = GetItemsUnderneath();
-        if (CanCreateItem(components)) 
-        {
-            CreateItem(components);
-        }
+        CreateItem(components);
         transform.position = _initialPosition;
     }
     
@@ -56,7 +55,7 @@ public class Tool : DragDrop
         return itemColliders;
     }
     
-    public void CreateItem(List<Collider2D> itemColliders)
+    public virtual void CreateItem(List<Collider2D> itemColliders)
     {
         // Search for item to be created
         int itemID = 1;
@@ -70,22 +69,10 @@ public class Tool : DragDrop
             Destroy(item.GameObject());
         }
     }
-    
-    public bool CanCreateItem(List<Collider2D> itemColliders)
-    {
-        // Count the number of colliders with the specified tag
-        foreach (Collider2D item in itemColliders)
-        {
-            // Check if the items can create an item
-            if (item.)
-        }
 
-        if (itemColliders.Count > 0)
-        {
-            return true;
-        }
-        return false;
+    public Dictionary<int, List<int>> GetRecipe()
+    {
+        return this.recipes;
     }
-    
     
 }

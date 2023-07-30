@@ -17,7 +17,13 @@ public class ItemAssets : MonoBehaviour
     }
 
     public Sprite woodSprite;
-    public Sprite featherSprite;
+    public Sprite plasticSprite;
     public Sprite metalSprite;
+    public Sprite featherSprite;
+    public Sprite woodBodySprite;
+    public Sprite plasticBodySprite;
+    public Sprite metalBodySprite;
+    public Sprite feltTipSprite;
+    
     
 }

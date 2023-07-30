@@ -9,13 +9,6 @@ public class Item : ScriptableObject
     public int amount;
     public ItemType itemType;
 
-    public Item(int id, string itemName, int amount, ItemType itemType)
-    {
-        this.id = id;
-        this.amount = amount;
-        this.itemType = itemType;
-    }
-
     public enum ItemType
     {
         Material,
@@ -23,13 +16,13 @@ public class Item : ScriptableObject
         Pen
     }
     
-    public ItemType GetItemType(int id)
+    public ItemType GetItemType()
     {
         if (id >= 0 && id < 5)
         {
             return ItemType.Component;
         }
-        if (id >= 6 && id < 10)
+        if (id >= 5 && id < 10)
         {
             return ItemType.Material;
         }
@@ -47,8 +40,13 @@ public class Item : ScriptableObject
         {
             default:
             case 1: return ItemAssets.Instance.woodSprite;
-            case 2: return ItemAssets.Instance.featherSprite;
+            case 2: return ItemAssets.Instance.plasticSprite;
             case 3: return ItemAssets.Instance.metalSprite;
+            case 4: return ItemAssets.Instance.featherSprite;
+            case 5: return ItemAssets.Instance.woodBodySprite;
+            case 6: return ItemAssets.Instance.plasticBodySprite;
+            case 7: return ItemAssets.Instance.metalBodySprite;
+            case 8: return ItemAssets.Instance.feltTipSprite;
         }
     }
 

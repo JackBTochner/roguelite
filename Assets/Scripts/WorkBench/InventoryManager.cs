@@ -7,27 +7,39 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager Instance;
+    private static InventoryManager _instance;
     public List<Item> items;
     public RectTransform itemContent;
     public GameObject inventoryItem;
 
+    public static InventoryManager Instance { get { return _instance; } }
+    
     private void Awake()
     {
-        Instance = this;
+        // Ensure only one instance of the InventoryManager exists
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        _instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
     {
         CreateList();
         ListItems();
+        Debug.Log("created");
     }
 
     public void CreateList()
     {
         Item item1 = ScriptableObject.CreateInstance<Item>();
         item1.id = 1;
-        item1.amount = 2;
+        item1.amount = 1;
+        item1.amount = 1;
 
         Item item2 = ScriptableObject.CreateInstance<Item>();
         item2.id = 2;
@@ -36,11 +48,36 @@ public class InventoryManager : MonoBehaviour
         Item item3 = ScriptableObject.CreateInstance<Item>();
         item3.id = 3;
         item3.amount = 2;
-
+        
+        Item item4 = ScriptableObject.CreateInstance<Item>();
+        item4.id = 4;
+        item4.amount = 2;
+        
+        Item item5 = ScriptableObject.CreateInstance<Item>();
+        item5.id = 5;
+        item5.amount = 2;
+        
+        Item item6 = ScriptableObject.CreateInstance<Item>();
+        item6.id = 6;
+        item6.amount = 2;
+        
+        Item item7 = ScriptableObject.CreateInstance<Item>();
+        item7.id = 7;
+        item7.amount = 2;
+        
+        Item item8 = ScriptableObject.CreateInstance<Item>();
+        item8.id = 8;
+        item8.amount = 2;
+        
         // Add the items to the list
         items.Add(item1);
         items.Add(item2);
         items.Add(item3);
+        items.Add(item4);
+        items.Add(item5);
+        items.Add(item6);
+        items.Add(item7);
+        items.Add(item8);
     }
 
     public void Add(Item item)

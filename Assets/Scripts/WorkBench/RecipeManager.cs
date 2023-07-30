@@ -1,33 +1,95 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using System.Linq;
 using UnityEngine;
 
 public class RecipeManager : MonoBehaviour
 {
-    // Creates a Dictionary of the recipes for the creation of items.
-    private Dictionary<int, List<int>> recipes = new Dictionary<int, List<int>>();
+    public static RecipeManager Instance;
+    private Dictionary<int, List<Recipe>> _recipes;
     
-    public void AddRecipe(int itemID, List<int> ingredientsID)
+    private void Awake()
     {
-        // Adds the item and the ingredients required to create it.
-        recipes.Add(itemID, ingredientsID);
+        Instance = this;
+        CreateRecipes();
     }
-    
-    public bool CanCraftItem(int itemID, List<int> ingredientsID)
+
+    private void CreateRecipes()
     {
-        // Checks if the item is in the recipe
-        if (recipes.ContainsKey(itemID))
+        _recipes = new Dictionary<int, List<Recipe>>();
+        TextAsset jsonFile = Resources.Load<TextAsset>("recipes");
+        RecipeDataWrapper wrapper = JsonUtility.FromJson<RecipeDataWrapper>(jsonFile.text);
+        List<Recipe> recipeData = wrapper.recipes;
+        foreach (Recipe recipe in recipeData)
         {
-            List<int> requiredIngredientsID = recipes[itemID];
-            foreach (int ingredientID in requiredIngredientsID)
+            foreach (int id in recipe.ingredientIDs)
             {
-                if (!ingredientsID.Contains(ingredientID))
+                if (_recipes.ContainsKey(id))
                 {
-                    return false;
+                    List<Recipe> recipes = _recipes[id];
+                    recipes.Add(recipe);
+                    _recipes[id] = recipes;
+                }
+                else
+                {
+                    _recipes.Add(id, new List<Recipe>(){recipe});
                 }
             }
-            return true;
+        }
+    }
+
+    public bool CheckCraftableItemID(List<int> ingredientsIDs)
+    {
+        // Retrieves the ingredient
+        int ingredientID = ingredientsIDs[0];
+        
+        // Checks if the item is in the recipe
+        if (!_recipes.ContainsKey(ingredientID))
+        {
+            return false;
+        }
+        
+        // Checks if all the ingredients can create the item
+        List<Recipe> recipes = _recipes[ingredientID];
+        foreach (Recipe recipe in recipes)
+        {
+            bool status = recipe.ingredientIDs.SequenceEqual(ingredientsIDs);
+            if (status)
+            {
+                return true;
+            }
         }
         return false;
     }
+    
+    public int GetCraftableItemID(List<int> ingredientsIDs)
+    {
+        // Retrieves the ingredient
+        int ingredientID = ingredientsIDs[0];
+        // Checks if the item is in the recipe
+        if (_recipes.ContainsKey(ingredientID))
+        {
+            List<Recipe> recipes = _recipes[ingredientID];
+            foreach (Recipe recipe in recipes)
+            {
+                bool status = recipe.ingredientIDs.SequenceEqual(ingredientsIDs);
+                if (status)
+                {
+                    // Return creatable item ID
+                    return recipe.resultItemID;
+                }
+            }
+        }
+        // Error
+        return -1;
+    }
+    
+}
+
+[System.Serializable]
+public class RecipeDataWrapper
+{
+    public List<Recipe> recipes;
 }

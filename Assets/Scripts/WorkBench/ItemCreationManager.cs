@@ -20,13 +20,11 @@ public class ItemCreationManager : MonoBehaviour
 
     public void CreateInventoryItem(Vector3 position, Transform parent, Item item)
     {
-        Debug.Log("Creating");
         GameObject itemObj = Instantiate(itemPrefab, position, Quaternion.identity, parent);
         var itemImage = itemObj.transform.Find("ItemImage").GetComponent<Image>();
         itemImage.sprite = item.GetSprite();
         itemObj.GetComponent<ItemController>().SetReferences(item, spritesList, workBenchPanel, inventoryPanel);
         itemObj.tag = "Item";
-        Debug.Log("Created");
     }
     
     public void CreateWorkBenchItem(Vector3 position, int itemID)
