@@ -6,7 +6,7 @@ items:
   parent: Global
   children:
   - Global.PlayerProjectileReceiver.AddProjectile(PlayerProjectileEffectSO)
-  - Global.PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
+  - Global.PlayerProjectileReceiver.DropProjectiles(Enemy)
   - Global.PlayerProjectileReceiver.effectSOs
   - Global.PlayerProjectileReceiver.pickup
   - Global.PlayerProjectileReceiver.projectileCount
@@ -174,16 +174,16 @@ items:
       type: Global.PlayerProjectileEffectSO
     content.vb: Public Sub AddProjectile(projectileEffect As PlayerProjectileEffectSO)
   overload: Global.PlayerProjectileReceiver.AddProjectile*
-- uid: Global.PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
-  commentId: M:Global.PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
-  id: DropProjectiles(BasicEnemy)
+- uid: Global.PlayerProjectileReceiver.DropProjectiles(Enemy)
+  commentId: M:Global.PlayerProjectileReceiver.DropProjectiles(Enemy)
+  id: DropProjectiles(Enemy)
   parent: Global.PlayerProjectileReceiver
   langs:
   - csharp
   - vb
-  name: DropProjectiles(BasicEnemy)
-  nameWithType: PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
-  fullName: PlayerProjectileReceiver.DropProjectiles(BasicEnemy)
+  name: DropProjectiles(Enemy)
+  nameWithType: PlayerProjectileReceiver.DropProjectiles(Enemy)
+  fullName: PlayerProjectileReceiver.DropProjectiles(Enemy)
   type: Method
   source:
     remote:
@@ -197,11 +197,11 @@ items:
   - Assembly-CSharp
   namespace: Global
   syntax:
-    content: public void DropProjectiles(BasicEnemy enemy)
+    content: public void DropProjectiles(Enemy enemy)
     parameters:
     - id: enemy
-      type: Global.BasicEnemy
-    content.vb: Public Sub DropProjectiles(enemy As BasicEnemy)
+      type: Global.Enemy
+    content.vb: Public Sub DropProjectiles(enemy As Enemy)
   overload: Global.PlayerProjectileReceiver.DropProjectiles*
 references:
 - uid: Global
@@ -375,8 +375,8 @@ references:
   name: DropProjectiles
   nameWithType: PlayerProjectileReceiver.DropProjectiles
   fullName: PlayerProjectileReceiver.DropProjectiles
-- uid: Global.BasicEnemy
-  commentId: T:Global.BasicEnemy
-  name: BasicEnemy
-  nameWithType: BasicEnemy
-  fullName: BasicEnemy
+- uid: Global.Enemy
+  commentId: T:Global.Enemy
+  name: Enemy
+  nameWithType: Enemy
+  fullName: Enemy

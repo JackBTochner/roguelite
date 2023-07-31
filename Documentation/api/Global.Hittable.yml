@@ -42,7 +42,7 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   derivedClasses:
-  - Global.BasicEnemy
+  - Global.Enemy
 - uid: Global.Hittable.health
   commentId: F:Global.Hittable.health
   id: health

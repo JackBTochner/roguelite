@@ -16,18 +16,18 @@ public class RunManager : MonoBehaviour
 
     public GameObject mapCanvas;
     public GameObject rewardCanvas;
+    public GameObject combatCanvas;
+    
+    public GameSceneSO hubSceneSO = default;
+
+    public List<GameSceneSO> locationsToLoadPool = new List<GameSceneSO>();
 
     public Exit playerExit;
 
     [Header("Broadcasting on")]
     public RunManagerAnchor runManagerAnchor;
-
-    public GameSceneSO hubSceneSO = default;
-
     public LoadEventChannelSO loadLocation = default;
-
     public VoidEventChannelSO returnToHub = default;
-
     public VoidEventChannelSO startRun = default;
 
     // [Header("Listening on")]
@@ -71,19 +71,32 @@ public class RunManager : MonoBehaviour
     public void ReturnToHub()
     {
         ClearCurrentRun();
+        combatCanvas.SetActive(false);
         loadLocation.RaiseEvent(hubSceneSO, false, false);
         returnToHub.RaiseEvent();
     }
 
+    /*
+        public void StartNewRun()
+        {
+            ClearCurrentRun();
+            combatCanvas.SetActive(true);
+            mapCanvas.SetActive(true);
+            mapManager.GenerateNewMap();
+            Debug.Log("StartingNewRun");
+            startRun.RaiseEvent();
+        }
+    */
     public void StartNewRun()
-    {
+    { 
         ClearCurrentRun();
-        mapCanvas.SetActive(true);
-        mapManager.GenerateNewMap();
+        // Replace with map select
+        GameSceneSO map = locationsToLoadPool[Random.Range(0, locationsToLoadPool.Count)];
         Debug.Log("StartingNewRun");
+        loadLocation.RaiseEvent(map, false, false);
+        combatCanvas.SetActive(true);
         startRun.RaiseEvent();
     }
-
     private void ClearCurrentRun()
     {
         lastRun = currentRun;
@@ -120,7 +133,8 @@ public class RunManager : MonoBehaviour
     public void OnPlayerEnterExit()
     {
         //mapManager.GetComponentInParent<Canvas>(true).gameObject.SetActive(true);
-        rewardCanvas.SetActive(true);
+        //rewardCanvas.SetActive(true);
+        ReturnToHub();
         Debug.Log("PlayerEnteredExit");
     }
 

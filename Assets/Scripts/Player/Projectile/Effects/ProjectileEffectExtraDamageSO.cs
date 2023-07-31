@@ -16,7 +16,7 @@ public class ProjectileEffectExtraDamageSO : ProjectileEffectSO
         }
     }
 
-    public void OnHitPerformed()
+    public void OnHitPerformed(DamageInfo damageInfo)
     {
         if (hittable)
         {

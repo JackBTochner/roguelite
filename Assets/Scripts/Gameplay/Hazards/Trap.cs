@@ -9,10 +9,14 @@ public class Trap : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // If the object touches the player collider
         if (other.CompareTag("Player"))
-        {
+        {   
+            // Debug print that it hits the collider
             Debug.Log("Take Damage From Trap");
+            // Get the component of the player object "PlayerCharacter".
             PlayerCharacter playerCharacter = other.gameObject.GetComponent<PlayerCharacter>();
+            // Take damage.
             playerCharacter.TakeDamage(damage);
         }
     }

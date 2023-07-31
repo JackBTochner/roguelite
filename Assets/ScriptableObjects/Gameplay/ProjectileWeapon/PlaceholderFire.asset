@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e42eef38e1eb5f4396b34ca50bbe6a9, type: 3}
   m_Name: PlaceholderFire
   m_EditorClassIdentifier: 
-  _guid: 
+  _guid: da49acaff60e2b648ac6fde5d4a5e8b8
   description: 
+  Icon: {fileID: 21300000, guid: 0786565581e12d64fb0d5d67df40e385, type: 3}
   extraDamage: 5

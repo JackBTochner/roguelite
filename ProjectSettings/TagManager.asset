@@ -11,6 +11,7 @@ TagManager:
   - RunManager
   - Trap
   - ProjectileLauncher
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Enemy
-  - 
+  - Ground
   - 
   - 
   - PlayerBuffer

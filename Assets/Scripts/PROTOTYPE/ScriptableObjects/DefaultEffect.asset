@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _guid: 55a1b7d41fac4c1428f09a3b26cd2ec5
   description: DefaultPlayerProjectileEffect
+  Icon: {fileID: 21300000, guid: b3211798ba9323e49a18e1dc5cd40fae, type: 3}

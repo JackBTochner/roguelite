@@ -1128,6 +1128,8 @@ MonoBehaviour:
     type: 3}
   _playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
+  _projectileHighlighters: {fileID: 11400000, guid: de704ed33b0585140b9220b53be341ce,
+    type: 2}
 --- !u!1 &8221515565073019129
 GameObject:
   m_ObjectHideFlags: 0

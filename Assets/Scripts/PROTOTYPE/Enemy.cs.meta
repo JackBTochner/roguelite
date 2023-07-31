@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c3a35475d120e5946926094af0e57422
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hitMarker: {instanceID: 0}
+  - critMarker: {instanceID: 0}
+  - cameraShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
+  - anim: {instanceID: 0}
+  - rb: {instanceID: 0}
+  - lookAt: {instanceID: 0}
+  - playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
+      type: 2}
+  - AI: {instanceID: 0}
+  - hitParticle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

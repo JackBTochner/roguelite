@@ -12,8 +12,8 @@
     name: AttackObject
   - uid: Global.AttackTemplate
     name: AttackTemplate
-  - uid: Global.BasicEnemy
-    name: BasicEnemy
+  - uid: Global.Enemy
+    name: Enemy
   - uid: Global.BoolEventChannelSO
     name: BoolEventChannelSO
   - uid: Global.CameraAnchor

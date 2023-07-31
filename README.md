@@ -45,8 +45,6 @@ Players will play as a Kitsune in human form during the day time and a fully tra
 To activate night-time, players can close their shop to time-skip to night.
 
 
-Enemy(Ricky)
-Different enemy will spawn and attack the player.
 
 ### Macro Gameplay Loop
 
@@ -82,54 +80,6 @@ Customers will pay with the in-game world currency known as Modulars. Modular co
 ### Systems
 (TODO: link to and write manual pages)
 
-### SoftWare Learning (Ricky)
-
-
-Unity
-We use Unity to create our game; Unity is a vast software that can get already set packages (such as objects and scripts with functions) from GitHub or websites.
-For the skill level of our game, we need to know some Unity programming; the best way is to do the tutorials in Unity Learn:
-https://learn.unity.com/project/getting-started?uv=2021.3&courseId=5cf96c41edbc2a2ca6e8810f
-At this step, Unit1 and Unit2 will be enough; please also finish the Bonus Features; this is important 
-https://learn.unity.com/project/unit-1-driving-simulation?uv=2021.3&courseId=5cf96c41edbc2a2ca6e8810f
-https://learn.unity.com/project/unit-2-basic-gameplay?uv=2021.3&courseId=5cf96c41edbc2a2ca6e8810f
-When you finish learning these Unity tutorials, you’re ready to jump into our Unity project, Pull from SourceTree. It will have the released version of the project.
-Set up the Package Manager. You must first add some packages here, Windows->Package Manager.
-Other Unity Learning.
-1.	Base AI system: https://arongranberg.com/astar/docs/getstarted.html
-2.	AI system learning: 
-a.	Follow the Player. https://www.youtube.com/watch?v=6Ai0xg6xTUk
-b.	Shooting the player. https://www.youtube.com/watch?v=k1kOtaM2NJg
-
-SourceTree 
-Get privacy from the project manager first, always check SourceTree before starting your daywork, and constantly push the files when the work is finished.
-Push: push the newly edited files you made, stage all -> comments-> push.
-Pull: get the new version of the file.
-
-Jira
-1.	RoadMap
-a.	Timeline, working expectation: we can create a new task timeline by pressing the “CreateEpic” button, and then you can make the timeline by dragging the left and right of the bar. After finalising the time, you can add sub-tasks (“Child issues”).
-2.	Board
-a.	Similar to Trello, create a new issue by pressing the create issue button and a new attribute by pressing the “+”. Make sure to put the problems in the right attribute column and assign the name of who will do this task.
-3.	The task description: make sure to fill in all tasks description, describe this task, what it will do, the plan of how to do it, and always plan before starting work.
-
-
-Toggle(Track)
-https://toggl.com/
-There are three products of Toggle, “toggl track”, “toggl plan”, and “toggle hire”, we use toggl track. 
-Toggle is a software that can collect our working time. We can see how much time we spent working on each task.
-How to use the toggl track?
-
-1.	We start a new project for our project, and we put every task and time of this project into this project.
-
-2.	When creating any task for this project, assign it to the project. There are two ways of adding tasks and time in the time slot, don’t worry about the previous working time you didn’t add, you can add whenever.
-a.	For a previous working time, forgot to add: In the top left, go to -> Track, Timer. -> You will see the current date on the page, select Today – Data with the logo. Now it is available to select the date you want, you can also change the month using the left or right tap. -> Click on the time of the table, for example, 12:00 PM stated, press the inside of the table the same horizontally as 12:00 PM, It will append a box, and you can fill in the data, don’t forget to assign the project with the folder icon. If you press the wrong place, you can still edit the time inside the append box. For example: if you press 12:00 PM, but you start at 1:00 PM, in the append box, it will display 12:00 PM to 12:30 PM. You can change 12:00 PM to 1:00 PM by pressing the text and typing in 1:00.
-b.	If you are ready to start the work, In the top left, go to -> Track, Timer. On the top of the page, there is a start button. If pressed, it will start counting the time. When you finish your current task, stop it. It will save this task. Don’t forget to name it first and assign it to the project.
-
-3.	Report
-a.	To see the report go to the report, the bar left of the map. You can select the range by pressing “This week – WXX” with the Icon and selecting the project.
-b.	To see the full view of the project report,  the bar left of the map, select Project-> Your project, it will display the data in a “line chart”, “bar chart”, and a pie chart. 
-
-
 #### Scene Loading
 
 #### Narrative System
@@ -138,18 +88,35 @@ b.	To see the full view of the project report,  the bar left of the map, select 
 
 #### Map Generation System
 
+#### Enemy Spawn System
+
+ The enemy spawns will vary in every encounter you enter. Majority of enemy spawns will be random, within set conditions. The conditions are as follows:
+ 
+ • Each enemy will receive a rating on how difficult it is to defeat, for example a minor wisp may have a difficulty rating of 1, and an explosive wisp may have a difficulty of 3.
+ 
+ • Each room will receive a rating, similarly to the enemies. For example, a less difficult room may have a rating of 10, and a more difficult room with a rating of 50.
+ 
+ • Each room will randomly spawn a set of enemies, that ratings add up to equal the set rating of the room you've entered. So if the room is a 10 rating, including the 2 enemies from the previous example, there would be 4 possible enemy combinations you could encounter:
+ 
+ ```
+ 3 explosive wisps and 1 minor wisp = 10 points
+ 2 explosive wisps and 4 minor wisps = 10 points
+ 1 explosive wisp and 7 minor wisps = 10 points
+ 10 minor wisps = 10 points
+```
+
 #### Combat System
 
-Combat will be majoritly based on shooting projectiles at enemies, but you will also have a melee ability at your disposal. As the game progresses, you will unlock a total of 8 different projectiles. Each weapon represents a tail of the Kitsune, and will do the following:
+Combat will be majority based on shooting projectiles at enemies, but you will also have a melee ability at your disposal. As the game progresses, you will unlock a total of 8 different projectiles. Each weapon represents a tail of the Kitsune, and will do the following:
 ```
-Regular tail: Melee weapon.
-Lightning Chain: Hits multiple enemies for chain damage (lock on).
-Fire: Inflicts burn damage.
-Ice: Slows enemies.
-Earthquake: Inflicts impact damage on enemies in a straight line.
-Poison: Reduces enemies total health by a percentage.
-Piercing: Can hit multiple enemies (aimed).
-Boomerang: Will inflict damage on initial release and when received.
+Regular tail: Melee weapon, deals damage in a small cone radius, swinging right to left.
+Lightning Chain: Hits the nearest 3 enemies in a chain  formation (nearest enemy will get hit for a higher damage output than the furthest enemy in the chain).
+Fire: Inflicts burn damage over time, (eg. 5 damage ticks per second, lasting 3 seconds).
+Ice: Slows enemies for a small period of time.
+Earthquake: Earth rises from the ground, inflicts impact damage on enemies in a straight line.
+Poison: Reduces enemies total health by a percentage when hit (minor enemies will be affected by this attack more than major enemies).
+Piercing: Can hit multiple enemies in a straight line (aimed).
+Boomerang: Will inflict damage on initial release, will return to sender and deal a second wave of damage on the way back..
 Cupids Arrow: Will link enemy that's hit with the next closest enemy, any damage done to one will be inflicted on the other.
 
 ```
@@ -160,6 +127,59 @@ When attacking an enemy for the first time upon entering a room, you will attach
 #### Perk/Ability System
 
 As you progress through the game and create bonds with the NPCs, you will gain passive perks and abilities. Each NPC will be able to give you a passive perk that you will keep throughout the game and will stack with other passive perks you may receive from other NPCs. When you complete a relationship with an NPC, you will receive an ultimate ability. You may unlock multiple ultimates, but you may only equip one at a time. These abilities and perks will be active in every run, and will stay with you when you die. 
+
+
+#### Pen-Building system
+
+Player must walk to their workbench and interact with it. It will open the pen-build UI. It will have a
+work bench and tools. Tools include drill, hammer, saw, clips, and water. The drill can be used to
+shape the pen body for plastic and aluminium. For wooden pens, a saw must be used. The pen ink
+can be made from pigments simply by applying water. For the tip of the pen, clips must be used for
+the materials. To assembly a full pen with all the right materials, a hammer must be used.
+For the actual game play, players can drag the materials needed onto the work bench. They can then
+leave the material on the work bench and drag the tool needs over the material which will
+automatically apply the “building” animation resulting in the finished product. E.g, if the player wanted to make a blue plastic felt tip pen, they would need to drag the blue
+pigment onto the work bench along with water on the work bench to make the ink. They will then
+need to drag the plastic onto the work bench as well and drag the drill to make the body. Then they
+will do the same with feathers and clippers. After all the materials are made, if they left all the made
+materials on the work bench, then all they need to do to overlap the materials and drag the hammer
+to make the pen. Double click on items to obtain them. 
+
+### Currency system
+
+#### Modular
+
+The world currency that customers use to pay for their goods. Modular can also be used to
+upgrade the hub (shop). The shop can be upgraded with aesthetic changes (e.g different coloured
+wallpaper and flooring). The shop can also be upgraded so that the pen making game play can be
+made easier.
+
+Obtainability:
+
+• Making correct items for customers (some customers will pay anyways depending on the
+customer and your relationship with them)
+
+• Herbert the bear
+
+• Completing levels
+
+#### Fish
+
+Fish can be used for Herbert the bear to purchase his shop items. He has a variety stall of items
+including Modulars, Power-ups (boons) and enemy drops.
+
+Obtainability:
+
+• Destroying crates that are spawned around the world.
+
+• Completing a level around the Yarra will have a 40% chance of dropping fish at the end of it.
+
+#### Enemy drops
+
+Colour Pigments: Blue, black, green, yellow, purple, red, pink.
+
+Materials: Plastic, Wood, Aluminium, Feathers, lead.
+
 
 
 ## Brand Identity
@@ -204,15 +224,74 @@ Milton: Customer
 Aziel: Main enemy/Final boss  
 Herbert: Upgrade keeper 
 ```
+Schrodinger
+
+Schrodinger is a stoic, intelligent and mysterious person who hides their feelings. They have an extremely calm demeaner up front, but behind this they seem to be easily emotionally upset. They have a room mate who is named Milton who they seem to be very fond of. Schrodinger was known to be a university student but dropped out due to unknown circumstances. Now they gain an income by gambling, winning most of the bets they partake in. Schrodinger discovered this talent when they betted on the liveability of an animal inhaling deadly gas.
+
+Personality: ISTP
+
+Appearance: Fluffy short hair, cat ears, usually has their hands in pockets. Oversized clothing especially the jacket.
+
+Chang-E
+
+An astronomy enthusiast, Chang-E knows everything there is about the moon. She took a special interest in the moon when she was younger and was separated from her parents on holidays. The full moon was out that day and she used it and its bright light as a guide to find her way back to her parents. Ever since then she believed that her and the moon have a strong connection. She is also highly interested in astrology and believes that it greatly has an impact on people and their personalities.
+
+Personality: INFJ
+
+Appearance: Long black hair with two space buns (pins in the space buns), flowy Chinese-traditional inspired outfit but modernised.
+
+
+Banshee
+
+Being gifted with the voice of an angel, Banshee wows those are listens. She moved to Melbourne from Ireland to stay aboard and makes a living busking everyday on the streets of Melbourne. She has the power to hear people’s spirits and their ‘song,’ being able to perfect her pitch and harmony to please them. Having this power, she wants to use it to better peoples lives and bring harmony together. 
+
+Personality: ESFJ
+
+Appearance: Green jacket, like a flowy fashionable cloak over a white dress. She has red hair. Either has red eye makeup or just red eyes.
+
+
+Summoner of wisps Aziel
+
+Stealing souls at a long attempt to bring his dead sister back, Name longs to grab the attention from the Diety believing that becoming more powerful with wisps will force the to release him and return his sister. But name needs to accept his sister fate in order to be released. Now transformed into a dark, powerful, and unrivalled entity, name stand as the King of all wisps controlling the streets with his vessels. 
+
+Personality: INTJ
+
+Appearance: Dark long hood with fast to cover top half of face, one eye clearly red.
+
+Horus
+
+A former pilot, Horus flew planes around the world carrying massive amount of passengers. He fell in love with his job and flying freely in the sky. One fateful day, he has received the news that his wife had Fuchs dystrophy in her left eye and needed immediate cornea transplant. With no available donors, Horus gave up his left eye along his career and passion to save her. Now with one eye to use, he is unfit to fly a plane. He was perished from his job. From this, he decided to travel instead to continue experience the world from the sky.
+
+Personality: INTP
+
+Appearance: One eye (right eye remaining), coat, lots of gold ascents. Some bird features maybe like mini wings.
+
+
+Winnie
+
+An authentic wisp, Winnie was transformed with full free will and a mind as intelligent as a living being. While she doesn’t remember her past life, she does have the privilege to roam and live as she pleases. She hides out in a run down shop and claimed that as her own home. One day something happened, a being was casted into the shop, Winnie saw that this being was different and decided to take it upon her own hands to help them. She continues to act as Kit’s close friend and mentor.
+
+Personality: ENFP
+
+Appearance: Wisp, more feminine
+
+## Level Design
+City Map Initial Concepts:
+![Kitsune Corner Map](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/1de79ef3-1369-4311-911d-1ef7ae228fbc_rw_1920.png?h=d9c9a3af7ba90fa8bc435944aa03ba0e)
 
 ## Concept Art
 
 Below are the character concepts completed by our 2D artist:
+### Character Art
+#### Kit
 
 Kit Outfit Designs:
 ![KIT OUTFIT 1 Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/19ed6fb4-ba7e-4314-920e-430a31e40f5f_rw_1920.png?h=b8a10fdecbe7a4e625e73b920cfd5e96)
 
 ![KIT OUTFIT 2 Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/d3bf5b66-35bf-4f0e-a5a1-9d4b7952c4cc_rw_1920.png?h=e738b02c058297e73a4cce145f6dd9cf)
+
+Kit Turnaround:
+![FOX CONCEPT Turnaround](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/18615722-fd08-41c8-b81b-870a6541081c_rw_1920.png?h=372fbe633ad03cc15ddc9d0d34234030)
 
 Kit (Fox form) Turnaround:
 ![FOX CONCEPT Turnaround](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/aad3a189-3246-46c4-a6d0-7273872063a1_rw_1920.png?h=f3a505eb38d5e52f74342f1905c546f9)
@@ -220,3 +299,13 @@ Kit (Fox form) Turnaround:
 Kit Concept Art (Colourway 1):
 ![KIT Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/18178751-955a-4ef9-9ba2-f2e6af06844c_rw_1920.png?h=6860a4b9cffbcc17721d7aee0aab8744)
 
+Kit Concept Art (Colourway 2):
+![KIT Concept Art](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/f2477c7a-0df9-42d9-aa4e-b3ae70e945e5_rw_1920.png?h=bd06c3e38a10a8fe3a7d24b82fd9093b)
+
+#### NPCs
+Chang-e and Shrodinger Character Art WIP.
+![Chang-e and Shrodinger Character](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/5de2ec7c-f7ec-4584-99c6-d69f781aa6a7_rw_1920.png?h=68450987376cbaabc94f41d3e6335eb4)
+
+### Ability and UI Art
+Melee and Dig Ability Icons:
+![Melee and Dig Ability Icons](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/4ce8ef51-4d46-4ef0-99e4-b4c1db810edc_rw_1920.png?h=6a78b347ccf6993e22b1b3ea5043fe45)

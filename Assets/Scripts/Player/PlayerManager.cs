@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     public ProjectileEffectSlots ProjectileEffects => _projectileEffects;
 
     public HealthSO CurrentHealthSO = default;
+    public StaminaSO CurrentStaminaSO = default;
     public ProjectileCountSO projectileCountSO = default;
 
     [Header("Broadcasting on")]
@@ -66,6 +67,7 @@ public class PlayerManager : MonoBehaviour
     private void SetInitialStats()
     {
         CurrentHealthSO.SetCurrentHealth(CurrentHealthSO.InitialHealth);
+        CurrentStaminaSO.SetCurrentStamina(CurrentStaminaSO.InitialStamina);
         projectileCountSO.ResetProjectileCount();
         _projectileEffects.ClearEffects();
     }

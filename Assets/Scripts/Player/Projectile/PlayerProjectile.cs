@@ -7,6 +7,17 @@ public class PlayerProjectile : MonoBehaviour
 {
     ProjectileEffectSO projectileEffect;
 
+    [Header("Damage")]
+    public DamageInfo damageInfo = new DamageInfo(DamageType.Default, 2, new CriticalData(50, 1.5f, false), 1000, Vector3.zero);
+
+    public GameObject hitMarker;
+    public GameObject critMarker;
+    public GameObject impactVFX;
+    
+    public GameObject pickup;
+    GameObject instigator;
+
+    [Header("Collision")]
     public float radius = 0.5f;
 
     // root of the projectile for collision detection
@@ -20,44 +31,19 @@ public class PlayerProjectile : MonoBehaviour
     public LayerMask hittableLayers = -1;
 
     public float speed = 10f;
-
     public float gravityAcceleration = 1f;
-
     public bool inheritWeaponVelocity = false;
-
-    public float damage = 1f;
-
-    public GameObject impactVFX;
-
     Vector3 lastRootPosition;
-
     Vector3 velocity;
 
     List<Collider> ignoredColliders;
 
     float shootTime = Mathf.NegativeInfinity;
 
-    GameObject instigator;
-
     Vector3 initialPosition;
-
     Vector3 initialDirection;
-
     Vector3 inheritedMuzzleVelocity;
 
-    public float critChance;
-
-    public float critMultiplier;
-
-    public bool ignoreCrit;
-
-    public float knockback;
-
-    public GameObject hitMarker;
-
-    public GameObject critMarker;
-
-    public GameObject pickup;
 
     private float timeSpawned = Mathf.NegativeInfinity;
 
@@ -157,8 +143,7 @@ public class PlayerProjectile : MonoBehaviour
     void OnHit(Vector3 point, Vector3 normal, Collider collider)
     {
         
-        PlayerProjectileReceiver receiver =
-            collider.GetComponent<PlayerProjectileReceiver>();
+        PlayerProjectileReceiver receiver = collider.GetComponent<PlayerProjectileReceiver>();
         if (receiver)
         {
             receiver.AddProjectile(projectileEffect);
@@ -168,45 +153,18 @@ public class PlayerProjectile : MonoBehaviour
         {
             SpawnPickupAndRemove();
         }
-        Hittable hittable = collider.GetComponent<Hittable>();
-        if (hittable)
+        
+        Hittable hitReceiver = collider.GetComponent<Hittable>();
+        if (hitReceiver)
         {
-            if (collider.CompareTag("Enemy"))
-            {
-                int crit = Random.Range(0, 100);
-                if (crit <= critChance && !ignoreCrit)
-                {
-                    GameObject hitMarkerObj =
-                        Instantiate(critMarker,
-                        collider.transform.position,
-                        Quaternion.identity);
-                    hitMarkerObj.GetComponent<HitMarker>().damage =
-                        critMultiplier * damage;
-                    hitMarkerObj.GetComponent<HitMarker>().OnObjectSpawn();
-                    hittable.health -= critMultiplier * damage;
-                }
-                else
-                {
-                    GameObject hitMarkerObj =
-                        Instantiate(hitMarker,
-                        collider.transform.position,
-                        Quaternion.identity);
-                    hitMarkerObj.GetComponent<HitMarker>().damage = damage;
-                    hitMarkerObj.GetComponent<HitMarker>().OnObjectSpawn();
-                    hittable.health -= damage;
-                }
-            }
-            hittable.Hit(0, Vector3.zero);
+            Vector3 knockbackDir = Vector3.Normalize(hitReceiver.transform.position - this.transform.position);
+            hitReceiver.Hit(damageInfo);
         }
 
         // Add impact SFX
         if (impactVFX)
         {
-            GameObject vfx =
-                GameObject
-                    .Instantiate(impactVFX,
-                    point,
-                    Quaternion.LookRotation(normal));
+            GameObject vfx = GameObject.Instantiate(impactVFX, point, Quaternion.LookRotation(normal));
         }
 
     }

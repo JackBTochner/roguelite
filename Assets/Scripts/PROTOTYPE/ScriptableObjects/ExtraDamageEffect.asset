@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b45d47e893d038742b10e2267f7df1f3, type: 3}
   m_Name: ExtraDamageEffect
   m_EditorClassIdentifier: 
-  _guid: 
+  _guid: 4ec9b73ce2a6a6c4e8f7485ec1ff5cba
   description: 
+  Icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   extraDamage: 5

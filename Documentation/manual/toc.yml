@@ -1,6 +1,12 @@
 - name: Overview
   href: overview.md
+- name: Getting Started
+  href: GettingStarted.md
 - name: Documentation
   href: documentation.md
-- name: SpawningEnemies
+- name: Spawning Enemies
   href: SpawningEnemies.md
+- name: Dialogue System
+  href: DialogueSystem.md
+- name: UI System
+  href: UISystem.md

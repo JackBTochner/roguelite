@@ -18,11 +18,14 @@ public class TramDeltDamage : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) 
     {
+        // When the tram hits the player collider
         if (other.CompareTag("Player"))
         {
+            // Get the player object component "PlayerCharacter".
             PlayerCharacter playerCharacter = other.gameObject.GetComponent<PlayerCharacter>();
+            // Take damage
             playerCharacter.TakeDamage(damage);
         }
     }

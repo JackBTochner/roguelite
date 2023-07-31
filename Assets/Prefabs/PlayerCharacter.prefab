@@ -58,13 +58,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3396965876898961664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.03934005, y: 0.08903158, z: 0.0899452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3396965878540587900}
-  m_Father: {fileID: 3396965877584387918}
-  m_RootOrder: 0
+  m_Father: {fileID: 8904289081433289519}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3396965876898961676
 MeshFilter:
@@ -174,8 +174,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3396965876898961679}
   - {fileID: 3396965876574648942}
+  - {fileID: 8904289081433289519}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -191,18 +191,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd030a2997aea5418d97aff25b0b961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth_DEBUG: 0
-  maxHealth_DEBUG: 0
-  currentHealth_DEBUG: 0
   _currentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
   _deathDelay: 0.5
-  playerGFX: {fileID: 0}
+  _currentStaminaSO: {fileID: 11400000, guid: aed2e6adb912c214596a6055e3776d6a, type: 2}
+  allowStaminaRegen: 1
+  digStaminaCost: 25
+  digStaminaDepleteRate: 5
+  playerGFX: {fileID: 3396965876898961664}
   playerDigGFX: {fileID: 0}
   playerDigAttack: {fileID: 0}
   digFreezeTime: 0
+  _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
+  _updateStaminaUI: {fileID: 11400000, guid: 7c371bd7e9f3dfd4280a1796446c5604, type: 2}
   _deathEvent: {fileID: 0}
+  _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
+  _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
 --- !u!143 &3396965877584387916
 CharacterController:
   m_ObjectHideFlags: 0
@@ -243,12 +248,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
   playerSpeed: 5
+  playerEyeHeight: 0.75
   gamepadDeadzone: 0.01
   gamepadRotateSmoothing: 500
   isGamepad: 0
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
+  aimTransform: {fileID: 8904289081433289519}
+  gfxTransform: {fileID: 0}
+  gfxRotateSpeed: 30
+  gfxAnimator: {fileID: 0}
   currentSpeed: 0
   allowMovement: 1
+  allowRotation: 1
 --- !u!95 &8827232853832920793
 Animator:
   serializedVersion: 5
@@ -450,3 +461,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &7417957647278411701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8904289081433289519}
+  m_Layer: 0
+  m_Name: Rotator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8904289081433289519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7417957647278411701}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.03934005, y: -0.08903158, z: -0.0899452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3396965876898961679}
+  m_Father: {fileID: 3396965877584387918}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

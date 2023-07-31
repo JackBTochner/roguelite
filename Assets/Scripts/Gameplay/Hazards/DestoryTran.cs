@@ -14,6 +14,7 @@ public class DestoryTram : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // If the tram goes out of z range, delete the object.
         if(transform.position.z > sideBound)
         {
             Destroy(gameObject);

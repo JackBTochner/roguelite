@@ -24,7 +24,13 @@ public class PlayerWeaponController : MonoBehaviour
     private Vector3 lastMuzzlePosition;
     public Vector3 muzzleWorldVelocity;
 
+    [Header("Time")]
+    public float timeMultiplier = 0.5f;
+    private bool isAiming = false;
+
     private float lastTimeShot;
+
+    private Animator aimIndicatorAnimator;
 
     [SerializeField] private InputReader inputReader = default;
 
@@ -34,18 +40,21 @@ public class PlayerWeaponController : MonoBehaviour
 
     private void OnEnable()
     {
-        inputReader.OnAttack2Performed += TryAttack;
+        inputReader.OnAttack2Performed += TryAim;
+        inputReader.OnAttack2Cancelled += TryAttack;
         effectTemplate.OnSlotsUpdated += AssignEffectInstances;
     }
 
     private void OnDisable()
     {
-        inputReader.OnAttack2Performed -= TryAttack;
+        inputReader.OnAttack2Performed -= TryAim;
+        inputReader.OnAttack2Cancelled -= TryAttack;
         effectTemplate.OnSlotsUpdated -= AssignEffectInstances;
     }
 
     private void Start()
     {
+        aimIndicatorAnimator = GetComponent<Animator>();
         AssignEffectInstances(effectTemplate.Effects);
         if (_updateProjectileUI != null)
                 _updateProjectileUI.RaiseEvent();
@@ -58,7 +67,9 @@ public class PlayerWeaponController : MonoBehaviour
         foreach (var effect in effectTemplates)
         {
             string effectTemplateName = effect.GetType().ToString();
-            effectInstances.Add((ProjectileEffectSO)ScriptableObject.CreateInstance(effectTemplateName));
+            ProjectileEffectSO effectInstance = (ProjectileEffectSO)ScriptableObject.CreateInstance(effectTemplateName);
+            effectInstance.Copy(effect);
+            effectInstances.Add(effectInstance);
         }
     }
 
@@ -78,8 +89,23 @@ public class PlayerWeaponController : MonoBehaviour
                 _updateProjectileUI.RaiseEvent();
     }
 
+    public void TryAim()
+    {
+        if (_projectileCount.CurrentProjectileCount <= 0)
+            return;
+        Time.timeScale = timeMultiplier;
+        isAiming = true;
+        aimIndicatorAnimator.SetBool("IsAiming", true);
+    }
+
     public void TryAttack()
     {
+        if (isAiming)
+        {
+            Time.timeScale = 1.0f;
+            isAiming = false;
+        }
+        aimIndicatorAnimator.SetBool("IsAiming", false);
         FireWeapon();
     }
 

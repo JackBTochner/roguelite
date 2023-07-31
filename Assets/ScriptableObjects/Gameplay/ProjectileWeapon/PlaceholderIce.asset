@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880332f760ad2284390cd10078ee874e, type: 3}
   m_Name: PlaceholderIce
   m_EditorClassIdentifier: 
-  _guid: 
+  _guid: de12767f0e3ee76458f6a87014d23bd2
   description: 
+  Icon: {fileID: 21300000, guid: 878180bd5f3e37c48948597f8393b1fc, type: 3}
   extraDamage: 5

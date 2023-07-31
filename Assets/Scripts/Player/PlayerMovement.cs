@@ -25,8 +25,15 @@ namespace Player
         [SerializeField]
         private bool isGamepad;
                 
-        [SerializeField] 
+        [SerializeField]
         private TransformAnchor mainCamera = default;
+
+        [SerializeField] private Transform aimTransform;
+        [SerializeField] private Transform gfxTransform;
+        [Tooltip("Angular speed in degrees per sec.")]
+        [SerializeField] private float gfxRotateSpeed = 30;
+        [SerializeField] private Animator gfxAnimator;
+        Quaternion lookAt;
 
         private CharacterController controller;
 
@@ -37,13 +44,27 @@ namespace Player
         private Controls controls;
 
         public bool allowMovement = true;
+        public bool allowRotation = true;
+
+        public float dashSpeed = 15;
+        public float dashTime = 0.25f;
+        public float dashCoolTime = 1;
+        public bool isDashing = false;
+        public bool canDash = true;
+        public Vector3 lastHorizontalVelocity;
 
         private void Awake()
         {
             controller = GetComponent<CharacterController>();
+        }
+        private void OnEnable()
+        {
             inputReader.OnJumpPerformed += jump;
         }
-
+        private void OnDisable()
+        {
+            inputReader.OnJumpPerformed -= jump;
+        }
         public void Initialise()
         {
             // manager.playerInput.controlsChangedEvent.AddListener(OnDeviceChange);
@@ -51,16 +72,51 @@ namespace Player
         }
         private void jump()
         {
-            Debug.Log("Jump!");
+            // Test the jump key is working.
+            //Debug.Log("Test: Jump Key working");
+
+            if (canDash)
+            {
+                StartCoroutine(BeginDash());
+            }
         }
 
+        private IEnumerator BeginDash()
+        {
+            allowMovement = false;
+            allowRotation = false;
+            isDashing = true;
+            lastHorizontalVelocity = Vector3.ProjectOnPlane(controller.velocity, Vector3.up);
+            float startTime = Time.time;
+
+            while(Time.time < startTime + dashTime)
+            {
+                controller.Move(lastHorizontalVelocity.normalized * dashSpeed * Time.deltaTime);
+                yield return null;
+            }
+            
+            isDashing =false;
+            allowMovement = true;
+            allowRotation = true;
+            lastHorizontalVelocity = Vector3.zero;
+            StartCoroutine(DashCooldown());
+        }
+
+        IEnumerator DashCooldown()
+        {
+            canDash = false;
+            yield return new WaitForSeconds(dashCoolTime);
+            canDash = true;
+        }
         private void Update()
         {
             ApplyGravity();
             if(allowMovement)
-            HandleMovement();
-            HandleRotation();
-                currentSpeed = controller.velocity.magnitude;
+                HandleMovement();
+            if(aimTransform && allowRotation)
+                HandleRotation();
+            currentSpeed = controller.velocity.magnitude;
+
         }
 
         private void ApplyGravity()
@@ -77,14 +133,10 @@ namespace Player
             Vector3 move;
             if (mainCamera.isSet)
             {
-                Vector3 playerForward =
-                    Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
-                Vector3 playerRight =
-                    Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
+                Vector3 playerForward = Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
+                Vector3 playerRight = Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
 
-                move =
-                    playerForward.normalized * inputReader.MoveComposite.y +
-                    playerRight.normalized * inputReader.MoveComposite.x;
+                move = playerForward.normalized * inputReader.MoveComposite.y + playerRight.normalized * inputReader.MoveComposite.x;
 
             } else
             { 
@@ -92,11 +144,18 @@ namespace Player
                 Debug.LogWarning("No gameplay camera in the scene. Movement orientation will not be correct.");
                 move = new Vector3(inputReader.MoveComposite.x, 0f, inputReader.MoveComposite.y);
             }
+
+            lookAt = (inputReader.MoveComposite.magnitude > 0.1f) ? Quaternion.LookRotation(move) : lookAt;
+            if(gfxTransform)
+                gfxTransform.rotation = Quaternion.RotateTowards(gfxTransform.rotation, lookAt, Time.deltaTime * gfxRotateSpeed);
+            if(gfxAnimator)
+                gfxAnimator.SetFloat("Speed", (currentSpeed > 0) ? currentSpeed / playerSpeed : 0);
             controller.Move(move * Time.deltaTime * playerSpeed);
         }
 
         private void HandleRotation()
         {
+            
             if (isGamepad)
                 GamepadLook();
             else
@@ -105,23 +164,15 @@ namespace Player
 
         private void GamepadLook()
         {
-            if (
-                Mathf.Abs(inputReader.Look.x) > gamepadDeadzone ||
-                Mathf.Abs(inputReader.Look.y) > gamepadDeadzone
-            )
+            if ( Mathf.Abs(inputReader.Look.x) > gamepadDeadzone || Mathf.Abs(inputReader.Look.y) > gamepadDeadzone )
             {
                 Vector3 playerDirection =
                     Vector3.right * inputReader.Look.x +
                     Vector3.forward * inputReader.Look.y;
                 if (playerDirection.sqrMagnitude > 0.0f)
                 {
-                    Quaternion newRot =
-                        Quaternion.LookRotation(playerDirection, Vector3.up);
-                    transform.rotation =
-                        Quaternion
-                            .RotateTowards(transform.rotation,
-                            newRot,
-                            gamepadRotateSmoothing * Time.deltaTime);
+                    Quaternion newRot = Quaternion.LookRotation(playerDirection, Vector3.up);
+                    aimTransform.rotation = Quaternion.RotateTowards(transform.rotation, newRot, gamepadRotateSmoothing * Time.deltaTime);
                 }
             }
         }
@@ -136,14 +187,13 @@ namespace Player
             {
                 Vector3 intersect = ray.GetPoint(rayDistance);
                 Vector3 point = new(intersect.x, transform.position.y, intersect.z);
-                transform.LookAt(point);
+                aimTransform.LookAt(point);
             }
         }
 
         public void OnDeviceChange(PlayerInput pi)
         {
-            isGamepad =
-                pi.currentControlScheme.Equals("Gamepad") ? true : false;
+            isGamepad = pi.currentControlScheme.Equals("Gamepad") ? true : false;
         }
     }
 }

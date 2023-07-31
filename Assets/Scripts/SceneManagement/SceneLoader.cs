@@ -135,7 +135,7 @@ public class SceneLoader : MonoBehaviour
 
 		if (_currentlyLoadedScene != null) //would be null if the game was started in Initialisation
 		{
-			if (_currentlyLoadedScene.sceneReference.OperationHandle.IsValid())
+            if (_currentlyLoadedScene.sceneReference.OperationHandle.IsValid())
 			{
 				//Unload the scene through its AssetReference, i.e. through the Addressable system
 				_currentlyLoadedScene.sceneReference.UnLoadScene();
@@ -164,8 +164,8 @@ public class SceneLoader : MonoBehaviour
 			_toggleLoadingScreen.RaiseEvent(true);
 		}
 
-		// _loadingOperationHandle = _sceneToLoad.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true, 0);
-        _loadingOperationHandle = Addressables.LoadSceneAsync(_sceneToLoad.sceneReference, LoadSceneMode.Additive, true, 0);
+		_loadingOperationHandle = _sceneToLoad.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true, 0);
+        //_loadingOperationHandle = Addressables.LoadSceneAsync(_sceneToLoad.sceneReference, LoadSceneMode.Additive, true, 0);
         _loadingOperationHandle.Completed += OnNewSceneLoaded;
 	}
 
