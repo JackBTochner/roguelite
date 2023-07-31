@@ -53,7 +53,7 @@ MonoBehaviour:
       value: True
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 2800000, guid: 3484528b1f6a9a548a5b6f31f2cfda02, type: 3}
+    portrait: {fileID: 2800000, guid: f57c3b31635b07147a4b5ef691957dce, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -75,7 +75,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 32e8917bcb1268046961626a1e0b8e10, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -97,7 +97,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 463a9fd625b58bc439478fa0204f9f93, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -163,7 +163,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 2800000, guid: 3826a373ff68e494399457824deb2945, type: 3}
+    portrait: {fileID: 2800000, guid: d1c3d7844c2e4fa41a39cc6343a42c7a, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -185,7 +185,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 2800000, guid: 0589752deda27f54ab6ebbe9f3557a95, type: 3}
+    portrait: {fileID: 2800000, guid: 82a0c9171f4dcbc48801c7bd580e5c46, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -207,7 +207,7 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
+    portrait: {fileID: 2800000, guid: 0589752deda27f54ab6ebbe9f3557a95, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -1370,8 +1370,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 14.433959, y: 15.905639}
+    canvasZoom: 1.06
   - id: 13
     fields:
     - title: Title
@@ -3293,8 +3293,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1.1199999
+    canvasScrollPosition: {x: 0, y: 2.7260227}
+    canvasZoom: 1.0899999
   - id: 16
     fields:
     - title: Title
@@ -5302,7 +5302,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Heyyyy how's it going? :>
+        value: Oh dear. this is quite a pleasing place. You don't appear open but
+          I saw a young man enter earlier.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5357,8 +5358,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Can''t fault today! Everyone all around seems to be in a really good
-          mood.
+        value: 'I see. Thank you anyways darling, perhaps I will take advantage of
+          this space if that is okay with you. My name is Banshee.
 
 '
         type: 0
@@ -5388,8 +5389,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 259
-        y: 100
+        x: 249.78949
+        y: 97.36842
         width: 160
         height: 30
     - id: 5
@@ -5415,7 +5416,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: It's been a decent day, what about yourself?
+        value: Ah right... unfortunately I'm not open for operation. But you're more
+          than welcome to stay, we have amenities where you can relax.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5443,8 +5445,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 58
-        y: 83
+        x: 54.947353
+        y: 79.05264
         width: 160
         height: 30
     - id: 6
@@ -5470,7 +5472,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: She seems oddly cheery...
+        value: Banshee? Where have I heard that name... oh you must be that singer
+          everyone is talking about? Well it certainly is a pleasure to have you
+          here... actually what brings you here?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5498,7 +5502,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55
+        x: 52.368423
         y: 138
         width: 160
         height: 30
@@ -5525,8 +5529,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I need a pen, something with black ink just to write with and that's
-          it! What do you have?
+        value: Well darling embarrasingly I have strained my vocal chords and can
+          not perform in a large crowd anymore. It is utmost devastating to be in
+          this position.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5554,8 +5559,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 249
-        y: 146
+        x: 266.10526
+        y: 140.73683
         width: 160
         height: 30
     - id: 8
@@ -5581,7 +5586,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Just a simple black pen?
+        value: A singer with strained vocal chords... yes that does seem to be a
+          problem. I'm terribly sorry that I am unable to help you now but once everything
+          is ready I promise I will do everything I can to the best of my ability.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5636,7 +5643,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Actually I want blue! Sorry I tend to change my mind a lot...
+        value: Thank you darling, I wil be counting on you. And please keep this
+          between us will you?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5691,7 +5699,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Blue pen it is.
+        value: You have my word.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5705,19 +5713,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 19
-        originDialogueID: 10
-        destinationConversationID: 19
-        destinationDialogueID: 11
-        isConnector: 0
-        priority: 2
-      - originConversationID: 19
-        originDialogueID: 10
-        destinationConversationID: 19
-        destinationDialogueID: 12
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -5725,118 +5721,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 66
+        x: 63.368423
         y: 240
-        width: 160
-        height: 30
-    - id: 11
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 7
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Correct Product
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 19
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 19
-        originDialogueID: 11
-        destinationConversationID: 19
-        destinationDialogueID: 14
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 519.7059
-        y: 249.29416
-        width: 160
-        height: 30
-    - id: 12
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 7
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Incorrect product
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 19
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 19
-        originDialogueID: 12
-        destinationConversationID: 19
-        destinationDialogueID: 13
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 63.64705
-        y: 293.70587
         width: 160
         height: 30
     - id: 13
