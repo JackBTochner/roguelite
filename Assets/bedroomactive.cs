@@ -11,10 +11,12 @@ public class BedroomActive : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //hide storefront
-            storefront.GetComponent<Renderer>().enabled = false;
-            Debug.Log("trigger");
+            //hide storefront and its children
+            foreach (Renderer r in storefront.GetComponentsInChildren<Renderer>())
+            {
+                r.enabled = true;
+            }
+            Debug.Log("Double trigger");
         }
     }
 }
-
