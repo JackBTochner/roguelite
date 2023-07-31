@@ -73,7 +73,7 @@ namespace Player
         private void jump()
         {
             // Test the jump key is working.
-            Debug.Log("Test: Jump Key working");
+            //Debug.Log("Test: Jump Key working");
 
             if (canDash)
             {
