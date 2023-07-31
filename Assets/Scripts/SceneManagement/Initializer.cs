@@ -12,14 +12,17 @@ using UnityEngine.SceneManagement;
 public class Initializer : MonoBehaviour
 {
     [SerializeField] private GameSceneSO _managersScene = default;
+    [Header("Load into Main Menu")]
     [SerializeField] private GameSceneSO _menuToLoad = default;
-    [Header("Alternative to loading into the main menu")]
-    [SerializeField] public bool skipMainMenu = false;
-    [SerializeField] private GameSceneSO _replacementSceneToLoad = default;
 
     [Header("Broadcasting on")]
     [SerializeField] private AssetReference _menuLoadChannel = default;
-
+    
+    [Header("Alternative to loading into the main menu")]
+    [SerializeField] public bool skipMainMenu = false;
+    [SerializeField] private GameSceneSO _replacementSceneToLoad = default;
+    [Header("Broadcasting on")]
+    [SerializeField] private AssetReference _loadLocationChannel = default;
     void Start()
     {
         _managersScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true).Completed += LoadEventChannel;
@@ -28,7 +31,7 @@ public class Initializer : MonoBehaviour
     private void LoadEventChannel(AsyncOperationHandle<SceneInstance> obj)
     {
         if(skipMainMenu)
-            _menuLoadChannel.LoadAssetAsync<LoadEventChannelSO>().Completed += LoadReplacementScene;
+            _loadLocationChannel.LoadAssetAsync<LoadEventChannelSO>().Completed += LoadReplacementScene;
         else
             _menuLoadChannel.LoadAssetAsync<LoadEventChannelSO>().Completed += LoadMainMenu;
     }
