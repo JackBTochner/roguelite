@@ -20,6 +20,7 @@ public class ProjectileEffectSlots : DescriptionBaseSO
 
     [SerializeField]
     private ProjectileCountSO _projectileCount = default;
+    [SerializeField]
     private VoidEventChannelSO _updateProjectileUI = default;
 
 
@@ -39,7 +40,11 @@ public class ProjectileEffectSlots : DescriptionBaseSO
 
     public void AddEffect(ProjectileEffectSO effect)
     {
-        int nextProjectileIndex = _projectileCount.MaxProjectileCount + 1;
+        if (_projectileCount.MaxProjectileCount >= 8)
+        {
+            return;
+        }
+        int nextProjectileIndex = _projectileCount.MaxProjectileCount;
         ReplaceEffect(effect, nextProjectileIndex);
         _projectileCount.AddNewProjectiles(1);
         UpdateSlots(_effects);

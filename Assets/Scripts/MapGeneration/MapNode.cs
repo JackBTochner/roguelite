@@ -52,7 +52,8 @@ namespace Map
             sr.sprite = template.sprite;
             if (node.nodeType == NodeType.Boss) transform.localScale *= 1.5f;
             initialScale = sr.transform.localScale.x;
-            buttonText.text = nodeScene.sceneReference.SubObjectName;
+            // buttonText.text = nodeScene.sceneReference.SubObjectName;
+            buttonText.text = template.nodeType.ToString();
             // visitedCircle.color = MapView.Instance.visitedColor;
             // visitedCircle.gameObject.SetActive(false);
             SetState(NodeStates.Locked);

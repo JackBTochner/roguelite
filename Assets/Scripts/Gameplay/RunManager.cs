@@ -15,6 +15,7 @@ public class RunManager : MonoBehaviour
     public MapManagerSO mapManager;
 
     public GameObject mapCanvas;
+    public GameObject rewardCanvas;
 
     public Exit playerExit;
 
@@ -77,6 +78,7 @@ public class RunManager : MonoBehaviour
     public void StartNewRun()
     {
         ClearCurrentRun();
+        mapCanvas.SetActive(true);
         mapManager.GenerateNewMap();
         Debug.Log("StartingNewRun");
         startRun.RaiseEvent();
@@ -118,8 +120,14 @@ public class RunManager : MonoBehaviour
     public void OnPlayerEnterExit()
     {
         //mapManager.GetComponentInParent<Canvas>(true).gameObject.SetActive(true);
-        mapCanvas.SetActive(true);
+        rewardCanvas.SetActive(true);
         Debug.Log("PlayerEnteredExit");
+    }
+
+    public void ActivateMap()
+    {
+        rewardCanvas.SetActive(false);
+        mapCanvas.SetActive(true);
     }
 }
 

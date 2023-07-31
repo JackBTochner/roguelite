@@ -238,7 +238,7 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 0.6
   pickNextWaypointDist: 1.2
-  endReachedDistance: 10
+  endReachedDistance: 3
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -328,7 +328,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3708834870753350096}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 416316595b8a2604aa86beec06b03e4b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -359,6 +359,7 @@ MonoBehaviour:
   enemyBullet: {fileID: 1782343558926592847, guid: ffe1fe6925fb2c64db0203cae393c3ea,
     type: 3}
   enemySpeed: 1000
+  facePlayer: {fileID: 0}
 --- !u!1 &3708834870814586815
 GameObject:
   m_ObjectHideFlags: 0
