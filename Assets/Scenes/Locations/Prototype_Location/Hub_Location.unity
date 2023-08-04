@@ -328,6 +328,12 @@ MonoBehaviour:
   storefront: {fileID: 4378514}
   fallTime: 1
   fallDistance: 100
+--- !u!1 &118281470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d115395f820affe47957b425e98d9f70,
+    type: 3}
+  m_PrefabInstance: {fileID: 724335953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &127202852
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,9 +364,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c24bfd80a4c305d4dbeb569c19c275fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bedroom: {fileID: 997755070}
+  playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
+    type: 2}
+  bedroom: {fileID: 118281470}
   fallTime: 1
-  fallDistance: -100
+  fallDistance: 100
 --- !u!65 &127202854
 BoxCollider:
   m_ObjectHideFlags: 0
