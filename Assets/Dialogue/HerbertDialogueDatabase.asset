@@ -2076,7 +2076,7 @@ MonoBehaviour:
       - originConversationID: 14
         originDialogueID: 0
         destinationConversationID: 14
-        destinationDialogueID: 1
+        destinationDialogueID: 9
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2531,9 +2531,114 @@ MonoBehaviour:
         y: 370
         width: 160
         height: 30
+    - id: 9
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Hello. I'm Herbet the bear, I run a stall at night where you can purchase
+          items to assist you on your hunt at night. All I ask for in return is fish.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 14
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 14
+        originDialogueID: 9
+        destinationConversationID: 14
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 450.4877
+        y: 71.21951
+        width: 160
+        height: 30
+    - id: 10
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Be sure to stop by and say hello in the full version of the game!
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 14
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 450.4877
+        y: 121.21951
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 59.506615, y: 49.120747}
-    canvasZoom: 1.09
+    canvasScrollPosition: {x: 0, y: 17.415854}
+    canvasZoom: 0.8200003
   - id: 15
     fields:
     - title: Title
@@ -2777,7 +2882,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Hm... interesting. Alright I'll have a look around.
+        value: Huh... I see. I guess I will have a look around.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -3046,7 +3151,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Thank you for your interest in my shop, unfortunatly I''m not open
+        value: 'Thank you for your interest in my shop, unfortunately I''m not open
           for operation yet but don''t hesitate to make yourself comfortable. '
         type: 0
         typeString: CustomFieldType_Text
@@ -4845,7 +4950,7 @@ MonoBehaviour:
   - id: 19
     fields:
     - title: Title
-      value: Banshee
+      value: Banshee/FirstMeeting
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
@@ -4993,7 +5098,7 @@ MonoBehaviour:
       - originConversationID: 19
         originDialogueID: 0
         destinationConversationID: 19
-        destinationDialogueID: 1
+        destinationDialogueID: 11
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -5451,6 +5556,57 @@ MonoBehaviour:
         serializedVersion: 2
         x: 63.368423
         y: 240
+        width: 160
+        height: 30
+    - id: 11
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Hello dear, my name is Banshee and I am a singer. You can find me
+          busking at night in the streets of Melbourne or relaxing in the shop. Do
+          come say hi to me in the full version of the game!
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 19
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 579.9472
+        y: 39.157883
         width: 160
         height: 30
     entryGroups: []
