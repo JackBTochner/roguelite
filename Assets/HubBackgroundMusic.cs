@@ -27,22 +27,25 @@ public class HubBackgroundMusic : MonoBehaviour
 
     void Update()
     {
-        Bounds bounds = new Bounds(storefront.transform.position, Vector3.zero);
-        foreach (Transform child in storefront.transform)
+        if (playerTransformAnchor != null && playerTransformAnchor.Value != null)
         {
-            bounds.Encapsulate(child.GetComponent<Renderer>().bounds);
-        }
-        float distance = Vector3.Distance(bounds.ClosestPoint(playerTransformAnchor.Value.position), playerTransformAnchor.Value.position);
+            Bounds bounds = new Bounds(storefront.transform.position, Vector3.zero);
+            foreach (Transform child in storefront.transform)
+            {
+                bounds.Encapsulate(child.GetComponent<Renderer>().bounds);
+            }
+            float distance = Vector3.Distance(bounds.ClosestPoint(playerTransformAnchor.Value.position), playerTransformAnchor.Value.position);
 
-        if (distance <= 3 && playerState == PlayerState.Far)
-        {
-            playerState = PlayerState.Near;
-            ChangeVolume(0.8f, 8.0f);
-        }
-        else if (distance > 3 && playerState == PlayerState.Near)
-        {
-            playerState = PlayerState.Far;
-            ChangeVolume(0.2f, 3.0f);
+            if (distance <= 3 && playerState == PlayerState.Far)
+            {
+                playerState = PlayerState.Near;
+                ChangeVolume(0.8f, 2.0f);
+            }
+            else if (distance > 3 && playerState == PlayerState.Near)
+            {
+                playerState = PlayerState.Far;
+                ChangeVolume(0.2f, 2.0f);
+            }
         }
     }
 
