@@ -7,6 +7,7 @@ public class AttackTemplate : MonoBehaviour
     //public ObjectPooler objectPooler;
 
     public Animator playerAnim;
+    public Animator attackAnim;
 
     void Update()
     {
@@ -19,5 +20,8 @@ public class AttackTemplate : MonoBehaviour
     void Attack()
     {
         playerAnim.SetTrigger("Attack");
+        attackAnim.SetTrigger("Attack");
     }
+
+    
 }
