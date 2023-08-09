@@ -44,7 +44,7 @@ public class HubBackgroundMusic : MonoBehaviour
             else if (distance > 3 && playerState == PlayerState.Near)
             {
                 playerState = PlayerState.Far;
-                ChangeVolume(0.2f, 2.0f);
+                ChangeVolume(0.05f, 2.0f);
             }
         }
     }
