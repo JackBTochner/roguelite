@@ -305,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &116894001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3578,7 +3578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1478082297
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3704,7 +3704,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
-  storefront: {fileID: 4378514}
 --- !u!1 &1513898682
 GameObject:
   m_ObjectHideFlags: 0

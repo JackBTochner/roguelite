@@ -6,50 +6,77 @@ using DG.Tweening; //Animation engine for Unity
 
 public class StoreRoomZone : MonoBehaviour
 {
+    // When the player spawn it will assign it to the player, it can get the current player, transform and rotation.
     public TransformAnchor playerTransformAnchor = default;
+    // The object that we want to fall, so this is the storefront zone, we want move the bedroom here.
     public GameObject bedroom;
+    // Rise time.
     public float riseTime;
+    // Rise distance.
     public float riseDistance;
+    // Set false, so this is not going up now.
     private bool isGoingUp = false;
-
+    // If hits the coliider.
     private void OnTriggerEnter(Collider other)
     {
+        // the objects hits the player, or we can think: the player move to this object to make this object touch the player.
         if (other.CompareTag("Player"))
         {
+            // Get the bedroom position.
             Vector3 bedroomposition = bedroom.transform.position;
+
+            // Debug Testing
             //if (bedroomposition.y == 0 && playerTransformAnchor.Value.position.x > 1.5f)
             //{
             //    isGoingUp = true;
             //    Transform storetransform = bedroom.transform;
             //    storetransform.DOMove(storetransform.position + new Vector3(0, riseDistance, 0), riseTime).SetEase(Ease.OutQuint);
             //}
+            // When the bedroom in the sky, make it come back.
             if (bedroomposition.y == 100)
             {
+                // It will move down, set to false: this is going down.
                 isGoingUp = false;
+                // Assign the transform component of the game object to a variable, this allows us to access and manipulate the - 
+                // - position, rotation, and scale.
                 Transform storetransform = bedroom.transform;
+                // Use.DOMove() to choose a position to move to, and choose the speed time to move to that position. so current position - this vector3 in a time, with using the animation OutQuint.
                 storetransform.DOMove(storetransform.position - new Vector3(0, riseDistance, 0), riseTime).SetEase(Ease.OutQuint);
             }
+
+
+            // This two else if is for: if the bedroom is moving but not finish, we have to add another animation.
+
+            // When the object is during going up, and we touch the collider again, this means we want it come back to the ground.
             else if (bedroomposition.y > 0 && bedroomposition.y < 100 && isGoingUp == true)
             {
+                // Set to false, means coming down.
                 isGoingUp = false;
                 DOTween.Kill(bedroom.transform);
+                // This is different than the first one, we using a hardcode location to set it back to the ground "0".
                 bedroom.transform.DOMove(new Vector3(bedroom.transform.position.x, 0, bedroom.transform.position.z), riseTime).SetEase(Ease.OutQuint);
             }
+            // When the object is during going down, and we touch the collider again, this means we want it go back to the top.
             else if (bedroomposition.y > 0 && bedroomposition.y < 100 && isGoingUp == false)
             {
+                // Set to true, means rising up.
                 isGoingUp = true;
                 DOTween.Kill(bedroom.transform);
+                //we using a hardcode location to set it back to the ground "100".
                 bedroom.transform.DOMove(new Vector3(bedroom.transform.position.x, 100, bedroom.transform.position.z), riseTime).SetEase(Ease.OutQuint);
             }
         }
     }
+    // Once the player leave this object collider.
     private void OnTriggerExit(Collider other)
     {
         Vector3 bedroomposition = bedroom.transform.position;
+        // To makesure we can get the player values.
         if (playerTransformAnchor != null && playerTransformAnchor.Value != null)
         {
             if (other.CompareTag("Player"))
             {
+                // The player will levae this collider < 3.5f, so we checking this player leave the collider and it is going towards into the storefront.
                 if (playerTransformAnchor.Value.position.x < 3.5f)
                 {
                     if (bedroomposition.y == 0)
@@ -74,6 +101,11 @@ public class StoreRoomZone : MonoBehaviour
             }
         }
     }
+
+
+    // This code below is for testing in the hub with other 2 objects(2 rooms as well but different). Select and Ctrl+k then Ctrl+u to uncomment it.
+
+    
     //// When the player spawn it will assign it to the player, it can get the current player, transform and rotation.
     //public TransformAnchor playerTransformAnchor = default;
     //// The object that we want to fall, so this is the storefront zone, we want move the bedroom here.
