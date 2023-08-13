@@ -8,6 +8,7 @@ public class AttackTemplate : MonoBehaviour
 
     public Animator playerAnim;
     public Animator attackAnim;
+    public PlaySingleAudioClip audioPlayer;
 
     void Update()
     {
@@ -21,6 +22,8 @@ public class AttackTemplate : MonoBehaviour
     {
         playerAnim.SetTrigger("Attack");
         attackAnim.SetTrigger("Attack");
+        audioPlayer.PlayAudioClip();
+    
     }
 
     
