@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028477, g: 0.22571525, b: 0.30692324, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802848, g: 0.22571525, b: 0.30692303, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6975,7 +6975,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1966476361, guid: 8b6ae659732a64b44b50bc377b52cc09, type: 3}
       propertyPath: m_Lens.OrthographicSize
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3963344384311474566, guid: 8b6ae659732a64b44b50bc377b52cc09,
         type: 3}
@@ -7039,8 +7039,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3963344385413780883, guid: 8b6ae659732a64b44b50bc377b52cc09,
         type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344385413780883, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
       propertyPath: orthographic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3963344385413780883, guid: 8b6ae659732a64b44b50bc377b52cc09,
         type: 3}
@@ -7050,7 +7055,27 @@ PrefabInstance:
     - target: {fileID: 3963344385413780883, guid: 8b6ae659732a64b44b50bc377b52cc09,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344385413780883, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344385413780883, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.16470589
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344385413780883, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.3372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344385413780883, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.5294118
       objectReference: {fileID: 0}
     - target: {fileID: 3963344385413780892, guid: 8b6ae659732a64b44b50bc377b52cc09,
         type: 3}
