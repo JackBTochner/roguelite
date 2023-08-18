@@ -77,7 +77,7 @@ public class StoreRoomZone : MonoBehaviour
             if (other.CompareTag("Player"))
             {
                 // The player will levae this collider < 3.5f, so we checking this player leave the collider and it is going towards into the storefront.
-                if (playerTransformAnchor.Value.position.x < 3.5f)
+                if (playerTransformAnchor.Value.position.x < 3.5f || (playerTransformAnchor.Value.position.x >=3.5f && playerTransformAnchor.Value.position.z < 4.0f))
                 {
                     if (bedroomposition.y == 0)
                     {

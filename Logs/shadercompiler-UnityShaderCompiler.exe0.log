@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Base path: 'C:/Program Files/2022.2.4f1/Editor/Data', plugins path 'C:/Program Files/2022.2.4f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
@@ -292,3 +293,8 @@ Cmd: preprocess
 
 Cmd: initializeCompiler
 
+=======
+Base path: 'E:/Unity/2022.2.4f1/Editor/Data', plugins path 'E:/Unity/2022.2.4f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+>>>>>>> 34c42a0e735ad9d8abbb769a93c562d746f2ec26
