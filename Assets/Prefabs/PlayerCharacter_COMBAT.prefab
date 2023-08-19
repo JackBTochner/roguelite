@@ -415,7 +415,7 @@ MonoBehaviour:
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
   aimTransform: {fileID: 224761668480837074}
   gfxTransform: {fileID: 4093581273836692510}
-  gfxRotateSpeed: 240
+  gfxRotateSpeed: 1080
   gfxAnimator: {fileID: 6648698737682633967}
   currentSpeed: 0
   allowMovement: 1
