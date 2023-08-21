@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Abilityupgradesound : MonoBehaviour
 {
+    // Get the Audio
     public AudioSource audioSource;
-    public float playDuration = 3.0f; 
+    // The Audio time we want to play, haven't cut the audio yet, we using the first sound.
+    public float musicduration = 3.0f; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,25 +24,21 @@ public class Abilityupgradesound : MonoBehaviour
 
     public void PlayMusic()
     {
+        // Check the Audio is implemented.
         if (audioSource == null)
         {
             Debug.LogError("AudioSource is not assigned!");
             return;
         }
 
-        if (audioSource.clip == null)
-        {
-            Debug.LogError("AudioClip is not assigned!");
-            return;
-        }
-        Debug.Log("Trying to play music");
         audioSource.Play();
-        Debug.Log("Music should be playing now");
-        Invoke("StopMusic", playDuration);
+        // Run "StopMusic" after musicduration
+        Invoke("StopMusic", musicduration);
     }
 
     private void StopMusic()
     {
+        // Stop the music
         audioSource.Stop();
     }
 }
