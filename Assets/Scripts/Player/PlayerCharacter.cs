@@ -22,7 +22,7 @@ namespace Player
         public AttackObject playerDigAttack;
         public float digFreezeTime;
         private bool isDigging;
-        public Animator playerAnim;
+        
 
         [Header("Broadcasting on")]
         [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
@@ -86,24 +86,13 @@ namespace Player
                     return;
                 }
                 _currentStaminaSO.InflictDamage(digStaminaCost);
-                Debug.Log("Animation starting!");
-                StartCoroutine(PlayDigEntry());
+                playerGFX.SetActive(false);
+                playerDigGFX.SetActive(true);
+                Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+                isDigging = true;
             }
         }
 
-        private IEnumerator PlayDigEntry()
-        {
-            
-            Debug.Log("Animation asfdsdaf!");
-            playerAnim.SetTrigger("Dig_Entry");
-            yield return new WaitForSeconds(0.3f);
-            Debug.Log("Animation completed!");
-            playerGFX.SetActive(false);
-            playerDigGFX.SetActive(true);
-            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
-            isDigging = true;
-        }
-        
         public bool HasStaminaForDig()
         {
             return _currentStaminaSO.CurrentStamina - digStaminaCost > 0;
@@ -121,10 +110,7 @@ namespace Player
             isDigging = false;
             _camShakeEvent.RaiseEvent();
             playerGFX.SetActive(true);
-            playerAnim.SetTrigger("Dig_Exit");
-            yield return new WaitForSeconds(0.1f);
             playerDigGFX.SetActive(false);
-            yield return new WaitForSeconds(1f);
             Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
             playerDigAttack.gameObject.SetActive(true);
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
