@@ -90,6 +90,7 @@ namespace Player
                 playerDigGFX.SetActive(true);
                 Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
                 isDigging = true;
+                // comment
             }
         }
 
