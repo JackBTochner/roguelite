@@ -978,7 +978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageInfo:
     DamageType: 0
-    Damage: 2
+    Damage: 30
     CriticalData:
       Chance: 50
       Multiplier: 1.5

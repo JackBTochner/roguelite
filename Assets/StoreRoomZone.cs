@@ -33,37 +33,41 @@ public class StoreRoomZone : MonoBehaviour
             //    storetransform.DOMove(storetransform.position + new Vector3(0, riseDistance, 0), riseTime).SetEase(Ease.OutQuint);
             //}
             // When the bedroom in the sky, make it come back.
-            if (bedroomposition.y == 100)
+            if (playerTransformAnchor != null && playerTransformAnchor.Value != null)
             {
-                // It will move down, set to false: this is going down.
-                isGoingUp = false;
-                // Assign the transform component of the game object to a variable, this allows us to access and manipulate the - 
-                // - position, rotation, and scale.
-                Transform storetransform = bedroom.transform;
-                // Use.DOMove() to choose a position to move to, and choose the speed time to move to that position. so current position - this vector3 in a time, with using the animation OutQuint.
-                storetransform.DOMove(storetransform.position - new Vector3(0, riseDistance, 0), riseTime).SetEase(Ease.OutQuint);
-            }
+                if (bedroomposition.y == 20)
+                {
+                    // It will move down, set to false: this is going down.
+                    isGoingUp = false;
+                    // Assign the transform component of the game object to a variable, this allows us to access and manipulate the - 
+                    // - position, rotation, and scale.
+                    Transform storetransform = bedroom.transform;
+                    // Use.DOMove() to choose a position to move to, and choose the speed time to move to that position. so current position - this vector3 in a time, with using the animation OutQuint.
+                    storetransform.DOMove(storetransform.position - new Vector3(0, riseDistance, 0), riseTime).SetEase(Ease.OutQuint);
+                }
 
 
-            // This two else if is for: if the bedroom is moving but not finish, we have to add another animation.
+                // This two else if is for: if the bedroom is moving but not finish, we have to add another animation.
 
-            // When the object is during going up, and we touch the collider again, this means we want it come back to the ground.
-            else if (bedroomposition.y > 0 && bedroomposition.y < 100 && isGoingUp == true)
-            {
-                // Set to false, means coming down.
-                isGoingUp = false;
-                DOTween.Kill(bedroom.transform);
-                // This is different than the first one, we using a hardcode location to set it back to the ground "0".
-                bedroom.transform.DOMove(new Vector3(bedroom.transform.position.x, 0, bedroom.transform.position.z), riseTime).SetEase(Ease.OutQuint);
-            }
-            // When the object is during going down, and we touch the collider again, this means we want it go back to the top.
-            else if (bedroomposition.y > 0 && bedroomposition.y < 100 && isGoingUp == false)
-            {
-                // Set to true, means rising up.
-                isGoingUp = true;
-                DOTween.Kill(bedroom.transform);
-                //we using a hardcode location to set it back to the ground "100".
-                bedroom.transform.DOMove(new Vector3(bedroom.transform.position.x, 100, bedroom.transform.position.z), riseTime).SetEase(Ease.OutQuint);
+                // When the object is during going up, and we touch the collider again, this means we want it come back to the ground.
+                // added playerTransformAnchor.Value.position.x < 3.5f because we only have one colider and we focusing on the one "end" that close to the storefront.
+                else if (bedroomposition.y > 0 && bedroomposition.y < 20 && isGoingUp == true && playerTransformAnchor.Value.position.x < 3.5f)
+                {
+                    // Set to false, means coming down.
+                    isGoingUp = false;
+                    DOTween.Kill(bedroom.transform);
+                    // This is different than the first one, we using a hardcode location to set it back to the ground "0".
+                    bedroom.transform.DOMove(new Vector3(bedroom.transform.position.x, 0, bedroom.transform.position.z), riseTime).SetEase(Ease.OutQuint);
+                }
+                // When the object is during going down, and we touch the collider again, this means we want it go back to the top.
+                else if (bedroomposition.y > 0 && bedroomposition.y < 20 && isGoingUp == false && playerTransformAnchor.Value.position.x < 3.5f)
+                {
+                    // Set to true, means rising up.
+                    isGoingUp = true;
+                    DOTween.Kill(bedroom.transform);
+                    //we using a hardcode location to set it back to the ground "20".
+                    bedroom.transform.DOMove(new Vector3(bedroom.transform.position.x, 20, bedroom.transform.position.z), riseTime).SetEase(Ease.OutQuint);
+                }
             }
         }
     }
@@ -95,7 +99,7 @@ public class StoreRoomZone : MonoBehaviour
                     {
                         isGoingUp = true;
                         DOTween.Kill(bedroom.transform);
-                        bedroom.transform.DOMove(new Vector3(bedroom.transform.position.x, 100, bedroom.transform.position.z), riseTime).SetEase(Ease.OutQuint);
+                        bedroom.transform.DOMove(new Vector3(bedroom.transform.position.x, 20, bedroom.transform.position.z), riseTime).SetEase(Ease.OutQuint);
                     }
                 }
             }

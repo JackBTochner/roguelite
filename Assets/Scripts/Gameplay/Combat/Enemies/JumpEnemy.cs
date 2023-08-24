@@ -14,6 +14,7 @@ public class JumpEnemy : MonoBehaviour
     public Enemy enemyBase = default;
     private bool isAlive = true;
     public bool hasPlayer = false;
+    public int damagedelt = 20;
 
     void OnEnable()
     {
@@ -110,7 +111,7 @@ public class JumpEnemy : MonoBehaviour
 
         // Take damage
         PlayerCharacter playerCharacter = playerTransformAnchor.Value.GetComponent<PlayerCharacter>();
-        playerCharacter.TakeDamage(20);
+        playerCharacter.TakeDamage(damagedelt);
 
         // Time.time here is the time that the game playes.
         float startTime = Time.time;
