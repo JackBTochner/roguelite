@@ -22,7 +22,7 @@ namespace Player
         public AttackObject playerDigAttack;
         public float digFreezeTime;
         private bool isDigging;
-        
+        public Animator playerAnim;
 
         [Header("Broadcasting on")]
         [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
@@ -86,12 +86,18 @@ namespace Player
                     return;
                 }
                 _currentStaminaSO.InflictDamage(digStaminaCost);
-                playerGFX.SetActive(false);
-                playerDigGFX.SetActive(true);
-                Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
-                isDigging = true;
-                // comment
+                StartCoroutine(DigEntry());
             }
+        }
+        
+        private IEnumerator DigEntry()
+        {
+            playerAnim.SetTrigger("Dig_Entry");
+            yield return new WaitForSeconds(0.4f);
+            playerGFX.SetActive(false);
+            playerDigGFX.SetActive(true);
+            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+            isDigging = true;
         }
 
         public bool HasStaminaForDig()
@@ -111,6 +117,7 @@ namespace Player
             isDigging = false;
             _camShakeEvent.RaiseEvent();
             playerGFX.SetActive(true);
+            playerAnim.SetTrigger("Dig_Exit");
             playerDigGFX.SetActive(false);
             Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
             playerDigAttack.gameObject.SetActive(true);

@@ -448,6 +448,8 @@ MonoBehaviour:
   playerDigGFX: {fileID: 673654281541197107}
   playerDigAttack: {fileID: 8061398196671414934}
   digFreezeTime: 0.2
+  playerAnim: {fileID: 7066513973261032113}
+  playerMesh: {fileID: 7656906275256919752}
   _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
   _updateStaminaUI: {fileID: 11400000, guid: 6cadc952f1e60c6449f24be6b928a26d, type: 2}
   _deathEvent: {fileID: 0}
@@ -1033,8 +1035,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1723506524619922250}
   - {fileID: 3814937906648383691}
+  - {fileID: 1723506524619922250}
   m_Father: {fileID: 1723506523967855883}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1215,22 +1217,27 @@ PrefabInstance:
     - target: {fileID: -8178847866766450651, guid: e23036ee17a6657429b86551a2faa8eb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2042564
+      value: 0.20425642
       objectReference: {fileID: 0}
     - target: {fileID: -8178847866766450651, guid: e23036ee17a6657429b86551a2faa8eb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.03955336
+      value: -0.039553363
       objectReference: {fileID: 0}
     - target: {fileID: -8041087894855359730, guid: e23036ee17a6657429b86551a2faa8eb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.055789575
+      value: -0.055789582
       objectReference: {fileID: 0}
     - target: {fileID: -8041087894855359730, guid: e23036ee17a6657429b86551a2faa8eb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.03232658
+      value: -0.032326587
+      objectReference: {fileID: 0}
+    - target: {fileID: -1690727353383418323, guid: e23036ee17a6657429b86551a2faa8eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e23036ee17a6657429b86551a2faa8eb,
         type: 3}
@@ -1256,6 +1263,12 @@ Transform:
 --- !u!95 &7066513973261032113 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: e23036ee17a6657429b86551a2faa8eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3709796956471453472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7656906275256919752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2794181077383806488, guid: e23036ee17a6657429b86551a2faa8eb,
     type: 3}
   m_PrefabInstance: {fileID: 3709796956471453472}
   m_PrefabAsset: {fileID: 0}
