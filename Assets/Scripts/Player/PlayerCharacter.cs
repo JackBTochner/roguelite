@@ -93,7 +93,7 @@ namespace Player
         private IEnumerator DigEntry()
         {
             playerAnim.SetTrigger("Dig_Entry");
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(0.35f);
             playerGFX.SetActive(false);
             playerDigGFX.SetActive(true);
             Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
