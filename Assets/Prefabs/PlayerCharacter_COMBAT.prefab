@@ -449,7 +449,6 @@ MonoBehaviour:
   playerDigAttack: {fileID: 8061398196671414934}
   digFreezeTime: 0.2
   playerAnim: {fileID: 7066513973261032113}
-  playerMesh: {fileID: 7656906275256919752}
   _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
   _updateStaminaUI: {fileID: 11400000, guid: 6cadc952f1e60c6449f24be6b928a26d, type: 2}
   _deathEvent: {fileID: 0}
@@ -980,9 +979,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageInfo:
     DamageType: 0
-    Damage: 30
+    Damage: 100
     CriticalData:
-      Chance: 50
+      Chance: 10
       Multiplier: 1.5
       Ignore: 0
     Knockback: 1000
@@ -1263,12 +1262,6 @@ Transform:
 --- !u!95 &7066513973261032113 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: e23036ee17a6657429b86551a2faa8eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3709796956471453472}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7656906275256919752 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -2794181077383806488, guid: e23036ee17a6657429b86551a2faa8eb,
     type: 3}
   m_PrefabInstance: {fileID: 3709796956471453472}
   m_PrefabAsset: {fileID: 0}
