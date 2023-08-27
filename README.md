@@ -285,26 +285,26 @@ City Map Initial Concepts:
 ## Character Sprites
 Below are the current characters that the player can interact with in the game, and Kit herself.
 <p>
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/1752f3d8-1e74-40d6-bf9f-89eeb6bf14ee_rw_1200.png?h=c205fc7306f5bee183a9a07cb17fe825" width="350" />
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8e8a0f59-2e70-44d6-b015-90d7cc6170cf_rw_1200.png?h=90e1f8d2d2ac3fe7edaa4491490f3a5a" width="300" /> 
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/540dfafa-7343-4349-9908-9e2fc41686f2_rw_1200.png?h=b0f9d6b196a39792ccbb2d3a9010111e" width="350" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/1752f3d8-1e74-40d6-bf9f-89eeb6bf14ee_rw_1200.png?h=c205fc7306f5bee183a9a07cb17fe825" width="250" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8e8a0f59-2e70-44d6-b015-90d7cc6170cf_rw_1200.png?h=90e1f8d2d2ac3fe7edaa4491490f3a5a" width="200" /> 
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/540dfafa-7343-4349-9908-9e2fc41686f2_rw_1200.png?h=b0f9d6b196a39792ccbb2d3a9010111e" width="250" />
 </p>
 
 <p float="left">
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/39b5c971-0756-4c18-85ff-6379d6a4de6f_rw_1200.png?h=b4d23837d55cc56895b0a11c2b27cd27" width="350" />
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8fbd08e2-f79d-4e49-894f-9227a31e266a_rw_1200.png?h=9db22bc2cd83d9843927bdbb4d2b34ad" width="350" /> 
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/39b5c971-0756-4c18-85ff-6379d6a4de6f_rw_1200.png?h=b4d23837d55cc56895b0a11c2b27cd27" width="250" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8fbd08e2-f79d-4e49-894f-9227a31e266a_rw_1200.png?h=9db22bc2cd83d9843927bdbb4d2b34ad" width="250" /> 
 </p>
 
 ## 3D Animation
 Below are the animations for Kit in her fox form. They currently include an Idle, a Run animation, a dig exit and entry, and a melee.
 <p>
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/9abb292c-a3e9-49d1-b2b0-e0ffec701eec_rw_600.gif?h=8d1b36f88539d82c7b585100727117fd" width="500" />
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/e41c038c-3a82-4669-a205-9f9999b04089_rw_600.gif?h=2e8750c0b727659a51646d4f4f127b19" width="500" /> 
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/9abb292c-a3e9-49d1-b2b0-e0ffec701eec_rw_600.gif?h=8d1b36f88539d82c7b585100727117fd" width="300" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/e41c038c-3a82-4669-a205-9f9999b04089_rw_600.gif?h=2e8750c0b727659a51646d4f4f127b19" width="300" /> 
 </p>
 
 <p>
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8a4ace1f-8168-443f-a596-f44e530d96b9_rw_600.gif?h=60872c2f4f68743e1c0516211a7b48c7" width="500" />
-  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/b069ec26-c8bc-4dcc-8ce5-421a47d718fb_rw_600.gif?h=4a8e1951f691cd73c3bc6bb45717efa1" width="500" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8a4ace1f-8168-443f-a596-f44e530d96b9_rw_600.gif?h=60872c2f4f68743e1c0516211a7b48c7" width="300" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/b069ec26-c8bc-4dcc-8ce5-421a47d718fb_rw_600.gif?h=4a8e1951f691cd73c3bc6bb45717efa1" width="300" />
 </p>
 
 ## Concept Art
