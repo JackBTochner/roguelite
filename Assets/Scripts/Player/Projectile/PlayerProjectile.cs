@@ -8,7 +8,7 @@ public class PlayerProjectile : MonoBehaviour
     ProjectileEffectSO projectileEffect;
 
     [Header("Damage")]
-    public DamageInfo damageInfo = new DamageInfo(DamageType.Default, 2, new CriticalData(50, 1.5f, false), 1000, Vector3.zero);
+    private DamageInfo damageInfo = new DamageInfo(DamageType.Default, 40, new CriticalData(50, 1.5f, false), 1000, Vector3.zero);
 
     public GameObject hitMarker;
     public GameObject critMarker;

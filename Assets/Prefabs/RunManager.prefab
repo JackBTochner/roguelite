@@ -76,6 +76,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 67f4f46180a7db54ab5145216acc016e, type: 2}
   - {fileID: 11400000, guid: 1d49cf27b9ea99546b7087f41fde209c, type: 2}
   - {fileID: 11400000, guid: b7cf93f2cd695424b91932a4fb20f59a, type: 2}
+  specificSceneToLoad: {fileID: 11400000, guid: 764fdb693844e5b4d861ee76180cea5d,
+    type: 2}
   playerExit: {fileID: 0}
   runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
   loadLocation: {fileID: 11400000, guid: 9f9b3cba6cfbbbe448d4be335e5ce5b2, type: 2}
