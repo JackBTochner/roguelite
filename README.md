@@ -10,7 +10,7 @@ To edit this document please only edit the README.md file, the github-pages will
 ## Overview
 ![provisional_logo](resources/provisional_logo.png)
 
-Play as a shape-shifting Kitsune who runs a Melbourne based pencil store by day, and hunts for various trinkets and supplies during the night.
+Play as a shape-shifting Kitsune who runs a Melbourne based cyber-repair store by day, and hunts for various materials and supplies during the night.
 
 Build relationships with new customers that arrive at your store each day. Listen to their stories and serve them their favourite items to learn new abilities and unlock new recipes.
 
@@ -18,7 +18,7 @@ Build relationships with new customers that arrive at your store each day. Liste
 ## Team
 
 - Writer/Producer: Audrey He 103597518
-- Programmer: Peamawat Muenjohn 102326287
+- Lead programmer: Peamawat Muenjohn 102326287
 - Programmer: Ricky Huo 101453511
 - Artist 2D/3D: Brittany Holmes 101116966
 - Designer: Ethan Babatsikos 103619218
@@ -129,21 +129,9 @@ When attacking an enemy for the first time upon entering a room, you will attach
 As you progress through the game and create bonds with the NPCs, you will gain passive perks and abilities. Each NPC will be able to give you a passive perk that you will keep throughout the game and will stack with other passive perks you may receive from other NPCs. When you complete a relationship with an NPC, you will receive an ultimate ability. You may unlock multiple ultimates, but you may only equip one at a time. These abilities and perks will be active in every run, and will stay with you when you die. 
 
 
-#### Pen-Building system
+#### Cyber repair system
 
-Player must walk to their workbench and interact with it. It will open the pen-build UI. It will have a
-work bench and tools. Tools include drill, hammer, saw, clips, and water. The drill can be used to
-shape the pen body for plastic and aluminium. For wooden pens, a saw must be used. The pen ink
-can be made from pigments simply by applying water. For the tip of the pen, clips must be used for
-the materials. To assembly a full pen with all the right materials, a hammer must be used.
-For the actual game play, players can drag the materials needed onto the work bench. They can then
-leave the material on the work bench and drag the tool needs over the material which will
-automatically apply the “building” animation resulting in the finished product. E.g, if the player wanted to make a blue plastic felt tip pen, they would need to drag the blue
-pigment onto the work bench along with water on the work bench to make the ink. They will then
-need to drag the plastic onto the work bench as well and drag the drill to make the body. Then they
-will do the same with feathers and clippers. After all the materials are made, if they left all the made
-materials on the work bench, then all they need to do to overlap the materials and drag the hammer
-to make the pen. Double click on items to obtain them. 
+This aspect is now scrapped
 
 ### Currency system
 
@@ -202,7 +190,7 @@ https://gamecapstone2023.atlassian.net/jira/software/projects/CP/boards/1
 
 ## Narrative
 
-Kit was an unnamed Kitsune who was given their name by Winnie. She was physically cursed into a room due to her past action that brought shame upon the Deity. She decided to revamp the room and refurnish it into a shop, pen shop to be exact. Believing pens have different uses and variations which to unique and special to everyone. Felt tips, ball-ink, gel-ink, Kit knew it all. She was happy running her shop, she found that as a Kitsune she was able to escape her physical body and roam as a soul at night. She discovers from Schrodinger that you can unbind yourself if you prove yourself worthy top the Deity. Kit initially has no interest in this as she is content with staying in her shop.
+Kit was an unnamed Kitsune who was given their name by Winnie. She was physically cursed into a room due to her past action that brought shame upon the Deity. She decided to revamp the room and refurnish it into a shop, cyber repair shop to be exact. Believing everyone has different reasons for the way their body works, she wants to be a trusted technician for all those around. She was happy running her shop, she found that as a Kitsune she was able to escape her physical body and roam as a soul at night. She discovers from Schrodinger that you can unbind yourself if you prove yourself worthy top the Deity. Kit initially has no interest in this as she is content with staying in her shop.
 
 Conflict: Wisps originally have always been around but as Kit progresses through the game, more and more powerful wisps are starting to show up almost overpowering other hostile creatures. She discovers that there is a wisp summoner who self-proclaims himself as the King of Wisps who takes control of the streets. Kit is interested in finding out more about them.
 
