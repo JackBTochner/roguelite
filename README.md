@@ -128,10 +128,14 @@ When attacking an enemy for the first time upon entering a room, you will attach
 
 As you progress through the game and create bonds with the NPCs, you will gain passive perks and abilities. Each NPC will be able to give you a passive perk that you will keep throughout the game and will stack with other passive perks you may receive from other NPCs. When you complete a relationship with an NPC, you will receive an ultimate ability. You may unlock multiple ultimates, but you may only equip one at a time. These abilities and perks will be active in every run, and will stay with you when you die. 
 
+*This aspect is now scrapped*
 
-#### Cyber repair system
 
-This aspect is now scrapped
+#### Cyber repair system (Once Pen building system)
+
+Player must walk to their workbench and interact with it. It will open the pen-build UI. It will have a work bench and tools. Tools include drill, hammer, saw, clips, and water. The drill can be used to shape the pen body for plastic and aluminium. For wooden pens, a saw must be used. The pen ink can be made from pigments simply by applying water. For the tip of the pen, clips must be used for the materials. To assembly a full pen with all the right materials, a hammer must be used. For the actual game play, players can drag the materials needed onto the work bench. They can then leave the material on the work bench and drag the tool needs over the material which will automatically apply the “building” animation resulting in the finished product. E.g, if the player wanted to make a blue plastic felt tip pen, they would need to drag the blue pigment onto the work bench along with water on the work bench to make the ink. They will then need to drag the plastic onto the work bench as well and drag the drill to make the body. Then they will do the same with feathers and clippers. After all the materials are made, if they left all the made materials on the work bench, then all they need to do to overlap the materials and drag the hammer to make the pen. Double click on items to obtain them.
+
+*This aspect is now scrapped*
 
 ### Currency system
 
@@ -142,6 +146,9 @@ upgrade the hub (shop). The shop can be upgraded with aesthetic changes (e.g dif
 wallpaper and flooring). The shop can also be upgraded so that the pen making game play can be
 made easier.
 
+*This Aspect is now scrapped*
+
+
 Obtainability:
 
 • Making correct items for customers (some customers will pay anyways depending on the
@@ -149,7 +156,12 @@ customer and your relationship with them)
 
 • Herbert the bear
 
+*This Aspect is now scrapped*
+
 • Completing levels
+
+*This Aspect is now scrapped*
+
 
 #### Fish
 
@@ -162,12 +174,15 @@ Obtainability:
 
 • Completing a level around the Yarra will have a 40% chance of dropping fish at the end of it.
 
+*This Aspect is now scrapped*
+
 #### Enemy drops
 
 Colour Pigments: Blue, black, green, yellow, purple, red, pink.
 
 Materials: Plastic, Wood, Aluminium, Feathers, lead.
 
+*This aspect is now scrapped*
 
 
 ## Brand Identity
