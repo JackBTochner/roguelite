@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a35475d120e5946926094af0e57422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 600
   duration: 0
   intensity: 0
   poisonDamage: 0
@@ -449,6 +449,7 @@ MonoBehaviour:
   jumpForce: 20
   enemyBase: {fileID: 5074558062176136339}
   hasPlayer: 0
+  damagedelt: 30
 --- !u!114 &2051284863485244598
 MonoBehaviour:
   m_ObjectHideFlags: 0

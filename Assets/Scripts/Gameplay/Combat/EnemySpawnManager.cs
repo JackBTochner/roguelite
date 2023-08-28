@@ -12,8 +12,9 @@ public class EnemySpawnManager : MonoBehaviour
     public float currentWave = 0;
 
     public Exit playerExit;
-
-
+    //
+        public GameObject abilityUpgradeMenu;
+    //
     [Header("Listening On")]
     [SerializeField]
     private VoidEventChannelSO _onSceneReady = default; //Raised by SceneLoader when the scene is set to active
@@ -50,6 +51,9 @@ public class EnemySpawnManager : MonoBehaviour
 
     void SpawnWaves()
     {
+        //
+            //abilityUpgradeMenu.SetActive(true);
+        //
         StartCoroutine(SpawnWavesRoutine());
     }
 
@@ -62,6 +66,16 @@ public class EnemySpawnManager : MonoBehaviour
             StartCoroutine(waves[i].SpawnWave());
             while (!waves[i].IsWaveComplete()) yield return null;
             Debug.Log("Wave: " + (i + 1) + "Completed!");
+            
+            if (i < waves.Count -1 )
+            {   
+                abilityUpgradeMenu.SetActive(true);
+                while (abilityUpgradeMenu.activeSelf)
+                {
+                    Debug.Log(waves.Count);
+                    yield return null;
+                }
+            }
         }
         UnlockPlayerExit();
     }
@@ -142,7 +156,6 @@ public class EnemySpawnWave
             spawnLocation[i] = PickRandomSpawnPoint();
             GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
         }
-
         yield return new WaitForSeconds(individualSpawnDelay);
 
         for (int e = 0; e < enemiesToSpawn.Length; e++)
