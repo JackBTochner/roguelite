@@ -14,6 +14,7 @@ namespace Player
         [Header("Dig")]
         [Tooltip("Stamina config, default value is used when no PlayerManager is present.")]
         [SerializeField] private StaminaSO _currentStaminaSO = default;
+        
         public bool allowStaminaRegen = true;
         public float digStaminaCost = 25;
         public float digStaminaDepleteRate = 5;
@@ -23,6 +24,7 @@ namespace Player
         public float digFreezeTime;
         private bool isDigging;
         public Animator playerAnim;
+        public Animator staminaBarAnimator;
 
         [Header("Broadcasting on")]
         [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
@@ -107,7 +109,8 @@ namespace Player
 
         public void NotifyCantDig()
         {
-            Debug.Log("Can't dig! Stamina Too Low");
+            staminaBarAnimator.SetTrigger("CantDig");
+            // Debug.Log("Can't dig! Stamina Too Low");
             //TODO: Raise stamina bar UI flashing event
         }
 

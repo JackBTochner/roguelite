@@ -23,7 +23,6 @@ public class HealthSO : ScriptableObject
 
     public void PrintCurrentHealth()
     {
-        Debug.LogError("Current Health: " + _currentHealth);
     }
 
     public int GetCurrentestHealth()
@@ -33,14 +32,19 @@ public class HealthSO : ScriptableObject
 
     public void SetCurrentHealth(int newValue)
 	{
-        Debug.LogError("SetCurrentHealth" + newValue);
         _currentHealth = newValue;
 	}
 	
 	public void InflictDamage(int DamageValue)
 	{
-		Debug.LogError("InflictDamage" + DamageValue);
-		_currentHealth -= DamageValue;
+		if (_currentHealth - DamageValue <= 0)
+		{
+			_currentHealth = 0;
+		}
+		else
+		{
+			_currentHealth -= DamageValue;
+		}
 	}
 
 	public void RestoreHealth(int HealthValue)

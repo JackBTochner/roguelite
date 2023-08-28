@@ -15,4 +15,4 @@ MonoBehaviour:
   _initialStamina: 100
   _maxStamina: 100
   _currentStamina: 100
-  _regenRate: 5
+  _regenRate: 10

@@ -33,10 +33,6 @@ public class UIHealthBarManager : MonoBehaviour
 
     private void UpdateHealthUI()
     {
-        Debug.LogError("UpdateHealthUI");
-        Debug.LogError(_playerHealth.MaxHealth);
-        Debug.LogError(_playerHealth.CurrentHealth);
-        Debug.LogError( "Currentest Health" + _playerHealth.GetCurrentestHealth());
         _playerHealth.PrintCurrentHealth();
         _healthBar.maxValue = _playerHealth.MaxHealth;
         _healthBar.value = _playerHealth.CurrentHealth;
