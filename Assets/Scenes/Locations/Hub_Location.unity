@@ -7956,6 +7956,21 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3963344384311474560, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: _swaySmooth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344384311474560, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: _swayMultiplierX
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344384311474560, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: _swayMultiplierY
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3963344384311474566, guid: 8b6ae659732a64b44b50bc377b52cc09,
         type: 3}
       propertyPath: m_Name

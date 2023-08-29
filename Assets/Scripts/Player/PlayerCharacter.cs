@@ -22,7 +22,7 @@ namespace Player
         public GameObject playerDigGFX;
         public AttackObject playerDigAttack;
         public float digFreezeTime;
-        private bool isDigging;
+        public bool isDigging;
         public Animator playerAnim;
         public Animator staminaBarAnimator;
 

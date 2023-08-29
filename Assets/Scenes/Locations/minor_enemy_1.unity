@@ -983,6 +983,21 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3963344384311474560, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: _swaySmooth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344384311474560, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: _swayMultiplierX
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963344384311474560, guid: 8b6ae659732a64b44b50bc377b52cc09,
+        type: 3}
+      propertyPath: _swayMultiplierY
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3963344384311474566, guid: 8b6ae659732a64b44b50bc377b52cc09,
         type: 3}
       propertyPath: m_Name
@@ -2445,7 +2460,7 @@ MonoBehaviour:
   playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
   abilityUpgradeMenu: {fileID: 1219191125}
-  interactionDistance: 3
+  interactionDistance: -1
 --- !u!4 &1865151251
 Transform:
   m_ObjectHideFlags: 0
