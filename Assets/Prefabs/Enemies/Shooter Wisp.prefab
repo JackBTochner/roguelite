@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 5139006817474431185}
   - component: {fileID: 5097964078413549662}
   m_Layer: 6
-  m_Name: Enemy
+  m_Name: Shooter Wisp
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a35475d120e5946926094af0e57422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 175
   duration: 0
   intensity: 0
   poisonDamage: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 7931722598446726077}
-  timer: 2
+  timer: 1
   enemyBullet: {fileID: 1782343558926592847, guid: ffe1fe6925fb2c64db0203cae393c3ea,
     type: 3}
   enemySpeed: 1000

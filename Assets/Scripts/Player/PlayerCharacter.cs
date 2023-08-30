@@ -27,6 +27,9 @@ namespace Player
         public Animator staminaBarAnimator;
 
         [Header("Broadcasting on")]
+        //invulnerable
+        public bool invulnerable = false;
+        //
         [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
         [SerializeField] private VoidEventChannelSO _updateStaminaUI = default;
         [SerializeField] private VoidEventChannelSO _deathEvent = default;
@@ -140,6 +143,12 @@ namespace Player
 
         public void TakeDamage(int amount)
         {
+            //invulnerable
+            if (invulnerable)
+            {
+                return;
+            }
+            //
             _camShakeEvent.RaiseEvent();
             float nextHealth = _currentHealthSO.CurrentHealth - amount;
             if (nextHealth <= 0)

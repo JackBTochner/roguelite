@@ -500,7 +500,7 @@ MonoBehaviour:
   allowRotation: 1
   dashSpeed: 25
   dashTime: 0.2
-  dashCoolTime: 1
+  dashCoolTime: 2
   isDashing: 0
   canDash: 1
   lastHorizontalVelocity: {x: 0, y: 0, z: 0}
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.2187557
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
