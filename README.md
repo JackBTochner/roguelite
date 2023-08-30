@@ -88,6 +88,16 @@ Customers will pay with the in-game world currency known as Modulars. Modular co
 
 #### Map Generation System
 
+#### Enemies
+Basic Wisp: The Basic Wisp is our most common type of enemy, spawning the most frequently and having the most basic attack. The Basic Wisp locks onto the player's position and shoots a slower moving projectile in a straight line towards the player. The Basic Wisp has 200HP and does 10 damage per shot, taking 2 hits to be killed and 10 hits to kill the player. The Basic Wisp moves at 60% of the player's movement speed.
+
+Exploding Wisp: The Exploding Wisp is our ‘glass cannon’ enemy, doing large amounts of damage, but in return is weak and dies on detonation. The Exploding Wisp quickly makes its way to the player, and when overwhelmed, can cause the player serious damage. The Exploding Wisp has 100HP and does 40 damage on detonation, taking 1 hit to be killed and 3 detonations from separate Exploding Wisps to kill the player. The Exploding Wisp moves at 80% of the player's speed.
+
+The Turtle: The Turtle Wisp is a shield type enemy that can’t be killed without special playstyle consideration. The Turtle can only be damaged by a dig attack, forcing the player to conserve stamina and make use of our unique dig mechanics. The Turtle is slower and doesn’t do as much damage as other wisps, but its tough shell makes it more complex to evade and defeat. The Turtle has 200HP and does 15 damage per melee attack, taking 2 hits to be killed and 7 hits to kill the player. The Turtle moves at 15% of the player’s movement speed.
+
+Ground Slam Wisp: The Ground Slam Wisp is a tankier wisp that moves slowly, but can pack a punch if you get in its way. The Ground Slam Wisp will jump up and ground slam attack the player 3 times before becoming a melee only tank.The Ground Slam Wisp has 600HP and does 30 damage when landing on the player, as well as hitting for 20 damage with a melee attack. It will take 6 hits for it to be killed by the player and has to hit 3 slams and a melee to kill the player. The Ground Slam Wisp moves at 10% of the player’s movement speed
+
+
 #### Enemy Spawn System
 
  The enemy spawns will vary in every encounter you enter. Majority of enemy spawns will be random, within set conditions. The conditions are as follows:
@@ -122,6 +132,31 @@ Cupids Arrow: Will link enemy that's hit with the next closest enemy, any damage
 ```
 
 When attacking an enemy for the first time upon entering a room, you will attach your cast to the enemy you hit. Your cast will increase damage inflicted on that enemy, and your cast will be dropped once the enemy is defeated. You can regain your cast by picking it up after the enemy you affected is defeated or by entering the next room. You may not change the enemy that your cast is on until it is defeated.
+
+#### Projectiles
+
+Ice - Slow: The Ice projectile’s main purpose is to buy the player time. When swarmed by enemies, if used effectively, the ice projectile can slow the toughest of enemies and save the player. The Ice projectile lasts 3 ticks (3 Seconds), then the enemy hit will return to regular speed.
+
+Burn - Damage: The Burn projectile allows the player to have extra damage output. The extra damage becomes incredibly useful when trying to take down larger enemies quicker, or lesser enemies instantly. The Burn projectile does an additionally 10 damage per tick for 3 ticks (30 damage total). After 3 ticks the enemy no longer takes burn damage, unless hit again by a burn projectile.
+
+Earthquake - AOE: The Earthquake projectile allows the player to deal extra damage to a larger number of enemies if used effectively. When fired, the earthquake projectile creates a straight trail of earth that comes out of the ground, dealing significant damage on impact. The Earthquake projectile creates a line, 10 tiles long of earth, each doing 10 damage. If all tiles hit an enemy, it totals to 100 damage in 1 shot.
+
+#### Pick-up Upgrades
+
+Ice Upgrades:
+ 1 - Increase Slow Duration - This upgrade doubles the amount of time the enemy is slowed for (6 seconds instead of 3)
+2 - Freeze Enemies - When hit by the Ice projectile, instead of being slowed, the enemy will freeze in place indefinitely.
+3 - Damage Over Time - When an enemy is hit by the Ice Projectile, they will now be slowed as well as take 5 points of damage every second, for 3 seconds. (Unless player also has Increase Slow Duration, 6 seconds)
+
+Burn Upgrades: 
+1 - Increase Crit Chance by 5% - This upgrade increases the base crit chance of 10% by 5% (15% total crit chance with this upgrade). This allows the player to have a better chance of dealing more damage over time. 
+2 - Shotgun Spread, 3 projectiles - The shotgun style spread allows the player to shoot out 3 burn projectiles at once. If all projectiles hit, this upgrade allows triple base damage and triple burn damage, totaling 390 damage. 
+3 - Damage Increase - This upgrade gives a 10% increase to your damage. (110 damage per hit, 11 damage per burn tick)
+
+Earthquake Upgrades:
+1 - AOE+ Cone Shape - AOE+ will change the shape of the earth trailing the projectile. Instead of being a straight line being 10 tiles long, it becomes a cone shape, spanning 5 tiles long, but having +1 tiles each tile it moves forward. 1:2:3:4:5 tile spread, 15 total tiles covered.
+2 - Increase Knockback + Damage - This upgrade increases the damage of the earthquake projectile impact and AOE effect. Damage of the initial projectile impact will increase by 30 and each AOE tile damage by 5. Knockback is also increased by 100%.
+3 - Stuns Enemies - This upgrade will stun any enemy that is hit by the projectile itself or the AOE trail left behind it. Any enemy hit will not be able to move for 3 seconds. After 3 seconds, the enemies hit will recover and return to normal.
 
 
 #### Perk/Ability System
