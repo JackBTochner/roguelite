@@ -173,6 +173,7 @@ namespace Player
             Debug.Log("Player dead");
             // TURN OFF CHARACTER INPUT
             // SHOW DEATH ANIMATION
+			playerAnim.SetTrigger("Death");
             yield return new WaitForSeconds(delay);
             // Maybe create a listener and invoke here.
             if(_runManagerAnchor != null)
