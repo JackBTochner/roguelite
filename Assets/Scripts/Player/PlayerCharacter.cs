@@ -14,6 +14,7 @@ namespace Player
         [Header("Dig")]
         [Tooltip("Stamina config, default value is used when no PlayerManager is present.")]
         [SerializeField] private StaminaSO _currentStaminaSO = default;
+        
         public bool allowStaminaRegen = true;
         public float digStaminaCost = 25;
         public float digStaminaDepleteRate = 5;
@@ -21,10 +22,14 @@ namespace Player
         public GameObject playerDigGFX;
         public AttackObject playerDigAttack;
         public float digFreezeTime;
-        private bool isDigging;
+        public bool isDigging;
         public Animator playerAnim;
+        public Animator staminaBarAnimator;
 
         [Header("Broadcasting on")]
+        //invulnerable
+        public bool invulnerable = false;
+        //
         [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
         [SerializeField] private VoidEventChannelSO _updateStaminaUI = default;
         [SerializeField] private VoidEventChannelSO _deathEvent = default;
@@ -33,6 +38,9 @@ namespace Player
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
         private PlayerManager _playerManager;
+        public AudioSource audioSource;
+        public AudioSource battlemusic;
+        public float musicduration = 5.0f;
 
         private void Awake()
         {
@@ -46,6 +54,10 @@ namespace Player
         {
             if (_playerManagerAnchor.isSet)
                 _playerManager = _playerManagerAnchor.Value;
+            if (!battlemusic)
+            {
+                battlemusic = GameObject.FindWithTag("MusicController").GetComponent<AudioSource>();
+            }
         }
 
         public void Initialise()
@@ -107,7 +119,8 @@ namespace Player
 
         public void NotifyCantDig()
         {
-            Debug.Log("Can't dig! Stamina Too Low");
+            staminaBarAnimator.SetTrigger("CantDig");
+            // Debug.Log("Can't dig! Stamina Too Low");
             //TODO: Raise stamina bar UI flashing event
         }
 
@@ -130,6 +143,12 @@ namespace Player
 
         public void TakeDamage(int amount)
         {
+            //invulnerable
+            if (invulnerable)
+            {
+                return;
+            }
+            //
             _camShakeEvent.RaiseEvent();
             float nextHealth = _currentHealthSO.CurrentHealth - amount;
             if (nextHealth <= 0)
@@ -147,15 +166,45 @@ namespace Player
 
         IEnumerator PlayerDie(float delay)
         {
+            TurnoffMusic();
+            PlayMusic();
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
             Debug.Log("Player dead");
             // TURN OFF CHARACTER INPUT
             // SHOW DEATH ANIMATION
+			playerAnim.SetTrigger("Death");
             yield return new WaitForSeconds(delay);
             // Maybe create a listener and invoke here.
             if(_runManagerAnchor != null)
                 _runManagerAnchor.Value.ReturnToHub();
+        }
+        public void TurnoffMusic()
+        {
+            if (battlemusic)
+            {
+                battlemusic.Stop();
+            }
+                
+        }
+        public void PlayMusic()
+        {
+            // Check the Audio is implemented.
+            if (audioSource == null)
+            {
+                Debug.LogError("AudioSource is not assigned!");
+                return;
+            }
+
+            audioSource.Play();
+            // Run "StopMusic" after musicduration
+            Invoke("StopMusic", musicduration);
+        }
+
+        private void StopMusic()
+        {
+            // Stop the music
+            audioSource.Stop();
         }
     }
 }

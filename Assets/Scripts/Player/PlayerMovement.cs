@@ -83,6 +83,19 @@ namespace Player
 
         private IEnumerator BeginDash()
         {
+            //invulnerable
+            //Code base description for invulnerable:
+            /*
+             * so in this whole code, we will set invulnerable as true when we dash, 
+             * then if the player has been trigger the takedamage function, 
+             * this function will check the invulnerable status first, 
+             * if is true take no damage, when the dash has gone for 0.2 second the 
+             * "yield return new WaitForSeconds(0.2f);" will run so now after 0.2 second 
+             * set invulnerable to false.
+             */
+            PlayerCharacter playerCharacter = GetComponent<PlayerCharacter>();
+            playerCharacter.invulnerable = true;
+            //
             allowMovement = false;
             allowRotation = false;
             isDashing = true;
@@ -100,6 +113,11 @@ namespace Player
             allowRotation = true;
             lastHorizontalVelocity = Vector3.zero;
             StartCoroutine(DashCooldown());
+
+            //invulnerable
+            yield return new WaitForSeconds(0.2f);
+            playerCharacter.invulnerable = false;
+            //
         }
 
         IEnumerator DashCooldown()

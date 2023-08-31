@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a35475d120e5946926094af0e57422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 100
   duration: 0
   intensity: 0
   poisonDamage: 0
@@ -530,8 +530,8 @@ MonoBehaviour:
   explosionPrefab: {fileID: 5433080611385878098, guid: 40248cc17d2e9054dbf6373d246a24ae,
     type: 3}
   triggerDistance: 4
-  fulldamage: 25
-  middamage: 10
+  fulldamage: 40
+  middamage: 15
   normalSpeed: 3
 --- !u!114 &689511251712284840
 MonoBehaviour:

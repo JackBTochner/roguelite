@@ -10,7 +10,7 @@ To edit this document please only edit the README.md file, the github-pages will
 ## Overview
 ![provisional_logo](resources/provisional_logo.png)
 
-Play as a shape-shifting Kitsune who runs a Melbourne based pencil store by day, and hunts for various trinkets and supplies during the night.
+Play as a shape-shifting Kitsune who runs a Melbourne based cyber-repair store by day, and hunts for various materials and supplies during the night.
 
 Build relationships with new customers that arrive at your store each day. Listen to their stories and serve them their favourite items to learn new abilities and unlock new recipes.
 
@@ -18,7 +18,7 @@ Build relationships with new customers that arrive at your store each day. Liste
 ## Team
 
 - Writer/Producer: Audrey He 103597518
-- Programmer: Peamawat Muenjohn 102326287
+- Lead programmer: Peamawat Muenjohn 102326287
 - Programmer: Ricky Huo 101453511
 - Artist 2D/3D: Brittany Holmes 101116966
 - Designer: Ethan Babatsikos 103619218
@@ -88,6 +88,16 @@ Customers will pay with the in-game world currency known as Modulars. Modular co
 
 #### Map Generation System
 
+#### Enemies
+Basic Wisp: The Basic Wisp is our most common type of enemy, spawning the most frequently and having the most basic attack. The Basic Wisp locks onto the player's position and shoots a slower moving projectile in a straight line towards the player. The Basic Wisp has 200HP and does 10 damage per shot, taking 2 hits to be killed and 10 hits to kill the player. The Basic Wisp moves at 60% of the player's movement speed.
+
+Exploding Wisp: The Exploding Wisp is our ‘glass cannon’ enemy, doing large amounts of damage, but in return is weak and dies on detonation. The Exploding Wisp quickly makes its way to the player, and when overwhelmed, can cause the player serious damage. The Exploding Wisp has 100HP and does 40 damage on detonation, taking 1 hit to be killed and 3 detonations from separate Exploding Wisps to kill the player. The Exploding Wisp moves at 80% of the player's speed.
+
+The Turtle: The Turtle Wisp is a shield type enemy that can’t be killed without special playstyle consideration. The Turtle can only be damaged by a dig attack, forcing the player to conserve stamina and make use of our unique dig mechanics. The Turtle is slower and doesn’t do as much damage as other wisps, but its tough shell makes it more complex to evade and defeat. The Turtle has 200HP and does 15 damage per melee attack, taking 2 hits to be killed and 7 hits to kill the player. The Turtle moves at 15% of the player’s movement speed.
+
+Ground Slam Wisp: The Ground Slam Wisp is a tankier wisp that moves slowly, but can pack a punch if you get in its way. The Ground Slam Wisp will jump up and ground slam attack the player 3 times before becoming a melee only tank.The Ground Slam Wisp has 600HP and does 30 damage when landing on the player, as well as hitting for 20 damage with a melee attack. It will take 6 hits for it to be killed by the player and has to hit 3 slams and a melee to kill the player. The Ground Slam Wisp moves at 10% of the player’s movement speed
+
+
 #### Enemy Spawn System
 
  The enemy spawns will vary in every encounter you enter. Majority of enemy spawns will be random, within set conditions. The conditions are as follows:
@@ -123,27 +133,44 @@ Cupids Arrow: Will link enemy that's hit with the next closest enemy, any damage
 
 When attacking an enemy for the first time upon entering a room, you will attach your cast to the enemy you hit. Your cast will increase damage inflicted on that enemy, and your cast will be dropped once the enemy is defeated. You can regain your cast by picking it up after the enemy you affected is defeated or by entering the next room. You may not change the enemy that your cast is on until it is defeated.
 
+#### Projectiles
+
+Ice - Slow: The Ice projectile’s main purpose is to buy the player time. When swarmed by enemies, if used effectively, the ice projectile can slow the toughest of enemies and save the player. The Ice projectile lasts 3 ticks (3 Seconds), then the enemy hit will return to regular speed.
+
+Burn - Damage: The Burn projectile allows the player to have extra damage output. The extra damage becomes incredibly useful when trying to take down larger enemies quicker, or lesser enemies instantly. The Burn projectile does an additionally 10 damage per tick for 3 ticks (30 damage total). After 3 ticks the enemy no longer takes burn damage, unless hit again by a burn projectile.
+
+Earthquake - AOE: The Earthquake projectile allows the player to deal extra damage to a larger number of enemies if used effectively. When fired, the earthquake projectile creates a straight trail of earth that comes out of the ground, dealing significant damage on impact. The Earthquake projectile creates a line, 10 tiles long of earth, each doing 10 damage. If all tiles hit an enemy, it totals to 100 damage in 1 shot.
+
+#### Pick-up Upgrades
+
+Ice Upgrades:
+ 1 - Increase Slow Duration - This upgrade doubles the amount of time the enemy is slowed for (6 seconds instead of 3)
+2 - Freeze Enemies - When hit by the Ice projectile, instead of being slowed, the enemy will freeze in place indefinitely.
+3 - Damage Over Time - When an enemy is hit by the Ice Projectile, they will now be slowed as well as take 5 points of damage every second, for 3 seconds. (Unless player also has Increase Slow Duration, 6 seconds)
+
+Burn Upgrades: 
+1 - Increase Crit Chance by 5% - This upgrade increases the base crit chance of 10% by 5% (15% total crit chance with this upgrade). This allows the player to have a better chance of dealing more damage over time. 
+2 - Shotgun Spread, 3 projectiles - The shotgun style spread allows the player to shoot out 3 burn projectiles at once. If all projectiles hit, this upgrade allows triple base damage and triple burn damage, totaling 390 damage. 
+3 - Damage Increase - This upgrade gives a 10% increase to your damage. (110 damage per hit, 11 damage per burn tick)
+
+Earthquake Upgrades:
+1 - AOE+ Cone Shape - AOE+ will change the shape of the earth trailing the projectile. Instead of being a straight line being 10 tiles long, it becomes a cone shape, spanning 5 tiles long, but having +1 tiles each tile it moves forward. 1:2:3:4:5 tile spread, 15 total tiles covered.
+2 - Increase Knockback + Damage - This upgrade increases the damage of the earthquake projectile impact and AOE effect. Damage of the initial projectile impact will increase by 30 and each AOE tile damage by 5. Knockback is also increased by 100%.
+3 - Stuns Enemies - This upgrade will stun any enemy that is hit by the projectile itself or the AOE trail left behind it. Any enemy hit will not be able to move for 3 seconds. After 3 seconds, the enemies hit will recover and return to normal.
+
 
 #### Perk/Ability System
 
 As you progress through the game and create bonds with the NPCs, you will gain passive perks and abilities. Each NPC will be able to give you a passive perk that you will keep throughout the game and will stack with other passive perks you may receive from other NPCs. When you complete a relationship with an NPC, you will receive an ultimate ability. You may unlock multiple ultimates, but you may only equip one at a time. These abilities and perks will be active in every run, and will stay with you when you die. 
 
+*This aspect is now scrapped*
 
-#### Pen-Building system
 
-Player must walk to their workbench and interact with it. It will open the pen-build UI. It will have a
-work bench and tools. Tools include drill, hammer, saw, clips, and water. The drill can be used to
-shape the pen body for plastic and aluminium. For wooden pens, a saw must be used. The pen ink
-can be made from pigments simply by applying water. For the tip of the pen, clips must be used for
-the materials. To assembly a full pen with all the right materials, a hammer must be used.
-For the actual game play, players can drag the materials needed onto the work bench. They can then
-leave the material on the work bench and drag the tool needs over the material which will
-automatically apply the “building” animation resulting in the finished product. E.g, if the player wanted to make a blue plastic felt tip pen, they would need to drag the blue
-pigment onto the work bench along with water on the work bench to make the ink. They will then
-need to drag the plastic onto the work bench as well and drag the drill to make the body. Then they
-will do the same with feathers and clippers. After all the materials are made, if they left all the made
-materials on the work bench, then all they need to do to overlap the materials and drag the hammer
-to make the pen. Double click on items to obtain them. 
+#### Cyber repair system (Once Pen building system)
+
+Player must walk to their workbench and interact with it. It will open the pen-build UI. It will have a work bench and tools. Tools include drill, hammer, saw, clips, and water. The drill can be used to shape the pen body for plastic and aluminium. For wooden pens, a saw must be used. The pen ink can be made from pigments simply by applying water. For the tip of the pen, clips must be used for the materials. To assembly a full pen with all the right materials, a hammer must be used. For the actual game play, players can drag the materials needed onto the work bench. They can then leave the material on the work bench and drag the tool needs over the material which will automatically apply the “building” animation resulting in the finished product. E.g, if the player wanted to make a blue plastic felt tip pen, they would need to drag the blue pigment onto the work bench along with water on the work bench to make the ink. They will then need to drag the plastic onto the work bench as well and drag the drill to make the body. Then they will do the same with feathers and clippers. After all the materials are made, if they left all the made materials on the work bench, then all they need to do to overlap the materials and drag the hammer to make the pen. Double click on items to obtain them.
+
+*This aspect is now scrapped*
 
 ### Currency system
 
@@ -154,6 +181,9 @@ upgrade the hub (shop). The shop can be upgraded with aesthetic changes (e.g dif
 wallpaper and flooring). The shop can also be upgraded so that the pen making game play can be
 made easier.
 
+*This Aspect is now scrapped*
+
+
 Obtainability:
 
 • Making correct items for customers (some customers will pay anyways depending on the
@@ -161,7 +191,12 @@ customer and your relationship with them)
 
 • Herbert the bear
 
+*This Aspect is now scrapped*
+
 • Completing levels
+
+*This Aspect is now scrapped*
+
 
 #### Fish
 
@@ -174,12 +209,15 @@ Obtainability:
 
 • Completing a level around the Yarra will have a 40% chance of dropping fish at the end of it.
 
+*This Aspect is now scrapped*
+
 #### Enemy drops
 
 Colour Pigments: Blue, black, green, yellow, purple, red, pink.
 
 Materials: Plastic, Wood, Aluminium, Feathers, lead.
 
+*This aspect is now scrapped*
 
 
 ## Brand Identity
@@ -202,7 +240,7 @@ https://gamecapstone2023.atlassian.net/jira/software/projects/CP/boards/1
 
 ## Narrative
 
-Kit was an unnamed Kitsune who was given their name by Winnie. She was physically cursed into a room due to her past action that brought shame upon the Deity. She decided to revamp the room and refurnish it into a shop, pen shop to be exact. Believing pens have different uses and variations which to unique and special to everyone. Felt tips, ball-ink, gel-ink, Kit knew it all. She was happy running her shop, she found that as a Kitsune she was able to escape her physical body and roam as a soul at night. She discovers from Schrodinger that you can unbind yourself if you prove yourself worthy top the Deity. Kit initially has no interest in this as she is content with staying in her shop.
+Kit was an unnamed Kitsune who was given their name by Winnie. She was physically cursed into a room due to her past action that brought shame upon the Deity. She decided to revamp the room and refurnish it into a shop, cyber repair shop to be exact. Believing everyone has different reasons for the way their body works, she wants to be a trusted technician for all those around. She was happy running her shop, she found that as a Kitsune she was able to escape her physical body and roam as a soul at night. She discovers from Schrodinger that you can unbind yourself if you prove yourself worthy top the Deity. Kit initially has no interest in this as she is content with staying in her shop.
 
 Conflict: Wisps originally have always been around but as Kit progresses through the game, more and more powerful wisps are starting to show up almost overpowering other hostile creatures. She discovers that there is a wisp summoner who self-proclaims himself as the King of Wisps who takes control of the streets. Kit is interested in finding out more about them.
 
@@ -278,6 +316,31 @@ Appearance: Wisp, more feminine
 ## Level Design
 City Map Initial Concepts:
 ![Kitsune Corner Map](https://cdn.myportfolio.com/7c2f05bf-f874-41c1-8d1a-1bfd2c2480a4/1de79ef3-1369-4311-911d-1ef7ae228fbc_rw_1920.png?h=d9c9a3af7ba90fa8bc435944aa03ba0e)
+
+## Character Sprites
+Below are the current characters that the player can interact with in the game, and Kit herself.
+<p>
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/1752f3d8-1e74-40d6-bf9f-89eeb6bf14ee_rw_1200.png?h=c205fc7306f5bee183a9a07cb17fe825" width="250" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8e8a0f59-2e70-44d6-b015-90d7cc6170cf_rw_1200.png?h=90e1f8d2d2ac3fe7edaa4491490f3a5a" width="200" /> 
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/540dfafa-7343-4349-9908-9e2fc41686f2_rw_1200.png?h=b0f9d6b196a39792ccbb2d3a9010111e" width="250" />
+</p>
+
+<p float="left">
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/39b5c971-0756-4c18-85ff-6379d6a4de6f_rw_1200.png?h=b4d23837d55cc56895b0a11c2b27cd27" width="250" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8fbd08e2-f79d-4e49-894f-9227a31e266a_rw_1200.png?h=9db22bc2cd83d9843927bdbb4d2b34ad" width="250" /> 
+</p>
+
+## 3D Animation
+Below are the animations for Kit in her fox form. They currently include an Idle, a Run animation, a dig exit and entry, and a melee.
+<p>
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/9abb292c-a3e9-49d1-b2b0-e0ffec701eec_rw_600.gif?h=8d1b36f88539d82c7b585100727117fd" width="450" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/e41c038c-3a82-4669-a205-9f9999b04089_rw_600.gif?h=2e8750c0b727659a51646d4f4f127b19" width="450" /> 
+</p>
+
+<p>
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/8a4ace1f-8168-443f-a596-f44e530d96b9_rw_600.gif?h=60872c2f4f68743e1c0516211a7b48c7" width="450" />
+  <img src="https://cdn.myportfolio.com/09407fbb-bb14-4b8b-b59f-0cd585ad972e/b069ec26-c8bc-4dcc-8ce5-421a47d718fb_rw_600.gif?h=4a8e1951f691cd73c3bc6bb45717efa1" width="450" />
+</p>
 
 ## Concept Art
 

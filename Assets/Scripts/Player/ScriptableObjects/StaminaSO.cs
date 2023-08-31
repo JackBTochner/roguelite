@@ -28,7 +28,15 @@ public class StaminaSO : ScriptableObject
 	
 	public void InflictDamage(float DamageValue)
 	{
-		_currentStamina -= DamageValue;
+		if (_currentStamina - DamageValue <= 0)
+		{
+			_currentStamina = 0;
+		}
+		else
+		{
+			_currentStamina -= DamageValue;
+		}
+		
 	}
 
 	public void RestoreStamina(float HealthValue)
