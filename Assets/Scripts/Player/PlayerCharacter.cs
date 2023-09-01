@@ -172,6 +172,7 @@ namespace Player
                 _updateHealthUI.RaiseEvent();
             Debug.Log("Player dead");
             // TURN OFF CHARACTER INPUT
+            gameObject.GetComponent<PlayerMovement>().allowMovement = false;
             // SHOW DEATH ANIMATION
 			playerAnim.SetTrigger("Death");
             yield return new WaitForSeconds(delay);
