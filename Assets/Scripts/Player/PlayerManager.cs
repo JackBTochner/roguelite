@@ -16,6 +16,8 @@ public class PlayerManager : MonoBehaviour
     public HealthSO CurrentHealthSO = default;
     public StaminaSO CurrentStaminaSO = default;
     public ProjectileCountSO projectileCountSO = default;
+    public DigSO CurrentDigSO = default;
+    public AttackSO CurrentAttackSO = default;
 
     [Header("Broadcasting on")]
     [SerializeField]private PlayerManagerAnchor _playerManagerAnchor = default;
@@ -69,6 +71,9 @@ public class PlayerManager : MonoBehaviour
         CurrentHealthSO.SetCurrentHealth(CurrentHealthSO.InitialHealth);
         CurrentStaminaSO.SetCurrentStamina(CurrentStaminaSO.InitialStamina);
         projectileCountSO.ResetProjectileCount();
+        CurrentDigSO.Reset();
+        CurrentAttackSO.Reset();
+        
         _projectileEffects.ClearEffects();
     }
 

@@ -15,7 +15,13 @@ public class AttackTemplate : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Attack();
+			
         }
+        else
+        {
+            
+        }
+
     }
 
     void Attack()
