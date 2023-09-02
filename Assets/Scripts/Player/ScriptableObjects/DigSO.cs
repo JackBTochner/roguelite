@@ -4,7 +4,7 @@ using UnityEngine;
 /// An instance of Dig.
 /// </summary>
 [CreateAssetMenu(fileName = "Dig", menuName = "EntityConfig/Dig")]
-public class DigSO : ScriptableObject
+public class DigSO : DescriptionBaseSO
 {
     [Tooltip("The Dig")]
     [SerializeField] private bool _isDigging;
@@ -19,5 +19,10 @@ public class DigSO : ScriptableObject
     public bool GetIsDigging()
     {
         return _isDigging;
+    }
+    
+    public void SetDig(bool value)
+    {
+        _isDigging = value;
     }
 }

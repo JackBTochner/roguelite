@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +7,7 @@ using TMPro;
 public class UIDigManager : MonoBehaviour
 {
 	[SerializeField] private DigSO _dig = default;
-	[SerializeField] private Image _digUIImage;
+	[SerializeField] private GameObject _digUIImage;
 
 	[Header("Listening to")]
     [SerializeField] private VoidEventChannelSO _UIUpdateNeeded = default;
@@ -26,15 +26,16 @@ public class UIDigManager : MonoBehaviour
     {
         UpdateDigUI();
     }
-    private void UpdateDigUITransparency()
+    private void UpdateDigUI()
     {
-		if (_dig.GetIsDigging)
+		bool isDiggingValue = _dig.GetIsDigging();
+		if (isDiggingValue)
 		{
-			_digUIImage.color.a = 0.5f;
+			_digUIImage.GetComponent<CanvasRenderer>().SetAlpha(1f);
 		}
 		else
 		{
-			_digUIImage.color.a = 1f;
+			_digUIImage.GetComponent<CanvasRenderer>().SetAlpha(0.3f);
 		}
     }
-}*/
+}

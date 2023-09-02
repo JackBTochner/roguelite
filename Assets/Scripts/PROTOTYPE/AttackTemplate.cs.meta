@@ -3,7 +3,12 @@ guid: 92c2e07b360c8b84c9db54daf7b2d916
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _isAttacking: {fileID: 11400000, guid: 8a2e3af9553a1a5499f80ccbe14b4917, type: 2}
+  - _updateAttackUI: {fileID: 11400000, guid: 3d52079f55b9fcd4c8d752a999430cbf, type: 2}
+  - playerAnim: {instanceID: 0}
+  - attackAnim: {instanceID: 0}
+  - audioPlayer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

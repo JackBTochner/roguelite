@@ -534,6 +534,8 @@ MonoBehaviour:
   _updateStaminaUI: {fileID: 11400000, guid: 6cadc952f1e60c6449f24be6b928a26d, type: 2}
   _deathEvent: {fileID: 0}
   _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
+  _isDigging: {fileID: 11400000, guid: ef4637268856cbd4a88a4865e0cc84d6, type: 2}
+  _updateDigUI: {fileID: 11400000, guid: 57db47bdb5ef4eb4fbd4e3a9a799eab5, type: 2}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
   _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
@@ -552,6 +554,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c2e07b360c8b84c9db54daf7b2d916, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isAttacking: {fileID: 11400000, guid: 8a2e3af9553a1a5499f80ccbe14b4917, type: 2}
+  _updateAttackUI: {fileID: 11400000, guid: 3d52079f55b9fcd4c8d752a999430cbf, type: 2}
   playerAnim: {fileID: 3108356083547901367}
   attackAnim: {fileID: 248407811704461205}
   audioPlayer: {fileID: 5125151912657451895}

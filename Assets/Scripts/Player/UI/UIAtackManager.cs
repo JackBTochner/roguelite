@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,8 +6,8 @@ using TMPro;
 
 public class UIAttackManager : MonoBehaviour
 {
-	[SerializeField] private Image _attackUIImage;
-	[SerializeField] private bool _toggle;
+	[SerializeField] private AttackSO _attack = default;
+	[SerializeField] private GameObject _attackUIImage;
 
 	[Header("Listening to")]
     [SerializeField] private VoidEventChannelSO _UIUpdateNeeded = default;
@@ -26,16 +26,17 @@ public class UIAttackManager : MonoBehaviour
     {
         UpdateAttackUI();
     }
-    private void UpdateAttackUITransparency()
+    private void UpdateAttackUI()
     {
-		if (_toggle)
+		bool isAttackingValue = _attack.GetIsAttack();
+		if (isAttackingValue)
 		{
-			_attackUIImage.color.a = 0.5f;
+			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(1f);
 		}
 		else
 		{
-			_attackUIImage.color.a = 1f;
+			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(0.3f);
 		}
     }
 
-}*/
+}

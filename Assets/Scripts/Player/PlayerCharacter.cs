@@ -34,7 +34,9 @@ namespace Player
         [SerializeField] private VoidEventChannelSO _updateStaminaUI = default;
         [SerializeField] private VoidEventChannelSO _deathEvent = default;
         [SerializeField] private VoidEventChannelSO _camShakeEvent = default;
-        [Header("Listening on")]
+		[SerializeField] private DigSO _isDigging;
+		[SerializeField] private VoidEventChannelSO _updateDigUI = default;
+  		[Header("Listening on")]
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
         private PlayerManager _playerManager;
@@ -48,6 +50,8 @@ namespace Player
                 _updateHealthUI.RaiseEvent();
             if (_updateStaminaUI != null)
                 _updateStaminaUI.RaiseEvent();
+			if (_updateDigUI != null)
+                _updateDigUI.RaiseEvent();
         }
 
         private void Start()
@@ -89,6 +93,9 @@ namespace Player
             if (currentlyDigging)
             {
                 StartCoroutine(EmergeFromDig(digFreezeTime));
+				_isDigging.SetDig(true);
+				if(_updateDigUI != null)
+					_updateDigUI.RaiseEvent();
             }
             else
             {
@@ -99,6 +106,9 @@ namespace Player
                 }
                 _currentStaminaSO.InflictDamage(digStaminaCost);
                 StartCoroutine(DigEntry());
+				_isDigging.SetDig(false);
+				if(_updateDigUI != null)
+					_updateDigUI.RaiseEvent();
             }
         }
         
