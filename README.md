@@ -1,18 +1,19 @@
-# Kitsune Corner (Working title)
+# Kitsunetic
 > Narrative focussed roguelite with store management.
 
 https://github.com/pmuenjohn/roguelite  
 This is the birds-eye-view Design Documentation for Kitsune Corner (Working title).
-For more in-depth or implementation specific documentation, see the [Manual](https://pmuenjohn.github.io/roguelite/manual/overview.html) (also in the navbar above) for details.
+For more in-depth or implementation-specific documentation, see the [Manual](https://pmuenjohn.github.io/roguelite/manual/overview.html) (also in the navbar above) for details.
 
 To edit this document please only edit the README.md file, the github-pages will be updated automatically after you commit README.md, and use [Github Flavored Markdown (GFM)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
 
 ## Overview
 ![provisional_logo](resources/provisional_logo.png)
 
-Play as a shape-shifting Kitsune who runs a Melbourne based cyber-repair store by day, and hunts for various materials and supplies during the night.
 
-Build relationships with new customers that arrive at your store each day. Listen to their stories and serve them their favourite items to learn new abilities and unlock new recipes.
+Play as a shape-shifting Kitsune who runs a Melbourne-based cyber-repair store by day, and hunts for various materials and supplies during the night.
+
+In this early version of the game built for PAX, talk to your customers who arrive every day with new dialogue. Venture out into the night as a nine-tailed fox and experience levels designed to imitate the streets of Melbourne CBD. Battle waves of fast-paced enemies, pick your upgrades after each wave to power up your character to face the final boss! Or return back to the shop and try again tomorrow night..
 
 
 ## Team
@@ -25,18 +26,18 @@ Build relationships with new customers that arrive at your store each day. Liste
 
 ## Platforms
 
-The game will be built for PC to be played on mouse and keyboard, however the controls are designed to easily map and copy onto a controller for players who prefer a hand held experience.  
+The game will be built for PC to be played on mouse and keyboard, however the controls are designed to easily map and copy onto a controller for players who prefer a handheld experience.  
 Various successful roguelikes have been released and made available on PC and the Nintendo Switch.  
 These include The Binding of Isaac, Hades, Risk of Rain 2, Enter The Gungeon. 
 
-The controls in the game will be programmed onto mouse and keyboard giving players easy and comfortable ergonomic access to use all available abilities without straining their hands. 
+The controls in the game will be programmed onto the mouse and keyboard giving players easy and comfortable ergonomic access to use all available abilities without straining their hands. 
 
-In a research report done by DFC Intelligence, it is found that approximately 48% of all gaming happens on PC. Releasing this game on PC gives access to a wider player base.
+In a research report done by DFC Intelligence, it is found that approximately 48% of all gaming happens on a PC. Releasing this game on PC gives access to a wider player base.
 
 
 ## Machinery
 
-Players will play as a Kitsune in human form during the day time and a fully transformed nine-tailed fox at night who goes out to hunt.
+Players will play as a Kitsune in human form during the daytime and a fully transformed nine-tailed fox at night who goes out to hunt.
 
 > During the day, players run a pencil shop where NPC customers arrive to purchase writing goods.
 > 
@@ -58,7 +59,7 @@ The hub scene acts as the vehicle for the main narrative, whilst the combat acts
 
 #### Roguelite Gameplay Overview
 
-Kit has nine abilties corespondent to her nine-tails. As Kit is a fox, she has the abilities to dig into the ground where dirt is present to avoid enemies and act as a invulnerable ability.
+Kit has nine abilities corresponding to her nine-tails. As Kit is a fox, she has the ability to dig into the ground where dirt is present to avoid enemies and act as an invulnerable ability.
 
 There will be various enemies within the game with unique abilities and movesets. The main form of enemies are known as wisps. Enemies will drop items that can be brought back to the shop and used as equipment and ingredients for the pens. For example, blue enemies will drop blue pigments that can be used for blue ink. Kit will also have to battle the final boss who has an upgraded moveset and power level compared to other and previous enemies.
 
@@ -68,14 +69,14 @@ The levels are all randomly generated based on locations of Melbourne. There is 
 
 #### Hub/Storefront Gameplay Overview
 
-The gameplay during this time will mainly revolve around making stationary for the customers based on their preferences.
+The gameplay during this time will mainly revolve around making stationery for the customers based on their preferences.
 
-This includes using various components of a pen such as pigment colour, body build and thin/thickness to create the pencil of the customer's desires.
+This includes using various components of a pen such as a pigment colour, body build, and thin/thickness to create the pencil of the customer's desire.
 
 Players also interact with the customer learning around their own stories as the game progresses. The relationship and story you build with the customer may be affected by your choices as well as fulfilling their needs.  
 Building a strong relationship with the customer can benefit the player's combat and stats at night. 
 
-Customers will pay with the in-game world currency known as Modulars. Modular coins can be used to upgrade the shop game-play wise or simply its appearance.
+Customers will pay with the in-game world currency known as Modulars. Modular coins can be used to upgrade the shop's game-play-wise or simply its appearance.
 
 ### Systems
 (TODO: link to and write manual pages)
@@ -93,7 +94,7 @@ Basic Wisp: The Basic Wisp is our most common type of enemy, spawning the most f
 
 Exploding Wisp: The Exploding Wisp is our ‘glass cannon’ enemy, doing large amounts of damage, but in return is weak and dies on detonation. The Exploding Wisp quickly makes its way to the player, and when overwhelmed, can cause the player serious damage. The Exploding Wisp has 100HP and does 40 damage on detonation, taking 1 hit to be killed and 3 detonations from separate Exploding Wisps to kill the player. The Exploding Wisp moves at 80% of the player's speed.
 
-The Turtle: The Turtle Wisp is a shield type enemy that can’t be killed without special playstyle consideration. The Turtle can only be damaged by a dig attack, forcing the player to conserve stamina and make use of our unique dig mechanics. The Turtle is slower and doesn’t do as much damage as other wisps, but its tough shell makes it more complex to evade and defeat. The Turtle has 200HP and does 15 damage per melee attack, taking 2 hits to be killed and 7 hits to kill the player. The Turtle moves at 15% of the player’s movement speed.
+The Turtle: The Turtle Wisp is a shield-type enemy that can’t be killed without special playstyle consideration. The Turtle can only be damaged by a dig attack, forcing the player to conserve stamina and make use of our unique dig mechanics. The Turtle is slower and doesn’t do as much damage as other wisps, but its tough shell makes it more complex to evade and defeat. The Turtle has 200HP and does 15 damage per melee attack, taking 2 hits to be killed and 7 hits to kill the player. The Turtle moves at 15% of the player’s movement speed.
 
 Ground Slam Wisp: The Ground Slam Wisp is a tankier wisp that moves slowly, but can pack a punch if you get in its way. The Ground Slam Wisp will jump up and ground slam attack the player 3 times before becoming a melee only tank.The Ground Slam Wisp has 600HP and does 30 damage when landing on the player, as well as hitting for 20 damage with a melee attack. It will take 6 hits for it to be killed by the player and has to hit 3 slams and a melee to kill the player. The Ground Slam Wisp moves at 10% of the player’s movement speed
 
