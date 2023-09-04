@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Malee.List;
+using Map;
+using Pathfinding;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +21,8 @@ public class EnemySpawnManager : MonoBehaviour
     [Header("Listening On")]
     [SerializeField]
     private VoidEventChannelSO _onSceneReady = default; //Raised by SceneLoader when the scene is set to active
+    [SerializeField]
+    private TransformAnchor _playerTransformAnchor = default;
 
     private void OnEnable()
     {
@@ -63,7 +68,7 @@ public class EnemySpawnManager : MonoBehaviour
         for (int i = 0; i < waves.Count; i++)
         {
             // waves[i].SpawnWave();
-            StartCoroutine(waves[i].SpawnWave());
+            StartCoroutine(waves[i].SpawnWave(_playerTransformAnchor));
             while (!waves[i].IsWaveComplete()) yield return null;
             Debug.Log("Wave: " + (i + 1) + "Completed!");
             
@@ -138,7 +143,7 @@ public class EnemySpawnWave
         return complete;
     }
 
-    public IEnumerator SpawnWave()
+    public IEnumerator SpawnWave(TransformAnchor _playerAnchor)
     {
         currentEnemies = enemiesToSpawn.Length;
         _delayCompleteTime = Time.time + waveCompleteDelay;
@@ -153,7 +158,10 @@ public class EnemySpawnWave
         
         for (int i = 0; i < enemiesToSpawn.Length; i++)
         {
-            spawnLocation[i] = PickRandomSpawnPoint();
+            if (_playerAnchor && _playerAnchor.Value != null)
+                spawnLocation[i] = PickRandomSpawnPoint(_playerAnchor.Value.position);
+            else 
+                spawnLocation[i] = PickRandomSpawnPoint(Vector3.zero);
             GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
         }
         yield return new WaitForSeconds(individualSpawnDelay);
@@ -178,10 +186,23 @@ public class EnemySpawnWave
             currentEnemies -= 1;
     }
 
-    private Vector3 PickRandomSpawnPoint()
+    private Vector3 PickRandomSpawnPoint(Vector3 center)
     {
         //TODO: Replace with spawn on navmesh
-        return new Vector3(Random.Range(-spawnRadius, spawnRadius), 0, Random.Range(-spawnRadius, spawnRadius));
+        //TODO: Replace navmesh with grid system
+        Vector3 randomPoint = new Vector3(Random.Range(center.x-spawnRadius, center.x+spawnRadius), 0, Random.Range(center.z-spawnRadius, center.z+spawnRadius));
+        GraphNode nearestNode = AstarPath.active.GetNearest(randomPoint, NNConstraint.Default).node;
+        Vector3 spawnPosition = Vector3.zero;
+        bool isValidPosition = false;
+        while (isValidPosition == false)
+        {
+            if (nearestNode.Walkable)
+            {
+                spawnPosition = (Vector3)nearestNode.position;
+                isValidPosition = true;
+            }
+        }
+        return spawnPosition + new Vector3(0, 1, 0);
     }
 }
 
