@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 5927370247889351535}
   - component: {fileID: 2860282573365128282}
   m_Layer: 6
-  m_Name: LeapingWisp
+  m_Name: Leaping Wisp
   m_TagString: LeapingWisp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
