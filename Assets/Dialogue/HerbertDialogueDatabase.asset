@@ -2542,8 +2542,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Hello. I'm Herbet the bear, I run a stall at night where you can purchase
-          items to assist you on your hunt at night. All I ask for in return is fish.
+        value: Hello. I'm Herbert the bear, I run a stall at night where you can
+          purchase items to assist you on your hunt at night. All I ask for in return
+          is fish.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5232,7 +5233,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Ah right... unfortunately I'm not open for operation. But feel free
-          to make yourself comfrotable.
+          to make yourself comfortable.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -11920,7 +11921,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Say... you look really familiar. Have I seen you somehwere?
+        value: Say... you look really familiar. Have I seen you somewhere?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -14235,7 +14236,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: 'Hello Banshee, '
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
