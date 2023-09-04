@@ -13,6 +13,7 @@ TagManager:
   - ProjectileLauncher
   - Ground
   - MusicController
+  - LeapingWisp
   layers:
   - Default
   - TransparentFX

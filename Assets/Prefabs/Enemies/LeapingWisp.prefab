@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 2860282573365128282}
   m_Layer: 6
   m_Name: LeapingWisp
-  m_TagString: Enemy
+  m_TagString: LeapingWisp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -372,7 +372,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3597189350712117909}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -389,7 +389,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 0
 --- !u!95 &3597189350712117869
 Animator:
@@ -573,15 +573,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339fc273682aa6946b7bea61f2948b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leapingWisp: {fileID: 3597189350712117909}
+  jumpTime: 0.5
+  jumpHeight: 9
   playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
-  jumpHeight: 10
-  airTime: 4
-  followTime: 3
-  jumpTime: 0.5
-  dropTime: 0.5
-  groundTime: 2
-  pushForce: 80
+  orginalmaxSpeed: 18
 --- !u!1 &3597189351116473984
 GameObject:
   m_ObjectHideFlags: 0
