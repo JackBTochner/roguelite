@@ -43,6 +43,4 @@ public class TestScript : MonoBehaviour
         // Destroy the object after 5 second.
         Destroy(bulletObj, 5f);
     }
-
-    
 }

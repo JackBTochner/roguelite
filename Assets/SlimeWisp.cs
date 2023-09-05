@@ -15,7 +15,7 @@ public class SlimeWisp : MonoBehaviour
     // Time calculation
     public float timenow;
     // Set all slime spawn to 0.2 y
-    public float Slimey = 0.2f;
+    public float Slimey = 0.4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +30,20 @@ public class SlimeWisp : MonoBehaviour
         {
             // get the position of the spawing point of slime
             Vector3 spawnPosition = SlimeSpawnPoint.position;
-            // set the y as 0,2
-            spawnPosition.y = Slimey;
+
+            RaycastHit hit;
+            // How far the ray can go.The maximum it can go.
+            float maxRaycastDistance = 100f;
+            // Check if it hits something, using the spawing point spawing down 
+            // out hit store hit information in the hit variable.
+            if (Physics.Raycast(SlimeSpawnPoint.position, Vector3.down, out hit, maxRaycastDistance))
+            {
+                // The information store in the hit will be the spawing point of this slime.
+                spawnPosition = hit.point;
+                // Spawing above a bit of that hitting area(spawning area).
+                spawnPosition.y += Slimey;
+            }
+
             // Spawn slime
             GameObject slime = Instantiate(Slime, spawnPosition, Slime.transform.rotation) as GameObject;
             // Destory after SlimeTime

@@ -17,8 +17,13 @@ public class DestroyBullet : MonoBehaviour
             PlayerCharacter PlayerCharacter = other.gameObject.GetComponent<PlayerCharacter>();
             // Take damage.
             PlayerCharacter.TakeDamage(damage);
-            // Destroy the bullet object.
+            
+        }
+        if(other.gameObject.tag != "Enemy")
+        {
             Destroy(gameObject);
         }
+        // Destroy the bullet object.
+        
     }
 }

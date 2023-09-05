@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715172207036540406}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.637, y: -0.05, z: 0.323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6370001, y: -0.049999952, z: 0.32299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -612,6 +612,8 @@ MonoBehaviour:
   Sword: {fileID: 1715172207036540406}
   RealSword: {fileID: 4637850590467144974}
   slashDuration: 0.5
+  damage: 20
+  isslashing: 0
 --- !u!1 &2108147766957035461
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +708,6 @@ GameObject:
   - component: {fileID: 5144147357780164884}
   - component: {fileID: 8871834677409324418}
   - component: {fileID: 1060048331438302324}
-  - component: {fileID: 5983457428250034362}
   - component: {fileID: 6709288476312226497}
   m_Layer: 6
   m_Name: Cube (2)
@@ -780,27 +781,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5983457428250034362
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4637850590467144974}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6709288476312226497
 MonoBehaviour:
   m_ObjectHideFlags: 0

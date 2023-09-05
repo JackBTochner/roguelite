@@ -141,6 +141,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b7067f08d1bbc4a82d8a4aed6daf01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slimeDamage: 20
-  damagetime: 0.5
-  timenow: 0
