@@ -34,8 +34,7 @@ namespace Player
         [SerializeField] private VoidEventChannelSO _updateStaminaUI = default;
         [SerializeField] private VoidEventChannelSO _deathEvent = default;
         [SerializeField] private VoidEventChannelSO _camShakeEvent = default;
-		[SerializeField] private DigSO _isDigging;
-		[SerializeField] private VoidEventChannelSO _updateDigUI = default;
+		[SerializeField] private BoolEventChannelSO _updateDigUI = default;
   		[Header("Listening on")]
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
@@ -50,8 +49,9 @@ namespace Player
                 _updateHealthUI.RaiseEvent();
             if (_updateStaminaUI != null)
                 _updateStaminaUI.RaiseEvent();
+            // Will ALWAYS start player as being able to dig when loading into map.
 			if (_updateDigUI != null)
-                _updateDigUI.RaiseEvent();
+                _updateDigUI.RaiseEvent(true);
         }
 
         private void Start()
@@ -93,9 +93,8 @@ namespace Player
             if (currentlyDigging)
             {
                 StartCoroutine(EmergeFromDig(digFreezeTime));
-				_isDigging.SetDig(true);
 				if(_updateDigUI != null)
-					_updateDigUI.RaiseEvent();
+					_updateDigUI.RaiseEvent(true);
             }
             else
             {
@@ -106,9 +105,8 @@ namespace Player
                 }
                 _currentStaminaSO.InflictDamage(digStaminaCost);
                 StartCoroutine(DigEntry());
-				_isDigging.SetDig(false);
 				if(_updateDigUI != null)
-					_updateDigUI.RaiseEvent();
+					_updateDigUI.RaiseEvent(false);
             }
         }
         

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c38162b60887b74ca55535a85ea032f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0048a7bf01d087f44aeee501928fa58a, type: 3}
   m_Name: UIUpdateDig
   m_EditorClassIdentifier: 
   _guid: 

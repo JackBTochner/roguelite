@@ -6,32 +6,24 @@ using TMPro;
 
 public class UIDigManager : MonoBehaviour
 {
-	[SerializeField] private DigSO _dig = default;
 	[SerializeField] private GameObject _digUIImage;
 
 	[Header("Listening to")]
-    [SerializeField] private VoidEventChannelSO _UIUpdateNeeded = default;
+    [SerializeField] private BoolEventChannelSO _UIUpdateNeeded = default;
 
     private void OnEnable()
 	{
 		_UIUpdateNeeded.OnEventRaised += UpdateDigUI;
-		
-		InitializeDigUI();
 	}
     private void OnDestroy()
 	{
 		_UIUpdateNeeded.OnEventRaised -= UpdateDigUI;
 	}
-    private void InitializeDigUI()
+    private void UpdateDigUI(bool isDigging)
     {
-        UpdateDigUI();
-    }
-    private void UpdateDigUI()
-    {
-		bool isDiggingValue = _dig.GetIsDigging();
-		if (isDiggingValue)
+		if (isDigging)
 		{
-			_digUIImage.GetComponent<CanvasRenderer>().SetAlpha(1f);
+			_digUIImage.GetComponent<CanvasRenderer>().SetAlpha(1.0f);
 		}
 		else
 		{

@@ -6,36 +6,28 @@ using TMPro;
 
 public class UIAttackManager : MonoBehaviour
 {
-	[SerializeField] private AttackSO _attack = default;
 	[SerializeField] private GameObject _attackUIImage;
 
 	[Header("Listening to")]
-    [SerializeField] private VoidEventChannelSO _UIUpdateNeeded = default;
+    [SerializeField] private BoolEventChannelSO _UIUpdateNeeded = default;
 
     private void OnEnable()
 	{
 		_UIUpdateNeeded.OnEventRaised += UpdateAttackUI;
-		
-		InitializeAttackUI();
 	}
     private void OnDestroy()
 	{
 		_UIUpdateNeeded.OnEventRaised -= UpdateAttackUI;
 	}
-    private void InitializeAttackUI()
+    private void UpdateAttackUI(bool isAttacking)
     {
-        UpdateAttackUI();
-    }
-    private void UpdateAttackUI()
-    {
-		bool isAttackingValue = _attack.GetIsAttack();
-		if (isAttackingValue)
+		if (isAttacking)
 		{
-			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(1f);
+			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(0.3f);
 		}
 		else
 		{
-			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(0.3f);
+			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(1f);
 		}
     }
 

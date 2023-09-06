@@ -932,9 +932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c16a0bf90f1d4408399fe5b50095c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dig: {fileID: 11400000, guid: ef4637268856cbd4a88a4865e0cc84d6, type: 2}
   _digUIImage: {fileID: 407639838}
-  _UIUpdateNeeded: {fileID: 11400000, guid: 57db47bdb5ef4eb4fbd4e3a9a799eab5, type: 2}
+  _UIUpdateNeeded: {fileID: 11400000, guid: 8e496dac62832da4e8fb2530779046cb, type: 2}
 --- !u!1 &427399538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,9 +2407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4c7e2ea123d5548b910f55ca41c4d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attack: {fileID: 11400000, guid: 8a2e3af9553a1a5499f80ccbe14b4917, type: 2}
   _attackUIImage: {fileID: 1090565495}
-  _UIUpdateNeeded: {fileID: 11400000, guid: 3d52079f55b9fcd4c8d752a999430cbf, type: 2}
+  _UIUpdateNeeded: {fileID: 11400000, guid: b1988c895f589b14fbbb81f14871e9ab, type: 2}
 --- !u!1 &1114798535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3198,8 +3196,6 @@ MonoBehaviour:
   CurrentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
   CurrentStaminaSO: {fileID: 0}
   projectileCountSO: {fileID: 11400000, guid: 8f2786a78b1eefd45af030d157879e27, type: 2}
-  CurrentDigSO: {fileID: 0}
-  CurrentAttackSO: {fileID: 0}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
   _runManagerAnchor: {fileID: 0}
