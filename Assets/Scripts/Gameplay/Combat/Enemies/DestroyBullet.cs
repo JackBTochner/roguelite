@@ -19,10 +19,12 @@ public class DestroyBullet : MonoBehaviour
             PlayerCharacter.TakeDamage(damage);
             
         }
-        if(other.gameObject.tag != "Enemy")
+        // If hits other than enemy "and" other bullet, it will destroy the bullet.
+        if(other.gameObject.tag != "Enemy" && other.gameObject.tag != "Bullet")
         {
             Destroy(gameObject);
         }
+
         // Destroy the bullet object.
         
     }

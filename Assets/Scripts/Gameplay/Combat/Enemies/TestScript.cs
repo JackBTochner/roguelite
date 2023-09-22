@@ -34,8 +34,37 @@ public class TestScript : MonoBehaviour
         // If else do.
         // Set the reload for shot time back to.
         bulletTime = timer;
+
+        //30% to do
+        if (Random.value <= 0.3f)
+        {
+            //Shoot 3 bullets
+
+            //Shoot normal bullet
+            ShootBulletDirection(spawnPoint.transform.rotation);
+
+            //Shoot bullet a bit to the left
+            Quaternion leftBullet = Quaternion.Euler(0, -15, 0) * spawnPoint.transform.rotation;
+            ShootBulletDirection(leftBullet);
+
+            //Shoot bullet a bit to the right
+            Quaternion RightBullet = Quaternion.Euler(0, 15, 0) * spawnPoint.transform.rotation;
+            ShootBulletDirection(RightBullet);
+        }
+        else
+        {
+            //Shoot normal bullet
+            ShootBulletDirection(spawnPoint.transform.rotation);
+        }
+    }
+
+    void ShootBulletDirection(Quaternion bulletRotation)
+    {
         // Create a new Object that on that position and rotation, with the enemyBullet.
-        GameObject bulletObj = Instantiate(enemyBullet, spawnPoint.transform.position, spawnPoint.transform.rotation) as GameObject;
+
+        // We use "as GameObject" at last because Instantiate will return a "object" not GameObject, -
+        // - we use to explicitly cast to GameObject. Instantiate(GameObject, Vector3, Quaternion).
+        GameObject bulletObj = Instantiate(enemyBullet, spawnPoint.transform.position, bulletRotation) as GameObject;
         // Get the rigidbody of the object.
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         // Shot the object.
