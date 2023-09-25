@@ -195,7 +195,7 @@ namespace Player
 
             // Hitstop
             if (_timeManagerAnchor != null)
-                _timeManagerAnchor.Value.SetTimeScale(0.05f, 10, 0);
+                _timeManagerAnchor.Value.SetTimeScale(0.05f, 7, 0.1f);
             // Color filter
             if (postProcessVolume != null)
             {
