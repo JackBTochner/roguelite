@@ -15,6 +15,7 @@ TagManager:
   - MusicController
   - LeapingWisp
   - Bullet
+  - PostProcessVolume
   layers:
   - Default
   - TransparentFX

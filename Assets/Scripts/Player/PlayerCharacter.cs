@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using DG.Tweening;
+
 namespace Player
 {
     public class PlayerCharacter : MonoBehaviour
@@ -25,6 +29,13 @@ namespace Player
         public bool isDigging;
         public Animator playerAnim;
         public Animator staminaBarAnimator;
+        public Volume postProcessVolume;
+        private ColorAdjustments colorAdjustments;
+        private Color originalColorFilter;
+        [ColorUsage (true, true)]
+        public Color DamagedColorFilter;
+        private Coroutine damageFXCoroutine;
+        public float damageFXTime = 0.5f;
 
         [Header("Broadcasting on")]
         //invulnerable
@@ -38,6 +49,8 @@ namespace Player
   		[Header("Listening on")]
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
+        [SerializeField] private TimeManagerAnchor _timeManagerAnchor = default;
+        [SerializeField] private TransformAnchor _postProcessTransformAnchor = default;
         private PlayerManager _playerManager;
         public AudioSource audioSource;
         public AudioSource battlemusic;
@@ -61,6 +74,13 @@ namespace Player
             if (!battlemusic)
             {
                 battlemusic = GameObject.FindWithTag("MusicController").GetComponent<AudioSource>();
+            }
+            if (_postProcessTransformAnchor.isSet)
+            {
+                postProcessVolume = _postProcessTransformAnchor.Value.GetComponent<Volume>();
+                postProcessVolume.profile.TryGet(out colorAdjustments);
+                Debug.LogWarning(colorAdjustments);
+                originalColorFilter = (Color)colorAdjustments.colorFilter;
             }
         }
 
@@ -156,8 +176,7 @@ namespace Player
             {
                 return;
             }
-            //
-            _camShakeEvent.RaiseEvent();
+            
             float nextHealth = _currentHealthSO.CurrentHealth - amount;
             if (nextHealth <= 0)
             {
@@ -170,10 +189,27 @@ namespace Player
             }
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
+
+            // Hitstop
+            if (_timeManagerAnchor != null)
+                _timeManagerAnchor.Value.SetTimeScale(0.05f, 10, 0);
+            // Color filter
+            if (postProcessVolume != null)
+            {
+                if (damageFXCoroutine != null)
+                    StopCoroutine(damageFXCoroutine);
+                damageFXCoroutine = StartCoroutine(DamageScreenFX(damageFXTime));
+            }
+            // Camshake
+            _camShakeEvent.RaiseEvent();
         }
 
         IEnumerator PlayerDie(float delay)
         {
+            if (postProcessVolume != null)
+            {
+                colorAdjustments.colorFilter.Override(Color.white);
+            }
             TurnoffMusic();
             PlayMusic();
             if (_updateHealthUI != null)
@@ -184,7 +220,6 @@ namespace Player
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
             // SHOW DEATH ANIMATION
 			playerAnim.SetTrigger("Death");
-
 
             // Save score
             yield return new WaitForSeconds(3f);
@@ -197,6 +232,20 @@ namespace Player
             if(_runManagerAnchor != null)
                 _runManagerAnchor.Value.ReturnToHub();
         }
+
+        IEnumerator DamageScreenFX(float duration)
+        {
+            colorAdjustments.colorFilter.Override(DamagedColorFilter);
+            float timer = 0.0f;
+            while (timer < 1)
+            {
+                timer += Time.deltaTime / duration;
+                if (timer > 1) timer = 1;
+                colorAdjustments.colorFilter.Override(Color.Lerp(DamagedColorFilter, originalColorFilter, timer));
+                yield return null;
+            }
+        }
+
         public void TurnoffMusic()
         {
             if (battlemusic)
