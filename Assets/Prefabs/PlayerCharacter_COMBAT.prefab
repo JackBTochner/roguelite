@@ -535,7 +535,7 @@ MonoBehaviour:
   invulnerable: 0
   _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
   _updateStaminaUI: {fileID: 11400000, guid: 6cadc952f1e60c6449f24be6b928a26d, type: 2}
-  _deathEvent: {fileID: 0}
+  _startDeathEvent: {fileID: 11400000, guid: 0223ef6ce32cd3f49abd592239c8bb34, type: 2}
   _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   _updateDigUI: {fileID: 11400000, guid: 8e496dac62832da4e8fb2530779046cb, type: 2}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
@@ -559,10 +559,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c2e07b360c8b84c9db54daf7b2d916, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateAttackUI: {fileID: 11400000, guid: b1988c895f589b14fbbb81f14871e9ab, type: 2}
   playerAnim: {fileID: 3108356083547901367}
   attackAnim: {fileID: 248407811704461205}
   audioPlayer: {fileID: 5125151912657451895}
+  _updateAttackUI: {fileID: 11400000, guid: b1988c895f589b14fbbb81f14871e9ab, type: 2}
+  _startDeathEvent: {fileID: 11400000, guid: 0223ef6ce32cd3f49abd592239c8bb34, type: 2}
 --- !u!95 &248407811704461205
 Animator:
   serializedVersion: 5

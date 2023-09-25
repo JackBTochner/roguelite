@@ -43,7 +43,7 @@ namespace Player
         //
         [SerializeField] private VoidEventChannelSO _updateHealthUI = default;
         [SerializeField] private VoidEventChannelSO _updateStaminaUI = default;
-        [SerializeField] private VoidEventChannelSO _deathEvent = default;
+        [SerializeField] private VoidEventChannelSO _startDeathEvent = default;
         [SerializeField] private VoidEventChannelSO _camShakeEvent = default;
 		[SerializeField] private BoolEventChannelSO _updateDigUI = default;
   		[Header("Listening on")]
@@ -234,6 +234,11 @@ namespace Player
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
             // SHOW DEATH ANIMATION
             playerAnim.SetTrigger("Death");
+
+            if(_startDeathEvent)
+            {
+                _startDeathEvent.RaiseEvent();
+            }
 
             // Save score
             yield return new WaitForSeconds(3f);
