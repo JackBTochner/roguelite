@@ -1,11 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
+
+// Ricky: The veision of our game needed to use TextMeshProUGUI for the text. we need to use "using TMPro;"
 using TMPro;
+// Ricky: List<> needed "using System.Collections.Generic;"
 using System.Collections.Generic;
 
 
 public class ScoreManager : MonoBehaviour
 {
+    // Ricky: Our unity verision need to use TextMeshProUGUI rather than text.
     public TextMeshProUGUI scoreText;     // Reference to a UI Text element to display the score
     public float scoreMultiplier = 2.0f; // Multiplier for score increase
     public float multiplierDuration = 20.0f; // Duration of the multiplier in seconds
@@ -63,72 +67,79 @@ public class ScoreManager : MonoBehaviour
         UpdateScoreText(); // Update the displayed score
     }
 
-
+    //Ricky:
     // 1. To save the top 5 score of the game, if a higher score comes in, edit the score rank list. The ranks are TopNo.1 - TopNo.5. 
     // 2. We only record the top 5, if any goes out, we delete the other.
     // 3. The text need to be edit, for each line "first line: Rank list:". The other 5 lines are "Rank: No.X XXX".
     // 4. The text well be updated each time when the savescore() is being called.
     // 5. The UI TextMeshProUGUI we used is called the "rankListText".
     // 6. These should be happen automatically, we shouln't press any button to change score.
+
+    // We call the "SaveScore()" when our player die in the battle scene.
     public void SaveScore()
     {
+        // Get the current score and save it in a variable "lastScore".
         int lastScore = score;
 
-
+        // Create a empty List "highScores".
         List<int> highScores = new List<int>();
+
+        // Save the top 5 scores into the "PlayerPrefs", and added to the highScores list.
         for (int i = 0; i < 5; i++)
         {
             if (PlayerPrefs.HasKey("HighScore" + i))
             {
+                // PlayerPrefs: this is a class in Unity to store simple key-value pairs locally. Save the information.
                 highScores.Add(PlayerPrefs.GetInt("HighScore" + i));
             }
         }
-
-        highScores.Add(lastScore);  // Add the current score to the list
-        highScores.Sort((a, b) => b.CompareTo(a));  // Sort in descending order
+        // Add the new score into the list.
+        highScores.Add(lastScore);
+        // Create descending order of the list.
+        highScores.Sort((a, b) => b.CompareTo(a));
+        // If the score has 5 removed the 6th
         if (highScores.Count > 5)
         {
-            highScores.RemoveAt(5);  // Remove the 6th score to keep only the top 5
+            highScores.RemoveAt(5);
         }
-
-        // Save updated scores
+        // Save the new list into the Playerprefs
         for (int i = 0; i < highScores.Count; i++)
         {
             PlayerPrefs.SetInt("HighScore" + i, highScores[i]);
         }
-
-
-
+        // Display the rank list function
         DisplayRankList();
     }
+
     public void DisplayRankList()
     {
-        string rankText = "Rank list:\n";
+        // The headder of the rank list.
+        string ranklistText = "Rank list:\n";
 
-        // Add each high score to the rank text
+        // Print out all the top 5 ranks in the PlayerPrefs and format it out.
         for (int i = 0; i < 5; i++)
         {
             if (PlayerPrefs.HasKey("HighScore" + i))
             {
                 int score = PlayerPrefs.GetInt("HighScore" + i);
-                rankText += "Rank: No." + (i + 1) + " " + score + "\n";
+                ranklistText += "Rank: No." + (i + 1) + " " + score + "\n";
             }
         }
-        rankListText.text = rankText;
-
+        // Set the text into our Text in game.
+        rankListText.text = ranklistText;
+        // Open our rank list.
         rankList.gameObject.SetActive(true);
     }
 
-    //public void ClearHighScores()
-    //{
-    //    for (int i = 0; i < 5; i++)
-    //    {
-    //        PlayerPrefs.DeleteKey("HighScore" + i);
-    //    }
-    //    PlayerPrefs.DeleteKey("LastScore");
+    public void clearRankList()
+    {
+        // Clear everything of our ranklist, exclude first line.
+        for (int i = 0; i < 5; i++)
+        {
+            PlayerPrefs.DeleteKey("HighScore" + i);
+        }
 
-    //    // Optional: Display a debug message to know the operation was successful
-    //    Debug.Log("High scores cleared!");
-    //}
+        DisplayRankList();
 
+    }
 }
