@@ -56,6 +56,8 @@ namespace Player
         public AudioSource battlemusic;
         public float musicduration = 5.0f;
 
+        private SphereCollider playerCollider;
+
         private void Awake()
         {
             if (_updateHealthUI != null)
@@ -69,6 +71,7 @@ namespace Player
 
         private void Start()
         {
+
             if (_playerManagerAnchor.isSet)
                 _playerManager = _playerManagerAnchor.Value;
             if (!battlemusic)
@@ -210,6 +213,17 @@ namespace Player
             {
                 colorAdjustments.colorFilter.Override(Color.white);
             }
+            playerCollider = GetComponent<SphereCollider>();
+            playerCollider.enabled = false;
+            if (playerCollider != null)
+            {
+                playerCollider.enabled = false;
+            }
+            CharacterController charController = GetComponent<CharacterController>();
+            if (charController != null)
+            {
+                charController.enabled = false;
+            }
             TurnoffMusic();
             PlayMusic();
             if (_updateHealthUI != null)
@@ -219,7 +233,7 @@ namespace Player
             // TURN OFF CHARACTER INPUT
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
             // SHOW DEATH ANIMATION
-			playerAnim.SetTrigger("Death");
+            playerAnim.SetTrigger("Death");
 
             // Save score
             yield return new WaitForSeconds(3f);
