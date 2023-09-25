@@ -72,15 +72,15 @@ public class EnemySpawnManager : MonoBehaviour
             while (!waves[i].IsWaveComplete()) yield return null;
             Debug.Log("Wave: " + (i + 1) + "Completed!");
             
-            if (i < waves.Count -1 )
-            {   
-                abilityUpgradeMenu.SetActive(true);
-                while (abilityUpgradeMenu.activeSelf)
-                {
-                    Debug.Log(waves.Count);
-                    yield return null;
-                }
-            }
+            //if (i < waves.Count -1 )
+            //{   
+            //    abilityUpgradeMenu.SetActive(true);
+            //    while (abilityUpgradeMenu.activeSelf)
+            //    {
+            //        Debug.Log(waves.Count);
+            //        yield return null;
+            //    }
+            //}
         }
         UnlockPlayerExit();
     }

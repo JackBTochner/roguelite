@@ -94,6 +94,8 @@ public class Enemy : Hittable
         //give 0.5 seconds for the death animation to happen before disabling the object
         Invoke("Delete", 0.5f);
         died = true;
+        ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+        scoreManager.IncreaseScore(1);
     }
 
     void Delete()

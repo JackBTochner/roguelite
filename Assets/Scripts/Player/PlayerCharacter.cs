@@ -179,10 +179,19 @@ namespace Player
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
             Debug.Log("Player dead");
+
             // TURN OFF CHARACTER INPUT
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
             // SHOW DEATH ANIMATION
 			playerAnim.SetTrigger("Death");
+
+
+            // Save score
+            yield return new WaitForSeconds(3f);
+            ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+            scoreManager.SaveScore();
+
+
             yield return new WaitForSeconds(delay);
             // Maybe create a listener and invoke here.
             if(_runManagerAnchor != null)
