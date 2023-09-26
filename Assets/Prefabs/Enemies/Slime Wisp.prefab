@@ -1490,6 +1490,9 @@ MonoBehaviour:
   SpawnSlimeTime: 0.1
   timenow: 0
   Slimey: 0.1
+  EruptionInterval: 3
+  SlimesPerEruption: 5
+  EruptionForce: 10
 --- !u!1 &7239118879241816064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7872541186628019082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.405, z: 0}
+  m_LocalPosition: {x: 0, y: -0.084, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
