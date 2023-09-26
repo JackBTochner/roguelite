@@ -485,8 +485,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
-  playerSpeed: 8
+  moveSpeed: 6
+  acceleration: 10
+  RotationSmoothTime: 0.12
   playerEyeHeight: 0.75
+  gravity: -15
   gamepadDeadzone: 0.01
   gamepadRotateSmoothing: 500
   isGamepad: 0
@@ -496,6 +499,7 @@ MonoBehaviour:
   gfxRotateSpeed: 1080
   gfxAnimator: {fileID: 3108356083547901367}
   currentSpeed: 0
+  _speed: 0
   allowMovement: 1
   allowRotation: 1
   dashSpeed: 25

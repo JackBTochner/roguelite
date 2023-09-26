@@ -12,9 +12,16 @@ namespace Player
         [SerializeField] private InputReader inputReader = default;
 
         [SerializeField]
-        private float playerSpeed = 5f;
+        private float moveSpeed = 2f;
+        [SerializeField]
+        private float acceleration = 10f;
+        [Tooltip("How fast the character turns to face movement direction")]
+        [Range(0.0f, 0.3f)]
+        public float RotationSmoothTime = 0.12f;
         [SerializeField]
         private float playerEyeHeight = 0.75f;
+        [SerializeField]
+        private float gravity = -15.0f;
 
         [SerializeField]
         private float gamepadDeadzone = 0.01f;
@@ -40,8 +47,15 @@ namespace Player
         private Vector3 velocity;
 
         public float currentSpeed;
+        public float _speed;
+        private float _animationBlend;
 
         private Controls controls;
+
+        private float _targetRotation = 0.0f;
+        private float _rotationVelocity;
+        private float _verticalVelocity;
+        private float _terminalVelocity = 53.0f;
 
         public bool allowMovement = true;
         public bool allowRotation = true;
@@ -139,36 +153,78 @@ namespace Player
 
         private void ApplyGravity()
         {
-            if (velocity.y > Physics.gravity.y)
+            if (controller.isGrounded)
             {
-                velocity.y += Physics.gravity.y * Time.deltaTime;
+                if (_verticalVelocity < 0.0f)
+                {
+                    _verticalVelocity = -2f;
+                }
             }
-            controller.Move(velocity * Time.deltaTime);
+            if (_verticalVelocity < _terminalVelocity)
+            {
+                _verticalVelocity += gravity * Time.deltaTime;
+            }
         }
 
         private void HandleMovement()
         {
-            Vector3 move;
-            if (mainCamera.isSet)
+            // set target speed based on move speed, sprint speed and if sprint is pressed
+            float targetSpeed = moveSpeed;
+
+            // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
+
+            // note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
+            // if there is no input, set the target speed to 0
+            if (inputReader.MoveComposite == Vector2.zero) targetSpeed = 0.0f;
+
+            // a reference to the players current horizontal velocity
+            float currentHorizontalSpeed = new Vector3(controller.velocity.x, 0.0f, controller.velocity.z).magnitude;
+
+            float speedOffset = 0.1f;
+            float inputMagnitude = inputReader.MoveComposite.magnitude;
+
+            // accelerate or decelerate to target speed
+            if (currentHorizontalSpeed < targetSpeed - speedOffset ||
+                currentHorizontalSpeed > targetSpeed + speedOffset)
             {
-                Vector3 playerForward = Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
-                Vector3 playerRight = Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
+                // creates curved result rather than a linear one giving a more organic speed change
+                // note T in Lerp is clamped, so we don't need to clamp our speed
+                _speed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed * inputMagnitude,
+                    Time.deltaTime * acceleration);
 
-                move = playerForward.normalized * inputReader.MoveComposite.y + playerRight.normalized * inputReader.MoveComposite.x;
-
-            } else
-            { 
-                //No CameraManager exists in the scene, so the input is just used absolute in world-space
-                Debug.LogWarning("No gameplay camera in the scene. Movement orientation will not be correct.");
-                move = new Vector3(inputReader.MoveComposite.x, 0f, inputReader.MoveComposite.y);
+                // round speed to 3 decimal places
+                _speed = Mathf.Round(_speed * 1000f) / 1000f;
+            }
+            else
+            {
+                _speed = targetSpeed;
             }
 
-            lookAt = (inputReader.MoveComposite.magnitude > 0.1f) ? Quaternion.LookRotation(move) : lookAt;
-            if(gfxTransform)
-                gfxTransform.rotation = Quaternion.RotateTowards(gfxTransform.rotation, lookAt, Time.deltaTime * gfxRotateSpeed);
+            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * acceleration);
+            if (_animationBlend < 0.01f) _animationBlend = 0f;
+
+            // normalise input direction
+            Vector3 inputDirection = new Vector3(inputReader.MoveComposite.x, 0.0f, inputReader.MoveComposite.y).normalized;
+
+            // note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
+            // if there is a move input rotate player when the player is moving
+            if (inputReader.MoveComposite != Vector2.zero)
+            {
+                _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg +
+                                  mainCamera.Value.transform.eulerAngles.y;
+                float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
+                    RotationSmoothTime);
+
+                // rotate to face input direction relative to camera position
+                transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+            }
+
+            Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
+            controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
             if(gfxAnimator)
-                gfxAnimator.SetFloat("Speed", (currentSpeed > 0) ? currentSpeed / playerSpeed : 0);
-            controller.Move(move * Time.deltaTime * playerSpeed);
+                gfxAnimator.SetFloat("Speed", (currentSpeed > 0) ? currentSpeed / moveSpeed : 0);
+            //controller.Move(move * Time.deltaTime * moveSpeed);
         }
 
         private void HandleRotation()
