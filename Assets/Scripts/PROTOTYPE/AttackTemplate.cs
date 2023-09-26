@@ -56,9 +56,12 @@ public class AttackTemplate : MonoBehaviour
 
     void Attack()
     {
-        playerAnim.SetTrigger("Attack");
-        attackAnim.SetTrigger("Attack");
-        audioPlayer.PlayAudioClip();
+        if(playerAnim)
+            playerAnim.SetTrigger("Attack");
+        if(attackAnim)
+            attackAnim.SetTrigger("Attack");
+        if(audioPlayer)
+            audioPlayer.PlayAudioClip();
     }
 
     

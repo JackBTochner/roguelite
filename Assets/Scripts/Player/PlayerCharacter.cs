@@ -76,7 +76,9 @@ namespace Player
                 _playerManager = _playerManagerAnchor.Value;
             if (!battlemusic)
             {
-                battlemusic = GameObject.FindWithTag("MusicController").GetComponent<AudioSource>();
+                var musicController = GameObject.FindWithTag("MusicController");
+                if(musicController)
+                battlemusic = musicController.GetComponent<AudioSource>();
             }
             if (_postProcessTransformAnchor.isSet)
             {
