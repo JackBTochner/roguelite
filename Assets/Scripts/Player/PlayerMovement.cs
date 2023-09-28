@@ -46,7 +46,6 @@ namespace Player
 
         private Vector3 velocity;
 
-        public float currentSpeed;
         public float _speed;
         private float _animationBlend;
 
@@ -147,8 +146,6 @@ namespace Player
                 HandleMovement();
             if(aimTransform && allowRotation)
                 HandleRotation();
-            currentSpeed = controller.velocity.magnitude;
-
         }
 
         private void ApplyGravity()
@@ -180,20 +177,16 @@ namespace Player
             // a reference to the players current horizontal velocity
             float currentHorizontalSpeed = new Vector3(controller.velocity.x, 0.0f, controller.velocity.z).magnitude;
 
-            float speedOffset = 0.1f;
             float inputMagnitude = inputReader.MoveComposite.magnitude;
 
             // accelerate or decelerate to target speed
-            if (currentHorizontalSpeed < targetSpeed - speedOffset ||
-                currentHorizontalSpeed > targetSpeed + speedOffset)
+            if (currentHorizontalSpeed < targetSpeed ||
+                currentHorizontalSpeed > targetSpeed)
             {
                 // creates curved result rather than a linear one giving a more organic speed change
                 // note T in Lerp is clamped, so we don't need to clamp our speed
                 _speed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed * inputMagnitude,
                     Time.deltaTime * acceleration);
-
-                // round speed to 3 decimal places
-                _speed = Mathf.Round(_speed * 1000f) / 1000f;
             }
             else
             {
@@ -223,7 +216,7 @@ namespace Player
             controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
             if(gfxAnimator)
-                gfxAnimator.SetFloat("Speed", (currentSpeed > 0) ? currentSpeed / moveSpeed : 0);
+                gfxAnimator.SetFloat("Speed", (_speed > 0) ? _speed / moveSpeed : 0);
             //controller.Move(move * Time.deltaTime * moveSpeed);
         }
 

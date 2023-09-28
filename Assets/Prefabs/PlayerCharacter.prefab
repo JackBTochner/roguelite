@@ -187,22 +187,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
   moveSpeed: 4
-  acceleration: 10
+  acceleration: 15
   RotationSmoothTime: 0.12
   playerEyeHeight: 0.75
   gravity: -15
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 0
   gamepadDeadzone: 0.01
   gamepadRotateSmoothing: 500
-  isGamepad: 0
+  isGamepad: 1
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
   aimTransform: {fileID: 8904289081433289519}
   gfxTransform: {fileID: 8360829307049402}
   gfxRotateSpeed: 1080
   gfxAnimator: {fileID: 8827232853832920793}
-  currentSpeed: 0
   _speed: 0
   allowMovement: 1
   allowRotation: 1
@@ -210,7 +206,7 @@ MonoBehaviour:
   dashTime: 0.25
   dashCoolTime: 1
   isDashing: 0
-  canDash: 1
+  canDash: 0
   lastHorizontalVelocity: {x: 0, y: 0, z: 0}
 --- !u!95 &8827232853832920793
 Animator:
@@ -531,6 +527,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kit_Character_FixedWeights (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559285840627121667, guid: a3aa38ec9a094a843bd95cfcd5c9157f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.005900626
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559285840627121667, guid: a3aa38ec9a094a843bd95cfcd5c9157f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.008678155
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747904710347621765, guid: a3aa38ec9a094a843bd95cfcd5c9157f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00064214255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747904710347621765, guid: a3aa38ec9a094a843bd95cfcd5c9157f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.032063805
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
