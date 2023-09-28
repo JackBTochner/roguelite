@@ -498,7 +498,6 @@ MonoBehaviour:
   gfxTransform: {fileID: 4093581273836692510}
   gfxRotateSpeed: 1080
   gfxAnimator: {fileID: 3108356083547901367}
-  currentSpeed: 0
   _speed: 0
   allowMovement: 1
   allowRotation: 1
@@ -607,8 +606,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Radius: 0.59205085
+  m_Center: {x: 0, y: 0.4446044, z: 0}
 --- !u!82 &2338434677788018530
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1950,12 +1949,12 @@ PrefabInstance:
     - target: {fileID: -8041087894855359730, guid: 7e31daee45a6dc9489b7fad3ee2a66a6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.055789586
+      value: -0.055789612
       objectReference: {fileID: 0}
     - target: {fileID: -8041087894855359730, guid: 7e31daee45a6dc9489b7fad3ee2a66a6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.03232659
+      value: -0.032326616
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7e31daee45a6dc9489b7fad3ee2a66a6,
         type: 3}

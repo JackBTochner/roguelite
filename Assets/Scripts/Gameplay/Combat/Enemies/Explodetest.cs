@@ -23,7 +23,7 @@ public class Explodetest : MonoBehaviour
         // - playerTransformAnchor.value is assign to the player object.
         if (playerTransformAnchor != null && playerTransformAnchor.Value != null)
         {
-            //If the object hits the distance with the playe, it will do....
+            //If the object hits the distance with the player, it will do....
             if (Vector3.Distance(transform.position, playerTransformAnchor.Value.position) < triggerDistance)
             {
                 // Get the current object component "AIPath".

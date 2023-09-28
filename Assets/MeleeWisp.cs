@@ -26,6 +26,8 @@ public class MeleeWisp : MonoBehaviour
     public int damage = 20;
     // Check slah
     public bool isslashing = false;
+    // The player can take damage
+    private bool takedamage = true;
 
     void Start()
     {
@@ -37,6 +39,16 @@ public class MeleeWisp : MonoBehaviour
 
     void Update()
     {
+        //
+        if (Vector3.Distance(transform.position, playerTransformAnchor.Value.position) < 1.5)
+        {
+            //transform.LookAt(playerTransformAnchor.Value);
+            Vector3 targetPosition = playerTransformAnchor.Value.position;
+            targetPosition.y = transform.position.y; 
+            transform.LookAt(targetPosition);
+        }
+        //
+
         // Check the player is spawn or not
         if (playerTransformAnchor != null && playerTransformAnchor.Value != null)
         {
@@ -64,7 +76,6 @@ public class MeleeWisp : MonoBehaviour
             timeatt += Time.deltaTime;
             yield return null;
         }
-
         Sword.transform.localRotation = endRotation;
 
         timeatt = 0;
@@ -81,10 +92,18 @@ public class MeleeWisp : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && isslashing == true)
+        if (other.CompareTag("Player") && isslashing == true && takedamage == true)
         {
             PlayerCharacter playerCharacter = playerTransformAnchor.Value.GetComponent<PlayerCharacter>();
             playerCharacter.TakeDamage(damage);
+            //Player can take damage after 1 second
+            StartCoroutine(DamageCooldown());
         }
+    }
+    IEnumerator DamageCooldown()
+    {
+        takedamage = false; 
+        yield return new WaitForSeconds(1f);
+        takedamage = true; 
     }
 }

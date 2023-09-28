@@ -1489,9 +1489,9 @@ MonoBehaviour:
   SlimeTime: 5
   SpawnSlimeTime: 0.1
   timenow: 0
-  Slimey: 0.1
-  EruptionInterval: 3
-  SlimesPerEruption: 5
+  Slimey: 0.4
+  eruptionInterval: 3
+  slimeEruption: 5
   EruptionForce: 10
 --- !u!1 &7239118879241816064
 GameObject:
