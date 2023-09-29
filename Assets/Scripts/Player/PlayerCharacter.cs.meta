@@ -4,18 +4,33 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
+  - inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
   - _currentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
   - _currentStaminaSO: {fileID: 11400000, guid: aed2e6adb912c214596a6055e3776d6a,
       type: 2}
   - playerGFX: {instanceID: 0}
   - playerDigGFX: {instanceID: 0}
+  - digDownParticle: {instanceID: 0}
+  - digUpParticle: {instanceID: 0}
   - playerDigAttack: {instanceID: 0}
+  - digDetectionLocation: {instanceID: 0}
+  - _projectileHighlighters: {instanceID: 0}
+  - playerAnim: {instanceID: 0}
+  - staminaBarAnimator: {instanceID: 0}
+  - postProcessVolume: {instanceID: 0}
   - _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
-  - _deathEvent: {instanceID: 0}
+  - _updateStaminaUI: {instanceID: 0}
+  - _startDeathEvent: {instanceID: 0}
+  - _camShakeEvent: {instanceID: 0}
+  - _updateDigUI: {instanceID: 0}
   - _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
       type: 2}
   - _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936,
       type: 2}
+  - _timeManagerAnchor: {instanceID: 0}
+  - _postProcessTransformAnchor: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - battlemusic: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

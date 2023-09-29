@@ -100,10 +100,6 @@ public class HubNPCManager : MonoBehaviour
                     conversationToActorIDs.Add(actorID, conv.Title);
                 }
             }
-            Debug.Log(conversationToActorIDs.Count);
-            foreach (var kvp in conversationToActorIDs) {
-                Debug.Log("Key = " + kvp.Key + ", Value = " + kvp.Value);
-            }
         }
         foreach (var actor in Actors)
         {
@@ -247,15 +243,8 @@ public class HubNPCManager : MonoBehaviour
                     .RequiredConversations
                     .Intersect(playedConversations)
                     .ToList();
-            Debug
-                .Log("RequiredConversations n PlayedConversations :" +
-                intersect);
             if (!fields.RequiredConversations.SequenceEqual(intersect))
             {
-                Debug
-                    .Log(!fields
-                        .RequiredConversations
-                        .SequenceEqual(intersect));
                 isValid = false;
             }
         }

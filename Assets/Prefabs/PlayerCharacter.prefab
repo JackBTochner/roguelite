@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd030a2997aea5418d97aff25b0b961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
   _currentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
   _deathDelay: 0.5
   _currentStaminaSO: {fileID: 11400000, guid: aed2e6adb912c214596a6055e3776d6a, type: 2}
@@ -124,9 +125,17 @@ MonoBehaviour:
   digStaminaDepleteRate: 5
   playerGFX: {fileID: 0}
   playerDigGFX: {fileID: 0}
+  digDownParticle: {fileID: 0}
+  digUpParticle: {fileID: 0}
   playerDigAttack: {fileID: 0}
   digFreezeTime: 0
   isDigging: 0
+  digIgnoreLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  digDetectionLocation: {fileID: 0}
+  digRayLength: 2
+  _projectileHighlighters: {fileID: 0}
   playerAnim: {fileID: 0}
   staminaBarAnimator: {fileID: 0}
   postProcessVolume: {fileID: 0}
@@ -186,11 +195,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
-  currentSpeed: 0
-  animationSpeed: 0
-  animBlend: 0
   moveSpeed: 4
+  currentHorizontalSpeed: 0
   animAcceleration: 10
+  animDamper: 0.5
   RotationSmoothTime: 0.12
   playerEyeHeight: 0.75
   gravity: -15

@@ -9,6 +9,7 @@ namespace Player
 {
     public class PlayerCharacter : MonoBehaviour
     {
+        public InputReader inputReader = default;
 
         [Header("Health")]
         [Tooltip("Health config, default value is used when no PlayerManager is present.")]
@@ -18,17 +19,30 @@ namespace Player
         [Header("Dig")]
         [Tooltip("Stamina config, default value is used when no PlayerManager is present.")]
         [SerializeField] private StaminaSO _currentStaminaSO = default;
-        
         public bool allowStaminaRegen = true;
         public float digStaminaCost = 25;
         public float digStaminaDepleteRate = 5;
         public GameObject playerGFX;
         public GameObject playerDigGFX;
+        
+        public GameObject digDownParticle = default;
+        public GameObject digUpParticle = default;
+
         public AttackObject playerDigAttack;
         public float digFreezeTime;
         public bool isDigging;
+        public LayerMask digIgnoreLayerMask = default;
+        public Transform digDetectionLocation;
+        public float digRayLength = 2f;
+
+        [SerializeField]
+        private RuntimeSetBase<Highlighter> _projectileHighlighters = default;
+
+        
         public Animator playerAnim;
         public Animator staminaBarAnimator;
+
+        [Header("Damage effects")]
         public Volume postProcessVolume;
         private ColorAdjustments colorAdjustments;
         private Color originalColorFilter;
@@ -58,6 +72,15 @@ namespace Player
 
         private SphereCollider playerCollider;
 
+        private void OnEnable()
+        {
+            inputReader.OnDigCancelled += AttemptToggleDig;
+        }
+        private void OnDisable()
+        {
+            inputReader.OnDigCancelled -= AttemptToggleDig;
+        }
+
         private void Awake()
         {
             if (_updateHealthUI != null)
@@ -65,13 +88,12 @@ namespace Player
             if (_updateStaminaUI != null)
                 _updateStaminaUI.RaiseEvent();
             // Will ALWAYS start player as being able to dig when loading into map.
-			if (_updateDigUI != null)
-                _updateDigUI.RaiseEvent(true);
+            SetDigUI(true);
+
         }
 
         private void Start()
         {
-
             if (_playerManagerAnchor.isSet)
                 _playerManager = _playerManagerAnchor.Value;
             if (!battlemusic)
@@ -112,37 +134,78 @@ namespace Player
                     _updateStaminaUI.RaiseEvent();
             }
         }
+        
 
-        public void PlayerToggleDig(bool currentlyDigging)
+        private void AttemptToggleDig()
         {
-            if (currentlyDigging)
+            RaycastHit hit;
+            if (Physics.Raycast(digDetectionLocation.position,-Vector3.up,out hit,digRayLength,~digIgnoreLayerMask,QueryTriggerInteraction.Collide))
             {
-                StartCoroutine(EmergeFromDig(digFreezeTime));
-				if(_updateDigUI != null)
-					_updateDigUI.RaiseEvent(true);
+                ToggleDig(hit);
             }
             else
             {
-                if (!HasStaminaForDig())
+                // Debug.Log("Nothing to Dig!");
+            }
+        }
+
+        public void ToggleDig(RaycastHit hit)
+        {
+            if (isDigging)
+            { 
+                StartCoroutine(DigExit(digFreezeTime));
+                SetDigUI(true);
+            }
+            else if (hit.transform.gameObject.CompareTag("Dirt"))
+            {
+                if (HasStaminaForDig())
+                {
+                    _currentStaminaSO.InflictDamage(digStaminaCost);
+                    StartCoroutine(DigEntry());
+                    SetDigUI(false);
+                }
+                else
                 {
                     NotifyCantDig();
-                    return;
                 }
-                _currentStaminaSO.InflictDamage(digStaminaCost);
-                StartCoroutine(DigEntry());
-				if(_updateDigUI != null)
-					_updateDigUI.RaiseEvent(false);
             }
         }
         
         private IEnumerator DigEntry()
         {
             playerAnim.SetTrigger("Dig_Entry");
+            Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
+            foreach (var highlighter in _projectileHighlighters.Items)
+            {
+                highlighter.ToggleHighlight(true);
+            }
             yield return new WaitForSeconds(0.35f);
             playerGFX.SetActive(false);
             playerDigGFX.SetActive(true);
             Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
             isDigging = true;
+        }
+
+        IEnumerator DigExit(float freezeTime)
+        {
+            // gameObject.GetComponent<CharacterController>().detectCollisions = false;
+            isDigging = false;
+            _camShakeEvent.RaiseEvent();
+            playerGFX.SetActive(true);
+            playerAnim.SetTrigger("Dig_Exit");
+            Instantiate(digUpParticle, transform.position, transform.rotation);
+            foreach (var highlighter in _projectileHighlighters.Items)
+            {
+                highlighter.ToggleHighlight(false);
+            }
+            playerDigGFX.SetActive(false);
+            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+            playerDigAttack.gameObject.SetActive(true);
+            gameObject.GetComponent<PlayerMovement>().allowMovement = false;
+            yield return new WaitForSeconds(freezeTime);
+            // gameObject.GetComponent<CharacterController>().detectCollisions = true;
+            gameObject.GetComponent<PlayerMovement>().allowMovement = true;
+            playerDigAttack.gameObject.SetActive(false);
         }
 
         public bool HasStaminaForDig()
@@ -155,23 +218,6 @@ namespace Player
             staminaBarAnimator.SetTrigger("CantDig");
             // Debug.Log("Can't dig! Stamina Too Low");
             //TODO: Raise stamina bar UI flashing event
-        }
-
-        IEnumerator EmergeFromDig(float freezeTime)
-        {
-            // gameObject.GetComponent<CharacterController>().detectCollisions = false;
-            isDigging = false;
-            _camShakeEvent.RaiseEvent();
-            playerGFX.SetActive(true);
-            playerAnim.SetTrigger("Dig_Exit");
-            playerDigGFX.SetActive(false);
-            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
-            playerDigAttack.gameObject.SetActive(true);
-            gameObject.GetComponent<PlayerMovement>().allowMovement = false;
-            yield return new WaitForSeconds(freezeTime);
-            // gameObject.GetComponent<CharacterController>().detectCollisions = true;
-            gameObject.GetComponent<PlayerMovement>().allowMovement = true;
-            playerDigAttack.gameObject.SetActive(false);
         }
 
         public void TakeDamage(int amount)
@@ -265,6 +311,16 @@ namespace Player
                 colorAdjustments.colorFilter.Override(Color.Lerp(DamagedColorFilter, originalColorFilter, timer));
                 yield return null;
             }
+        }
+
+        private bool SetDigUI(bool value)
+        {
+            if (_updateDigUI != null)
+            {
+                _updateDigUI.RaiseEvent(value);
+                return true;
+            }
+            return false;
         }
 
         public void TurnoffMusic()
