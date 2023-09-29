@@ -25,7 +25,8 @@ public class Enemy : Hittable
 
     public GameObject hitParticle;
 
-    
+    public UnityEvent OnEnemyDiedMeleeExplodeWisp = new UnityEvent();
+
     void OnEnable()
     {
         playerTransformAnchor.OnAnchorProvided += AssignAITarget;
@@ -75,6 +76,9 @@ public class Enemy : Hittable
 
     public void Die()
     {
+        // Method is called to trigger or broadcast the event.
+        OnEnemyDiedMeleeExplodeWisp.Invoke();
+
         anim.SetTrigger("Die");
 
         //spawn a hit particle in the opposite direction of the player;
