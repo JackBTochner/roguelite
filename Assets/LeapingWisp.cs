@@ -197,7 +197,7 @@ public class LeapingWisp : MonoBehaviour
     {
 
         // Wait for 0.7 second
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(2.0f);
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.FreezePositionY;
         while (true)
