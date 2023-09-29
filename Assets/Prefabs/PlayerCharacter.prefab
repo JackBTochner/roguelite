@@ -186,8 +186,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
+  currentSpeed: 0
+  animationSpeed: 0
+  animBlend: 0
   moveSpeed: 4
-  acceleration: 15
+  animAcceleration: 10
   RotationSmoothTime: 0.12
   playerEyeHeight: 0.75
   gravity: -15
@@ -197,9 +200,8 @@ MonoBehaviour:
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
   aimTransform: {fileID: 8904289081433289519}
   gfxTransform: {fileID: 8360829307049402}
-  gfxRotateSpeed: 1080
+  gfxRotateSpeed: 720
   gfxAnimator: {fileID: 8827232853832920793}
-  _speed: 0
   allowMovement: 1
   allowRotation: 1
   dashSpeed: 15
