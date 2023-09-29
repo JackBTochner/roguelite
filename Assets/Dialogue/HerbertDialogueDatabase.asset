@@ -13572,7 +13572,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: RequiredConversations
-      value: '[''Banshee/FourthMeeting"]'
+      value: '["Banshee/FourthMeeting"]'
       type: 0
       typeString: CustomFieldType_Text
     - title: RequiredFalseConversations
@@ -14215,7 +14215,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 34
@@ -14558,7 +14558,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: RequiredConversations
-      value: '[Banshee/SixthMeeting"]'
+      value: '["Banshee/SixthMeeting"]'
       type: 0
       typeString: CustomFieldType_Text
     - title: RequiredFalseConversations

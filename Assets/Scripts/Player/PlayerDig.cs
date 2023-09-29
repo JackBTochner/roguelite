@@ -14,7 +14,7 @@ public class PlayerDig : MonoBehaviour
 
         public InputReader inputReader = default;
 
-        public PlayerBufferPoint[] playerBuffers;
+       // public PlayerBufferPoint[] playerBuffers;
 
         public bool isDigging;
 
@@ -67,11 +67,12 @@ public class PlayerDig : MonoBehaviour
                 if (isDigging)
                 {
                     Instantiate(digUpParticle, transform.position, transform.rotation);
+                    /*
                     foreach (var buffer in playerBuffers)
                     {
                         buffer.groundCollider = hit.collider;
                         buffer.gameObject.SetActive(false);
-                    }
+                    }*/
                     foreach (var highlighter in _projectileHighlighters.Items)
                     {
                     highlighter.ToggleHighlight(false);
@@ -84,11 +85,12 @@ public class PlayerDig : MonoBehaviour
                     if(!_playerTransformAnchor.Value.GetComponent<PlayerCharacter>().HasStaminaForDig())
                         return;
                     Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
+                    /*
                     foreach (var buffer in playerBuffers)
                     {
                         buffer.groundCollider = hit.collider;
                         buffer.gameObject.SetActive(true);
-                    }
+                    }*/
                     foreach (var highlighter in _projectileHighlighters.Items)
                     {
                         highlighter.ToggleHighlight(true);
