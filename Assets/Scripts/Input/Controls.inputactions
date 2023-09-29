@@ -76,15 +76,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Dash",
-                    "type": "Button",
-                    "id": "8a20bb73-45d7-4605-ba3a-68996851ae22",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -95,6 +86,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "06f4449f-6cf0-4d7a-8e67-eabd18a72b33",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -211,8 +213,8 @@
                 },
                 {
                     "name": "",
-                    "id": "fd6ed4cf-4e70-4336-bd8e-5e650d080a02",
-                    "path": "<Gamepad>/buttonSouth",
+                    "id": "0a7b83b7-8c16-4f5a-b778-ad589e1adbff",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -233,8 +235,41 @@
                 },
                 {
                     "name": "",
-                    "id": "76e5b96a-2853-424f-9bd2-07e165f4d6e5",
-                    "path": "<Gamepad>/buttonNorth",
+                    "id": "1f68de56-d60d-451b-9d6b-0ba9ecdf00ad",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2e38c4f-b58d-48ee-b3c0-07893e13af5e",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15138299-682c-47e0-8c98-b5f5bd6e73ca",
+                    "path": "<XInputController>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4e0e6645-2478-45d6-a325-50f701152001",
+                    "path": "<XInputController>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -255,8 +290,8 @@
                 },
                 {
                     "name": "",
-                    "id": "abf8a9e1-fdcc-4918-8327-0768970a598f",
-                    "path": "<Gamepad>/buttonWest",
+                    "id": "4c74e008-08f2-45a8-a9a6-4866d429b4ef",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

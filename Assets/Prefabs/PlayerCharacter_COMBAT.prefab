@@ -494,7 +494,7 @@ MonoBehaviour:
   gravity: -15
   gamepadDeadzone: 0.01
   gamepadRotateSmoothing: 500
-  isGamepad: 0
+  isGamepad: 1
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
   aimTransform: {fileID: 224761668480837074}
   gfxTransform: {fileID: 4093581273836692510}
@@ -575,6 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92c2e07b360c8b84c9db54daf7b2d916, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
   playerAnim: {fileID: 3108356083547901367}
   attackAnim: {fileID: 248407811704461205}
   audioPlayer: {fileID: 5125151912657451895}

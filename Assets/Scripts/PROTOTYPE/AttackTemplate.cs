@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AttackTemplate : MonoBehaviour
 {
     //public ObjectPooler objectPooler;
+    [SerializeField] private InputReader inputReader = default;
 
     public Animator playerAnim;
     public Animator attackAnim;
@@ -27,18 +29,25 @@ public class AttackTemplate : MonoBehaviour
 
     private void OnEnable()
     {
+        inputReader.OnAttack1Performed += TryAttack;
         _startDeathEvent.OnEventRaised += DisableAttack;
     }
     private void OnDisable()
     {
+        inputReader.OnAttack1Performed -= TryAttack;
         _startDeathEvent.OnEventRaised -= DisableAttack;
     }
 
-    void Update()
+    void DisableAttack()
     {
-        if (Input.GetButtonDown("Fire1") && canAttack)
+        canAttack = false;
+    }
+
+    void TryAttack()
+    {
+        if (canAttack)
         {
-			if(_updateAttackUI != null)
+            if(_updateAttackUI != null)
 				_updateAttackUI.RaiseEvent(true);
             Attack();
         }
@@ -47,11 +56,6 @@ public class AttackTemplate : MonoBehaviour
 			if(_updateAttackUI != null)
 				_updateAttackUI.RaiseEvent(false);
         }
-    }
-
-    void DisableAttack()
-    {
-        canAttack = false;
     }
 
     void Attack()

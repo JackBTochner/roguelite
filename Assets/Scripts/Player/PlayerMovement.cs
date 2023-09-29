@@ -206,7 +206,7 @@ namespace Player
                 if (playerDirection.sqrMagnitude > 0.0f)
                 {
                     Quaternion newRot = Quaternion.LookRotation(playerDirection, Vector3.up);
-                    aimTransform.rotation = Quaternion.RotateTowards(transform.rotation, newRot, gamepadRotateSmoothing * Time.deltaTime);
+                    aimTransform.rotation = Quaternion.RotateTowards(aimTransform.rotation, newRot, gamepadRotateSmoothing * Time.deltaTime);
                 }
             }
         }
