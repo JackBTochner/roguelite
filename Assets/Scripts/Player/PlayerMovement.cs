@@ -63,6 +63,9 @@ namespace Player
 
         [SerializeField] private PlayerInputAnchor _playerInputAnchor = default;
 
+        private Vector3 playerForward;
+        private Vector3 playerRight;
+
         private void Awake()
         {
             Initialise();
@@ -179,8 +182,8 @@ namespace Player
             Vector3 move;
             if (mainCamera.isSet)
             {
-                Vector3 playerForward = Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
-                Vector3 playerRight = Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
+                playerForward = Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
+                playerRight = Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
 
                 move = playerForward.normalized * inputReader.MoveComposite.y + playerRight.normalized * inputReader.MoveComposite.x;
 
@@ -211,8 +214,8 @@ namespace Player
             if ( Mathf.Abs(inputReader.Look.x) > gamepadDeadzone || Mathf.Abs(inputReader.Look.y) > gamepadDeadzone )
             {
                 Vector3 playerDirection =
-                    Vector3.right * inputReader.Look.x +
-                    Vector3.forward * inputReader.Look.y;
+                    playerRight * inputReader.Look.x +
+                    playerForward * inputReader.Look.y;
                 if (playerDirection.sqrMagnitude > 0.0f)
                 {
                     Quaternion newRot = Quaternion.LookRotation(playerDirection, Vector3.up);

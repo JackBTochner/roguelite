@@ -493,7 +493,7 @@ MonoBehaviour:
   playerEyeHeight: 0.75
   gravity: -15
   gamepadDeadzone: 0.01
-  gamepadRotateSmoothing: 500
+  gamepadRotateSmoothing: 540
   usingGamepadSO: {fileID: 11400000, guid: 89f2fd504a9da344fa17401c12f12999, type: 2}
   isGamepad: 0
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
