@@ -494,7 +494,8 @@ MonoBehaviour:
   gravity: -15
   gamepadDeadzone: 0.01
   gamepadRotateSmoothing: 500
-  isGamepad: 1
+  usingGamepadSO: {fileID: 11400000, guid: 89f2fd504a9da344fa17401c12f12999, type: 2}
+  isGamepad: 0
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
   aimTransform: {fileID: 224761668480837074}
   gfxTransform: {fileID: 4093581273836692510}
@@ -508,6 +509,7 @@ MonoBehaviour:
   isDashing: 0
   canDash: 1
   lastHorizontalVelocity: {x: 0, y: 0, z: 0}
+  _playerInputAnchor: {fileID: 11400000, guid: 30b1a5f313dd84142b35b14dc4a55c38, type: 2}
 --- !u!114 &248407811704461207
 MonoBehaviour:
   m_ObjectHideFlags: 0

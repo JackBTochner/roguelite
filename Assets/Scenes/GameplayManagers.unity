@@ -3194,7 +3194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectileEffects: {fileID: 11400000, guid: 74de9591fd5d3894fb6002d02832e873, type: 2}
   CurrentHealthSO: {fileID: 11400000, guid: 7f49e9db3f27dff45947db530f6afe32, type: 2}
-  CurrentStaminaSO: {fileID: 0}
+  CurrentStaminaSO: {fileID: 11400000, guid: aed2e6adb912c214596a6055e3776d6a, type: 2}
   projectileCountSO: {fileID: 11400000, guid: 8f2786a78b1eefd45af030d157879e27, type: 2}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}

@@ -175,6 +175,7 @@ namespace Player
         {
             playerAnim.SetTrigger("Dig_Entry");
             Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
+            
             foreach (var highlighter in _projectileHighlighters.Items)
             {
                 highlighter.ToggleHighlight(true);
@@ -188,7 +189,6 @@ namespace Player
 
         IEnumerator DigExit(float freezeTime)
         {
-            // gameObject.GetComponent<CharacterController>().detectCollisions = false;
             isDigging = false;
             _camShakeEvent.RaiseEvent();
             playerGFX.SetActive(true);
@@ -203,7 +203,6 @@ namespace Player
             playerDigAttack.gameObject.SetActive(true);
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
             yield return new WaitForSeconds(freezeTime);
-            // gameObject.GetComponent<CharacterController>().detectCollisions = true;
             gameObject.GetComponent<PlayerMovement>().allowMovement = true;
             playerDigAttack.gameObject.SetActive(false);
         }

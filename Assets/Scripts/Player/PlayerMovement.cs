@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Users;
 
 namespace Player
 {
     [RequireComponent(typeof (CharacterController))]
     public class PlayerMovement : MonoBehaviour
     {
-        
         [SerializeField] private InputReader inputReader = default;
         [SerializeField]
         private float moveSpeed = 4f;
@@ -31,6 +31,8 @@ namespace Player
         [SerializeField]
         private float gamepadRotateSmoothing = 500f;
 
+        [SerializeField]
+        private BoolEventChannelSO usingGamepadSO = default;
         [SerializeField]
         private bool isGamepad;
                 
@@ -59,28 +61,36 @@ namespace Player
         public bool canDash = true;
         public Vector3 lastHorizontalVelocity;
 
+        [SerializeField] private PlayerInputAnchor _playerInputAnchor = default;
+
         private void Awake()
         {
-            controller = GetComponent<CharacterController>();
+            Initialise();
         }
         private void OnEnable()
         {
+            InputUser.onChange += OnDeviceChange;
             inputReader.OnJumpPerformed += jump;
         }
+
         private void OnDisable()
         {
+            InputUser.onChange -= OnDeviceChange;
             inputReader.OnJumpPerformed -= jump;
         }
         public void Initialise()
         {
-            // manager.playerInput.controlsChangedEvent.AddListener(OnDeviceChange);
-            
+            controller = GetComponent<CharacterController>();
+            if (_playerInputAnchor.isSet)
+            {
+                isGamepad = _playerInputAnchor.Value.currentControlScheme.Equals("Gamepad") ? true : false;
+            }
         }
+
         private void jump()
         {
             // Test the jump key is working.
             //Debug.Log("Test: Jump Key working");
-
             if (canDash)
             {
                 StartCoroutine(BeginDash());
@@ -225,9 +235,12 @@ namespace Player
             }
         }
 
-        public void OnDeviceChange(PlayerInput pi)
+        public void OnDeviceChange(InputUser user, InputUserChange change, InputDevice device)
         {
-            isGamepad = pi.currentControlScheme.Equals("Gamepad") ? true : false;
+            if (change == InputUserChange.ControlSchemeChanged)
+            {
+                isGamepad = user.controlScheme.Value.name.Equals("Gamepad") ? true : false;
+            }
         }
     }
 }
