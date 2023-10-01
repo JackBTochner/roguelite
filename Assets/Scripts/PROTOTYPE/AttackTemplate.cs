@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,11 +9,17 @@ public class AttackTemplate : MonoBehaviour
     //public ObjectPooler objectPooler;
     [SerializeField] private InputReader inputReader = default;
 
-    public Animator playerAnim;
-    public Animator attackAnim;
-    public PlaySingleAudioClip audioPlayer;
+    [SerializeField] private float _comboDelay = 1.2f;
+    [SerializeField] private int _comboMaxStep = 2;
+    [SerializeField] private int _comboHitStep;
+    private Coroutine _comboAttackResetCoroutine;
 
-    private bool canAttack = true;
+    private int _animAttackComboStepParamHash;
+
+    [SerializeField] private Animator _animator;
+    [SerializeField] private PlaySingleAudioClip _audioPlayer;
+
+    [SerializeField] private bool _canAttack = true;
 
 	[Header("Broadcasting on")]
 	[SerializeField] private BoolEventChannelSO _updateAttackUI = default;
@@ -22,9 +29,13 @@ public class AttackTemplate : MonoBehaviour
 
 	private void Awake()
     {
+        _animAttackComboStepParamHash = Animator.StringToHash("AttackComboCount");
+        _comboHitStep = -1;
+        _comboAttackResetCoroutine = null;
+
         if (_updateAttackUI != null)
             _updateAttackUI.RaiseEvent(false);
-        canAttack = true;
+        _canAttack = true;
     }
 
     private void OnEnable()
@@ -40,12 +51,12 @@ public class AttackTemplate : MonoBehaviour
 
     void DisableAttack()
     {
-        canAttack = false;
+        _canAttack = false;
     }
 
     void TryAttack()
     {
-        if (canAttack)
+        if (_canAttack)
         {
             if(_updateAttackUI != null)
 				_updateAttackUI.RaiseEvent(true);
@@ -60,13 +71,27 @@ public class AttackTemplate : MonoBehaviour
 
     void Attack()
     {
-        if(playerAnim)
-            playerAnim.SetTrigger("Attack");
-        if(attackAnim)
-            attackAnim.SetTrigger("Attack");
-        if(audioPlayer)
-            audioPlayer.PlayAudioClip();
+        if (_comboHitStep == _comboMaxStep)
+            return;
+        float t = _animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        if (_comboHitStep == -1 || (t >= 0.1f && t <= 0.8f))
+        {
+            if (_comboAttackResetCoroutine != null)
+                StopCoroutine(_comboAttackResetCoroutine);
+            _comboHitStep++;
+            _animator.SetInteger(
+                _animAttackComboStepParamHash, _comboHitStep);
+            _audioPlayer.PlayAudioClip();
+            _comboAttackResetCoroutine = StartCoroutine(_ResettingAttackCombo());
+        }
     }
-
-    
+    private IEnumerator _ResettingAttackCombo()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitUntil(() =>
+            _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f);
+        _comboHitStep = -1;
+        _animator.SetInteger(
+            _animAttackComboStepParamHash, _comboHitStep);
+    }
 }
