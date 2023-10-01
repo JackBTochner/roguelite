@@ -9,12 +9,15 @@ public class AttackTemplate : MonoBehaviour
     //public ObjectPooler objectPooler;
     [SerializeField] private InputReader inputReader = default;
 
-    [SerializeField] private float _comboDelay = 1.2f;
+    [SerializeField] private float _comboResetDelay = 0.25f;
+    [SerializeField] private float _comboMaxDelay = 1f;
+    [SerializeField] private float _comboMinDelay = 0.25f;
     [SerializeField] private int _comboMaxStep = 2;
     [SerializeField] private int _comboHitStep;
+    [SerializeField] private float _lastSuccessfulAttackTime = 0;
     private Coroutine _comboAttackResetCoroutine;
-
-    private int _animAttackComboStepParamHash;
+    private int _animAttackComboCountHash;
+    private int _animAttackTriggerHash;
 
     [SerializeField] private Animator _animator;
     [SerializeField] private PlaySingleAudioClip _audioPlayer;
@@ -29,7 +32,8 @@ public class AttackTemplate : MonoBehaviour
 
 	private void Awake()
     {
-        _animAttackComboStepParamHash = Animator.StringToHash("AttackComboCount");
+        _animAttackComboCountHash = Animator.StringToHash("AttackComboCount");
+        _animAttackTriggerHash = Animator.StringToHash("Attack");
         _comboHitStep = -1;
         _comboAttackResetCoroutine = null;
 
@@ -73,25 +77,40 @@ public class AttackTemplate : MonoBehaviour
     {
         if (_comboHitStep == _comboMaxStep)
             return;
-        float t = _animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-        if (_comboHitStep == -1 || (t >= 0.1f && t <= 0.8f))
+        _animator.ResetTrigger(_animAttackTriggerHash);
+        Debug.Log(Time.time - _lastSuccessfulAttackTime > _comboMinDelay);
+        if (_comboHitStep == -1 || (Time.time - _lastSuccessfulAttackTime > _comboMinDelay) && (Time.time - _lastSuccessfulAttackTime < _comboMaxDelay))
         {
             if (_comboAttackResetCoroutine != null)
                 StopCoroutine(_comboAttackResetCoroutine);
+            _lastSuccessfulAttackTime = Time.time;
             _comboHitStep++;
-            _animator.SetInteger(
-                _animAttackComboStepParamHash, _comboHitStep);
+            _animator.SetTrigger(_animAttackTriggerHash);
+            _animator.SetInteger(_animAttackComboCountHash, _comboHitStep);
             _audioPlayer.PlayAudioClip();
             _comboAttackResetCoroutine = StartCoroutine(_ResettingAttackCombo());
         }
     }
+
+    // Function run by animation event on the last keyframe of the final animationclip of the combo.
+    // Not ideal. Done as a bandaid fix to skip the ComboResetDelay that you would have to wait for after the combo finishes.
+    // Find a fix?
+    public void ForceResetAttackCombo()
+    {
+        Debug.Log("FORCERESET ATTACK COMBO");
+        if (_comboAttackResetCoroutine != null)
+                StopCoroutine(_comboAttackResetCoroutine);
+        _comboHitStep = -1;
+        _animator.SetInteger(_animAttackComboCountHash, _comboHitStep);
+    }
+    
     private IEnumerator _ResettingAttackCombo()
     {
         yield return new WaitForEndOfFrame();
-        yield return new WaitUntil(() =>
-            _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f);
+        // Wait until the current animation is 95% completed until forcing(or allowing) the combo to be started again
+        // yield return new WaitUntil(() => _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f);
+        yield return new WaitForSeconds(_comboResetDelay);
         _comboHitStep = -1;
-        _animator.SetInteger(
-            _animAttackComboStepParamHash, _comboHitStep);
+        _animator.SetInteger(_animAttackComboCountHash, _comboHitStep);
     }
 }

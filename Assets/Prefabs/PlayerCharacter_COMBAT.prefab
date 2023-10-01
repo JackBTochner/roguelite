@@ -1851,6 +1851,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8178847866766450651, guid: 88337d45af9883246b1a7515938be1eb,
         type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2042564
+      objectReference: {fileID: 0}
+    - target: {fileID: -8178847866766450651, guid: 88337d45af9883246b1a7515938be1eb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.03955336
+      objectReference: {fileID: 0}
+    - target: {fileID: -8178847866766450651, guid: 88337d45af9883246b1a7515938be1eb,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 77.615944
       objectReference: {fileID: 0}
@@ -1878,6 +1888,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -67.494644
+      objectReference: {fileID: 0}
+    - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.055789575
+      objectReference: {fileID: 0}
+    - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.03232658
       objectReference: {fileID: 0}
     - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
         type: 3}
@@ -3286,9 +3306,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
-  _comboDelay: 1.2
+  _comboResetDelay: 1.25
+  _comboMaxDelay: 1.25
+  _comboMinDelay: 0.25
   _comboMaxStep: 2
-  _combotHitStep: 0
+  _comboHitStep: 0
+  _lastSuccessfulAttackTime: 0
   _animator: {fileID: 6933420730263538374}
   _audioPlayer: {fileID: 5125151912657451895}
   _canAttack: 1
