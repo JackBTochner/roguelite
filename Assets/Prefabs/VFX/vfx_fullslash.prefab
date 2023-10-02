@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7294357433441613324}
   - component: {fileID: 4933614684665275287}
   m_Layer: 0
-  m_Name: vfx_slash
+  m_Name: vfx_fullslash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830617169992084843}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 2322ca57080057d4c9123ca29bf1aeab, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: aee603a07b7f13449b7fefc1f696a1bb, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
