@@ -16,7 +16,7 @@ TagManager:
   - LeapingWisp
   - Bullet
   - PostProcessVolume
-  - InteractTrigger
+  - Interactable
   layers:
   - Default
   - TransparentFX

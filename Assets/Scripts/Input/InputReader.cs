@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 [CreateAssetMenu(fileName = "InputReader", menuName = "Game/Input Reader")]
 public class InputReader : DescriptionBaseSO, Controls.IPlayerActions
 {
+    // PLAYER CONTROLS
     public Vector2 Look; // Gamepad look
 
     public Vector2 MousePosition;
@@ -29,6 +30,9 @@ public class InputReader : DescriptionBaseSO, Controls.IPlayerActions
 
     public Action OnDashPerformed;
     public Action OnDashCancelled;
+
+    public Action OnInteractPerformed;
+    public Action OnInteractCancelled;
 
     public Controls controls;
 
@@ -103,5 +107,13 @@ public class InputReader : DescriptionBaseSO, Controls.IPlayerActions
             OnDashPerformed?.Invoke();
         if (context.canceled)
             OnDashCancelled?.Invoke();
+    }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+            OnInteractPerformed?.Invoke();
+        if (context.canceled)
+            OnInteractCancelled?.Invoke();
     }
 }

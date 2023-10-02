@@ -543,6 +543,8 @@ MonoBehaviour:
   canDash: 1
   lastHorizontalVelocity: {x: 0, y: 0, z: 0}
   _playerInputAnchor: {fileID: 11400000, guid: 30b1a5f313dd84142b35b14dc4a55c38, type: 2}
+  _playerMovementAnchor: {fileID: 11400000, guid: 7533e459dfa6fbf429603e3f45dd8aaa,
+    type: 2}
 --- !u!114 &248407811704461207
 MonoBehaviour:
   m_ObjectHideFlags: 0

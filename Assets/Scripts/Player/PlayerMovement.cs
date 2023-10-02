@@ -66,9 +66,13 @@ namespace Player
         private Vector3 playerForward;
         private Vector3 playerRight;
 
+        [Header("Broadcasting on")]
+        [SerializeField] private PlayerMovementAnchor _playerMovementAnchor = default;
+
         private void Awake()
         {
             Initialise();
+            _playerMovementAnchor.Provide(this);
         }
         private void OnEnable()
         {

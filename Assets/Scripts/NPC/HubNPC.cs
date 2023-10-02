@@ -7,40 +7,62 @@ using PixelCrushers.DialogueSystem;
 public class HubNPC : MonoBehaviour
 {
     public int ActorID;
-    private DialogueSystemTrigger _dialogueSystemTrigger;
-    public bool hasInteractedThisRun = false;
+    public DialogueSystemTrigger dialogueSystemTrigger;
+    public string interactPrompt = "Talk";
+    public Interactor currentInteractor;
 
+    public bool isInteracting = false;
+    public bool canInteract = true;
+
+    public GameObject interactExclamationMark;
+
+    [Header("Listening on")]
+    [SerializeField] private PlayerMovementAnchor _playerMovementAnchor = default;
     
     void Start()
     {
-        _dialogueSystemTrigger = GetComponent<DialogueSystemTrigger>();
-    }
-    public void OnConversationEnd()
-    {
-        Debug.Log(_dialogueSystemTrigger.conversation + "CONVERSATION ENDED");
-        List<string> playedConversations = SerializerUtility.StringToList(DialogueLua.GetVariable("PlayedConversations").asString);
-        playedConversations.Add(_dialogueSystemTrigger.conversation);
-        DialogueLua.SetVariable("PlayedConversations", SerializerUtility.ListToString(playedConversations));
-        hasInteractedThisRun = true;
+        dialogueSystemTrigger = GetComponent<DialogueSystemTrigger>();
     }
 
     public void AssignConversation(string conversationTitle)
     {
-        if (_dialogueSystemTrigger == null)
+        if (dialogueSystemTrigger == null)
         { 
-            _dialogueSystemTrigger = GetComponent<DialogueSystemTrigger>();
+            dialogueSystemTrigger = GetComponent<DialogueSystemTrigger>();
         }
-        _dialogueSystemTrigger.conversation = conversationTitle;
+        dialogueSystemTrigger.conversation = conversationTitle;
+        canInteract = true;
+        interactExclamationMark.SetActive(true);
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void StartConversation(Interactor interactor)
     {
-        if (other.CompareTag("InteractTrigger"))
+        dialogueSystemTrigger.OnUse();
+        isInteracting = true;
+        interactExclamationMark.SetActive(false);
+        if (_playerMovementAnchor.Value != null)
         {
-            if (hasInteractedThisRun == false)
-            {
-
-            }
+            _playerMovementAnchor.Value.allowMovement = false;
+            _playerMovementAnchor.Value.allowRotation = false;
         }
+    }
+
+    public void OnConversationEnd()
+    {
+        if (_playerMovementAnchor.Value != null)
+        {
+            _playerMovementAnchor.Value.allowMovement = true;
+            _playerMovementAnchor.Value.allowRotation = true;
+        }
+        List<string> playedConversations = SerializerUtility.StringToList(DialogueLua.GetVariable("PlayedConversations").asString);
+        playedConversations.Add(dialogueSystemTrigger.conversation);
+        DialogueLua.SetVariable("PlayedConversations", SerializerUtility.ListToString(playedConversations));
+        isInteracting = false;
+        if (currentInteractor != null)
+        {
+            currentInteractor.ClearCurrentTarget();
+        }
+        canInteract = false;
+
     }
 }
