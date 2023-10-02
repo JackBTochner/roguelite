@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.VFX;
 
 public class AttackTemplate : MonoBehaviour
 {
     //public ObjectPooler objectPooler;
+    [SerializeField] private AttackType[] attacks;
+
     [SerializeField] private InputReader inputReader = default;
 
     [SerializeField] private float _comboResetDelay = 0.25f;
@@ -85,6 +88,11 @@ public class AttackTemplate : MonoBehaviour
                 StopCoroutine(_comboAttackResetCoroutine);
             _lastSuccessfulAttackTime = Time.time;
             _comboHitStep++;
+            foreach (var attack in attacks)
+            {
+                StopAttack(attack);
+            }
+            StartAttack(attacks[_comboHitStep]);
             _animator.SetTrigger(_animAttackTriggerHash);
             _animator.SetInteger(_animAttackComboCountHash, _comboHitStep);
             _audioPlayer.PlayAudioClip();
@@ -98,6 +106,10 @@ public class AttackTemplate : MonoBehaviour
     public void ForceResetAttackCombo()
     {
         Debug.Log("FORCERESET ATTACK COMBO");
+        foreach (var attack in attacks)
+        {
+            StopAttack(attack);
+        }
         if (_comboAttackResetCoroutine != null)
                 StopCoroutine(_comboAttackResetCoroutine);
         _comboHitStep = -1;
@@ -110,7 +122,55 @@ public class AttackTemplate : MonoBehaviour
         // Wait until the current animation is 95% completed until forcing(or allowing) the combo to be started again
         // yield return new WaitUntil(() => _animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f);
         yield return new WaitForSeconds(_comboResetDelay);
+        foreach (var attack in attacks)
+        {
+            StopAttack(attack);
+        }
         _comboHitStep = -1;
         _animator.SetInteger(_animAttackComboCountHash, _comboHitStep);
+    }
+
+    public void StartAttack(AttackType attackType)
+    {
+        attackType.attackCoroutine = StartCoroutine(attackType.AttackCoroutine());
+    }
+    public void StopAttack(AttackType attackType)
+    {
+        attackType.EndAttack();
+        if (attackType.attackCoroutine != null)
+            StopCoroutine(attackType.attackCoroutine);
+    }
+}
+
+[System.Serializable]
+public class AttackType
+{
+    public string name;
+    public GameObject attackContainer;
+    public AttackObject hurtbox;
+    public VisualEffect vfx;
+
+    public float attackLifeTime = 0.1f;
+
+    public Coroutine attackCoroutine;
+
+    public void BeginAttack()
+    {
+        attackContainer.SetActive(true);
+        vfx.Play();
+        hurtbox.gameObject.SetActive(true);
+    }
+
+    public void EndAttack() 
+    {
+        attackContainer.SetActive(false);
+        hurtbox.gameObject.SetActive(false);
+    }
+
+    public IEnumerator AttackCoroutine()
+    {
+        BeginAttack();
+        yield return new WaitForSeconds(attackLifeTime);
+        EndAttack();
     }
 }
