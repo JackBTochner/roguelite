@@ -3802,8 +3802,8 @@ MonoBehaviour:
     vfx: {fileID: 8912638507027370578}
     attackLifeTime: 0.46
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
-  _comboResetDelay: 1.25
-  _comboMaxDelay: 1.25
+  _comboResetDelay: 0.8
+  _comboMaxDelay: 0.8
   _comboMinDelay: 0.25
   _comboMaxStep: 2
   _comboHitStep: 0
@@ -3840,7 +3840,7 @@ PrefabInstance:
     - target: {fileID: 142004315228256137, guid: e4037ad64d731124c81d40442f79e85b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 142004315228256137, guid: e4037ad64d731124c81d40442f79e85b,
         type: 3}

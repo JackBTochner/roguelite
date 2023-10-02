@@ -249,7 +249,7 @@ ModelImporter:
       name: Melee
       takeName: Armature|KF_Melee
       internalID: 8818458807423183108
-      firstFrame: 0
+      firstFrame: 5
       lastFrame: 13
       wrapMode: 0
       orientationOffsetY: 0
