@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public HubNPC currentTarget;
+
+    public void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Interactable"))
+        {
+            EnableInteractPrompt();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void OnTriggerExit() 
     {
-        
+        currentTarget = null;
+        DisableInteractPrompt();
+    }
+
+    public void EnableInteractPrompt()
+    { 
+        // show ui
+
+    }
+
+    public void DisableInteractPrompt() 
+    { 
+        // hide UI
     }
 }

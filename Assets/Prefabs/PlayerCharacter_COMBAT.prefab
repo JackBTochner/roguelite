@@ -1400,7 +1400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageInfo:
     DamageType: 0
-    Damage: 20
+    Damage: 40
     CriticalData:
       Chance: 10
       Multiplier: 1.5
@@ -4197,7 +4197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageInfo:
     DamageType: 0
-    Damage: 15
+    Damage: 20
     CriticalData:
       Chance: 10
       Multiplier: 1.5
@@ -4347,7 +4347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageInfo:
     DamageType: 0
-    Damage: 15
+    Damage: 20
     CriticalData:
       Chance: 10
       Multiplier: 1.5

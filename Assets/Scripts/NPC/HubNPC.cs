@@ -8,6 +8,8 @@ public class HubNPC : MonoBehaviour
 {
     public int ActorID;
     private DialogueSystemTrigger _dialogueSystemTrigger;
+    public bool hasInteractedThisRun = false;
+
     
     void Start()
     {
@@ -19,6 +21,7 @@ public class HubNPC : MonoBehaviour
         List<string> playedConversations = SerializerUtility.StringToList(DialogueLua.GetVariable("PlayedConversations").asString);
         playedConversations.Add(_dialogueSystemTrigger.conversation);
         DialogueLua.SetVariable("PlayedConversations", SerializerUtility.ListToString(playedConversations));
+        hasInteractedThisRun = true;
     }
 
     public void AssignConversation(string conversationTitle)
@@ -28,5 +31,16 @@ public class HubNPC : MonoBehaviour
             _dialogueSystemTrigger = GetComponent<DialogueSystemTrigger>();
         }
         _dialogueSystemTrigger.conversation = conversationTitle;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("InteractTrigger"))
+        {
+            if (hasInteractedThisRun == false)
+            {
+
+            }
+        }
     }
 }
