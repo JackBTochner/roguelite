@@ -143,6 +143,119 @@ public class EnemySpawnWave
         return complete;
     }
 
+    //public IEnumerator SpawnWave(TransformAnchor _playerAnchor)
+    //{
+    //    currentEnemies = enemiesToSpawn.Length;
+    //    _delayCompleteTime = Time.time + waveCompleteDelay;
+    //    if (nextWaveSpawnTrigger != null)
+    //        nextWaveSpawnTrigger
+    //            .playerEnteredTrigger
+    //            .AddListener(PlayerEnteredTrigger);
+
+    //    yield return new WaitForSeconds(waveInitialSpawnDelay);
+
+    //    Vector3[] spawnLocation = new Vector3[enemiesToSpawn.Length];
+
+    //    for (int i = 0; i < enemiesToSpawn.Length; i++)
+    //    {
+
+    //        //while (Enemy.enemyAlive >= 3)
+    //        //{
+    //        //    yield return null;
+    //        //}
+
+
+    //        if (_playerAnchor && _playerAnchor.Value != null)
+    //            spawnLocation[i] = PickRandomSpawnPoint(_playerAnchor.Value.position);
+    //        else 
+    //            spawnLocation[i] = PickRandomSpawnPoint(Vector3.zero);
+    //        GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
+    //    }
+    //    yield return new WaitForSeconds(individualSpawnDelay);
+
+    //    while (Enemy.enemyAlive >= 3)
+    //    {
+    //        yield return null;
+    //    }
+
+    //    for (int e = 0; e < enemiesToSpawn.Length; e++)
+    //    {
+    //        Enemy enemy = GameObject.Instantiate(enemiesToSpawn[e], spawnLocation[e], Quaternion.identity).GetComponent<Enemy>();
+    //        enemy.OnEnemyDied.AddListener(EnemyKilled);
+    //    }
+    //}
+    //public IEnumerator SpawnWave(TransformAnchor _playerAnchor)
+    //{
+    //    currentEnemies = enemiesToSpawn.Length;
+    //    _delayCompleteTime = Time.time + waveCompleteDelay;
+    //    if (nextWaveSpawnTrigger != null)
+    //        nextWaveSpawnTrigger
+    //            .playerEnteredTrigger
+    //            .AddListener(PlayerEnteredTrigger);
+
+    //    yield return new WaitForSeconds(waveInitialSpawnDelay);
+
+    //    Vector3[] spawnLocation = new Vector3[enemiesToSpawn.Length];
+
+    //    for (int i = 0; i < enemiesToSpawn.Length; i++)
+    //    {
+    //        while (Enemy.enemyAlive >= 3)
+    //        {
+    //            yield return null;
+    //        }
+
+    //        if (_playerAnchor && _playerAnchor.Value != null)
+    //            spawnLocation[i] = PickRandomSpawnPoint(_playerAnchor.Value.position);
+    //        else
+    //            spawnLocation[i] = PickRandomSpawnPoint(Vector3.zero);
+    //        GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
+    //        yield return new WaitForSeconds(individualSpawnDelay);
+
+    //        // Ensure the condition is checked here as well.
+    //        while (Enemy.enemyAlive >= 3)
+    //        {
+    //            yield return null;
+    //        }
+
+    //        Enemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<Enemy>();
+    //        enemy.OnEnemyDied.AddListener(EnemyKilled);
+    //    }
+    //}
+
+    //public IEnumerator SpawnWave(TransformAnchor _playerAnchor)
+    //{
+    //    currentEnemies = enemiesToSpawn.Length;
+    //    _delayCompleteTime = Time.time + waveCompleteDelay;
+    //    if (nextWaveSpawnTrigger != null)
+    //        nextWaveSpawnTrigger
+    //            .playerEnteredTrigger
+    //            .AddListener(PlayerEnteredTrigger);
+
+    //    yield return new WaitForSeconds(waveInitialSpawnDelay);
+
+    //    Vector3[] spawnLocation = new Vector3[enemiesToSpawn.Length];
+
+    //    for (int i = 0; i < enemiesToSpawn.Length; i++)
+    //    {
+    //        while (Enemy.enemyAlive >= 1)
+    //        {
+    //            yield return null; // Wait until the number of alive enemies is less than 3
+    //        }
+
+    //        if (_playerAnchor && _playerAnchor.Value != null)
+    //            spawnLocation[i] = PickRandomSpawnPoint(_playerAnchor.Value.position);
+    //        else
+    //            spawnLocation[i] = PickRandomSpawnPoint(Vector3.zero);
+
+    //        // Instantiate the indicator immediately before spawning the enemy.
+    //        GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
+    //        yield return new WaitForSeconds(individualSpawnDelay);
+
+    //        // Now spawn the enemy
+    //        Enemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<Enemy>();
+    //        enemy.OnEnemyDied.AddListener(EnemyKilled);
+    //    }
+    //}
     public IEnumerator SpawnWave(TransformAnchor _playerAnchor)
     {
         currentEnemies = enemiesToSpawn.Length;
@@ -155,23 +268,50 @@ public class EnemySpawnWave
         yield return new WaitForSeconds(waveInitialSpawnDelay);
 
         Vector3[] spawnLocation = new Vector3[enemiesToSpawn.Length];
-        
-        for (int i = 0; i < enemiesToSpawn.Length; i++)
+
+        int initialSpawnCount = Mathf.Min(3, enemiesToSpawn.Length); // Spawn up to 3 enemies initially
+
+        // Initial spawn of up to 3 enemies
+        for (int i = 0; i < initialSpawnCount; i++)
         {
             if (_playerAnchor && _playerAnchor.Value != null)
                 spawnLocation[i] = PickRandomSpawnPoint(_playerAnchor.Value.position);
-            else 
+            else
                 spawnLocation[i] = PickRandomSpawnPoint(Vector3.zero);
+
             GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
         }
         yield return new WaitForSeconds(individualSpawnDelay);
 
-        for (int e = 0; e < enemiesToSpawn.Length; e++)
+        for (int i = 0; i < initialSpawnCount; i++)
         {
-            Enemy enemy = GameObject.Instantiate(enemiesToSpawn[e], spawnLocation[e], Quaternion.identity).GetComponent<Enemy>();
+            Enemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<Enemy>();
+            enemy.OnEnemyDied.AddListener(EnemyKilled);
+        }
+
+        // Continue spawning remaining enemies one by one
+        for (int i = initialSpawnCount; i < enemiesToSpawn.Length; i++)
+        {
+            while (Enemy.enemyAlive >= 3)
+            {
+                yield return null; // Wait until the number of alive enemies is less than 3
+            }
+
+            if (_playerAnchor && _playerAnchor.Value != null)
+                spawnLocation[i] = PickRandomSpawnPoint(_playerAnchor.Value.position);
+            else
+                spawnLocation[i] = PickRandomSpawnPoint(Vector3.zero);
+
+            GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
+            yield return new WaitForSeconds(individualSpawnDelay);
+
+            Enemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<Enemy>();
             enemy.OnEnemyDied.AddListener(EnemyKilled);
         }
     }
+
+
+
 
     private void PlayerEnteredTrigger(Collider col)
     {

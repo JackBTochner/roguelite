@@ -27,15 +27,24 @@ public class Enemy : Hittable
 
     public UnityEvent OnEnemyDiedMeleeExplodeWisp = new UnityEvent();
 
+    public static int enemyAlive = 0;
+
     void OnEnable()
     {
+
+        enemyAlive++;
+
+
         playerTransformAnchor.OnAnchorProvided += AssignAITarget;
         if (playerTransformAnchor.isSet)
             AssignAITarget();
     }
 
     void OnDisable()
-    { 
+    {
+
+        enemyAlive--;
+
         playerTransformAnchor.OnAnchorProvided -= AssignAITarget;
     }
 
