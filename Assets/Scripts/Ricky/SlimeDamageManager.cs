@@ -6,7 +6,7 @@ using Player;
 public class SlimeDamageManager : MonoBehaviour
 {
     // Damage
-    public static int slimeDamage = 20;
+    public static int slimeDamage = 5;
     // Damage once in 0.5 second
     public static float damagetime = 0.5f;
     // Time calculate 

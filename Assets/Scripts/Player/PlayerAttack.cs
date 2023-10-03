@@ -193,7 +193,7 @@ public class AttackType
         hurtbox.gameObject.SetActive(true);
     }
 
-    public void EndAttack() 
+    public void EndAttack()
     {
         attackContainer.SetActive(false);
         hurtbox.gameObject.SetActive(false);

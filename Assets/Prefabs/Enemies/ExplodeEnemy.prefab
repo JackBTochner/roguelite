@@ -332,6 +332,9 @@ MonoBehaviour:
       m_Calls: []
   hitParticle: {fileID: 3479186766190414694, guid: 647402e3d9351aa4187e6d2494882a16,
     type: 3}
+  OnEnemyDiedMeleeExplodeWisp:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &3629879063316945944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,7 +473,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!95 &6855407244047730734
 Animator:
