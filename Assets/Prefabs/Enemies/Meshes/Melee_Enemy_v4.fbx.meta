@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 372c31fef4d007149971ebebd5489e79
+guid: 6ce5566d21b5e2944b8b7584153c98fa
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: d3731fff4a424494aa999e1bd29f9c3f, type: 2}
+    second: {fileID: 2100000, guid: 7d27a35a09cb41b47a317b3df7540559, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -215,7 +215,7 @@ ModelImporter:
       name: ARMATURE_MELEE|MeleeAttackCombo
       takeName: ARMATURE_MELEE|MeleeAttackCombo
       internalID: -5854207897546953569
-      firstFrame: 0
+      firstFrame: 3
       lastFrame: 46
       wrapMode: 0
       orientationOffsetY: 0
@@ -335,7 +335,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

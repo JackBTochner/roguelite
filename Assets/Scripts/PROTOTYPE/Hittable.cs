@@ -7,11 +7,6 @@ public class Hittable : MonoBehaviour
     //TODO: Camera shake
     public float health;
 
-    public float duration;
-    public float intensity;
-
-    public int poisonDamage;
-
     public GameObject hitMarker = default;
     public GameObject critMarker = default;
     

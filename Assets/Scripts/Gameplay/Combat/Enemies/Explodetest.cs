@@ -47,7 +47,7 @@ public class Explodetest : MonoBehaviour
         // Do the explosion animation.
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         // KILL
-        GetComponent<Enemy>().Die();
+        GetComponent<OldEnemy>().Die();
         // let player take damage, when in the damage distance.
         // Get the current value of the player component "PlayerCharacter".
         PlayerCharacter playerCharacter = playerTransformAnchor.Value.GetComponent<PlayerCharacter>();

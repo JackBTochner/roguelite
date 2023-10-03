@@ -11,7 +11,7 @@ public class JumpEnemy : MonoBehaviour
     private Rigidbody enemyRB;
 
     private CharacterController playerController;
-    public Enemy enemyBase = default;
+    public OldEnemy enemyBase = default;
     private bool isAlive = true;
     public bool hasPlayer = false;
     public int damagedelt = 20;
@@ -35,14 +35,14 @@ public class JumpEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemyBase = GetComponent<Enemy>();
+        enemyBase = GetComponent<OldEnemy>();
         // Get the rigibody component of the current object "Jump Enemy".
         enemyRB = GetComponent<Rigidbody>();
         // Start the jumping coroutine
         StartCoroutine(waitForJump());
     }
 
-    void EnemyDied(Enemy enemy)
+    void EnemyDied(OldEnemy enemy)
     {
         Debug.Log("Spit out player");
         isAlive = false;

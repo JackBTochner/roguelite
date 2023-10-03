@@ -37,7 +37,7 @@ public class MeleeExplodeWisp : MonoBehaviour
     void Start()
     {
         Debug.Log("HandleEnemyDeath called");
-        GetComponent<Enemy>().OnEnemyDiedMeleeExplodeWisp.AddListener(HandleEnemyDeath);
+        GetComponent<OldEnemy>().OnEnemyDiedMeleeExplodeWisp.AddListener(HandleEnemyDeath);
 
         // Get rotation
         startRotation = Sword.transform.localRotation;

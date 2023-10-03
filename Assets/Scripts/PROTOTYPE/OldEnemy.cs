@@ -2,7 +2,7 @@ using UnityEngine;
 using Pathfinding;
 using UnityEngine.Events;
 
-public class Enemy : Hittable
+public class OldEnemy : Hittable
 {
     public Animator anim;
     public Rigidbody rb;
@@ -20,8 +20,8 @@ public class Enemy : Hittable
 
     bool died;
 
-    public UnityEvent<Enemy> OnEnemyDied = new UnityEvent<Enemy>();
-    public UnityEvent<Enemy> OnTakeDigDamage = new UnityEvent<Enemy>();
+    public UnityEvent<OldEnemy> OnEnemyDied = new UnityEvent<OldEnemy>();
+    public UnityEvent<OldEnemy> OnTakeDigDamage = new UnityEvent<OldEnemy>();
 
     public GameObject hitParticle;
 
