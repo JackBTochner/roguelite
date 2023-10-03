@@ -52,20 +52,29 @@ MonoBehaviour:
     attackContainer: {fileID: 8468983340162275628}
     hurtbox: {fileID: 341757424823561804}
     vfx: {fileID: 6103464200360397008}
+    overridePlayerMovement: 0
+    overridePlayerMovementLifetime: 0
+    dashToNearestTarget: 0
     attackLifeTime: 0.46
   - name: BiteLunge
     attackContainer: {fileID: 4344015306845642236}
     hurtbox: {fileID: 19122389187762779}
     vfx: {fileID: 4428018499462365832}
+    overridePlayerMovement: 1
+    overridePlayerMovementLifetime: 0.1
+    dashToNearestTarget: 1
     attackLifeTime: 0.46
   - name: TailSwipe
     attackContainer: {fileID: 5497924111399019663}
     hurtbox: {fileID: 6289127435861974552}
     vfx: {fileID: 8912638507027370578}
+    overridePlayerMovement: 1
+    overridePlayerMovementLifetime: 0.3
+    dashToNearestTarget: 0
     attackLifeTime: 0.46
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
-  _comboResetDelay: 0.8
-  _comboMaxDelay: 0.8
+  _comboResetDelay: 0.6
+  _comboMaxDelay: 0.6
   _comboMinDelay: 0.25
   _comboMaxStep: 2
   _comboHitStep: 0
@@ -586,6 +595,8 @@ MonoBehaviour:
   canDash: 1
   lastHorizontalVelocity: {x: 0, y: 0, z: 0}
   _playerInputAnchor: {fileID: 11400000, guid: 30b1a5f313dd84142b35b14dc4a55c38, type: 2}
+  playerCharacter: {fileID: 0}
+  attackOverridesMovement: 0
   _playerMovementAnchor: {fileID: 11400000, guid: 7533e459dfa6fbf429603e3f45dd8aaa,
     type: 2}
 --- !u!114 &248407811704461207
@@ -1597,7 +1608,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.43070087
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
@@ -2417,12 +2428,12 @@ PrefabInstance:
     - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.055789582
+      value: -0.055789586
       objectReference: {fileID: 0}
     - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.032326587
+      value: -0.03232659
       objectReference: {fileID: 0}
     - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
         type: 3}

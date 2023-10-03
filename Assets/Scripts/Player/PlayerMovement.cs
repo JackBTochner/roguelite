@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Users;
+using DG.Tweening;
 
 namespace Player
 {
@@ -67,9 +68,11 @@ namespace Player
         private Vector3 playerRight;
 
         public PlayerCharacter playerCharacter;
+        public bool attackOverridesMovement = false;
 
         [Header("Broadcasting on")]
         [SerializeField] private PlayerMovementAnchor _playerMovementAnchor = default;
+
 
         private void Awake()
         {
@@ -119,7 +122,6 @@ namespace Player
              * "yield return new WaitForSeconds(0.2f);" will run so now after 0.2 second 
              * set invulnerable to false.
              */
-            
             playerCharacter.invulnerable = true;
             //
             allowMovement = false;
@@ -133,7 +135,6 @@ namespace Player
                 controller.Move(lastHorizontalVelocity.normalized * dashSpeed * Time.deltaTime);
                 yield return null;
             }
-            
             isDashing =false;
             allowMovement = true;
             allowRotation = true;
@@ -152,12 +153,27 @@ namespace Player
             yield return new WaitForSeconds(dashCoolTime);
             canDash = true;
         }
+
+        public void MoveTowardsTarget(Transform target, float duration)
+        {
+            if (target)
+            {
+                gfxTransform.LookAt(target, Vector3.up);
+                transform.DOMove(TargetOffset(target.position), duration);
+            }
+        }
+
+        public Vector3 TargetOffset(Vector3 targetPosition)
+        {
+            return Vector3.MoveTowards(targetPosition, transform.position, .95f);
+        }
+
         private void Update()
         {
             ApplyGravity();
-            if(allowMovement)
+            if(allowMovement && !attackOverridesMovement)
                 HandleMovement();
-            if(aimTransform && allowRotation)
+            if(aimTransform && allowRotation && !attackOverridesMovement)
                 HandleRotation();
             HandleAnimation();
         }

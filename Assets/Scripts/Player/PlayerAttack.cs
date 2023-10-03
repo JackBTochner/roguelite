@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Pathfinding;
 using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -35,6 +36,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private VoidEventChannelSO _startDeathEvent = default;
     public PlayerMovement playerMovement;
     public PlayerCharacter playerCharacter;
+
 
 	private void Awake()
     {
@@ -135,6 +137,23 @@ public class PlayerAttack : MonoBehaviour
 
     public void StartAttack(AttackType attackType)
     {
+        if (attackType.overridePlayerMovement)
+            StartCoroutine(OverrideMovementCoroutine(attackType.overridePlayerMovementLifetime));
+        if (attackType.dashToNearestTarget)
+        {
+            RaycastHit hit;
+            if (Physics.SphereCast(transform.position, 3f, transform.forward, out hit, 2.5f))
+            {
+                if (hit.transform.CompareTag("Enemy"))
+                    playerMovement.MoveTowardsTarget(hit.transform, attackType.overridePlayerMovementLifetime);
+            }
+            else
+            { 
+                playerMovement.MoveTowardsTarget(null, attackType.overridePlayerMovementLifetime);
+            }
+            
+        }
+            
         attackType.attackCoroutine = StartCoroutine(attackType.AttackCoroutine());
     }
     public void StopAttack(AttackType attackType)
@@ -142,6 +161,13 @@ public class PlayerAttack : MonoBehaviour
         attackType.EndAttack();
         if (attackType.attackCoroutine != null)
             StopCoroutine(attackType.attackCoroutine);
+    }
+
+    public IEnumerator OverrideMovementCoroutine(float lifetime)
+    {
+        playerMovement.attackOverridesMovement = true;
+        yield return new WaitForSeconds(lifetime);
+        playerMovement.attackOverridesMovement = false;
     }
 }
 
@@ -152,8 +178,11 @@ public class AttackType
     public GameObject attackContainer;
     public AttackObject hurtbox;
     public VisualEffect vfx;
+    public bool overridePlayerMovement = false;
+    public float overridePlayerMovementLifetime = 0.1f;
+    public bool dashToNearestTarget = false;
 
-    public float attackLifeTime = 0.1f;
+    public float attackLifeTime = 0.46f;
 
     public Coroutine attackCoroutine;
 
@@ -169,7 +198,7 @@ public class AttackType
         attackContainer.SetActive(false);
         hurtbox.gameObject.SetActive(false);
     }
-
+    
     public IEnumerator AttackCoroutine()
     {
         BeginAttack();
