@@ -89,7 +89,6 @@ namespace Player
                 _updateStaminaUI.RaiseEvent();
             // Will ALWAYS start player as being able to dig when loading into map.
             SetDigUI(true);
-
         }
 
         private void Start()

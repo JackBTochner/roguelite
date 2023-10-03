@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.VFX;
 
-public class AttackTemplate : MonoBehaviour
+public class PlayerAttack : MonoBehaviour
 {
     //public ObjectPooler objectPooler;
     [SerializeField] private AttackType[] attacks;
@@ -32,6 +33,8 @@ public class AttackTemplate : MonoBehaviour
 
     [Header("Listening on")]
     [SerializeField] private VoidEventChannelSO _startDeathEvent = default;
+    public PlayerMovement playerMovement;
+    public PlayerCharacter playerCharacter;
 
 	private void Awake()
     {
@@ -63,7 +66,7 @@ public class AttackTemplate : MonoBehaviour
 
     void TryAttack()
     {
-        if (_canAttack)
+        if (_canAttack && !playerCharacter.isDigging)
         {
             if(_updateAttackUI != null)
 				_updateAttackUI.RaiseEvent(true);

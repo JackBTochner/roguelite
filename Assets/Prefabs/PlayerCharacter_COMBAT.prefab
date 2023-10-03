@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5964258001717662176}
+  - component: {fileID: 5677285095752961640}
   m_Layer: 3
   m_Name: ATTACKS
   m_TagString: Untagged
@@ -34,6 +35,48 @@ Transform:
   m_Father: {fileID: 4093581273836692510}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5677285095752961640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233956624085634881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c2e07b360c8b84c9db54daf7b2d916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacks:
+  - name: SnoutSwipe
+    attackContainer: {fileID: 8468983340162275628}
+    hurtbox: {fileID: 341757424823561804}
+    vfx: {fileID: 6103464200360397008}
+    attackLifeTime: 0.46
+  - name: BiteLunge
+    attackContainer: {fileID: 4344015306845642236}
+    hurtbox: {fileID: 19122389187762779}
+    vfx: {fileID: 4428018499462365832}
+    attackLifeTime: 0.46
+  - name: TailSwipe
+    attackContainer: {fileID: 5497924111399019663}
+    hurtbox: {fileID: 6289127435861974552}
+    vfx: {fileID: 8912638507027370578}
+    attackLifeTime: 0.46
+  inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
+  _comboResetDelay: 0.8
+  _comboMaxDelay: 0.8
+  _comboMinDelay: 0.25
+  _comboMaxStep: 2
+  _comboHitStep: 0
+  _lastSuccessfulAttackTime: 0
+  _animator: {fileID: 6933420730263538374}
+  _audioPlayer: {fileID: 5125151912657451895}
+  _canAttack: 1
+  _updateAttackUI: {fileID: 11400000, guid: b1988c895f589b14fbbb81f14871e9ab, type: 2}
+  _startDeathEvent: {fileID: 11400000, guid: 0223ef6ce32cd3f49abd592239c8bb34, type: 2}
+  playerMovement: {fileID: 1723506523967855880}
+  playerCharacter: {fileID: 248407811704461207}
 --- !u!1 &673654281541197107
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1610387913264193019
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1005,7 +1048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3590575991436919140
 Transform:
   m_ObjectHideFlags: 0
@@ -1554,7 +1597,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.5
+  m_FillAmount: 0.43070087
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
@@ -3744,10 +3787,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 6933420730263538374}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 88337d45af9883246b1a7515938be1eb,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 910950424455959017}
   m_SourcePrefab: {fileID: 100100000, guid: 88337d45af9883246b1a7515938be1eb, type: 3}
 --- !u!1 &3591326868003259349 stripped
 GameObject:
@@ -3775,46 +3814,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &910950424455959017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3591326868003259349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92c2e07b360c8b84c9db54daf7b2d916, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attacks:
-  - name: SnoutSwipe
-    attackContainer: {fileID: 8468983340162275628}
-    hurtbox: {fileID: 341757424823561804}
-    vfx: {fileID: 6103464200360397008}
-    attackLifeTime: 0.46
-  - name: BiteLunge
-    attackContainer: {fileID: 4344015306845642236}
-    hurtbox: {fileID: 19122389187762779}
-    vfx: {fileID: 4428018499462365832}
-    attackLifeTime: 0.46
-  - name: TailSwipe
-    attackContainer: {fileID: 5497924111399019663}
-    hurtbox: {fileID: 6289127435861974552}
-    vfx: {fileID: 8912638507027370578}
-    attackLifeTime: 0.46
-  inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
-  _comboResetDelay: 0.8
-  _comboMaxDelay: 0.8
-  _comboMinDelay: 0.25
-  _comboMaxStep: 2
-  _comboHitStep: 0
-  _lastSuccessfulAttackTime: 0
-  _animator: {fileID: 6933420730263538374}
-  _audioPlayer: {fileID: 5125151912657451895}
-  _canAttack: 1
-  _updateAttackUI: {fileID: 11400000, guid: b1988c895f589b14fbbb81f14871e9ab, type: 2}
-  _startDeathEvent: {fileID: 11400000, guid: 0223ef6ce32cd3f49abd592239c8bb34, type: 2}
 --- !u!4 &4223572083178133871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 88337d45af9883246b1a7515938be1eb,
