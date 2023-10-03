@@ -65,6 +65,9 @@ namespace Player
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
         [SerializeField] private TimeManagerAnchor _timeManagerAnchor = default;
         [SerializeField] private TransformAnchor _postProcessTransformAnchor = default;
+
+        public PlayerAttack playerAttack;
+
         private PlayerManager _playerManager;
         public AudioSource audioSource;
         public AudioSource battlemusic;
@@ -173,6 +176,7 @@ namespace Player
         private IEnumerator DigEntry()
         {
             playerAnim.SetTrigger("Dig_Entry");
+            playerAttack.ForceResetAttackCombo();
             Instantiate(digDownParticle, transform.position, Quaternion.LookRotation(Vector3.up));
             
             foreach (var highlighter in _projectileHighlighters.Items)
@@ -189,6 +193,7 @@ namespace Player
         IEnumerator DigExit(float freezeTime)
         {
             isDigging = false;
+            playerAttack.ForceResetAttackCombo();
             _camShakeEvent.RaiseEvent();
             playerGFX.SetActive(true);
             playerAnim.SetTrigger("Dig_Exit");

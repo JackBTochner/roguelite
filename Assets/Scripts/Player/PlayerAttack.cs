@@ -110,7 +110,6 @@ public class PlayerAttack : MonoBehaviour
     // Find a fix?
     public void ForceResetAttackCombo()
     {
-        Debug.Log("FORCERESET ATTACK COMBO");
         foreach (var attack in attacks)
         {
             StopAttack(attack);

@@ -71,7 +71,7 @@ public class Enemy : Hittable
             OnTakeDigDamage.Invoke(this);
         if (health > 0)
         {
-            rb.AddForce(damageInfo.Direction * damageInfo.Knockback);
+            rb.AddForce(Vector3.ProjectOnPlane(damageInfo.Direction, Vector3.up) * damageInfo.Knockback, ForceMode.Impulse);
             lookAt.forward = damageInfo.Direction;
             Instantiate(hitParticle, transform.position, lookAt.rotation);
 
