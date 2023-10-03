@@ -66,6 +66,8 @@ namespace Player
         private Vector3 playerForward;
         private Vector3 playerRight;
 
+        public PlayerCharacter playerCharacter;
+
         [Header("Broadcasting on")]
         [SerializeField] private PlayerMovementAnchor _playerMovementAnchor = default;
 
@@ -73,6 +75,7 @@ namespace Player
         {
             Initialise();
             _playerMovementAnchor.Provide(this);
+            playerCharacter = GetComponent<PlayerCharacter>();
         }
         private void OnEnable()
         {
@@ -98,7 +101,7 @@ namespace Player
         {
             // Test the jump key is working.
             //Debug.Log("Test: Jump Key working");
-            if (canDash)
+            if (canDash && !playerCharacter.isDigging)
             {
                 StartCoroutine(BeginDash());
             }
@@ -116,7 +119,7 @@ namespace Player
              * "yield return new WaitForSeconds(0.2f);" will run so now after 0.2 second 
              * set invulnerable to false.
              */
-            PlayerCharacter playerCharacter = GetComponent<PlayerCharacter>();
+            
             playerCharacter.invulnerable = true;
             //
             allowMovement = false;
