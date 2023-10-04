@@ -10,7 +10,7 @@ public class Enemy : Hittable
 {
     public Animator anim;
     public Rigidbody rb;
-
+    public GameObject[] attackObjects;
     public GameObject[] itemDrops;
     public float dropPercentage = 10;
     public GameObject hitParticle;
@@ -56,14 +56,14 @@ public class Enemy : Hittable
     [Header("Listening on")]
     public TransformAnchor playerTransformAnchor = default;
 
-    public float DistanceToPlayer()
+    float DistanceToPlayer()
     {
         if(playerTarget)
             return Vector3.Distance(transform.position, playerTarget.position);
         return 10;
     }
 
-    public void OrientTowards(Vector3 targetLocation, float turnSpeedMultiplier)
+    void OrientTowards(Vector3 targetLocation, float turnSpeedMultiplier)
     { 
         Vector3 targetDirection  = (targetLocation - transform.position).normalized;
         if(targetDirection.sqrMagnitude != 0f)
@@ -77,6 +77,14 @@ public class Enemy : Hittable
     {
         aiDestination.target = playerTransformAnchor.Value;
         playerTarget = playerTransformAnchor.Value;
+    }
+
+    void SetActiveAttackObjects(bool enable)
+    { 
+        foreach (var obj in attackObjects)
+        {
+            obj.SetActive(enable);
+        }
     }
 
     IEnumerator IdleState()
@@ -119,8 +127,10 @@ public class Enemy : Hittable
         yield return new WaitForSeconds(attackPause);
         anim.SetTrigger("Attack");
         // Enable damage colliders
+        SetActiveAttackObjects(true);
         yield return new WaitForSeconds(attackTime);
         // Disable damage colliders
+        SetActiveAttackObjects(false);
         isAttacking = false;
         while (currentState == AIState.Attacking)
         {

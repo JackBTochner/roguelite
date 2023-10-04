@@ -2130,7 +2130,7 @@ Transform:
   - {fileID: 8548921072139167364}
   - {fileID: 3154930332664474247}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8409118806247872677
 MonoBehaviour:
@@ -2155,6 +2155,9 @@ MonoBehaviour:
       m_Calls: []
   anim: {fileID: 4349644102368175069}
   rb: {fileID: 8548921072062103790}
+  attackObjects:
+  - {fileID: 7773911501398967874}
+  - {fileID: 7773911502691981732}
   itemDrops: []
   dropPercentage: 10
   hitParticle: {fileID: 3479186766190414694, guid: 647402e3d9351aa4187e6d2494882a16,
