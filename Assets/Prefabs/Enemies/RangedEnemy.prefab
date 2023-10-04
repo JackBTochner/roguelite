@@ -1320,7 +1320,7 @@ MonoBehaviour:
   maxAttackRange: 15
   minAttackRange: 1
   retreatRadius: 1
-  turnSpeedMultiplier: 3
+  turnSpeedMultiplier: 10
   attackTime: 0
   attackPause: 1
   currentState: 0

@@ -1557,7 +1557,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.29539922
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
@@ -1651,7 +1651,7 @@ MonoBehaviour:
       Chance: 50
       Multiplier: 1.5
       Ignore: 0
-    Knockback: 15
+    Knockback: 5
 --- !u!135 &3896151020917793843
 SphereCollider:
   m_ObjectHideFlags: 0

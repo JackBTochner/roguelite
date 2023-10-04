@@ -2181,11 +2181,11 @@ MonoBehaviour:
   OnEnemyDiedMeleeExplodeWisp:
     m_PersistentCalls:
       m_Calls: []
-  detectionRadius: 10
+  detectionRadius: 20
   maxAttackRange: 2
   minAttackRange: 1
   retreatRadius: 3
-  turnSpeedMultiplier: 3
+  turnSpeedMultiplier: 10
   attackTime: 1.5
   attackPause: 0.2
   currentState: 0
