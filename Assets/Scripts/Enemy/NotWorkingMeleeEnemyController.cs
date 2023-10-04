@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class MeleeEnemyController : StateMachine
+public class NotWorkingMeleeEnemyController : StateMachine
 {
-    public Enemy enemy;
+    public NotWorkingEnemy enemy;
     public Animator anim;
     public Rigidbody rb;
     public GameObject[] attackObjects;
@@ -16,8 +16,6 @@ public class MeleeEnemyController : StateMachine
     public float retreatRadius = 3f;
     public float turnSpeedMultiplier = 3f;
     public AIPath ai;
-
-    
 
     public float attackTime = 1.5f;
     public float attackPause = 0.1f;
@@ -47,16 +45,25 @@ public class MeleeEnemyController : StateMachine
     void OnEnable()
     {
         _playerTransformAnchor.OnAnchorProvided += AssignTarget;
+        ai.onSearchPath += Update;
     }
 
     void OnDisable()
     { 
         _playerTransformAnchor.OnAnchorProvided -= AssignTarget;
+        ai.onSearchPath -= Update;
     }
 
     void AssignTarget()
     {
         playerTarget = _playerTransformAnchor.Value;
+    }
+
+    void Update()
+    {
+        Debug.Log(ai);
+        if (playerTarget)
+            ai.destination = playerTarget.position;
     }
 
     public float DistanceToPlayer()
@@ -82,13 +89,11 @@ public class MeleeEnemyController : StateMachine
     }
 }
 
-
-
 public class MeleeIdle : BaseState
 {
-    protected MeleeEnemyController sm;
-    public MeleeIdle (MeleeEnemyController stateMachine) : base("MeleeIdle", stateMachine) {
-        sm = (MeleeEnemyController)this.stateMachine;
+    protected NotWorkingMeleeEnemyController sm;
+    public MeleeIdle (NotWorkingMeleeEnemyController stateMachine) : base("MeleeIdle", stateMachine) {
+        sm = (NotWorkingMeleeEnemyController)this.stateMachine;
     }
 
     public override void UpdateLogic()
@@ -113,9 +118,9 @@ public class MeleeIdle : BaseState
 
 public class MeleeMoveToTarget : BaseState
 { 
-    protected MeleeEnemyController sm;
-    public MeleeMoveToTarget (MeleeEnemyController stateMachine) : base("MeleeMovingToTarget", stateMachine) {
-        sm = (MeleeEnemyController)this.stateMachine;
+    protected NotWorkingMeleeEnemyController sm;
+    public MeleeMoveToTarget (NotWorkingMeleeEnemyController stateMachine) : base("MeleeMovingToTarget", stateMachine) {
+        sm = (NotWorkingMeleeEnemyController)this.stateMachine;
     }
 
     public override void Enter()
@@ -151,9 +156,9 @@ public class MeleeMoveToTarget : BaseState
 
 public class MeleeAttacking : BaseState
 { 
-    protected MeleeEnemyController sm;
-    public MeleeAttacking (MeleeEnemyController stateMachine) : base("MeleeAttacking", stateMachine) {
-        sm = (MeleeEnemyController)this.stateMachine;
+    protected NotWorkingMeleeEnemyController sm;
+    public MeleeAttacking (NotWorkingMeleeEnemyController stateMachine) : base("MeleeAttacking", stateMachine) {
+        sm = (NotWorkingMeleeEnemyController)this.stateMachine;
     }
     private bool _isAttacking = true;
     private bool _isInterruptible = false;
@@ -226,9 +231,9 @@ public class MeleeAttacking : BaseState
 
 public class MeleeRetreating : BaseState
 { 
-    protected MeleeEnemyController sm;
-    public MeleeRetreating (MeleeEnemyController stateMachine) : base("MeleeRetreating", stateMachine) {
-        sm = (MeleeEnemyController)this.stateMachine;
+    protected NotWorkingMeleeEnemyController sm;
+    public MeleeRetreating (NotWorkingMeleeEnemyController stateMachine) : base("MeleeRetreating", stateMachine) {
+        sm = (NotWorkingMeleeEnemyController)this.stateMachine;
     }
 
     public override void Enter()
@@ -256,9 +261,9 @@ public class MeleeRetreating : BaseState
 
 public class MeleeOnHit : BaseState
 {
-    protected MeleeEnemyController sm;
-    public MeleeOnHit (MeleeEnemyController stateMachine) : base("MeleeOnHit", stateMachine)  {
-        sm = (MeleeEnemyController)this.stateMachine;
+    protected NotWorkingMeleeEnemyController sm;
+    public MeleeOnHit (NotWorkingMeleeEnemyController stateMachine) : base("MeleeOnHit", stateMachine)  {
+        sm = (NotWorkingMeleeEnemyController)this.stateMachine;
     }
 
     public override void Enter()

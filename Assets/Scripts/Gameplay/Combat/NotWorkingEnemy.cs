@@ -5,7 +5,7 @@ using Pathfinding;
 using UnityEngine.Events;
 using UnityEditor.EditorTools;
 
-public class Enemy : Hittable
+public class NotWorkingEnemy : Hittable
 {
     public Animator anim;
     public Rigidbody rb;
@@ -22,8 +22,20 @@ public class Enemy : Hittable
     [SerializeField] private TransformAnchor _playerTransformAnchor = default;
 
     [Header("Broadcasting on")]
-    public UnityEvent<Enemy> OnEnemyDied = new UnityEvent<Enemy>();
-    public UnityEvent<Enemy> OnTakeDigDamage = new UnityEvent<Enemy>();
+    public UnityEvent<NotWorkingEnemy> OnEnemyDied = new UnityEvent<NotWorkingEnemy>();
+    public UnityEvent<NotWorkingEnemy> OnTakeDigDamage = new UnityEvent<NotWorkingEnemy>();
+
+    public static int enemyAlive = 0;
+
+    void OnEnable()
+    {
+        enemyAlive++;
+    }
+
+    void OnDisable()
+    {
+        enemyAlive--;
+    }
 
     override public void Hit(DamageInfo damageInfo)
     {

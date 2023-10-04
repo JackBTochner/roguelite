@@ -31,9 +31,7 @@ public class OldEnemy : Hittable
 
     void OnEnable()
     {
-
         enemyAlive++;
-
 
         playerTransformAnchor.OnAnchorProvided += AssignAITarget;
         if (playerTransformAnchor.isSet)

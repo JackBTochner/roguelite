@@ -125,7 +125,7 @@ public class EnemySpawnWave
     [Header("Wave Details")]
     public float spawnRadius = 10f;
 
-    public OldEnemy[] enemiesToSpawn;
+    public Enemy[] enemiesToSpawn;
 
     [HideInInspector]
     public int currentEnemies;
@@ -285,14 +285,14 @@ public class EnemySpawnWave
 
         for (int i = 0; i < initialSpawnCount; i++)
         {
-            OldEnemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<OldEnemy>();
+            Enemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<Enemy>();
             enemy.OnEnemyDied.AddListener(EnemyKilled);
         }
 
         // Continue spawning remaining enemies one by one
         for (int i = initialSpawnCount; i < enemiesToSpawn.Length; i++)
         {
-            while (OldEnemy.enemyAlive >= 3)
+            while (NotWorkingEnemy.enemyAlive >= 3)
             {
                 yield return null; // Wait until the number of alive enemies is less than 3
             }
@@ -305,7 +305,7 @@ public class EnemySpawnWave
             GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
             yield return new WaitForSeconds(individualSpawnDelay);
 
-            OldEnemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<OldEnemy>();
+            Enemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<Enemy>();
             enemy.OnEnemyDied.AddListener(EnemyKilled);
         }
     }
@@ -315,7 +315,7 @@ public class EnemySpawnWave
         triggeredNextWave = true;
     }
 
-    private void EnemyKilled(OldEnemy enemy)
+    private void EnemyKilled(Enemy enemy)
     {
         if (currentEnemies - 1 <= 0)
             currentEnemies = 0;
