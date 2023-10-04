@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
-public class DebugKeys : MonoBehaviour
+public class DebugKeysHub : MonoBehaviour
 {
-    private bool keyboardkeys;
+    private bool keyboardkeys = false;
     [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
-    public ScoreManager ScoreManager;
-
     // Start is called before the first frame update
     void Start()
     {
         keyboardkeys = false;
-        ScoreManager = FindObjectOfType<ScoreManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (keyboardkeys == false && Input.GetKeyDown(KeyCode.P))
         {
             Debug.Log("Start debuging");
@@ -27,28 +27,25 @@ public class DebugKeys : MonoBehaviour
             StartCoroutine(DebugWaitTime());
             StartCoroutine(Debugtime());
         }
+
         if (keyboardkeys == true && Input.GetKeyDown(KeyCode.O))
         {
             Debug.Log("O");
+            RestartGame();
         }
+
         if (keyboardkeys == true && Input.GetKeyDown(KeyCode.I))
         {
-            if (_runManagerAnchor != null)
-                _runManagerAnchor.Value.ReturnToHub();
-        }
-        if (keyboardkeys == true && Input.GetKeyDown(KeyCode.U))
-        {
+            Debug.Log("I");
             DialogueLua.SetVariable("PlayedConversations", "[]");
-            Time.timeScale = 1.0f;
             SceneManager.LoadScene("Initialization");
         }
-        if (keyboardkeys == true && Input.GetKeyDown(KeyCode.Y))
+
+        if (keyboardkeys == true && Input.GetKeyDown(KeyCode.U))
         {
-            Debug.Log("Y");
-        }
-        if (keyboardkeys == true && Input.GetKeyDown(KeyCode.T))
-        {
-            ScoreManager.clearRankListOnly();
+            Debug.Log("U");
+            if (_runManagerAnchor != null)
+                _runManagerAnchor.Value.ReturnToHub();
         }
     }
 
@@ -58,8 +55,15 @@ public class DebugKeys : MonoBehaviour
         Debug.Log("debuging ended");
         keyboardkeys = false;
     }
+
     IEnumerator DebugWaitTime()
     {
         yield return new WaitForSeconds(0.3f);
+    }
+
+    void RestartGame()
+    {
+        Process.Start(Application.dataPath.Replace("_Data", ".exe"));
+        Application.Quit();
     }
 }
