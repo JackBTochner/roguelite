@@ -15,6 +15,11 @@ public class Enemy : Hittable
     public float dropPercentage = 10;
     public GameObject hitParticle;
 
+    public SkinnedMeshRenderer meshRenderer;
+    public Material onHitMaterial;
+    public float materialChangeDuration = 0.1f;
+    public Material originalMaterial;
+
     public AIPath aiPath;
     public AIDestinationSetter aiDestination;
     public Transform playerTarget;
@@ -201,6 +206,7 @@ public class Enemy : Hittable
 
     public void Start()
     {
+        originalMaterial = meshRenderer.material;
         NextState();
     }
 
@@ -211,6 +217,7 @@ public class Enemy : Hittable
             OnTakeDigDamage.Invoke(this);
         if (health > 0)
         {
+            StartCoroutine(FlashMaterialOnHit());
             //rb.AddForce(Vector3.ProjectOnPlane(damageInfo.Direction, Vector3.up) * damageInfo.Knockback, ForceMode.Impulse);
             Instantiate(hitParticle, transform.position, Quaternion.LookRotation(damageInfo.Direction));
             if(currentState != AIState.Attacking)
@@ -221,6 +228,13 @@ public class Enemy : Hittable
         {
             Die();
         }
+    }
+
+    IEnumerator FlashMaterialOnHit()
+    {
+        meshRenderer.material = onHitMaterial;
+        yield return new WaitForSeconds(materialChangeDuration);
+        meshRenderer.material = originalMaterial;
     }
 
     public virtual void Die()

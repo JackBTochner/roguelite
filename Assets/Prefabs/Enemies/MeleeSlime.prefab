@@ -1369,6 +1369,10 @@ MonoBehaviour:
   dropPercentage: 10
   hitParticle: {fileID: 3479186766190414694, guid: 647402e3d9351aa4187e6d2494882a16,
     type: 3}
+  meshRenderer: {fileID: 3787821217096928672}
+  onHitMaterial: {fileID: 2100000, guid: 09de65983e91b0845a1a6d74b19a1a59, type: 2}
+  materialChangeDuration: 0.1
+  originalMaterial: {fileID: 0}
   aiPath: {fileID: 8548921072062103784}
   aiDestination: {fileID: 8409118806247872676}
   playerTarget: {fileID: 0}
@@ -1778,6 +1782,12 @@ PrefabInstance:
 --- !u!95 &3044516438808752248 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: c2bd2767768ffc94bbdb5b2fbd51ea24,
+    type: 3}
+  m_PrefabInstance: {fileID: 8875150364627226089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &3787821217096928672 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5745420426352836681, guid: c2bd2767768ffc94bbdb5b2fbd51ea24,
     type: 3}
   m_PrefabInstance: {fileID: 8875150364627226089}
   m_PrefabAsset: {fileID: 0}

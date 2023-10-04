@@ -2008,6 +2008,10 @@ MonoBehaviour:
   dropPercentage: 10
   hitParticle: {fileID: 3479186766190414694, guid: 647402e3d9351aa4187e6d2494882a16,
     type: 3}
+  meshRenderer: {fileID: 3731744114767700580}
+  onHitMaterial: {fileID: 2100000, guid: 09de65983e91b0845a1a6d74b19a1a59, type: 2}
+  materialChangeDuration: 0.1
+  originalMaterial: {fileID: 0}
   aiPath: {fileID: 8548921072062103784}
   aiDestination: {fileID: 8409118806247872676}
   playerTarget: {fileID: 0}
