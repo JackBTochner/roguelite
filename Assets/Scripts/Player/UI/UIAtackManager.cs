@@ -23,12 +23,20 @@ public class UIAttackManager : MonoBehaviour
     {
 		if (isAttacking)
 		{
-			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(0.3f);
+			StartCoroutine(UIEffect());
 		}
 		else
 		{
-			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(1f);
+			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(1.0f);
 		}
+    }
+    
+    IEnumerator UIEffect()
+    {
+	    Image img = _attackUIImage.GetComponent<Image>();
+	    img.CrossFadeAlpha(0.1f, 0.1f, false);
+	    yield return new WaitForSeconds(0.1f);
+	    img.CrossFadeAlpha(1.0f, 0.1f, false);
     }
 
 }
