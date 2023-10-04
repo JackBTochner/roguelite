@@ -41,12 +41,12 @@ public class DebugKeysHub : MonoBehaviour
             SceneManager.LoadScene("Initialization");
         }
 
-        if (keyboardkeys == true && Input.GetKeyDown(KeyCode.U))
-        {
-            Debug.Log("U");
-            if (_runManagerAnchor != null)
-                _runManagerAnchor.Value.ReturnToHub();
-        }
+        //if (keyboardkeys == true && Input.GetKeyDown(KeyCode.U))
+        //{
+        //    Debug.Log("U");
+        //    if (_runManagerAnchor != null)
+        //        _runManagerAnchor.Value.ReturnToHub();
+        //}
     }
 
     IEnumerator Debugtime()
