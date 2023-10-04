@@ -50,6 +50,11 @@ namespace Player
         private Coroutine damageFXCoroutine;
         public float damageFXTime = 0.5f;
 
+        public SkinnedMeshRenderer meshRenderer;
+        Material originalMaterial;
+        public Material onHitMaterial;
+        public float materialChangeDuration = 0.1f;
+
         [Header("Broadcasting on")]
         //invulnerable
         public bool invulnerable = false;
@@ -110,6 +115,8 @@ namespace Player
                 Debug.LogWarning(colorAdjustments);
                 originalColorFilter = (Color)colorAdjustments.colorFilter;
             }
+            if(meshRenderer)
+                originalMaterial = meshRenderer.material;
         }
 
         public void Initialise()
@@ -205,7 +212,9 @@ namespace Player
             Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
             playerDigAttack.gameObject.SetActive(true);
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
+            invulnerable = true;
             yield return new WaitForSeconds(freezeTime);
+            invulnerable = false;
             gameObject.GetComponent<PlayerMovement>().allowMovement = true;
             playerDigAttack.gameObject.SetActive(false);
         }
@@ -243,6 +252,9 @@ namespace Player
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
 
+            StartCoroutine(FlashMaterialOnHit());
+            playerAnim.SetTrigger("OnHit");
+
             // Hitstop
             if (_timeManagerAnchor != null)
                 _timeManagerAnchor.Value.SetTimeScale(0.05f, 7, 0.1f);
@@ -255,6 +267,13 @@ namespace Player
             }
             // Camshake
             _camShakeEvent.RaiseEvent();
+        }
+
+        IEnumerator FlashMaterialOnHit()
+        {
+            meshRenderer.material = onHitMaterial;
+            yield return new WaitForSeconds(materialChangeDuration);
+            meshRenderer.material = originalMaterial;
         }
 
         IEnumerator PlayerDie(float delay)
