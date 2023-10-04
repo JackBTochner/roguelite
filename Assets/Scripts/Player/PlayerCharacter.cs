@@ -49,6 +49,7 @@ namespace Player
         public Color DamagedColorFilter;
         private Coroutine damageFXCoroutine;
         public float damageFXTime = 0.5f;
+        public GameObject hitmarker = default;
 
         public SkinnedMeshRenderer meshRenderer;
         Material originalMaterial;
@@ -64,6 +65,7 @@ namespace Player
         [SerializeField] private VoidEventChannelSO _startDeathEvent = default;
         [SerializeField] private VoidEventChannelSO _camShakeEvent = default;
 		[SerializeField] private BoolEventChannelSO _updateDigUI = default;
+        [SerializeField] private IntEventChannel _updateHurtUI = default;
   		[Header("Listening on")]
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
@@ -140,6 +142,11 @@ namespace Player
                 _currentStaminaSO.RestoreStamina(_currentStaminaSO.RegenRate * Time.deltaTime);
                 if(_updateStaminaUI != null)
                     _updateStaminaUI.RaiseEvent();
+            }
+            
+            if (_currentHealthSO.CurrentHealth < 30)
+            {
+                _updateHurtUI.RaiseEvent(_currentHealthSO.CurrentHealth);
             }
         }
         
@@ -251,6 +258,9 @@ namespace Player
             }
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
+
+            GameObject hitMarkerObj = Instantiate(hitmarker, transform.position, Quaternion.identity);
+            hitMarkerObj.GetComponent<HitMarker>().Initialise(amount);
 
             StartCoroutine(FlashMaterialOnHit());
             playerAnim.SetTrigger("OnHit");

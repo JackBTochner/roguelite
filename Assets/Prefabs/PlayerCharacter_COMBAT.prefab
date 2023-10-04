@@ -498,13 +498,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1
+  m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &1723506523967855880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,6 +588,8 @@ MonoBehaviour:
   postProcessVolume: {fileID: 0}
   DamagedColorFilter: {r: 1, g: 0.759434, b: 0.759434, a: 0}
   damageFXTime: 0.15
+  hitmarker: {fileID: 7801407444639326987, guid: d7e2e63ec80faf846b4a588a81960a74,
+    type: 3}
   meshRenderer: {fileID: 6169590081643362473}
   onHitMaterial: {fileID: 2100000, guid: 0bc5a50a7b52654469e9082ed73f34ee, type: 2}
   materialChangeDuration: 0.1
@@ -597,6 +599,7 @@ MonoBehaviour:
   _startDeathEvent: {fileID: 11400000, guid: 0223ef6ce32cd3f49abd592239c8bb34, type: 2}
   _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   _updateDigUI: {fileID: 11400000, guid: 8e496dac62832da4e8fb2530779046cb, type: 2}
+  _updateHurtUI: {fileID: 11400000, guid: 87fbda8afe98df442ad6f7f8db0ee2eb, type: 2}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
   _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
@@ -1650,7 +1653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageInfo:
     DamageType: 1
-    Damage: 2
+    Damage: 30
     CriticalData:
       Chance: 50
       Multiplier: 1.5
@@ -2156,7 +2159,7 @@ PrefabInstance:
     - target: {fileID: 142004315228256137, guid: 17490299dcad449458041d638d1c4c22,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 142004315228256137, guid: 17490299dcad449458041d638d1c4c22,
         type: 3}
@@ -4111,7 +4114,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 75a404a5ce5424247bec2cb270c2c9a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 75a404a5ce5424247bec2cb270c2c9a7,
         type: 3}
