@@ -15,6 +15,9 @@ public class CountDownTimer : MonoBehaviour
     public TextMeshProUGUI timetext;
     // The previous time of total time to second 
     private int previousSeconds;
+    private int previousMinutes;
+
+    private ScoreManager ScoreManager;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +39,9 @@ public class CountDownTimer : MonoBehaviour
             {
                 // - the total time by the time passed since last frame.
                 totalTime -= Time.deltaTime;
+
+                int currentMinutes = Mathf.FloorToInt(totalTime / 60);
+
                 // Get the current second.
                 int currentSeconds = Mathf.FloorToInt(totalTime % 60);
                 // calculate the current hundredths of second.
@@ -44,7 +50,7 @@ public class CountDownTimer : MonoBehaviour
                 // If the second is 10 and hundreths is 0 so it means 00:10:00 
                 // The result of currentSeconds compare with the previousSeconds, and they both full integers so only be true when - 
                 // - it's full integer and when second is smaller than 9.
-                if ((currentSeconds == 10 && Mathf.FloorToInt(hundredths) == 0) || currentSeconds < previousSeconds && currentSeconds <= 9)
+                if ((currentMinutes == 0 && currentSeconds == 10 && Mathf.FloorToInt(hundredths) == 0) || currentMinutes == 0 && currentSeconds < previousSeconds && currentSeconds <= 9)
                 {
                     // Run the flashing funciton
                     StartCoroutine(FlashingText());
@@ -52,6 +58,7 @@ public class CountDownTimer : MonoBehaviour
                     // Method from DOTween uses DOShakeScale to shakes an object's scale back and forth for a given duration.
                     timetext.transform.DOShakeScale(0.5f, 0.3f, 5, 5, true);
                 }
+                previousMinutes = currentMinutes;
                 // Set the current second to previous second.
                 previousSeconds = currentSeconds;
 
@@ -75,6 +82,10 @@ public class CountDownTimer : MonoBehaviour
                 // Display the current 0 timmer, so it won't display negative values in the timer.
                 DisplayTime(totalTime);
             }
+        }
+        if (ScoreManager.rankListOpen)
+        {
+            return;
         }
     }
 

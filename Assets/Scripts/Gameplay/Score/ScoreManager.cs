@@ -26,11 +26,14 @@ public class ScoreManager : MonoBehaviour
 
     public Button returnToMainMenuButton;
 
+    public bool rankListOpen = false;
+
     // Start is called before the first frame update
     void Start()
     {
         // Initialize the score and multiplier
         UpdateScoreText();
+        rankListOpen = false;
     }
 
     // Update is called once per frame
@@ -118,6 +121,8 @@ public class ScoreManager : MonoBehaviour
 
     public void DisplayRankList()
     {
+        rankListOpen = true;
+
         Time.timeScale = 0.0f;
         // The headder of the rank list.
         string ranklistText = "Rank list:\n";
@@ -160,5 +165,13 @@ public class ScoreManager : MonoBehaviour
         DialogueLua.SetVariable("PlayedConversations", "[]");
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("Initialization");
+    }
+
+    public void clearRankListOnly()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            PlayerPrefs.DeleteKey("HighScore" + i);
+        }
     }
 }
