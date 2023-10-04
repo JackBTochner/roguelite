@@ -83,6 +83,8 @@ public class EnemySpawnManager : MonoBehaviour
             //}
         }
         UnlockPlayerExit();
+        ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+        scoreManager.SaveScore();
     }
 
     private void LockPlayerExit()
