@@ -142,6 +142,9 @@ MonoBehaviour:
   postProcessVolume: {fileID: 0}
   DamagedColorFilter: {r: 0, g: 0, b: 0, a: 0}
   damageFXTime: 0.5
+  meshRenderer: {fileID: 0}
+  onHitMaterial: {fileID: 0}
+  materialChangeDuration: 0.1
   invulnerable: 0
   _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
   _updateStaminaUI: {fileID: 11400000, guid: 7c371bd7e9f3dfd4280a1796446c5604, type: 2}
@@ -154,6 +157,7 @@ MonoBehaviour:
   _timeManagerAnchor: {fileID: 11400000, guid: 93d7d42203174ae4ebc41afc0f9b955b, type: 2}
   _postProcessTransformAnchor: {fileID: 11400000, guid: 1ffb66a7f2720d94d878d9cce7a68d2e,
     type: 2}
+  playerAttack: {fileID: 0}
   audioSource: {fileID: 0}
   battlemusic: {fileID: 0}
   musicduration: 5
@@ -221,8 +225,11 @@ MonoBehaviour:
   canDash: 0
   lastHorizontalVelocity: {x: 0, y: 0, z: 0}
   _playerInputAnchor: {fileID: 11400000, guid: 30b1a5f313dd84142b35b14dc4a55c38, type: 2}
+  playerCharacter: {fileID: 0}
+  attackOverridesMovement: 0
   _playerMovementAnchor: {fileID: 11400000, guid: 7533e459dfa6fbf429603e3f45dd8aaa,
     type: 2}
+  _updateDashUI: {fileID: 0}
 --- !u!95 &8827232853832920793
 Animator:
   serializedVersion: 5
@@ -268,6 +275,8 @@ MonoBehaviour:
   _canAttack: 1
   _updateAttackUI: {fileID: 11400000, guid: b1988c895f589b14fbbb81f14871e9ab, type: 2}
   _startDeathEvent: {fileID: 11400000, guid: 0223ef6ce32cd3f49abd592239c8bb34, type: 2}
+  playerMovement: {fileID: 0}
+  playerCharacter: {fileID: 0}
 --- !u!114 &3153501817403051458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,22 +611,22 @@ PrefabInstance:
     - target: {fileID: 2559285840627121667, guid: a3aa38ec9a094a843bd95cfcd5c9157f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0059006265
+      value: 0.0059006275
       objectReference: {fileID: 0}
     - target: {fileID: 2559285840627121667, guid: a3aa38ec9a094a843bd95cfcd5c9157f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.008678156
+      value: -0.008678158
       objectReference: {fileID: 0}
     - target: {fileID: 4747904710347621765, guid: a3aa38ec9a094a843bd95cfcd5c9157f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0006421426
+      value: -0.0006421427
       objectReference: {fileID: 0}
     - target: {fileID: 4747904710347621765, guid: a3aa38ec9a094a843bd95cfcd5c9157f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.03206381
+      value: -0.032063816
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

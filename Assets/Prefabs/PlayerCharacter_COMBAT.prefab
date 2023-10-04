@@ -588,6 +588,9 @@ MonoBehaviour:
   postProcessVolume: {fileID: 0}
   DamagedColorFilter: {r: 1, g: 0.759434, b: 0.759434, a: 0}
   damageFXTime: 0.15
+  meshRenderer: {fileID: 6169590081643362473}
+  onHitMaterial: {fileID: 2100000, guid: 0bc5a50a7b52654469e9082ed73f34ee, type: 2}
+  materialChangeDuration: 0.1
   invulnerable: 0
   _updateHealthUI: {fileID: 11400000, guid: a65878fc19c263b4a858baa0577fdef2, type: 2}
   _updateStaminaUI: {fileID: 11400000, guid: 6cadc952f1e60c6449f24be6b928a26d, type: 2}
@@ -3838,6 +3841,12 @@ MonoBehaviour:
 --- !u!4 &4223572083178133871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 88337d45af9883246b1a7515938be1eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 4402159869393354372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &6169590081643362473 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1690727353383418323, guid: 88337d45af9883246b1a7515938be1eb,
     type: 3}
   m_PrefabInstance: {fileID: 4402159869393354372}
   m_PrefabAsset: {fileID: 0}
