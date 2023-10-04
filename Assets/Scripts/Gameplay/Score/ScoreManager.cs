@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 // Ricky: List<> needed "using System.Collections.Generic;"
 using System.Collections.Generic;
+// Ricky: To swap between scenes.
+using UnityEngine.SceneManagement;
 
 
 public class ScoreManager : MonoBehaviour
@@ -116,6 +118,9 @@ public class ScoreManager : MonoBehaviour
         // The headder of the rank list.
         string ranklistText = "Rank list:\n";
 
+        // display the current score
+        ranklistText += "Your Score: " + score.ToString() + "\n";
+
         // Print out all the top 5 ranks in the PlayerPrefs and format it out.
         for (int i = 0; i < 5; i++)
         {
@@ -140,6 +145,10 @@ public class ScoreManager : MonoBehaviour
         }
 
         DisplayRankList();
+    }
 
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("Initialization");
     }
 }

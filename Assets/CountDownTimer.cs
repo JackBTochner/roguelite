@@ -36,8 +36,14 @@ public class CountDownTimer : MonoBehaviour
             }
             else
             {
+                // Set time to 0.
                 totalTime = 0;
+                // Stop the timmer.
                 timeIsRunning = false;
+                // Call the end function.
+                TimeEnd();
+                // Display the current 0 timmer, so it won't display negative values in the timer.
+                DisplayTime(totalTime);
             }
         }
     }
@@ -54,6 +60,10 @@ public class CountDownTimer : MonoBehaviour
         // Example: 123 / 60 = 2 and remainder 3.
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
+        // This conversion multiplies timeToDisplay by 100 to shift the decimal two places to the right,
+        // then takes the modulus by 100 to get the remainder, which represents the hundredths of a second.
+        float hundredths = (int)((timeToDisplay * 100) % 100);
+
         // Set the text that displayed.
         // string.Format is to format display the text.
         // "0:00"  first 0 means the first argument which is minutes,
@@ -61,6 +71,16 @@ public class CountDownTimer : MonoBehaviour
 
         // "1:00"  first 1 means the second argument which is seconds, 
         // :00 specifies that it should also be displayed as a two-digit number, padding with zeros if necessary.
-        timetext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        // "2:00" will be the same but we divided 100.
+        timetext.text = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, hundredths);
+    }
+
+    void TimeEnd()
+    {
+        Debug.Log("Timer has ended!");
+
+        ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+        scoreManager.SaveScore();
     }
 }
