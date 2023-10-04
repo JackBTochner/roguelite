@@ -1581,6 +1581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: map_mesh 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1731773739419937370, guid: 9b50f3df4b5d2e643b64555c79da61fd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4507077677156184199, guid: 9b50f3df4b5d2e643b64555c79da61fd,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -3273,7 +3278,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 35
-    OrthographicSize: 8
+    OrthographicSize: 6
     NearClipPlane: 0.001
     FarClipPlane: 1000
     Dutch: 0
@@ -4794,7 +4799,7 @@ Camera:
   far clip plane: 1000
   field of view: 35
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using UnityEngine.Events;
-using UnityEditor.EditorTools;
 
 public class NotWorkingEnemy : Hittable
 {
