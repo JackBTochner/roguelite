@@ -166,7 +166,7 @@ namespace Pathfinding {
 				}
 
 				if (GUILayout.Button("Tags can be used to restrict which units can walk on what ground. Click here for more info", "HelpBox")) {
-					// Application.OpenURL(AstarUpdateChecker.GetURL("tags"));
+					Application.OpenURL(AstarUpdateChecker.GetURL("tags"));
 				}
 				EditorGUI.indentLevel--;
 			}
@@ -192,7 +192,7 @@ namespace Pathfinding {
 				EditorUtility.SetDirty(script);
 			}
 
-			List<Vector3> points = Pathfinding.Util.ListPool<Vector3>.Claim ();
+			List<Vector3> points = Pathfinding.Util.ListPool<Vector3>.Claim();
 			points.AddRange(script.points);
 
 			Matrix4x4 invMatrix = script.transform.worldToLocalMatrix;
@@ -310,7 +310,7 @@ namespace Pathfinding {
 
 			// Make sure the convex hull stays up to date
 			script.RecalcConvex();
-			Pathfinding.Util.ListPool<Vector3>.Release (ref points);
+			Pathfinding.Util.ListPool<Vector3>.Release(ref points);
 
 			if (GUI.changed) HandleUtility.Repaint();
 		}
