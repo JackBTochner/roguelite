@@ -1532,7 +1532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a584fae1e303994b85b277bfbcd6767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 5
+  totalTime: 13
   timeIsRunning: 0
   timetext: {fileID: 1654809168}
 --- !u!4 &682770639
@@ -2695,6 +2695,8 @@ MonoBehaviour:
   multiplierDuration: 20
   rankList: {fileID: 1625162450}
   rankListText: {fileID: 276563543}
+  returnToMainMenuButton: {fileID: 1659646278}
+  _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
 --- !u!224 &1401245330
 RectTransform:
   m_ObjectHideFlags: 0

@@ -24,6 +24,8 @@ public class ScoreManager : MonoBehaviour
     public Canvas rankList;
     public TextMeshProUGUI rankListText;
 
+    public Button returnToMainMenuButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -136,6 +138,10 @@ public class ScoreManager : MonoBehaviour
         rankListText.text = ranklistText;
         // Open our rank list.
         rankList.gameObject.SetActive(true);
+
+        // Set button to automatically selected by the gamepad.
+        returnToMainMenuButton.Select();
+
     }
 
     public void clearRankList()

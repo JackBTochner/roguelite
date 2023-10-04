@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 // Unity version needed to use "TextMeshProUGUI".
 using TMPro;
+using DG.Tweening;
 
 public class CountDownTimer : MonoBehaviour
 {
@@ -12,12 +13,16 @@ public class CountDownTimer : MonoBehaviour
     public bool timeIsRunning = false;
     // The text type, in this unity version we use "TextMeshProUGUI".
     public TextMeshProUGUI timetext;
+    // The previous time of total time to second 
+    private int previousSeconds;
 
     // Start is called before the first frame update
     void Start()
     {
         // Set to true at the start of the game, means we want it start counting start of the game.
         timeIsRunning = true;
+        // Get the total time to seconds from the start.
+        previousSeconds = Mathf.FloorToInt(totalTime % 60);
     }
 
     // Update is called once per frame
@@ -31,6 +36,25 @@ public class CountDownTimer : MonoBehaviour
             {
                 // - the total time by the time passed since last frame.
                 totalTime -= Time.deltaTime;
+                // Get the current second.
+                int currentSeconds = Mathf.FloorToInt(totalTime % 60);
+                // calculate the current hundredths of second.
+                float hundredths = (totalTime * 100) % 100;
+
+                // If the second is 10 and hundreths is 0 so it means 00:10:00 
+                // The result of currentSeconds compare with the previousSeconds, and they both full integers so only be true when - 
+                // - it's full integer and when second is smaller than 9.
+                if ((currentSeconds == 10 && Mathf.FloorToInt(hundredths) == 0) || currentSeconds < previousSeconds && currentSeconds <= 9)
+                {
+                    // Run the flashing funciton
+                    StartCoroutine(FlashingText());
+                    // DOShakeScale(float duration, float strength, int vibrato, float randomness, bool fadeOut)
+                    // Method from DOTween uses DOShakeScale to shakes an object's scale back and forth for a given duration.
+                    timetext.transform.DOShakeScale(0.5f, 0.3f, 5, 5, true);
+                }
+                // Set the current second to previous second.
+                previousSeconds = currentSeconds;
+
                 // Display the time on the screen. Pass in the time as a argument.
                 DisplayTime(totalTime);
             }
@@ -40,11 +64,29 @@ public class CountDownTimer : MonoBehaviour
                 totalTime = 0;
                 // Stop the timmer.
                 timeIsRunning = false;
+
+                StopCoroutine("FlashingText");
+                timetext.color = Color.white;
+
+
+
                 // Call the end function.
                 TimeEnd();
                 // Display the current 0 timmer, so it won't display negative values in the timer.
                 DisplayTime(totalTime);
             }
+        }
+    }
+
+    IEnumerator FlashingText()
+    {
+        // Half red and half white color time when hits 10 seconds.
+        while (timeIsRunning && totalTime <= 10)
+        {
+            timetext.color = Color.red;
+            yield return new WaitForSeconds(0.5f); 
+            timetext.color = Color.white;
+            yield return new WaitForSeconds(0.5f); 
         }
     }
 
