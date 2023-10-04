@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using Pathfinding.WindowsStore;
+using Pathfinding.Serialization;
 #if UNITY_WINRT && !UNITY_EDITOR
 //using MarkerMetro.Unity.WinLegacy.IO;
 //using MarkerMetro.Unity.WinLegacy.Reflection;
@@ -11,9 +12,8 @@ namespace Pathfinding {
 	[System.Serializable]
 	/// <summary>
 	/// Stores the navigation graphs for the A* Pathfinding System.
-	/// \ingroup relevant
 	///
-	/// An instance of this class is assigned to AstarPath.data, from it you can access all graphs loaded through the <see cref="graphs"/> variable.\n
+	/// An instance of this class is assigned to AstarPath.data, from it you can access all graphs loaded through the <see cref="graphs"/> variable.
 	/// This class also handles a lot of the high level serialization.
 	/// </summary>
 	public class AstarData {
@@ -37,6 +37,12 @@ namespace Pathfinding {
 		/// Updated at scanning time
 		/// </summary>
 		public GridGraph gridGraph { get; private set; }
+
+		/// <summary>
+		/// Shortcut to the first LayerGridGraph.
+		/// Updated at scanning time.
+		/// </summary>
+		public LayerGridGraph layerGridGraph { get; private set; }
 #endif
 
 #if !ASTAR_NO_POINT_GRAPH
@@ -47,6 +53,11 @@ namespace Pathfinding {
 		public PointGraph pointGraph { get; private set; }
 #endif
 
+		/// <summary>
+		/// Shortcut to the first RecastGraph.
+		/// Updated at scanning time.
+		/// </summary>
+		public RecastGraph recastGraph { get; private set; }
 
 		/// <summary>
 		/// All supported graph types.
@@ -62,11 +73,13 @@ namespace Pathfinding {
 		public static readonly System.Type[] DefaultGraphTypes = new System.Type[] {
 #if !ASTAR_NO_GRID_GRAPH
 			typeof(GridGraph),
+			typeof(LayerGridGraph),
 #endif
 #if !ASTAR_NO_POINT_GRAPH
 			typeof(PointGraph),
 #endif
 			typeof(NavMeshGraph),
+			typeof(RecastGraph),
 		};
 #endif
 
@@ -86,7 +99,7 @@ namespace Pathfinding {
 		///
 		/// This can be accessed as a byte array from the <see cref="data"/> property.
 		///
-		/// \since 3.6.1
+		/// Since: 3.6.1
 		/// </summary>
 		[SerializeField]
 		string dataString;
@@ -94,7 +107,7 @@ namespace Pathfinding {
 		/// <summary>
 		/// Data from versions from before 3.6.1.
 		/// Used for handling upgrades
-		/// \since 3.6.1
+		/// Since: 3.6.1
 		/// </summary>
 		[SerializeField]
 		[UnityEngine.Serialization.FormerlySerializedAs("data")]
@@ -108,10 +121,10 @@ namespace Pathfinding {
 					data = upgradeData;
 					upgradeData = null;
 				}
-				return dataString != null? System.Convert.FromBase64String (dataString) : null;
+				return dataString != null? System.Convert.FromBase64String(dataString) : null;
 			}
 			set {
-				dataString = value != null? System.Convert.ToBase64String (value) : null;
+				dataString = value != null? System.Convert.ToBase64String(value) : null;
 			}
 		}
 
@@ -236,11 +249,14 @@ namespace Pathfinding {
 
 #if !ASTAR_NO_GRID_GRAPH
 			gridGraph = (GridGraph)FindGraphOfType(typeof(GridGraph));
+			layerGridGraph = (LayerGridGraph)FindGraphOfType(typeof(LayerGridGraph));
 #endif
 
 #if !ASTAR_NO_POINT_GRAPH
 			pointGraph = (PointGraph)FindGraphOfType(typeof(PointGraph));
 #endif
+
+			recastGraph = (RecastGraph)FindGraphOfType(typeof(RecastGraph));
 		}
 
 		/// <summary>Load from data from <see cref="file_cachedStartup"/></summary>
@@ -265,7 +281,7 @@ namespace Pathfinding {
 		/// See: DeserializeGraphs(byte[])
 		/// </summary>
 		public byte[] SerializeGraphs () {
-			return SerializeGraphs(Pathfinding.Serialization.SerializeSettings.Settings);
+			return SerializeGraphs(SerializeSettings.Settings);
 		}
 
 		/// <summary>
@@ -273,7 +289,7 @@ namespace Pathfinding {
 		/// See: DeserializeGraphs(byte[])
 		/// See: Pathfinding.Serialization.SerializeSettings
 		/// </summary>
-		public byte[] SerializeGraphs (Pathfinding.Serialization.SerializeSettings settings) {
+		public byte[] SerializeGraphs (SerializeSettings settings) {
 			uint checksum;
 
 			return SerializeGraphs(settings, out checksum);
@@ -284,9 +300,9 @@ namespace Pathfinding {
 		/// Serializes all graphs to a byte array
 		/// A similar function exists in the AstarPathEditor.cs script to save additional info
 		/// </summary>
-		public byte[] SerializeGraphs (Pathfinding.Serialization.SerializeSettings settings, out uint checksum) {
+		public byte[] SerializeGraphs (SerializeSettings settings, out uint checksum) {
 			var graphLock = AssertSafe();
-			var sr = new Pathfinding.Serialization.AstarSerializer(this, settings);
+			var sr = new AstarSerializer(this, settings, active.gameObject);
 
 			sr.OpenSerialize();
 			sr.SerializeGraphs(graphs);
@@ -316,7 +332,7 @@ namespace Pathfinding {
 					graphs[i].active = null;
 				}
 			}
-			graphs = null;
+			graphs = new NavGraph[0];
 			UpdateShortcuts();
 		}
 
@@ -346,7 +362,7 @@ namespace Pathfinding {
 
 			try {
 				if (bytes != null) {
-					var sr = new Pathfinding.Serialization.AstarSerializer(this);
+					var sr = new AstarSerializer(this, active.gameObject);
 
 					if (sr.OpenDeserialize(bytes)) {
 						DeserializeGraphsPartAdditive(sr);
@@ -368,7 +384,7 @@ namespace Pathfinding {
 		}
 
 		/// <summary>Helper function for deserializing graphs</summary>
-		void DeserializeGraphsPartAdditive (Pathfinding.Serialization.AstarSerializer sr) {
+		void DeserializeGraphsPartAdditive (AstarSerializer sr) {
 			if (graphs == null) graphs = new NavGraph[0];
 
 			var gr = new List<NavGraph>(graphs);
