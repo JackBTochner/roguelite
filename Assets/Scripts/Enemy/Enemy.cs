@@ -10,7 +10,6 @@ public class Enemy : Hittable
 {
     public Animator anim;
     public Animator rootAnim;
-    public Rigidbody rb;
     public GameObject[] attackObjects;
     public GameObject[] itemDrops;
     public float dropPercentage = 10;
@@ -212,7 +211,7 @@ public class Enemy : Hittable
             OnTakeDigDamage.Invoke(this);
         if (health > 0)
         {
-            rb.AddForce(Vector3.ProjectOnPlane(damageInfo.Direction, Vector3.up) * damageInfo.Knockback, ForceMode.Impulse);
+            //rb.AddForce(Vector3.ProjectOnPlane(damageInfo.Direction, Vector3.up) * damageInfo.Knockback, ForceMode.Impulse);
             Instantiate(hitParticle, transform.position, Quaternion.LookRotation(damageInfo.Direction));
             if(currentState != AIState.Attacking)
                 currentState = AIState.GettingHit;
