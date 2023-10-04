@@ -244,6 +244,17 @@
                 },
                 {
                     "name": "",
+                    "id": "5fc418e8-960b-4554-838c-4de9ee8b4dac",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Dig",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b39ea1e8-6a0a-44ce-85b0-74097a5c010c",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -288,33 +299,22 @@
                 },
                 {
                     "name": "",
+                    "id": "2e971677-7862-405f-a87b-62f70b6641f7",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Attack1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8fe96edb-0c1d-4dd8-97ff-43bd321b661c",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
-                    "action": "Attack2",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "0be4d575-677e-435a-89f0-5d7eb17dbeda",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Attack2",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "10bc9dc4-def0-4527-a712-65117445204f",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
                     "action": "Attack2",
                     "isComposite": false,
                     "isPartOfComposite": false
