@@ -22,6 +22,7 @@ public class CountDownTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ScoreManager = FindObjectOfType<ScoreManager>();
         // Set to true at the start of the game, means we want it start counting start of the game.
         timeIsRunning = true;
         // Get the total time to seconds from the start.

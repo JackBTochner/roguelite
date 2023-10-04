@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
 
-public class DebugKeys : MonoBehaviour
+public class DebugKeysCombat : MonoBehaviour
 {
     private bool keyboardkeys;
     [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
