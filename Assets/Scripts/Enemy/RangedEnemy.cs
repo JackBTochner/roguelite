@@ -2,41 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestScript : MonoBehaviour
+public class RangedEnemy : Enemy
 {
-
     public Transform spawnPoint; // The spawnPoint that the bullets came out.
-    [SerializeField] private float timer = 5.0f; // [SerializeField] is for private vairables, but it can be edit in the unity inspector.
-    private float bulletTime; // Loading time of the bullet.
     public GameObject enemyBullet; // To get the bullet object.
-    public float enemySpeed; // The move speed of the enemy.
-    public TransformAnchor playerTransformAnchor = default;  
+    public float bulletSpeed = 15; // The move speed of the enemy.
+    [SerializeField] private float timer = 1.5f; // [SerializeField] is for private vairables, but it can be edit in the unity inspector.
+    private float bulletTime; // Loading time of the bullet.
 
-    // Start is called before the first frame update
-    void Start()
+    public override IEnumerator AttackingState()
     {
+        Debug.Log("AttackingState: Enter");
+        aiDestination.enabled = false;
+        bulletTime = timer;
+        while (currentState == AIState.Attacking)
+        {
+            if (DistanceToPlayer() <= minAttackRange)
+                currentState = AIState.Retreating;
+            if (DistanceToPlayer() > maxAttackRange)
+                currentState = AIState.MovingToTarget;
+            StartCoroutine(AttemptShoot());
+            OrientTowards(playerTarget.position, turnSpeedMultiplier);
+            yield return 0;
+        }
+        Debug.Log("AttackingState: Exit");
+        anim.ResetTrigger("PrepareAttack");
+        anim.ResetTrigger("Attack");
+        NextState();
+    }
+
+    private IEnumerator AttemptShoot()
+    {         
+        anim.ResetTrigger("PrepareAttack");
+        anim.ResetTrigger("Attack");
+
+        isAttacking = true;
+        anim.SetTrigger("PrepareAttack");
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {   // Keep the enemy that faces the player all the time.
-        transform.LookAt(playerTransformAnchor.Value);
-        // Shoot the player.
-        ShootAtPlayer();
-    }
-    void ShootAtPlayer()
-    {
         // bulletTime minus 1/60 in each frame.
         bulletTime -= Time.deltaTime;
         // If bulletTime is bigger than 0, do nothing. This means the loading time is passed.
-        if (bulletTime > 0) return;
+        if (bulletTime > 0) 
+            yield break;
         // If else do.
         // Set the reload for shot time back to.
         bulletTime = timer;
+        anim.SetTrigger("Attack");
 
         //30% to do
-        if (Random.value <= 0.3f)
+        if (Random.value <= 0.05f)
         {
             //Shoot 3 bullets
 
@@ -56,8 +70,10 @@ public class TestScript : MonoBehaviour
             //Shoot normal bullet
             ShootBulletDirection(spawnPoint.transform.rotation);
         }
-    }
 
+        isAttacking = false;
+    }
+    
     void ShootBulletDirection(Quaternion bulletRotation)
     {
         // Create a new Object that on that position and rotation, with the enemyBullet.
@@ -68,7 +84,7 @@ public class TestScript : MonoBehaviour
         // Get the rigidbody of the object.
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         // Shot the object.
-        bulletRig.AddForce(-bulletRig.transform.forward * -enemySpeed);
+        bulletRig.AddForce(-bulletRig.transform.forward * -bulletSpeed, ForceMode.Impulse);
         // Destroy the object after 5 second.
         Destroy(bulletObj, 5f);
     }

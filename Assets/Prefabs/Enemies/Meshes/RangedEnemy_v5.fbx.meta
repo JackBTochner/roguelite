@@ -41,7 +41,7 @@ ModelImporter:
       name: Armature|RA_HoldEnd_Transition
       takeName: Armature|RA_HoldEnd_Transition
       internalID: -652345405344772174
-      firstFrame: 0
+      firstFrame: 4
       lastFrame: 16
       wrapMode: 0
       orientationOffsetY: 0
@@ -335,7 +335,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

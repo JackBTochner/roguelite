@@ -25,7 +25,7 @@ public class Enemy : Hittable
     public float detectionRange;
 
     public bool isAttacking = false;
-    bool died;
+    public bool died;
 
     public UnityEvent<Enemy> OnEnemyDied = new UnityEvent<Enemy>();
     public UnityEvent<Enemy> OnTakeDigDamage = new UnityEvent<Enemy>();
@@ -51,19 +51,20 @@ public class Enemy : Hittable
         Retreating,
         GettingHit
     }
+    
     public AIState currentState;
 
     [Header("Listening on")]
     public TransformAnchor playerTransformAnchor = default;
 
-    float DistanceToPlayer()
+    public float DistanceToPlayer()
     {
         if(playerTarget)
             return Vector3.Distance(transform.position, playerTarget.position);
         return 10;
     }
 
-    void OrientTowards(Vector3 targetLocation, float turnSpeedMultiplier)
+    public void OrientTowards(Vector3 targetLocation, float turnSpeedMultiplier)
     { 
         Vector3 targetDirection  = (targetLocation - transform.position).normalized;
         if(targetDirection.sqrMagnitude != 0f)
@@ -73,13 +74,13 @@ public class Enemy : Hittable
         }
     }
     
-    void AssignAITarget()
+    public void AssignAITarget()
     {
         aiDestination.target = playerTransformAnchor.Value;
         playerTarget = playerTransformAnchor.Value;
     }
 
-    void SetActiveAttackObjects(bool enable)
+    public void SetActiveAttackObjects(bool enable)
     { 
         foreach (var obj in attackObjects)
         {
@@ -87,7 +88,7 @@ public class Enemy : Hittable
         }
     }
 
-    IEnumerator IdleState()
+    public virtual IEnumerator IdleState()
     {
         Debug.Log("Idle: Enter");
         aiDestination.enabled = false;
@@ -102,7 +103,7 @@ public class Enemy : Hittable
         NextState();
     }
 
-    IEnumerator MovingToTargetState()
+    public virtual IEnumerator MovingToTargetState()
     {
         Debug.Log("MovingToTarget: Enter");
         aiDestination.enabled = true;
@@ -117,7 +118,7 @@ public class Enemy : Hittable
         aiDestination.enabled = false;
         NextState();
     }
-    IEnumerator AttackingState()
+    public virtual IEnumerator AttackingState()
     {
         Debug.Log("AttackingState: Enter");
         aiDestination.enabled = false;
@@ -146,7 +147,7 @@ public class Enemy : Hittable
         NextState();
     }
 
-    IEnumerator RetreatingState()
+    public virtual IEnumerator RetreatingState()
     {
         Debug.Log("RetreatingState: Enter");
         aiDestination.enabled = false;
@@ -161,7 +162,7 @@ public class Enemy : Hittable
         NextState();
     }
 
-    IEnumerator GettingHitState()
+    public virtual IEnumerator GettingHitState()
     {
         Debug.Log("GettingHitState: Enter");
         aiDestination.enabled = false;
@@ -176,40 +177,31 @@ public class Enemy : Hittable
         NextState();
     }
 
-    void NextState()
+    public void NextState()
     {
         string methodName = currentState.ToString() + "State";
         System.Reflection.MethodInfo info = 
         GetType().GetMethod(methodName, 
-        System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+        System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
         StartCoroutine((IEnumerator)info.Invoke(this, null));
     }
 
-    void OnEnable()
+    public void OnEnable()
     {
         enemyAlive++;
         playerTransformAnchor.OnAnchorProvided += AssignAITarget;
         if (playerTransformAnchor.isSet)
             AssignAITarget();
     }
-    void OnDisable()
+    public void OnDisable()
     {
         enemyAlive--;
         playerTransformAnchor.OnAnchorProvided -= AssignAITarget;
     }
 
-    void Start()
+    public void Start()
     {
         NextState();
-    }
-
-    void Update()
-    {
-        /*
-        if (rb.velocity != Vector3.zero)
-        {
-            rb.velocity = Vector3.Lerp(rb.velocity, Vector3.zero, Time.deltaTime * 3);
-        }*/
     }
 
     public override void Hit(DamageInfo damageInfo)
@@ -258,7 +250,7 @@ public class Enemy : Hittable
         scoreManager.IncreaseScore(1);
     }
 
-    void Delete()
+    public void Delete()
     {
         gameObject.SetActive(false);
     }
