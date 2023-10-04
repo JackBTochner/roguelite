@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialStamina: 100
   _maxStamina: 100
-  _currentStamina: 100
-  _regenRate: 10
+  _currentStamina: 52.304474
+  _regenRate: 5

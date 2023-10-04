@@ -288,6 +288,7 @@ namespace Player
 
         IEnumerator PlayerDie(float delay)
         {
+            playerAnim.SetTrigger("Death");
             if (postProcessVolume != null)
             {
                 colorAdjustments.colorFilter.Override(Color.white);
@@ -312,7 +313,6 @@ namespace Player
             // TURN OFF CHARACTER INPUT
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
             // SHOW DEATH ANIMATION
-            playerAnim.SetTrigger("Death");
 
             if(_startDeathEvent)
             {

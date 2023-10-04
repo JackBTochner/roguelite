@@ -1722,7 +1722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
-  damage: 2
+  damage: 3
 --- !u!1 &7773911502691981732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,7 +1871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
-  damage: 2
+  damage: 3
 --- !u!1 &7846436563715608618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,7 +2129,7 @@ MonoBehaviour:
   isDying: 0
   ExplosionCountdown: 2
   ExplosionTime: 0.5
-  ExplosionDamage: 10
+  ExplosionDamage: 15
   ExplosionDistance: 4
   ExplosionIndicator: {fileID: 8620444197267565270}
   ExplosionVFX: {fileID: 8358998894807160675}
@@ -2195,7 +2195,7 @@ MonoBehaviour:
   radius: 1
   height: 2
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 4
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2

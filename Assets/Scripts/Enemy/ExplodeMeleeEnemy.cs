@@ -55,10 +55,11 @@ public class ExplodeMeleeEnemy : Enemy
 
     public IEnumerator ExplosionCoroutine()
     {
-        ExplosionIndicator.SetActive(true);
+        //ExplosionIndicator.SetActive(true);
         gfxRenderer.material = WarningMaterial;
         WarningMaterial.SetColor("Emission", WarningColorHigh);
         WarningMaterial.DOColor(WarningColorLow, "Emission" ,0.5f).SetLoops(-1, LoopType.Yoyo);
+        transform.DOShakeScale(ExplosionCountdown-0.1f, 0.2f, 5, 5, false);
         yield return new WaitForSeconds(ExplosionCountdown);
         PlayerCharacter playerCharacter = playerTransformAnchor.Value.GetComponent<PlayerCharacter>();
         if (DistanceToPlayer() < ExplosionDistance) // Take full damage.
@@ -66,7 +67,7 @@ public class ExplodeMeleeEnemy : Enemy
             playerCharacter.TakeDamage((int)ExplosionDamage);
         }
         rootAnim.SetTrigger("Die");
-        ExplosionIndicator.SetActive(false);
+        //ExplosionIndicator.SetActive(false);
         ExplosionVFX.SetActive(true);
         yield return new WaitForSeconds(ExplosionTime);
         // item drops
