@@ -9,6 +9,7 @@ using Unity.VisualScripting;
 public class Enemy : Hittable
 {
     public Animator anim;
+    public Animator rootAnim;
     public Rigidbody rb;
     public GameObject[] attackObjects;
     public GameObject[] itemDrops;
@@ -215,7 +216,7 @@ public class Enemy : Hittable
             Instantiate(hitParticle, transform.position, Quaternion.LookRotation(damageInfo.Direction));
             if(currentState != AIState.Attacking)
                 currentState = AIState.GettingHit;
-            anim.SetTrigger("Hit");
+            rootAnim.SetTrigger("Hit");
         }
         else if (!died)
         {
@@ -225,7 +226,7 @@ public class Enemy : Hittable
 
     public virtual void Die()
     {
-        anim.SetTrigger("Die");
+        rootAnim.SetTrigger("Die");
 
         //spawn a hit particle in the opposite direction of the player;
         Vector3 hitDirection = playerTransformAnchor.Value.position - transform.position;
