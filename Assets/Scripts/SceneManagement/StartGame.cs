@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StartGame : MonoBehaviour
 {
     [SerializeField] private GameSceneSO _locationToLoad;
     [SerializeField] private bool _showLoadScreen = default;
+    [SerializeField] private Button startButton;
 
     [Header("Broadcasting on")]
 	[SerializeField] private LoadEventChannelSO _loadLocation = default;
 
     public void Start()
     {
-        Invoke("StartNewGame", 3f);
+        startButton.Select();
     }
 
     public void StartNewGame()
