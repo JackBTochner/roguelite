@@ -2,565 +2,565 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Actor.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.AstarPath.AstarDistribution.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.AstarPath.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.AttackObject.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.AttackTemplate.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.BasicEnemy.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.BoolEventChannelSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.CameraAnchor.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.CameraFollow.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.CameraManager.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.CameraShake.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.ChatController.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.ColorChangedEvent.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Controls.IPlayerActions.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Controls.IUIActions.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Controls.PlayerActions.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Controls.UIActions.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Controls.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.ConversationFields.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.CustomPath.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.DeleteAfterTime.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.DescriptionBaseSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.DestoryTram.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.DialogueManagerAnchorProvider.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.DialogueSystemEventsAnchor.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.DropdownSample.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.EditorColdStartup.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.EnemySpawnManager.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.EnemySpawnWave.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.EnvMapAnimator.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Exit.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.FrozenTrap.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.GameSceneSO.GameSceneType.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.GameSceneSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.HitMarker.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Hittable.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.HSVChangedEvent.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.HubExit.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.HubNPC.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.HubNPCManager.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Initializer.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.InputReader.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.IPooledObject.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.LEGACY_UILineRenderer.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.ListOfEnemySpawnWaves.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.LoadEventChannelSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.LocationSceneSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.MenuSceneSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.MoveForward.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.ObjectPooler.Pool.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.ObjectPooler.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PersistentManagerSceneSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerBufferPoint.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerExit.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerManager.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerProjectile.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerProjectileEffectDefaultSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerProjectileEffectSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerProjectilePickup.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerProjectileReceiver.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerSpawn.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerSpawnSystem.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.PlayerWeaponController.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.ProjectileEffectExtraDamageSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Run.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.RunManager.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.RunManagerAnchor.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.RunStatistics.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.RuntimeAnchorBase-1.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.SceneLoader.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.SerializableScriptableObject.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.SerializerUtility.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.SpawnWaveTrigger.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.StartGame.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.TestCompression.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.TramDeltDamage.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.TramSpawn.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.TransformAnchor.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.TransformEventChannelSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.TransitionChannelSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.Trap.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.UIGridRenderer.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.UIVisibility.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.VoidEventChannelSO.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.WaveSpawnType.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.WaveTriggerType.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/api/Global.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/index.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/manual/DialogueSystem.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/manual/documentation.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/manual/GettingStarted.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/manual/overview.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/manual/SpawningEnemies.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pmuenjohn.github.io/roguelite/manual/UISystem.html</loc>
-    <lastmod>2023-10-04T02:44:58+00:00</lastmod>
+    <lastmod>2023-10-04T02:58:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
