@@ -37,7 +37,6 @@ namespace Player
 
         [SerializeField]
         private RuntimeSetBase<Highlighter> _projectileHighlighters = default;
-
         
         public Animator playerAnim;
         public Animator staminaBarAnimator;

@@ -23,6 +23,7 @@ public class Initializer : MonoBehaviour
     [SerializeField] private GameSceneSO _replacementSceneToLoad = default;
     [Header("Broadcasting on")]
     [SerializeField] private AssetReference _loadLocationChannel = default;
+
     void Start()
     {
         Time.timeScale = 1;

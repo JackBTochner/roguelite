@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using PixelCrushers.DialogueSystem;
 
 // Ricky: The veision of our game needed to use TextMeshProUGUI for the text. we need to use "using TMPro;"
 using TMPro;
@@ -150,7 +151,8 @@ public class ScoreManager : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene("Initialization");
+        DialogueLua.SetVariable("PlayedConversations", "[]");
         Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Initialization");
     }
 }
