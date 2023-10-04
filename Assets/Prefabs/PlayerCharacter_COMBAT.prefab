@@ -547,6 +547,7 @@ MonoBehaviour:
   attackOverridesMovement: 0
   _playerMovementAnchor: {fileID: 11400000, guid: 7533e459dfa6fbf429603e3f45dd8aaa,
     type: 2}
+  _updateDashUI: {fileID: 11400000, guid: 8b4c03ee2618ad64e94c76d81eca2792, type: 2}
 --- !u!114 &248407811704461207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2377,12 +2378,12 @@ PrefabInstance:
     - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.055789586
+      value: -0.05578959
       objectReference: {fileID: 0}
     - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.03232659
+      value: -0.032326594
       objectReference: {fileID: 0}
     - target: {fileID: -8041087894855359730, guid: 88337d45af9883246b1a7515938be1eb,
         type: 3}

@@ -72,13 +72,15 @@ namespace Player
 
         [Header("Broadcasting on")]
         [SerializeField] private PlayerMovementAnchor _playerMovementAnchor = default;
-
+        [SerializeField] private BoolEventChannelSO _updateDashUI = default;
 
         private void Awake()
         {
             Initialise();
             _playerMovementAnchor.Provide(this);
             playerCharacter = GetComponent<PlayerCharacter>();
+            if (_updateDashUI != null)
+                _updateDashUI.RaiseEvent(false);
         }
         private void OnEnable()
         {
@@ -106,6 +108,8 @@ namespace Player
             //Debug.Log("Test: Jump Key working");
             if (canDash && !playerCharacter.isDigging)
             {
+                if(_updateDashUI != null)
+                    _updateDashUI.RaiseEvent(true);
                 StartCoroutine(BeginDash());
             }
         }

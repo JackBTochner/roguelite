@@ -4,36 +4,36 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class UIAttackManager : MonoBehaviour
+public class UIQuickAnimManager : MonoBehaviour
 {
-	[SerializeField] private GameObject _attackUIImage;
+	[SerializeField] private GameObject _UIImage;
 
 	[Header("Listening to")]
     [SerializeField] private BoolEventChannelSO _UIUpdateNeeded = default;
 
     private void OnEnable()
 	{
-		_UIUpdateNeeded.OnEventRaised += UpdateAttackUI;
+		_UIUpdateNeeded.OnEventRaised += UpdateUI;
 	}
     private void OnDestroy()
 	{
-		_UIUpdateNeeded.OnEventRaised -= UpdateAttackUI;
+		_UIUpdateNeeded.OnEventRaised -= UpdateUI;
 	}
-    private void UpdateAttackUI(bool isAttacking)
+    private void UpdateUI(bool isActivated)
     {
-		if (isAttacking)
+		if (isActivated)
 		{
 			StartCoroutine(UIEffect());
 		}
 		else
 		{
-			_attackUIImage.GetComponent<CanvasRenderer>().SetAlpha(1.0f);
+			_UIImage.GetComponent<CanvasRenderer>().SetAlpha(1.0f);
 		}
     }
     
     IEnumerator UIEffect()
     {
-	    Image img = _attackUIImage.GetComponent<Image>();
+	    Image img = _UIImage.GetComponent<Image>();
 	    img.CrossFadeAlpha(0.1f, 0.1f, false);
 	    yield return new WaitForSeconds(0.1f);
 	    img.CrossFadeAlpha(1.0f, 0.1f, false);
