@@ -181,7 +181,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
@@ -1094,7 +1094,7 @@ PrefabInstance:
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
       propertyPath: waves.array.Array.data[0].enemiesToSpawn.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
@@ -1113,6 +1113,18 @@ PrefabInstance:
       propertyPath: waves.array.Array.data[0].enemiesToSpawn.Array.data[2]
       value: 
       objectReference: {fileID: 2316652437315142409, guid: 1da873e507e44f844bc70e48e272b119,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[0].enemiesToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 8447481766056834484, guid: 1f87c2f4c18d2cb4a86777275f8f230a,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[0].enemiesToSpawn.Array.data[4]
+      value: 
+      objectReference: {fileID: 8409118806247872677, guid: 61ce6255abe76a144bb5d47bef1f8518,
         type: 3}
     - target: {fileID: 2857990952377429049, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}

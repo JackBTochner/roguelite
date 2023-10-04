@@ -1410,7 +1410,7 @@ MonoBehaviour:
       Chance: 10
       Multiplier: 1.5
       Ignore: 0
-    Knockback: 5
+    Knockback: 0
 --- !u!23 &3381862237600308993
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1651,7 +1651,7 @@ MonoBehaviour:
       Chance: 50
       Multiplier: 1.5
       Ignore: 0
-    Knockback: 5
+    Knockback: 0
 --- !u!135 &3896151020917793843
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4218,7 +4218,7 @@ MonoBehaviour:
       Chance: 10
       Multiplier: 1.5
       Ignore: 0
-    Knockback: 5
+    Knockback: 0
 --- !u!4 &6591665044678105787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75a404a5ce5424247bec2cb270c2c9a7,
@@ -4368,7 +4368,7 @@ MonoBehaviour:
       Chance: 10
       Multiplier: 1.5
       Ignore: 0
-    Knockback: 5
+    Knockback: 0
 --- !u!4 &9017757789148091268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d818d2ad10457945860aadd55edf30d,

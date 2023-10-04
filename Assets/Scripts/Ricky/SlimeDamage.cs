@@ -15,7 +15,7 @@ public class SlimeDamage : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // If the Slime hits and keep hitting the player.
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")   
         {
             // Get the player object component "PlayerCharacter";
             PlayerCharacter PlayerCharacter = other.gameObject.GetComponent<PlayerCharacter>();
