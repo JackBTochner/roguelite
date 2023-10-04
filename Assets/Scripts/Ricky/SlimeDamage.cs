@@ -5,7 +5,14 @@ using Player;
 
 public class SlimeDamage : MonoBehaviour
 {
-    void OnTriggerStay(Collider other)
+    public float lifeTime = 2;
+
+    void Start()
+    {
+        Destroy(this.gameObject, lifeTime);
+    }
+
+    void OnTriggerEnter(Collider other)
     {
         // If the Slime hits and keep hitting the player.
         if (other.gameObject.tag == "Player")

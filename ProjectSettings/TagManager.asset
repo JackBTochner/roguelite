@@ -17,6 +17,7 @@ TagManager:
   - Bullet
   - PostProcessVolume
   - Interactable
+  - InteractTrigger
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - IgnoreRaycastIgnoreNavigation
   - PlayerBuffer
   - Slime
-  - 
+  - SlimeProjectile
   - 
   - 
   - 

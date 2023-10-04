@@ -17,7 +17,6 @@ public class SlimeWisp : MonoBehaviour
     // Set all slime spawn to 0.2 y
     public float Slimey = 0.4f;
 
-
     // Volcano Eruption
     // Need to add a rigidbody to the slime and turn on gravity, we don't want it to affect the slime and the enemy. -
     // - So we need to create a layer: Edit->Project Settings->Search for "Tags and Layers"->in "Layers" we add a Layer and name it.
@@ -103,8 +102,6 @@ public class SlimeWisp : MonoBehaviour
 
         // Spawn slime
         GameObject slime = Instantiate(Slime, spawnPosition, Slime.transform.rotation) as GameObject;
-        // Destory after SlimeTime
-        Destroy(slime, SlimeTime);
         // The erupotion method can get a reference to this object.
         return slime;
     }
