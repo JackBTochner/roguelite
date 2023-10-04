@@ -25,6 +25,7 @@ public class Initializer : MonoBehaviour
     [SerializeField] private AssetReference _loadLocationChannel = default;
     void Start()
     {
+        Time.timeScale = 1;
         _managersScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true).Completed += LoadEventChannel;
     }
 
