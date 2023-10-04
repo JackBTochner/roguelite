@@ -115,6 +115,7 @@ public class ScoreManager : MonoBehaviour
 
     public void DisplayRankList()
     {
+        Time.timeScale = 0.0f;
         // The headder of the rank list.
         string ranklistText = "Rank list:\n";
 
@@ -150,5 +151,6 @@ public class ScoreManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("Initialization");
+        Time.timeScale = 1.0f;
     }
 }
