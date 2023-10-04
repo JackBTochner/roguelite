@@ -2777,6 +2777,7 @@ MonoBehaviour:
   rankList: {fileID: 1625162450}
   rankListText: {fileID: 276563543}
   returnToMainMenuButton: {fileID: 1659646278}
+  rankListOpen: 0
 --- !u!224 &1401245330
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3318,6 +3319,52 @@ MonoBehaviour:
     m_FrequencyGain: 1
     m_Duration: 1
     m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!1 &1608598533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1608598535}
+  - component: {fileID: 1608598534}
+  m_Layer: 0
+  m_Name: DebugKeysCombat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1608598534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608598533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc767370503faa4597ec2e5de4cac3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
+  ScoreManager: {fileID: 1401245329}
+--- !u!4 &1608598535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608598533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 623.7785, y: 319.0357, z: -200.49675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625162447
 GameObject:
   m_ObjectHideFlags: 0
