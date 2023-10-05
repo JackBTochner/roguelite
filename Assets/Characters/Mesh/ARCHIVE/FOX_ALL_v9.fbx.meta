@@ -70,7 +70,7 @@ ModelImporter:
       name: Armature|KF_Death
       takeName: Armature|KF_Death
       internalID: 91972486907125864
-      firstFrame: 0
+      firstFrame: 10
       lastFrame: 89
       wrapMode: 0
       orientationOffsetY: 0

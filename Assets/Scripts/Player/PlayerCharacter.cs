@@ -241,7 +241,7 @@ namespace Player
         public void TakeDamage(int amount)
         {
             //invulnerable
-            if (invulnerable)
+            if (invulnerable || isDigging)
             {
                 return;
             }
@@ -255,6 +255,7 @@ namespace Player
             else
             {
                 _currentHealthSO.InflictDamage(amount);
+                playerAnim.SetTrigger("OnHit");
             }
             if (_updateHealthUI != null)
                 _updateHealthUI.RaiseEvent();
@@ -263,7 +264,6 @@ namespace Player
             hitMarkerObj.GetComponent<HitMarker>().Initialise(amount);
 
             StartCoroutine(FlashMaterialOnHit());
-            playerAnim.SetTrigger("OnHit");
 
             // Hitstop
             if (_timeManagerAnchor != null)
