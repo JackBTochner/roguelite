@@ -8,13 +8,14 @@ public class RangedEnemy : Enemy
     public GameObject enemyBullet; // To get the bullet object.
     public float bulletSpeed = 15; // The move speed of the enemy.
     [SerializeField] private float timer = 1.5f; // [SerializeField] is for private vairables, but it can be edit in the unity inspector.
+    [SerializeField] private float maxExtraTimeAttackTime = 0.2f;
     private float bulletTime; // Loading time of the bullet.
 
     public override IEnumerator AttackingState()
     {
         Debug.Log("AttackingState: Enter");
         aiDestination.enabled = false;
-        bulletTime = timer;
+        bulletTime = timer + Random.Range(0, maxExtraTimeAttackTime);
         while (currentState == AIState.Attacking)
         {
             if (DistanceToPlayer() <= minAttackRange)
@@ -46,7 +47,7 @@ public class RangedEnemy : Enemy
             yield break;
         // If else do.
         // Set the reload for shot time back to.
-        bulletTime = timer;
+        bulletTime = timer + Random.Range(0, maxExtraTimeAttackTime);
         anim.SetTrigger("Attack");
 
         //30% to do

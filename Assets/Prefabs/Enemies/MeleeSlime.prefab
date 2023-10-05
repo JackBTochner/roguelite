@@ -1392,7 +1392,7 @@ MonoBehaviour:
   OnEnemyDiedMeleeExplodeWisp:
     m_PersistentCalls:
       m_Calls: []
-  detectionRadius: 20
+  detectionRadius: 100
   maxAttackRange: 2
   minAttackRange: 0.5
   retreatRadius: 0.5

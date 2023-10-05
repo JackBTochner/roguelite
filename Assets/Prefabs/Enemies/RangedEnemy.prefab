@@ -1213,6 +1213,7 @@ MonoBehaviour:
     type: 3}
   bulletSpeed: 10
   timer: 1.5
+  maxExtraTimeAttackTime: 0.7
 --- !u!114 &8409118806247872676
 MonoBehaviour:
   m_ObjectHideFlags: 0
