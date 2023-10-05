@@ -62,6 +62,8 @@ namespace Player
         public bool canDash = true;
         public Vector3 lastHorizontalVelocity;
 
+        public GameObject dashVFX;
+
         [SerializeField] private PlayerInputAnchor _playerInputAnchor = default;
 
         private Vector3 playerForward;
@@ -132,6 +134,9 @@ namespace Player
             allowRotation = false;
             isDashing = true;
             lastHorizontalVelocity = Vector3.ProjectOnPlane(controller.velocity, Vector3.up);
+            if (dashVFX)
+                Instantiate(dashVFX, transform.position, gfxTransform.rotation);
+
             float startTime = Time.time;
 
             while(Time.time < startTime + dashTime)
