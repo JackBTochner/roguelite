@@ -281,7 +281,7 @@ public class EnemySpawnWave
             else
                 spawnLocation[i] = PickRandomSpawnPoint(Vector3.zero);
 
-            GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
+            GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i] + new Vector3(0, 0.5f, 0), Quaternion.identity);
         }
         yield return new WaitForSeconds(individualSpawnDelay);
 
@@ -305,7 +305,7 @@ public class EnemySpawnWave
             else
                 spawnLocation[i] = PickRandomSpawnPoint(Vector3.zero);
 
-            GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i], Quaternion.identity);
+            GameObject.Instantiate(enemySpawnIndicator, spawnLocation[i]+ new Vector3(0, 0.5f, 0), Quaternion.identity);
             yield return new WaitForSeconds(individualSpawnDelay);
 
             Enemy enemy = GameObject.Instantiate(enemiesToSpawn[i], spawnLocation[i], Quaternion.identity).GetComponent<Enemy>();

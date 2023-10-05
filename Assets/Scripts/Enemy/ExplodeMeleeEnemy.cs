@@ -57,10 +57,13 @@ public class ExplodeMeleeEnemy : Enemy
     {
         //ExplosionIndicator.SetActive(true);
         gfxRenderer.material = WarningMaterial;
-        WarningMaterial.SetColor("Emission", WarningColorHigh);
-        WarningMaterial.DOColor(WarningColorLow, "Emission" ,0.5f).SetLoops(-1, LoopType.Yoyo);
-        transform.DOShakeScale(ExplosionCountdown-0.1f, 0.2f, 5, 5, false);
-        yield return new WaitForSeconds(ExplosionCountdown);
+        WarningMaterial.SetColor("Emission", WarningColorLow);
+        WarningMaterial.DOColor(WarningColorHigh, "Emission", 0.5f).SetEase(Ease.InExpo);
+        // float intensity = 0.2f;
+        // DOTween.To(()=> intensity, x=> intensity = x, 0f, ExplosionCountdown-0.1f);
+        // transform.DOShakeScale(ExplosionCountdown-0.1f, intensity, 5, 5, false);
+
+        yield return new WaitForSeconds(ExplosionCountdown);    
         PlayerCharacter playerCharacter = playerTransformAnchor.Value.GetComponent<PlayerCharacter>();
         if (DistanceToPlayer() < ExplosionDistance) // Take full damage.
         {
