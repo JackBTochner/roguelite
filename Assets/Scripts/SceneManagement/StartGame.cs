@@ -12,6 +12,8 @@ public class StartGame : MonoBehaviour
     [Header("Broadcasting on")]
 	[SerializeField] private LoadEventChannelSO _loadLocation = default;
 
+    private const string GamePlays = "GamePlays";
+
     public void Start()
     {
         startButton.Select();
@@ -19,6 +21,7 @@ public class StartGame : MonoBehaviour
 
     public void StartNewGame()
     {
+        IncrementGamePlays();
         _loadLocation.RaiseEvent(_locationToLoad, _showLoadScreen);
     }
 
@@ -26,4 +29,13 @@ public class StartGame : MonoBehaviour
     { 
 
     }
+
+    private void IncrementGamePlays()
+    {
+        int currentGamePlays = PlayerPrefs.GetInt(GamePlays, 0);
+        currentGamePlays++;
+        PlayerPrefs.SetInt(GamePlays, currentGamePlays);
+        PlayerPrefs.Save();
+    }
+
 }

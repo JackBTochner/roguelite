@@ -4,15 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
 using System.Diagnostics;
-using Debug = UnityEngine.Debug; 
+using Debug = UnityEngine.Debug;
+using TMPro;
 
 public class DebugKeysMainMenu : MonoBehaviour
 {
     private bool keyboardkeys = false;
+
+    public TextMeshProUGUI gamePlaysText;
     // Start is called before the first frame update
     void Start()
     {
         keyboardkeys = false;
+        gamePlaysText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,6 +42,24 @@ public class DebugKeysMainMenu : MonoBehaviour
             Debug.Log("I");
             DialogueLua.SetVariable("PlayedConversations", "[]");
             SceneManager.LoadScene("Initialization");
+        }
+
+        if (keyboardkeys == true && Input.GetKeyDown(KeyCode.U))
+        {
+            gamePlaysText.gameObject.SetActive(true);
+            int currentGamePlays = PlayerPrefs.GetInt("GamePlays", 0);
+            gamePlaysText.text = "Total game plays:" + currentGamePlays.ToString();
+        }
+
+        if (keyboardkeys == true && Input.GetKeyDown(KeyCode.Y))
+        {
+            gamePlaysText.gameObject.SetActive(false);
+        }
+
+        if (keyboardkeys == true && Input.GetKeyDown(KeyCode.T))
+        {
+            PlayerPrefs.SetInt("GamePlays", 0);
+            PlayerPrefs.Save();
         }
     }
 
