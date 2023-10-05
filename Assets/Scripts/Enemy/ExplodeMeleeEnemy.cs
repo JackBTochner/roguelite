@@ -59,9 +59,7 @@ public class ExplodeMeleeEnemy : Enemy
         gfxRenderer.material = WarningMaterial;
         WarningMaterial.SetColor("Emission", WarningColorLow);
         WarningMaterial.DOColor(WarningColorHigh, "Emission", 0.5f).SetEase(Ease.InExpo);
-        // float intensity = 0.2f;
-        // DOTween.To(()=> intensity, x=> intensity = x, 0f, ExplosionCountdown-0.1f);
-        // transform.DOShakeScale(ExplosionCountdown-0.1f, intensity, 5, 5, false);
+        transform.DOShakeScale(ExplosionCountdown-0.1f, 0.1f, 5, 5, false).SetEase(Ease.InExpo);
 
         yield return new WaitForSeconds(ExplosionCountdown);    
         PlayerCharacter playerCharacter = playerTransformAnchor.Value.GetComponent<PlayerCharacter>();
