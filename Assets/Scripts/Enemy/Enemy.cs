@@ -193,14 +193,14 @@ public class Enemy : Hittable
 
     public void OnEnable()
     {
-        enemyAlive++;
+        // enemyAlive++;
         playerTransformAnchor.OnAnchorProvided += AssignAITarget;
         if (playerTransformAnchor.isSet)
             AssignAITarget();
     }
     public void OnDisable()
     {
-        enemyAlive--;
+        // enemyAlive--;
         playerTransformAnchor.OnAnchorProvided -= AssignAITarget;
     }
 
