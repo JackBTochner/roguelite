@@ -260,8 +260,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100/100
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dd7c8c7886242004395cf42dc034ec73, type: 2}
+  m_sharedMaterial: {fileID: -6781814669229819524, guid: dd7c8c7886242004395cf42dc034ec73,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -291,7 +292,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1404,7 +1405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &488993584
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2119,7 +2120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4929637, g: 0.83137256, b: 0.3490196, a: 1}
+  m_Color: {r: 0.4009434, g: 0.75003695, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4626,7 +4627,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hurtImage: {fileID: 1700135063}
   damagedColor: {r: 0.41568628, g: 0.10980392, b: 0.40392157, a: 0.5019608}
-  healthyColor: {r: 0.41568628, g: 0.10980392, b: 0.40392157, a: 0}
   _UIUpdateValue: {fileID: 11400000, guid: 87fbda8afe98df442ad6f7f8db0ee2eb, type: 2}
 --- !u!1 &1802761972
 GameObject:
