@@ -142,6 +142,7 @@ MonoBehaviour:
   postProcessVolume: {fileID: 0}
   DamagedColorFilter: {r: 0, g: 0, b: 0, a: 0}
   damageFXTime: 0.5
+  hitmarker: {fileID: 0}
   meshRenderer: {fileID: 0}
   onHitMaterial: {fileID: 0}
   materialChangeDuration: 0.1
@@ -151,6 +152,7 @@ MonoBehaviour:
   _startDeathEvent: {fileID: 0}
   _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   _updateDigUI: {fileID: 0}
+  _updateHurtUI: {fileID: 0}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
   _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
@@ -224,6 +226,7 @@ MonoBehaviour:
   isDashing: 0
   canDash: 0
   lastHorizontalVelocity: {x: 0, y: 0, z: 0}
+  dashVFX: {fileID: 0}
   _playerInputAnchor: {fileID: 11400000, guid: 30b1a5f313dd84142b35b14dc4a55c38, type: 2}
   playerCharacter: {fileID: 0}
   attackOverridesMovement: 0
@@ -277,6 +280,7 @@ MonoBehaviour:
   _startDeathEvent: {fileID: 11400000, guid: 0223ef6ce32cd3f49abd592239c8bb34, type: 2}
   playerMovement: {fileID: 0}
   playerCharacter: {fileID: 0}
+  isInHub: 1
 --- !u!114 &3153501817403051458
 MonoBehaviour:
   m_ObjectHideFlags: 0

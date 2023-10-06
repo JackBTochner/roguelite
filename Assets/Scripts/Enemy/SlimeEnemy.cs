@@ -15,7 +15,6 @@ public class SlimeEnemy : Enemy
 
     public override IEnumerator AttackingState()
     {
-        Debug.Log("AttackingState: Enter");
         aiDestination.enabled = false;
         eruptionTimer = eruptionInterval;
         while (currentState == AIState.Attacking)
@@ -28,7 +27,6 @@ public class SlimeEnemy : Enemy
             OrientTowards(playerTarget.position, turnSpeedMultiplier);
             yield return 0;
         }
-        Debug.Log("AttackingState: Exit");
         anim.ResetTrigger("PrepareAttack");
         anim.ResetTrigger("Attack");
         NextState();

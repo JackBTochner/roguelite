@@ -37,6 +37,8 @@ public class PlayerAttack : MonoBehaviour
     public PlayerMovement playerMovement;
     public PlayerCharacter playerCharacter;
 
+    public bool isInHub = false;
+
 
 	private void Awake()
     {
@@ -68,6 +70,8 @@ public class PlayerAttack : MonoBehaviour
 
     void TryAttack()
     {
+        if (isInHub)
+            return;
         if (_canAttack && !playerCharacter.isDigging)
         {
             if(_updateAttackUI != null)

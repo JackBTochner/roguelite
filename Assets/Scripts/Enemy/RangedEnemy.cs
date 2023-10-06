@@ -13,7 +13,6 @@ public class RangedEnemy : Enemy
 
     public override IEnumerator AttackingState()
     {
-        Debug.Log("AttackingState: Enter");
         aiDestination.enabled = false;
         bulletTime = timer + Random.Range(0, maxExtraTimeAttackTime);
         while (currentState == AIState.Attacking)
@@ -26,7 +25,6 @@ public class RangedEnemy : Enemy
             OrientTowards(playerTarget.position, turnSpeedMultiplier);
             yield return 0;
         }
-        Debug.Log("AttackingState: Exit");
         anim.ResetTrigger("PrepareAttack");
         anim.ResetTrigger("Attack");
         NextState();

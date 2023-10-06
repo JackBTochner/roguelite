@@ -25,7 +25,6 @@ public class ExplodeMeleeEnemy : Enemy
 
     public override IEnumerator IdleState()
     {
-        Debug.Log("Idle: Enter");
         aiDestination.enabled = false;
         aiPath.canMove = false;
         aiPath.enableRotation = false;
@@ -36,7 +35,6 @@ public class ExplodeMeleeEnemy : Enemy
                 currentState = AIState.MovingToTarget;
             yield return 0;
         }
-        Debug.Log("Idle: Exit");
         aiDestination.enabled = false;
         aiPath.canMove = true;
         aiPath.enableRotation = true;

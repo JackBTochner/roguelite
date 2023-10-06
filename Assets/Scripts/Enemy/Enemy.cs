@@ -95,7 +95,6 @@ public class Enemy : Hittable
 
     public virtual IEnumerator IdleState()
     {
-        Debug.Log("Idle: Enter");
         aiDestination.enabled = false;
         while (currentState == AIState.Idle)
         {
@@ -103,14 +102,12 @@ public class Enemy : Hittable
                 currentState = AIState.MovingToTarget;
             yield return 0;
         }
-        Debug.Log("Idle: Exit");
         aiDestination.enabled = false;
         NextState();
     }
 
     public virtual IEnumerator MovingToTargetState()
     {
-        Debug.Log("MovingToTarget: Enter");
         aiDestination.enabled = true;
         while (currentState == AIState.MovingToTarget)
         {
@@ -119,13 +116,11 @@ public class Enemy : Hittable
             OrientTowards(playerTarget.position, turnSpeedMultiplier);
             yield return 0;
         }
-        Debug.Log("MovingToTarget: Exit");
         aiDestination.enabled = false;
         NextState();
     }
     public virtual IEnumerator AttackingState()
     {
-        Debug.Log("AttackingState: Enter");
         aiDestination.enabled = false;
 
         isAttacking = true;
@@ -146,7 +141,6 @@ public class Enemy : Hittable
                 currentState = AIState.MovingToTarget;
             yield return 0;
         }
-        Debug.Log("AttackingState: Exit");
         anim.ResetTrigger("PrepareAttack");
         anim.ResetTrigger("Attack");
         NextState();
@@ -154,7 +148,6 @@ public class Enemy : Hittable
 
     public virtual IEnumerator RetreatingState()
     {
-        Debug.Log("RetreatingState: Enter");
         aiDestination.enabled = false;
         while (currentState == AIState.Retreating)
         {
@@ -163,13 +156,11 @@ public class Enemy : Hittable
             OrientTowards(playerTarget.position, turnSpeedMultiplier);
             yield return 0;
         }
-        Debug.Log("RetreatingState: Exit");
         NextState();
     }
 
     public virtual IEnumerator GettingHitState()
     {
-        Debug.Log("GettingHitState: Enter");
         aiDestination.enabled = false;
         anim.ResetTrigger("OnHit");
         anim.SetTrigger("OnHit");
@@ -178,7 +169,6 @@ public class Enemy : Hittable
             currentState = AIState.Idle;
             yield return 0;
         }
-        Debug.Log("GettingHitState: Exit");
         NextState();
     }
 

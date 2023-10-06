@@ -22,10 +22,16 @@ public class Interactor : MonoBehaviour
     private void OnDisable()
     { 
         inputReader.OnInteractPerformed -= AttemptInteract;
+        currentTarget = null;
+        _interactCanvasManager = null;
     }
 
     void Update()
     {
+        if (_interactCanvasManager == null && _interactCanvasTransformAnchor.isSet)
+        {
+            _interactCanvasManager = _interactCanvasTransformAnchor.Value.GetComponent<InteractCanvasManager>();
+        }
         RaycastHit hit;
 
         if (Physics.SphereCast(transform.position, 1.5f, transform.forward, out hit, 1.5f))
@@ -34,7 +40,7 @@ public class Interactor : MonoBehaviour
             {
                 currentTarget = hit.transform.GetComponent<HubNPC>();
                 if (!currentTarget.isInteracting && currentTarget.canInteract) { 
-                    if (_interactCanvasTransformAnchor.Value != null)
+                    if (_interactCanvasTransformAnchor.isSet)
                         {
                             _interactCanvasManager.EnableInteractPrompt(currentTarget.interactPrompt);
                         }
@@ -44,12 +50,8 @@ public class Interactor : MonoBehaviour
         else
         {
             ClearCurrentTarget();
-            _interactCanvasManager.DisableInteractPrompt();
-        }
-
-        if (_interactCanvasManager == null && _interactCanvasTransformAnchor.Value != null)
-        {
-            _interactCanvasManager = _interactCanvasTransformAnchor.Value.GetComponent<InteractCanvasManager>();
+            if (_interactCanvasTransformAnchor.isSet)
+                _interactCanvasManager.DisableInteractPrompt();
         }
     }
 
@@ -60,7 +62,8 @@ public class Interactor : MonoBehaviour
             if (currentTarget.canInteract)
             {
                 currentTarget.StartConversation(this);
-                _interactCanvasManager.DisableInteractPrompt();
+                if(_interactCanvasTransformAnchor.isSet)
+                    _interactCanvasManager.DisableInteractPrompt();
             }
         }
     }
