@@ -34,8 +34,8 @@ public class Interactor : MonoBehaviour
         }
         RaycastHit hit;
 
-        if (Physics.SphereCast(transform.position, 1.5f, transform.forward, out hit, 1.5f))
-        {
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2f))
+        { 
             if (hit.transform.CompareTag("Interactable"))
             {
                 currentTarget = hit.transform.GetComponent<HubNPC>();
@@ -49,7 +49,8 @@ public class Interactor : MonoBehaviour
         }
         else
         {
-            ClearCurrentTarget();
+            if(currentTarget)
+                ClearCurrentTarget();
             if (_interactCanvasTransformAnchor.isSet)
                 _interactCanvasManager.DisableInteractPrompt();
         }

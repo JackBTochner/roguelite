@@ -91,7 +91,7 @@ public class CameraManager : MonoBehaviour
     public void SetupProtagonistVirtualCamera()
 	{
 		// Transform target = _protagonistTransformAnchor.Value;
-		if (_playerTransformAnchor.isSet)
+		if (_playerTransformAnchor.Value != null)
 		{
 			if(_playerTransformAnchor.Value.TryGetComponent(out PlayerCharacter pc))
 				_playerCharacter = pc;

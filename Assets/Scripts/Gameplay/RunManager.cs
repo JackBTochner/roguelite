@@ -105,7 +105,8 @@ public class RunManager : MonoBehaviour
 
     private void OnSceneUnloaded(Scene current)
     {
-        mapCanvas.SetActive(false);
+        if(mapCanvas)
+            mapCanvas.SetActive(false);
         playerExit = null;
     }
 
