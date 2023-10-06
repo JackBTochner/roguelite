@@ -4,6 +4,7 @@ using PixelCrushers.DialogueSystem;
 
 // Ricky: The veision of our game needed to use TextMeshProUGUI for the text. we need to use "using TMPro;"
 using TMPro;
+using System.Collections;
 // Ricky: List<> needed "using System.Collections.Generic;"
 using System.Collections.Generic;
 // Ricky: To swap between scenes.
@@ -25,6 +26,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI rankListText;
 
     public Button returnToMainMenuButton;
+    public float buttonDelay = 15f;
 
     public bool rankListOpen = false;
 
@@ -127,6 +129,7 @@ public class ScoreManager : MonoBehaviour
         rankListOpen = true;
 
         Time.timeScale = 0.0f;
+        returnToMainMenuButton.interactable = false;
         // The headder of the rank list.
         string ranklistText = "Rank list:\n";
 
@@ -148,8 +151,19 @@ public class ScoreManager : MonoBehaviour
         rankList.gameObject.SetActive(true);
 
         // Set button to automatically selected by the gamepad.
-        returnToMainMenuButton.Select();
+        //returnToMainMenuButton.Select();
+        StartCoroutine(EnableReturnToMainMenuButton());
+    }
 
+    private IEnumerator EnableReturnToMainMenuButton() 
+    {
+#if UNITY_EDITOR
+        yield return new WaitForSecondsRealtime(2.0f);
+#else
+        yield return new WaitForSecondsRealtime(buttonDelay);
+#endif
+        returnToMainMenuButton.interactable = true;
+        returnToMainMenuButton.Select();
     }
 
     public void clearRankList()
