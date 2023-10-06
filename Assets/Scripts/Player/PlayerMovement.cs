@@ -217,7 +217,7 @@ namespace Player
                 playerForward = Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
                 playerRight = Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
 
-                move = playerForward.normalized * inputReader.MoveComposite.y + playerRight.normalized * inputReader.MoveComposite.x;
+                move = playerForward.normalized * inputReader.MoveComposite.normalized.y + playerRight.normalized * inputReader.MoveComposite.normalized.x;
 
             } else
             { 
