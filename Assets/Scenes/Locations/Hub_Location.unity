@@ -12865,6 +12865,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 117160556, guid: 8b6ae659732a64b44b50bc377b52cc09, type: 3}
+      propertyPath: m_ImpulseDefinition.m_AmplitudeGain
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1966476361, guid: 8b6ae659732a64b44b50bc377b52cc09, type: 3}
       propertyPath: m_Lens.ModeOverride
       value: 1
