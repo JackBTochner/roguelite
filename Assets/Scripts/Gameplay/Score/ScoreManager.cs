@@ -33,6 +33,9 @@ public class ScoreManager : MonoBehaviour
     public LoadEventChannelSO _loadMenuEvent = default;
     public GameSceneSO _menuScene = default;
 
+    public TextMeshProUGUI countdownText; 
+    private float countdownDuration = 3.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -152,19 +155,42 @@ public class ScoreManager : MonoBehaviour
 
         // Set button to automatically selected by the gamepad.
         //returnToMainMenuButton.Select();
-        StartCoroutine(EnableReturnToMainMenuButton());
+        //StartCoroutine(EnableReturnToMainMenuButton());
+        StartCoroutine(CountdownForButton());
     }
 
-    private IEnumerator EnableReturnToMainMenuButton() 
+    //    private IEnumerator EnableReturnToMainMenuButton() 
+    //    {
+    //#if UNITY_EDITOR
+    //        yield return new WaitForSecondsRealtime(2.0f);
+    //#else
+    //        yield return new WaitForSecondsRealtime(buttonDelay);
+    //#endif
+    //        returnToMainMenuButton.interactable = true;
+    //        returnToMainMenuButton.Select();
+    //    }
+
+    private IEnumerator CountdownForButton()
     {
-#if UNITY_EDITOR
-        yield return new WaitForSecondsRealtime(2.0f);
-#else
-        yield return new WaitForSecondsRealtime(buttonDelay);
-#endif
+        float countdown = countdownDuration;
+        while (countdown > 0)
+        {
+
+            int seconds = Mathf.FloorToInt(countdown % 60);
+            float hundredths = Mathf.FloorToInt(countdown * 100) % 100;
+
+            string niceTime = string.Format("{0:0}:{1:00}", seconds, hundredths);
+
+            countdownText.text = niceTime;
+            yield return null;
+            countdown -= Time.unscaledDeltaTime;
+        }
+        countdownText.text = ""; // Don't want to see anything, because the button is interactable to true.
+
         returnToMainMenuButton.interactable = true;
         returnToMainMenuButton.Select();
     }
+
 
     public void clearRankList()
     {
