@@ -14,6 +14,8 @@ public class Interactor : MonoBehaviour
 
     [SerializeField]
     private TransformAnchor _interactCanvasTransformAnchor;
+    [Header("Broadcasting on")]
+    [SerializeField] BoolEventChannelSO _isInteractingEvent;
 
     private void OnEnable()
     { 
@@ -65,6 +67,7 @@ public class Interactor : MonoBehaviour
                 currentTarget.StartConversation(this);
                 if(_interactCanvasTransformAnchor.isSet)
                     _interactCanvasManager.DisableInteractPrompt();
+                    _isInteractingEvent.RaiseEvent(true);
             }
         }
     }
@@ -72,5 +75,6 @@ public class Interactor : MonoBehaviour
     public void ClearCurrentTarget()
     { 
         currentTarget = null;
+        _isInteractingEvent.RaiseEvent(false);
     }
 }

@@ -137,7 +137,7 @@ MonoBehaviour:
   digDetectionLocation: {fileID: 0}
   digRayLength: 2
   _projectileHighlighters: {fileID: 0}
-  playerAnim: {fileID: 0}
+  playerAnim: {fileID: 8827232853832920793}
   staminaBarAnimator: {fileID: 0}
   postProcessVolume: {fileID: 0}
   DamagedColorFilter: {r: 0, g: 0, b: 0, a: 0}
@@ -160,6 +160,8 @@ MonoBehaviour:
   _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
   _timeManagerAnchor: {fileID: 11400000, guid: 93d7d42203174ae4ebc41afc0f9b955b, type: 2}
   _postProcessTransformAnchor: {fileID: 11400000, guid: 1ffb66a7f2720d94d878d9cce7a68d2e,
+    type: 2}
+  _isInteractingEvent: {fileID: 11400000, guid: 3c71dc80f7cbefd47a93b8ed42088492,
     type: 2}
   playerAttack: {fileID: 0}
   audioSource: {fileID: 0}
@@ -211,6 +213,7 @@ MonoBehaviour:
   RotationSmoothTime: 0.12
   playerEyeHeight: 0.75
   gravity: -15
+  digSpeedMultiplier: 1.2
   gamepadDeadzone: 0.01
   gamepadRotateSmoothing: 540
   usingGamepadSO: {fileID: 11400000, guid: 89f2fd504a9da344fa17401c12f12999, type: 2}
@@ -425,6 +428,8 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   inputReader: {fileID: 11400000, guid: 5692495ec1171d44d9c93ba2bbebada8, type: 2}
   _interactCanvasTransformAnchor: {fileID: 11400000, guid: e5ac39eb4c25ce94893b03bb5e10acec,
+    type: 2}
+  _isInteractingEvent: {fileID: 11400000, guid: 3c71dc80f7cbefd47a93b8ed42088492,
     type: 2}
 --- !u!1 &8146452490061195249
 GameObject:

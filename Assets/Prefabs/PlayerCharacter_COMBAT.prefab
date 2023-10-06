@@ -610,6 +610,8 @@ MonoBehaviour:
   _timeManagerAnchor: {fileID: 11400000, guid: 93d7d42203174ae4ebc41afc0f9b955b, type: 2}
   _postProcessTransformAnchor: {fileID: 11400000, guid: 1ffb66a7f2720d94d878d9cce7a68d2e,
     type: 2}
+  _isInteractingEvent: {fileID: 11400000, guid: 3c71dc80f7cbefd47a93b8ed42088492,
+    type: 2}
   playerAttack: {fileID: 4007921207397309549}
   audioSource: {fileID: 3901179828627036699}
   battlemusic: {fileID: 0}
@@ -1569,7 +1571,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.28883624
+  m_FillAmount: 0.26152238
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
@@ -5245,7 +5247,7 @@ Animator:
   m_Avatar: {fileID: 9000000, guid: e23036ee17a6657429b86551a2faa8eb, type: 3}
   m_Controller: {fileID: 9100000, guid: b89df64c97b40484c8bb445e34d90a2a, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0

@@ -73,6 +73,8 @@ namespace Player
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
         [SerializeField] private TimeManagerAnchor _timeManagerAnchor = default;
         [SerializeField] private TransformAnchor _postProcessTransformAnchor = default;
+        [SerializeField] BoolEventChannelSO _isInteractingEvent = default;
+
 
         public PlayerAttack playerAttack;
 
@@ -86,10 +88,13 @@ namespace Player
         private void OnEnable()
         {
             inputReader.OnDigCancelled += AttemptToggleDig;
+            _isInteractingEvent.OnEventRaised += Interacting;
+
         }
         private void OnDisable()
         {
             inputReader.OnDigCancelled -= AttemptToggleDig;
+            _isInteractingEvent.OnEventRaised -= Interacting;
         }
 
         private void Awake()
@@ -291,7 +296,8 @@ namespace Player
 
         IEnumerator PlayerDie(float delay)
         {
-            playerAnim.SetTrigger("Death");
+            playerAnim.SetBool("IsDead", true);
+            playerAnim.SetTrigger("Dead");
             if (postProcessVolume != null)
             {
                 colorAdjustments.colorFilter.Override(Color.white);
@@ -355,6 +361,17 @@ namespace Player
                 return true;
             }
             return false;
+        }
+        private void Interacting(bool isInteracting)
+        {
+            if (isInteracting)
+            {
+                playerAnim.SetTrigger("Pause");
+            }
+            else
+            {
+                playerAnim.SetTrigger("Unpause");
+            }
         }
 
         public void TurnoffMusic()

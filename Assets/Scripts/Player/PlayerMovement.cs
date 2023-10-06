@@ -219,8 +219,8 @@ namespace Player
                 playerForward = Vector3.ProjectOnPlane(mainCamera.Value.forward, Vector3.up);
                 playerRight = Vector3.ProjectOnPlane(mainCamera.Value.right, Vector3.up);
 
-                move = playerForward.normalized * inputReader.MoveComposite.normalized.y + playerRight.normalized * inputReader.MoveComposite.normalized.x;
-
+                Vector2 inputMap = playerCharacter.isDigging ? new Vector2(inputReader.MoveComposite.x, inputReader.MoveComposite.y) : new Vector2(inputReader.MoveComposite.normalized.x, inputReader.MoveComposite.normalized.y);
+                move = playerForward.normalized * inputMap.y + playerRight.normalized * inputMap.x;
             } else
             { 
                 //No CameraManager exists in the scene, so the input is just used absolute in world-space
