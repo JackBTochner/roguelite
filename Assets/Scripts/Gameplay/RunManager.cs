@@ -93,7 +93,7 @@ public class RunManager : MonoBehaviour
         // Replace with map select
         GameSceneSO map = locationsToLoadPool[Random.Range(0, locationsToLoadPool.Count)];
         Debug.Log("StartingNewRun");
-        loadLocation.RaiseEvent(map, false, false);
+        loadLocation.RaiseEvent(map, false, true);
         combatCanvas.SetActive(true);
         startRun.RaiseEvent();
     }

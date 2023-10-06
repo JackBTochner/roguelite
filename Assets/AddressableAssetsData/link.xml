@@ -19,6 +19,8 @@
     <type fullname="Enemy" preserve="all" />
     <type fullname="EnemySpawnManager" preserve="all" />
     <type fullname="ExplodeMeleeEnemy" preserve="all" />
+    <type fullname="FadeChannelSO" preserve="all" />
+    <type fullname="FadeController" preserve="all" />
     <type fullname="GameplayManager" preserve="all" />
     <type fullname="GameSceneSO" preserve="all" />
     <type fullname="HealthSO" preserve="all" />
@@ -89,7 +91,6 @@
     <type fullname="TransformAnchor" preserve="all" />
     <type fullname="TransformAnchorAssigner" preserve="all" />
     <type fullname="TransformEventChannelSO" preserve="all" />
-    <type fullname="TransitionChannelSO" preserve="all" />
     <type fullname="Trap" preserve="all" />
     <type fullname="UIDigManager" preserve="all" />
     <type fullname="UIHealthBarManager" preserve="all" />

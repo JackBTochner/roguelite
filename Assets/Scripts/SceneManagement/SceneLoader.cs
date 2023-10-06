@@ -22,7 +22,7 @@ public class SceneLoader : MonoBehaviour
     [Header("Broadcasting on")]
     [SerializeField] private BoolEventChannelSO _toggleLoadingScreen = default;
 	[SerializeField] private VoidEventChannelSO _onSceneReady = default; //picked up by the SpawnSystem
-	[SerializeField] private TransitionChannelSO transitionRequestChannel = default;
+	[SerializeField] private FadeChannelSO _fadeRequestChannel = default;
 
     private AsyncOperationHandle<SceneInstance> _loadingOperationHandle;
 	private AsyncOperationHandle<SceneInstance> _gameplayManagerLoadingOpHandle;
@@ -129,7 +129,7 @@ public class SceneLoader : MonoBehaviour
 	private IEnumerator UnloadPreviousScene()
 	{
 		//_inputReader.DisableAllInput();
-		transitionRequestChannel.FadeOut(_fadeDuration);
+		_fadeRequestChannel.FadeOut(_fadeDuration);
 
 		yield return new WaitForSeconds(_fadeDuration);
 
@@ -183,7 +183,7 @@ public class SceneLoader : MonoBehaviour
 		if (_showLoadingScreen)
 			_toggleLoadingScreen.RaiseEvent(false);
 
-		transitionRequestChannel.FadeIn(_fadeDuration);
+		_fadeRequestChannel.FadeIn(_fadeDuration);
 
 		StartGameplay();
 	}

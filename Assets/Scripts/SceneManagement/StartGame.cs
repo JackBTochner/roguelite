@@ -22,7 +22,7 @@ public class StartGame : MonoBehaviour
     public void StartNewGame()
     {
         IncrementGamePlays();
-        _loadLocation.RaiseEvent(_locationToLoad, _showLoadScreen);
+        _loadLocation.RaiseEvent(_locationToLoad, _showLoadScreen, true);
     }
 
     private void ContinuePreviousGame()

@@ -4164,7 +4164,7 @@ MonoBehaviour:
   rankList: {fileID: 1625162450}
   rankListText: {fileID: 276563543}
   returnToMainMenuButton: {fileID: 1659646278}
-  buttonDelay: 5
+  buttonDelay: 15
   rankListOpen: 0
   _loadMenuEvent: {fileID: 11400000, guid: aff718ab1c86ae74fb3a6e4c2adff5a0, type: 2}
   _menuScene: {fileID: 11400000, guid: 44681d116bf4f794c8370d71ad6ec243, type: 2}

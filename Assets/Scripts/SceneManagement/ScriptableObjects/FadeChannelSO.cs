@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [CreateAssetMenu(menuName = "Events/UI/Transition Channel")]
-public class TransitionChannelSO : DescriptionBaseSO
+public class FadeChannelSO : DescriptionBaseSO
 {
 	public UnityAction<bool, float, Color> OnEventRaised;
 
