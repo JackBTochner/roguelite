@@ -34,7 +34,9 @@ public class ScoreManager : MonoBehaviour
     public GameSceneSO _menuScene = default;
 
     public TextMeshProUGUI countdownText; 
-    private float countdownDuration = 3.0f;
+    private float countdownDuration = 5f;
+
+    public Animator GameOverScreenAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -92,7 +94,7 @@ public class ScoreManager : MonoBehaviour
     // 6. These should be happen automatically, we shouln't press any button to change score.
 
     // We call the "SaveScore()" when our player die in the battle scene.
-    public void SaveScore()
+    public void SaveScore(bool hasDied)
     {
         // Get the current score and save it in a variable "lastScore".
         int lastScore = score;
@@ -123,6 +125,17 @@ public class ScoreManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("HighScore" + i, highScores[i]);
         }
+        StartCoroutine(ShowGameOverScreen(hasDied));
+    }
+
+    IEnumerator ShowGameOverScreen(bool hasDied)
+    {
+        if (hasDied)
+            GameOverScreenAnim.SetTrigger("GameOver"); 
+        else
+            GameOverScreenAnim.SetTrigger("TimeUp");
+        // Let the game over screen play
+        yield return new WaitForSecondsRealtime(2.5f);
         // Display the rank list function
         DisplayRankList();
     }

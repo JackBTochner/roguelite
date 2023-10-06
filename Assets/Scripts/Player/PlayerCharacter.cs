@@ -95,6 +95,9 @@ namespace Player
         {
             inputReader.OnDigCancelled -= AttemptToggleDig;
             _isInteractingEvent.OnEventRaised -= Interacting;
+            invulnerable = false;
+            isDigging = false;
+            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
         }
 
         private void Awake()
@@ -148,6 +151,10 @@ namespace Player
                 _currentStaminaSO.RestoreStamina(_currentStaminaSO.RegenRate * Time.deltaTime);
                 if(_updateStaminaUI != null)
                     _updateStaminaUI.RaiseEvent();
+            }
+            if (_currentStaminaSO.CurrentStamina <= 0)
+            {
+                StartCoroutine(DigExit(digFreezeTime));
             }
             
             if (_currentHealthSO.CurrentHealth < 30)
@@ -296,6 +303,9 @@ namespace Player
 
         IEnumerator PlayerDie(float delay)
         {
+            invulnerable = false;
+            isDigging = false;
+            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
             playerAnim.SetBool("IsDead", true);
             playerAnim.SetTrigger("Dead");
             if (postProcessVolume != null)
@@ -322,22 +332,21 @@ namespace Player
             // TURN OFF CHARACTER INPUT
             gameObject.GetComponent<PlayerMovement>().allowMovement = false;
             // SHOW DEATH ANIMATION
-
             if(_startDeathEvent)
             {
                 _startDeathEvent.RaiseEvent();
             }
 
             // Save score
-            yield return new WaitForSeconds(3f);
+            //yield return new WaitForSeconds(3f);
             ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
-            scoreManager.SaveScore();
+            scoreManager.SaveScore(true);
 
 
             yield return new WaitForSeconds(delay);
             // Maybe create a listener and invoke here.
-            if(_runManagerAnchor != null)
-                _runManagerAnchor.Value.ReturnToHub();
+            //if(_runManagerAnchor != null)
+            //    _runManagerAnchor.Value.ReturnToHub();
         }
 
         IEnumerator DamageScreenFX(float duration)

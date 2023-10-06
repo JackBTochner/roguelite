@@ -135,6 +135,6 @@ public class CountDownTimer : MonoBehaviour
         Debug.Log("Timer has ended!");
 
         ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
-        scoreManager.SaveScore();
+        scoreManager.SaveScore(false);
     }
 }
