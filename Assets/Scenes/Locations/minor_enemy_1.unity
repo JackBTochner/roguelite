@@ -4030,6 +4030,8 @@ MonoBehaviour:
   rankListText: {fileID: 276563543}
   returnToMainMenuButton: {fileID: 1659646278}
   rankListOpen: 0
+  _loadMenuEvent: {fileID: 11400000, guid: aff718ab1c86ae74fb3a6e4c2adff5a0, type: 2}
+  _menuScene: {fileID: 11400000, guid: 44681d116bf4f794c8370d71ad6ec243, type: 2}
 --- !u!224 &1401245330
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4600,6 +4602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc767370503faa4597ec2e5de4cac3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loadMenuEvent: {fileID: 11400000, guid: aff718ab1c86ae74fb3a6e4c2adff5a0, type: 2}
+  _menuScene: {fileID: 11400000, guid: 44681d116bf4f794c8370d71ad6ec243, type: 2}
   _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
   ScoreManager: {fileID: 1401245329}
 --- !u!4 &1608598535

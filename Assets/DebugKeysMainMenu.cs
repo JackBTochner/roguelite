@@ -13,6 +13,10 @@ public class DebugKeysMainMenu : MonoBehaviour
 
     public TextMeshProUGUI gamePlaysText;
     // Start is called before the first frame update
+
+    public LoadEventChannelSO _loadMenuEvent = default;
+    public GameSceneSO _menuScene = default;
+
     void Start()
     {
         keyboardkeys = false;
@@ -41,7 +45,8 @@ public class DebugKeysMainMenu : MonoBehaviour
         {
             Debug.Log("I");
             DialogueLua.SetVariable("PlayedConversations", "[]");
-            SceneManager.LoadScene("Initialization");
+            //SceneManager.LoadScene("Initialization");
+            _loadMenuEvent.RaiseEvent(_menuScene, false);
         }
 
         if (keyboardkeys == true && Input.GetKeyDown(KeyCode.U))

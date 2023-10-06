@@ -9,6 +9,10 @@ using Debug = UnityEngine.Debug;
 public class DebugKeysHub : MonoBehaviour
 {
     private bool keyboardkeys = false;
+
+    public LoadEventChannelSO _loadMenuEvent = default;
+    public GameSceneSO _menuScene = default;
+
     [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
     // Start is called before the first frame update
     void Start()
@@ -38,7 +42,8 @@ public class DebugKeysHub : MonoBehaviour
         {
             Debug.Log("I");
             DialogueLua.SetVariable("PlayedConversations", "[]");
-            SceneManager.LoadScene("Initialization");
+            //SceneManager.LoadScene("Initialization");
+            _loadMenuEvent.RaiseEvent(_menuScene, false);
         }
 
         //if (keyboardkeys == true && Input.GetKeyDown(KeyCode.U))

@@ -9,6 +9,10 @@ using Debug = UnityEngine.Debug;
 public class DebugKeysCombat : MonoBehaviour
 {
     private bool keyboardkeys;
+
+    public LoadEventChannelSO _loadMenuEvent = default;
+    public GameSceneSO _menuScene = default;
+
     [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
     public ScoreManager ScoreManager;
 
@@ -41,7 +45,8 @@ public class DebugKeysCombat : MonoBehaviour
         {
             Debug.Log("I");
             DialogueLua.SetVariable("PlayedConversations", "[]");
-            SceneManager.LoadScene("Initialization");
+            //SceneManager.LoadScene("Initialization");
+            _loadMenuEvent.RaiseEvent(_menuScene, false);
         }
 
         if (keyboardkeys == true && Input.GetKeyDown(KeyCode.U))
