@@ -525,8 +525,9 @@ MonoBehaviour:
   RotationSmoothTime: 0.12
   playerEyeHeight: 0.75
   gravity: -15
+  digSpeedMultiplier: 1.5
   gamepadDeadzone: 0.01
-  gamepadRotateSmoothing: 540
+  gamepadRotateSmoothing: 1080
   usingGamepadSO: {fileID: 11400000, guid: 89f2fd504a9da344fa17401c12f12999, type: 2}
   isGamepad: 0
   mainCamera: {fileID: 11400000, guid: 797abff799524704d8813c12c614081a, type: 2}
@@ -601,6 +602,8 @@ MonoBehaviour:
   _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
   _updateDigUI: {fileID: 11400000, guid: 8e496dac62832da4e8fb2530779046cb, type: 2}
   _updateHurtUI: {fileID: 11400000, guid: 87fbda8afe98df442ad6f7f8db0ee2eb, type: 2}
+  _startDigEvent: {fileID: 11400000, guid: 4ca1be635d4fbea438e9bd7eb695134b, type: 2}
+  _endDigEvent: {fileID: 11400000, guid: a188662c738549f4394510a961285f61, type: 2}
   _playerManagerAnchor: {fileID: 11400000, guid: 958f87f671489494a8e637668a5e61b0,
     type: 2}
   _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
@@ -1566,7 +1569,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.26152238
+  m_FillAmount: 0.28883624
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0

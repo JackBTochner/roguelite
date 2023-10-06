@@ -25,6 +25,8 @@ namespace Player
         private float playerEyeHeight = 0.75f;
         [SerializeField]
         private float gravity = -15.0f;
+        [SerializeField]
+        private float digSpeedMultiplier = 1.2f;
 
         [SerializeField]
         private float gamepadDeadzone = 0.01f;
@@ -223,13 +225,14 @@ namespace Player
             { 
                 //No CameraManager exists in the scene, so the input is just used absolute in world-space
                 Debug.LogWarning("No gameplay camera in the scene. Movement orientation will not be correct.");
-                move = new Vector3(inputReader.MoveComposite.x, 0f, inputReader.MoveComposite.y);
+                move = new Vector3(inputReader.MoveComposite.normalized.x, 0f, inputReader.MoveComposite.normalized.y);
             }
 
             lookAt = (inputReader.MoveComposite.magnitude > 0.1f) ? Quaternion.LookRotation(move) : lookAt;
             if(gfxTransform)
                 gfxTransform.rotation = Quaternion.RotateTowards(gfxTransform.rotation, lookAt, Time.deltaTime * gfxRotateSpeed);
-            controller.Move((move  * moveSpeed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            float digSpeedFactor = playerCharacter.isDigging ? digSpeedMultiplier : 1;
+            controller.Move((move  * moveSpeed * digSpeedFactor * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
         }
 
         private void HandleRotation()

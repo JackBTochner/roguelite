@@ -5383,6 +5383,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 872067873634078418, guid: 8c0e322d03dc2bf4ab56462230583db6,
         type: 3}
+      propertyPath: threadCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 872067873634078418, guid: 8c0e322d03dc2bf4ab56462230583db6,
+        type: 3}
+      propertyPath: logPathResults
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 872067873634078418, guid: 8c0e322d03dc2bf4ab56462230583db6,
+        type: 3}
       propertyPath: data.dataString
       value: UEsDBBQAAAgIAABYIexsZ2/GsQIAALUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFtVNtu2kAQ/RW0z01knGCgby0Q0kpJUGmVh5KHxTvGK9a71l4CJOLfO7tesEMqIdmcmTMzZy5+J1yaGnKr9Fxz9qAYkK894t/Jl15rvIc93Si55G9w8nnmzJbeiQafX9RyhXjf04yqwGqef5Mb4Z0TBJ3khdLVjG1goow1CBdUGECTVtazJULvPbKPhEN8vvln74hvOUgLuuN1PU5uxjdJlt1G/6vsejjK0uEw8gbXo0HaHw8C3clc0KoG5mW0UfrpKLLxLThKlBh9vJxcCcFNrI/YQx30T2htHKpDB8Yp6g2Vpfi3BL4pbfxzJj8VhQEbNWl6mHKNbWuiku+q6WVFzbap7JUK5/MM+mmoqQn68MneH9w06gqtqvtT5n7is9iS59tf9JBT40GrHVyg07byZkY7KrZ0LeC5BPmo5lo5yVqqM5BOO4M7i5uUkG9bv6bYC9DVn+fbb+d7DPL3E8GrdZht1gBLoULDx54DGkfzAwsO+2JiJER9EX8M/Kab7mJFwx3XxqIpJpS+urVy2ruSWWiZF+PsRGkJAY411yCpsIcFhrGXM7ywddJeWO6oP6GYPNpOl3FBCXDrnyQXpoXawSkSDuOnq+qF4tIugeq87MQzpdo9gCmfnBVcQqvIGx6xiRMlZbN/5j+0pdMFzTs0C3vrNEyppeEKsCbcEtalYkMDQzoh/D4GFT74X1Thfy++ySXFvCLA5FHJcD8fni9+ETaOs497TrKUjdPRbZYObkd9lidXLE3YOmcsSwY0K4aUhDPgEntOxaJpWhwVbpBstUjc+dNXrjfXtA6nxzTdzflbpTrj57JQy1wDyKcmwlksaEyCnwg2YxxlLsFaLsPukfcVESrfAludA61CY2d7q+mqjbIiNX9V1iMrMgnfthXx8PmsFhpeOex88lOwIzn+A1BLAwQUAAAICAAAWCHsyOaO9G0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IztNBRUEovSizIKAaKGII4pZkpIHa0kplRiqWRhYmZkamJhWFKsoFuipFBSlJySoqZgWmiWZp5olIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAWCHsbGdvxrECAAC1BQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAWCHsyOaO9G0AAAB4AAAACQAkAAAAAAAAAAAAAAD+AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAALYDAAAAAA==
       objectReference: {fileID: 0}
@@ -6172,12 +6182,18 @@ MonoBehaviour:
     type: 2}
   _playerTransformAnchor: {fileID: 11400000, guid: 8aad036ad6836aa47821eb26f1864d66,
     type: 2}
-  impulseSource: {fileID: 800322280}
+  _impulseSource: {fileID: 800322280}
+  _virtualCamera: {fileID: 1551779021}
   _cameraFollowAcceleration: 3
   _swaySmooth: 10
-  _swayMultiplierX: 0.75
-  _swayMultiplierY: 0.5
+  _swayMultiplierX: 1
+  _swayMultiplierY: 0.75
+  defaultOrthoSize: 6
+  digOrthoSize: 8
+  fovSwitchSpeed: 0.35
   _camShakeEvent: {fileID: 11400000, guid: 084c5e85e75a35d4181f503891b3cf3d, type: 2}
+  _startDigEvent: {fileID: 11400000, guid: 4ca1be635d4fbea438e9bd7eb695134b, type: 2}
+  _endDigEvent: {fileID: 11400000, guid: a188662c738549f4394510a961285f61, type: 2}
 --- !u!1 &3963344386072829205
 GameObject:
   m_ObjectHideFlags: 0

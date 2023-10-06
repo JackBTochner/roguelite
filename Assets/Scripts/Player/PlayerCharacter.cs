@@ -66,6 +66,8 @@ namespace Player
         [SerializeField] private VoidEventChannelSO _camShakeEvent = default;
 		[SerializeField] private BoolEventChannelSO _updateDigUI = default;
         [SerializeField] private IntEventChannel _updateHurtUI = default;
+        [SerializeField] private VoidEventChannelSO _startDigEvent = default;
+        [SerializeField] private VoidEventChannelSO _endDigEvent = default;
   		[Header("Listening on")]
         [SerializeField] private PlayerManagerAnchor _playerManagerAnchor = default;
         [SerializeField] private RunManagerAnchor _runManagerAnchor = default;
@@ -114,7 +116,6 @@ namespace Player
             {
                 postProcessVolume = _postProcessTransformAnchor.Value.GetComponent<Volume>();
                 postProcessVolume.profile.TryGet(out colorAdjustments);
-                Debug.LogWarning(colorAdjustments);
                 originalColorFilter = (Color)colorAdjustments.colorFilter;
             }
             if(meshRenderer)
@@ -167,7 +168,7 @@ namespace Player
         public void ToggleDig(RaycastHit hit)
         {
             if (isDigging)
-            { 
+            {
                 StartCoroutine(DigExit(digFreezeTime));
                 SetDigUI(true);
             }
@@ -196,6 +197,7 @@ namespace Player
             {
                 highlighter.ToggleHighlight(true);
             }
+            _startDigEvent.RaiseEvent();
             yield return new WaitForSeconds(0.35f);
             playerGFX.SetActive(false);
             playerDigGFX.SetActive(true);
@@ -206,6 +208,7 @@ namespace Player
         IEnumerator DigExit(float freezeTime)
         {
             isDigging = false;
+            _endDigEvent.RaiseEvent();
             playerAttack.ForceResetAttackCombo();
             _camShakeEvent.RaiseEvent();
             playerGFX.SetActive(true);

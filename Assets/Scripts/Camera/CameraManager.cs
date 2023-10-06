@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using Player;
+using DG.Tweening;
 
 public class CameraManager : MonoBehaviour
 {
@@ -13,20 +14,26 @@ public class CameraManager : MonoBehaviour
     // [SerializeField] private CameraAnchor _cameraAnchor = default;
 	[SerializeField] private TransformAnchor _playerTransformAnchor = default;
 	private PlayerCharacter _playerCharacter;
-    [SerializeField] private CinemachineImpulseSource impulseSource;
+    [SerializeField] private CinemachineImpulseSource _impulseSource;
+	[SerializeField] private CinemachineVirtualCamera _virtualCamera;
 
 	[Header("Camera Movement")]
     [SerializeField] private float _cameraFollowAcceleration = 3;
+	[Header("Dig FX")]
 	[SerializeField] private float _swaySmooth = 1;
 	[SerializeField] private float _swayMultiplierX = 1;
 	[SerializeField] private float _swayMultiplierY = 1;
 	private float _swayHorizontal;
 	private float _swayVertical;
+	public float defaultOrthoSize = 6;
+	public float digOrthoSize = 8;
+	public float fovSwitchSpeed = 1f;
 
     [Header("Listening on channels")]
 	[Tooltip("The CameraManager listens to this event, fired by an event from the player, to shake camera")]
 	[SerializeField] private VoidEventChannelSO _camShakeEvent = default;
-
+	[SerializeField] private VoidEventChannelSO _startDigEvent = default;
+	[SerializeField] private VoidEventChannelSO _endDigEvent = default;
 
     private bool _cameraMovementLock = false;
 
@@ -37,9 +44,11 @@ public class CameraManager : MonoBehaviour
 		// inputReader.DisableMouseControlCameraEvent += OnDisableMouseControlCamera;
 
 		_playerTransformAnchor.OnAnchorProvided += SetupProtagonistVirtualCamera;
-        _camShakeEvent.OnEventRaised += impulseSource.GenerateImpulse;
+        _camShakeEvent.OnEventRaised += _impulseSource.GenerateImpulse;
 
         _cameraTransformAnchor.Provide(mainCamera.transform);
+		_startDigEvent.OnEventRaised += BeginDig;
+		_endDigEvent.OnEventRaised += EndDig;
 	}
 
     private void OnDisable()
@@ -49,7 +58,9 @@ public class CameraManager : MonoBehaviour
 		// inputReader.DisableMouseControlCameraEvent -= OnDisableMouseControlCamera;
 
 		_playerTransformAnchor.OnAnchorProvided -= SetupProtagonistVirtualCamera;
-		_camShakeEvent.OnEventRaised -= impulseSource.GenerateImpulse;
+		_camShakeEvent.OnEventRaised -= _impulseSource.GenerateImpulse;
+		_startDigEvent.OnEventRaised -= BeginDig;
+		_endDigEvent.OnEventRaised -= EndDig;
 
 		_cameraTransformAnchor.Unset();
 	}
@@ -83,6 +94,15 @@ public class CameraManager : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, _playerTransformAnchor.Value.position, Time.deltaTime * _cameraFollowAcceleration);
         }
     }
+	private void BeginDig()
+	{
+		DOTween.To(() => _virtualCamera.m_Lens.OrthographicSize, x => _virtualCamera.m_Lens.OrthographicSize = x, digOrthoSize, fovSwitchSpeed).SetEase(Ease.InQuint);
+	}
+
+	private void EndDig()
+	{ 
+		DOTween.To(() => _virtualCamera.m_Lens.OrthographicSize, x => _virtualCamera.m_Lens.OrthographicSize = x, defaultOrthoSize, fovSwitchSpeed).SetEase(Ease.OutQuint);
+	}
 
     /// <summary>
     /// Provides Cinemachine with its target, taken from the TransformAnchor SO containing a reference to the player's Transform component.
