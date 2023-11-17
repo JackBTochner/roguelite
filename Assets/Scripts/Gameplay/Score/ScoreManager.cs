@@ -218,7 +218,6 @@ public class ScoreManager : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
-        DialogueLua.SetVariable("PlayedConversations", "[]");
         Time.timeScale = 1.0f;
         //SceneManager.LoadScene("Initialization");
         _loadMenuEvent.RaiseEvent(_menuScene, false);
