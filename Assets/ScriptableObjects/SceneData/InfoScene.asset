@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58358df329aef544a8e0960134a03ad7, type: 3}
+  m_Name: InfoScene
+  m_EditorClassIdentifier: 
+  _guid: 15a57a3edaf54224c9dabf6312fe93b8
+  description: 
+  sceneType: 0
+  sceneReference:
+    m_AssetGUID: d8d20a6d9d5b60c469ad8e97c5cd5c3e
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

@@ -34,7 +34,7 @@ public class ScoreManager : MonoBehaviour
     public GameSceneSO _menuScene = default;
 
     public TextMeshProUGUI countdownText; 
-    private float countdownDuration = 5f;
+    private float countdownDuration = 2f;
 
     public Animator GameOverScreenAnim;
 
