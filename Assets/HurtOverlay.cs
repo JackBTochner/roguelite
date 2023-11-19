@@ -20,10 +20,17 @@ public class HurtOverlay : MonoBehaviour
 	{
 		_UIUpdateValue.OnEventRaised -= UpdateHurtUI;
 	}
-    private void UpdateHurtUI(int value)
+    private void UpdateHurtUI(int healthValue)
     {
-        //float alpha = Mathf.Lerp(0, 1, value / 100);
-        damagedColor.a = Mathf.PingPong(Time.time, 1);
-        _hurtImage.color = damagedColor;
+	    if (healthValue <= 0)
+	    {
+		    //Transparent
+		    damagedColor.a = 0;
+	    }
+	    else
+	    {
+		    damagedColor.a = Mathf.PingPong(Time.time, 1);
+	    }
+	    _hurtImage.color = damagedColor;
     }
 }
