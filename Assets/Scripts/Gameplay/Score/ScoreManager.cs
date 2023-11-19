@@ -30,6 +30,8 @@ public class ScoreManager : MonoBehaviour
 
     public bool rankListOpen = false;
 
+    public RunManagerAnchor _runManagerAnchor = default;
+
     public LoadEventChannelSO _loadMenuEvent = default;
     public GameSceneSO _menuScene = default;
 
@@ -221,6 +223,13 @@ public class ScoreManager : MonoBehaviour
         Time.timeScale = 1.0f;
         //SceneManager.LoadScene("Initialization");
         _loadMenuEvent.RaiseEvent(_menuScene, false);
+    }
+
+	public void ReturnToHubLocation()
+    {
+        Time.timeScale = 1.0f;
+        //SceneManager.LoadScene("Initialization");
+        _runManagerAnchor.Value.ReturnToHub();
     }
 
     public void clearRankListOnly()

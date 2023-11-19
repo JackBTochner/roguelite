@@ -4830,6 +4830,7 @@ MonoBehaviour:
   returnToMainMenuButton: {fileID: 1659646278}
   buttonDelay: 10
   rankListOpen: 0
+  _runManagerAnchor: {fileID: 11400000, guid: 8e96e8dddce574b448043f6b4fe36936, type: 2}
   _loadMenuEvent: {fileID: 11400000, guid: aff718ab1c86ae74fb3a6e4c2adff5a0, type: 2}
   _menuScene: {fileID: 11400000, guid: 44681d116bf4f794c8370d71ad6ec243, type: 2}
   countdownText: {fileID: 619470169}
@@ -6024,7 +6025,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1401245329}
         m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-        m_MethodName: ReturnToMainMenu
+        m_MethodName: ReturnToHubLocation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
