@@ -22,7 +22,7 @@ In this early version of the game built for PAX, talk to your customers who arri
 - Lead programmer: Peamawat Muenjohn 102326287
 - Programmer: Ricky Huo 101453511
 - Artist 2D/3D: Brittany Holmes 101116966
-- Designer: Ethan Babatsikos 103619218
+- Programmer: Felix Xu 32498535
 
 ## Platforms
 
