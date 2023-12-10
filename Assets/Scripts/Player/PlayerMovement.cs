@@ -179,7 +179,7 @@ namespace Player
             return Vector3.MoveTowards(targetPosition, transform.position, .95f);
         }
 
-        private void Update()
+        public void Update()
         {
             ApplyGravity();
             if(allowMovement && !attackOverridesMovement)
@@ -259,18 +259,35 @@ namespace Player
             }
         }
 
-        private void MouseLook()
+        public void MouseLook(bool test = false)
         {
             Ray ray = Camera.main.ScreenPointToRay(inputReader.MousePosition);
             Plane xzPlane = new Plane(Vector3.up, new Vector3(0, transform.position.y + playerEyeHeight, 0));
             float rayDistance;
-
+            
             if(xzPlane.Raycast(ray, out rayDistance))
             {
+                
                 Vector3 intersect = ray.GetPoint(rayDistance);
                 Vector3 point = new(intersect.x, transform.position.y, intersect.z);
+                // Quaternion newRot = Quaternion.LookRotation(playerDirection, point);
                 aimTransform.LookAt(point);
+                // aimTransform.rotation = Quaternion.RotateTowards(aimTransform.rotation,newRot,gamepadRotateSmoothing * Time.deltaTime);
+                
+                // gfxTransform.LookAt(point);
+                if (test){
+                    Debug.Log("move");
+                    gfxTransform.LookAt(point);
+                    // Vector3 playerDirection =
+                    //     playerRight +
+                    //     playerForward ;
+                    lookAt = Quaternion.LookRotation(point);
+                    // gfxTransform.rotation= Quaternion.RotateTowards(gfxTransform.rotation,newRot,gamepadRotateSmoothing * Time.deltaTime);
+                }
+                
             }
+
+           
         }
 
         public void OnDeviceChange(InputUser user, InputUserChange change, InputDevice device)

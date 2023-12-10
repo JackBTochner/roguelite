@@ -86,7 +86,10 @@ public class PlayerAttack : MonoBehaviour
     }
 
     void Attack()
-    {
+    {       
+        Debug.Log("Attack");
+        playerMovement.MouseLook(true);
+        // playerMovement.aimTransform.rotation(target, Vector3.up)
         if (_comboHitStep == _comboMaxStep)
             return;
         _animator.ResetTrigger(_animAttackTriggerHash);
