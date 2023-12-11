@@ -568,9 +568,10 @@ MonoBehaviour:
   _currentStaminaSO: {fileID: 11400000, guid: aed2e6adb912c214596a6055e3776d6a, type: 2}
   allowStaminaRegen: 1
   digStaminaCost: 25
-  digStaminaDepleteRate: 10
+  digStaminaDepleteRate: 10.09
   playerGFX: {fileID: 4093581273836692511}
   playerDigGFX: {fileID: 673654281541197107}
+  abilityUpgradeMenu: {fileID: 0}
   digDownParticle: {fileID: 3479186766190414694, guid: 4ccf12a08fecaad478d9f4ca58df4045,
     type: 3}
   digUpParticle: {fileID: 3479186766190414694, guid: ede10f626c7a03644a422b06c7a954b3,
@@ -1571,7 +1572,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.26152238
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 1
   m_UseSpriteMesh: 0

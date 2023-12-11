@@ -24,7 +24,10 @@ public class TimeManager : MonoBehaviour
 
     private void Update()
     {
+
+        
         if (restoreTime)
+        
         {
             if (Time.timeScale < 1f)
             {

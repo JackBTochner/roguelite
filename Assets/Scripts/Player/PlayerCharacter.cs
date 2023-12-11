@@ -26,14 +26,15 @@ namespace Player
         public GameObject playerDigGFX;
         
         public GameObject digDownParticle = default;
-        public GameObject digUpParticle = default;
-
+        public GameObject digUpParticle = default;        
         public AttackObject playerDigAttack;
         public float digFreezeTime;
         public bool isDigging;
         public LayerMask digIgnoreLayerMask = default;
         public Transform digDetectionLocation;
         public float digRayLength = 2f;
+
+        public bool movement = false;
 
         [SerializeField]
         private RuntimeSetBase<Highlighter> _projectileHighlighters = default;
@@ -106,6 +107,9 @@ namespace Player
                 _updateHealthUI.RaiseEvent();
             if (_updateStaminaUI != null)
                 _updateStaminaUI.RaiseEvent();
+
+            
+            
             // Will ALWAYS start player as being able to dig when loading into map.
             SetDigUI(true);
         }
@@ -141,6 +145,9 @@ namespace Player
 
         private void Update()
         {
+            // Debug.Log(abilityUpgradeMenu);
+            
+                // Debug.Log(movement);
             if (isDigging)
             {
                 _currentStaminaSO.InflictDamage(digStaminaDepleteRate * Time.deltaTime);
@@ -161,9 +168,11 @@ namespace Player
             {
                 _updateHurtUI.RaiseEvent(_currentHealthSO.CurrentHealth);
             }
+            
+            
         }
         
-
+        
         private void AttemptToggleDig()
         {
             RaycastHit hit;
@@ -409,6 +418,19 @@ namespace Player
         {
             // Stop the music
             audioSource.Stop();
+        }
+
+        public void removeMovement(){
+           gameObject.GetComponent<Player.PlayerMovement>().allowMovement = false;
+           playerAttack.DisableAttack();
+        //    playerGFX.SetActive(false);
+        }
+
+        public void addMovement(){
+
+            gameObject.GetComponent<Player.PlayerMovement>().allowMovement = true;
+            playerAttack.EnableAttack();
+            // playerGFX.SetActive();
         }
     }
 }

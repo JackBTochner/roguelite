@@ -63,9 +63,13 @@ public class PlayerAttack : MonoBehaviour
         _startDeathEvent.OnEventRaised -= DisableAttack;
     }
 
-    void DisableAttack()
+    public void DisableAttack()
     {
         _canAttack = false;
+    }
+
+    public void EnableAttack(){
+        _canAttack = true;
     }
 
     void TryAttack()

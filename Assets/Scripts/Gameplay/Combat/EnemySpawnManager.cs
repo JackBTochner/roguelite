@@ -16,7 +16,11 @@ public class EnemySpawnManager : MonoBehaviour
 
     public Exit playerExit;
     //
-        public GameObject abilityUpgradeMenu;
+    public GameObject abilityUpgradeMenu;
+
+    public Player.PlayerCharacter player;
+
+    // public GameObject playerSpawn;
     //
     [Header("Listening On")]
     [SerializeField]
@@ -24,6 +28,8 @@ public class EnemySpawnManager : MonoBehaviour
     [SerializeField]
     private TransformAnchor _playerTransformAnchor = default;
 
+  
+    
     private void OnEnable()
     {
         _onSceneReady.OnEventRaised += SpawnWaves;
@@ -59,22 +65,39 @@ public class EnemySpawnManager : MonoBehaviour
         //
             //abilityUpgradeMenu.SetActive(true);
         //
+        // if (abilityUpgradeMenu.is)
+        
         StartCoroutine(SpawnWavesRoutine());
     }
 
     IEnumerator SpawnWavesRoutine()
     {
 //        Debug.Log("Spawning waves");
+        // PlayerSpawnSystem playerSpawn = GameObject.FindObjectOfType<PlayerSpawnSystem>();
+        // Player.PlayerCharacter player = playerSpawn.getPlayer();
+        
         for (int i = 0; i < waves.Count; i++)
         {
             // waves[i].SpawnWave();
             StartCoroutine(waves[i].SpawnWave(_playerTransformAnchor));
             while (!waves[i].IsWaveComplete()) yield return null;
             Debug.Log("Wave: " + (i + 1) + "Completed!");
-            // abilityUpgradeMenu.SetActive(true);
 
             
+            abilityUpgradeMenu.SetActive(true);           
+            Debug.Log(abilityUpgradeMenu.activeSelf);
+            player = GameObject.FindObjectOfType<Player.PlayerCharacter>();
+            player.removeMovement();
+            while (abilityUpgradeMenu.activeSelf) {                
+                
+                // playerSpawn;
+                // Debug.Log(player);
+                
+                yield return null;
+            }
 
+            player.addMovement();
+            // player.addMovement();
            
 
             //if (i < waves.Count -1 )

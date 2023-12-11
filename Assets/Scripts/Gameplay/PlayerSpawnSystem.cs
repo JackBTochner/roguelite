@@ -18,6 +18,9 @@ public class PlayerSpawnSystem : MonoBehaviour
 //    private LocationEntrance[] _spawnLocations;
     private Transform _defaultSpawnPoint;
 
+    public PlayerCharacter getPlayer(){
+        return _playerPrefab;
+    }
     private void Awake()
     {
 //        _spawnLocations = GameObject.FindObjectsOfType<LocationEntrance>();

@@ -47,37 +47,45 @@ MonoBehaviour:
   waves:
     array:
     - name: FirstWave
+      enemySpawnIndicator: {fileID: 0}
+      individualSpawnDelay: 2
       waveInitialSpawnDelay: 0.5
       waveCompleteDelay: 0
       nextWaveSpawnTrigger: {fileID: 0}
       mustKillAllEnemiesToCompleteWave: 1
       spawnRadius: 10
       enemiesToSpawn:
-      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
-      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      - {fileID: 0}
+      - {fileID: 0}
       currentEnemies: 0
     - name: SecondWave
+      enemySpawnIndicator: {fileID: 0}
+      individualSpawnDelay: 2
       waveInitialSpawnDelay: 0.5
       waveCompleteDelay: 0
       nextWaveSpawnTrigger: {fileID: 0}
       mustKillAllEnemiesToCompleteWave: 1
       spawnRadius: 10
       enemiesToSpawn:
-      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
-      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
-      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       currentEnemies: 0
     - name: ThirdWave
+      enemySpawnIndicator: {fileID: 0}
+      individualSpawnDelay: 2
       waveInitialSpawnDelay: 0.5
       waveCompleteDelay: 0
       nextWaveSpawnTrigger: {fileID: 0}
       mustKillAllEnemiesToCompleteWave: 1
       spawnRadius: 10
       enemiesToSpawn:
-      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
-      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
-      - {fileID: 3708834870753349929, guid: 04e6e0c10f8e0da4eb29c767db884033, type: 3}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       currentEnemies: 0
   currentWave: 0
   playerExit: {fileID: 0}
+  abilityUpgradeMenu: {fileID: 0}
   _onSceneReady: {fileID: 11400000, guid: 8e43b1aa16e3e1640ad837326d4c8ab9, type: 2}
+  _playerTransformAnchor: {fileID: 0}

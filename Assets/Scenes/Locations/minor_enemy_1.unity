@@ -1999,6 +1999,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
+      propertyPath: playerSpawn
+      value: 
+      objectReference: {fileID: 2122493390}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
       propertyPath: abilityUpgradeMenu
       value: 
       objectReference: {fileID: 1219191125}
@@ -2115,6 +2120,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
+      propertyPath: waves.array.Array.data[20].name
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
       propertyPath: waves.array.Array.data[0].spawnRadius
       value: 15
       objectReference: {fileID: 0}
@@ -2211,6 +2221,11 @@ PrefabInstance:
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
       propertyPath: waves.array.Array.data[19].spawnRadius
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].spawnRadius
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
@@ -2350,6 +2365,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
+      propertyPath: waves.array.Array.data[20].enemySpawnIndicator
+      value: 
+      objectReference: {fileID: 5213895337056960527, guid: 70da6389c271bb14ea4567d797731aaa,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
       propertyPath: waves.array.Array.data[3].individualSpawnDelay
       value: 2
       objectReference: {fileID: 0}
@@ -2440,6 +2461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
+      propertyPath: waves.array.Array.data[20].individualSpawnDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
       propertyPath: waves.array.Array.data[3].waveInitialSpawnDelay
       value: 0.5
       objectReference: {fileID: 0}
@@ -2521,6 +2547,11 @@ PrefabInstance:
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
       propertyPath: waves.array.Array.data[19].waveInitialSpawnDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].waveInitialSpawnDelay
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
@@ -2621,6 +2652,11 @@ PrefabInstance:
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
       propertyPath: waves.array.Array.data[19].enemiesToSpawn.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.size
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
@@ -3548,6 +3584,66 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[4]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[5]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[6]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[7]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[8]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].enemiesToSpawn.Array.data[9]
+      value: 
+      objectReference: {fileID: -3191706979950486104, guid: dadc7084281194b45ba8cbc5ed0e1355,
+        type: 3}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
       propertyPath: waves.array.Array.data[2].enemiesToSpawn.Array.data[10]
       value: 
       objectReference: {fileID: 5074558062176136339, guid: 517ea0cec392d7740a52552573e22592,
@@ -3666,6 +3762,11 @@ PrefabInstance:
       propertyPath: waves.array.Array.data[19].mustKillAllEnemiesToCompleteWave
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429048, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: waves.array.Array.data[20].mustKillAllEnemiesToCompleteWave
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2857990952377429049, guid: e02f1da5ef0b8394190ee738d105c58a,
         type: 3}
       propertyPath: m_RootOrder
@@ -3725,6 +3826,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemySpawnManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857990952377429054, guid: e02f1da5ef0b8394190ee738d105c58a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6993,7 +7099,7 @@ GameObject:
   - component: {fileID: 2122493391}
   m_Layer: 0
   m_Name: PlayerSpawnSystem
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
