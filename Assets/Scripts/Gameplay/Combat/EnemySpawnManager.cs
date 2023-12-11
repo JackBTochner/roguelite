@@ -71,7 +71,7 @@ public class EnemySpawnManager : MonoBehaviour
             StartCoroutine(waves[i].SpawnWave(_playerTransformAnchor));
             while (!waves[i].IsWaveComplete()) yield return null;
             Debug.Log("Wave: " + (i + 1) + "Completed!");
-            abilityUpgradeMenu.SetActive(true);
+            // abilityUpgradeMenu.SetActive(true);
 
             
 
